@@ -59,7 +59,7 @@ data/               Textes anglais extraits + fr_translations.json (la traductio
 ```
 
 ## 🙏 Crédits
-- Traduction & outils : la communauté.
+- Traduction & outils : Squall98.
 - Serveur & contenu original : l'équipe de **Project Ebonhold**.
 
 ## 📜 Licence
