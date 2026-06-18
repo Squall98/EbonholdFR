@@ -1,0 +1,5098 @@
+{
+ "101000": {
+  "name": "Adaptive Resilience (Rank 1)",
+  "desc": "Taking magical damage reduces damage taken from that school by 3% for 8 sec.",
+  "cost": 15000,
+  "nodeId": 393,
+  "rank": 1
+ },
+ "101001": {
+  "name": "Adaptive Resilience (Rank 2)",
+  "desc": "Taking magical damage reduces damage taken from that school by 6% for 8 sec.\\r\\n\\r\\nReplace Adaptive Resilience (Rank 1).",
+  "cost": 20000,
+  "nodeId": 393,
+  "rank": 2
+ },
+ "101002": {
+  "name": "Adaptive Resilience (Rank 3)",
+  "desc": "Taking magical damage reduces damage taken from that school by 9% for 8 sec.\\r\\n\\r\\nReplace Adaptive Resilience (Rank 2).",
+  "cost": 25000,
+  "nodeId": 393,
+  "rank": 3
+ },
+ "101003": {
+  "name": "Adaptive Resilience (Rank 4)",
+  "desc": "Taking magical damage reduces damage taken from that school by 12% for 8 sec.\\r\\n\\r\\nReplace Adaptive Resilience (Rank 3).",
+  "cost": 250000,
+  "nodeId": 393,
+  "rank": 4
+ },
+ "101004": {
+  "name": "Adaptive Resilience (Rank 5)",
+  "desc": "Taking magical damage reduces damage taken from that school by 15% for 8 sec.\\r\\n\\r\\nReplace Adaptive Resilience (Rank 4).",
+  "cost": 500000,
+  "nodeId": 845,
+  "rank": 1
+ },
+ "111000": {
+  "name": "Adaptive Resilience Milestone",
+  "desc": "Reduces magical damage taken by 3%.",
+  "cost": 500000,
+  "nodeId": 316,
+  "rank": 1
+ },
+ "101340": {
+  "name": "Arcane Equilibrium (Rank 1)",
+  "desc": "While above 75% mana, you gain Surging Power, increasing your spell damage by 2%. This effect persists until your mana falls below 25%, at which point it is replaced by Restorative Flow.\\r\\n\\nRestorative Flow increases your mana regeneration by 20% and persists until your mana rises above 75%, at which point it is replaced by Surging Power.",
+  "cost": 100000,
+  "nodeId": 424,
+  "rank": 1
+ },
+ "101341": {
+  "name": "Arcane Equilibrium (Rank 2)",
+  "desc": "While above 75% mana, you gain Surging Power, increasing your spell damage by 4%. This effect persists until your mana falls below 25%, at which point it is replaced by Restorative Flow.\\r\\n\\nRestorative Flow increases your mana regeneration by 40% and persists until your mana rises above 75%, at which point it is replaced by Surging Power.\\r\\n\\r\\nReplace Arcane Equilibrium (Rank 1).",
+  "cost": 150000,
+  "nodeId": 424,
+  "rank": 2
+ },
+ "101342": {
+  "name": "Arcane Equilibrium (Rank 3)",
+  "desc": "While above 75% mana, you gain Surging Power, increasing your spell damage by 6%. This effect persists until your mana falls below 25%, at which point it is replaced by Restorative Flow.\\r\\n\\nRestorative Flow increases your mana regeneration by 60% and persists until your mana rises above 75%, at which point it is replaced by Surging Power.\\r\\n\\r\\nReplace Arcane Equilibrium (Rank 2).",
+  "cost": 250000,
+  "nodeId": 424,
+  "rank": 3
+ },
+ "101343": {
+  "name": "Arcane Equilibrium (Rank 4)",
+  "desc": "While above 75% mana, you gain Surging Power, increasing your spell damage by 8%. This effect persists until your mana falls below 25%, at which point it is replaced by Restorative Flow.\\r\\n\\nRestorative Flow increases your mana regeneration by 80% and persists until your mana rises above 75%, at which point it is replaced by Surging Power.\\r\\n\\r\\nReplace Arcane Equilibrium (Rank 3).",
+  "cost": 500000,
+  "nodeId": 424,
+  "rank": 4
+ },
+ "101344": {
+  "name": "Arcane Equilibrium (Rank 5)",
+  "desc": "While above 75% mana, you gain Surging Power, increasing your spell damage by 10%. This effect persists until your mana falls below 25%, at which point it is replaced by Restorative Flow.\\r\\n\\nRestorative Flow increases your mana regeneration by 100% and persists until your mana rises above 75%, at which point it is replaced by Surging Power.\\r\\n\\r\\nReplace Arcane Equilibrium (Rank 4).",
+  "cost": 750000,
+  "nodeId": 717,
+  "rank": 1
+ },
+ "111340": {
+  "name": "Arcane Equilibrium Milestone",
+  "desc": "Increases your maximum mana by 10%.",
+  "cost": 750000,
+  "nodeId": 614,
+  "rank": 1
+ },
+ "100840": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 5.",
+  "cost": 500,
+  "nodeId": 257,
+  "rank": 1
+ },
+ "100841": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 10.",
+  "cost": 1000,
+  "nodeId": 271,
+  "rank": 1
+ },
+ "100842": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 15.",
+  "cost": 2500,
+  "nodeId": 265,
+  "rank": 1
+ },
+ "100843": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 20.",
+  "cost": 5000,
+  "nodeId": 266,
+  "rank": 1
+ },
+ "100844": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 25.",
+  "cost": 10000,
+  "nodeId": 267,
+  "rank": 1
+ },
+ "100845": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 25.",
+  "cost": 100000,
+  "nodeId": 511,
+  "rank": 1
+ },
+ "100846": {
+  "name": "Arcane Resilience",
+  "desc": "Increases Arcane Resistance by 25.",
+  "cost": 200000,
+  "nodeId": 844,
+  "rank": 1
+ },
+ "110840": {
+  "name": "Arcane Resilience Milestone",
+  "desc": "Reduces Arcane damage taken by 5%.",
+  "cost": 200000,
+  "nodeId": 268,
+  "rank": 1
+ },
+ "34091": {
+  "name": "Artisan Riding",
+  "desc": "You can now ride all flying mounts at 280% speed.",
+  "cost": 50000,
+  "nodeId": 418,
+  "rank": 1
+ },
+ "101150": {
+  "name": "Artisan's Insight",
+  "desc": "40% chance to gain an additional skill point whenever you gain a skill level in any non-gathering profession.",
+  "cost": 10000,
+  "nodeId": 377,
+  "rank": 1
+ },
+ "101151": {
+  "name": "Artisan's Insight",
+  "desc": "80% chance to gain an additional skill point whenever you gain a skill level in any non-gathering profession.",
+  "cost": 20000,
+  "nodeId": 377,
+  "rank": 2
+ },
+ "101152": {
+  "name": "Artisan's Insight",
+  "desc": "You receive a second skill point whenever you gain a skill level in any non-gathering profession, with a 20% chance to gain a third one.",
+  "cost": 30000,
+  "nodeId": 377,
+  "rank": 3
+ },
+ "101153": {
+  "name": "Artisan's Insight",
+  "desc": "You receive a second skill point whenever you gain a skill level in any non-gathering profession, with a 60% chance to gain a third one.",
+  "cost": 40000,
+  "nodeId": 377,
+  "rank": 4
+ },
+ "101154": {
+  "name": "Artisan's Insight",
+  "desc": "You receive two additional skill points whenever you gain a skill level in any non-gathering profession.",
+  "cost": 50000,
+  "nodeId": 377,
+  "rank": 5
+ },
+ "101380": {
+  "name": "Atoning Radiance (Rank 1)",
+  "desc": "When you heal an ally, a nearby enemy takes Holy damage equal to 5% of the healing done.",
+  "cost": 100000,
+  "nodeId": 431,
+  "rank": 1
+ },
+ "101381": {
+  "name": "Atoning Radiance (Rank 2)",
+  "desc": "When you heal an ally, a nearby enemy takes Holy damage equal to 10% of the healing done.\\r\\n\\r\\nReplace Atoning Radiance (Rank 1).",
+  "cost": 150000,
+  "nodeId": 431,
+  "rank": 2
+ },
+ "101382": {
+  "name": "Atoning Radiance (Rank 3)",
+  "desc": "When you heal an ally, a nearby enemy takes Holy damage equal to 15% of the healing done.\\r\\n\\r\\nReplace Atoning Radiance (Rank 2).",
+  "cost": 250000,
+  "nodeId": 431,
+  "rank": 3
+ },
+ "101383": {
+  "name": "Atoning Radiance (Rank 4)",
+  "desc": "When you heal an ally, a nearby enemy takes Holy damage equal to 20% of the healing done.\\r\\n\\r\\nReplace Atoning Radiance (Rank 3).",
+  "cost": 500000,
+  "nodeId": 431,
+  "rank": 4
+ },
+ "101384": {
+  "name": "Atoning Radiance (Rank 5)",
+  "desc": "When you heal an ally, a nearby enemy takes Holy damage equal to 25% of the healing done.\\r\\n\\r\\nReplace Atoning Radiance (Rank 4).",
+  "cost": 750000,
+  "nodeId": 773,
+  "rank": 1
+ },
+ "111380": {
+  "name": "Atoning Radiance Milestone",
+  "desc": "Increases Healing done by 3%.",
+  "cost": 750000,
+  "nodeId": 432,
+  "rank": 1
+ },
+ "101650": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 1 item(s) regardless of its level requirement.",
+  "cost": 100000,
+  "nodeId": 582,
+  "rank": 1
+ },
+ "101651": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 2 item(s) regardless of its level requirement.",
+  "cost": 200000,
+  "nodeId": 582,
+  "rank": 2
+ },
+ "101652": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 3 item(s) regardless of its level requirement.",
+  "cost": 300000,
+  "nodeId": 582,
+  "rank": 3
+ },
+ "101653": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 4 item(s) regardless of its level requirement.",
+  "cost": 400000,
+  "nodeId": 582,
+  "rank": 4
+ },
+ "101654": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 5 item(s) regardless of its level requirement.",
+  "cost": 500000,
+  "nodeId": 582,
+  "rank": 5
+ },
+ "101655": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 1 item(s) regardless of its level requirement.",
+  "cost": 600000,
+  "nodeId": 583,
+  "rank": 1
+ },
+ "101656": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 2 item(s) regardless of its level requirement.",
+  "cost": 700000,
+  "nodeId": 583,
+  "rank": 2
+ },
+ "101657": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 3 item(s) regardless of its level requirement.",
+  "cost": 800000,
+  "nodeId": 583,
+  "rank": 3
+ },
+ "101658": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 4 item(s) regardless of its level requirement.",
+  "cost": 900000,
+  "nodeId": 583,
+  "rank": 4
+ },
+ "101659": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 5 item(s) regardless of its level requirement.",
+  "cost": 1000000,
+  "nodeId": 583,
+  "rank": 5
+ },
+ "101660": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 1 item(s) regardless of its level requirement.",
+  "cost": 1250000,
+  "nodeId": 584,
+  "rank": 1
+ },
+ "101661": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 2 item(s) regardless of its level requirement.",
+  "cost": 1500000,
+  "nodeId": 584,
+  "rank": 2
+ },
+ "101662": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 3 item(s) regardless of its level requirement.",
+  "cost": 1750000,
+  "nodeId": 584,
+  "rank": 3
+ },
+ "101663": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 4 item(s) regardless of its level requirement.",
+  "cost": 2000000,
+  "nodeId": 584,
+  "rank": 4
+ },
+ "101664": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 5 item(s) regardless of its level requirement.",
+  "cost": 2500000,
+  "nodeId": 584,
+  "rank": 5
+ },
+ "101665": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 1 item(s) regardless of its level requirement.",
+  "cost": 5000000,
+  "nodeId": 585,
+  "rank": 1
+ },
+ "101666": {
+  "name": "Borrowed Power",
+  "desc": "Allows you to equip 2 item(s) regardless of its level requirement.",
+  "cost": 10000000,
+  "nodeId": 585,
+  "rank": 2
+ },
+ "101090": {
+  "name": "Borrowed Time",
+  "desc": "When an attack or ability would kill you, you instead survive and are restored to 20% of your maximum health. \\r\\n\\r\\nThis effect can occur once per life and charges refresh on reset.",
+  "cost": 5000,
+  "nodeId": 335,
+  "rank": 1
+ },
+ "101091": {
+  "name": "Borrowed Time",
+  "desc": "Borrowed Time restores an additional 20% health.",
+  "cost": 10000,
+  "nodeId": 336,
+  "rank": 1
+ },
+ "101092": {
+  "name": "Borrowed Time",
+  "desc": "Borrowed Time restores an additional 20% health.",
+  "cost": 15000,
+  "nodeId": 337,
+  "rank": 1
+ },
+ "101093": {
+  "name": "Borrowed Time",
+  "desc": "Borrowed Time restores an additional 20% health.",
+  "cost": 20000,
+  "nodeId": 338,
+  "rank": 1
+ },
+ "101094": {
+  "name": "Borrowed Time",
+  "desc": "Borrowed Time restores an additional 20% health.",
+  "cost": 25000,
+  "nodeId": 339,
+  "rank": 1
+ },
+ "103560": {
+  "name": "Bottomless Appetite",
+  "desc": "You can benefit from any number of different food and elixir effects at the same time",
+  "cost": 750000,
+  "nodeId": 812,
+  "rank": 1
+ },
+ "100380": {
+  "name": "Boundless Growth",
+  "desc": "Increases experience gained by an additional 100%.",
+  "cost": 75000,
+  "nodeId": 191,
+  "rank": 1
+ },
+ "100381": {
+  "name": "Boundless Growth",
+  "desc": "Increases experience gained by an additional 100%.",
+  "cost": 75000,
+  "nodeId": 192,
+  "rank": 1
+ },
+ "100382": {
+  "name": "Boundless Growth",
+  "desc": "Increases experience gained by an additional 100%.",
+  "cost": 75000,
+  "nodeId": 193,
+  "rank": 1
+ },
+ "101280": {
+  "name": "Butcher’s Tempo (Rank 1)",
+  "desc": "Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by 1% for 6 sec. This effect stacks up to 3 times.",
+  "cost": 100000,
+  "nodeId": 420,
+  "rank": 1
+ },
+ "101281": {
+  "name": "Butcher’s Tempo (Rank 2)",
+  "desc": "Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by 1% for 6 sec. This effect stacks up to 6 times.\\r\\n\\r\\nReplace Butcher's Tempo (Rank 1).",
+  "cost": 150000,
+  "nodeId": 420,
+  "rank": 2
+ },
+ "101282": {
+  "name": "Butcher’s Tempo (Rank 3)",
+  "desc": "Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by 1% for 6 sec. This effect stacks up to 10 times.\\r\\n\\r\\nReplace Butcher's Tempo (Rank 2).",
+  "cost": 250000,
+  "nodeId": 420,
+  "rank": 3
+ },
+ "101283": {
+  "name": "Butcher’s Tempo (Rank 4)",
+  "desc": "Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by 1% for 6 sec. This effect stacks up to 12 times.\\r\\n\\r\\nReplace Butcher's Tempo (Rank 3).",
+  "cost": 500000,
+  "nodeId": 420,
+  "rank": 4
+ },
+ "101284": {
+  "name": "Butcher’s Tempo (Rank 5)",
+  "desc": "Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by 1% for 6 sec. This effect stacks up to 15 times.\\r\\n\\r\\nReplace Butcher's Tempo (Rank 4).",
+  "cost": 750000,
+  "nodeId": 718,
+  "rank": 1
+ },
+ "111280": {
+  "name": "Butcher’s Tempo Milestone",
+  "desc": "While you have 10 stacks of Butcher’s Tempo, your melee and ranged critical strikes also strike up to 3 nearby enemies for 6 damage.",
+  "cost": 750000,
+  "nodeId": 421,
+  "rank": 1
+ },
+ "101580": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 15000,
+  "nodeId": 554,
+  "rank": 1
+ },
+ "101581": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 20000,
+  "nodeId": 555,
+  "rank": 1
+ },
+ "101582": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 30000,
+  "nodeId": 556,
+  "rank": 1
+ },
+ "101583": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 50000,
+  "nodeId": 557,
+  "rank": 1
+ },
+ "101584": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 100000,
+  "nodeId": 558,
+  "rank": 1
+ },
+ "101585": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 200000,
+  "nodeId": 559,
+  "rank": 1
+ },
+ "101586": {
+  "name": "Butcher’s Yield",
+  "desc": "Increases the amount of materials gained from Skinning by 10%.",
+  "cost": 300000,
+  "nodeId": 772,
+  "rank": 1
+ },
+ "103540": {
+  "name": "Careful Selection",
+  "desc": "Increases the number of Echo Freezes available at the start of a run by 1.",
+  "cost": 500000,
+  "nodeId": 813,
+  "rank": 1
+ },
+ "103541": {
+  "name": "Careful Selection",
+  "desc": "Increases the number of Echo Freezes available at the start of a run by 1.",
+  "cost": 150000,
+  "nodeId": 814,
+  "rank": 1
+ },
+ "103542": {
+  "name": "Careful Selection",
+  "desc": "Increases the number of Echo Freezes available at the start of a run by 1.",
+  "cost": 75000,
+  "nodeId": 815,
+  "rank": 1
+ },
+ "103543": {
+  "name": "Careful Selection",
+  "desc": "Increases the number of Echo Freezes available at the start of a run by 1.",
+  "cost": 75000,
+  "nodeId": 816,
+  "rank": 1
+ },
+ "103544": {
+  "name": "Careful Selection",
+  "desc": "Increases the number of Echo Freezes available at the start of a run by 1.",
+  "cost": 250000,
+  "nodeId": 817,
+  "rank": 1
+ },
+ "101620": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 15000,
+  "nodeId": 561,
+  "rank": 1
+ },
+ "101621": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 20000,
+  "nodeId": 562,
+  "rank": 1
+ },
+ "101622": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 30000,
+  "nodeId": 563,
+  "rank": 1
+ },
+ "101623": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 50000,
+  "nodeId": 564,
+  "rank": 1
+ },
+ "101624": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 100000,
+  "nodeId": 565,
+  "rank": 1
+ },
+ "101625": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 200000,
+  "nodeId": 566,
+  "rank": 1
+ },
+ "101626": {
+  "name": "Cloth Scavenger",
+  "desc": "Increases the amount of cloth you find on humanoids by 10%.",
+  "cost": 300000,
+  "nodeId": 765,
+  "rank": 1
+ },
+ "54197": {
+  "name": "Cold Weather Flying",
+  "desc": "You can now ride flying mounts in Northrend.",
+  "cost": 20000,
+  "nodeId": 419,
+  "rank": 1
+ },
+ "101730": {
+  "name": "Deferred Pain",
+  "desc": "5% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 100000,
+  "nodeId": 609,
+  "rank": 1
+ },
+ "101731": {
+  "name": "Deferred Pain",
+  "desc": "10% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 200000,
+  "nodeId": 609,
+  "rank": 2
+ },
+ "101732": {
+  "name": "Deferred Pain",
+  "desc": "15% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 300000,
+  "nodeId": 609,
+  "rank": 3
+ },
+ "101733": {
+  "name": "Deferred Pain",
+  "desc": "20% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 400000,
+  "nodeId": 609,
+  "rank": 4
+ },
+ "101734": {
+  "name": "Deferred Pain",
+  "desc": "25% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 500000,
+  "nodeId": 609,
+  "rank": 5
+ },
+ "101735": {
+  "name": "Deferred Pain",
+  "desc": "30% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 750000,
+  "nodeId": 609,
+  "rank": 6
+ },
+ "101736": {
+  "name": "Deferred Pain",
+  "desc": "35% of the damage you take is delayed, dealing its damage over 5 seconds instead.",
+  "cost": 1000000,
+  "nodeId": 609,
+  "rank": 7
+ },
+ "600153": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 630,
+  "rank": 1
+ },
+ "600154": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 631,
+  "rank": 1
+ },
+ "600155": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 632,
+  "rank": 1
+ },
+ "600156": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 633,
+  "rank": 1
+ },
+ "600157": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 634,
+  "rank": 1
+ },
+ "600158": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 635,
+  "rank": 1
+ },
+ "600159": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 636,
+  "rank": 1
+ },
+ "600160": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 637,
+  "rank": 1
+ },
+ "600161": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 638,
+  "rank": 1
+ },
+ "600162": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 50000,
+  "nodeId": 639,
+  "rank": 1
+ },
+ "600163": {
+  "name": "Echo Severance",
+  "desc": "Increases the number of Echo Banish available at the start of a run by 1.",
+  "cost": 100000,
+  "nodeId": 818,
+  "rank": 1
+ },
+ "103480": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 5% chance to recover some of the reagents used.",
+  "cost": 12500,
+  "nodeId": 793,
+  "rank": 1
+ },
+ "103481": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 10% chance to recover some of the reagents used.",
+  "cost": 15000,
+  "nodeId": 794,
+  "rank": 1
+ },
+ "103482": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 15% chance to recover some of the reagents used.",
+  "cost": 20000,
+  "nodeId": 795,
+  "rank": 1
+ },
+ "103483": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 20% chance to recover some of the reagents used.",
+  "cost": 25000,
+  "nodeId": 796,
+  "rank": 1
+ },
+ "103484": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 25% chance to recover some of the reagents used.",
+  "cost": 50000,
+  "nodeId": 797,
+  "rank": 1
+ },
+ "103485": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 30% chance to recover some of the reagents used.",
+  "cost": 100000,
+  "nodeId": 798,
+  "rank": 1
+ },
+ "103486": {
+  "name": "Efficient Assembly",
+  "desc": "When crafting items, you have a 35% chance to recover some of the reagents used.",
+  "cost": 150000,
+  "nodeId": 799,
+  "rank": 1
+ },
+ "101670": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 1500,
+  "nodeId": 587,
+  "rank": 1
+ },
+ "101671": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 3000,
+  "nodeId": 588,
+  "rank": 1
+ },
+ "101672": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 6000,
+  "nodeId": 589,
+  "rank": 1
+ },
+ "101673": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 10000,
+  "nodeId": 590,
+  "rank": 1
+ },
+ "101674": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 30000,
+  "nodeId": 591,
+  "rank": 1
+ },
+ "101675": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 300000,
+  "nodeId": 592,
+  "rank": 1
+ },
+ "101676": {
+  "name": "Enduring Magic",
+  "desc": "Increases the duration of beneficial effects you cast on yourself by 10%.",
+  "cost": 500000,
+  "nodeId": 731,
+  "rank": 1
+ },
+ "100880": {
+  "name": "Enduring Vitality",
+  "desc": "While in combat, you restore 1% of your maximum health every 3 seconds.",
+  "cost": 10000,
+  "nodeId": 390,
+  "rank": 1
+ },
+ "100881": {
+  "name": "Enduring Vitality",
+  "desc": "While in combat, you restore 2% of your maximum health every 3 seconds.",
+  "cost": 20000,
+  "nodeId": 390,
+  "rank": 2
+ },
+ "100882": {
+  "name": "Enduring Vitality",
+  "desc": "While in combat, you restore 3% of your maximum health every 3 seconds.",
+  "cost": 30000,
+  "nodeId": 390,
+  "rank": 3
+ },
+ "110880": {
+  "name": "Enduring Vitality Milestone",
+  "desc": "Increases your maximum health by 5%.",
+  "cost": 60000,
+  "nodeId": 311,
+  "rank": 1
+ },
+ "100200": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 5.",
+  "cost": 100,
+  "nodeId": 107,
+  "rank": 1
+ },
+ "100201": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 5.",
+  "cost": 300,
+  "nodeId": 108,
+  "rank": 1
+ },
+ "100202": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 10.",
+  "cost": 1000,
+  "nodeId": 109,
+  "rank": 1
+ },
+ "100203": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 10.",
+  "cost": 1500,
+  "nodeId": 110,
+  "rank": 1
+ },
+ "100204": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 15.",
+  "cost": 2500,
+  "nodeId": 111,
+  "rank": 1
+ },
+ "100205": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 15. ",
+  "cost": 3750,
+  "nodeId": 466,
+  "rank": 1
+ },
+ "100206": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 20. ",
+  "cost": 6750,
+  "nodeId": 524,
+  "rank": 1
+ },
+ "100207": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 30. ",
+  "cost": 10000,
+  "nodeId": 525,
+  "rank": 1
+ },
+ "100208": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 40. ",
+  "cost": 22500,
+  "nodeId": 526,
+  "rank": 1
+ },
+ "100209": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 50. ",
+  "cost": 50000,
+  "nodeId": 527,
+  "rank": 1
+ },
+ "100210": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 50. ",
+  "cost": 225000,
+  "nodeId": 528,
+  "rank": 1
+ },
+ "100211": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 50. ",
+  "cost": 500000,
+  "nodeId": 529,
+  "rank": 1
+ },
+ "100212": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 50. ",
+  "cost": 750000,
+  "nodeId": 671,
+  "rank": 1
+ },
+ "100213": {
+  "name": "Essence of Accuracy",
+  "desc": "Increases hit rating by 50. ",
+  "cost": 1000000,
+  "nodeId": 672,
+  "rank": 1
+ },
+ "110200": {
+  "name": "Essence of Accuracy Milestone",
+  "desc": "Increases your chance to hit by 2%. This bonus is not shown on the character sheet.",
+  "cost": 750000,
+  "nodeId": 618,
+  "rank": 1
+ },
+ "100060": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 5.",
+  "cost": 75,
+  "nodeId": 37,
+  "rank": 1
+ },
+ "100061": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 10.",
+  "cost": 225,
+  "nodeId": 38,
+  "rank": 1
+ },
+ "100062": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 15.",
+  "cost": 750,
+  "nodeId": 39,
+  "rank": 1
+ },
+ "100063": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 20.",
+  "cost": 1250,
+  "nodeId": 40,
+  "rank": 1
+ },
+ "100064": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 25.",
+  "cost": 2000,
+  "nodeId": 41,
+  "rank": 1
+ },
+ "100065": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 30.",
+  "cost": 3250,
+  "nodeId": 42,
+  "rank": 1
+ },
+ "100066": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 40.",
+  "cost": 5000,
+  "nodeId": 43,
+  "rank": 1
+ },
+ "100067": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 60.",
+  "cost": 8500,
+  "nodeId": 44,
+  "rank": 1
+ },
+ "100068": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 80.",
+  "cost": 20000,
+  "nodeId": 45,
+  "rank": 1
+ },
+ "100069": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 120.",
+  "cost": 40000,
+  "nodeId": 46,
+  "rank": 1
+ },
+ "100070": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 120.",
+  "cost": 200000,
+  "nodeId": 448,
+  "rank": 1
+ },
+ "100071": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 120.",
+  "cost": 400000,
+  "nodeId": 449,
+  "rank": 1
+ },
+ "100072": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 120.",
+  "cost": 600000,
+  "nodeId": 663,
+  "rank": 1
+ },
+ "100073": {
+  "name": "Essence of Agility",
+  "desc": "Increases Agility by 120.",
+  "cost": 900000,
+  "nodeId": 664,
+  "rank": 1
+ },
+ "110060": {
+  "name": "Essence of Agility Milestone",
+  "desc": "Increases your Agility by 5%.",
+  "cost": 60000,
+  "nodeId": 47,
+  "rank": 1
+ },
+ "110061": {
+  "name": "Essence of Agility Milestone",
+  "desc": "Increases your Agility by 5%.",
+  "cost": 600000,
+  "nodeId": 600,
+  "rank": 1
+ },
+ "110062": {
+  "name": "Essence of Agility Milestone",
+  "desc": "Increases your Agility by 5%.",
+  "cost": 1200000,
+  "nodeId": 706,
+  "rank": 1
+ },
+ "100240": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 1%.",
+  "cost": 2000,
+  "nodeId": 112,
+  "rank": 1
+ },
+ "100241": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 1%.",
+  "cost": 15000,
+  "nodeId": 113,
+  "rank": 1
+ },
+ "100242": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 1%.",
+  "cost": 35000,
+  "nodeId": 114,
+  "rank": 1
+ },
+ "100243": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 1%.",
+  "cost": 75000,
+  "nodeId": 115,
+  "rank": 1
+ },
+ "100244": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 2%.",
+  "cost": 100000,
+  "nodeId": 116,
+  "rank": 1
+ },
+ "100245": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 2%.",
+  "cost": 1000000,
+  "nodeId": 467,
+  "rank": 1
+ },
+ "100246": {
+  "name": "Essence of Alacrity",
+  "desc": "Increases Haste by 2%.",
+  "cost": 1500000,
+  "nodeId": 673,
+  "rank": 1
+ },
+ "101490": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 115,
+  "nodeId": 532,
+  "rank": 1
+ },
+ "101491": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 350,
+  "nodeId": 533,
+  "rank": 1
+ },
+ "101492": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 1125,
+  "nodeId": 534,
+  "rank": 1
+ },
+ "101493": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 1875,
+  "nodeId": 535,
+  "rank": 1
+ },
+ "101494": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 3000,
+  "nodeId": 536,
+  "rank": 1
+ },
+ "101495": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 4875,
+  "nodeId": 537,
+  "rank": 1
+ },
+ "101496": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 7500,
+  "nodeId": 538,
+  "rank": 1
+ },
+ "101497": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 12750,
+  "nodeId": 539,
+  "rank": 1
+ },
+ "101498": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 30000,
+  "nodeId": 540,
+  "rank": 1
+ },
+ "101499": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 60000,
+  "nodeId": 541,
+  "rank": 1
+ },
+ "101500": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 300000,
+  "nodeId": 492,
+  "rank": 1
+ },
+ "101501": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 600000,
+  "nodeId": 493,
+  "rank": 1
+ },
+ "101502": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 900000,
+  "nodeId": 682,
+  "rank": 1
+ },
+ "101503": {
+  "name": "Essence of Clarity",
+  "desc": "Allows 2% of your mana regeneration to continue while casting.",
+  "cost": 1200000,
+  "nodeId": 683,
+  "rank": 1
+ },
+ "111490": {
+  "name": "Essence of Clarity Milestone",
+  "desc": "Increases your mana regeneration by 10%.",
+  "cost": 90000,
+  "nodeId": 610,
+  "rank": 1
+ },
+ "111491": {
+  "name": "Essence of Clarity Milestone",
+  "desc": "Increases your mana regeneration by 10%.",
+  "cost": 900000,
+  "nodeId": 611,
+  "rank": 1
+ },
+ "111492": {
+  "name": "Essence of Clarity Milestone",
+  "desc": "Increases your mana regeneration by 10%.",
+  "cost": 1800000,
+  "nodeId": 712,
+  "rank": 1
+ },
+ "100080": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 5.",
+  "cost": 75,
+  "nodeId": 287,
+  "rank": 1
+ },
+ "100081": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 10.",
+  "cost": 225,
+  "nodeId": 117,
+  "rank": 1
+ },
+ "100082": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 15.",
+  "cost": 750,
+  "nodeId": 118,
+  "rank": 1
+ },
+ "100083": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 20.",
+  "cost": 1250,
+  "nodeId": 119,
+  "rank": 1
+ },
+ "100084": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 25.",
+  "cost": 2000,
+  "nodeId": 120,
+  "rank": 1
+ },
+ "100085": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 30.",
+  "cost": 3250,
+  "nodeId": 121,
+  "rank": 1
+ },
+ "100086": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 35.",
+  "cost": 5000,
+  "nodeId": 122,
+  "rank": 1
+ },
+ "100087": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 40.",
+  "cost": 8500,
+  "nodeId": 123,
+  "rank": 1
+ },
+ "100088": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 50.",
+  "cost": 20000,
+  "nodeId": 124,
+  "rank": 1
+ },
+ "100089": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 75.",
+  "cost": 40000,
+  "nodeId": 125,
+  "rank": 1
+ },
+ "100090": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 75.",
+  "cost": 200000,
+  "nodeId": 496,
+  "rank": 1
+ },
+ "100091": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 75.",
+  "cost": 400000,
+  "nodeId": 497,
+  "rank": 1
+ },
+ "100092": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 75.",
+  "cost": 600000,
+  "nodeId": 822,
+  "rank": 1
+ },
+ "100093": {
+  "name": "Essence of Endurance",
+  "desc": "Increases Stamina by 75.",
+  "cost": 800000,
+  "nodeId": 823,
+  "rank": 1
+ },
+ "110080": {
+  "name": "Essence of Endurance Milestone",
+  "desc": "Increases your Stamina by 5%.",
+  "cost": 60000,
+  "nodeId": 126,
+  "rank": 1
+ },
+ "110081": {
+  "name": "Essence of Endurance Milestone",
+  "desc": "Increases your Stamina by 5%.",
+  "cost": 600000,
+  "nodeId": 601,
+  "rank": 1
+ },
+ "110082": {
+  "name": "Essence of Endurance Milestone",
+  "desc": "Increases your Stamina by 5%.",
+  "cost": 1200000,
+  "nodeId": 824,
+  "rank": 1
+ },
+ "100680": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 50.",
+  "cost": 75,
+  "nodeId": 285,
+  "rank": 1
+ },
+ "100681": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 75.",
+  "cost": 225,
+  "nodeId": 275,
+  "rank": 1
+ },
+ "100682": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 100.",
+  "cost": 750,
+  "nodeId": 288,
+  "rank": 1
+ },
+ "100683": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 150.",
+  "cost": 1250,
+  "nodeId": 289,
+  "rank": 1
+ },
+ "100684": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 200.",
+  "cost": 2000,
+  "nodeId": 290,
+  "rank": 1
+ },
+ "100685": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 250.",
+  "cost": 3250,
+  "nodeId": 291,
+  "rank": 1
+ },
+ "100686": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 350.",
+  "cost": 5000,
+  "nodeId": 292,
+  "rank": 1
+ },
+ "100687": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 500.",
+  "cost": 8500,
+  "nodeId": 293,
+  "rank": 1
+ },
+ "100688": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 750.",
+  "cost": 20000,
+  "nodeId": 294,
+  "rank": 1
+ },
+ "100689": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 40000,
+  "nodeId": 295,
+  "rank": 1
+ },
+ "100690": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 200000,
+  "nodeId": 501,
+  "rank": 1
+ },
+ "100691": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 400000,
+  "nodeId": 502,
+  "rank": 1
+ },
+ "100692": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 600000,
+  "nodeId": 835,
+  "rank": 1
+ },
+ "100693": {
+  "name": "Essence of Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 800000,
+  "nodeId": 836,
+  "rank": 1
+ },
+ "110680": {
+  "name": "Essence of Fortitude Milestone",
+  "desc": "Increases your maximum health by 10%.",
+  "cost": 60000,
+  "nodeId": 296,
+  "rank": 1
+ },
+ "110681": {
+  "name": "Essence of Fortitude Milestone",
+  "desc": "Increases your maximum health by 10%.",
+  "cost": 600000,
+  "nodeId": 599,
+  "rank": 1
+ },
+ "110682": {
+  "name": "Essence of Fortitude Milestone",
+  "desc": "Increases your maximum health by 10%.",
+  "cost": 1200000,
+  "nodeId": 863,
+  "rank": 1
+ },
+ "103570": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 825,
+  "rank": 1
+ },
+ "103571": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 826,
+  "rank": 1
+ },
+ "103572": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 827,
+  "rank": 1
+ },
+ "103573": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 828,
+  "rank": 1
+ },
+ "103574": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 829,
+  "rank": 1
+ },
+ "103575": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 830,
+  "rank": 1
+ },
+ "103576": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 831,
+  "rank": 1
+ },
+ "103577": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 832,
+  "rank": 1
+ },
+ "103578": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 833,
+  "rank": 1
+ },
+ "103579": {
+  "name": "Essence of Greater Endurance",
+  "desc": "Increases Stamina by 100.",
+  "cost": 1000000,
+  "nodeId": 834,
+  "rank": 1
+ },
+ "113570": {
+  "name": "Essence of Greater Endurance Milestone",
+  "desc": "Increases your Stamina by 5%.",
+  "cost": 1500000,
+  "nodeId": 861,
+  "rank": 1
+ },
+ "103590": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 851,
+  "rank": 1
+ },
+ "103591": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 852,
+  "rank": 1
+ },
+ "103592": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 853,
+  "rank": 1
+ },
+ "103593": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 854,
+  "rank": 1
+ },
+ "103594": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 855,
+  "rank": 1
+ },
+ "103595": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 856,
+  "rank": 1
+ },
+ "103596": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 857,
+  "rank": 1
+ },
+ "103597": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 858,
+  "rank": 1
+ },
+ "103598": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 859,
+  "rank": 1
+ },
+ "103599": {
+  "name": "Essence of Greater Fortitude",
+  "desc": "Increases your maximum health by 1000.",
+  "cost": 1000000,
+  "nodeId": 860,
+  "rank": 1
+ },
+ "113590": {
+  "name": "Essence of Greater Fortitude Milestone",
+  "desc": "Increases your maximum health by 10%.",
+  "cost": 1500000,
+  "nodeId": 862,
+  "rank": 1
+ },
+ "103400": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 684,
+  "rank": 1
+ },
+ "103401": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 685,
+  "rank": 1
+ },
+ "103402": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 686,
+  "rank": 1
+ },
+ "103403": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 687,
+  "rank": 1
+ },
+ "103404": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 688,
+  "rank": 1
+ },
+ "103405": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 689,
+  "rank": 1
+ },
+ "103406": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 690,
+  "rank": 1
+ },
+ "103407": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 691,
+  "rank": 1
+ },
+ "103408": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 692,
+  "rank": 1
+ },
+ "103409": {
+  "name": "Essence of Greater Might",
+  "desc": "Increases your attack power by 1000.",
+  "cost": 1000000,
+  "nodeId": 693,
+  "rank": 1
+ },
+ "113400": {
+  "name": "Essence of Greater Might Milestone",
+  "desc": "Increases your Attack Power by 10%.",
+  "cost": 1500000,
+  "nodeId": 714,
+  "rank": 1
+ },
+ "103420": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 694,
+  "rank": 1
+ },
+ "103421": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 695,
+  "rank": 1
+ },
+ "103422": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 696,
+  "rank": 1
+ },
+ "103423": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 697,
+  "rank": 1
+ },
+ "103424": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 698,
+  "rank": 1
+ },
+ "103425": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 699,
+  "rank": 1
+ },
+ "103426": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 700,
+  "rank": 1
+ },
+ "103427": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 701,
+  "rank": 1
+ },
+ "103428": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 702,
+  "rank": 1
+ },
+ "103429": {
+  "name": "Essence of Greater Sorcery",
+  "desc": "Increases your spell power by 750.",
+  "cost": 1000000,
+  "nodeId": 703,
+  "rank": 1
+ },
+ "113420": {
+  "name": "Essence of Greater Sorcery Milestone",
+  "desc": "Increases your spell power by 10%.",
+  "cost": 1500000,
+  "nodeId": 713,
+  "rank": 1
+ },
+ "100100": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 5.",
+  "cost": 75,
+  "nodeId": 48,
+  "rank": 1
+ },
+ "100101": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 10.",
+  "cost": 225,
+  "nodeId": 49,
+  "rank": 1
+ },
+ "100102": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 15.",
+  "cost": 750,
+  "nodeId": 50,
+  "rank": 1
+ },
+ "100103": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 20.",
+  "cost": 1250,
+  "nodeId": 51,
+  "rank": 1
+ },
+ "100104": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 25.",
+  "cost": 2000,
+  "nodeId": 52,
+  "rank": 1
+ },
+ "100105": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 30.",
+  "cost": 3250,
+  "nodeId": 53,
+  "rank": 1
+ },
+ "100106": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 40.",
+  "cost": 5000,
+  "nodeId": 54,
+  "rank": 1
+ },
+ "100107": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 60.",
+  "cost": 8500,
+  "nodeId": 55,
+  "rank": 1
+ },
+ "100108": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 80.",
+  "cost": 20000,
+  "nodeId": 56,
+  "rank": 1
+ },
+ "100109": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 120.",
+  "cost": 40000,
+  "nodeId": 57,
+  "rank": 1
+ },
+ "100110": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 120.",
+  "cost": 200000,
+  "nodeId": 455,
+  "rank": 1
+ },
+ "100111": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 120.",
+  "cost": 400000,
+  "nodeId": 456,
+  "rank": 1
+ },
+ "100112": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 120.",
+  "cost": 600000,
+  "nodeId": 676,
+  "rank": 1
+ },
+ "100113": {
+  "name": "Essence of Intellect",
+  "desc": "Increases Intellect by 120.",
+  "cost": 800000,
+  "nodeId": 677,
+  "rank": 1
+ },
+ "110100": {
+  "name": "Essence of Intellect Milestone",
+  "desc": "Increases your Intellect by 5%.",
+  "cost": 60000,
+  "nodeId": 58,
+  "rank": 1
+ },
+ "110101": {
+  "name": "Essence of Intellect Milestone",
+  "desc": "Increases your Intellect by 5%.",
+  "cost": 600000,
+  "nodeId": 457,
+  "rank": 1
+ },
+ "110102": {
+  "name": "Essence of Intellect Milestone",
+  "desc": "Increases your Intellect by 5%.",
+  "cost": 1200000,
+  "nodeId": 709,
+  "rank": 1
+ },
+ "100700": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 25.",
+  "cost": 75,
+  "nodeId": 272,
+  "rank": 1
+ },
+ "100701": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 50.",
+  "cost": 225,
+  "nodeId": 273,
+  "rank": 1
+ },
+ "100702": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 100.",
+  "cost": 750,
+  "nodeId": 320,
+  "rank": 1
+ },
+ "100703": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 150.",
+  "cost": 1250,
+  "nodeId": 321,
+  "rank": 1
+ },
+ "100704": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 200.",
+  "cost": 2000,
+  "nodeId": 322,
+  "rank": 1
+ },
+ "100705": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 300.",
+  "cost": 3250,
+  "nodeId": 323,
+  "rank": 1
+ },
+ "100706": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 500.",
+  "cost": 5000,
+  "nodeId": 324,
+  "rank": 1
+ },
+ "100707": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 600.",
+  "cost": 8500,
+  "nodeId": 325,
+  "rank": 1
+ },
+ "100708": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 750.",
+  "cost": 20000,
+  "nodeId": 326,
+  "rank": 1
+ },
+ "100709": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 1000.",
+  "cost": 40000,
+  "nodeId": 327,
+  "rank": 1
+ },
+ "100710": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 1000.",
+  "cost": 200000,
+  "nodeId": 503,
+  "rank": 1
+ },
+ "100711": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 1000.",
+  "cost": 400000,
+  "nodeId": 504,
+  "rank": 1
+ },
+ "100712": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 1000.",
+  "cost": 600000,
+  "nodeId": 837,
+  "rank": 1
+ },
+ "100713": {
+  "name": "Essence of Iron",
+  "desc": "Increases armor by 1000.",
+  "cost": 800000,
+  "nodeId": 838,
+  "rank": 1
+ },
+ "110700": {
+  "name": "Essence of Iron Milestone",
+  "desc": "Reduces physical damage taken by 5%.",
+  "cost": 60000,
+  "nodeId": 284,
+  "rank": 1
+ },
+ "100160": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 5.",
+  "cost": 100,
+  "nodeId": 91,
+  "rank": 1
+ },
+ "100161": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 10.",
+  "cost": 300,
+  "nodeId": 92,
+  "rank": 1
+ },
+ "100162": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 15.",
+  "cost": 1000,
+  "nodeId": 93,
+  "rank": 1
+ },
+ "100163": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 20.",
+  "cost": 1500,
+  "nodeId": 94,
+  "rank": 1
+ },
+ "100164": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 25.",
+  "cost": 2500,
+  "nodeId": 95,
+  "rank": 1
+ },
+ "100165": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 30.",
+  "cost": 3750,
+  "nodeId": 96,
+  "rank": 1
+ },
+ "100166": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 35.",
+  "cost": 6750,
+  "nodeId": 97,
+  "rank": 1
+ },
+ "100167": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 40.",
+  "cost": 10000,
+  "nodeId": 98,
+  "rank": 1
+ },
+ "100168": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 50.",
+  "cost": 22500,
+  "nodeId": 99,
+  "rank": 1
+ },
+ "100169": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 75.",
+  "cost": 50000,
+  "nodeId": 100,
+  "rank": 1
+ },
+ "100170": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 75.",
+  "cost": 225000,
+  "nodeId": 463,
+  "rank": 1
+ },
+ "100171": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 75.",
+  "cost": 500000,
+  "nodeId": 464,
+  "rank": 1
+ },
+ "100172": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 75.",
+  "cost": 750000,
+  "nodeId": 666,
+  "rank": 1
+ },
+ "100173": {
+  "name": "Essence of Lethality",
+  "desc": "Increases critical strike rating by 75.",
+  "cost": 1000000,
+  "nodeId": 667,
+  "rank": 1
+ },
+ "110160": {
+  "name": "Essence of Lethality Milestone",
+  "desc": "Increases your critical strike chance by 5%.",
+  "cost": 750000,
+  "nodeId": 101,
+  "rank": 1
+ },
+ "100000": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 25.",
+  "cost": 50,
+  "nodeId": 1,
+  "rank": 1
+ },
+ "100001": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 35.",
+  "cost": 150,
+  "nodeId": 7,
+  "rank": 1
+ },
+ "100002": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 50.",
+  "cost": 600,
+  "nodeId": 8,
+  "rank": 1
+ },
+ "100003": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 75.",
+  "cost": 1000,
+  "nodeId": 9,
+  "rank": 1
+ },
+ "100004": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 100.",
+  "cost": 1600,
+  "nodeId": 10,
+  "rank": 1
+ },
+ "100005": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 125.",
+  "cost": 2500,
+  "nodeId": 11,
+  "rank": 1
+ },
+ "100006": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 175.",
+  "cost": 4000,
+  "nodeId": 12,
+  "rank": 1
+ },
+ "100007": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 250.",
+  "cost": 7000,
+  "nodeId": 13,
+  "rank": 1
+ },
+ "100008": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 425.",
+  "cost": 17000,
+  "nodeId": 14,
+  "rank": 1
+ },
+ "100009": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 750.",
+  "cost": 35000,
+  "nodeId": 15,
+  "rank": 1
+ },
+ "100010": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 750.",
+  "cost": 175000,
+  "nodeId": 439,
+  "rank": 1
+ },
+ "100011": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 750.",
+  "cost": 350000,
+  "nodeId": 440,
+  "rank": 1
+ },
+ "100012": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 750.",
+  "cost": 500000,
+  "nodeId": 655,
+  "rank": 1
+ },
+ "100013": {
+  "name": "Essence of Might",
+  "desc": "Increases your attack power by 750.",
+  "cost": 750000,
+  "nodeId": 656,
+  "rank": 1
+ },
+ "110000": {
+  "name": "Essence of Might Milestone",
+  "desc": "Increases your Attack Power by 10%.",
+  "cost": 52500,
+  "nodeId": 16,
+  "rank": 1
+ },
+ "110001": {
+  "name": "Essence of Might Milestone",
+  "desc": "Increases your Attack Power by 10%.",
+  "cost": 525000,
+  "nodeId": 441,
+  "rank": 1
+ },
+ "110002": {
+  "name": "Essence of Might Milestone",
+  "desc": "Increases your Attack Power by 10%.",
+  "cost": 1125000,
+  "nodeId": 704,
+  "rank": 1
+ },
+ "100180": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 115,
+  "nodeId": 74,
+  "rank": 1
+ },
+ "100181": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 350,
+  "nodeId": 75,
+  "rank": 1
+ },
+ "100182": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 1125,
+  "nodeId": 76,
+  "rank": 1
+ },
+ "100183": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 1875,
+  "nodeId": 77,
+  "rank": 1
+ },
+ "100184": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 3000,
+  "nodeId": 78,
+  "rank": 1
+ },
+ "100185": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 4875,
+  "nodeId": 451,
+  "rank": 1
+ },
+ "100186": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 7500,
+  "nodeId": 518,
+  "rank": 1
+ },
+ "100187": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 12750,
+  "nodeId": 519,
+  "rank": 1
+ },
+ "100188": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 30000,
+  "nodeId": 660,
+  "rank": 1
+ },
+ "100189": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 1.",
+  "cost": 60000,
+  "nodeId": 521,
+  "rank": 1
+ },
+ "100190": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 2.",
+  "cost": 300000,
+  "nodeId": 522,
+  "rank": 1
+ },
+ "100191": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 2.",
+  "cost": 600000,
+  "nodeId": 523,
+  "rank": 1
+ },
+ "100192": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 2.",
+  "cost": 900000,
+  "nodeId": 668,
+  "rank": 1
+ },
+ "100193": {
+  "name": "Essence of Precision",
+  "desc": "Increases your Expertise by 2.",
+  "cost": 1200000,
+  "nodeId": 669,
+  "rank": 1
+ },
+ "110180": {
+  "name": "Essence of Precision Milestone",
+  "desc": "Increases melee damage by 2%.",
+  "cost": 90000,
+  "nodeId": 617,
+  "rank": 1
+ },
+ "110181": {
+  "name": "Essence of Precision Milestone",
+  "desc": "Increases melee damage by 2%.",
+  "cost": 900000,
+  "nodeId": 616,
+  "rank": 1
+ },
+ "110182": {
+  "name": "Essence of Precision Milestone",
+  "desc": "Increases melee damage by 2%.",
+  "cost": 1800000,
+  "nodeId": 707,
+  "rank": 1
+ },
+ "100220": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 1%.",
+  "cost": 200,
+  "nodeId": 102,
+  "rank": 1
+ },
+ "100221": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 1%.",
+  "cost": 1250,
+  "nodeId": 103,
+  "rank": 1
+ },
+ "100222": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 1%.",
+  "cost": 3125,
+  "nodeId": 104,
+  "rank": 1
+ },
+ "100223": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 1%.",
+  "cost": 8375,
+  "nodeId": 105,
+  "rank": 1
+ },
+ "100224": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 2%.",
+  "cost": 36250,
+  "nodeId": 106,
+  "rank": 1
+ },
+ "100225": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 2%.",
+  "cost": 362500,
+  "nodeId": 461,
+  "rank": 1
+ },
+ "100226": {
+  "name": "Essence of Ruin",
+  "desc": "Increases critical strike damage and critical healing by 2%.",
+  "cost": 875000,
+  "nodeId": 670,
+  "rank": 1
+ },
+ "100020": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 20.",
+  "cost": 50,
+  "nodeId": 5,
+  "rank": 1
+ },
+ "100021": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 25.",
+  "cost": 150,
+  "nodeId": 17,
+  "rank": 1
+ },
+ "100022": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 35.",
+  "cost": 600,
+  "nodeId": 18,
+  "rank": 1
+ },
+ "100023": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 55.",
+  "cost": 1000,
+  "nodeId": 19,
+  "rank": 1
+ },
+ "100024": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 75.",
+  "cost": 1600,
+  "nodeId": 20,
+  "rank": 1
+ },
+ "100025": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 100.",
+  "cost": 2500,
+  "nodeId": 21,
+  "rank": 1
+ },
+ "100026": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 125.",
+  "cost": 4000,
+  "nodeId": 22,
+  "rank": 1
+ },
+ "100027": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 175.",
+  "cost": 7000,
+  "nodeId": 23,
+  "rank": 1
+ },
+ "100028": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 300.",
+  "cost": 17000,
+  "nodeId": 24,
+  "rank": 1
+ },
+ "100029": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 500.",
+  "cost": 35000,
+  "nodeId": 25,
+  "rank": 1
+ },
+ "100030": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 500.",
+  "cost": 175000,
+  "nodeId": 452,
+  "rank": 1
+ },
+ "100031": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 500.",
+  "cost": 350000,
+  "nodeId": 453,
+  "rank": 1
+ },
+ "100032": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 500.",
+  "cost": 500000,
+  "nodeId": 674,
+  "rank": 1
+ },
+ "100033": {
+  "name": "Essence of Sorcery",
+  "desc": "Increases your spell power by 500.",
+  "cost": 750000,
+  "nodeId": 675,
+  "rank": 1
+ },
+ "110020": {
+  "name": "Essence of Sorcery Milestone",
+  "desc": "Increases your spell power by 10%.",
+  "cost": 52500,
+  "nodeId": 26,
+  "rank": 1
+ },
+ "110021": {
+  "name": "Essence of Sorcery Milestone",
+  "desc": "Increases your spell power by 10%.",
+  "cost": 525000,
+  "nodeId": 454,
+  "rank": 1
+ },
+ "110022": {
+  "name": "Essence of Sorcery Milestone",
+  "desc": "Increases your spell power by 10%.",
+  "cost": 1125000,
+  "nodeId": 708,
+  "rank": 1
+ },
+ "100120": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 5.",
+  "cost": 75,
+  "nodeId": 59,
+  "rank": 1
+ },
+ "100121": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 10.",
+  "cost": 225,
+  "nodeId": 60,
+  "rank": 1
+ },
+ "100122": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 15.",
+  "cost": 750,
+  "nodeId": 61,
+  "rank": 1
+ },
+ "100123": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 25.",
+  "cost": 1250,
+  "nodeId": 62,
+  "rank": 1
+ },
+ "100124": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 35.",
+  "cost": 2000,
+  "nodeId": 63,
+  "rank": 1
+ },
+ "100125": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 50.",
+  "cost": 3250,
+  "nodeId": 64,
+  "rank": 1
+ },
+ "100126": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 60.",
+  "cost": 5000,
+  "nodeId": 65,
+  "rank": 1
+ },
+ "100127": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 75.",
+  "cost": 8500,
+  "nodeId": 66,
+  "rank": 1
+ },
+ "100128": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 100.",
+  "cost": 20000,
+  "nodeId": 67,
+  "rank": 1
+ },
+ "100129": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 150.",
+  "cost": 40000,
+  "nodeId": 68,
+  "rank": 1
+ },
+ "100130": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 150.",
+  "cost": 200000,
+  "nodeId": 458,
+  "rank": 1
+ },
+ "100131": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 150.",
+  "cost": 400000,
+  "nodeId": 459,
+  "rank": 1
+ },
+ "100132": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 150.",
+  "cost": 600000,
+  "nodeId": 678,
+  "rank": 1
+ },
+ "100133": {
+  "name": "Essence of Spirit",
+  "desc": "Increases Spirit by 150.",
+  "cost": 800000,
+  "nodeId": 679,
+  "rank": 1
+ },
+ "110120": {
+  "name": "Essence of Spirit Milestone",
+  "desc": "Increases your Spirit by 5%.",
+  "cost": 60000,
+  "nodeId": 69,
+  "rank": 1
+ },
+ "110121": {
+  "name": "Essence of Spirit Milestone",
+  "desc": "Increases your Spirit by 5%.",
+  "cost": 600000,
+  "nodeId": 460,
+  "rank": 1
+ },
+ "110122": {
+  "name": "Essence of Spirit Milestone",
+  "desc": "Increases your Spirit by 5%.",
+  "cost": 1200000,
+  "nodeId": 711,
+  "rank": 1
+ },
+ "100040": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 5.",
+  "cost": 75,
+  "nodeId": 6,
+  "rank": 1
+ },
+ "100041": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 10.",
+  "cost": 225,
+  "nodeId": 27,
+  "rank": 1
+ },
+ "100042": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 15.",
+  "cost": 750,
+  "nodeId": 28,
+  "rank": 1
+ },
+ "100043": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 20.",
+  "cost": 1250,
+  "nodeId": 29,
+  "rank": 1
+ },
+ "100044": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 25.",
+  "cost": 2000,
+  "nodeId": 30,
+  "rank": 1
+ },
+ "100045": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 30.",
+  "cost": 3250,
+  "nodeId": 31,
+  "rank": 1
+ },
+ "100046": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 40.",
+  "cost": 5000,
+  "nodeId": 32,
+  "rank": 1
+ },
+ "100047": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 60.",
+  "cost": 8500,
+  "nodeId": 33,
+  "rank": 1
+ },
+ "100048": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 80.",
+  "cost": 20000,
+  "nodeId": 34,
+  "rank": 1
+ },
+ "100049": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 120.",
+  "cost": 40000,
+  "nodeId": 35,
+  "rank": 1
+ },
+ "100050": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 120.",
+  "cost": 200000,
+  "nodeId": 442,
+  "rank": 1
+ },
+ "100051": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 120.",
+  "cost": 400000,
+  "nodeId": 443,
+  "rank": 1
+ },
+ "100052": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 120.",
+  "cost": 600000,
+  "nodeId": 661,
+  "rank": 1
+ },
+ "100053": {
+  "name": "Essence of Strength",
+  "desc": "Increases Strength by 120.",
+  "cost": 800000,
+  "nodeId": 662,
+  "rank": 1
+ },
+ "110040": {
+  "name": "Essence of Strength Milestone",
+  "desc": "Increases your Strength by 5%.",
+  "cost": 60000,
+  "nodeId": 36,
+  "rank": 1
+ },
+ "110041": {
+  "name": "Essence of Strength Milestone",
+  "desc": "Increases your Strength by 5%.",
+  "cost": 600000,
+  "nodeId": 444,
+  "rank": 1
+ },
+ "110042": {
+  "name": "Essence of Strength Milestone",
+  "desc": "Increases your Strength by 5%.",
+  "cost": 1200000,
+  "nodeId": 705,
+  "rank": 1
+ },
+ "100260": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 4.",
+  "cost": 115,
+  "nodeId": 79,
+  "rank": 1
+ },
+ "100261": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 8.",
+  "cost": 350,
+  "nodeId": 80,
+  "rank": 1
+ },
+ "100262": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 12.",
+  "cost": 1125,
+  "nodeId": 81,
+  "rank": 1
+ },
+ "100263": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 15.",
+  "cost": 1875,
+  "nodeId": 82,
+  "rank": 1
+ },
+ "100264": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 20.",
+  "cost": 3000,
+  "nodeId": 83,
+  "rank": 1
+ },
+ "100265": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 25.",
+  "cost": 4875,
+  "nodeId": 84,
+  "rank": 1
+ },
+ "100266": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 30.",
+  "cost": 7500,
+  "nodeId": 85,
+  "rank": 1
+ },
+ "100267": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 35.",
+  "cost": 12750,
+  "nodeId": 86,
+  "rank": 1
+ },
+ "100268": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 40.",
+  "cost": 30000,
+  "nodeId": 87,
+  "rank": 1
+ },
+ "100269": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 50.",
+  "cost": 60000,
+  "nodeId": 88,
+  "rank": 1
+ },
+ "100270": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 50.",
+  "cost": 300000,
+  "nodeId": 445,
+  "rank": 1
+ },
+ "100271": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 50.",
+  "cost": 600000,
+  "nodeId": 446,
+  "rank": 1
+ },
+ "100272": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 50.",
+  "cost": 900000,
+  "nodeId": 657,
+  "rank": 1
+ },
+ "100273": {
+  "name": "Essence of Sundering",
+  "desc": "Increases armor penetration rating by 50.",
+  "cost": 1200000,
+  "nodeId": 658,
+  "rank": 1
+ },
+ "110260": {
+  "name": "Essence of Sundering Milestone",
+  "desc": "Increases your armor penetration by 10%.",
+  "cost": 90000,
+  "nodeId": 89,
+  "rank": 1
+ },
+ "110261": {
+  "name": "Essence of Sundering Milestone",
+  "desc": "Increases your armor penetration by 10%.",
+  "cost": 900000,
+  "nodeId": 615,
+  "rank": 1
+ },
+ "110262": {
+  "name": "Essence of Sundering Milestone",
+  "desc": "Increases your armor penetration by 10%.",
+  "cost": 1800000,
+  "nodeId": 659,
+  "rank": 1
+ },
+ "101460": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 100.",
+  "cost": 115,
+  "nodeId": 468,
+  "rank": 1
+ },
+ "101461": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 200.",
+  "cost": 350,
+  "nodeId": 469,
+  "rank": 1
+ },
+ "101462": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 300.",
+  "cost": 1125,
+  "nodeId": 470,
+  "rank": 1
+ },
+ "101463": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 400.",
+  "cost": 1875,
+  "nodeId": 471,
+  "rank": 1
+ },
+ "101464": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 500.",
+  "cost": 3000,
+  "nodeId": 472,
+  "rank": 1
+ },
+ "101465": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 600.",
+  "cost": 4875,
+  "nodeId": 473,
+  "rank": 1
+ },
+ "101466": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 800.",
+  "cost": 7500,
+  "nodeId": 474,
+  "rank": 1
+ },
+ "101467": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 1200.",
+  "cost": 12750,
+  "nodeId": 475,
+  "rank": 1
+ },
+ "101468": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 1600.",
+  "cost": 30000,
+  "nodeId": 476,
+  "rank": 1
+ },
+ "101469": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 2400.",
+  "cost": 60000,
+  "nodeId": 477,
+  "rank": 1
+ },
+ "101470": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 2400.",
+  "cost": 300000,
+  "nodeId": 478,
+  "rank": 1
+ },
+ "101471": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 2400.",
+  "cost": 600000,
+  "nodeId": 479,
+  "rank": 1
+ },
+ "101472": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 2400.",
+  "cost": 900000,
+  "nodeId": 680,
+  "rank": 1
+ },
+ "101473": {
+  "name": "Essence of the Deep",
+  "desc": "Increases your total mana by 2400.",
+  "cost": 1200000,
+  "nodeId": 681,
+  "rank": 1
+ },
+ "111460": {
+  "name": "Essence of the Deep Milestone",
+  "desc": "Increases your mana by 5%.",
+  "cost": 90000,
+  "nodeId": 612,
+  "rank": 1
+ },
+ "111461": {
+  "name": "Essence of the Deep Milestone",
+  "desc": "Increases your mana by 5%.",
+  "cost": 900000,
+  "nodeId": 613,
+  "rank": 1
+ },
+ "111462": {
+  "name": "Essence of the Deep Milestone",
+  "desc": "Increases your mana by 5%.",
+  "cost": 1800000,
+  "nodeId": 710,
+  "rank": 1
+ },
+ "100320": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 500,
+  "nodeId": 404,
+  "rank": 1
+ },
+ "100321": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 2500,
+  "nodeId": 229,
+  "rank": 1
+ },
+ "100322": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 5000,
+  "nodeId": 383,
+  "rank": 1
+ },
+ "100323": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 10000,
+  "nodeId": 384,
+  "rank": 1
+ },
+ "100324": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 25000,
+  "nodeId": 232,
+  "rank": 1
+ },
+ "100325": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 250000,
+  "nodeId": 499,
+  "rank": 1
+ },
+ "100326": {
+  "name": "Esteemed Presence",
+  "desc": "Increases reputation gains by 5%.",
+  "cost": 300000,
+  "nodeId": 721,
+  "rank": 1
+ },
+ "101320": {
+  "name": "Executioner’s Oath (Rank 1)",
+  "desc": "You deal 5% increased damage to enemies below 35% health.",
+  "cost": 100000,
+  "nodeId": 422,
+  "rank": 1
+ },
+ "101321": {
+  "name": "Executioner’s Oath (Rank 2)",
+  "desc": "You deal 10% increased damage to enemies below 35% health.\\r\\n\\r\\nReplace Executioner’s Oath (Rank 1).",
+  "cost": 150000,
+  "nodeId": 422,
+  "rank": 2
+ },
+ "101322": {
+  "name": "Executioner’s Oath (Rank 3)",
+  "desc": "You deal 15% increased damage to enemies below 35% health.\\r\\n\\r\\nReplace Executioner’s Oath (Rank 2).",
+  "cost": 250000,
+  "nodeId": 422,
+  "rank": 3
+ },
+ "101323": {
+  "name": "Executioner’s Oath (Rank 4)",
+  "desc": "You deal 20% increased damage to enemies below 35% health.\\r\\n\\r\\nReplace Executioner’s Oath (Rank 3).",
+  "cost": 500000,
+  "nodeId": 422,
+  "rank": 4
+ },
+ "101324": {
+  "name": "Executioner’s Oath (Rank 5)",
+  "desc": "You deal 25% increased damage to enemies below 35% health.\\r\\n\\r\\nReplace Executioner’s Oath (Rank 4).",
+  "cost": 5000000,
+  "nodeId": 716,
+  "rank": 1
+ },
+ "111320": {
+  "name": "Executioner’s Oath Milestone",
+  "desc": "Enemies you kill explode, dealing 17 Shadow damage around them. This effect cannot occur more than once every 0.3 sec.",
+  "cost": 750000,
+  "nodeId": 423,
+  "rank": 1
+ },
+ "34090": {
+  "name": "Expert Riding",
+  "desc": "You can now ride all flying mounts at 150% speed.",
+  "cost": 5000,
+  "nodeId": 417,
+  "rank": 1
+ },
+ "100960": {
+  "name": "Featherfoot",
+  "desc": "Reduces fall damage taken by 50%",
+  "cost": 1500,
+  "nodeId": 355,
+  "rank": 1
+ },
+ "100760": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 5.",
+  "cost": 500,
+  "nodeId": 233,
+  "rank": 1
+ },
+ "100761": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 10.",
+  "cost": 1000,
+  "nodeId": 234,
+  "rank": 1
+ },
+ "100762": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 15.",
+  "cost": 2500,
+  "nodeId": 235,
+  "rank": 1
+ },
+ "100763": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 20.",
+  "cost": 5000,
+  "nodeId": 236,
+  "rank": 1
+ },
+ "100764": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 25.",
+  "cost": 10000,
+  "nodeId": 237,
+  "rank": 1
+ },
+ "100765": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 25.",
+  "cost": 100000,
+  "nodeId": 507,
+  "rank": 1
+ },
+ "100766": {
+  "name": "Flame Resilience",
+  "desc": "Increases Fire Resistance by 25.",
+  "cost": 200000,
+  "nodeId": 840,
+  "rank": 1
+ },
+ "110760": {
+  "name": "Flame Resilience Milestone",
+  "desc": "Reduces Fire damage taken by 5%.",
+  "cost": 200000,
+  "nodeId": 238,
+  "rank": 1
+ },
+ "101030": {
+  "name": "Flowing Defense (Rank 1)",
+  "desc": "While moving, damage taken is reduced by 5%.",
+  "cost": 5000,
+  "nodeId": 394,
+  "rank": 1
+ },
+ "101031": {
+  "name": "Flowing Defense (Rank 2)",
+  "desc": "While moving, damage taken is reduced by 8%.\\r\\n\\r\\nReplace Flowing Defense (Rank 1).\\r\\n\\r\\n",
+  "cost": 10000,
+  "nodeId": 394,
+  "rank": 2
+ },
+ "101032": {
+  "name": "Flowing Defense (Rank 3)",
+  "desc": "While moving, damage taken is reduced by 12%.\\r\\n\\r\\nReplace Flowing Defense (Rank 2).\\r\\n\\r\\n",
+  "cost": 15000,
+  "nodeId": 394,
+  "rank": 3
+ },
+ "101033": {
+  "name": "Flowing Defense (Rank 4)",
+  "desc": "While moving, damage taken is reduced by 16%.\\r\\n\\r\\nReplace Flowing Defense (Rank 3).\\r\\n\\r\\n",
+  "cost": 150000,
+  "nodeId": 394,
+  "rank": 4
+ },
+ "101034": {
+  "name": "Flowing Defense (Rank 5)",
+  "desc": "While moving, damage taken is reduced by 20%.\\r\\n\\r\\nReplace Flowing Defense (Rank 4).\\r\\n\\r\\n",
+  "cost": 300000,
+  "nodeId": 846,
+  "rank": 1
+ },
+ "111030": {
+  "name": "Flowing Defense Milestone",
+  "desc": "Increases your movement speed by an additional 5%.",
+  "cost": 300000,
+  "nodeId": 334,
+  "rank": 1
+ },
+ "101180": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 10000,
+  "nodeId": 357,
+  "rank": 1
+ },
+ "101181": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 12500,
+  "nodeId": 358,
+  "rank": 1
+ },
+ "101182": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 15000,
+  "nodeId": 359,
+  "rank": 1
+ },
+ "101183": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 20000,
+  "nodeId": 360,
+  "rank": 1
+ },
+ "101184": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 25000,
+  "nodeId": 586,
+  "rank": 1
+ },
+ "101185": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 250000,
+  "nodeId": 513,
+  "rank": 1
+ },
+ "101186": {
+  "name": "Forager's Efficiency",
+  "desc": "Reduces gathering time by 10%.",
+  "cost": 500000,
+  "nodeId": 759,
+  "rank": 1
+ },
+ "100820": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 5.",
+  "cost": 500,
+  "nodeId": 251,
+  "rank": 1
+ },
+ "100821": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 10.",
+  "cost": 1000,
+  "nodeId": 252,
+  "rank": 1
+ },
+ "100822": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 15.",
+  "cost": 2500,
+  "nodeId": 253,
+  "rank": 1
+ },
+ "100823": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 20.",
+  "cost": 5000,
+  "nodeId": 254,
+  "rank": 1
+ },
+ "100824": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 25.",
+  "cost": 10000,
+  "nodeId": 255,
+  "rank": 1
+ },
+ "100825": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 25.",
+  "cost": 100000,
+  "nodeId": 510,
+  "rank": 1
+ },
+ "100826": {
+  "name": "Frost Resilience",
+  "desc": "Increases Frost Resistance by 25.",
+  "cost": 200000,
+  "nodeId": 843,
+  "rank": 1
+ },
+ "110820": {
+  "name": "Frost Resilience Milestone",
+  "desc": "Reduces Frost damage taken by 5%.",
+  "cost": 200000,
+  "nodeId": 256,
+  "rank": 1
+ },
+ "100640": {
+  "name": "Gift of the Depths",
+  "desc": "Increases your swimming speed by an additional 50%.",
+  "cost": 500,
+  "nodeId": 406,
+  "rank": 1
+ },
+ "100641": {
+  "name": "Gift of the Depths",
+  "desc": "Increases your swimming speed by an additional 50%.",
+  "cost": 1000,
+  "nodeId": 385,
+  "rank": 1
+ },
+ "100642": {
+  "name": "Gift of the Depths",
+  "desc": "Increases your swimming speed by an additional 100%.",
+  "cost": 5000,
+  "nodeId": 216,
+  "rank": 1
+ },
+ "110640": {
+  "name": "Gift of the Depths Milestone",
+  "desc": "You can breathe underwater indefinitely.",
+  "cost": 10000,
+  "nodeId": 217,
+  "rank": 1
+ },
+ "101160": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 10000,
+  "nodeId": 362,
+  "rank": 1
+ },
+ "101161": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 12500,
+  "nodeId": 363,
+  "rank": 1
+ },
+ "101162": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 15000,
+  "nodeId": 364,
+  "rank": 1
+ },
+ "101163": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 20000,
+  "nodeId": 365,
+  "rank": 1
+ },
+ "101164": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 25000,
+  "nodeId": 366,
+  "rank": 1
+ },
+ "101165": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 250000,
+  "nodeId": 512,
+  "rank": 1
+ },
+ "101166": {
+  "name": "Hard Worker",
+  "desc": "Reduces crafting time by 10%.",
+  "cost": 500000,
+  "nodeId": 758,
+  "rank": 1
+ },
+ "101600": {
+  "name": "Harvest Rush (Rank 1)",
+  "desc": "Gathering from a node increases your movement speed by 5% for 10 sec.",
+  "cost": 20000,
+  "nodeId": 629,
+  "rank": 1
+ },
+ "101601": {
+  "name": "Harvest Rush (Rank 2)",
+  "desc": "Gathering from a node increases your movement speed by 10% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 1).",
+  "cost": 30000,
+  "nodeId": 629,
+  "rank": 2
+ },
+ "101602": {
+  "name": "Harvest Rush (Rank 3)",
+  "desc": "Gathering from a node increases your movement speed by 15% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 2).",
+  "cost": 50000,
+  "nodeId": 629,
+  "rank": 3
+ },
+ "101603": {
+  "name": "Harvest Rush (Rank 4)",
+  "desc": "Gathering from a node increases your movement speed by 20% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 3).",
+  "cost": 100000,
+  "nodeId": 629,
+  "rank": 4
+ },
+ "101604": {
+  "name": "Harvest Rush (Rank 5)",
+  "desc": "Gathering from a node increases your movement speed by 25% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 4).",
+  "cost": 250000,
+  "nodeId": 629,
+  "rank": 5
+ },
+ "101605": {
+  "name": "Harvest Rush (Rank 6)",
+  "desc": "Gathering from a node increases your movement speed by 30% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 5).",
+  "cost": 500000,
+  "nodeId": 629,
+  "rank": 6
+ },
+ "101606": {
+  "name": "Harvest Rush (Rank 7)",
+  "desc": "Gathering from a node increases your movement speed by 35% for 10 sec.\\r\\n\\r\\nReplace Harvest Rush (Rank 6).",
+  "cost": 5000000,
+  "nodeId": 629,
+  "rank": 7
+ },
+ "101690": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 3000,
+  "nodeId": 593,
+  "rank": 1
+ },
+ "101691": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 6000,
+  "nodeId": 594,
+  "rank": 1
+ },
+ "101692": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 10000,
+  "nodeId": 595,
+  "rank": 1
+ },
+ "101693": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 15000,
+  "nodeId": 596,
+  "rank": 1
+ },
+ "101694": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 30000,
+  "nodeId": 597,
+  "rank": 1
+ },
+ "101695": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 300000,
+  "nodeId": 598,
+  "rank": 1
+ },
+ "101696": {
+  "name": "Hearty Provisions",
+  "desc": "Increases the duration of food buffs by 10%.",
+  "cost": 500000,
+  "nodeId": 775,
+  "rank": 1
+ },
+ "101560": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 15000,
+  "nodeId": 548,
+  "rank": 1
+ },
+ "101561": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 20000,
+  "nodeId": 549,
+  "rank": 1
+ },
+ "101562": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 30000,
+  "nodeId": 550,
+  "rank": 1
+ },
+ "101563": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 50000,
+  "nodeId": 551,
+  "rank": 1
+ },
+ "101564": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 100000,
+  "nodeId": 552,
+  "rank": 1
+ },
+ "101565": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 200000,
+  "nodeId": 553,
+  "rank": 1
+ },
+ "101566": {
+  "name": "Herbalist’s Bounty",
+  "desc": "Increases the amount of materials gained from Herbalism by 10%.",
+  "cost": 300000,
+  "nodeId": 761,
+  "rank": 1
+ },
+ "100400": {
+  "name": "Hunter’s Insight",
+  "desc": "Increases experience gained from gathering and killing monsters by an additional 40%.",
+  "cost": 8000,
+  "nodeId": 194,
+  "rank": 1
+ },
+ "100401": {
+  "name": "Hunter’s Insight",
+  "desc": "Increases experience gained from gathering and killing monsters by an additional 40%.",
+  "cost": 12000,
+  "nodeId": 195,
+  "rank": 1
+ },
+ "100402": {
+  "name": "Hunter’s Insight",
+  "desc": "Increases experience gained from gathering and killing monsters by an additional 40%.",
+  "cost": 18000,
+  "nodeId": 196,
+  "rank": 1
+ },
+ "100403": {
+  "name": "Hunter’s Insight",
+  "desc": "Increases experience gained from gathering and killing monsters by an additional 40%.",
+  "cost": 25000,
+  "nodeId": 197,
+  "rank": 1
+ },
+ "100404": {
+  "name": "Hunter’s Insight",
+  "desc": "Increases experience gained from gathering and killing monsters by an additional 40%.",
+  "cost": 40000,
+  "nodeId": 198,
+  "rank": 1
+ },
+ "110400": {
+  "name": "Hunter’s Insight Milestone",
+  "desc": "Increases experience gained by an additional 100%.",
+  "cost": 80000,
+  "nodeId": 199,
+  "rank": 1
+ },
+ "101750": {
+  "name": "Intensify",
+  "desc": "Channeled\\nChannel to increase Intensity every 1 second but dealing 5% damage every second",
+  "cost": 25000,
+  "nodeId": 640,
+  "rank": 1
+ },
+ "101440": {
+  "name": "Into the Fray (Rank 1)",
+  "desc": "While you have 3 or more enemies within 8 yds of you, you generate 10% increased threat and deal 2% increased damage.",
+  "cost": 100000,
+  "nodeId": 437,
+  "rank": 1
+ },
+ "101441": {
+  "name": "Into the Fray (Rank 2)",
+  "desc": "While you have 3 or more enemies within 8 yds of you, you generate 20% increased threat and deal 4% increased damage.\\r\\n\\r\\nReplace Into the Fray (Rank 1).",
+  "cost": 150000,
+  "nodeId": 437,
+  "rank": 2
+ },
+ "101442": {
+  "name": "Into the Fray (Rank 3)",
+  "desc": "While you have 3 or more enemies within 8 yds of you, you generate 30% increased threat and deal 6% increased damage.\\r\\n\\r\\nReplace Into the Fray (Rank 2).",
+  "cost": 250000,
+  "nodeId": 437,
+  "rank": 3
+ },
+ "101443": {
+  "name": "Into the Fray (Rank 4)",
+  "desc": "While you have 3 or more enemies within 8 yds of you, you generate 40% increased threat and deal 8% increased damage.\\r\\n\\r\\nReplace Into the Fray (Rank 3).",
+  "cost": 500000,
+  "nodeId": 437,
+  "rank": 4
+ },
+ "101444": {
+  "name": "Into the Fray (Rank 5)",
+  "desc": "While you have 3 or more enemies within 8 yds of you, you generate 50% increased threat and deal 10% increased damage.\\r\\n\\r\\nReplace Into the Fray (Rank 4).",
+  "cost": 750000,
+  "nodeId": 865,
+  "rank": 1
+ },
+ "111440": {
+  "name": "Into the Fray Milestone",
+  "desc": "Increases threat generated by 50%.",
+  "cost": 750000,
+  "nodeId": 438,
+  "rank": 1
+ },
+ "101640": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 50000,
+  "nodeId": 619,
+  "rank": 1
+ },
+ "101641": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 100000,
+  "nodeId": 620,
+  "rank": 1
+ },
+ "101642": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 200000,
+  "nodeId": 621,
+  "rank": 1
+ },
+ "101643": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 300000,
+  "nodeId": 622,
+  "rank": 1
+ },
+ "101644": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 400000,
+  "nodeId": 623,
+  "rank": 1
+ },
+ "101645": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 500000,
+  "nodeId": 624,
+  "rank": 1
+ },
+ "101646": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 750000,
+  "nodeId": 625,
+  "rank": 1
+ },
+ "101647": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 1000000,
+  "nodeId": 626,
+  "rank": 1
+ },
+ "101648": {
+  "name": "Jack of All Trades",
+  "desc": "Increases the maximum amount of profession you can learn simultaneously by 1.",
+  "cost": 1500000,
+  "nodeId": 627,
+  "rank": 1
+ },
+ "33391": {
+  "name": "Journeyman Riding",
+  "desc": "You can now ride ground mounts at 100% speed.",
+  "cost": 1500,
+  "nodeId": 416,
+  "rank": 1
+ },
+ "101830": {
+  "name": "Last Resort",
+  "desc": "1 sec cast\\nPlaces a protective ward on you for 2 hrs. If damage would kill you while the ward is active, you become immune to all damage and harmful effects, and are teleported to your home location after 5 sec.\\r\\n\\r\\nDoes not protect from instant death mechanics.",
+  "cost": 1000000,
+  "nodeId": 654,
+  "rank": 1
+ },
+ "100980": {
+  "name": "Life Surplus (Rank 1)",
+  "desc": "Overhealing shields you for 5% of the overhealing done by direct healing spells, up to 20% of your maximum health.",
+  "cost": 5000,
+  "nodeId": 392,
+  "rank": 1
+ },
+ "100981": {
+  "name": "Life Surplus (Rank 2)",
+  "desc": "Overhealing shields you for 10% of the overhealing done by direct healing spells, up to 20% of your maximum health.\\r\\n\\r\\nReplace Life Surplus (Rank 1).",
+  "cost": 10000,
+  "nodeId": 392,
+  "rank": 2
+ },
+ "100982": {
+  "name": "Life Surplus (Rank 3)",
+  "desc": "Overhealing shields you for 15% of the overhealing done by direct healing spells, up to 20% of your maximum health.\\r\\n\\r\\nReplace Life Surplus (Rank 2).",
+  "cost": 15000,
+  "nodeId": 392,
+  "rank": 3
+ },
+ "100983": {
+  "name": "Life Surplus (Rank 4)",
+  "desc": "Overhealing shields you for 20% of the overhealing done by direct healing spells, up to 20% of your maximum health.\\r\\n\\r\\nReplace Life Surplus (Rank 3).",
+  "cost": 150000,
+  "nodeId": 392,
+  "rank": 4
+ },
+ "100984": {
+  "name": "Life Surplus (Rank 5)",
+  "desc": "Overhealing shields you for 25% of the overhealing done by direct healing spells, up to 20% of your maximum health.\\r\\n\\r\\nReplace Life Surplus (Rank 4).",
+  "cost": 300000,
+  "nodeId": 821,
+  "rank": 1
+ },
+ "110980": {
+  "name": "Life Surplus Milestone",
+  "desc": "Increases healing received by 5%.",
+  "cost": 300000,
+  "nodeId": 314,
+  "rank": 1
+ },
+ "101400": {
+  "name": "Lifebond (Rank 1)",
+  "desc": "5% of all healing you deal to allies also heals you.",
+  "cost": 100000,
+  "nodeId": 433,
+  "rank": 1
+ },
+ "101401": {
+  "name": "Lifebond (Rank 2)",
+  "desc": "10% of all healing you deal to allies also heals you.\\r\\n\\r\\nReplace Lifebond (Rank 1).",
+  "cost": 150000,
+  "nodeId": 433,
+  "rank": 2
+ },
+ "101402": {
+  "name": "Lifebond (Rank 3)",
+  "desc": "15% of all healing you deal to allies also heals you.\\r\\n\\r\\nReplace Lifebond (Rank 2).",
+  "cost": 250000,
+  "nodeId": 433,
+  "rank": 3
+ },
+ "101403": {
+  "name": "Lifebond (Rank 4)",
+  "desc": "20% of all healing you deal to allies also heals you.\\r\\n\\r\\nReplace Lifebond (Rank 3).",
+  "cost": 500000,
+  "nodeId": 433,
+  "rank": 4
+ },
+ "101404": {
+  "name": "Lifebond (Rank 5)",
+  "desc": "25% of all healing you deal to allies also heals you.\\r\\n\\r\\nReplace Lifebond (Rank 4).",
+  "cost": 750000,
+  "nodeId": 774,
+  "rank": 1
+ },
+ "111400": {
+  "name": "Lifebond Milestone",
+  "desc": "Increases Healing done by 3%.",
+  "cost": 750000,
+  "nodeId": 434,
+  "rank": 1
+ },
+ "101790": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 25000,
+  "nodeId": 642,
+  "rank": 1
+ },
+ "101791": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 25000,
+  "nodeId": 653,
+  "rank": 1
+ },
+ "101792": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 25000,
+  "nodeId": 652,
+  "rank": 1
+ },
+ "101793": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 25000,
+  "nodeId": 651,
+  "rank": 1
+ },
+ "101794": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 25000,
+  "nodeId": 650,
+  "rank": 1
+ },
+ "101795": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 250000,
+  "nodeId": 649,
+  "rank": 1
+ },
+ "101796": {
+  "name": "Light on Your Feet",
+  "desc": "Reduces the cooldown of Quickstep by 1 sec.",
+  "cost": 500000,
+  "nodeId": 724,
+  "rank": 1
+ },
+ "100340": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 50000,
+  "nodeId": 181,
+  "rank": 1
+ },
+ "100341": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 50000,
+  "nodeId": 182,
+  "rank": 1
+ },
+ "100342": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 50000,
+  "nodeId": 183,
+  "rank": 1
+ },
+ "100343": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 50000,
+  "nodeId": 184,
+  "rank": 1
+ },
+ "100344": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 50000,
+  "nodeId": 185,
+  "rank": 1
+ },
+ "100345": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 500000,
+  "nodeId": 498,
+  "rank": 1
+ },
+ "100346": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 500000,
+  "nodeId": 764,
+  "rank": 1
+ },
+ "100347": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 750000,
+  "nodeId": 807,
+  "rank": 1
+ },
+ "100348": {
+  "name": "Lucky Draw",
+  "desc": "Increases your chance to be offered higher-quality Echoes when you level up by 10%.",
+  "cost": 750000,
+  "nodeId": 808,
+  "rank": 1
+ },
+ "100720": {
+  "name": "Magic Resilience",
+  "desc": "Reduces magical damage taken by 1%.",
+  "cost": 2500,
+  "nodeId": 259,
+  "rank": 1
+ },
+ "100721": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 1%.",
+  "cost": 5000,
+  "nodeId": 270,
+  "rank": 1
+ },
+ "100722": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 1%.",
+  "cost": 12500,
+  "nodeId": 261,
+  "rank": 1
+ },
+ "100723": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 1%.",
+  "cost": 25000,
+  "nodeId": 262,
+  "rank": 1
+ },
+ "100724": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 2%.",
+  "cost": 50000,
+  "nodeId": 263,
+  "rank": 1
+ },
+ "100725": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 2%.",
+  "cost": 500000,
+  "nodeId": 506,
+  "rank": 1
+ },
+ "100726": {
+  "name": "Magic Resilience",
+  "desc": "Reduces Magical damage taken by 2%.",
+  "cost": 750000,
+  "nodeId": 839,
+  "rank": 1
+ },
+ "101540": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 15000,
+  "nodeId": 542,
+  "rank": 1
+ },
+ "101541": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 20000,
+  "nodeId": 543,
+  "rank": 1
+ },
+ "101542": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 30000,
+  "nodeId": 544,
+  "rank": 1
+ },
+ "101543": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 50000,
+  "nodeId": 545,
+  "rank": 1
+ },
+ "101545": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 200000,
+  "nodeId": 547,
+  "rank": 1
+ },
+ "101546": {
+  "name": "Miner's Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 300000,
+  "nodeId": 760,
+  "rank": 1
+ },
+ "101544": {
+  "name": "Miner’s Fortune",
+  "desc": "Increases the amount of materials gained from Mining by 10%.",
+  "cost": 100000,
+  "nodeId": 546,
+  "rank": 1
+ },
+ "101520": {
+  "name": "Mounted Momentum",
+  "desc": "Increases mount speed by 1% for every 2% increased movement speed you have.",
+  "cost": 200000,
+  "nodeId": 560,
+  "rank": 1
+ },
+ "100780": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 5.",
+  "cost": 500,
+  "nodeId": 239,
+  "rank": 1
+ },
+ "100781": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 10.",
+  "cost": 1000,
+  "nodeId": 240,
+  "rank": 1
+ },
+ "100782": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 15.",
+  "cost": 2500,
+  "nodeId": 241,
+  "rank": 1
+ },
+ "100783": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 20.",
+  "cost": 5000,
+  "nodeId": 242,
+  "rank": 1
+ },
+ "100784": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 25.",
+  "cost": 10000,
+  "nodeId": 243,
+  "rank": 1
+ },
+ "100785": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 25.",
+  "cost": 100000,
+  "nodeId": 508,
+  "rank": 1
+ },
+ "100786": {
+  "name": "Nature Resilience",
+  "desc": "Increases Nature Resistance by 25.",
+  "cost": 200000,
+  "nodeId": 841,
+  "rank": 1
+ },
+ "110780": {
+  "name": "Nature Resilience Milestone",
+  "desc": "Reduces Nature damage taken by 5%.",
+  "cost": 200000,
+  "nodeId": 245,
+  "rank": 1
+ },
+ "101810": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 35000,
+  "nodeId": 643,
+  "rank": 1
+ },
+ "101811": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 35000,
+  "nodeId": 644,
+  "rank": 1
+ },
+ "101812": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 35000,
+  "nodeId": 645,
+  "rank": 1
+ },
+ "101813": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 35000,
+  "nodeId": 646,
+  "rank": 1
+ },
+ "101814": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 35000,
+  "nodeId": 647,
+  "rank": 1
+ },
+ "101815": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 350000,
+  "nodeId": 648,
+  "rank": 1
+ },
+ "101816": {
+  "name": "Prepared Escape",
+  "desc": "Reduces the cooldown of Emergency Exit by 2 min.",
+  "cost": 750000,
+  "nodeId": 725,
+  "rank": 1
+ },
+ "100140": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 1%.",
+  "cost": 1000,
+  "nodeId": 2,
+  "rank": 1
+ },
+ "100141": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 1%.",
+  "cost": 10000,
+  "nodeId": 70,
+  "rank": 1
+ },
+ "100142": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 1%.",
+  "cost": 25000,
+  "nodeId": 71,
+  "rank": 1
+ },
+ "100143": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 1%.",
+  "cost": 50000,
+  "nodeId": 72,
+  "rank": 1
+ },
+ "100144": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 2%.",
+  "cost": 75000,
+  "nodeId": 73,
+  "rank": 1
+ },
+ "100145": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 2%.",
+  "cost": 375000,
+  "nodeId": 462,
+  "rank": 1
+ },
+ "100146": {
+  "name": "Prime Valor",
+  "desc": "Increases damage and healing done by 2%.",
+  "cost": 500000,
+  "nodeId": 665,
+  "rank": 1
+ },
+ "100740": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 1%.",
+  "cost": 300,
+  "nodeId": 297,
+  "rank": 1
+ },
+ "100741": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 1%.",
+  "cost": 1750,
+  "nodeId": 298,
+  "rank": 1
+ },
+ "100742": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 1%.",
+  "cost": 4000,
+  "nodeId": 299,
+  "rank": 1
+ },
+ "100743": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 1%.",
+  "cost": 10000,
+  "nodeId": 300,
+  "rank": 1
+ },
+ "100744": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 2%.",
+  "cost": 50000,
+  "nodeId": 301,
+  "rank": 1
+ },
+ "100745": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 2%.",
+  "cost": 500000,
+  "nodeId": 505,
+  "rank": 1
+ },
+ "100746": {
+  "name": "Projectile Resilience",
+  "desc": "Reduces Ranged damage taken by 2%.",
+  "cost": 750000,
+  "nodeId": 847,
+  "rank": 1
+ },
+ "101230": {
+  "name": "Rapid Transit",
+  "desc": "The cast time for the Travel System on the World Map is now significantly faster.",
+  "cost": 1000,
+  "nodeId": 405,
+  "rank": 1
+ },
+ "101070": {
+  "name": "Refused Requiem",
+  "desc": "Increases the number of times you can accept resurrection by 1. \\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot accept resurrection, instead all damage taken is reduced by 5%.|r",
+  "cost": 25000,
+  "nodeId": 340,
+  "rank": 1
+ },
+ "101071": {
+  "name": "Refused Requiem",
+  "desc": "Increases the number of times you can accept resurrection by 1. \\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot accept resurrection, instead all damage taken is reduced by 5%.|r",
+  "cost": 25000,
+  "nodeId": 341,
+  "rank": 1
+ },
+ "101072": {
+  "name": "Refused Requiem",
+  "desc": "Increases the number of times you can accept resurrection by 1. \\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot accept resurrection, instead all damage taken is reduced by 5%.|r",
+  "cost": 250000,
+  "nodeId": 628,
+  "rank": 1
+ },
+ "101073": {
+  "name": "Refused Requiem",
+  "desc": "Increases the number of times you can accept resurrection by 1. \\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot accept resurrection, instead all damage taken is reduced by 5%.|r",
+  "cost": 500000,
+  "nodeId": 848,
+  "rank": 1
+ },
+ "100600": {
+  "name": "Relentless Pursuit",
+  "desc": "Whenever you kill an enemy that grants experience or honor, your movement speed is increased by an additional 10% for 5 sec.",
+  "cost": 2500,
+  "nodeId": 380,
+  "rank": 1
+ },
+ "100601": {
+  "name": "Relentless Pursuit",
+  "desc": "Whenever you kill an enemy that grants experience or honor, your movement speed is increased by an additional 20% for 5 sec.",
+  "cost": 5000,
+  "nodeId": 380,
+  "rank": 2
+ },
+ "100602": {
+  "name": "Relentless Pursuit",
+  "desc": "Whenever you kill an enemy that grants experience or honor, your movement speed is increased by an additional 30% for 5 sec.",
+  "cost": 10000,
+  "nodeId": 380,
+  "rank": 3
+ },
+ "101110": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 7500,
+  "nodeId": 342,
+  "rank": 1
+ },
+ "101111": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 12500,
+  "nodeId": 343,
+  "rank": 1
+ },
+ "101112": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 20000,
+  "nodeId": 344,
+  "rank": 1
+ },
+ "101113": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 25000,
+  "nodeId": 345,
+  "rank": 1
+ },
+ "101114": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 30000,
+  "nodeId": 346,
+  "rank": 1
+ },
+ "101115": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 300000,
+  "nodeId": 530,
+  "rank": 1
+ },
+ "101116": {
+  "name": "Reserve of Life",
+  "desc": "Allows you to trigger Cheat Death effects 1 additional times. Charges refresh on reset.",
+  "cost": 600000,
+  "nodeId": 849,
+  "rank": 1
+ },
+ "100660": {
+  "name": "Rest and Recover",
+  "desc": "After standing still for 3 sec while out of combat, you restore 3% mana every second.",
+  "cost": 500,
+  "nodeId": 399,
+  "rank": 1
+ },
+ "100661": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 1000,
+  "nodeId": 400,
+  "rank": 1
+ },
+ "100662": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 2000,
+  "nodeId": 401,
+  "rank": 1
+ },
+ "100663": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 5000,
+  "nodeId": 402,
+  "rank": 1
+ },
+ "100664": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 10000,
+  "nodeId": 403,
+  "rank": 1
+ },
+ "100665": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 100000,
+  "nodeId": 500,
+  "rank": 1
+ },
+ "100666": {
+  "name": "Rest and Recover",
+  "desc": "Rest and Recover restores an additional 3% mana each second.",
+  "cost": 150000,
+  "nodeId": 719,
+  "rank": 1
+ },
+ "110660": {
+  "name": "Rest and Recover Milestone",
+  "desc": "Increases your maximum mana by 10%.",
+  "cost": 150000,
+  "nodeId": 226,
+  "rank": 1
+ },
+ "100420": {
+  "name": "Restless Stride",
+  "desc": "Every 3 sec while out of combat and not mounted, your movement speed is increased by an additional 5%. Stacks up to 3 times.",
+  "cost": 1500,
+  "nodeId": 379,
+  "rank": 1
+ },
+ "100421": {
+  "name": "Restless Stride",
+  "desc": "Every 3 sec while out of combat and not mounted, your movement speed is increased by an additional 10%. Stacks up to 3 times.",
+  "cost": 3000,
+  "nodeId": 379,
+  "rank": 2
+ },
+ "100422": {
+  "name": "Restless Stride",
+  "desc": "Every 3 sec while out of combat and not mounted, your movement speed is increased by an additional 20%. Stacks up to 3 times.",
+  "cost": 5000,
+  "nodeId": 379,
+  "rank": 3
+ },
+ "110420": {
+  "name": "Restless Stride Milestone",
+  "desc": "Movement Speed increased by 10%.",
+  "cost": 10000,
+  "nodeId": 203,
+  "rank": 1
+ },
+ "100280": {
+  "name": "Rising Carnage",
+  "desc": "Whenever you kill an enemy that grants experience or honor, your damage is increased by 1% for 10 sec. Stacks up to 5 times.",
+  "cost": 50,
+  "nodeId": 90,
+  "rank": 1
+ },
+ "101360": {
+  "name": "Seasoned Adventurer",
+  "desc": "Increases experience gained from quests by an additional 20%.",
+  "cost": 5000,
+  "nodeId": 426,
+  "rank": 1
+ },
+ "101361": {
+  "name": "Seasoned Adventurer",
+  "desc": "Increases experience gained from quests by an additional 20%.",
+  "cost": 8000,
+  "nodeId": 427,
+  "rank": 1
+ },
+ "101362": {
+  "name": "Seasoned Adventurer",
+  "desc": "Increases experience gained from quests by an additional 20%.",
+  "cost": 12000,
+  "nodeId": 428,
+  "rank": 1
+ },
+ "101363": {
+  "name": "Seasoned Adventurer",
+  "desc": "Increases experience gained from quests by an additional 20%.",
+  "cost": 18000,
+  "nodeId": 429,
+  "rank": 1
+ },
+ "101364": {
+  "name": "Seasoned Adventurer",
+  "desc": "Increases experience gained from quests by an additional 20%.",
+  "cost": 25000,
+  "nodeId": 430,
+  "rank": 1
+ },
+ "100920": {
+  "name": "Second Wind",
+  "desc": "While out of combat, you restore 3% of your maximum health every 3 seconds.",
+  "cost": 1500,
+  "nodeId": 391,
+  "rank": 1
+ },
+ "100921": {
+  "name": "Second Wind",
+  "desc": "While out of combat, you restore 6% of your maximum health every 3 seconds.",
+  "cost": 3000,
+  "nodeId": 391,
+  "rank": 2
+ },
+ "100922": {
+  "name": "Second Wind",
+  "desc": "While out of combat, you restore 9% of your maximum health every 3 seconds.",
+  "cost": 5000,
+  "nodeId": 391,
+  "rank": 3
+ },
+ "110920": {
+  "name": "Second Wind Milestone",
+  "desc": "Increases your maximum health by 5%.",
+  "cost": 10000,
+  "nodeId": 307,
+  "rank": 1
+ },
+ "100800": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 5.",
+  "cost": 500,
+  "nodeId": 244,
+  "rank": 1
+ },
+ "100801": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 10.",
+  "cost": 1000,
+  "nodeId": 246,
+  "rank": 1
+ },
+ "100802": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 15.",
+  "cost": 2500,
+  "nodeId": 247,
+  "rank": 1
+ },
+ "100803": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 20.",
+  "cost": 5000,
+  "nodeId": 248,
+  "rank": 1
+ },
+ "100804": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 25.",
+  "cost": 10000,
+  "nodeId": 249,
+  "rank": 1
+ },
+ "100805": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 25.",
+  "cost": 100000,
+  "nodeId": 509,
+  "rank": 1
+ },
+ "100806": {
+  "name": "Shadow Resilience",
+  "desc": "Increases Shadow Resistance by 25.",
+  "cost": 200000,
+  "nodeId": 842,
+  "rank": 1
+ },
+ "110800": {
+  "name": "Shadow Resilience Milestone",
+  "desc": "Reduces Shadow damage taken by 5%.",
+  "cost": 200000,
+  "nodeId": 250,
+  "rank": 1
+ },
+ "101050": {
+  "name": "Splashguard",
+  "desc": "Reduces Area-of-Effect damage taken by 5%.",
+  "cost": 1000,
+  "nodeId": 328,
+  "rank": 1
+ },
+ "101051": {
+  "name": "Splashguard",
+  "desc": "Reduces Area-of-Effect damage taken by 5%.",
+  "cost": 2500,
+  "nodeId": 329,
+  "rank": 1
+ },
+ "101052": {
+  "name": "Splashguard",
+  "desc": "Reduces Area-of-Effect damage taken by 10%.",
+  "cost": 7500,
+  "nodeId": 330,
+  "rank": 1
+ },
+ "101760": {
+  "name": "Stabilize",
+  "desc": "Channeled\\nChannel to reduce Intensity every 1 second but dealing 1% damage every second",
+  "cost": 25000,
+  "nodeId": 641,
+  "rank": 1
+ },
+ "100460": {
+  "name": "Tailwind Reins",
+  "desc": "Every 3 sec while out of combat and mounted, your mount speed is increased by an additional 5%. Stacks up to 3 times.",
+  "cost": 5000,
+  "nodeId": 378,
+  "rank": 1
+ },
+ "100461": {
+  "name": "Tailwind Reins",
+  "desc": "Every 3 sec while out of combat and mounted, your mount speed is increased by an additional 10%. Stacks up to 3 times.",
+  "cost": 10000,
+  "nodeId": 378,
+  "rank": 2
+ },
+ "100462": {
+  "name": "Tailwind Reins",
+  "desc": "Every 3 sec while out of combat and mounted, your mount speed is increased by an additional 20%. Stacks up to 3 times.",
+  "cost": 15000,
+  "nodeId": 378,
+  "rank": 3
+ },
+ "110460": {
+  "name": "Tailwind Reins Milestone",
+  "desc": "Increases your mount speed by an additional 10%.",
+  "cost": 30000,
+  "nodeId": 207,
+  "rank": 1
+ },
+ "103440": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 25000,
+  "nodeId": 726,
+  "rank": 1
+ },
+ "103441": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 25000,
+  "nodeId": 727,
+  "rank": 1
+ },
+ "103442": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 25000,
+  "nodeId": 728,
+  "rank": 1
+ },
+ "103443": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 50000,
+  "nodeId": 729,
+  "rank": 1
+ },
+ "103444": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 150000,
+  "nodeId": 732,
+  "rank": 1
+ },
+ "103445": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 200000,
+  "nodeId": 733,
+  "rank": 1
+ },
+ "103446": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 50000,
+  "nodeId": 734,
+  "rank": 1
+ },
+ "103447": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 100000,
+  "nodeId": 735,
+  "rank": 1
+ },
+ "103448": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 50000,
+  "nodeId": 736,
+  "rank": 1
+ },
+ "103449": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 100000,
+  "nodeId": 737,
+  "rank": 1
+ },
+ "103450": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 100000,
+  "nodeId": 738,
+  "rank": 1
+ },
+ "103451": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 500000,
+  "nodeId": 739,
+  "rank": 1
+ },
+ "103452": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 1000000,
+  "nodeId": 740,
+  "rank": 1
+ },
+ "103453": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 750000,
+  "nodeId": 741,
+  "rank": 1
+ },
+ "103454": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 25000,
+  "nodeId": 742,
+  "rank": 1
+ },
+ "103455": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 50000,
+  "nodeId": 743,
+  "rank": 1
+ },
+ "103456": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 75000,
+  "nodeId": 744,
+  "rank": 1
+ },
+ "103457": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 100000,
+  "nodeId": 745,
+  "rank": 1
+ },
+ "103458": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 250000,
+  "nodeId": 867,
+  "rank": 1
+ },
+ "103459": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 500000,
+  "nodeId": 747,
+  "rank": 1
+ },
+ "103460": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 500000,
+  "nodeId": 771,
+  "rank": 1
+ },
+ "103461": {
+  "name": "Talent Overflow",
+  "desc": "Grants an additional talent point.",
+  "cost": 500000,
+  "nodeId": 749,
+  "rank": 1
+ },
+ "100520": {
+  "name": "Traveler’s Recall (Rank 1)",
+  "desc": "Your Hearthstone cools down 50% faster.",
+  "cost": 5000,
+  "nodeId": 397,
+  "rank": 1
+ },
+ "100521": {
+  "name": "Traveler’s Recall (Rank 2)",
+  "desc": "Your Hearthstone cools down 100% faster.\\r\\n\\r\\nReplace Traveler’s Recall (Rank 1).",
+  "cost": 10000,
+  "nodeId": 397,
+  "rank": 2
+ },
+ "100522": {
+  "name": "Traveler’s Recall (Rank 3)",
+  "desc": "Your Hearthstone cools down 150% faster.\\r\\n\\r\\nReplace Traveler’s Recall (Rank 2).",
+  "cost": 25000,
+  "nodeId": 397,
+  "rank": 3
+ },
+ "100523": {
+  "name": "Traveler’s Recall (Rank 4)",
+  "desc": "Your Hearthstone cools down 200% faster.\\r\\n\\r\\nReplace Traveler’s Recall (Rank 3).",
+  "cost": 50000,
+  "nodeId": 397,
+  "rank": 4
+ },
+ "100524": {
+  "name": "Traveler’s Recall (Rank 5)",
+  "desc": "Your Hearthstone cools down 250% faster.\\r\\n\\r\\nReplace Traveler’s Recall (Rank 4).",
+  "cost": 500000,
+  "nodeId": 720,
+  "rank": 1
+ },
+ "110520": {
+  "name": "Traveler’s Recall Milestone",
+  "desc": "Reduces the cast time of your Hearthstone by 50%.",
+  "cost": 75000,
+  "nodeId": 398,
+  "rank": 1
+ },
+ "103520": {
+  "name": "Treasure Hunter",
+  "desc": "Increases your chance to find rare loot by 10%.",
+  "cost": 500000,
+  "nodeId": 809,
+  "rank": 1
+ },
+ "103521": {
+  "name": "Treasure Hunter",
+  "desc": "Increases your chance to find rare loot by 10%.",
+  "cost": 250000,
+  "nodeId": 810,
+  "rank": 1
+ },
+ "103522": {
+  "name": "Treasure Hunter",
+  "desc": "Increases your chance to find rare loot by 10%.",
+  "cost": 100000,
+  "nodeId": 811,
+  "rank": 1
+ },
+ "101250": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 407,
+  "rank": 1
+ },
+ "101251": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 408,
+  "rank": 1
+ },
+ "101252": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 409,
+  "rank": 1
+ },
+ "101253": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 410,
+  "rank": 1
+ },
+ "101254": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 411,
+  "rank": 1
+ },
+ "101255": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 412,
+  "rank": 1
+ },
+ "101256": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 413,
+  "rank": 1
+ },
+ "101257": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 414,
+  "rank": 1
+ },
+ "101258": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 10000,
+  "nodeId": 415,
+  "rank": 1
+ },
+ "101270": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 100000,
+  "nodeId": 514,
+  "rank": 1
+ },
+ "101271": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 100000,
+  "nodeId": 515,
+  "rank": 1
+ },
+ "101272": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 200000,
+  "nodeId": 819,
+  "rank": 1
+ },
+ "101273": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 200000,
+  "nodeId": 776,
+  "rank": 1
+ },
+ "101274": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 200000,
+  "nodeId": 820,
+  "rank": 1
+ },
+ "101275": {
+  "name": "Twist of Fate",
+  "desc": "Increases the number of Echo rerolls available at the start of a run by 1.",
+  "cost": 200000,
+  "nodeId": 792,
+  "rank": 1
+ },
+ "101710": {
+  "name": "Unbreakable Will",
+  "desc": "Reduces all damage taken while stunned or mind controlled by 10%.",
+  "cost": 50000,
+  "nodeId": 608,
+  "rank": 1
+ },
+ "101711": {
+  "name": "Unbreakable Will",
+  "desc": "Reduces all damage taken while stunned or mind controlled by 20%.",
+  "cost": 100000,
+  "nodeId": 608,
+  "rank": 2
+ },
+ "101712": {
+  "name": "Unbreakable Will",
+  "desc": "Reduces all damage taken while stunned or mind controlled by 30%.",
+  "cost": 150000,
+  "nodeId": 608,
+  "rank": 3
+ },
+ "101713": {
+  "name": "Unbreakable Will",
+  "desc": "Reduces all damage taken while stunned or mind controlled by 40%.",
+  "cost": 200000,
+  "nodeId": 608,
+  "rank": 4
+ },
+ "101714": {
+  "name": "Unbreakable Will",
+  "desc": "Reduces all damage taken while stunned or mind controlled by 50%.",
+  "cost": 250000,
+  "nodeId": 608,
+  "rank": 5
+ },
+ "101130": {
+  "name": "Undying Spark",
+  "desc": "Each run, you can choose the resurrect option for free one additional time.\\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot resurrect, instead all damage taken is reduced by 5%.|r",
+  "cost": 5000,
+  "nodeId": 347,
+  "rank": 1
+ },
+ "101131": {
+  "name": "Undying Spark",
+  "desc": "Each run, you can choose the resurrect option for free one additional time.\\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot resurrect, instead all damage taken is reduced by 5%.|r",
+  "cost": 15000,
+  "nodeId": 348,
+  "rank": 1
+ },
+ "101132": {
+  "name": "Undying Spark",
+  "desc": "Each run, you can choose the resurrect option for free one additional time.\\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot resurrect, instead all damage taken is reduced by 5%.|r",
+  "cost": 50000,
+  "nodeId": 349,
+  "rank": 1
+ },
+ "101133": {
+  "name": "Undying Spark",
+  "desc": "Each run, you can choose the resurrect option for free one additional time.\\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot resurrect, instead all damage taken is reduced by 5%.|r",
+  "cost": 500000,
+  "nodeId": 531,
+  "rank": 1
+ },
+ "101134": {
+  "name": "Undying Spark",
+  "desc": "Each run, you can choose the resurrect option for free one additional time.\\r\\n\\r\\nCharges refresh on reset.\\r\\n\\r\\n|cff8b0000While in Hardcore: |cffffffffYou cannot resurrect, instead all damage taken is reduced by 5%.|r",
+  "cost": 750000,
+  "nodeId": 850,
+  "rank": 1
+ },
+ "100500": {
+  "name": "Unshaken",
+  "desc": "You are immune to Daze effects.\\r\\n\\r\\nDoes not apply for Aspect of the Pack and Aspect of the Cheetah.\\r\\n",
+  "cost": 250,
+  "nodeId": 396,
+  "rank": 1
+ },
+ "100860": {
+  "name": "Unyielding Survival",
+  "desc": "While below 10% health, damage taken is reduced by 30%.",
+  "cost": 10000,
+  "nodeId": 389,
+  "rank": 1
+ },
+ "100861": {
+  "name": "Unyielding Survival",
+  "desc": "While below 20% health, damage taken is reduced by 30%.",
+  "cost": 20000,
+  "nodeId": 389,
+  "rank": 2
+ },
+ "100862": {
+  "name": "Unyielding Survival",
+  "desc": "While below 30% health, damage taken is reduced by 30%.",
+  "cost": 30000,
+  "nodeId": 389,
+  "rank": 3
+ },
+ "101420": {
+  "name": "Vengeful Momentum (Rank 1)",
+  "desc": "Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every 0.3 sec. \\r\\n\\r\\nAt 12 stacks, you deal 10 Physical damage and generate a massive amount of threat. Damage scales with your Stamina.",
+  "cost": 100000,
+  "nodeId": 435,
+  "rank": 1
+ },
+ "101421": {
+  "name": "Vengeful Momentum (Rank 2)",
+  "desc": "Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every 0.3 sec. \\r\\n\\r\\nAt 10 stacks, you deal 10 Physical damage and generate a massive amount of threat. Damage scales with your Stamina.\\r\\n\\r\\nReplace Vengeful Momentum (Rank 1).",
+  "cost": 150000,
+  "nodeId": 435,
+  "rank": 2
+ },
+ "101422": {
+  "name": "Vengeful Momentum (Rank 3)",
+  "desc": "Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every 0.3 sec. \\r\\n\\r\\nAt 8 stacks, you deal 10 Physical damage and generate a massive amount of threat. Damage scales with your Stamina.\\r\\n\\r\\nReplace Vengeful Momentum (Rank 2).",
+  "cost": 250000,
+  "nodeId": 435,
+  "rank": 3
+ },
+ "101423": {
+  "name": "Vengeful Momentum (Rank 4)",
+  "desc": "Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every 0.3 sec. \\r\\n\\r\\nAt 7 stacks, you deal 10 Physical damage and generate a massive amount of threat. Damage scales with your Stamina.\\r\\n\\r\\nReplace Vengeful Momentum (Rank 3).",
+  "cost": 500000,
+  "nodeId": 435,
+  "rank": 4
+ },
+ "101424": {
+  "name": "Vengeful Momentum (Rank 5)",
+  "desc": "Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every 0.3 sec. \\r\\n\\r\\nAt 6 stacks, you deal 10 Physical damage and generate a massive amount of threat. Damage scales with your Stamina.\\r\\n\\r\\nReplace Vengeful Momentum (Rank 4).",
+  "cost": 750000,
+  "nodeId": 864,
+  "rank": 1
+ },
+ "111420": {
+  "name": "Vengeful Momentum Milestone",
+  "desc": "Increases threat generated by 50%.",
+  "cost": 750000,
+  "nodeId": 436,
+  "rank": 1
+ },
+ "100560": {
+  "name": "Victory Feast",
+  "desc": "Whenever you kill an enemy that grants experience or honor, you restore 5% of your maximum Health.",
+  "cost": 7500,
+  "nodeId": 388,
+  "rank": 1
+ },
+ "100561": {
+  "name": "Victory Feast",
+  "desc": "Whenever you kill an enemy that grants experience or honor, you restore 10% of your maximum Health.",
+  "cost": 15000,
+  "nodeId": 388,
+  "rank": 2
+ },
+ "100562": {
+  "name": "Victory Feast",
+  "desc": "Whenever you kill an enemy that grants experience or honor, you restore 15% of your maximum Health.",
+  "cost": 25000,
+  "nodeId": 388,
+  "rank": 3
+ },
+ "101210": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 10% of your maximum Health.",
+  "cost": 1500,
+  "nodeId": 395,
+  "rank": 1
+ },
+ "101211": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 20% of your maximum Health.",
+  "cost": 3000,
+  "nodeId": 395,
+  "rank": 2
+ },
+ "101212": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 30% of your maximum Health.",
+  "cost": 5000,
+  "nodeId": 395,
+  "rank": 3
+ },
+ "101213": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 40% of your maximum Health.",
+  "cost": 10000,
+  "nodeId": 395,
+  "rank": 4
+ },
+ "101214": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 50% of your maximum Health.",
+  "cost": 25000,
+  "nodeId": 395,
+  "rank": 5
+ },
+ "101215": {
+  "name": "Vital Infusion",
+  "desc": "When you use a potion, you instantly restore an additional 60% of your maximum Health.",
+  "cost": 250000,
+  "nodeId": 395,
+  "rank": 6
+ },
+ "101200": {
+  "name": "Wisdom of the Wilds",
+  "desc": "You now gain Experience while Gathering",
+  "cost": 10000,
+  "nodeId": 356,
+  "rank": 1
+ }
+}

@@ -1,0 +1,3158 @@
+{
+ "200505": {
+  "name": "Hardened Skin",
+  "desc": "Increases armor by @flat240+lvl12@",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200761": {
+  "name": "Vital Bond",
+  "desc": "Increases your pets' Stamina by @stamina0.3@, based on your Stamina.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201017": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Auto Shot critical strikes have a chance to hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201145": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast a melee ability, you have a 20% chance to launch 3 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200506": {
+  "name": "Hardened Resolve",
+  "desc": "Reduces all damage taken by @flat20+lvl1@",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200890": {
+  "name": "Crushing Finish",
+  "desc": "When you damage a target below 30% health with a melee or ranged attack, you Execute it, dealing @flat10+ap0.5@ Physical damage. Damage is increased by 2% per point of Expertise.\\r\\n\\r\\nCannot occur more than once every 6 sec per target.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "201018": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Auto Shot critical strikes have a chance to hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201146": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast a melee ability, you have a 20% chance to launch 3 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201274": {
+  "name": "Titan's Grip",
+  "desc": "Allows you to wield two-handed weapons in one hand. Your damage is reduced by 20%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200507": {
+  "name": "Swift Step",
+  "desc": "Increases your movement speed by an additional @flat24@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200635": {
+  "name": "Cinders of the Sanctum",
+  "desc": "Dealing Fire damage grants a stack of Cinders. At 12 stacks, you summon a Fire Cyclone for 12 sec., dealing 12 Fire damage to enemies within 10 yds every 2 sec. \\r\\n\\r\\nAfter triggering, you cannot gain Cinders stacks for 4 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200763": {
+  "name": "Ferocious Bond",
+  "desc": "Increases your pets' Attack power by @ap0.02@, based on your Attack power.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200508": {
+  "name": "Ember Ward",
+  "desc": "Increases Fire Resistance by @flat10+lvl0.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200764": {
+  "name": "Ferocious Bond",
+  "desc": "Increases your pets' Attack power by @ap0.03@, based on your Attack power.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "201020": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Lightning Bolt, Chain Lightning, Healing Wave, or Chain Heal, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201148": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Crusader Strike, Hammer of the Righteous, Judgement or Holy Shock, you launch 2 missiles at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201276": {
+  "name": "Sanguine Bulwark",
+  "desc": "Reduces your healing done by 25%. Absorbs up to 50% of damage taken, to a maximum of 11 per hit.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200509": {
+  "name": "Frost Ward",
+  "desc": "Increases Frost Resistance by @flat10+lvl0.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200765": {
+  "name": "Ferocious Bond",
+  "desc": "Increases your pets' Attack power by @ap0.3@, based on your Attack power.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "201021": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Lightning Bolt, Chain Lightning, Healing Wave, or Chain Heal, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201149": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Crusader Strike, Hammer of the Righteous, Judgement or Holy Shock, you launch 2 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200510": {
+  "name": "Verdant Ward",
+  "desc": "Increases Nature Resistance by @flat10+lvl0.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200894": {
+  "name": "Archmage’s Mark",
+  "desc": "Dealing Fire, Frost, and Arcane damage within 6 sec increases the damage you deal by 10% for 12 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201022": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Lightning Bolt, Chain Lightning, Healing Wave, or Chain Heal, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201150": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Crusader Strike, Hammer of the Righteous, Judgement or Holy Shock, you launch 2 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201278": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Shield Slam, Revenge, Thunder Clap, Mortal Strike, Bloodthirst, Whirlwind, Shockwave, Concussion Blow.",
+  "quality": 0,
+  "family": ""
+ },
+ "200511": {
+  "name": "Arcane Ward",
+  "desc": "Increases Arcane Resistance by @flat10+lvl0.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200639": {
+  "name": "Storm of the Spellweaver",
+  "desc": "Dealing Arcane damage grants a stack of Overcharge. At 10 stacks, you fire a salvo of Magic Missiles into the air, striking up to 3 nearby enemies for 28 Arcane damage each.\\r\\n\\r\\nAfter triggering, you cannot gain Overcharge stacks for 2 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200767": {
+  "name": "Arcane Bond",
+  "desc": "Increases your pets' Spell power by @sp0.02@, based on your Spell power.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200000": {
+  "name": "Strength Training",
+  "desc": "Increases Strength by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200512": {
+  "name": "Shadow Ward",
+  "desc": "Increases Shadow Resistance by @flat10+lvl0.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200768": {
+  "name": "Arcane Bond",
+  "desc": "Increases your pets' Spell power by @sp0.03@, based on your Spell power.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200896": {
+  "name": "Entropic Fusion",
+  "desc": "Dealing Fire and Shadow damage within 3 sec increases the damage you deal by 10% for 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Ranged DPS"
+ },
+ "200001": {
+  "name": "Agility Boost",
+  "desc": "Increases Agility by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "201152": {
+  "name": "Arcane Bombardment",
+  "desc": "Each time you spend a Rune, you launch a missile at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201280": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Avenger's Shield, Judgement, Consecration, Crusader Strike, Divine Storm, Exorcism, Hammer of Wrath, Shield of Righteousness, Hammer of the Righteous, Holy Shock, Holy Wrath.",
+  "quality": 0,
+  "family": ""
+ },
+ "200769": {
+  "name": "Arcane Bond",
+  "desc": "Increases your pets' Spell power by @sp0.3@, based on your Spell power.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200002": {
+  "name": "Mind Expansion",
+  "desc": "Increases Intellect by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201153": {
+  "name": "Arcane Bombardment",
+  "desc": "Each time you spend a Rune, you launch a missile at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200898": {
+  "name": "Battle Rhythm",
+  "desc": "Increases your critical strike damage by 1%, plus an additional 1% for every 150 Critical Strike Rating you have.\\r\\n\\r\\nCurrent bonus: @flat1+critRating0.0066@%",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201026": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Starfire, Nourish, or Mangle, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201154": {
+  "name": "Arcane Bombardment",
+  "desc": "Each time you spend a Rune, you launch a missile at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201282": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Howling Blast, Blood Boil, Pestilence.",
+  "quality": 0,
+  "family": ""
+ },
+ "200004": {
+  "name": "Iron Constitution",
+  "desc": "Increases Stamina by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200772": {
+  "name": "Tempest Vortex",
+  "desc": "Every 5 sec while in combat, pulls nearby enemies toward you and deal @sp0.03+ap0.015@ Lightning damage.\\r\\n\\r\\nThis effect deals at least 12 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200900": {
+  "name": "Arcane Cadence",
+  "desc": "Casting an offensive spell or ability increases your damage done by 3% for 6 sec. \\r\\n\\r\\nWhile this effect is active, each different offensive spell or ability you use increases this bonus by an additional 3% and refreshes the duration.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201028": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mutilate, Sinister Strike, or Hemorrhage, you have a chance to hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201156": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Arcane Shot, Aimed Shot, Explosive Shot, or Chimera Shot, you launch 3 missiles at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201284": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Arcane Shot, Aimed Shot, Chimera Shot, Explosive Shot, Multi-Shot, Kill Shot, Raptor Strike, Mongoose Bite, Black Arrow.",
+  "quality": 0,
+  "family": ""
+ },
+ "200773": {
+  "name": "Tempest Vortex",
+  "desc": "Every 5 sec while in combat, pulls nearby enemies toward you and deal @sp0.06+ap0.03@ Lightning damage.\\r\\n\\r\\nThis effect deals at least 12 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201029": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mutilate, Sinister Strike, or Hemorrhage, you have a chance to hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201157": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Arcane Shot, Aimed Shot, Explosive Shot, or Chimera Shot, you launch 3 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "200774": {
+  "name": "Tempest Vortex",
+  "desc": "Every 5 sec while in combat, pulls nearby enemies toward you and deal @sp0.3+ap0.15@ Lightning damage.\\r\\n\\r\\nThis effect deals at least 12 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200902": {
+  "name": "Healing Cadence",
+  "desc": "Casting a healing spell or ability increases your healing done by 3% for 6 sec. \\r\\n\\r\\nWhile this effect is active, each different healing spell or ability you use increases this bonus by an additional 3% and refreshes the duration.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "201030": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mutilate, Sinister Strike, or Hemorrhage, you have a chance to hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201158": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Arcane Shot, Aimed Shot, Explosive Shot, or Chimera Shot, you launch 3 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201286": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Earth Shock, Flame Shock, Frost Shock, Stormstrike, Lava Lash, Riptide.",
+  "quality": 0,
+  "family": ""
+ },
+ "200008": {
+  "name": "Mystic Potency",
+  "desc": "Increases spell power by @flat20+lvl0.4@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200520": {
+  "name": "Forged in Combat",
+  "desc": "Your melee attacks increase your armor by @flat15+lvl0.75@ for 8 sec. Stacks up to 10 times.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200776": {
+  "name": "Flame Vents",
+  "desc": "Dodging or Parrying builds Pressure, maximum 1 stack every 0,3 seconds. At 12 stacks, you vent flames for 8 sec, dealing @flat5+stam0.8@ Fire damage every 1 sec to enemies within 0 yards, scaling with your Stamina.\\r\\n\\r\\nWhile Flame Vents is active, you take 15% reduced damage and your movement speed is increased by an additional 20%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200904": {
+  "name": "Battlefield Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Thunder Clap, Shockwave, Whirlwind, and Bladestorm is increased by 20%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200009": {
+  "name": "Brutal Might",
+  "desc": "Increases attack power by @flat30+lvl0.6@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "201160": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Flame Shock, Earth Shock, or Frost Shock, you launch 2 missiles at a random location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201288": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Mangle (Bear), Mangle (Cat), Rake, Typhoon, Swiftmend, Wild Growth.",
+  "quality": 0,
+  "family": ""
+ },
+ "200521": {
+  "name": "Keen Aim",
+  "desc": "Increases hit rating by @flat15+lvl1.0625@",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200010": {
+  "name": "Earthen Stability",
+  "desc": "After standing still for 2 sec, your armor is increased by @flat200+lvl4@ for 5 sec after you move.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201161": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Flame Shock, Earth Shock, or Frost Shock, you launch 2 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200522": {
+  "name": "Crushing Force",
+  "desc": "Increases critical strike rating by @flat15+lvl1.0625@",
+  "quality": 0,
+  "family": ""
+ },
+ "201034": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Arcane Blast, Fireball, Frostbolt, or Frostfire Bolt, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201162": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Flame Shock, Earth Shock, or Frost Shock, you launch 2 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201290": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Ghostly Strike",
+  "quality": 0,
+  "family": ""
+ },
+ "200523": {
+  "name": "Quick Hands",
+  "desc": "Increases haste rating by @flat15+lvl1.0625@",
+  "quality": 0,
+  "family": ""
+ },
+ "200524": {
+  "name": "Armor Penetration",
+  "desc": "Increases armor penetration rating by @flat15+lvl1.0625@ ",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200780": {
+  "name": "Brittle Forging",
+  "desc": "Your Fire damage builds Heat on the target. At 10 stacks, the target becomes Brittle for 6 sec, increasing your critical strike chance against it by 20%. \\r\\n\\r\\nWhile Brittle is active, your next Fire critical strike against the target causes it to Shatter, dealing @flat20+sp1+ap0.5@ Fire damage to enemies within 8 yards. \\r\\n\\r\\nOnce Brittle expires, the target cannot gain Heat stacks for 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200908": {
+  "name": "Sanctified Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Consecration, Divine Storm, and Hammer of the Righteous is increased by 20%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201036": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Smite, Flash Heal, Greater Heal, or Mind Blast, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201164": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Wrath, Starfire, Regrowth, Shred, or Maul, you have a chance to launch 3 missiles at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201292": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Arcane Barrage, Fire Blast, Dragon’s Breath, Cone of Cold, Living Bomb, Blast Wave, Deep Freeze.",
+  "quality": 0,
+  "family": ""
+ },
+ "200525": {
+  "name": "Expertise Drills",
+  "desc": "Increases expertise rating by @flat15+lvl1.0625@",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201037": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Smite, Flash Heal, Greater Heal, or Mind Blast, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201165": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Wrath, Starfire, Regrowth, Shred, or Maul, you have a chance to launch 3 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200270": {
+  "name": "Echoing Afflictions",
+  "desc": "Your damage and healing over time effects also affect one additional nearby target, and your periodic effects occur 25% more often.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Ranged DPS"
+ },
+ "200526": {
+  "name": "Mana Reservoir",
+  "desc": "Increases maximum mana by @flat360+lvl18@",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201038": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Smite, Flash Heal, Greater Heal, or Mind Blast, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201166": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast Wrath, Starfire, Regrowth, Shred, or Maul, you have a chance to launch 3 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201294": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Power Word: Shield, Shadow Word: Death, Prayer of Mending, Circle of Healing, Penance.",
+  "quality": 0,
+  "family": ""
+ },
+ "200527": {
+  "name": "Sharpened Edge",
+  "desc": "Increases all damage dealt by @flat15+lvl0.75@ ",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200016": {
+  "name": "Warm-Blooded",
+  "desc": "Restores @flat12+lvl0.24@ health every 3 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200400": {
+  "name": "Steel Brand",
+  "desc": "Your direct Physical damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Physical damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200528": {
+  "name": "Safeguarded Gear",
+  "desc": "Increases your Armor contribution from cloth and leather items by @flat18@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200912": {
+  "name": "Blighted Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Death and Decay, Blood Boil, Howling Blast, and Corpse Explosion is increased by 20%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200017": {
+  "name": "Hardened Skin",
+  "desc": "Increases armor by @flat80+lvl1.6@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201168": {
+  "name": "Arcane Bombardment",
+  "desc": "When you use a finishing move, you have a 20% chance per combo point to launch 3 missiles at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201296": {
+  "name": "Temporal Pressure",
+  "desc": "Your cooldowns are now reduced by your Haste. Affected spells : Conflagrate, Shadowburn, Shadowflame, Shadowfury.",
+  "quality": 0,
+  "family": ""
+ },
+ "200529": {
+  "name": "Steady Channeling",
+  "desc": "Allows @flat24@% of your mana regeneration to continue while casting.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200018": {
+  "name": "Hardened Resolve",
+  "desc": "Reduces all damage taken by @flat6@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201169": {
+  "name": "Arcane Bombardment",
+  "desc": "When you use a finishing move, you have a 20% chance per combo point to launch 3 missiles at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200402": {
+  "name": "Holy Brand",
+  "desc": "Your direct Holy damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Holy damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200530": {
+  "name": "Immolation Aura",
+  "desc": "While in combat, you deal @sp0.04+ap0.02@ Fire damage to enemies within 8 yards every 2 seconds. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200786": {
+  "name": "Harpoon Barrage",
+  "desc": "Every 8 sec while in combat, you throw Harpoons at up to 5 enemies between 8 and 35 yards away, pulling them to you and Pinning them for 5 sec.\\r\\n\\r\\nPinned enemies are slowed by 50% and take 15% increased damage from you.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200019": {
+  "name": "Swift Step",
+  "desc": "Increases your movement speed by an additional @flat5@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "201170": {
+  "name": "Arcane Bombardment",
+  "desc": "When you use a finishing move, you have a 20% chance per combo point to launch 3 missiles at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201298": {
+  "name": "Quickened Tempo",
+  "desc": "Your global cooldown is now reduced by your Haste.",
+  "quality": 0,
+  "family": ""
+ },
+ "200531": {
+  "name": "Spiteful Thorns",
+  "desc": "Taking direct damage inflict @armor0.02@ Nature damage back to enemies. \\r\\n\\r\\nDamage scales with your Armor and deals at least 5 damage.\\r\\n",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200020": {
+  "name": "Battle Momentum",
+  "desc": "Every 5 melee attacks and abilities grants 1% attack speed for 10 sec. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200404": {
+  "name": "Fire Brand",
+  "desc": "Your direct Fire damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Fire damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200532": {
+  "name": "Rend the Weak",
+  "desc": "Your critical strikes have a 20% chance to deal @ap0.04@ Physical damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.\\r\\n",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200916": {
+  "name": "Hunting Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Volley and Multi-Shot is increased by 20%.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201172": {
+  "name": "Arcane Bombardment",
+  "desc": "Your critical strikes have a chance to launch a missile at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201300": {
+  "name": "Impaler’s Tribute",
+  "desc": "Your damaging abilities build Impale on the target. At 8 stacks, you Skewer the target for 8 sec, dealing 7 Physical damage every 1 sec. \\r\\n\\r\\nWhile Skewered is active, your attacks against the target have a 20% chance to splinter, dealing 27 Physical damage to up to 5 nearby enemies.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200533": {
+  "name": "Open Wounds",
+  "desc": "Your melee and ranged attacks wound the target, dealing @ap0.06@ damage over 6 sec. This effect deals at least 30 damage.\\r\\n",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200661": {
+  "name": "Spiteful Shard",
+  "desc": "Taking direct damage has a chance to cause a Glacial Spike to erupt beneath the attacker, dealing @sp0.05+ap0.025@ Frost damage and knocking them into the air. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200022": {
+  "name": "Earthen Snap",
+  "desc": "Your first hit after entering combat roots the target for 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "201173": {
+  "name": "Arcane Bombardment",
+  "desc": "Your critical strikes have a chance to launch a missile at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200406": {
+  "name": "Nature Brand",
+  "desc": "Your direct Nature damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Nature damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200534": {
+  "name": "Reactive Retaliation",
+  "desc": "After you dodge or parry an attack, you deal @stamina0.2@ Physical damage to nearby enemies. \\r\\n\\r\\nDamage scales with your Stamina and deals at least 10 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200662": {
+  "name": "Spiteful Shard",
+  "desc": "Taking direct damage has a chance to cause a Glacial Spike to erupt beneath the attacker, dealing @sp0.1+ap0.05@ Frost damage and knocking them into the air. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201174": {
+  "name": "Arcane Bombardment",
+  "desc": "Your critical strikes have a chance to launch a missile at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200663": {
+  "name": "Spiteful Shard",
+  "desc": "Taking direct damage has a chance to cause a Glacial Spike to erupt beneath the attacker, dealing @sp0.50+ap0.25@ Frost damage and knocking them into the air. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200408": {
+  "name": "Frost Brand",
+  "desc": "Your direct Frost damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Frost damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200536": {
+  "name": "Immolation Aura",
+  "desc": "While in combat, you deal @sp0.2+ap0.1@ Fire damage to enemies within 8 yards every 2 seconds. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200792": {
+  "name": "Exposed Heart",
+  "desc": "Your basic attacks builds Stress. At 12 stacks, you expose your target’s heart for 6 sec, increasing your damage dealt to it by 20%. \\r\\n\\r\\nWhile Exposed Heart is active, 40% of the damage you deal to the target is also dealt to all enemies within 8 yards of it. While Exposed Heart is active and up to 6 seconds after it expires you cannot generate Stress on any target.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200920": {
+  "name": "Storm Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Chain Lightning and Thunderstorm is increased by 20%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200025": {
+  "name": "Frost Bite",
+  "desc": "When struck, you have a 10% chance to freeze the attacker for 3 sec seconds.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201176": {
+  "name": "Arcane Bombardment",
+  "desc": "Your periodic damage from Shadow Word: Pain and periodic healing from Renew have a chance to launch a missile at a nearby random location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201304": {
+  "name": "Slimebound Husk",
+  "desc": "Taking direct damage grants a stack of Molten Blood, up to 8. \\r\\n\\r\\nAt 8 stacks, you shed your skin, leaving behind a Poisonous Slime for 10 sec that deals 13 Nature damage every 1 sec to nearby enemies, while you gain 15% increased movement speed and 10% reduced damage taken for 6 sec.",
+  "quality": 0,
+  "family": "Survivability, Tank"
+ },
+ "200537": {
+  "name": "Spiteful Thorns",
+  "desc": "Taking direct damage inflict @armor0.1@ Nature damage back to enemies.\\r\\n\\r\\nDamage scales with your Armor and deals at least 5 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200665": {
+  "name": "Scorched Path",
+  "desc": "While in combat, moving leaves a trail of embers behind you for 3 sec, burning enemies who pass through it for @sp0.02+ap0.01@ Fire damage and slowing them by 30%. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Tank"
+ },
+ "201177": {
+  "name": "Arcane Bombardment",
+  "desc": "Your periodic damage from Shadow Word: Pain and periodic healing from Renew have a chance to launch a missile at a nearby random location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200410": {
+  "name": "Shadow Brand",
+  "desc": "Your direct Shadow damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Shadow damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200538": {
+  "name": "Rend the Weak",
+  "desc": "Your critical strikes have a 20% chance to deal @ap0.20@ Physical damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200666": {
+  "name": "Scorched Path",
+  "desc": "While in combat, moving leaves a trail of embers behind you for 3 sec, burning enemies who pass through it for @sp0.04+ap0.02@ Fire damage and slowing them by 30%. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Tank"
+ },
+ "200027": {
+  "name": "Pain Drive",
+  "desc": "When struck, your movement speed is increased by an additional 20% for 5 sec. ",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201178": {
+  "name": "Arcane Bombardment",
+  "desc": "Your periodic damage from Shadow Word: Pain and periodic healing from Renew have a chance to launch a missile at a nearby random location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200539": {
+  "name": "Open Wounds",
+  "desc": "Your melee and ranged attacks wound the target, dealing @ap0.3@ damage over 6 sec. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200667": {
+  "name": "Scorched Path",
+  "desc": "While in combat, moving leaves a trail of embers behind you for 3 sec, burning enemies who pass through it for @sp0.2+ap0.1@ Fire damage and slowing them by 30%. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Tank"
+ },
+ "200412": {
+  "name": "Arcane Brand",
+  "desc": "Your direct Arcane damage spells and abilities apply a stacking mark to the target for 8 sec, increasing the Arcane damage you deal to that target by @flat5+lvl0.1875@ per stack. Stacks up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200540": {
+  "name": "Reactive Retaliation",
+  "desc": "After you dodge or parry an attack, you deal @stamina1@ Physical damage to nearby enemies. \\r\\n\\r\\nDamage scales with your Stamina and deals at least 10 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200924": {
+  "name": "Wild Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Hurricane, Starfall, and Swipe is increased by 20%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200029": {
+  "name": "Immolation Aura",
+  "desc": "While in combat, you deal @sp0.02+ap0.01@ Fire damage to enemies within 8 yards every 2 seconds. \\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201180": {
+  "name": "Arcane Bombardment",
+  "desc": "Periodic damage from Immolate, Corruption, and Curse of Agony has a chance to launch a missile at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201308": {
+  "name": "Rage of the Colossus",
+  "desc": "Your critical strikes grant Momentum for 8 sec, stacking up to 10 times. \\r\\nMomentum cannot be gained more than once per second. \\r\\n\\r\\nEach stack increases your movement speed by 2% and damage dealt by 1%. \\r\\n\\r\\nAt 10 stacks, you unleash a Massive Crash, dealing 64 Physical damage to enemies within 10 yards of your target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200541": {
+  "name": "Beast Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200669": {
+  "name": "Warded Aegis",
+  "desc": "Every 30 seconds, you gain a shield absorbing up to @sp0.06+ap0.03@ damage. This effect absorbs at least 25 damage.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "201181": {
+  "name": "Arcane Bombardment",
+  "desc": "Periodic damage from Immolate, Corruption, and Curse of Agony has a chance to launch a missile at a random nearby location, dealing @sp0.14+ap0.07@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200414": {
+  "name": "Forged in Combat",
+  "desc": "Your melee attacks increase your armor by @flat5+lvl0.1@ for 8 sec. Stacks up to 10 times.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200542": {
+  "name": "Dragonkin Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200670": {
+  "name": "Warded Aegis",
+  "desc": "Every 30 seconds, you gain a shield absorbing up to @sp0.09+ap0.045@ damage. This effect absorbs at least 25 damage.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200798": {
+  "name": "Edict of the Iron Council",
+  "desc": "Your damaging spells and abilities build Edict. At 10 stacks, you invoke an Edict, cycling through the following effects in order:  Rune of Death, Overload, Fusion Punch.\\n\\n|cff1eff00Rune of Death : |cffffffffSummons a Rune of Death under your target for 8 sec, dealing @flat5+sp0.25+ap0.125@ Shadow damage every half-second to enemies within 13 yards.\\r\\n\\n|cff1eff00Overload : |cffffffffYou erupt with lightning, dealing @flat35+sp1.75+ap0.875@ Nature damage to enemies within 10 yards.\\r\\n\\n|cff1eff00Fusion Punch : |cffffffffYour next melee attack deals an additional @flat50+sp2.5+ap1.25@ Nature damage and an additional @flat25+sp1.25+ap0.625@ Nature damage every 1 sec for 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200031": {
+  "name": "Spiteful Thorns",
+  "desc": "Taking direct damage inflict @armor0.01@ Nature damage back to enemies. \\r\\n\\r\\nDamage scales with your Armor and deals at least 5 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201182": {
+  "name": "Arcane Bombardment",
+  "desc": "Periodic damage from Immolate, Corruption, and Curse of Agony has a chance to launch a missile at a random nearby location, dealing @sp0.7+ap0.375@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200543": {
+  "name": "Demon Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Demons.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200671": {
+  "name": "Warded Aegis",
+  "desc": "Every 30 seconds, you gain a shield absorbing up to @sp0.9+ap0.45@ damage. This effect absorbs at least 25 damage.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200416": {
+  "name": "Double Tap",
+  "desc": "Your Auto Shot has a @flat10@% chance to fire an additional shot.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "200544": {
+  "name": "Elemental Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200672": {
+  "name": "Double Strike",
+  "desc": "Your melee attacks have a @flat10@% chance to strike an additional time.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200928": {
+  "name": "Shadow Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Fan of Knives is increased by 20%.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200033": {
+  "name": "Purifying Touch",
+  "desc": "Your direct healing spells also dispel one harmful Magic effect from the target.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "201184": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunder Clap, Whirlwind, Revenge, or Shockwave unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201312": {
+  "name": "Nether Lord’s Command",
+  "desc": "Your damaging spells and abilities have a chance to open a Nether Portal for 10 sec. \\r\\n\\r\\nWhile active, the portal hurls Fel Lightning at your target every 2 sec, dealing 32 Fel damage. Each strike has a 25% chance to summon a Fel Flamestrike under the target, dealing 51 Fel damage and burning the ground for 4 sec, dealing 12 Fel damage every 1 sec.\\r\\n\\r\\nYou cannot summon a Nether Portal more than once every 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200545": {
+  "name": "Giant Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Giants.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201185": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunder Clap, Whirlwind, Revenge, or Shockwave unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200418": {
+  "name": "Desperate Escape",
+  "desc": "When you fall below 25% health, your movement speed is greatly increased for a short time. \\r\\n\\r\\nThis effect cannot occur more than once every 2 min.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200546": {
+  "name": "Undead Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Undead.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200674": {
+  "name": "Glass Canon",
+  "desc": "Increases your damage dealt by 15% but reduces your maximum health by 30%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200035": {
+  "name": "Bolstered Vitality",
+  "desc": "Increases your maximum health by @flat175@.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "201186": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunder Clap, Whirlwind, Revenge, or Shockwave unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200547": {
+  "name": "Mechanical Bane",
+  "desc": "Increases your spell power by @flat40@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200675": {
+  "name": "Arcane Rupture",
+  "desc": "Your Arcane over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200036": {
+  "name": "Ember Ward",
+  "desc": "Increases Fire Resistance by @flat5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200548": {
+  "name": "Beast Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200676": {
+  "name": "Shadow Malice",
+  "desc": "Your Shadow over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200804": {
+  "name": "Stone Shatter",
+  "desc": "The first time you damage an enemy, you mark it with Fracture for 10 sec. \\r\\n\\r\\nIf it dies while fractured, it shatters, dealing @flat10+sp0.5+ap0.25@ Physical damage to enemies within 8 yards.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200932": {
+  "name": "Arcane Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Arcane Explosion, Blizzard, Flamestrike, and Blast Wave  is increased by 20%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200037": {
+  "name": "Frost Ward",
+  "desc": "Increases Frost Resistance by @flat5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201188": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Consecration, Divine Storm, Shield of Righteousness, or Avenger's Shield unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200421": {
+  "name": "Open Wounds",
+  "desc": "Your melee and ranged attacks wound the target, dealing @ap0.03@ damage over 6 sec. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200549": {
+  "name": "Dragon Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200677": {
+  "name": "Holy Revelation",
+  "desc": "Your Holy over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200038": {
+  "name": "Verdant Ward",
+  "desc": "Increases Nature Resistance by @flat5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201189": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Consecration, Divine Storm, Shield of Righteousness, or Avenger's Shield unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200550": {
+  "name": "Demon Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Demons.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200678": {
+  "name": "Burning Cataclysm",
+  "desc": "Your Fire over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200039": {
+  "name": "Arcane Ward",
+  "desc": "Increases Arcane Resistance by @flat5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201190": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Consecration, Divine Storm, Shield of Righteousness, or Avenger's Shield unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201318": {
+  "name": "Champion’s Rally",
+  "desc": "Your direct healing spells grant Rally for 8 sec. \\r\\n\\r\\nAt 10 stacks, you unleash Champion’s Rally, instantly healing your target for 40 and granting them Rallying Cry for 6 sec, reducing damage taken by 15% and increasing healing received by 20%. \\r\\n\\r\\nWhile Rallying Cry is active, 30% of your direct healing on that target is also granted to the most injured nearby ally.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200423": {
+  "name": "Bola Shot",
+  "desc": "Your Auto Shot slows the target by 30% for 3 sec.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "200551": {
+  "name": "Elemental Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200679": {
+  "name": "Killing Chill",
+  "desc": "Your Frost over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200040": {
+  "name": "Shadow Ward",
+  "desc": "Increases Shadow Resistance by @flat5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200552": {
+  "name": "Giant Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Giants.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200680": {
+  "name": "Nature’s Reprisal",
+  "desc": "Your Nature over time effects can now critically strike.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200808": {
+  "name": "Sanctum Sentries",
+  "desc": "While in combat you are accompanied by two Sanctum Sentries.\\n\\r\\nEnemies struck by either guardian take 10% increased damage from you for 4 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200936": {
+  "name": "Holy Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Holy Nova is increased by 20%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200041": {
+  "name": "Enhanced Recovery",
+  "desc": "Increases healing received by @flat1@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201192": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Blood Boil, Howling Blast, Icy Touch, or Death and Decay unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200425": {
+  "name": "Sweeping Blows",
+  "desc": "Your melee auto-attacks cleave for 20% of the damage dealt to nearby enemies.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200553": {
+  "name": "Undead Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Undead.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200681": {
+  "name": "Blood Frenzy",
+  "desc": "Your Bleed effects can now critically strike.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200042": {
+  "name": "Rend the Weak",
+  "desc": "Your critical strikes have a 20% chance to deal @ap0.02@ Physical damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "201193": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Blood Boil, Howling Blast, Icy Touch, or Death and Decay unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200554": {
+  "name": "Machine Slayer",
+  "desc": "Increases your attack power by @flat60@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200682": {
+  "name": "Grim Resolve",
+  "desc": "Increases your damage based on your missing health, up to 20% damage increased at 20% remaing health.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "201194": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Blood Boil, Howling Blast, Icy Touch, or Death and Decay unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200427": {
+  "name": "Reactive Retaliation",
+  "desc": "After you dodge or parry an attack, you deal @stamina0.1@ Physical damage to nearby enemies. Damage scales with your Stamina and deals at least 10 damage.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200555": {
+  "name": "Beast Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200044": {
+  "name": "Precision Strike",
+  "desc": "Every 10 sec, your critical strike chance is increased by 100% for 3 sec.",
+  "quality": 0,
+  "family": ""
+ },
+ "200300": {
+  "name": "Rite of Quickening",
+  "desc": "Reduces the cooldown of your Death Wish, Shield Wall, Retaliation, Last Stand, Enraged Regeneration, Shattering Throw, Recklessness, Bladestorm, Bloodrage, Intimidating Shout, and Challenging Shout abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200556": {
+  "name": "Dragonkin Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200684": {
+  "name": "Unbroken Focus",
+  "desc": "If you have not taken damage in the last 5 sec., your damage dealt is increased by 10%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200940": {
+  "name": "Fel Hazard",
+  "desc": "While 4 or more enemies are within range, the damage of your Rain of Fire, Hellfire, Shadowflame, and Shadowfury is increased by 20%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201196": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Raptor Strike or Multi-Shot unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200301": {
+  "name": "Echoes of Celerity",
+  "desc": "Reduces the cooldown of your Demonic Empowerment, Metamorphosis, Inferno, Ritual of Doom, Shadowfury, Death Coil, and Fel Domination abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200429": {
+  "name": "Keen Aim",
+  "desc": "Increases hit rating by @flat5+lvl0.15@.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200557": {
+  "name": "Demon Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Demons.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200046": {
+  "name": "Healing Echo",
+  "desc": "Your direct healing spells have a 5% chance to leave a heal over time effect on the target, healing for @flat10@% of the amount healed over 3 sec seconds. \\r\\n\\r\\nThis effect can stack up to 30% of the target’s maximum health.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "201197": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Raptor Strike or Multi-Shot unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200302": {
+  "name": "Flow of Battle",
+  "desc": "Reduces the cooldown of your Earthbind Totem, Earth Elemental Totem, Shamanistic Rage, Astral Recall, Feral Spirit, Fire Elemental Totem, Elemental Mastery, Thunderstorm, Stoneclaw Totem, and Hex abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200430": {
+  "name": "Crushing Force",
+  "desc": "Increases critical strike rating by @flat5+lvl0.15@.",
+  "quality": 0,
+  "family": ""
+ },
+ "200558": {
+  "name": "Elemental Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200686": {
+  "name": "Rapid Recalibration",
+  "desc": "Your auto-shots reduce the remaining cooldown of some random ability by 2 sec.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201198": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Raptor Strike or Multi-Shot unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200303": {
+  "name": "Pulse of Renewal",
+  "desc": "Reduces the cooldown of your Sprint, Adrenaline Rush, Blade Flurry, Preparation, Premeditation, Cold Blood, Killing Spree, Shadow Dance, Cloak of Shadows, and Evasion abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200431": {
+  "name": "Quick Hands",
+  "desc": "Increases haste rating by @flat5+lvl0.15@.",
+  "quality": 0,
+  "family": ""
+ },
+ "200559": {
+  "name": "Giant Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Giants.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200687": {
+  "name": "Relentless Rhythm",
+  "desc": "Your melee attacks reduce the remaining cooldown of a random ability by 1.5 sec.\\r\\n\\r\\nThis effect cannot occur more than once 1 second.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200048": {
+  "name": "Burning Touch",
+  "desc": "Your direct damaging spells have a 10% chance to burn the target for damage equal to @flat10@% of the damage done over 3 sec.\\r\\n\\r\\nThis effect can stack up to 30% of your maximum health.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200304": {
+  "name": "Momentum Chant",
+  "desc": "Reduces the cooldown of your Fade, Guardian Spirit, Power Infusion, Pain Suppression, Dispersion, Lightwell, Fear Ward, Hymn of Hope, Shadowfiend, Silence, Desperate Prayer, Divine Hymn, and Psychic Horror abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200432": {
+  "name": "Armor Penetration",
+  "desc": "Increases armor penetration rating by @flat5+lvl0.15@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200560": {
+  "name": "Undead Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Undead.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200688": {
+  "name": "Rolling Momentum",
+  "desc": "Moving increases your damage dealt by 2%, stacking up to 5 times.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200944": {
+  "name": "Crusader's Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells : Exorcism, Flash of Light, Holy Light.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "201200": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunderstorm, Stormstrike, Earth Shock, Flame Shock, or Frost Shock unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200305": {
+  "name": "Accelerated Spirit",
+  "desc": "Reduces the cooldown of your Repentance, Lay on Hands, Hand of Protection, Avenging Wrath, Divine Shield, Divine Illumination, Divine Plea, Divine Protection, Aura Mastery, Divine Favor, Hand of Salvation, and Hand of Sacrifice abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Healer, Melee DPS, Tank"
+ },
+ "200433": {
+  "name": "Expertise Drills",
+  "desc": "Increases expertise rating by @flat5+lvl0.15@.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200561": {
+  "name": "Mechanical Bane",
+  "desc": "Increases your spell power by @flat60@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200050": {
+  "name": "Focused Assault",
+  "desc": "After you hit a target with 4 spells or abilities within 5 seconds, damage you deal to that target is increased by 15% for 8 sec. \\r\\nThis effect cannot occur more than once every 30 seconds per target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "201201": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunderstorm, Stormstrike, Earth Shock, Flame Shock, or Frost Shock unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200306": {
+  "name": "Tempo Weave",
+  "desc": "Reduces the cooldown of your Cold Snap, Combustion, Presence of Mind, Arcane Power, Mirror Image, Icy Veins, Evocation, Ice Block, and Invisibility abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200434": {
+  "name": "Mana Reservoir",
+  "desc": "Increases maximum mana by @flat120+lvl2.4@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200562": {
+  "name": "Beast Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200690": {
+  "name": "Reaper’s Reprieve",
+  "desc": "Fatal damage instead reduces you to 1 health, prevents all damage for 3 sec, and heals you for 35% of your maximum health. \\r\\n\\r\\nThis effect cannot occur more than once every 60 min and can trigger without consuming Cheat Death charges.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200818": {
+  "name": "Eonar’s Seed",
+  "desc": "Up to 20% of your overhealing on allies is stored as Eonar’s Seed for 10 sec. \\r\\n\\r\\nWhen the target health lowers under 50%, it blooms, healing the target aswell as the most injured nearby ally for the stored amount. Stored amount cannot exceed 40% of the target's maximum health.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200946": {
+  "name": "Divine Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells: Smite, Holy Fire, Mind Blast, Flash Heal, Greater Heal, Heal, Binding Heal, and Prayer of Healing.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201202": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Thunderstorm, Stormstrike, Earth Shock, Flame Shock, or Frost Shock unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200307": {
+  "name": "Rhythm of Power",
+  "desc": "Reduces the cooldown of your Readiness, Bestial Wrath, Wyvern Sting, Intimidation, Deterrence, Kill Command, Rapid Fire, and Feign Death abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "200435": {
+  "name": "Sharpened Edge",
+  "desc": "Increases all damage dealt by @flat5+lvl0.1@.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200563": {
+  "name": "Dragon Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200052": {
+  "name": "Spell Harmony",
+  "desc": "When you take damage that leaves you below 30% health, you are affected by a random heal-over-time spell from another class. \\r\\n\\r\\nThis effect cannot occur more than once every 30 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200308": {
+  "name": "Nature Quickness",
+  "desc": "Reduces the cooldown of your Berserk, Starfall, Barkskin, Challenging Roar, Enrage, Force of Nature, Frenzied Regeneration, Innervate, Nature’s Swiftness, Rebirth, Tranquility, Bash, Dash, and Nature’s Grasp abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Tank"
+ },
+ "200436": {
+  "name": "Shielded Steps",
+  "desc": "Reduces damage taken from area-of-effect attacks by @flat1@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200564": {
+  "name": "Demon Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Demons.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200948": {
+  "name": "Storm Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells: Lightning Bolt, Chain Lightning, Lava Burst, Healing Wave, Chain Heal.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201204": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Typhoon, Swipe, Swiftmend, or Hurricane unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200309": {
+  "name": "Cyclebreaker’s Sigil ",
+  "desc": "Reduces the cooldown of your Hysteria, Dancing Rune Weapon, Rune Tap, Hungering Cold, Lichborne, Bone Shield, Summon Gargoyle, Unbreakable Armor, Anti-Magic Zone, Blood Tap, Death Pact, Army of the Dead, Empower Rune Weapon, Icebound Fortitude, Mark of Blood, Raise Ally, Raise Dead, Deathchill, Strangulate, Vampiric Blood, and Anti-Magic Shell abilities by @flat1@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200437": {
+  "name": "Steady Casting",
+  "desc": "Reduces pushback suffered from damaging attacks while casting by @flat20@%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200565": {
+  "name": "Elemental Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200693": {
+  "name": "Reaper’s Verdict",
+  "desc": "Your damage against enemies below 35% health is increased by 20%. \\r\\nWhen you damage an enemy below 15% health, you deal an additional 54 Shadow damage. \\r\\n\\r\\nThis effect cannot occur more than once every 2 sec per target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201205": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Typhoon, Swipe, Swiftmend, or Hurricane unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200310": {
+  "name": "Anger Management",
+  "desc": "Generates @flat1@ Rage every 3 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200438": {
+  "name": "Subtle Presence",
+  "desc": "Reduces threat generated by @flat2@%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Ranged DPS"
+ },
+ "200566": {
+  "name": "Giant Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Giants.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200822": {
+  "name": "Frostfire Paradox",
+  "desc": "Your Frost damage applies Biting Cold for 6 sec, stacking up to 10 times. \\r\\n\\r\\nYour direct Fire damage against a target with 6 or more stacks Shatters it, consuming all stacks and dealing @flat3+sp0.15+ap0.075@ Frost damage per stack to the target and to enemies within 8 yards.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200950": {
+  "name": "Arcane Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells: Arcane Blast, Fireball, Frostbolt, Frostfire Bolt, Pyroblast, Flamestrike.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201206": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Typhoon, Swipe, Swiftmend, or Hurricane unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200439": {
+  "name": "Provoking Presence",
+  "desc": "Increases threat generated by @flat3@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200567": {
+  "name": "Undead Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Undead.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200695": {
+  "name": "Reaper’s Doom",
+  "desc": "Dealing damage afflict the target with Reaper’s Doom for 30 sec. When it expires, it detonates for 58 Shadow damage split between all enemies within 8 yards. \\r\\n\\r\\nIf the target dies while afflicted, Reaper’s Doom detonates immediately.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200440": {
+  "name": "Efficient Casting",
+  "desc": "Reduces the mana cost of your spells by @flat5@%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200568": {
+  "name": "Machine Slayer",
+  "desc": "Increases your attack power by @flat90@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200952": {
+  "name": "Fel Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells: Shadow Bolt, Incinerate, Soul Fire, Chaos Bolt, Seed of Corruption, Haunt, Unstable Affliction.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201208": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Fan of Knives, Blade Flurry, or Ghostly Strike unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200313": {
+  "name": "Dirge",
+  "desc": "Your Chains of Ice, Howling Blast, Icy Touch, Obliterate, Death Strike, Plague Strike, and Scourge Strike generate 2.5 additional runic power.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200441": {
+  "name": "Safeguarded Gear",
+  "desc": "Increases your Armor contribution from cloth and leather items by @flat4@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200569": {
+  "name": "Beast Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201209": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Fan of Knives, Blade Flurry, or Ghostly Strike unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200314": {
+  "name": "Vitality",
+  "desc": "Increases your Energy regeneration by @flat1@%",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200442": {
+  "name": "Steady Channeling",
+  "desc": "Allows @flat5@% of your mana regeneration to continue while casting.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200570": {
+  "name": "Dragonkin Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200826": {
+  "name": "Rocket Strike",
+  "desc": "Your melee and ranged attacks have a 5% chance to launch a Rocket at your target, dealing @flat15+sp0.75+ap0.375@ Fire damage. \\r\\n\\r\\nYou fire 1 additional Rocket on random nearby enemies for each of your active pets or guardians. Subsequent Rockets hitting the same target deal reduced damage.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200954": {
+  "name": "Nature’s Surge",
+  "desc": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. \\r\\n\\r\\nEligible spells: Wrath, Starfire. Healing: Healing Touch, Nourish, Regrowth.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201210": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Fan of Knives, Blade Flurry, or Ghostly Strike unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200443": {
+  "name": "Frostguard Carapace",
+  "desc": "When you fall below 50% health, damage taken is reduced by @flat15@% for 6 sec.\\r\\n\\r\\nThis effect cannot occur more than once every 45 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200571": {
+  "name": "Demon Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Demons.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200699": {
+  "name": "Scorching Wounds",
+  "desc": "Your direct damage spells cause the target to burn, dealing @sp0.06@ Fire damage over 6 sec. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200572": {
+  "name": "Elemental Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200700": {
+  "name": "Scorching Wounds",
+  "desc": "Your direct damage spells cause the target to burn, dealing @sp0.12@ Fire damage over 6 sec. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200956": {
+  "name": "Heavy Incantations",
+  "desc": "Increases the damage of spells with a base cast time longer than 2.5 seconds by 30%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201212": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Cone of Cold, Arcane Explosion, Frost Nova, or Dragon's Breath unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200573": {
+  "name": "Giant Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Giants.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200701": {
+  "name": "Scorching Wounds",
+  "desc": "Your direct damage spells cause the target to burn, dealing @sp0.6@ Fire damage over 6 sec. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201213": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Cone of Cold, Arcane Explosion, Frost Nova, or Dragon's Breath unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200446": {
+  "name": "Stoneskin Threads",
+  "desc": "Reduces the duration of movement slowing effects on you by @flat15@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200574": {
+  "name": "Undead Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Undead.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200830": {
+  "name": "Lightning Charged",
+  "desc": "While in combat, you gain Lightning Charged every 8 sec, stacking up to 5 times lasting 12 sec.\\r\\n\\r\\nEach stack increases your attack speed by 2% and causes your melee and ranged auto-attacks to deal an additional @flat1+ap0.05@ Nature damage.\\r\\n\\r\\nAt 5 stacks, your auto-attacks instead unleash Chain Lightning at the target, dealing @flat5+ap0.25@ Nature damage and chaining up to 5 times. Effect is lost on exiting combat.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200958": {
+  "name": "Weapon Mastery",
+  "desc": "You can equip all weapon types.",
+  "quality": 0,
+  "family": ""
+ },
+ "200063": {
+  "name": "Chaotic Convergence",
+  "desc": "When you deal damage, you have a chance to unleash a random offensive spell from another class on your target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "201214": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Cone of Cold, Arcane Explosion, Frost Nova, or Dragon's Breath unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200447": {
+  "name": "Sundered Will",
+  "desc": "Reduces the duration of fear effects on you by @flat30@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200575": {
+  "name": "Mechanical Bane",
+  "desc": "Increases your spell power by @flat120+lvl6@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200703": {
+  "name": "Reap the Weak",
+  "desc": "Your direct damage spell critical strikes have a 20% chance to deal @sp0.04@ Shadow damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200448": {
+  "name": "Steady Grip",
+  "desc": "Reduces the duration of disarm effects on you by @flat30@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200576": {
+  "name": "Beast Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Beasts.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200704": {
+  "name": "Reap the Weak",
+  "desc": "Your direct damage spell critical strikes have a 20% chance to deal @sp0.08@ Shadow damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200960": {
+  "name": "Adaptive Power",
+  "desc": "Increases your damage by 1% for each unique Echo you have active. \\r\\n\\r\\nAdditional ranks or qualities of the same Echo do not increase this bonus.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "201216": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next your next Holy Nova or Mind Sear unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200449": {
+  "name": "Rootbreaker",
+  "desc": "Reduces the duration of root effects on you by @flat30@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200577": {
+  "name": "Dragon Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Dragonkin.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200705": {
+  "name": "Reap the Weak",
+  "desc": "Your direct damage spell critical strikes have a 20% chance to deal @sp0.4@ Shadow damage to the target. Proc chance tripled against target under 35% health. \\r\\n\\r\\nThis effect deals at least 20 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201217": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next your next Holy Nova or Mind Sear unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200450": {
+  "name": "Insulated Soul",
+  "desc": "Reduces the duration of stun effects on you by @flat30@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200578": {
+  "name": "Demon Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Demons.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200706": {
+  "name": "Crippling Strikes",
+  "desc": "Your melee attacks slow enemies by 30% for 3 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200834": {
+  "name": "Shadow Crash",
+  "desc": "Your Shadow damage-over-time damage have a 3% chance to hurl a Shadow Crash at the target. \\r\\n\\r\\nOn impact, it deals @flat20+sp1+ap0.5@ Shadow damage to enemies within 10 yards",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200962": {
+  "name": "Resonant Build",
+  "desc": "While you have at least 3 different Base Stat Echo types active (Strength, Agility, Intellect, Spirit, or Stamina), your damage is increased by 15%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "201218": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next your next Holy Nova or Mind Sear unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200451": {
+  "name": "Strength Training",
+  "desc": "Increases Strength by @flat15+lvl0.3@.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200579": {
+  "name": "Elemental Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Elementals.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200452": {
+  "name": "Agility Boost",
+  "desc": "Increases Agility by @flat15+lvl0.3@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200580": {
+  "name": "Giant Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Giants.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200708": {
+  "name": "Arcane Snare",
+  "desc": "Your direct damage spells slow enemies by 30% for 3 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200964": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201220": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Shadowflame, Death Coil, Shadowfury, or Drain Life unleashes Acid Breath, dealing @sp0.04+ap0.02@ Nature damage to enemies in front of you and an additional @sp0.008+ap0.004@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200453": {
+  "name": "Mind Expansion",
+  "desc": "Increases Intellect by @flat15+lvl0.3@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200581": {
+  "name": "Undead Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Undead.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200965": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201221": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Shadowflame, Death Coil, Shadowfury, or Drain Life unleashes Acid Breath, dealing @sp0.08+ap0.04@ Nature damage to enemies in front of you and an additional @sp0.016+ap0.008@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200454": {
+  "name": "Spiritual Fortitude",
+  "desc": "Increases Spirit by @flat15+lvl0.3@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200582": {
+  "name": "Machine Slayer",
+  "desc": "Increases your attack power by @flat180+lvl9@ when fighting Mechanical enemies.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200710": {
+  "name": "Creeping Decay",
+  "desc": "Your damage over time effects slow the target’s melee and ranged attack speed by 10%. This effect does not stack.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200838": {
+  "name": "Idol of Yogg-Saron",
+  "desc": "Whenever you kill an enemy, gain a stack of Idol of Yogg-Saron. At 10 stacks, you summon a Thing from Beyond that casts Void Spike at nearby enemies for 20 sec. \\r\\n\\r\\n|cff1eff00Void Spike : |cffffffffHurls a bolt of dark magic, dealing @flat15+sp0.75+ap0.375@ Shadow damage and @flat5+sp0.2+ap0.1@ Shadow damage to all enemies within 0 yards of the target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200966": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201222": {
+  "name": "Corrosive Breath",
+  "desc": "Every 5 sec, your next Shadowflame, Death Coil, Shadowfury, or Drain Life unleashes Acid Breath, dealing @sp0.4+ap0.2@ Nature damage to enemies in front of you and an additional @sp0.08+ap0.04@ Nature damage every second for 5 sec.\\r\\n\\r\\nThis effect deals at least 15 damage and an additional 3 every second.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200455": {
+  "name": "Iron Constitution",
+  "desc": "Increases Stamina by @flat15+lvl0.3@.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200583": {
+  "name": "Crypt Lord’s Swarm",
+  "desc": "While in combat, you are enveloped by a Locust Swarm, reducing damage taken by 20% and dealing 11 Nature damage to nearby enemies every 2 sec.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200200": {
+  "name": "Divine Resonance",
+  "desc": "Healing an ally triggers a burst of Holy energy at their location, dealing 0 Holy damage to nearby enemies. This effect deals at least 10 damage.\\r\\n\\r\\nThis effect cannot occur more than once every 6 seconds per target.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200456": {
+  "name": "Cavalry Instincts",
+  "desc": "Increases mount speed by an additional @flat15@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200712": {
+  "name": "Prismatic Guard",
+  "desc": "When you are hit by a spell, you have a 30% chance to boost your resistance to that type of magic by 10 for 15 sec. Stacks up to 3 times.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200968": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201224": {
+  "name": "Meditative Flow",
+  "desc": "Increases your mana regeneration by @flat1@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200457": {
+  "name": "Mana Regeneration",
+  "desc": "Restores @flat15+lvl0.3@ mana every 5 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200585": {
+  "name": "Widow’s Venom",
+  "desc": "Dealing Nature damage grants a stack of Venomous. At 12 stacks, you unleash Poison Bolt Volley, spraying poison at all enemies within 10 yds, dealing 26 Nature damage and an additional 11 Nature damage every second for 4 sec. \\r\\n\\r\\nAfter triggering, you cannot gain Venomous stacks for 4 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200969": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201225": {
+  "name": "Meditative Flow",
+  "desc": "Increases your mana regeneration by @flat2@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200458": {
+  "name": "Reinforced Shielding",
+  "desc": "Increases block value by @flat45+lvl0.9@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200970": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201226": {
+  "name": "Meditative Flow",
+  "desc": "Increases your mana regeneration by @flat10@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200459": {
+  "name": "Mystic Potency",
+  "desc": "Increases spell power by @flat30+lvl0.6@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200460": {
+  "name": "Brutal Might",
+  "desc": "Increases attack power by @flat45+lvl0.9@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200844": {
+  "name": "Constellations",
+  "desc": "Your critical strikes have a 10% chance to summon a Falling Star that strikes a nearby enemy for @flat10+sp0.5+ap0.25@ Arcane damage. \\r\\n\\r\\nAfter 5 Falling Stars strike, you trigger Big Bang, dealing @flat100+sp5+ap2.5@ Arcane damage split between all enemies within 12 yards of your target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200972": {
+  "name": "Ember Spark",
+  "desc": "For every 40 Runic Power you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201228": {
+  "name": "Unbridled Fury",
+  "desc": "Increases your Rage generation by @flat1@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200461": {
+  "name": "Earthen Stability",
+  "desc": "After standing still for 2 sec, your armor is increased by @flat300+lvl6@ for 5 sec after you move.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200589": {
+  "name": "Broodmother’s Webbing",
+  "desc": "When you take damage while below 50% health, you spray webs, dealing 21 Nature damage to nearby enemies and stunning them for 4 sec. \\r\\n\\r\\nThis effect cannot occur more than once every 15 sec.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200973": {
+  "name": "Ember Spark",
+  "desc": "For every 40 Runic Power you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201229": {
+  "name": "Unbridled Fury",
+  "desc": "Increases your Rage generation by @flat2@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200974": {
+  "name": "Ember Spark",
+  "desc": "For every 40 Runic Power you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201230": {
+  "name": "Unbridled Fury",
+  "desc": "Increases your Rage generation by @flat10@%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200463": {
+  "name": "Warm-Blooded",
+  "desc": "Restores @flat18+lvl0.36@ health every 3 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200464": {
+  "name": "Hardened Skin",
+  "desc": "Increases armor by @flat120+lvl2.4@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200592": {
+  "name": "Curse of the Plaguebringer",
+  "desc": "Dealing Shadow damage applies a stack of Infection to the target. At 12 stacks, you afflict the target with Curse of the Plaguebringer for 10 sec, dealing $ Shadow damage every 2 sec. \\r\\n\\r\\nEach time it deals damage, it spreads to a nearby enemy not already affected.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200720": {
+  "name": "Arcane Weapon",
+  "desc": "While above 15% mana, your melee and ranged basic attacks deal an additional 20% Arcane damage, but consume 5% of your base mana.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200976": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201232": {
+  "name": "Vitality",
+  "desc": "Increases your Energy regeneration by @flat2@%",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200465": {
+  "name": "Hardened Resolve",
+  "desc": "Reduces all damage taken by @flat9@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200977": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201233": {
+  "name": "Vitality",
+  "desc": "Increases your Energy regeneration by @flat10@%",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200466": {
+  "name": "Swift Step",
+  "desc": "Increases your movement speed by an additional @flat8@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200722": {
+  "name": "Tunnel Vision",
+  "desc": "After remaining on the same target for 6 sec, you deal 8% increased damage to that target.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200850": {
+  "name": "Earthen Spike",
+  "desc": "When struck by a melee attack, you have a chance to launch an earthen spike at the attacker, dealing @flat20+armor0.15@ damage to the attacker and nearby enemies.\\r\\n\\r\\nDamage is further increased by your Armor and generates a high amount of threat.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200978": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201234": {
+  "name": "Runic Empowerment",
+  "desc": "Increases your Runic Power generation by @flat1@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200467": {
+  "name": "Ember Ward",
+  "desc": "Increases Fire Resistance by @flat8@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200595": {
+  "name": "The Unclean’s Fever",
+  "desc": "Enemies that strike you are afflicted with Decrepit Fever, dealing 2 Shadow damage each second for 3 sec and reduces the damage they deal to you by 10% for the duration.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201235": {
+  "name": "Runic Empowerment",
+  "desc": "Increases your Runic Power generation by @flat2@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200468": {
+  "name": "Frost Ward",
+  "desc": "Increases Frost Resistance by @flat8@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200724": {
+  "name": "Battle Tempo",
+  "desc": "Killing an enemy reduces the remaining cooldown of all your abilities by 1 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200852": {
+  "name": "Emberlord’s Gift",
+  "desc": "Dealing Fire damage grants a stack of Kindling. \\r\\n\\r\\nAt 100 stacks, you erupt in flame, dealing @flat90+sp3+ap1.5@ Fire damage to nearby enemies and @flat90+sp3+ap1.5@ additional Fire damage over time for 6 sec.\\r\\n\\r\\nAfter erupting, you cannot gain Kindling for 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200980": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201236": {
+  "name": "Runic Empowerment",
+  "desc": "Increases your Runic Power generation by @flat10@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200469": {
+  "name": "Verdant Ward",
+  "desc": "Increases Nature Resistance by @flat8@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200597": {
+  "name": "The Sporelord’s Gift",
+  "desc": "While in combat, you periodically summon Spores for 20 sec, increasing the critical strike damage of nearby allies by 10%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Ranged DPS"
+ },
+ "200981": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200470": {
+  "name": "Arcane Ward",
+  "desc": "Increases Arcane Resistance by @flat8@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200726": {
+  "name": "Peak Condition",
+  "desc": "When you are above 75% health, you deal 10% more damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200982": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200471": {
+  "name": "Shadow Ward",
+  "desc": "Increases Shadow Resistance by @flat8@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200599": {
+  "name": "Drillmaster’s Rebuke",
+  "desc": "Your melee attacks have a chance to unleash an Unbalancing Strike, dealing 350% weapon damage and leaving the target Unbalanced, increasing your damage dealt to it by 10% for 6 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200216": {
+  "name": "Stormtorn Sky",
+  "desc": "After you cast 3 Nature spells or abilities, you summon a Hurricane at the target’s location, dealing 6 Nature damage over 8 sec and increasing affected enemies’ attack intervals by 20%.\\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200728": {
+  "name": "Lethal Precision",
+  "desc": "Reduces your critical strike chance by 50%, but increases your critical strike damage by 30%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200856": {
+  "name": "Mana Infusion",
+  "desc": "While above 80% mana, restoring mana also restores health equal to 50% of the mana restored.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200984": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage, 80 Energy, or 40 Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201240": {
+  "name": "Toxic Phials",
+  "desc": "Every 3 sec while in combat, you hurl a flask of poison at a nearby random location, creating a pool of toxins that deals @sp0.02+ap0.01@ Poison damage per second.\\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": ""
+ },
+ "200601": {
+  "name": "The Harvester’s Tithe",
+  "desc": "You constantly harvest the souls of nearby enemies, gaining a stack of Harvested Soul. Each stack increases your damage done by 1%. Up to 10% increase.\\r\\n\\r\\nWhen an enemy with its soul harvested dies, you regain 13 health.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200985": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage, 80 Energy, or 40 Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201241": {
+  "name": "Toxic Phials",
+  "desc": "Every 3 sec while in combat, you hurl a flask of poison at a nearby random location, creating a pool of toxins that deals @sp0.04+ap0.02@ Poison damage per second.\\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": ""
+ },
+ "200730": {
+  "name": "Sudden Insight",
+  "desc": "Your critical strikes grant 1% Haste for 2 sec. Stacking up to 5 times.",
+  "quality": 0,
+  "family": ""
+ },
+ "200858": {
+  "name": "Permafrost Aura ",
+  "desc": "While in combat, you deal @sp0.16+ap0.08@ Frost damage every 2 sec to enemies within 8 yards.\\r\\n\\r\\nThis effect deals at least 5 damage.\\r\\n\\r\\nEnemies hit have their attack speed reduced by 5% for 3 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200986": {
+  "name": "Ember Spark",
+  "desc": "For every 60 Rage, 80 Energy, or 40 Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201242": {
+  "name": "Toxic Phials",
+  "desc": "Every 3 sec while in combat, you hurl a flask of poison at a nearby random location, creating a pool of toxins that deals @sp0.2+ap0.1@ Poison damage per second.\\r\\n\\r\\nThis effect deals at least 8 damage.",
+  "quality": 0,
+  "family": ""
+ },
+ "200220": {
+  "name": "Sanctified Sky",
+  "desc": "After you cast 3 Holy spells or abilities, a Consecration forms beneath the target, dealing 6 Holy damage to enemies and healing allies standing in the light for 10 over 8 sec.\\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Tank"
+ },
+ "200732": {
+  "name": "Overcharged",
+  "desc": "Increases your damage dealt by 15%, but increases damage taken by 30%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200860": {
+  "name": "Static Overflow",
+  "desc": "Every 3 sec while in combat, your next spell or ability also hurls lightning at up to 3 random nearby enemies, dealing @sp0.4+ap0.2@ Nature damage.\\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200988": {
+  "name": "Ember Spark",
+  "desc": "For every 80 Energy you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201244": {
+  "name": "Essence Tap",
+  "desc": "Damage dealt by your damage-over-time effects has a chance to grant a random ally 1% maximum Mana, 8 Energy, 4 Rage, or 16 Runic Power.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200989": {
+  "name": "Ember Spark",
+  "desc": "For every 80 Energy you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200606": {
+  "name": "Edict of the Four",
+  "desc": "Your damaging spells and abilities build Edict. At 10 stacks, you invoke an Edict, cycling through the following effects in order: Meteor, Void Zone, Unholy Shadow and Holy Wrath. Each invocation triggers its effect at your target’s location.\\n\\n|cff1eff00Meteor : |cffffffffDeals 64 Fire damage, split between all enemies within 8 yds of the impact.\\r\\n\\n|cff1eff00Void Zone : |cffffffffSummons a Void Zone for until cancelled sec that deals 13 Shadow damage every 1 sec to enemies within it.\\r\\n\\n|cff1eff00Unholy Shadow : |cffffffffDeals 21 Shadow damage, plus 6 Shadow damage every 1 sec for 8 sec.\\r\\n\\n|cff1eff00Holy Wrath : |cffffffffHurls Holy bolts that deal 14 Holy damage to the target, jumping to additional nearby enemies. Damage increases by 50% with each jump.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200734": {
+  "name": "Leadfoot",
+  "desc": "Increases your spell Haste by 10%, but reduces your movement speed by 30%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200990": {
+  "name": "Ember Spark",
+  "desc": "For every 80 Energy you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201246": {
+  "name": "Stored Momentum",
+  "desc": "The resources you spend are stored. Every 5 sec, your next ability deals additional damage based on the amount stored.",
+  "quality": 0,
+  "family": ""
+ },
+ "200479": {
+  "name": "Forged in Combat",
+  "desc": "Your melee attacks increase your armor by @flat8+lvl0.15@ for 8 sec. Stacks up to 10 times.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200224": {
+  "name": "Blighted Sky",
+  "desc": "After you cast 3 Shadow spells or abilities, you unleash a Shadowfury at the target’s location, dealing 3 Shadow damage and stunning enemies within the area for 3 sec.\\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200480": {
+  "name": "Keen Aim",
+  "desc": "Increases hit rating by @flat8+lvl0.24@.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200736": {
+  "name": "Brittle Armor",
+  "desc": "Increases your critical strike chance by 10%, but reduces your Armor by 30%.",
+  "quality": 0,
+  "family": "Caster DPS, Healer, Melee DPS, Ranged DPS"
+ },
+ "200864": {
+  "name": "Unstable Missiles",
+  "desc": "Your direct spells have a chance to launch an Unstable Missile at the target, dealing @sp0.3+ap0.15@ Arcane damage.\\r\\n\\r\\nThis effect deals at least 10 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200992": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200481": {
+  "name": "Crushing Force",
+  "desc": "Increases critical strike rating by @flat8+lvl0.24@.",
+  "quality": 0,
+  "family": ""
+ },
+ "200993": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200482": {
+  "name": "Quick Hands",
+  "desc": "Increases haste rating by @flat8+lvl0.24@.",
+  "quality": 0,
+  "family": ""
+ },
+ "200738": {
+  "name": "Drained Reserves",
+  "desc": "Increases your spell damage by 15%, but reduces your maximum mana by 30%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200866": {
+  "name": "Hungering Curse",
+  "desc": "Every 2 sec while in combat, you afflict a nearby enemy with Siphon Life, dealing @sp1.2+ap0.6@ Shadow damage over 12 sec. \\r\\n\\r\\nIf the affected target dies, you are healed for @sp0.2+ap0.1@.\\r\\n\\r\\nThis effect deals at least 5 damage and heals at least 10 health.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200994": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200227": {
+  "name": "Ruthless Exploiter",
+  "desc": "You deal 20% additional damage to enemies affected by crowd control.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200483": {
+  "name": "Armor Penetration",
+  "desc": "Increases armor penetration rating by @flat8+lvl0.24@.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200228": {
+  "name": "Chronoboost",
+  "desc": "For each of your abilities on cooldown, Haste is increased by 2%. Also increases haste rating by 20.",
+  "quality": 0,
+  "family": ""
+ },
+ "200484": {
+  "name": "Expertise Drills",
+  "desc": "Increases expertise rating by @flat8+lvl0.24@.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200740": {
+  "name": "Heavy Blows",
+  "desc": "Increases your physical damage by 15%, but reduces your Attack Speed by 30%.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200996": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200485": {
+  "name": "Mana Reservoir",
+  "desc": "Increases maximum mana by @flat180+lvl3.6@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200613": {
+  "name": "Stitched Fury",
+  "desc": "While below 15% health, you go into a Frenzy, increasing Attack Speed by 30% and Physical damage dealt by 25%.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200997": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200230": {
+  "name": "Harbringer of Doom",
+  "desc": "You deal 1% increased damage to a target for each of your damage over time effects active on it. Also increases your spell power and attack power by 40.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200486": {
+  "name": "Sharpened Edge",
+  "desc": "Increases all damage dealt by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200742": {
+  "name": "Third Time’s the Charm",
+  "desc": "Every third direct damage spell you cast in a row deals 20% additional Arcane damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200870": {
+  "name": "Relentless Energy",
+  "desc": "While below 80% Energy, your Energy regeneration is increased by 10%. \\r\\nWhile above 80% Energy, your damage done is increased by 10%.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "200998": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200231": {
+  "name": "Backstabber’s Edge",
+  "desc": "While you are behind your target, your melee and ranged attacks and abilities also trigger an additional strike for 5% of the damage dealt. Also increases critical strike rating by 40.",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "200615": {
+  "name": "Mutagenic Fumes",
+  "desc": "Killing an enemy summons a Poison Cloud for 20, dealing 6 Nature damage to nearby enemies every 1. \\r\\n\\r\\nThis effect cannot occur more than once every 8 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200232": {
+  "name": "Storm Conductor",
+  "desc": "After you cast or use 10 offensive abilities, you unleashe a Chain Lightning, dealing 10 Nature damage and jumping to up to 99 additional enemies. Also increases your spell power and attack power by 40.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200744": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Rend. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201000": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.04+ap0.02@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201256": {
+  "name": "Pandemic",
+  "desc": "When a target dies while affected by one of your damage-over-time effects, that effect spreads to all enemies within 20 yards.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200745": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Blood Plague or Frost Fever. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201001": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.08+ap0.04@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200234": {
+  "name": "Second Edge",
+  "desc": "Your melee attacks strike an additional nearby enemy. Also increases your attack power by 60.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200490": {
+  "name": "Safeguarded Gear",
+  "desc": "Increases your Armor contribution from cloth and leather items by @flat6@%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200746": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Serpent Sting. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "200874": {
+  "name": "Raging Momentum",
+  "desc": "While below 80% Rage, your Rage generation is increased by 20%. \\r\\nWhile above 80% Rage, your damage done is increased by 10%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201002": {
+  "name": "Ember Spark",
+  "desc": "For every (40 + 12 per level) Mana you spend, a tiny ember leaps from you, dealing @sp0.4+ap0.2@ Fire damage to a random enemy within 20 yards. \\r\\n\\r\\nThis effect deals at least 15 damage and cannot occur more than once every 1.50 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201258": {
+  "name": "Demonic Awakening",
+  "desc": "When you fall below 35% health, you transform into a Demon for 8 sec. While transformed, your damage is increased by 30%, you leech 15% of damage dealt as health, and your melee attacks strike an additional nearby enemy. Cannot occur more than once every 45 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200491": {
+  "name": "Steady Channeling",
+  "desc": "Allows @flat8@% of your mana regeneration to continue while casting.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200619": {
+  "name": "Ravenous Bellow",
+  "desc": "Delivering a killing blow unleashes Terrifying Roar, dealing 12 damage to enemies within 10 yds, slowing them by 50% and causing them to take 15% increased damage from you for 5 sec.\\r\\n\\r\\nThis effect cannot occur more than once every 2 sec.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200747": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Flame Shock. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200236": {
+  "name": "Quickening Aura",
+  "desc": "Increases Haste by 10% and haste rating by 30.",
+  "quality": 0,
+  "family": ""
+ },
+ "200492": {
+  "name": "Strength Training",
+  "desc": "Increases Strength by @flat30+lvl1.5@",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200748": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Lacerate, Moonfire, or Rake, based on your current form. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201004": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mortal Strike, Bloodthirst, or Shield Slam, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200237": {
+  "name": "Temporal Flow",
+  "desc": "Whenever you use an ability with a cooldown, the remaining cooldown on all other abilities is reduced by 1.5 sec. Also increases hit rating by 30.\\r\\n\\r\\n\\r\\nThis effect cannot occur more than once 1 second.",
+  "quality": 0,
+  "family": ""
+ },
+ "200493": {
+  "name": "Agility Boost",
+  "desc": "Increases Agility by @flat30+lvl1.5@",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS, Tank"
+ },
+ "200621": {
+  "name": "Polarity Shift",
+  "desc": "You alternate between Positive Charge and Negative Charge.\\r\\nTaking direct melee damage shifts you to Negative Charge.\\r\\nWhile under Negative Charge, going 1 to 0 sec without taking direct melee damage shifts you to Positive Charge.\\r\\n\\r\\nYou cannot shift more than once every 4 sec.\\n\\n|cff1eff00Positive Charge: |cffffffffIncreases your critical strike chance by 10% and damage dealt by 5%.\\r\\n\\n|cff1eff00Negative Charge: |cffffffffReduces damage taken by 10%, increases healing received by 5%, and increases your movement speed by 5%.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200749": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Garrote. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201005": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mortal Strike, Bloodthirst, or Shield Slam, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200238": {
+  "name": "Energy Overflow",
+  "desc": "Every 10 sec, your next ability costs no primary resource and restores 24 Energy, 12 Rage, 3% of your maximum mana, or 48 Runic Power, depending on your class.",
+  "quality": 0,
+  "family": ""
+ },
+ "200494": {
+  "name": "Mind Expansion",
+  "desc": "Increases Intellect by @flat30+lvl1.5@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200750": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Corruption, Curse of Agony, or Immolate. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200878": {
+  "name": "Runic Momentum",
+  "desc": "While below 80% Runic Power, your Runic Power generation is increased by 20%. \\r\\nWhile above 80% Runic Power, your damage done is increased by 10%.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201006": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Mortal Strike, Bloodthirst, or Shield Slam, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201262": {
+  "name": "Accelerated Decay",
+  "desc": "Your damage-over-time effects now benefit from Haste.",
+  "quality": 0,
+  "family": ""
+ },
+ "200495": {
+  "name": "Spiritual Fortitude",
+  "desc": "Increases Spirit by @flat30+lvl1.5@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200751": {
+  "name": "Unstable Infusion",
+  "desc": "Damaging an enemy applies Vampiric Touch, Holy Fire, or Shadow Word: Pain, based on your current form. Does not affect targets already affected.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200240": {
+  "name": "Perfect Timing",
+  "desc": "After standing still for 6 sec, your critical strikes deal 25% increased damage. This effect persists for up to 3 sec after you move. Also increases your critical strike rating by 40.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200496": {
+  "name": "Iron Constitution",
+  "desc": "Increases Stamina by @flat30+lvl1.5@.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200752": {
+  "name": "Spellweave",
+  "desc": "Casting a healing spell increases your spell damage by 10% for 4 sec. Casting a damaging spell increases your healing done by 10% for 4 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201008": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Judgement, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201264": {
+  "name": "Inspiring Mending",
+  "desc": "Your direct healing spells have a 10% chance to grant a random ally a 3% bonus to all attributes for 15 sec. Stacks up to a total of 10%.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200497": {
+  "name": "Cavalry Instincts",
+  "desc": "Increases mount speed by an additional @flat45@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "201009": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Judgement, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "200498": {
+  "name": "Mana Regeneration",
+  "desc": "Restores @flat30+lvl1.5@ mana every 5 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200882": {
+  "name": "Arcane Density",
+  "desc": "Increases your Spell Power by an amount equal to 5% of your Armor, up to a maximum of 150% of your intellect.\\r\\n\\nCurrent bonus: @armor0.05LOWERintellect1.5@ Spell Power.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201010": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Judgement, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS, Tank"
+ },
+ "201266": {
+  "name": "Lingering Inspiration",
+  "desc": "Your periodic healing effects have a 5% chance to grant a random ally a 1% bonus to all attributes for 15 sec. Stacks up to a total of 10%.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200499": {
+  "name": "Reinforced Shielding",
+  "desc": "Increases block value by @flat90+lvl4.5@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200627": {
+  "name": "Chill of the Bone Wyrm",
+  "desc": "Dealing Frost damage grants a stack of Rime. At 12 stacks, you unleash Frost Breath in front of you, dealing 40 Frost damage and leaving enemies hit Brittle for 5 sec.\\r\\n\\r\\nWhile Brittle is active, your Frost damage against them is increased by 10%. \\r\\n\\r\\nAfter triggering, you cannot gain Rime stacks for 4 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201336": {
+  "name": "Broodmother’s Fury",
+  "desc": "Your damaging spells and abilities have a chance to apply Searing Cinders for 8 sec, dealing 6 Fire damage every 1 sec.\\r\\n\\r\\nWhen Searing Cinders reaches 5 stacks, it triggers Deep Breath, burning all enemies in a line in front of you for 61 Fire damage and consuming all stacks on the primary target. \\r\\n\\r\\nDeep Breath cannot occur more than once every 6 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "201332": {
+  "name": "Leeching Swarm",
+  "desc": "While below 50% health, your damaging spells and abilities unleash Leeching Swarm, dealing 2 Nature damage every 1 sec to all enemies within 10 yds for 6 sec. You are healed for 30% of the damage dealt.\\r\\n\\r\\nIf Leeching Swarm hits only 1 target, its damage and healing are increased by 100%. Leeching Swarm cannot occur more than once every 6 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200500": {
+  "name": "Mystic Potency",
+  "desc": "Increases spell power by @flat60+lvl3@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "201324": {
+  "name": "Twilight Equilibrium",
+  "desc": "You begin combat in Light Essence.\\n\\nLight Essence: Dealing Holy, Fire, or Nature damage applies Light Charge for 8 sec, stacking up to 20 times. Dealing Shadow, Frost, or Arcane damage consumes Light Charge to unleash Darkburst, dealing 1 Shadow damage per stack to the target and all enemies within 8 yards and shifts you into Dark Essence.\\n\\nDark Essence: Dealing Shadow, Frost, or Arcane damage applies Dark Charge for 8 sec, stacking up to 20 times. Dealing Holy, Fire, or Nature damage consumes Dark Charge to unleash Lightburst, dealing 1 Holy damage per stack to the target and all enemies within 8 yards and shifts you into Light Essence.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200756": {
+  "name": "Overtime Conversion",
+  "desc": "When you kill a target, all your remaining damage-over-time on it instantly detonate, dealing 30% of their combined remaining damage to enemies within 8 yards.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200884": {
+  "name": "Fortress Soul",
+  "desc": "Reduces damage taken by 35%, but reduces damage dealt by 70%. Increases threat generated by 200%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201012": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Death Strike, Heart Strike, Obliterate, or Scourge Strike, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201032": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Arcane Blast, Fireball, Frostbolt, or Frostfire Bolt, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201268": {
+  "name": "Overwhelming Restoration",
+  "desc": "Your healing done is increased by 30%, but your spells cost 500% more mana.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200243": {
+  "name": "Burning Flames",
+  "desc": "Your periodic healing effects also cause the target to erupt in burning flames, dealing Fire damage equal to 10% of the healing done to nearby enemies every 3 sec. This damage cannot exceed 20% of your maximum health. Also increases your spell power by 60.",
+  "quality": 0,
+  "family": "Healer"
+ },
+ "200501": {
+  "name": "Brutal Might",
+  "desc": "Increases attack power by @flat90+lvl4.5@. ",
+  "quality": 0,
+  "family": "Melee DPS, Ranged DPS"
+ },
+ "201033": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Arcane Blast, Fireball, Frostbolt, or Frostfire Bolt, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201250": {
+  "name": "Echoing Tides",
+  "desc": "Your periodic effects have a 30% chance to flare, causing them to deal damage or healing an additional time. \\r\\n\\r\\nCannot occur more than once every until cancelled on the same target.",
+  "quality": 0,
+  "family": ""
+ },
+ "200205": {
+  "name": "Scorched Sky",
+  "desc": "After you cast 3 Fire spells or abilities, you call down a Rain of Fire at the target’s location, scorching the ground for 7 Fire damage over 8 sec. \\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201013": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Death Strike, Heart Strike, Obliterate, or Scourge Strike, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201254": {
+  "name": "Contagion",
+  "desc": "Damage dealt by your damage-over-time effects has a chance to apply a random damage-over-time effect associated with another class.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS, Tank"
+ },
+ "200246": {
+  "name": "Blood Mirror",
+  "desc": "Whenever you receive a direct heal, you deal Shadow damage equal to 15% of the amount healed to a nearby enemy. Also increases your maximum health by 400.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201040": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Warlock periodic damage has a chance to cause you to hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "200502": {
+  "name": "Earthen Stability",
+  "desc": "After standing still for 2 sec, your armor is increased by @flat600+lvl30@ for 5 sec after you move.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200006": {
+  "name": "Mana Regeneration",
+  "desc": "Restores @flat10+lvl0.2@ mana every 5 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200202": {
+  "name": "First Strike",
+  "desc": "While out of combat, damage and healing done is increased by 100%. This effect persists for 3 sec after you enter combat.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200886": {
+  "name": "The Last Wall",
+  "desc": "Increases your maximum health by 50%, but reduces healing received by 60%.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "201014": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Death Strike, Heart Strike, Obliterate, or Scourge Strike, you hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201041": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Warlock periodic damage has a chance to cause you to hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201270": {
+  "name": "Armor Mastery",
+  "desc": "You can equip all armor types.",
+  "quality": 0,
+  "family": ""
+ },
+ "201024": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Starfire, Nourish, or Mangle, you hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "201042": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Warlock periodic damage has a chance to cause you to hurl a boulder at the target, dealing @sp0.5+ap0.25@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201025": {
+  "name": "Stonefist Barrage",
+  "desc": "When you cast Starfire, Nourish, or Mangle, you hurl a boulder at the target, dealing @sp0.1+ap0.05@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200759": {
+  "name": "Vital Bond",
+  "desc": "Increases your pets' Stamina by @stamina0.02@, based on your Stamina.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200003": {
+  "name": "Spiritual Fortitude",
+  "desc": "Increases Spirit by @flat10+lvl0.2@.",
+  "quality": 0,
+  "family": "Caster DPS, Healer"
+ },
+ "200259": {
+  "name": "Twin Casting",
+  "desc": "You have a 35% to cast the same ability twice. Only work with some healing and damaging class abilities.",
+  "quality": 0,
+  "family": ""
+ },
+ "200005": {
+  "name": "Cavalry Instincts",
+  "desc": "Increases mount speed by an additional @flat10@%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200248": {
+  "name": "Opening Split",
+  "desc": "After leaving combat, and every 20 sec while in combat, your next damaging ability also hits @flat1@ additional nearby enemy.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200007": {
+  "name": "Reinforced Shielding",
+  "desc": "Increases block value by @flat30+lvl0.6@.",
+  "quality": 0,
+  "family": "Tank"
+ },
+ "200504": {
+  "name": "Warm-Blooded",
+  "desc": "Restores @flat36+lvl1.8@ health every 3 sec.",
+  "quality": 0,
+  "family": "Survivability"
+ },
+ "200632": {
+  "name": "Call of the Lich King",
+  "desc": "Killing an enemy grants a Soul Fragment. At 6 Soul Fragments, they are consumed to summon a Servant of the Lich King for 30 sec.\\r\\n\\r\\nYou can have up to 6 Servants active at once.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200760": {
+  "name": "Vital Bond",
+  "desc": "Increases your pets' Stamina by @stamina0.03@, based on your Stamina.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS, Ranged DPS"
+ },
+ "200888": {
+  "name": "Arcane Burn",
+  "desc": "While above 20% mana, your spell damage done is increased by 15%, but your ressource costs are increased by 50%.",
+  "quality": 0,
+  "family": "Caster DPS"
+ },
+ "201016": {
+  "name": "Stonefist Barrage",
+  "desc": "Your Auto Shot critical strikes have a chance to hurl a boulder at the target, dealing @sp0.05+ap0.025@ Physical damage to all enemies within 8 yards of the impact. \\r\\n\\r\\nThis effect deals at least 15 damage.",
+  "quality": 0,
+  "family": "Ranged DPS"
+ },
+ "201144": {
+  "name": "Arcane Bombardment",
+  "desc": "When you cast a melee ability, you have a 20% chance to launch 3 missiles at a random nearby location, dealing @sp0.07+ap0.035@ Arcane damage to enemies hit. \\r\\n\\r\\nThis effect deals at least 30 damage.",
+  "quality": 0,
+  "family": "Melee DPS"
+ },
+ "201272": {
+  "name": "Ambidexterity",
+  "desc": "Allows you to dual wield. Off-hand damage is reduced by 20%.",
+  "quality": 0,
+  "family": ""
+ },
+ "200209": {
+  "name": "Shattered Sky",
+  "desc": "After you cast 3 Frost spells or abilities, you summon a Blizzard at the target’s location, dealing 6 Frost damage over 8 sec and slowing enemies within the area.\\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS, Melee DPS"
+ },
+ "200213": {
+  "name": "Riven Sky",
+  "desc": "After you cast 3 Arcane spells or abilities, you unleash an Arcane Explosion, dealing 3 Arcane damage and restoring 5% mana.\\r\\n\\r\\nThis effect cannot occur more than once every 21 sec.",
+  "quality": 0,
+  "family": "Caster DPS"
+ }
+}

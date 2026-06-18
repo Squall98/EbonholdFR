@@ -1,0 +1,10 @@
+## Interface: 30300
+## Title: Ebonhold Echo Dump
+## Notes: Exporte tous les echoes (nom + description + metadata) vers SavedVariables, pour traduction / guides.
+## Author: Guide Ebonhold
+## Version: 1.0
+## SavedVariables: EchoDumpDB
+
+EchoIds.lua
+SkillTreeIds.lua
+EbonholdEchoDump.lua
