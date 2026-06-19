@@ -17,6 +17,38 @@ local tomeFR = D.tomeFR or {}
 local function msg(s) DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. s) end
 
 ------------------------------------------------------------------------
+-- 0) ÉTAT / RÉGLAGES (V3) : interrupteur FR <-> EN, par catégorie.
+--    Lus en direct par les hooks : changer un réglage prend effet au
+--    survol suivant (les fenêtres déjà ouvertes : rouvrir / /reload).
+------------------------------------------------------------------------
+EbonholdFR = EbonholdFR or {}
+local DB  -- table de sauvegarde, affectée au PLAYER_LOGIN
+
+-- crée/complète EbonholdFRDB avec les valeurs par défaut (idempotent ;
+-- appelée aussi par le fichier d'UI pour éviter tout problème d'ordre).
+function EbonholdFR.EnsureDB()
+  EbonholdFRDB = EbonholdFRDB or {}
+  local db = EbonholdFRDB
+  if db.enabled == nil then db.enabled = true end
+  db.cat = db.cat or {}
+  if db.cat.echoes    == nil then db.cat.echoes = true end
+  if db.cat.skilltree == nil then db.cat.skilltree = true end
+  if db.cat.affixes   == nil then db.cat.affixes = true end
+  if db.cat.tomes     == nil then db.cat.tomes = true end
+  db.minimap = db.minimap or {}
+  if db.minimap.hide  == nil then db.minimap.hide = false end
+  if db.minimap.angle == nil then db.minimap.angle = 200 end
+  return db
+end
+
+-- la traduction de la catégorie `cat` est-elle active ? (maître + catégorie)
+local function trOn(cat)
+  if not DB or not DB.enabled then return false end
+  if cat and DB.cat and DB.cat[cat] == false then return false end
+  return true
+end
+
+------------------------------------------------------------------------
 -- 1) ECHOES : descriptions tokenisées (utils.GetSpellDescription global)
 ------------------------------------------------------------------------
 -- remplit le template FR avec les nombres verts (|cff2cfe32..|r) calculés par l'original
@@ -30,8 +62,18 @@ local function reinject(fr, enText, maxLength)
       return "|cff2cfe32" .. (nums[i] or "") .. "|r"
     end)
   end
-  if maxLength and string.len(fr) > maxLength then
-    fr = string.sub(fr, 1, maxLength - 3) .. "..."
+  -- Le français est ~30% plus long que l'anglais : on relâche la limite pour ne pas
+  -- couper les descriptions (les tooltips s'affichent sur plusieurs lignes / wrappent).
+  -- On garde un plafond de sécurité élevé pour les cas pathologiques.
+  if maxLength then
+    local cap = maxLength + 120
+    if cap < 600 then cap = 600 end
+    if string.len(fr) > cap then
+      fr = string.sub(fr, 1, cap - 3)
+      local rev = string.find(string.reverse(fr), " ")
+      if rev and rev < 18 then fr = string.sub(fr, 1, string.len(fr) - rev) end
+      fr = fr .. "..."
+    end
   end
   return fr
 end
@@ -46,7 +88,7 @@ local function installDescHook()
   local orig = utils.GetSpellDescription
   utils.GetSpellDescription = function(spellId, maxLength, stacks)
     local e = byId[spellId]
-    if e and e.desc then
+    if e and e.desc and trOn("echoes") then
       return reinject(e.desc, orig(spellId, maxLength, stacks), maxLength)
     end
     return orig(spellId, maxLength, stacks)
@@ -57,7 +99,7 @@ local function installDescHook()
     utils.GetStackedSpellDescription = function(spellInstances, maxLength)
       local sid = spellInstances and spellInstances[1] and spellInstances[1].spellId
       local e = sid and byId[sid]
-      if e and e.desc then
+      if e and e.desc and trOn("echoes") then
         return reinject(e.desc, origStk(spellInstances, maxLength), maxLength)
       end
       return origStk(spellInstances, maxLength)
@@ -76,16 +118,31 @@ local function fixSkillTooltip(tt, link)
   if not id then return end
   local e = byId[id]
   if not e then return end
-  -- nœuds de skill tree : e.sdesc ; echoes (liens chat / shift-click) : e.desc (template, tokens littéraux)
+  -- nœuds de skill tree : e.sdesc ; echoes (liens chat / shift-click) : e.desc (template @x@)
   local frDesc = e.sdesc or e.desc
   if not frDesc then return end
+  if not trOn(e.sdesc and "skilltree" or "echoes") then return end
   local nm = tt:GetName()
   if not nm then return end
+  local n = tt:NumLines() or 0
+  -- echoes : on réinjecte les formules @..@ de l'EN (parité ; le tooltip brut spell:id
+  -- n'est pas résolu, l'EN montre aussi la formule) au lieu du placeholder @x@.
+  if (not e.sdesc) and string.find(frDesc, "@") then
+    local forms = {}
+    for i = 2, n do
+      local li = _G[nm .. "TextLeft" .. i]
+      local t = li and li:GetText()
+      if t then for f in string.gmatch(t, "@(.-)@") do forms[#forms + 1] = f end end
+    end
+    if #forms > 0 then
+      local k = 0
+      frDesc = string.gsub(frDesc, "@(.-)@", function() k = k + 1; return "@" .. (forms[k] or "x") .. "@" end)
+    end
+  end
   local l2 = _G[nm .. "TextLeft2"]
   if l2 then l2:SetText(frDesc) end
   -- vide les lignes de description restantes (3..N) : à ce stade ce sont
   -- uniquement des suites de description (le coût est ajouté APRÈS le hook)
-  local n = tt:NumLines() or 0
   for i = 3, n do
     local li = _G[nm .. "TextLeft" .. i]
     if li and li:GetText() and li:GetText() ~= "" then li:SetText(" ") end
@@ -137,10 +194,10 @@ local function translateItemTooltip(tt)
     if raw and raw ~= "" then
       local plain = stripColor(raw)
       -- a) ligne d'affixe gravé
-      local frEff = frAffixEffect(plain)
+      local frEff = trOn("affixes") and frAffixEffect(plain)
       if frEff then
         fs:SetText(frEff); changed = true
-      elseif tomeName then
+      elseif tomeName and trOn("tomes") then
         -- b) lignes de Tome of Echo
         if string.find(plain, "when offered new Echoes", 1, true) then
           local full = tomeFR[tomeName]
@@ -184,7 +241,7 @@ local function translateSpellTooltip(tt)
   -- essai 1 : id du sort
   local _, _, id = tt:GetSpell()
   local e = id and byId[id]
-  if e and (e.sdesc or e.desc) then
+  if e and (e.sdesc or e.desc) and trOn(e.sdesc and "skilltree" or "echoes") then
     local l2 = _G[nm .. "TextLeft2"]
     if l2 then l2:SetText(e.sdesc or e.desc) end
     local n = tt:NumLines() or 0
@@ -202,7 +259,7 @@ local function translateSpellTooltip(tt)
     local fs = _G[nm .. "TextLeft" .. i]
     local raw = fs and fs:GetText()
     if raw and raw ~= "" then
-      local fr = affixDescFR[stripColor(raw)]
+      local fr = trOn("affixes") and affixDescFR[stripColor(raw)]
       if fr then fs:SetText(fr); changed = true end
     end
   end
@@ -235,6 +292,7 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LOGIN")
 f:SetScript("OnEvent", function()
+  DB = EbonholdFR.EnsureDB()  -- réglages sauvegardés (FR<->EN, catégories, minimap)
   -- tooltips toujours présents
   hookTooltipFrame("GameTooltip")
   hookTooltipFrame("ItemRefTooltip")

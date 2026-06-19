@@ -2,6 +2,25 @@
 
 Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/).
 
+## [3.0] — 2026-06-19
+
+### Ajouté
+- **Bouton sur la minimap** (icône livre) : déplaçable autour du cercle, sa position est sauvegardée.
+  - **Clic gauche** : ouvre le panneau d'options.
+  - **Clic droit** : bascule rapide **FR ⇄ EN** (l'icône se grise en mode anglais).
+- **Panneau d'options** :
+  - **Interrupteur maître** pour repasser à tout moment au **texte d'origine en anglais**.
+  - **Activation par catégorie** : Echoes, Skill Tree, Affixes, Tomes (chacune indépendante).
+  - Bouton **Recharger l'interface** pour appliquer le changement aux fenêtres déjà ouvertes.
+- **Sauvegarde des préférences** entre les sessions (`SavedVariables`).
+- Commandes : `/frmenu` (panneau) et `/frbouton` (masquer/afficher le bouton minimap).
+
+### Corrigé
+- **Contenu dynamique par classe (livraison effective)** : la correction annoncée en 2.0 (chaque variante de classe affiche son **bon** sort/ressource/dot — Auto Shot, Lightning Bolt, Crusader Strike, Runes, etc.) n'était en réalité **pas incluse** dans les fichiers de la release 2.0. Elle est désormais **bien présente** dans les données livrées. Si vous voyiez encore « Tir automatique » sur des echoes d'autres classes, c'est corrigé.
+
+### Notes
+- Les **infobulles** changent de langue instantanément (au survol suivant). Les **fenêtres déjà ouvertes** (Echoes Browser…) prennent en compte le changement à leur réouverture, ou via le bouton *Recharger l'interface*.
+
 ## [2.0] — 2026-06-19
 
 ### Ajouté

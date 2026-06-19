@@ -11,6 +11,15 @@ Addon communautaire qui affiche en **français** les descriptions du serveur pri
 - **128 Tomes of Echo** — tooltip d'objet (texte « Use: … » + description courte).
 - Les **noms** (echoes, nœuds, sorts/ressources cités) sont **gardés en anglais**, par choix — seules les phrases de description passent en français.
 
+## 🎛️ En jeu : bouton minimap & bascule FR/EN
+Un **bouton sur la minimap** (icône livre) donne le contrôle complet sans rien désinstaller :
+- **Clic droit** : bascule instantanément entre **français** et **texte d'origine en anglais** (l'icône se grise en mode anglais).
+- **Clic gauche** : ouvre un **panneau d'options** avec l'interrupteur maître et l'activation **par catégorie** (Echoes / Skill Tree / Affixes / Tomes), plus un bouton *Recharger l'interface*.
+- Le bouton se **déplace** autour de la minimap ; position et préférences sont **sauvegardées**.
+- Commandes : `/frmenu` (panneau), `/frbouton` (masquer/afficher le bouton).
+
+> Les infobulles changent de langue au survol suivant ; les fenêtres déjà ouvertes se mettent à jour à leur réouverture (ou via *Recharger l'interface*).
+
 ## 📥 Installation
 1. Télécharge le **`EbonholdFR-vX.Y.zip`** de la dernière [release](../../releases), ou le dépôt (**Code → Download ZIP**).
 2. Copie le dossier **`EbonholdFR`** dans :
