@@ -10,6 +10,7 @@ Addon communautaire qui affiche en **français** les descriptions du serveur pri
 - **165 Affixes** — Enclume Enchantée, **liens chat**, **affixe gravé sur un objet** (ligne violette) et **grimoire**.
 - **128 Tomes of Echo** — tooltip d'objet (texte « Use: … » + description courte).
 - Les **noms** (echoes, nœuds, sorts/ressources cités) sont **gardés en anglais**, par choix — seules les phrases de description passent en français.
+- **Echoes dynamiques par classe** : pour les echoes à variantes (Stonefist Barrage, Ember Spark, Unstable Infusion, Temporal Pressure, Corrosive Breath, Arcane Bombardment), l'addon détecte ta **classe** et affiche **ta** variante — là où le jeu (même en anglais) montre la variante canonique à tout le monde.
 
 ## 🎛️ En jeu : bouton minimap & bascule FR/EN
 Un **bouton sur la minimap** (icône livre) donne le contrôle complet sans rien désinstaller :

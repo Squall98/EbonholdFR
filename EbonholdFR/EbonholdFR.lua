@@ -14,7 +14,20 @@ local byId = D.byId or {}
 local affixEffectFR = D.affixEffectFR or {}
 local affixDescFR = D.affixDescFR or {}
 local tomeFR = D.tomeFR or {}
+local dynFR = D.dynFR or {}
 local function msg(s) DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. s) end
+
+-- Echoes à contenu dynamique : le serveur affiche la variante canonique
+-- (Guerrier) à toutes les classes. On choisit la variante FR de LA classe du
+-- joueur. e.dyn = nom de l'echo ; dynFR[nom][CLASSE] = texte FR de la variante.
+local function dynDesc(e)
+  if e.dyn then
+    local _, class = UnitClass("player")
+    local m = dynFR[e.dyn]
+    if m and class and m[class] then return m[class] end
+  end
+  return e.desc
+end
 
 ------------------------------------------------------------------------
 -- 0) ÉTAT / RÉGLAGES (V3) : interrupteur FR <-> EN, par catégorie.
@@ -89,7 +102,7 @@ local function installDescHook()
   utils.GetSpellDescription = function(spellId, maxLength, stacks)
     local e = byId[spellId]
     if e and e.desc and trOn("echoes") then
-      return reinject(e.desc, orig(spellId, maxLength, stacks), maxLength)
+      return reinject(dynDesc(e), orig(spellId, maxLength, stacks), maxLength)
     end
     return orig(spellId, maxLength, stacks)
   end
@@ -100,7 +113,7 @@ local function installDescHook()
       local sid = spellInstances and spellInstances[1] and spellInstances[1].spellId
       local e = sid and byId[sid]
       if e and e.desc and trOn("echoes") then
-        return reinject(e.desc, origStk(spellInstances, maxLength), maxLength)
+        return reinject(dynDesc(e), origStk(spellInstances, maxLength), maxLength)
       end
       return origStk(spellInstances, maxLength)
     end

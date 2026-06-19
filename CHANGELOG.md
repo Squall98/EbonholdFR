@@ -2,6 +2,16 @@
 
 Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/).
 
+## [3.1] — 2026-06-19
+
+### Corrigé / Ajouté
+- **Echoes dynamiques affichés selon TA classe.** Pour les 6 echoes à variantes (Stonefist Barrage, Ember Spark, Unstable Infusion, Temporal Pressure, Corrosive Breath, Arcane Bombardment), le serveur affiche la variante **canonique (Guerrier)** à tout le monde dans la carte d'offre — même en anglais. L'addon détecte désormais la **classe du joueur** (`UnitClass`) et affiche **la bonne variante** : un Mage voit « Cone of Cold / Mana », un Voleur « Énergie », un Chevalier de la mort « Runes », etc.
+- C'est un comportement que **même la version anglaise du jeu n'a pas** : la traduction FR devient plus juste que l'original sur ces echoes.
+
+### Notes
+- Couverture : 10 classes pour 5 de ces echoes ; Unstable Infusion n'existe que pour 8 classes côté serveur (pas de variante Mage/Paladin), géré en conséquence.
+- Repère technique : table `dynFR` (echo → classe → texte) générée par `tools/gen_fr_data.py`, choisie au survol par le hook `dynDesc`.
+
 ## [3.0] — 2026-06-19
 
 ### Ajouté
