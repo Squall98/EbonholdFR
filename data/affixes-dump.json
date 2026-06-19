@@ -1,0 +1,1157 @@
+{
+ "901001": {
+  "id": 901001,
+  "name": "Quick Instincts I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet attacks 10% faster",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "901002": {
+  "id": 901002,
+  "name": "Quick Instincts II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet attacks 20% faster",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "901003": {
+  "id": 901003,
+  "name": "Quick Instincts III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet attacks 25% faster",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901004": {
+  "id": 901004,
+  "name": "Quick Instincts IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet attacks 30% faster",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "901005": {
+  "id": 901005,
+  "name": "Thick Hide I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your Armor by 500",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "901006": {
+  "id": 901006,
+  "name": "Thick Hide II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your Armor by 1000",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "901007": {
+  "id": 901007,
+  "name": "Thick Hide III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your Armor by 2000",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901008": {
+  "id": 901008,
+  "name": "Thick Hide IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your Armor by 4000",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102221": {
+  "id": 102221,
+  "name": "Wellspring V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 2500 for 10 sec",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "901009": {
+  "id": 901009,
+  "name": "Wellspring I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 500 for 10 sec",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "901010": {
+  "id": 901010,
+  "name": "Wellspring II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 1000 for 10 sec",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "901011": {
+  "id": 901011,
+  "name": "Wellspring III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 1500 for 10 sec",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901012": {
+  "id": 901012,
+  "name": "Wellspring IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 2000 for 10 sec",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "901013": {
+  "id": 901013,
+  "name": "Armor Rend I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your armor penetration by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "901014": {
+  "id": 901014,
+  "name": "Armor Rend II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your armor penetration by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "901015": {
+  "id": 901015,
+  "name": "Armor Rend III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your armor penetration by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901016": {
+  "id": 901016,
+  "name": "Armor Rend IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your armor penetration by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102222": {
+  "id": 102222,
+  "name": "Armor Rend V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your armor penetration by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "901017": {
+  "id": 901017,
+  "name": "Cold I",
+  "desc": "Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 20% and increases the time between their attacks by 15%.",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "901018": {
+  "id": 901018,
+  "name": "Cold II",
+  "desc": "Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 25% and increases the time between their attacks by 20%.",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "901019": {
+  "id": 901019,
+  "name": "Cold III",
+  "desc": "Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 30% and increases the time between their attacks by 25%.",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901020": {
+  "id": 901020,
+  "name": "Cold IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 35% and increases the time between their attacks by 30%.",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "700081": {
+  "id": 700081,
+  "name": "Rending",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to reduce the target's armor. The effect is increased by your Agility.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700082": {
+  "id": 700082,
+  "name": "Shackling",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to disarm the target. The duration of the disarm is increased by your Stamina.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700083": {
+  "id": 700083,
+  "name": "Hemorrhage",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every 3 sec for 15 sec. Damage scales with your weapon speed.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "102207": {
+  "id": 102207,
+  "name": "Temporal Flux V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 4.0 sec",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "102223": {
+  "id": 102223,
+  "name": "Cold V",
+  "desc": "Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 35% and increases the time between their attacks by 30%.",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "700085": {
+  "id": 700085,
+  "name": "Glaciation",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your Frost damage has a chance to launch a bolt of frost at the target, dealing Frost damage and reducing movement speed. Damage is increased by the number of slowing effects on the target.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700086": {
+  "id": 700086,
+  "name": "Affliction",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your Shadow damage has a chance to send a shadowy bolt at the target, dealing Shadow damage. Damage is increased by your Shadow damage-over-time effects active on the target.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700087": {
+  "id": 700087,
+  "name": "Incineration",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Fire damage. Damage scales with your critical strike rating.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700088": {
+  "id": 700088,
+  "name": "Wilds",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Nature damage. Damage scales with your total mana.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700089": {
+  "id": 700089,
+  "name": "Dissolution",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every 3 sec. While active, Corrosive Acid reduces the target's armor, increased by 10% for each of your damage-over-time effects active on the target.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700090": {
+  "id": 700090,
+  "name": "Execution",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to Wound the target. This effect occurs twice as often when behind the target.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "901031": {
+  "id": 901031,
+  "name": "Shield Block I",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your Block value by 10%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "102208": {
+  "id": 102208,
+  "name": "Living Tide V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your HoTs tick for 300 additional healing per second, increased by Spirit",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "901033": {
+  "id": 901033,
+  "name": "Shield Block III",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your Block value by 30%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901034": {
+  "id": 901034,
+  "name": "Shield Block IV",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your Block value by 40%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "700095": {
+  "id": 700095,
+  "name": "Vampirism",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to steal life from the target. The amount stolen is increased the lower your health and by effects that increase healing done.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700096": {
+  "id": 700096,
+  "name": "Permafrost",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Frost damage. This effect has twice the chance to occur against slowed targets.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700097": {
+  "id": 700097,
+  "name": "Resurgence",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: When you fall below 40% health, you are healed for 50% of your max health and your Strength is increased for 15 seconds. This effect cannot occur more than once every 15 seconds.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700098": {
+  "id": 700098,
+  "name": "Flurry",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your melee attacks and abilities have a chance to strike an additional time for normal damage.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "102209": {
+  "id": 102209,
+  "name": "Mender's Surge V",
+  "desc": "Allows you to engrave this affix on any equippable item: Direct Critical heals restore 50% additional health, increased by Intellect",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "700101": {
+  "id": 700101,
+  "name": "Devastation",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within 4 seconds by 25%.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700102": {
+  "id": 700102,
+  "name": "Judgement",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Smites an enemy with Holy damage. Chance scale with your Hit Chance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700103": {
+  "id": 700103,
+  "name": "Vulnerability",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to increase the target's damage taken by 15% for 5 seconds.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700104": {
+  "id": 700104,
+  "name": "Thunderfury",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by 25%. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 seconds.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700105": {
+  "id": 700105,
+  "name": "Sulfuras",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over 10 seconds. Both effects scale with the Fire damage-over-time active on your target.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700106": {
+  "id": 700106,
+  "name": "Fury",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to make you gain 10 Energy or 5 Rage.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700107": {
+  "id": 700107,
+  "name": "Twin Shot",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your ranged auto-attacks automatically trigger a second shot",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "102210": {
+  "id": 102210,
+  "name": "Infinite Star V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 2400 Arcane damage, increased by your highest stat",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "102226": {
+  "id": 102226,
+  "name": "Shield Block V",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your Block value by 50%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "700109": {
+  "id": 700109,
+  "name": "Shahram",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Summons the infernal spirit of Shahram.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700110": {
+  "id": 700110,
+  "name": "Undead",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Increases your damage against Undead.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700111": {
+  "id": 700111,
+  "name": "Clarity",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Increases your Mana Regeneration by 40%",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "700112": {
+  "id": 700112,
+  "name": "Val'anyr",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your healing spells have a chance to cause Blessing of Ancient Kings for 15 seconds allowing your heals to shield the target absorbing damage equal to 15% of the amount healed.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900925": {
+  "id": 900925,
+  "name": "Iron Will I",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your total Strength by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "700113": {
+  "id": 700113,
+  "name": "Speed",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Increases run speed by 30%",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900926": {
+  "id": 900926,
+  "name": "Iron Will II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Strength by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "700114": {
+  "id": 700114,
+  "name": "Julie's Blessing",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Periodically healing the caster.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900927": {
+  "id": 900927,
+  "name": "Iron Will III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Strength by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "700115": {
+  "id": 700115,
+  "name": "Frost Arrow",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Frost Damage. Damage is futher incrased with your ranged weapon speed and your Frost Resistance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900928": {
+  "id": 900928,
+  "name": "Iron Will IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Strength by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "700116": {
+  "id": 700116,
+  "name": "Keeper's Sting",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Nature Damage. Damage is futher incrased with your ranged weapon speed and your Nature Resistance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900929": {
+  "id": 900929,
+  "name": "Feral Grace I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Agility by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900930": {
+  "id": 900930,
+  "name": "Feral Grace II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Agility by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900931": {
+  "id": 900931,
+  "name": "Feral Grace III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Agility by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900932": {
+  "id": 900932,
+  "name": "Feral Grace IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Agility by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "700120": {
+  "id": 700120,
+  "name": "Bladestorm",
+  "desc": "Allows you to engrave this affix onto any equippable weapon: Your melee attacks have 20% chance to make you strike all nearby, dealing weapon damage. While using a two-handed weapon, you have a 100% chance to trigger Bladestorm on your target",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900933": {
+  "id": 900933,
+  "name": "Arcane Mind I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Intellect by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "700121": {
+  "id": 700121,
+  "name": "Fire Blast",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Fire Damage. Damage is futher incrased with your ranged weapon speed and your Fire Resistance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900934": {
+  "id": 900934,
+  "name": "Arcane Mind II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Intellect by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900935": {
+  "id": 900935,
+  "name": "Arcane Mind III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Intellect by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900936": {
+  "id": 900936,
+  "name": "Arcane Mind IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Intellect by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102212": {
+  "id": 102212,
+  "name": "Relentless Crits V",
+  "desc": "Allows you to engrave this affix on any equippable item: Critical strikes deal 5% more damage and healing",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900937": {
+  "id": 900937,
+  "name": "Spirit Surge I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Spirit by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900938": {
+  "id": 900938,
+  "name": "Spirit Surge II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Spirit by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900939": {
+  "id": 900939,
+  "name": "Spirit Surge III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Spirit by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900940": {
+  "id": 900940,
+  "name": "Spirit Surge IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Spirit by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900941": {
+  "id": 900941,
+  "name": "Ironhide I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Stamina by 6%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900942": {
+  "id": 900942,
+  "name": "Ironhide II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Stamina by 12%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "700130": {
+  "id": 700130,
+  "name": "Flame Wrath",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Wraps the caster in a fire shield that deals fire damage every second to nearby enemies. Damage increases with the caster’s fire resistance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900943": {
+  "id": 900943,
+  "name": "Ironhide III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Stamina by 18%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900944": {
+  "id": 900944,
+  "name": "Ironhide IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Stamina by 24%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102213": {
+  "id": 102213,
+  "name": "Fortified by Pain V",
+  "desc": "Allows you to engrave this affix on any equippable item: Taking damage may grant 15% Attack Power and 30% Spell Power for 12 seconds",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900945": {
+  "id": 900945,
+  "name": "Keen Strikes I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 3%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900946": {
+  "id": 900946,
+  "name": "Keen Strikes II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 6%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900947": {
+  "id": 900947,
+  "name": "Keen Strikes III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 9%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900948": {
+  "id": 900948,
+  "name": "Keen Strikes IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 12%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900949": {
+  "id": 900949,
+  "name": "Frozen Pulse I",
+  "desc": "Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 100 Shadow damage per second for 6 sec, increased by Critical Strike rating",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900950": {
+  "id": 900950,
+  "name": "Frozen Pulse II",
+  "desc": "Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 150 Shadow damage per second for 6 sec, increased by Critical Strike rating",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900951": {
+  "id": 900951,
+  "name": "Frozen Pulse III",
+  "desc": "Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 220 Shadow damage per second for 6 sec, increased by Critical Strike rating",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900952": {
+  "id": 900952,
+  "name": "Frozen Pulse IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 300 Shadow damage per second for 6 sec, increased by Critical Strike rating",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102214": {
+  "id": 102214,
+  "name": "Frost Breath V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 300 Frost damage, increased by your Stamina",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900953": {
+  "id": 900953,
+  "name": "Temporal Flux I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 2 sec",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900954": {
+  "id": 900954,
+  "name": "Temporal Flux II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 2.5 sec",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900955": {
+  "id": 900955,
+  "name": "Temporal Flux III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 3 sec",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900956": {
+  "id": 900956,
+  "name": "Temporal Flux IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 3.5 sec",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900957": {
+  "id": 900957,
+  "name": "Living Tide I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your HoTs tick for 50 additional healing per second, increased by Spirit",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900958": {
+  "id": 900958,
+  "name": "Living Tide II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your HoTs tick for 75 additional healing per second, increased by Spirit",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900959": {
+  "id": 900959,
+  "name": "Living Tide III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your HoTs tick for 100 additional healing per second, increased by Spirit",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900960": {
+  "id": 900960,
+  "name": "Living Tide IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your HoTs tick for 150 additional healing per second, increased by Spirit",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102215": {
+  "id": 102215,
+  "name": "Overwhelming Force V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases damage and healing done by 12%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900961": {
+  "id": 900961,
+  "name": "Mender's Surge I",
+  "desc": "Allows you to engrave this affix on any equippable item: Direct Critical heals restore 10% additional health, increased by Intellect",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900962": {
+  "id": 900962,
+  "name": "Mender's Surge II",
+  "desc": "Allows you to engrave this affix on any equippable item: Direct Critical heals restore 20% additional health, increased by Intellect",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900963": {
+  "id": 900963,
+  "name": "Mender's Surge III",
+  "desc": "Allows you to engrave this affix on any equippable item: Direct Critical heals restore 30% additional health, increased by Intellect",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900964": {
+  "id": 900964,
+  "name": "Mender's Surge IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Direct Critical heals restore 40% additional health, increased by Intellect",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900965": {
+  "id": 900965,
+  "name": "Infinite Star I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 350 Arcane damage, increased by your highest stat",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900966": {
+  "id": 900966,
+  "name": "Infinite Star II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 450 Arcane damage, increased by your highest stat",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900967": {
+  "id": 900967,
+  "name": "Infinite Star III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 800 Arcane damage, increased by your highest stat",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "102200": {
+  "id": 102200,
+  "name": "Iron Will V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Strength by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "102216": {
+  "id": 102216,
+  "name": "Stalwart V",
+  "desc": "Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 15000 damage shield",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900969": {
+  "id": 900969,
+  "name": "Spell Mastery I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 5%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900970": {
+  "id": 900970,
+  "name": "Spell Mastery II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 10%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900971": {
+  "id": 900971,
+  "name": "Spell Mastery III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 15%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900972": {
+  "id": 900972,
+  "name": "Spell Mastery IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 20%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900973": {
+  "id": 900973,
+  "name": "Relentless Crits I",
+  "desc": "Allows you to engrave this affix on any equippable item: Critical strikes deal 2% more damage and healing",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900974": {
+  "id": 900974,
+  "name": "Relentless Crits II",
+  "desc": "Allows you to engrave this affix on any equippable item: Critical strikes deal 3% more damage and healing",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900975": {
+  "id": 900975,
+  "name": "Relentless Crits III",
+  "desc": "Allows you to engrave this affix on any equippable item: Critical strikes deal 4% more damage and healing",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "102201": {
+  "id": 102201,
+  "name": "Feral Grace V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Agility by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "102217": {
+  "id": 102217,
+  "name": "Bulwark V",
+  "desc": "Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 24% of damage taken. Unique",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900977": {
+  "id": 900977,
+  "name": "Fortified by Pain I",
+  "desc": "Allows you to engrave this affix on any equippable item: Taking damage may grant 3% Attack Power and 6% Spell Power for 12 seconds",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900978": {
+  "id": 900978,
+  "name": "Fortified by Pain II",
+  "desc": "Allows you to engrave this affix on any equippable item: Taking damage may grant 6% Attack Power and 12% Spell Power for 12 seconds",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900979": {
+  "id": 900979,
+  "name": "Fortified by Pain III",
+  "desc": "Allows you to engrave this affix on any equippable item: Taking damage may grant 9% Attack Power and 18% Spell Power for 12 seconds",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "900980": {
+  "id": 900980,
+  "name": "Fortified by Pain IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Taking damage may grant 12% Attack Power and 24% Spell Power for 12 seconds",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900981": {
+  "id": 900981,
+  "name": "Frost Breath I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 50 Frost damage, increased by your Stamina",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "700100": {
+  "id": 700100,
+  "name": "Fortification",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Increases your Defense rating.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900982": {
+  "id": 900982,
+  "name": "Frost Breath II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 100 Frost damage, increased by your Stamina",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "700094": {
+  "id": 700094,
+  "name": "Ferocity",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your melee and ranged basic attack critical strikes increase your attack power by 15, stacking up to 20 times. One stack is lost every second.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900983": {
+  "id": 900983,
+  "name": "Frost Breath III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 200 Frost damage, increased by your Stamina",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "700093": {
+  "id": 700093,
+  "name": "Bloodlust",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Killing an enemy increases your haste rating, stacking up to 20 times. One stack is lost every second.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900984": {
+  "id": 900984,
+  "name": "Frost Breath IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 300 Frost damage, increased by your Stamina",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102218": {
+  "id": 102218,
+  "name": "Pet Power V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet deals 200% more damage",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900985": {
+  "id": 900985,
+  "name": "Overwhelming Force I",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases damage and healing done by 2%",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "700092": {
+  "id": 700092,
+  "name": "Frailty",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to reduce all attributes of the target. This effect is increased by your Nature Resistance.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900986": {
+  "id": 900986,
+  "name": "Overwhelming Force II",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases damage and healing done by 4%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "700091": {
+  "id": 700091,
+  "name": "Decay",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your critical strikes have a chance to corrupt the target, dealing Shadow damage every 3 sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every 2 sec.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900987": {
+  "id": 900987,
+  "name": "Overwhelming Force III",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases damage and healing done by 6%",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "700078": {
+  "id": 700078,
+  "name": "Concussion",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to stun the target. The duration of the stun is increased by your Strength.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900988": {
+  "id": 900988,
+  "name": "Overwhelming Force IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases damage and healing done by 8%",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "700079": {
+  "id": 700079,
+  "name": "Venom",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to poison the target, dealing damage every 2 sec for 8 sec. Poisoned targets take 5% increased damage from your damage-over-time effects.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900989": {
+  "id": 900989,
+  "name": "Stalwart I",
+  "desc": "Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 5000 damage shield",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "700080": {
+  "id": 700080,
+  "name": "Maiming",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your melee and ranged abilities have a chance to inflict a Fatal Wound. Damage scales with your armor penetration rating.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900990": {
+  "id": 900990,
+  "name": "Stalwart II",
+  "desc": "Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 7500 damage shield",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "700084": {
+  "id": 700084,
+  "name": "Pyromancy",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every 2 sec for 8 sec. Damage scales with your Intellect.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900991": {
+  "id": 900991,
+  "name": "Stalwart III",
+  "desc": "Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 10000 damage shield",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "700108": {
+  "id": 700108,
+  "name": "Azzinoth",
+  "desc": "Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Calls forth an Ember of Azzinoth to protect you in battle for a short period of time.",
+  "weaponOnly": true,
+  "difficulty": 0
+ },
+ "900992": {
+  "id": 900992,
+  "name": "Stalwart IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 12500 damage shield",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102219": {
+  "id": 102219,
+  "name": "Quick Instincts V",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet attacks 40% faster",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900993": {
+  "id": 900993,
+  "name": "Bulwark I",
+  "desc": "Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 5% of damage taken. Unique",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "102202": {
+  "id": 102202,
+  "name": "Arcane Mind V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Intellect by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900994": {
+  "id": 900994,
+  "name": "Bulwark II",
+  "desc": "Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 8% of damage taken. Unique",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900968": {
+  "id": 900968,
+  "name": "Infinite Star IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 1400 Arcane damage, increased by your highest stat",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900995": {
+  "id": 900995,
+  "name": "Bulwark III",
+  "desc": "Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 12% of damage taken. Unique",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "901032": {
+  "id": 901032,
+  "name": "Shield Block II",
+  "desc": "Allows you to engrave this affix on any equippable item: increases your Block value by 20%",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "900996": {
+  "id": 900996,
+  "name": "Bulwark IV",
+  "desc": "Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 18% of damage taken. Unique",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102203": {
+  "id": 102203,
+  "name": "Spirit Surge V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Spirit by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900997": {
+  "id": 900997,
+  "name": "Pet Power I",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet deals 25% more damage",
+  "weaponOnly": false,
+  "difficulty": 1
+ },
+ "900976": {
+  "id": 900976,
+  "name": "Relentless Crits IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Critical strikes deal 5% more damage and healing",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "900998": {
+  "id": 900998,
+  "name": "Pet Power II",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet deals 50% more damage",
+  "weaponOnly": false,
+  "difficulty": 2
+ },
+ "102204": {
+  "id": 102204,
+  "name": "Ironhide V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your total Stamina by 30%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "900999": {
+  "id": 900999,
+  "name": "Pet Power III",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet deals 75% more damage",
+  "weaponOnly": false,
+  "difficulty": 3
+ },
+ "102205": {
+  "id": 102205,
+  "name": "Keen Strikes V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 15%",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "901000": {
+  "id": 901000,
+  "name": "Pet Power IV",
+  "desc": "Allows you to engrave this affix on any equippable item: Your pet deals 100% more damage",
+  "weaponOnly": false,
+  "difficulty": 4
+ },
+ "102220": {
+  "id": 102220,
+  "name": "Thick Hide V",
+  "desc": "Allows you to engrave this affix on any equippable item: Increases your Armor by 8000",
+  "weaponOnly": false,
+  "difficulty": 5
+ },
+ "102206": {
+  "id": 102206,
+  "name": "Frozen Pulse V",
+  "desc": "Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 600 Shadow damage per second for 6 sec, increased by Critical Strike rating",
+  "weaponOnly": false,
+  "difficulty": 5
+ }
+}

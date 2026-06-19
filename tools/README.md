@@ -1,24 +1,39 @@
 # Pipeline de traduction
 
-Scripts Python 3 qui transforment la traduction (`../data/fr_translations.json`) en fichier de données de l'addon (`../EbonholdFR/EbonholdFR_Data.lua`).
+Scripts Python 3 qui transforment les traductions (`../data/`) en fichier de données de l'addon (`../EbonholdFR/EbonholdFR_Data.lua`).
 
 ## Pré-requis
 ```bash
-pip install slpp
+pip install slpp   # uniquement pour parser un dump in-game
 ```
-(slpp n'est nécessaire que pour `parse_dump.py`.)
 
-## Fichiers
+## Le script principal
 | Script | Rôle |
 |--------|------|
-| `gen_data.py` | **Le plus important.** Lit `data/fr_translations.json` + `data/*-dump.json` → écrit `EbonholdFR/EbonholdFR_Data.lua`. À lancer après toute modif des traductions. |
-| `build_translations.py` | Auto-traduit les **structures rigides récurrentes** (gains de stats, résistances, Bane/Slayer, familles de nœuds à rangs, etc.) et les ajoute à `fr_translations.json`. Utile pour dégrossir du nouveau contenu. Ne touche pas aux traductions manuelles existantes. |
-| `parse_dump.py` | Régénère `data/echoes-dump.json` + `data/skilltree-dump.json` à partir d'un dump in-game (addon `EbonholdEchoDump`). Pour capturer du nouveau contenu. |
+| **`gen_fr_data.py`** | **Le plus important.** Lit toutes les sources FR (`fr_translations.json`, `affixes_fr.json`, `affix_effect_fr.json`, `tomes_fr.json`) + les dumps EN, et écrit `../EbonholdFR/EbonholdFR_Data.lua`. À lancer après **toute** modif de traduction. |
+
+## Scripts par contenu
+| Script | Rôle |
+|--------|------|
+| `build_fr_translations.py` | Auto-traduit les **structures rigides récurrentes** (gains de stats, résistances, etc.) et les ajoute à `fr_translations.json`. Ne touche pas aux traductions manuelles. |
+| `parse_affixes.py` / `tr_affixes.py` | Extrait les affixes d'un dump → `affixes-dump.json`, puis génère `affixes_fr.json` / `affix_effect_fr.json` (3 préfixes + 67 familles d'effets). |
+| `parse_tomes.py` / `tr_tomes.py` | Extrait les Tomes of Echo d'un dump → `tome_items.json`, puis génère `tomes_fr.json` (128 blurbs traduits). |
+| `fix_dynamic.py` | Corrige les echoes **multi-variantes de classe** : traduit chaque variante séparément (sorts/ressources en anglais). |
 
 ## Données (`../data/`)
-- `fr_translations.json` — **la traduction** : `{ "names": {...}, "descs": { "<texte EN>": "<texte FR>" } }`. Seules les `descs` sont utilisées par l'addon (les noms restent en anglais). Le matching ignore les retours à la ligne et le suffixe « Replace … (Rank N) » des nœuds.
-- `echoes-dump.json` / `skilltree-dump.json` — textes anglais de référence (spellId → nom + description), extraits du jeu.
+- `fr_translations.json` — traduction des **echoes + skill tree** : `{ "descs": { "<texte EN>": "<texte FR>" } }`. Le matching ignore les retours à la ligne.
+- `affixes_fr.json` / `affix_effect_fr.json` — traductions des affixes (par id, et par effet seul pour les objets gravés).
+- `tomes_fr.json` — traduction des tomes (nom d'echo → ligne « Utiliser : … »).
+- `*-dump.json` / `*_items.json` — textes anglais de référence extraits du jeu.
 
-## Notes sur les traductions
+## Workflow type
+```bash
+# après avoir édité une traduction (fr_translations.json / affixes_fr.json / tomes_fr.json) :
+python gen_fr_data.py
+# puis /reload en jeu
+```
+
+## Notes
 - **Garder** les `@...@` (remplacés par des nombres en jeu) et les codes couleur `|cff........|r`.
-- Pour les echoes à plusieurs rangs (même phrase, nombre différent), une seule traduction par famille suffit : l'addon réinjecte le bon nombre à chaque rang.
+- Les **noms** de sorts/ressources/dots restent en **anglais**.
+- Pour capturer du nouveau contenu : addon `EbonholdEchoDump` → `/echodump` → `/reload`, copier le `.lua` SavedVariables dans `../data/`, puis relancer les `parse_*` / `tr_*` concernés.

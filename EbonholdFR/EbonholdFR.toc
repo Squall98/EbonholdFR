@@ -1,8 +1,8 @@
 ## Interface: 30300
 ## Title: Ebonhold |cff66ccffFR|r
-## Notes: Traduction française des Echoes et du Skill Tree de Project Ebonhold.
+## Notes: Traduction française des Echoes, du Skill Tree, des Affixes et des Tomes de Project Ebonhold.
 ## Author: Guide Ebonhold
-## Version: 1.0
+## Version: 2.0
 ## Dependencies: ProjectEbonhold
 
 EbonholdFR_Data.lua

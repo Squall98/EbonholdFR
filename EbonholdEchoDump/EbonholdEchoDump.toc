@@ -7,4 +7,5 @@
 
 EchoIds.lua
 SkillTreeIds.lua
+TomeIds.lua
 EbonholdEchoDump.lua

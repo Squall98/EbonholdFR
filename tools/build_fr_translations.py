@@ -3,17 +3,13 @@
 # (haute confiance). Le reste est laissé non traduit (anglais en jeu).
 import json, re
 
-import os
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_ROOT = os.path.dirname(_HERE)
-DATA = os.path.join(_ROOT, "data")
-OUTLUA = os.path.join(_ROOT, "EbonholdFR", "EbonholdFR_Data.lua")
-echoes = json.load(open(os.path.join(DATA, "echoes-dump.json"), encoding='utf-8'))
-skill = json.load(open(os.path.join(DATA, "skilltree-dump.json"), encoding='utf-8'))
+DATA = r"../data"
+echoes = json.load(open(DATA + r"\echoes-dump.json", encoding='utf-8'))
+skill = json.load(open(DATA + r"\skilltree-dump.json", encoding='utf-8'))
 
 # Charge des traductions manuelles existantes pour ne pas les écraser
 try:
-    existing = json.load(open(os.path.join(DATA, "fr_translations.json"), encoding='utf-8'))
+    existing = json.load(open(DATA + r"\fr_translations.json", encoding='utf-8'))
 except Exception:
     existing = {}
 NAMES = dict(existing.get("names", {}))
@@ -344,7 +340,7 @@ for coll in (echoes, skill):
                 DESCS[ds] = fr; auto_d += 1
 
 json.dump({"names": NAMES, "descs": DESCS},
-          open(os.path.join(DATA, "fr_translations.json"), 'w', encoding='utf-8'),
+          open(DATA + r"\fr_translations.json", 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print("Noms traduits:", len(NAMES), "(+%d auto)" % auto_n,
       "| Descs traduites:", len(DESCS), "(+%d auto)" % auto_d)

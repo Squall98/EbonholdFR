@@ -1,0 +1,877 @@
+[
+ {
+  "echoId": 200036,
+  "requiredSpell": 9,
+  "name": "Ember Ward - Common"
+ },
+ {
+  "echoId": 200037,
+  "requiredSpell": 9,
+  "name": "Frost Ward - Common"
+ },
+ {
+  "echoId": 200038,
+  "requiredSpell": 9,
+  "name": "Verdant Ward - Common"
+ },
+ {
+  "echoId": 200039,
+  "requiredSpell": 9,
+  "name": "Arcane Ward - Common"
+ },
+ {
+  "echoId": 200040,
+  "requiredSpell": 9,
+  "name": "Shadow Ward - Common"
+ },
+ {
+  "echoId": 200541,
+  "requiredSpell": 9,
+  "name": "Beast Bane - Common"
+ },
+ {
+  "echoId": 200542,
+  "requiredSpell": 9,
+  "name": "Dragonkin Bane - Common"
+ },
+ {
+  "echoId": 200543,
+  "requiredSpell": 9,
+  "name": "Demon Bane - Common"
+ },
+ {
+  "echoId": 200544,
+  "requiredSpell": 9,
+  "name": "Elemental Bane - Common"
+ },
+ {
+  "echoId": 200545,
+  "requiredSpell": 9,
+  "name": "Giant Bane - Common"
+ },
+ {
+  "echoId": 200546,
+  "requiredSpell": 9,
+  "name": "Undead Bane - Common"
+ },
+ {
+  "echoId": 200547,
+  "requiredSpell": 9,
+  "name": "Mechanical Bane - Common"
+ },
+ {
+  "echoId": 200548,
+  "requiredSpell": 9,
+  "name": "Beast Slayer - Common"
+ },
+ {
+  "echoId": 200549,
+  "requiredSpell": 9,
+  "name": "Dragon Slayer - Common"
+ },
+ {
+  "echoId": 200550,
+  "requiredSpell": 9,
+  "name": "Demon Slayer - Common"
+ },
+ {
+  "echoId": 200551,
+  "requiredSpell": 9,
+  "name": "Elemental Slayer - Common"
+ },
+ {
+  "echoId": 200552,
+  "requiredSpell": 9,
+  "name": "Giant Slayer - Common"
+ },
+ {
+  "echoId": 200553,
+  "requiredSpell": 9,
+  "name": "Undead Slayer - Common"
+ },
+ {
+  "echoId": 200554,
+  "requiredSpell": 9,
+  "name": "Machine Slayer - Common"
+ },
+ {
+  "echoId": 200022,
+  "requiredSpell": 300022,
+  "name": "Earthen Snap - Uncommon"
+ },
+ {
+  "echoId": 200025,
+  "requiredSpell": 300025,
+  "name": "Frost Bite - Uncommon"
+ },
+ {
+  "echoId": 200436,
+  "requiredSpell": 300436,
+  "name": "Shielded Steps - Uncommon"
+ },
+ {
+  "echoId": 200437,
+  "requiredSpell": 300437,
+  "name": "Steady Casting - Uncommon"
+ },
+ {
+  "echoId": 200438,
+  "requiredSpell": 300438,
+  "name": "Subtle Presence - Uncommon"
+ },
+ {
+  "echoId": 200439,
+  "requiredSpell": 300439,
+  "name": "Provoking Presence - Uncommon"
+ },
+ {
+  "echoId": 200467,
+  "requiredSpell": 9,
+  "name": "Ember Ward - Uncommon"
+ },
+ {
+  "echoId": 200468,
+  "requiredSpell": 9,
+  "name": "Frost Ward - Uncommon"
+ },
+ {
+  "echoId": 200469,
+  "requiredSpell": 9,
+  "name": "Verdant Ward - Uncommon"
+ },
+ {
+  "echoId": 200470,
+  "requiredSpell": 9,
+  "name": "Arcane Ward - Uncommon"
+ },
+ {
+  "echoId": 200471,
+  "requiredSpell": 9,
+  "name": "Shadow Ward - Uncommon"
+ },
+ {
+  "echoId": 200555,
+  "requiredSpell": 9,
+  "name": "Beast Bane - Uncommon"
+ },
+ {
+  "echoId": 200556,
+  "requiredSpell": 9,
+  "name": "Dragonkin Bane - Uncommon"
+ },
+ {
+  "echoId": 200557,
+  "requiredSpell": 9,
+  "name": "Demon Bane - Uncommon"
+ },
+ {
+  "echoId": 200558,
+  "requiredSpell": 9,
+  "name": "Elemental Bane - Uncommon"
+ },
+ {
+  "echoId": 200559,
+  "requiredSpell": 9,
+  "name": "Giant Bane - Uncommon"
+ },
+ {
+  "echoId": 200560,
+  "requiredSpell": 9,
+  "name": "Undead Bane - Uncommon"
+ },
+ {
+  "echoId": 200561,
+  "requiredSpell": 9,
+  "name": "Mechanical Bane - Uncommon"
+ },
+ {
+  "echoId": 200562,
+  "requiredSpell": 9,
+  "name": "Beast Slayer - Uncommon"
+ },
+ {
+  "echoId": 200563,
+  "requiredSpell": 9,
+  "name": "Dragon Slayer - Uncommon"
+ },
+ {
+  "echoId": 200564,
+  "requiredSpell": 9,
+  "name": "Demon Slayer - Uncommon"
+ },
+ {
+  "echoId": 200565,
+  "requiredSpell": 9,
+  "name": "Elemental Slayer - Uncommon"
+ },
+ {
+  "echoId": 200566,
+  "requiredSpell": 9,
+  "name": "Giant Slayer - Uncommon"
+ },
+ {
+  "echoId": 200567,
+  "requiredSpell": 9,
+  "name": "Undead Slayer - Uncommon"
+ },
+ {
+  "echoId": 200568,
+  "requiredSpell": 9,
+  "name": "Machine Slayer - Uncommon"
+ },
+ {
+  "echoId": 200446,
+  "requiredSpell": 300446,
+  "name": "Stoneskin Threads - Rare"
+ },
+ {
+  "echoId": 200447,
+  "requiredSpell": 300447,
+  "name": "Sundered Will - Rare"
+ },
+ {
+  "echoId": 200448,
+  "requiredSpell": 300448,
+  "name": "Steady Grip - Rare"
+ },
+ {
+  "echoId": 200449,
+  "requiredSpell": 300449,
+  "name": "Rootbreaker - Rare"
+ },
+ {
+  "echoId": 200450,
+  "requiredSpell": 300450,
+  "name": "Insulated Soul - Rare"
+ },
+ {
+  "echoId": 200508,
+  "requiredSpell": 300508,
+  "name": "Ember Ward - Rare"
+ },
+ {
+  "echoId": 200509,
+  "requiredSpell": 300509,
+  "name": "Frost Ward - Rare"
+ },
+ {
+  "echoId": 200510,
+  "requiredSpell": 300510,
+  "name": "Verdant Ward - Rare"
+ },
+ {
+  "echoId": 200511,
+  "requiredSpell": 300511,
+  "name": "Arcane Ward - Rare"
+ },
+ {
+  "echoId": 200512,
+  "requiredSpell": 300512,
+  "name": "Shadow Ward - Rare"
+ },
+ {
+  "echoId": 200569,
+  "requiredSpell": 300569,
+  "name": "Beast Bane - Rare"
+ },
+ {
+  "echoId": 200570,
+  "requiredSpell": 300570,
+  "name": "Dragonkin Bane - Rare"
+ },
+ {
+  "echoId": 200571,
+  "requiredSpell": 300571,
+  "name": "Demon Bane - Rare"
+ },
+ {
+  "echoId": 200572,
+  "requiredSpell": 300572,
+  "name": "Elemental Bane - Rare"
+ },
+ {
+  "echoId": 200573,
+  "requiredSpell": 300573,
+  "name": "Giant Bane - Rare"
+ },
+ {
+  "echoId": 200574,
+  "requiredSpell": 300574,
+  "name": "Undead Bane - Rare"
+ },
+ {
+  "echoId": 200575,
+  "requiredSpell": 300575,
+  "name": "Mechanical Bane - Rare"
+ },
+ {
+  "echoId": 200576,
+  "requiredSpell": 300576,
+  "name": "Beast Slayer - Rare"
+ },
+ {
+  "echoId": 200577,
+  "requiredSpell": 300577,
+  "name": "Dragon Slayer - Rare"
+ },
+ {
+  "echoId": 200578,
+  "requiredSpell": 300578,
+  "name": "Demon Slayer - Rare"
+ },
+ {
+  "echoId": 200579,
+  "requiredSpell": 300579,
+  "name": "Elemental Slayer - Rare"
+ },
+ {
+  "echoId": 200580,
+  "requiredSpell": 300580,
+  "name": "Giant Slayer - Rare"
+ },
+ {
+  "echoId": 200581,
+  "requiredSpell": 300581,
+  "name": "Undead Slayer - Rare"
+ },
+ {
+  "echoId": 200582,
+  "requiredSpell": 300582,
+  "name": "Machine Slayer - Rare"
+ },
+ {
+  "echoId": 200690,
+  "requiredSpell": 300690,
+  "name": "Reaper’s Reprieve - Rare"
+ },
+ {
+  "echoId": 200850,
+  "requiredSpell": 300850,
+  "name": "Earthen Spike - Rare"
+ },
+ {
+  "echoId": 200852,
+  "requiredSpell": 300852,
+  "name": "Emberlord’s Gift - Rare"
+ },
+ {
+  "echoId": 200856,
+  "requiredSpell": 300856,
+  "name": "Mana Infusion - Rare"
+ },
+ {
+  "echoId": 200858,
+  "requiredSpell": 300858,
+  "name": "Permafrost Aura - Rare"
+ },
+ {
+  "echoId": 200860,
+  "requiredSpell": 300860,
+  "name": "Static Overflow - Rare"
+ },
+ {
+  "echoId": 200864,
+  "requiredSpell": 300864,
+  "name": "Unstable Missiles - Rare"
+ },
+ {
+  "echoId": 200866,
+  "requiredSpell": 300866,
+  "name": "Hungering Curse - Rare"
+ },
+ {
+  "echoId": 200870,
+  "requiredSpell": 300870,
+  "name": "Relentless Energy - Rare"
+ },
+ {
+  "echoId": 200874,
+  "requiredSpell": 300874,
+  "name": "Raging Momentum - Rare"
+ },
+ {
+  "echoId": 200878,
+  "requiredSpell": 300878,
+  "name": "Runic Momentum - Rare"
+ },
+ {
+  "echoId": 200882,
+  "requiredSpell": 300882,
+  "name": "Arcane Density - Rare"
+ },
+ {
+  "echoId": 200884,
+  "requiredSpell": 300884,
+  "name": "Fortress Soul - Rare"
+ },
+ {
+  "echoId": 200886,
+  "requiredSpell": 300886,
+  "name": "The Last Wall - Rare"
+ },
+ {
+  "echoId": 200888,
+  "requiredSpell": 300888,
+  "name": "Arcane Burn - Rare"
+ },
+ {
+  "echoId": 200890,
+  "requiredSpell": 300890,
+  "name": "Crushing Finish - Rare"
+ },
+ {
+  "echoId": 200894,
+  "requiredSpell": 300894,
+  "name": "Archmage’s Mark - Rare"
+ },
+ {
+  "echoId": 200896,
+  "requiredSpell": 300896,
+  "name": "Entropic Fusion - Rare"
+ },
+ {
+  "echoId": 200898,
+  "requiredSpell": 300898,
+  "name": "Battle Rhythm - Rare"
+ },
+ {
+  "echoId": 200900,
+  "requiredSpell": 300900,
+  "name": "Arcane Cadence - Rare"
+ },
+ {
+  "echoId": 200902,
+  "requiredSpell": 300902,
+  "name": "Healing Cadence - Rare"
+ },
+ {
+  "echoId": 200904,
+  "requiredSpell": 300904,
+  "name": "Battlefield Hazard - Rare"
+ },
+ {
+  "echoId": 200908,
+  "requiredSpell": 300908,
+  "name": "Sanctified Hazard - Rare"
+ },
+ {
+  "echoId": 200912,
+  "requiredSpell": 300912,
+  "name": "Blighted Hazard - Rare"
+ },
+ {
+  "echoId": 200916,
+  "requiredSpell": 300916,
+  "name": "Hunting Hazard - Rare"
+ },
+ {
+  "echoId": 200920,
+  "requiredSpell": 300920,
+  "name": "Storm Hazard - Rare"
+ },
+ {
+  "echoId": 200924,
+  "requiredSpell": 300924,
+  "name": "Wild Hazard - Rare"
+ },
+ {
+  "echoId": 200928,
+  "requiredSpell": 300928,
+  "name": "Shadow Hazard - Rare"
+ },
+ {
+  "echoId": 200932,
+  "requiredSpell": 300932,
+  "name": "Arcane Hazard - Rare"
+ },
+ {
+  "echoId": 200936,
+  "requiredSpell": 300936,
+  "name": "Holy Hazard - Rare"
+ },
+ {
+  "echoId": 200940,
+  "requiredSpell": 300940,
+  "name": "Fel Hazard - Rare"
+ },
+ {
+  "echoId": 200944,
+  "requiredSpell": 300944,
+  "name": "Crusader’s Surge - Rare"
+ },
+ {
+  "echoId": 200946,
+  "requiredSpell": 300946,
+  "name": "Divine Surge - Rare"
+ },
+ {
+  "echoId": 200948,
+  "requiredSpell": 300948,
+  "name": "Storm Surge - Rare"
+ },
+ {
+  "echoId": 200950,
+  "requiredSpell": 300950,
+  "name": "Arcane Surge - Rare"
+ },
+ {
+  "echoId": 200952,
+  "requiredSpell": 300952,
+  "name": "Fel Surge - Rare"
+ },
+ {
+  "echoId": 200954,
+  "requiredSpell": 300954,
+  "name": "Nature’s Surge - Rare"
+ },
+ {
+  "echoId": 201244,
+  "requiredSpell": 301244,
+  "name": "Essence Tap - Rare"
+ },
+ {
+  "echoId": 201246,
+  "requiredSpell": 301246,
+  "name": "Stored Momentum - Rare"
+ },
+ {
+  "echoId": 201250,
+  "requiredSpell": 301250,
+  "name": "Echoing Tides - Rare"
+ },
+ {
+  "echoId": 200583,
+  "requiredSpell": 300583,
+  "name": "Crypt Lord’s Swarm - Epic"
+ },
+ {
+  "echoId": 200585,
+  "requiredSpell": 300585,
+  "name": "Widow’s Venom - Epic"
+ },
+ {
+  "echoId": 200589,
+  "requiredSpell": 300589,
+  "name": "Broodmother’s Webbing - Epic"
+ },
+ {
+  "echoId": 200592,
+  "requiredSpell": 300592,
+  "name": "Curse of the Plaguebringer - Epic"
+ },
+ {
+  "echoId": 200595,
+  "requiredSpell": 300595,
+  "name": "The Unclean’s Fever - Epic"
+ },
+ {
+  "echoId": 200597,
+  "requiredSpell": 300597,
+  "name": "The Sporelord’s Gift - Epic"
+ },
+ {
+  "echoId": 200599,
+  "requiredSpell": 300599,
+  "name": "Drillmaster’s Rebuke - Epic"
+ },
+ {
+  "echoId": 200601,
+  "requiredSpell": 300601,
+  "name": "The Harvester’s Tithe - Epic"
+ },
+ {
+  "echoId": 200606,
+  "requiredSpell": 300606,
+  "name": "Edict of the Four - Epic"
+ },
+ {
+  "echoId": 200613,
+  "requiredSpell": 300613,
+  "name": "Stitched Fury - Epic"
+ },
+ {
+  "echoId": 200615,
+  "requiredSpell": 300615,
+  "name": "Mutagenic Fumes - Epic"
+ },
+ {
+  "echoId": 200619,
+  "requiredSpell": 300619,
+  "name": "Ravenous Bellow - Epic"
+ },
+ {
+  "echoId": 200621,
+  "requiredSpell": 300621,
+  "name": "Polarity Shift - Epic"
+ },
+ {
+  "echoId": 200627,
+  "requiredSpell": 300627,
+  "name": "Chill of the Bone Wyrm - Epic"
+ },
+ {
+  "echoId": 200632,
+  "requiredSpell": 300632,
+  "name": "Call of the Lich King - Epic"
+ },
+ {
+  "echoId": 200635,
+  "requiredSpell": 300635,
+  "name": "Cinders of the Sanctum - Epic"
+ },
+ {
+  "echoId": 200639,
+  "requiredSpell": 300639,
+  "name": "Storm of the Spellweaver - Epic"
+ },
+ {
+  "echoId": 200693,
+  "requiredSpell": 300693,
+  "name": "Reaper’s Verdict - Epic"
+ },
+ {
+  "echoId": 200695,
+  "requiredSpell": 300695,
+  "name": "Reaper’s Doom - Epic"
+ },
+ {
+  "echoId": 200776,
+  "requiredSpell": 300776,
+  "name": "Flame Vents - Epic"
+ },
+ {
+  "echoId": 200780,
+  "requiredSpell": 300780,
+  "name": "Brittle Forging - Epic"
+ },
+ {
+  "echoId": 200786,
+  "requiredSpell": 300786,
+  "name": "Harpoon Barrage - Epic"
+ },
+ {
+  "echoId": 200792,
+  "requiredSpell": 300792,
+  "name": "Exposed Heart - Epic"
+ },
+ {
+  "echoId": 200798,
+  "requiredSpell": 300798,
+  "name": "Edict of the Iron Council - Epic"
+ },
+ {
+  "echoId": 200804,
+  "requiredSpell": 300804,
+  "name": "Stone Shatter - Epic"
+ },
+ {
+  "echoId": 200808,
+  "requiredSpell": 300808,
+  "name": "Sanctum Sentries - Epic"
+ },
+ {
+  "echoId": 200818,
+  "requiredSpell": 300818,
+  "name": "Eonar’s Seed - Epic"
+ },
+ {
+  "echoId": 200822,
+  "requiredSpell": 300822,
+  "name": "Frostfire Paradox - Epic"
+ },
+ {
+  "echoId": 200826,
+  "requiredSpell": 300826,
+  "name": "Rocket Strike - Epic"
+ },
+ {
+  "echoId": 200830,
+  "requiredSpell": 300830,
+  "name": "Lightning Charged - Epic"
+ },
+ {
+  "echoId": 200834,
+  "requiredSpell": 300834,
+  "name": "Shadow Crash - Epic"
+ },
+ {
+  "echoId": 200838,
+  "requiredSpell": 300838,
+  "name": "Idol of Yogg-Saron - Epic"
+ },
+ {
+  "echoId": 200844,
+  "requiredSpell": 300844,
+  "name": "Constellations - Epic"
+ },
+ {
+  "echoId": 200956,
+  "requiredSpell": 300956,
+  "name": "Heavy Incantations - Epic"
+ },
+ {
+  "echoId": 200958,
+  "requiredSpell": 300958,
+  "name": "Weapon Mastery - Epic"
+ },
+ {
+  "echoId": 200960,
+  "requiredSpell": 300960,
+  "name": "Adaptive Power - Epic"
+ },
+ {
+  "echoId": 200962,
+  "requiredSpell": 300962,
+  "name": "Resonant Build - Epic"
+ },
+ {
+  "echoId": 201254,
+  "requiredSpell": 301254,
+  "name": "Contagion - Epic"
+ },
+ {
+  "echoId": 201256,
+  "requiredSpell": 301256,
+  "name": "Pandemic - Epic"
+ },
+ {
+  "echoId": 201258,
+  "requiredSpell": 301258,
+  "name": "Demonic Awakening - Epic"
+ },
+ {
+  "echoId": 201262,
+  "requiredSpell": 301262,
+  "name": "Accelerated Decay - Epic"
+ },
+ {
+  "echoId": 201264,
+  "requiredSpell": 301264,
+  "name": "Inspiring Mending - Epic"
+ },
+ {
+  "echoId": 201266,
+  "requiredSpell": 301266,
+  "name": "Lingering Inspiration - Epic"
+ },
+ {
+  "echoId": 201268,
+  "requiredSpell": 301268,
+  "name": "Overwhelming Restoration - Epic"
+ },
+ {
+  "echoId": 201270,
+  "requiredSpell": 301270,
+  "name": "Armor Mastery - Epic"
+ },
+ {
+  "echoId": 201272,
+  "requiredSpell": 301272,
+  "name": "Ambidexterity - Epic"
+ },
+ {
+  "echoId": 201274,
+  "requiredSpell": 301274,
+  "name": "Titan's Grip - Epic"
+ },
+ {
+  "echoId": 201276,
+  "requiredSpell": 301276,
+  "name": "Sanguine Bulwark - Epic"
+ },
+ {
+  "echoId": 201278,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201280,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201282,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201284,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201286,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201288,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201290,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201292,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201294,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201296,
+  "requiredSpell": 301278,
+  "name": "Temporal Pressure - Epic"
+ },
+ {
+  "echoId": 201298,
+  "requiredSpell": 301298,
+  "name": "Quickened Tempo - Epic"
+ },
+ {
+  "echoId": 201300,
+  "requiredSpell": 301300,
+  "name": "Impaler’s Tribute - Epic"
+ },
+ {
+  "echoId": 201304,
+  "requiredSpell": 301304,
+  "name": "Slimebound Husk - Epic"
+ },
+ {
+  "echoId": 201308,
+  "requiredSpell": 301308,
+  "name": "Rage of the Colossus - Epic"
+ },
+ {
+  "echoId": 201312,
+  "requiredSpell": 301312,
+  "name": "Nether Lord’s Command - Epic"
+ },
+ {
+  "echoId": 201318,
+  "requiredSpell": 301318,
+  "name": "Champion’s Rally - Epic"
+ },
+ {
+  "echoId": 201324,
+  "requiredSpell": 301324,
+  "name": "Twilight Equilibrium - Epic"
+ },
+ {
+  "echoId": 201332,
+  "requiredSpell": 301332,
+  "name": "Leeching Swarm - Epic"
+ },
+ {
+  "echoId": 201336,
+  "requiredSpell": 301336,
+  "name": "Broodmother’s Fury - Epic"
+ }
+]
