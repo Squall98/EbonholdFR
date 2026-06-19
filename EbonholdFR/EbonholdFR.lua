@@ -15,7 +15,28 @@ local affixEffectFR = D.affixEffectFR or {}
 local affixDescFR = D.affixDescFR or {}
 local tomeFR = D.tomeFR or {}
 local dynFR = D.dynFR or {}
+local affixEffectSkel = D.affixEffectSkel or {}
 local function msg(s) DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. s) end
+
+-- Retour à la ligne : coupe un texte long en lignes <= width (octets) aux espaces.
+-- Utilisé pour les tooltips custom du Skill Tree qui ne wrappent pas tout seuls.
+local function wrapText(s, width)
+  width = width or 52
+  if not s or string.len(s) <= width then return s end
+  local out, line = {}, ""
+  for word in string.gmatch(s, "%S+") do
+    if line == "" then
+      line = word
+    elseif string.len(line) + 1 + string.len(word) > width then
+      out[#out + 1] = line
+      line = word
+    else
+      line = line .. " " .. word
+    end
+  end
+  if line ~= "" then out[#out + 1] = line end
+  return table.concat(out, "\n")
+end
 
 -- Echoes à contenu dynamique : le serveur affiche la variante canonique
 -- (Guerrier) à toutes les classes. On choisit la variante FR de LA classe du
@@ -152,6 +173,12 @@ local function fixSkillTooltip(tt, link)
       frDesc = string.gsub(frDesc, "@(.-)@", function() k = k + 1; return "@" .. (forms[k] or "x") .. "@" end)
     end
   end
+  -- Skill Tree : le tooltip custom ne wrappe pas et on regroupe toute la desc
+  -- sur la ligne 2 -> on coupe nous-mêmes en plusieurs lignes pour la lisibilité.
+  -- (les liens chat d'echoes passent par GameTooltip, qui wrappe tout seul.)
+  if e.sdesc and string.find(nm, "skillTree", 1, true) then
+    frDesc = wrapText(frDesc, 52)
+  end
   local l2 = _G[nm .. "TextLeft2"]
   if l2 then l2:SetText(frDesc) end
   -- vide les lignes de description restantes (3..N) : à ce stade ce sont
@@ -167,8 +194,13 @@ end
 -- 3) OBJETS : affixes gravés (ligne violette) + Tomes of Echo
 --    via OnTooltipSetItem (couvre survol sac/équipé ET liens chat).
 ------------------------------------------------------------------------
-local STACK_EN = ". Stacks with other ranks."
-local STACK_FR = ". Se cumule avec les autres rangs."
+-- suffixes possibles d'une ligne d'affixe gravé (EN -> FR)
+local AFFIX_SUFFIXES = {
+  { en = ". Stacks with other ranks.", fr = ". Se cumule avec les autres rangs." },
+  { en = ". Unique.", fr = ". Unique." },
+  { en = " Unique.", fr = " Unique." },
+  { en = " Unique", fr = " Unique" },
+}
 
 local function stripColor(s)
   if not s then return s end
@@ -177,20 +209,39 @@ local function stripColor(s)
   return s
 end
 
-local function frAffixEffect(plain)
-  -- gère le suffixe " Stacks with other ranks." puis cherche l'effet
-  local body, suffix = plain, ""
-  if string.sub(plain, -string.len(STACK_EN)) == STACK_EN then
-    body = string.sub(plain, 1, string.len(plain) - string.len(STACK_EN))
-    suffix = STACK_FR
-  end
+-- repli par MOTIF : tout effet "Increases ... by N%" (n'importe quel rang) via
+-- le squelette EN (nombres -> #) ; remplit {1},{2}... avec les nombres trouvés.
+local function frAffixPattern(body)
+  -- tolère "Increases your X" (formulation sur l'objet) absent de nos données
+  local cand = string.gsub(body, "Increases your ", "Increases ")
+  local skel = string.gsub(cand, "%d+", "#")
+  local tmpl = affixEffectSkel[skel]
+  if not tmpl then return nil end
+  local nums = {}
+  for d in string.gmatch(cand, "%d+") do nums[#nums + 1] = d end
+  return (string.gsub(tmpl, "{(%d+)}", function(k) return nums[tonumber(k)] or "" end))
+end
+
+-- cherche la traduction d'un effet : exact, sans point final, puis par motif
+local function lookupEffect(body)
   local fr = affixEffectFR[body]
-  if not fr then
-    local noDot = string.gsub(body, "%.$", "")
-    fr = affixEffectFR[noDot]
+  if fr then return fr end
+  local noDot = string.gsub(body, "%.$", "")
+  fr = affixEffectFR[noDot]
+  if fr then return fr end
+  return frAffixPattern(body) or frAffixPattern(noDot)
+end
+
+local function frAffixEffect(plain)
+  -- détache un suffixe connu (Stacks / Unique) et traduit le corps
+  for _, sx in ipairs(AFFIX_SUFFIXES) do
+    local n = string.len(sx.en)
+    if string.len(plain) > n and string.sub(plain, -n) == sx.en then
+      local fr = lookupEffect(string.sub(plain, 1, string.len(plain) - n))
+      if fr then return fr .. sx.fr end
+    end
   end
-  if fr then return fr .. suffix end
-  return nil
+  return lookupEffect(plain)
 end
 
 local function translateItemTooltip(tt)

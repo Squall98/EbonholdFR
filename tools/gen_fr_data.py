@@ -149,6 +149,37 @@ for en, fr in affix_effect_fr.items():
     if fr:
         lines.append("ae[%s] = %s" % (lua_str(en), lua_str(fr)))
 
+# table SKELETON des effets d'affixes : motif EN (nombres -> #) -> gabarit FR
+# avec marqueurs {1},{2}... Permet de traduire N'IMPORTE QUEL rang (%) même
+# si ce rang précis n'a pas été dumpé. Généré depuis affix_effect_fr.
+lines.append("")
+lines.append("EbonholdFR_Data.affixEffectSkel = {}")
+lines.append("local sk = EbonholdFR_Data.affixEffectSkel")
+n_skel = 0
+seen_skel = set()
+for en, fr in affix_effect_fr.items():
+    if not fr:
+        continue
+    en_nums = re.findall(r"\d+", en)
+    fr_nums = re.findall(r"\d+", fr)
+    # sûr seulement si les nombres FR == nombres EN, même nombre et même ordre
+    if not en_nums or en_nums != fr_nums:
+        continue
+    skel_en = re.sub(r"\d+", "#", en)
+    if skel_en in seen_skel:
+        continue
+    seen_skel.add(skel_en)
+    # gabarit FR : remplace chaque nombre par {1},{2}... dans l'ordre
+    idx = [0]
+
+    def _ph(_m):
+        idx[0] += 1
+        return "{%d}" % idx[0]
+
+    fr_tmpl = re.sub(r"\d+", _ph, fr)
+    lines.append("sk[%s] = %s" % (lua_str(skel_en), lua_str(fr_tmpl)))
+    n_skel += 1
+
 # table des descriptions COMPLÈTES d'affixes (EN -> FR) : grimoire/spellbook
 lines.append("")
 lines.append("EbonholdFR_Data.affixDescFR = {}")
@@ -197,9 +228,9 @@ for name, variants in dyn_variants.items():
     dyn_report[name] = sorted(by_class.keys())
 
 open(OUTLUA, "w", encoding="utf-8").write("\n".join(lines) + "\n")
-print("Echoes:%d/%d | Skill tree:%d/%d | Affixes:%d/%d | AffixEffect:%d | Tomes:%d"
+print("Echoes:%d/%d | Skill tree:%d/%d | Affixes:%d/%d | AffixEffect:%d | Skel:%d | Tomes:%d"
       % (n_echo, len(echoes), n_skill, len(skill), n_affix, len(affixes_fr),
-         len(affix_effect_fr), len(tomes_fr)))
+         len(affix_effect_fr), n_skel, len(tomes_fr)))
 print("--- dynFR (couverture par classe) ---")
 for name in sorted(dyn_report):
     cl = dyn_report[name]

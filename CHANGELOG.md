@@ -7,10 +7,13 @@ Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog]
 ### Corrigé / Ajouté
 - **Echoes dynamiques affichés selon TA classe.** Pour les 6 echoes à variantes (Stonefist Barrage, Ember Spark, Unstable Infusion, Temporal Pressure, Corrosive Breath, Arcane Bombardment), le serveur affiche la variante **canonique (Guerrier)** à tout le monde dans la carte d'offre — même en anglais. L'addon détecte désormais la **classe du joueur** (`UnitClass`) et affiche **la bonne variante** : un Mage voit « Cone of Cold / Mana », un Voleur « Énergie », un Chevalier de la mort « Runes », etc.
 - C'est un comportement que **même la version anglaise du jeu n'a pas** : la traduction FR devient plus juste que l'original sur ces echoes.
+- **Affixes « Unique »** : la ligne d'un affixe gravé se terminant par « . Unique. » est maintenant traduite (avant, seul « . Stacks with other ranks. » l'était).
+- **Tous les rangs d'affixes traduits** : repli par **motif** — n'importe quel pourcentage/rang d'un effet est traduit, même un rang qui n'avait pas été capturé au dump (ex. « Increases your damage and healing done by 5% »). 44 familles d'effets couvertes automatiquement.
+- **Retour à la ligne dans le Skill Tree** : les descriptions longues des nœuds (ex. « Last Resort ») s'affichaient sur une seule ligne illisible ; elles sont désormais **découpées en plusieurs lignes**.
 
 ### Notes
-- Couverture : 10 classes pour 5 de ces echoes ; Unstable Infusion n'existe que pour 8 classes côté serveur (pas de variante Mage/Paladin), géré en conséquence.
-- Repère technique : table `dynFR` (echo → classe → texte) générée par `tools/gen_fr_data.py`, choisie au survol par le hook `dynDesc`.
+- Couverture echoes dynamiques : 10 classes pour 5 de ces echoes ; Unstable Infusion n'existe que pour 8 classes côté serveur (pas de variante Mage/Paladin), géré en conséquence.
+- Repères techniques : table `dynFR` (echo → classe → texte) + table `affixEffectSkel` (motif → gabarit), générées par `tools/gen_fr_data.py` ; hooks `dynDesc`, `frAffixPattern`, `wrapText`.
 
 ## [3.0] — 2026-06-19
 
