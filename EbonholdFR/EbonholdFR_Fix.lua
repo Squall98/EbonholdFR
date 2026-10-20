@@ -75,6 +75,8 @@ f:RegisterEvent("GOSSIP_CLOSED")
 f:SetScript("OnEvent", function(self, event)
   if event == "GOSSIP_SHOW" then
     if not GossipFrame or not GossipFrame:IsShown() then return end
+    -- ancien addon EbonholdFRFix encore installé (launcher 1.x) : il s'en occupe déjà
+    if IsAddOnLoaded("EbonholdFRFix") then return end
     local nom = GossipFrameNpcNameText and GossipFrameNpcNameText:GetText()
     if diag and E.msg then E.msg("dialogue PNJ = [" .. tostring(nom) .. "]") end
     if nom then

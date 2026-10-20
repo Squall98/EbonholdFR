@@ -184,6 +184,7 @@ function hooksecurefunc(a, b, c)
 end
 function GetTime() return FAUX.temps end
 function GetAddOnMetadata(a, k) if k == "Version" then return "4.0" end end
+function IsAddOnLoaded(n) return FAUX.addons and FAUX.addons[n] or nil end
 function GetLocale() return FAUX.locale or "enUS" end
 FAUX.NOMS = {}
 function GetSpellInfo(id) return FAUX.NOMS[id] end
