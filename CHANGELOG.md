@@ -15,6 +15,7 @@ Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog]
 - Commande unique **`/efr`** (options, `bouton`, `test <id>`, `stats`, `collecte`, `fix`) ; anciens `/frmenu`, `/frbouton`, `/frtest`, `/frfix` conservés.
 - **EbonholdFRFix intégré** : la forge « Enchanted Anvil » s'ouvre aussi sous son nom français, et les globales manquantes du client frFR sont recréées (`EbonholdFR_Compat.lua`). L'ancien addon séparé n'est plus nécessaire.
 - Générateur `tools/generer_donnees_v4.py` et tests hors jeu `tools/tests/`.
+- **1 036 textes d'interface** traduits (968 exacts, 58 motifs), dont 176 relevés en jeu avec la collecte.
 
 ### Corrigé
 - **Nombres vides en fin de carte d'echo** : le texte complet est demandé au serveur, puis le français est coupé proprement (jamais au milieu d'un nombre ou d'une couleur).
@@ -22,6 +23,8 @@ Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog]
 - Version affichée dans le panneau lue dans le `.toc` (affichait « v3.0 »).
 
 ### Changé
+- Avec le patch FR, le **clic droit** du bouton minimap ne bascule que l'interface du serveur (descriptions et noms sont dans les fichiers du jeu) : l'infobulle, le message et le panneau le disent et renvoient à l'onglet Français du launcher.
+- Si l'ancien addon EbonholdFRFix est encore installé (launcher 1.x), la forge en français le laisse faire (pas de double ouverture).
 - Les variantes d'echoes par classe (« contenu dynamique » de la 3.1) ne sont plus devinées : le serveur donne désormais à chaque classe sa propre variante, l'addon traduit exactement le texte affiché.
 
 ### English summary
