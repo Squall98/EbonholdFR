@@ -41,11 +41,14 @@ local function buttonTooltip(self)
   else
     GameTooltip:AddLine("\195\137tat : |cffff6666Anglais (original)|r", 1, 1, 1)
   end
-  if E.Patch() then
-    GameTooltip:AddLine("Patch FR install\195\169 : descriptions d\195\169j\195\160 en fran\195\167ais", 0.6, 0.8, 1)
-  end
   GameTooltip:AddLine("Clic gauche : ouvrir les options", 0.7, 0.7, 0.7)
-  GameTooltip:AddLine("Clic droit : basculer FR / EN", 0.7, 0.7, 0.7)
+  if E.Patch() then
+    -- descriptions et noms sont dans les fichiers du jeu : l'addon ne bascule que l'interface
+    GameTooltip:AddLine("Clic droit : interface du serveur FR / EN", 0.7, 0.7, 0.7)
+    GameTooltip:AddLine("Descriptions et noms : launcher, onglet Fran\195\167ais", 0.6, 0.8, 1)
+  else
+    GameTooltip:AddLine("Clic droit : basculer FR / EN", 0.7, 0.7, 0.7)
+  end
   GameTooltip:Show()
 end
 
@@ -75,8 +78,13 @@ local function createButton()
       updateButtonState()
       if EbonholdFR_RefreshPanel then EbonholdFR_RefreshPanel() end
       buttonTooltip(self)
-      msg(DB.enabled and "Traduction |cff2cfe32fran\195\167aise|r activ\195\169e."
-                      or "Traduction d\195\169sactiv\195\169e : textes en |cffff6666anglais|r.")
+      if DB.enabled then
+        msg("Traduction |cff2cfe32fran\195\167aise|r activ\195\169e.")
+      elseif E.Patch() then
+        msg("Interface du serveur en |cffff6666anglais|r. Descriptions et noms : r\195\169gl\195\169s dans le launcher (onglet Fran\195\167ais).")
+      else
+        msg("Traduction d\195\169sactiv\195\169e : textes en |cffff6666anglais|r.")
+      end
     else
       if panel and panel:IsShown() then panel:Hide() else EbonholdFR_OpenPanel() end
     end
@@ -131,7 +139,7 @@ end
 
 local function createPanel()
   panel = CreateFrame("Frame", "EbonholdFROptionsPanel", UIParent)
-  panel:SetWidth(360); panel:SetHeight(390)
+  panel:SetWidth(360); panel:SetHeight(406)
   panel:SetPoint("CENTER")
   panel:SetFrameStrata("DIALOG")
   panel:SetBackdrop({
@@ -185,8 +193,8 @@ local function createPanel()
   patchNote:SetPoint("TOPLEFT", 44, y - 2)
   patchNote:SetWidth(290)
   patchNote:SetJustifyH("LEFT")
-  patchNote:SetText("|cff99ccffPatch FR install\195\169 : les descriptions sont d\195\169j\195\160 en fran\195\167ais dans le jeu.|r")
-  y = y - 30
+  patchNote:SetText("|cff99ccffDescriptions et noms : ils sont dans les fichiers du jeu (patch FR), ils se r\195\168glent dans le launcher, onglet Fran\195\167ais. Ici : l'interface du serveur et la ligne \194\171 EN : \194\187.|r")
+  y = y - 46
 
   -- revenir aux réglages du launcher
   local reset = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
