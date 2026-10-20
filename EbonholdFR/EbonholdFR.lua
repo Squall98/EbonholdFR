@@ -1,403 +1,638 @@
---[[ EbonholdFR — traduction française des DESCRIPTIONS de Project Ebonhold.
-  Les NOMS restent en anglais (volontaire). Seules les descriptions passent en FR.
-    * Echoes      : descriptions via utils.GetSpellDescription (tokens @..@)
-                    -> hook : on réinjecte le template FR avec les nombres calculés.
-    * Skill Tree  : tooltips custom (skillTreeCurrentRankTooltip / NextRank) via
-                    SetHyperlink('spell:id') -> hook : on remplace la description
-                    (lignes 2+) par la version FR statique (e.sdesc).
-  Données : EbonholdFR_Data.lua  (byId[spellId] = { desc=... } ou { sdesc=... }).
-  Commande : /frtest <spellId>
+--[[ EbonholdFR 4.0 — cœur : réglages, descriptions (echoes, Soul Tree, affixes, tomes), infobulles.
+
+  Principe des descriptions (même calcul que tools/generer_donnees_v4.py) :
+    texte anglais affiché -> sans couleurs, blancs regroupés -> « jetons » (nombres 12 / 2.5 et
+    formules @...@) -> EMPREINTE = texte où chaque jeton devient « # ».
+    EbonholdFR_Data.fp[empreinte] -> gabarit français ; ses marqueurs {k} reprennent le k-ième jeton
+    du texte anglais AFFICHÉ ({@k} = formule calculée, affichée en vert comme l'original).
+  On ne traduit QUE si l'empreinte est connue : texte modifié par le serveur, texte déjà en
+  français (patch FR) ou inconnu -> on ne touche à rien.
+
+  Points d'accroche (aucun hook global de SetText, aucun script posé sur un bouton sécurisé) :
+    * utils.GetSpellDescription / GetStackedSpellDescription / GetSpellSearchText (table Lua de
+      l'addon du serveur, remplacement de champ) ;
+    * GameTooltip, ItemRefTooltip, ShoppingTooltip1/2 et les infobulles du serveur :
+      hooksecurefunc(..., "SetHyperlink" / "Show") et HookScript OnTooltipSetItem / OnTooltipSetSpell.
 ]]
 
-local D = EbonholdFR_Data or {}
-local byId = D.byId or {}
-local affixEffectFR = D.affixEffectFR or {}
-local affixDescFR = D.affixDescFR or {}
-local tomeFR = D.tomeFR or {}
-local dynFR = D.dynFR or {}
-local affixEffectSkel = D.affixEffectSkel or {}
-local function msg(s) DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. s) end
-
--- Retour à la ligne : coupe un texte long en lignes <= width (octets) aux espaces.
--- Utilisé pour les tooltips custom du Skill Tree qui ne wrappent pas tout seuls.
-local function wrapText(s, width)
-  width = width or 52
-  if not s or string.len(s) <= width then return s end
-  local out, line = {}, ""
-  for word in string.gmatch(s, "%S+") do
-    if line == "" then
-      line = word
-    elseif string.len(line) + 1 + string.len(word) > width then
-      out[#out + 1] = line
-      line = word
-    else
-      line = line .. " " .. word
-    end
-  end
-  if line ~= "" then out[#out + 1] = line end
-  return table.concat(out, "\n")
-end
-
--- Echoes à contenu dynamique : le serveur affiche la variante canonique
--- (Guerrier) à toutes les classes. On choisit la variante FR de LA classe du
--- joueur. e.dyn = nom de l'echo ; dynFR[nom][CLASSE] = texte FR de la variante.
-local function dynDesc(e)
-  if e.dyn then
-    local _, class = UnitClass("player")
-    local m = dynFR[e.dyn]
-    if m and class and m[class] then return m[class] end
-  end
-  return e.desc
-end
-
-------------------------------------------------------------------------
--- 0) ÉTAT / RÉGLAGES (V3) : interrupteur FR <-> EN, par catégorie.
---    Lus en direct par les hooks : changer un réglage prend effet au
---    survol suivant (les fenêtres déjà ouvertes : rouvrir / /reload).
-------------------------------------------------------------------------
+local ADDON = "EbonholdFR"
 EbonholdFR = EbonholdFR or {}
-local DB  -- table de sauvegarde, affectée au PLAYER_LOGIN
+local E = EbonholdFR
 
--- crée/complète EbonholdFRDB avec les valeurs par défaut (idempotent ;
--- appelée aussi par le fichier d'UI pour éviter tout problème d'ordre).
-function EbonholdFR.EnsureDB()
-  EbonholdFRDB = EbonholdFRDB or {}
+local D = EbonholdFR_Data or {}
+local GABARITS = D.t or {}
+local EMPREINTES = D.fp or {}
+local PAR_ID = D.id or {}
+local NOM_EN = D.nom or {}
+local TOME_ITEM = D.tomeItem or {}
+
+local find, sub, gsub, match, len = string.find, string.sub, string.gsub, string.match, string.len
+local concat, floor, tonumber, type, pairs, pcall = table.concat, math.floor, tonumber, type, pairs, pcall
+
+local function msg(s)
+  if DEFAULT_CHAT_FRAME then DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. tostring(s)) end
+end
+E.msg = msg
+
+E.version = (GetAddOnMetadata and GetAddOnMetadata(ADDON, "Version")) or "?"
+
+------------------------------------------------------------------------
+-- 1) RÉGLAGES
+--    EbonholdFR_Reglages (fichier écrit par le launcher, chargé en premier ; absent = défauts)
+--    + choix faits en jeu (EbonholdFRDB.choix). Si le launcher change ses réglages, ses
+--    nouvelles valeurs reprennent la main (les choix en jeu sont alors oubliés).
+------------------------------------------------------------------------
+local DEFAUTS = { interface = true, echoes_desc = true, soultree_desc = true, affixes_desc = true,
+                  tomes = true, nom_anglais = true, patch = false }
+E.CLES = { "interface", "echoes_desc", "soultree_desc", "affixes_desc", "tomes", "nom_anglais" }
+local CLE_CAT = { [1] = "echoes_desc", [2] = "soultree_desc", [3] = "affixes_desc", [4] = "tomes" }
+E.CLE_CAT = CLE_CAT
+
+local ON = {}          -- réglages effectifs (recalculés par E.Rafraichir)
+E.ON = ON
+local DB               -- EbonholdFRDB (disponible à ADDON_LOADED)
+
+local function bool(v, def)
+  if v == nil then return def end
+  if v == "fr" or v == "on" or v == "oui" or v == 1 or v == "1" or v == "true" then return true end
+  if v == "en" or v == "off" or v == "non" or v == 0 or v == "0" or v == "false" then return false end
+  return v and true or false
+end
+E.bool = bool
+
+local function reglagesLauncher()
+  return type(EbonholdFR_Reglages) == "table" and EbonholdFR_Reglages or nil
+end
+
+-- le patch FR (descriptions françaises dans le jeu) est-il installé ?
+function E.Patch()
+  local R = reglagesLauncher()
+  return R and bool(R.patch, false) or false
+end
+
+local function signature(R)
+  if not R then return "aucun" end
+  local t = {}
+  for _, k in ipairs(E.CLES) do t[#t + 1] = k .. "=" .. tostring(R[k]) end
+  t[#t + 1] = "patch=" .. tostring(R.patch)
+  return concat(t, ";")
+end
+
+-- valeur « brute » d'un réglage (sans l'interrupteur général ni le patch)
+function E.ValeurReglage(cle)
+  if DB and DB.choix and DB.choix[cle] ~= nil then return DB.choix[cle] end
+  local R = reglagesLauncher()
+  if R and R[cle] ~= nil then return bool(R[cle], DEFAUTS[cle]) end
+  return DEFAUTS[cle]
+end
+
+function E.Rafraichir()
+  local actif = not DB or DB.enabled ~= false
+  local patch = E.Patch()
+  for _, k in ipairs(E.CLES) do
+    local v = actif and E.ValeurReglage(k) or false
+    -- patch FR installé : les descriptions sont déjà en français dans le jeu -> on n'y touche pas
+    if patch and (k == "echoes_desc" or k == "soultree_desc" or k == "affixes_desc" or k == "tomes") then v = false end
+    ON[k] = v and true or false
+  end
+  ON.desc = ON.echoes_desc or ON.soultree_desc or ON.affixes_desc or ON.tomes
+  if E.SurChangementReglages then E.SurChangementReglages() end
+end
+E.Rafraichir()
+
+function E.SetChoix(cle, valeur)
+  E.EnsureDB()
+  DB.choix[cle] = valeur and true or false
+  E.Rafraichir()
+end
+
+function E.RevenirLauncher()
+  E.EnsureDB()
+  DB.choix = {}
+  DB.enabled = true
+  E.Rafraichir()
+end
+
+-- crée/complète EbonholdFRDB (idempotent ; aussi appelée par le fichier d'interface)
+function E.EnsureDB()
+  if type(EbonholdFRDB) ~= "table" then EbonholdFRDB = {} end
   local db = EbonholdFRDB
+  if db.v ~= 4 then
+    -- migration v3 -> v4 : les réglages par catégorie viennent maintenant du launcher
+    db.cat = nil
+    db.choix = {}
+    db.v = 4
+  end
+  if type(db.choix) ~= "table" then db.choix = {} end
   if db.enabled == nil then db.enabled = true end
-  db.cat = db.cat or {}
-  if db.cat.echoes    == nil then db.cat.echoes = true end
-  if db.cat.skilltree == nil then db.cat.skilltree = true end
-  if db.cat.affixes   == nil then db.cat.affixes = true end
-  if db.cat.tomes     == nil then db.cat.tomes = true end
   db.minimap = db.minimap or {}
-  if db.minimap.hide  == nil then db.minimap.hide = false end
+  if db.minimap.hide == nil then db.minimap.hide = false end
   if db.minimap.angle == nil then db.minimap.angle = 200 end
+  local sig = signature(reglagesLauncher())
+  if db.sigReglages ~= sig then
+    -- le launcher a changé les réglages depuis la dernière session : ils reprennent la main
+    db.sigReglages = sig
+    db.choix = {}
+    db.enabled = true
+  end
+  DB = db
   return db
 end
 
--- la traduction de la catégorie `cat` est-elle active ? (maître + catégorie)
-local function trOn(cat)
-  if not DB or not DB.enabled then return false end
-  if cat and DB.cat and DB.cat[cat] == false then return false end
-  return true
+------------------------------------------------------------------------
+-- 2) EMPREINTE, JETONS, GABARITS (fonctions pures, testées hors jeu)
+------------------------------------------------------------------------
+local function normaliser(s)
+  s = gsub(s, "|c%x%x%x%x%x%x%x%x", "")
+  s = gsub(s, "|r", "")
+  s = gsub(s, "%s+", " ")
+  return (match(s, "^ *(.-) *$"))
 end
 
-------------------------------------------------------------------------
--- 1) ECHOES : descriptions tokenisées (utils.GetSpellDescription global)
-------------------------------------------------------------------------
--- remplit le template FR avec les nombres verts (|cff2cfe32..|r) calculés par l'original
-local function reinject(fr, enText, maxLength)
-  if string.find(fr, "@") then
-    local nums = {}
-    for v in string.gmatch(enText, "|cff2cfe32(.-)|r") do nums[#nums + 1] = v end
-    local i = 0
-    fr = string.gsub(fr, "@(.-)@", function()
-      i = i + 1
-      return "|cff2cfe32" .. (nums[i] or "") .. "|r"
-    end)
-  end
-  -- Le français est ~30% plus long que l'anglais : on relâche la limite pour ne pas
-  -- couper les descriptions (les tooltips s'affichent sur plusieurs lignes / wrappent).
-  -- On garde un plafond de sécurité élevé pour les cas pathologiques.
-  if maxLength then
-    local cap = maxLength + 120
-    if cap < 600 then cap = 600 end
-    if string.len(fr) > cap then
-      fr = string.sub(fr, 1, cap - 3)
-      local rev = string.find(string.reverse(fr), " ")
-      if rev and rev < 18 then fr = string.sub(fr, 1, string.len(fr) - rev) end
-      fr = fr .. "..."
-    end
-  end
-  return fr
-end
-
-local function installDescHook()
-  if type(utils) ~= "table" or type(utils.GetSpellDescription) ~= "function" then
-    return false
-  end
-  if utils._ebonholdFRHooked then return true end
-  utils._ebonholdFRHooked = true
-  -- 1a) description simple (browser)
-  local orig = utils.GetSpellDescription
-  utils.GetSpellDescription = function(spellId, maxLength, stacks)
-    local e = byId[spellId]
-    if e and e.desc and trOn("echoes") then
-      return reinject(dynDesc(e), orig(spellId, maxLength, stacks), maxLength)
-    end
-    return orig(spellId, maxLength, stacks)
-  end
-  -- 1b) description cumulée (panneau d'echoes équipés en jeu)
-  if type(utils.GetStackedSpellDescription) == "function" then
-    local origStk = utils.GetStackedSpellDescription
-    utils.GetStackedSpellDescription = function(spellInstances, maxLength)
-      local sid = spellInstances and spellInstances[1] and spellInstances[1].spellId
-      local e = sid and byId[sid]
-      if e and e.desc and trOn("echoes") then
-        return reinject(dynDesc(e), origStk(spellInstances, maxLength), maxLength)
+-- -> liste des jetons, empreinte
+local function jetons(plain)
+  local toks, parts, pos = {}, {}, 1
+  while true do
+    local s = find(plain, "[@%d]", pos)
+    if not s then break end
+    local e
+    if sub(plain, s, s) == "@" then
+      e = find(plain, "@", s + 1, true)
+      if not e then
+        -- « @ » sans fermeture : simple caractère
+        parts[#parts + 1] = sub(plain, pos, s)
+        pos = s + 1
       end
-      return origStk(spellInstances, maxLength)
+    else
+      local m = match(plain, "^%d+%.%d+", s) or match(plain, "^%d+", s)
+      e = s + len(m) - 1
+    end
+    if e then
+      parts[#parts + 1] = sub(plain, pos, s - 1)
+      parts[#parts + 1] = "#"
+      toks[#toks + 1] = sub(plain, s, e)
+      pos = e + 1
     end
   end
-  return true
+  parts[#parts + 1] = sub(plain, pos)
+  return toks, concat(parts)
 end
 
-------------------------------------------------------------------------
--- 2) SKILL TREE : remplace la description (lignes 2+) par e.sdesc
---    (le hook se déclenche juste après SetHyperlink, avant l'ajout du coût)
-------------------------------------------------------------------------
-local function fixSkillTooltip(tt, link)
-  if not tt or not link then return end
-  local id = tonumber(string.match(tostring(link), "spell:(%d+)"))
-  if not id then return end
-  local e = byId[id]
-  if not e then return end
-  -- nœuds de skill tree : e.sdesc ; echoes (liens chat / shift-click) : e.desc (template @x@)
-  local frDesc = e.sdesc or e.desc
-  if not frDesc then return end
-  if not trOn(e.sdesc and "skilltree" or "echoes") then return end
-  local nm = tt:GetName()
-  if not nm then return end
-  local n = tt:NumLines() or 0
-  -- echoes : on réinjecte les formules @..@ de l'EN (parité ; le tooltip brut spell:id
-  -- n'est pas résolu, l'EN montre aussi la formule) au lieu du placeholder @x@.
-  if (not e.sdesc) and string.find(frDesc, "@") then
-    local forms = {}
-    for i = 2, n do
-      local li = _G[nm .. "TextLeft" .. i]
-      local t = li and li:GetText()
-      if t then for f in string.gmatch(t, "@(.-)@") do forms[#forms + 1] = f end end
+local VERT = "|cff2cfe32"
+local function remplir(g, toks)
+  local ok = true
+  local r = gsub(g, "{(@?)(%d+)}", function(f, k)
+    local v = toks[tonumber(k)]
+    if not v then ok = false; return "" end
+    if f == "@" and sub(v, 1, 1) ~= "@" then return VERT .. v .. "|r" end
+    return v
+  end)
+  if ok then return r end
+end
+
+local function empreinte(texte)
+  local _, fp = jetons(normaliser(texte))
+  return fp
+end
+
+E.normaliser, E.jetons, E.remplir, E.empreinte = normaliser, jetons, remplir, empreinte
+
+-- cache : texte anglais -> traduction (ou false). Vidé au-delà de 3000 entrées.
+local cacheDesc, nCacheDesc = {}, 0
+
+-- Texte anglais affiché -> texte français, catégorie (1 echoes, 2 Soul Tree, 3 affixes, 4 tomes)
+-- ou nil si le texte n'est pas reconnu (ou si la catégorie est désactivée).
+function E.TraduireDescription(texte, idSort)
+  if type(texte) ~= "string" or texte == "" then return nil end
+  local special = idSort and PAR_ID[idSort]
+  local c = (not special) and cacheDesc[texte]
+  local fr, cat
+  if c ~= nil and c ~= false then
+    fr, cat = c[1], c[2]
+  elseif c == nil then
+    local toks, fp = jetons(normaliser(texte))
+    local v = EMPREINTES[fp]
+    if v then
+      local idx = floor(v / 10)
+      cat = v % 10
+      if special and special[1] == fp then idx = special[2] end
+      local g = GABARITS[idx]
+      fr = g and remplir(g, toks)
     end
-    if #forms > 0 then
-      local k = 0
-      frDesc = string.gsub(frDesc, "@(.-)@", function() k = k + 1; return "@" .. (forms[k] or "x") .. "@" end)
-    end
-  end
-  -- Skill Tree : le tooltip custom ne wrappe pas et on regroupe toute la desc
-  -- sur la ligne 2 -> on coupe nous-mêmes en plusieurs lignes pour la lisibilité.
-  -- (les liens chat d'echoes passent par GameTooltip, qui wrappe tout seul.)
-  if e.sdesc and string.find(nm, "skillTree", 1, true) then
-    frDesc = wrapText(frDesc, 52)
-  end
-  local l2 = _G[nm .. "TextLeft2"]
-  if l2 then l2:SetText(frDesc) end
-  -- vide les lignes de description restantes (3..N) : à ce stade ce sont
-  -- uniquement des suites de description (le coût est ajouté APRÈS le hook)
-  for i = 3, n do
-    local li = _G[nm .. "TextLeft" .. i]
-    if li and li:GetText() and li:GetText() ~= "" then li:SetText(" ") end
-  end
-  tt:Show()
-end
-
-------------------------------------------------------------------------
--- 3) OBJETS : affixes gravés (ligne violette) + Tomes of Echo
---    via OnTooltipSetItem (couvre survol sac/équipé ET liens chat).
-------------------------------------------------------------------------
--- suffixes possibles d'une ligne d'affixe gravé (EN -> FR)
-local AFFIX_SUFFIXES = {
-  { en = ". Stacks with other ranks.", fr = ". Se cumule avec les autres rangs." },
-  { en = ". Unique.", fr = ". Unique." },
-  { en = " Unique.", fr = " Unique." },
-  { en = " Unique", fr = " Unique" },
-}
-
-local function stripColor(s)
-  if not s then return s end
-  s = string.gsub(s, "|c%x%x%x%x%x%x%x%x", "")
-  s = string.gsub(s, "|r", "")
-  return s
-end
-
--- repli par MOTIF : tout effet "Increases ... by N%" (n'importe quel rang) via
--- le squelette EN (nombres -> #) ; remplit {1},{2}... avec les nombres trouvés.
-local function frAffixPattern(body)
-  -- tolère "Increases your X" (formulation sur l'objet) absent de nos données
-  local cand = string.gsub(body, "Increases your ", "Increases ")
-  local skel = string.gsub(cand, "%d+", "#")
-  local tmpl = affixEffectSkel[skel]
-  if not tmpl then return nil end
-  local nums = {}
-  for d in string.gmatch(cand, "%d+") do nums[#nums + 1] = d end
-  return (string.gsub(tmpl, "{(%d+)}", function(k) return nums[tonumber(k)] or "" end))
-end
-
--- cherche la traduction d'un effet : exact, sans point final, puis par motif
-local function lookupEffect(body)
-  local fr = affixEffectFR[body]
-  if fr then return fr end
-  local noDot = string.gsub(body, "%.$", "")
-  fr = affixEffectFR[noDot]
-  if fr then return fr end
-  return frAffixPattern(body) or frAffixPattern(noDot)
-end
-
-local function frAffixEffect(plain)
-  -- détache un suffixe connu (Stacks / Unique) et traduit le corps
-  for _, sx in ipairs(AFFIX_SUFFIXES) do
-    local n = string.len(sx.en)
-    if string.len(plain) > n and string.sub(plain, -n) == sx.en then
-      local fr = lookupEffect(string.sub(plain, 1, string.len(plain) - n))
-      if fr then return fr .. sx.fr end
+    if not special then
+      if nCacheDesc > 3000 then cacheDesc, nCacheDesc = {}, 0 end
+      cacheDesc[texte] = fr and { fr, cat } or false
+      nCacheDesc = nCacheDesc + 1
     end
   end
-  return lookupEffect(plain)
+  if fr and ON[CLE_CAT[cat] or ""] then return fr, cat end
+  return nil
 end
 
-local function translateItemTooltip(tt)
-  local nm = tt:GetName()
-  if not nm then return end
-  local l1 = _G[nm .. "TextLeft1"]
-  local title = l1 and l1:GetText()
-  local tomeName = title and string.match(title, "^Tome of Echo: (.+)$")
-  local n = tt:NumLines() or 0
-  local changed = false
-  for i = 2, n do
-    local fs = _G[nm .. "TextLeft" .. i]
-    local raw = fs and fs:GetText()
-    if raw and raw ~= "" then
-      local plain = stripColor(raw)
-      -- a) ligne d'affixe gravé
-      local frEff = trOn("affixes") and frAffixEffect(plain)
-      if frEff then
-        fs:SetText(frEff); changed = true
-      elseif tomeName and trOn("tomes") then
-        -- b) lignes de Tome of Echo
-        if string.find(plain, "when offered new Echoes", 1, true) then
-          local full = tomeFR[tomeName]
-          if full then
-            -- ligne FR complète (enrobage + blurb traduit), nom de l'echo en anglais
-            fs:SetText(full); changed = true
-          else
-            -- repli : on traduit juste l'enrobage par regex (blurb laissé en anglais)
-            local t = string.gsub(raw, "Use: ", "Utiliser : ")
-            t = string.gsub(t,
-              "Grants this character the ability to discover (.-) when offered new Echoes%.",
-              "Permet \195\160 ce personnage de d\195\169couvrir %1 parmi les Echoes propos\195\169s.")
-            if t ~= raw then fs:SetText(t); changed = true end
-          end
-        elseif plain == "Binds when used" then
-          fs:SetText("Li\195\169 quand utilis\195\169"); changed = true
+-- coupe le français à ~maxLength x 1,3 (le français est plus long) sur un espace, sans
+-- laisser de code couleur ouvert ni de caractère UTF-8 entamé
+local function couper(s, maxLength)
+  maxLength = tonumber(maxLength) or 100
+  local lim = floor(maxLength * 1.3 + 0.5)
+  if len(s) <= lim then return s end
+  local cut = sub(s, 1, lim - 3)
+  local sp = find(cut, " [^ ]*$")
+  if sp and sp > lim * 0.6 then cut = sub(cut, 1, sp - 1) end
+  cut = gsub(cut, "[\192-\255][\128-\191]*$", "")
+  cut = gsub(cut, "|c%x*$", "")
+  cut = gsub(cut, "|$", "")
+  local _, nc = gsub(cut, "|c%x%x%x%x%x%x%x%x", "")
+  local _, nr = gsub(cut, "|r", "")
+  if nc > nr then cut = cut .. "|r" end
+  return cut .. "..."
+end
+E.couper = couper
+
+-- retour à la ligne manuel (infobulles du Soul Tree, qui ne coupent pas les lignes elles-mêmes)
+local function couperLignes(s, largeur)
+  local out = {}
+  for para in string.gmatch(s .. "\n", "(.-)\n") do
+    if len(para) <= largeur then
+      out[#out + 1] = para
+    else
+      local ligne = ""
+      for mot in string.gmatch(para, "%S+") do
+        if ligne == "" then ligne = mot
+        elseif len(ligne) + 1 + len(mot) > largeur then out[#out + 1] = ligne; ligne = mot
+        else ligne = ligne .. " " .. mot end
+      end
+      out[#out + 1] = ligne
+    end
+  end
+  return concat(out, "\n")
+end
+E.couperLignes = couperLignes
+
+------------------------------------------------------------------------
+-- 3) ACCROCHES SUR utils (addon du serveur)
+------------------------------------------------------------------------
+local orig = {}
+
+local function installerUtils()
+  if type(utils) ~= "table" or type(utils.GetSpellDescription) ~= "function" then return false end
+  if utils._ebonholdFR4 then return true end
+  utils._ebonholdFR4 = true
+
+  -- 3a) description d'un echo (cartes de choix, journal, panneau de la run, tomes...)
+  orig.GSD = utils.GetSpellDescription
+  utils.GetSpellDescription = function(spellId, maxLength, stacks)
+    if not ON.echoes_desc or type(spellId) ~= "number" then
+      return orig.GSD(spellId, maxLength, stacks)
+    end
+    -- on demande le texte COMPLET (sinon l'anglais est coupé avant ses derniers nombres)
+    local ok, complet = pcall(orig.GSD, spellId, 100000, stacks)
+    if ok and type(complet) == "string" then
+      local fr = E.TraduireDescription(complet, spellId)
+      if fr then return couper(gsub(fr, "%s+", " "), maxLength) end
+    end
+    return orig.GSD(spellId, maxLength, stacks)
+  end
+
+  -- 3b) description cumulée (echoes équipés en plusieurs exemplaires)
+  if type(utils.GetStackedSpellDescription) == "function" then
+    orig.GSSD = utils.GetStackedSpellDescription
+    utils.GetStackedSpellDescription = function(spellInstances, maxLength)
+      local sid = type(spellInstances) == "table" and spellInstances[1] and spellInstances[1].spellId
+      if ON.echoes_desc and type(sid) == "number" then
+        local ok, complet = pcall(orig.GSSD, spellInstances, 100000)
+        if ok and type(complet) == "string" then
+          local fr = E.TraduireDescription(complet, sid)
+          if fr then return couper(gsub(fr, "%s+", " "), maxLength) end
         end
       end
+      return orig.GSSD(spellInstances, maxLength)
     end
   end
-  if changed then tt:Show() end
-end
 
-local hookedItem = {}
-local function hookItemTooltip(frameName)
-  if hookedItem[frameName] then return true end
-  local f = _G[frameName]
-  if not f or type(f.HookScript) ~= "function" then return false end
-  f:HookScript("OnTooltipSetItem", translateItemTooltip)
-  hookedItem[frameName] = true
+  -- 3c) recherche du journal des echoes : l'anglais ET le français sont cherchables
+  if type(utils.GetSpellSearchText) == "function" then
+    orig.GSST = utils.GetSpellSearchText
+    utils.GetSpellSearchText = function(spellId)
+      local en = orig.GSST(spellId)
+      if ON.echoes_desc and type(en) == "string" and en ~= "" then
+        local fr = E.TraduireDescription(en, spellId)
+        if fr then return en .. " " .. normaliser(fr) end
+      end
+      return en
+    end
+  end
   return true
 end
+E.installerUtils = installerUtils
+installerUtils()   -- ProjectEbonhold est une dépendance : utils existe déjà en principe
 
 ------------------------------------------------------------------------
--- 4) SORTS (grimoire / spellbook) : affixes affichés via OnTooltipSetSpell.
---    On essaie l'id direct (byId) puis le match texte (affixDescFR).
+-- 4) INFOBULLES
 ------------------------------------------------------------------------
-local function translateSpellTooltip(tt)
-  local nm = tt:GetName()
-  if not nm then return end
-  -- essai 1 : id du sort
-  local _, _, id = tt:GetSpell()
-  local e = id and byId[id]
-  if e and (e.sdesc or e.desc) and trOn(e.sdesc and "skilltree" or "echoes") then
-    local l2 = _G[nm .. "TextLeft2"]
-    if l2 then l2:SetText(e.sdesc or e.desc) end
-    local n = tt:NumLines() or 0
-    for i = 3, n do
-      local li = _G[nm .. "TextLeft" .. i]
-      if li and li:GetText() and li:GetText() ~= "" then li:SetText(" ") end
-    end
-    tt:Show()
-    return
-  end
-  -- essai 2 : match de la description complète (affixes)
+local lignesCache = setmetatable({}, { __mode = "k" })   -- infobulle -> { [i] = FontString gauche }
+local function ligne(tt, i, droite)
+  local nom = tt:GetName()
+  if not nom then return nil end
+  if droite then return _G[nom .. "TextRight" .. i] end
+  local c = lignesCache[tt]
+  if not c then c = {}; lignesCache[tt] = c end
+  local fs = c[i]
+  if not fs then fs = _G[nom .. "TextLeft" .. i]; c[i] = fs end
+  return fs
+end
+E.ligne = ligne
+
+-- traduit les lignes de description (2..n) reconnues par leur empreinte
+local function traduireLignes(tt, idSort, largeur)
+  if not ON.desc then return false end
   local n = tt:NumLines() or 0
-  local changed = false
+  local change = false
   for i = 2, n do
-    local fs = _G[nm .. "TextLeft" .. i]
-    local raw = fs and fs:GetText()
-    if raw and raw ~= "" then
-      local fr = trOn("affixes") and affixDescFR[stripColor(raw)]
-      if fr then fs:SetText(fr); changed = true end
+    local fs = ligne(tt, i)
+    local txt = fs and fs:GetText()
+    if txt and len(txt) > 12 then
+      local fr = E.TraduireDescription(txt, idSort)
+      if fr then
+        if largeur then fr = couperLignes(fr, largeur) end
+        fs:SetText(fr)
+        change = true
+      end
     end
   end
-  if changed then tt:Show() end
+  return change
 end
+E.traduireLignes = traduireLignes
 
-local hookedSpell = {}
-local function hookSpellTooltip(frameName)
-  if hookedSpell[frameName] then return true end
-  local f = _G[frameName]
-  if not f or type(f.HookScript) ~= "function" then return false end
-  f:HookScript("OnTooltipSetSpell", translateSpellTooltip)
-  hookedSpell[frameName] = true
-  return true
-end
-
-local hookedFrames = {}
-local function hookTooltipFrame(frameName)
-  if hookedFrames[frameName] then return true end
-  local f = _G[frameName]
-  if not f or type(f.SetHyperlink) ~= "function" then return false end
-  hooksecurefunc(f, "SetHyperlink", function(self, link) fixSkillTooltip(self, link) end)
-  hookedFrames[frameName] = true
-  return true
-end
-
-------------------------------------------------------------------------
--- Initialisation
-------------------------------------------------------------------------
-local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_LOGIN")
-f:SetScript("OnEvent", function()
-  DB = EbonholdFR.EnsureDB()  -- réglages sauvegardés (FR<->EN, catégories, minimap)
-  -- tooltips toujours présents
-  hookTooltipFrame("GameTooltip")
-  hookTooltipFrame("ItemRefTooltip")
-  -- tooltips d'objets (affixes gravés + tomes)
-  hookItemTooltip("GameTooltip")
-  hookItemTooltip("ItemRefTooltip")
-  hookItemTooltip("ShoppingTooltip1")
-  hookItemTooltip("ShoppingTooltip2")
-  -- tooltips de sorts (grimoire : affixes via OnTooltipSetSpell)
-  hookSpellTooltip("GameTooltip")
-  hookSpellTooltip("ItemRefTooltip")
-  -- les tooltips du skill tree n'existent qu'après chargement du module :
-  -- on réessaie pendant quelques secondes + après ouverture de l'arbre.
-  local tries = 0
-  local ticker = CreateFrame("Frame")
-  ticker:SetScript("OnUpdate", function(self, elapsed)
-    self._t = (self._t or 0) + elapsed
-    if self._t < 1 then return end
-    self._t = 0
-    tries = tries + 1
-    installDescHook()
-    hookTooltipFrame("skillTreeCurrentRankTooltip")
-    hookTooltipFrame("skillTreeNextRankTooltip")
-    local doneSkill = hookedFrames["skillTreeCurrentRankTooltip"] and hookedFrames["skillTreeNextRankTooltip"]
-    if (utils and utils._ebonholdFRHooked and doneSkill) or tries > 30 then
-      self:SetScript("OnUpdate", nil)
-      local n = 0; for _ in pairs(byId) do n = n + 1 end
-      msg("Traduction active (" .. n .. " descriptions). Echoes:" ..
-        tostring(utils and utils._ebonholdFRHooked or false) ..
-        " SkillTree:" .. tostring(doneSkill or false))
+-- Option « Afficher aussi le nom anglais » : nom affiché (patch FR) -> nom anglais
+local nomsAffiches
+local function tableNoms()
+  if nomsAffiches then return nomsAffiches end
+  nomsAffiches = {}
+  if not GetSpellInfo then return nomsAffiches end
+  for id, en in pairs(NOM_EN) do
+    local cur = GetSpellInfo(id)
+    if cur and cur ~= en then
+      local deja = nomsAffiches[cur]
+      if deja == nil then nomsAffiches[cur] = en
+      elseif deja ~= en then nomsAffiches[cur] = false end   -- ambigu : on s'abstient
     end
-  end)
+  end
+  return nomsAffiches
+end
+E.tableNoms = tableNoms
+
+local PREFIXE_EN = "EN : "
+local function aDejaLigneEN(tt)
+  for i = 2, tt:NumLines() or 0 do
+    local fs = ligne(tt, i)
+    local t = fs and fs:GetText()
+    if t and sub(t, 1, len(PREFIXE_EN)) == PREFIXE_EN then return true end
+  end
+  return false
+end
+
+-- la ligne « EN : » est ajoutée à l'image suivante, une fois que l'addon du serveur a fini
+-- d'ajouter ses propres lignes (rang, coût...) : elle arrive ainsi en bas de l'infobulle
+local attente = {}
+local pilote = CreateFrame("Frame")
+pilote:Hide()
+pilote:SetScript("OnUpdate", function(self)
+  self:Hide()
+  local liste = attente
+  attente = {}            -- (Show ci-dessous peut replanifier : nouvelle table)
+  for tt, en in pairs(liste) do
+    if tt:IsShown() and ON.nom_anglais and not aDejaLigneEN(tt) then
+      local l1 = ligne(tt, 1)
+      local t = l1 and l1:GetText()
+      if t and tableNoms()[t] == en then
+        tt:AddLine(PREFIXE_EN .. en, 0.5, 0.5, 0.5)
+        tt:Show()
+      end
+    end
+  end
 end)
 
-SLASH_FRTEST1 = "/frtest"
-SlashCmdList["FRTEST"] = function(arg)
-  local id = tonumber(arg)
-  if id and byId[id] then
-    msg("spell " .. id .. " -> " .. tostring(byId[id].desc or byId[id].sdesc))
-  else
-    local n = 0; for _ in pairs(byId) do n = n + 1 end
-    msg("Entrées : " .. n .. ". /frtest <spellId>")
+local function planifierNomAnglais(tt)
+  if not ON.nom_anglais then return end
+  local l1 = ligne(tt, 1)
+  local t = l1 and l1:GetText()
+  if not t then return end
+  local en = tableNoms()[t]
+  if en then
+    attente[tt] = en
+    pilote:Show()
   end
 end
+E.planifierNomAnglais = planifierNomAnglais
+
+-- 4a) liens de sorts / echoes : spell:ID, echo:ID
+local function apresSetHyperlink(tt, lien)
+  if type(lien) ~= "string" then return end
+  local id = tonumber(match(lien, "^spell:(%d+)") or match(lien, "^echo:(%d+)") or "")
+  if not id then return end
+  local largeur = E.LARGEUR_TT and E.LARGEUR_TT[tt]
+  if traduireLignes(tt, id, largeur) then tt:Show() end
+  planifierNomAnglais(tt)
+end
+
+-- 4b) grimoire : OnTooltipSetSpell
+local function surSort(tt)
+  local _, _, id = tt:GetSpell()
+  if traduireLignes(tt, id) then tt:Show() end
+  planifierNomAnglais(tt)
+end
+
+-- 4c) objets : ligne violette des affixes gravés, tomes of Echo
+local VIOLET = "|cffb048f8"
+local cacheObjet, nCacheObjet = {}, 0
+
+local function traduireLigneAffixe(txt)
+  local avant, inter, apres = match(txt, "^(.-)" .. VIOLET .. "(.-)|r(.*)$")
+  local ouvre, ferme = VIOLET, "|r"
+  if not inter then
+    avant, ouvre, inter, ferme, apres = match(txt, "^(.-)(@[Aa]ffixe?@)(.-)(@[Aa]ffixe?@)(.*)$")
+  end
+  if not inter then return nil end
+  local fr, cat = E.TraduireDescription(inter)
+  if fr and cat == 3 then return avant .. ouvre .. fr .. ferme .. apres end
+end
+
+local function traduireObjet(tt)
+  if not (ON.affixes_desc or ON.tomes or ON.nom_anglais or ON.interface) then return end
+  local n = tt:NumLines() or 0
+  if n < 2 then return end
+  local _, lien = tt:GetItem()
+  local itemId = lien and tonumber(match(lien, "item:(%d+)"))
+  local titreEN = itemId and TOME_ITEM[itemId]
+  local change = false
+  for i = 2, n do
+    local fs = ligne(tt, i)
+    local txt = fs and fs:GetText()
+    if txt then
+      local fr
+      if find(txt, VIOLET, 1, true) or find(txt, "ffixe?@") then
+        -- ne travailler QUE sur les lignes marquées (filtre), résultat mis en cache
+        if ON.affixes_desc then
+          fr = cacheObjet[txt]
+          if fr == nil then
+            fr = traduireLigneAffixe(txt) or false
+            if nCacheObjet > 2000 then cacheObjet, nCacheObjet = {}, 0 end
+            cacheObjet[txt] = fr
+            nCacheObjet = nCacheObjet + 1
+          end
+        end
+      elseif titreEN then
+        -- tome of Echo : ligne « Use: ... » et lignes ajoutées par le serveur
+        if ON.tomes and sub(txt, 1, 5) == "Use: " then
+          fr = E.TraduireDescription(txt)
+        elseif ON.interface and E.TraduireInterface then
+          fr = E.TraduireInterface(txt, tt)
+        end
+        if ON.interface and E.TraduireInterface then
+          local fd = ligne(tt, i, true)
+          local td = fd and fd:IsShown() and fd:GetText()
+          local frd = td and E.TraduireInterface(td, tt)
+          if frd then fd:SetText(frd); change = true end
+        end
+      end
+      if fr then fs:SetText(fr); change = true end
+    end
+  end
+  if titreEN and ON.nom_anglais then
+    local l1 = ligne(tt, 1)
+    local t = l1 and l1:GetText()
+    if t and normaliser(t) ~= titreEN and not aDejaLigneEN(tt) then
+      tt:AddLine(PREFIXE_EN .. titreEN, 0.5, 0.5, 0.5)
+      change = true
+    end
+  end
+  if change then tt:Show() end
+end
+E.traduireObjet = traduireObjet
+
+-- 4d) après chaque Show : interface du serveur, descriptions des infobulles du serveur, nom anglais
+E.TT_SERVEUR = {}      -- infobulles créées par l'addon du serveur -> true
+E.LARGEUR_TT = {}      -- infobulles sans retour à la ligne automatique -> largeur (caractères)
+local enShow = false
+local function traiterShow(tt)
+  local change = false
+  local srv = E.TT_SERVEUR[tt]
+  if srv then change = traduireLignes(tt, nil, E.LARGEUR_TT[tt]) or change end
+  if ON.interface and E.InterfaceTooltip and (srv or (E.EstCadreServeur and E.EstCadreServeur(tt:GetOwner()))) then
+    change = E.InterfaceTooltip(tt) or change
+  end
+  if change then tt:Show() end
+  planifierNomAnglais(tt)
+end
+local function apresShow(tt)
+  if enShow then return end
+  enShow = true
+  local ok, err = pcall(traiterShow, tt)
+  enShow = false
+  if not ok and E.debug then msg("erreur infobulle : " .. tostring(err)) end
+end
+
+local accrocheTT = {}
+function E.AccrocherInfobulle(nom, serveur, largeur)
+  local tt = type(nom) == "string" and _G[nom] or nom
+  if type(tt) ~= "table" or type(tt.HookScript) ~= "function" or accrocheTT[tt] then return accrocheTT[tt] or false end
+  accrocheTT[tt] = true
+  if serveur then E.TT_SERVEUR[tt] = true end
+  if largeur then E.LARGEUR_TT[tt] = largeur end
+  hooksecurefunc(tt, "Show", apresShow)
+  if type(tt.SetHyperlink) == "function" then
+    hooksecurefunc(tt, "SetHyperlink", function(self, lien)
+      local ok = pcall(apresSetHyperlink, self, lien)
+    end)
+  end
+  if not serveur then
+    tt:HookScript("OnTooltipSetItem", function(self) pcall(traduireObjet, self) end)
+    tt:HookScript("OnTooltipSetSpell", function(self) pcall(surSort, self) end)
+  end
+  return true
+end
+
+-- infobulles créées par le serveur (largeur = retour à la ligne manuel)
+local TT_DU_SERVEUR = {
+  skillTreeCurrentRankTooltip = 52, skillTreeNextRankTooltip = 52, skillTreeInfoTooltip = 52,
+  ProjectEbonholdCheckpointTooltip = false, EbonholdPrestigeCacheTip = false,
+}
+
+local function accrocherInfobulles()
+  local tout = true
+  for _, nom in ipairs({ "GameTooltip", "ItemRefTooltip", "ShoppingTooltip1", "ShoppingTooltip2" }) do
+    if not E.AccrocherInfobulle(nom, false) then tout = false end
+  end
+  for nom, largeur in pairs(TT_DU_SERVEUR) do
+    if not E.AccrocherInfobulle(nom, true, largeur or nil) then tout = false end
+  end
+  return tout
+end
+
+------------------------------------------------------------------------
+-- 5) INITIALISATION
+------------------------------------------------------------------------
+local init = CreateFrame("Frame")
+init:RegisterEvent("ADDON_LOADED")
+init:RegisterEvent("PLAYER_LOGIN")
+init:SetScript("OnEvent", function(self, event, arg1)
+  if event == "ADDON_LOADED" and arg1 == ADDON then
+    E.EnsureDB()
+    E.Rafraichir()
+    if E.SurChargementVariables then E.SurChargementVariables() end
+  elseif event == "PLAYER_LOGIN" then
+    E.EnsureDB()
+    E.Rafraichir()
+    -- certaines infobulles du serveur peuvent apparaître plus tard : on réessaie quelques secondes
+    local essais, t = 0, 0
+    self:SetScript("OnUpdate", function(f, dt)
+      t = t + dt
+      if t < 1 then return end
+      t = 0
+      essais = essais + 1
+      local ok = installerUtils() and accrocherInfobulles()
+      if essais == 3 and ON.nom_anglais then tableNoms() end   -- noms affichés -> anglais (1 fois)
+      if (ok and essais >= 3) or essais > 20 then
+        f:SetScript("OnUpdate", nil)
+        if E.debug then msg("accroches : " .. tostring(ok)) end
+      end
+    end)
+    installerUtils()
+    accrocherInfobulles()
+  end
+end)
+
+------------------------------------------------------------------------
+-- 6) COMMANDES : /efr [sous-commande]  (+ anciens alias /frtest, /frmenu, /frbouton)
+------------------------------------------------------------------------
+E.Commandes = E.Commandes or {}
+
+E.Commandes.test = function(arg)
+  local id = tonumber(arg)
+  if not id then msg("/efr test <id du sort>"); return end
+  local en = orig.GSD and orig.GSD(id, 100000, 1)
+  msg("EN : " .. tostring(en))
+  local fr = en and E.TraduireDescription(en, id)
+  msg("FR : " .. tostring(fr or "(empreinte inconnue : laiss\195\169 en anglais)"))
+  if en then msg("empreinte : " .. empreinte(en)) end
+end
+
+E.Commandes.aide = function()
+  msg("v" .. E.version .. " \226\128\148 /efr : options | /efr test <id> | /efr stats | /efr collecte [vider] | /efr fix | /efr bouton")
+end
+
+SLASH_EBONHOLDFR1 = "/efr"
+SlashCmdList["EBONHOLDFR"] = function(txt)
+  txt = txt or ""
+  local cmd, reste = match(txt, "^%s*(%S*)%s*(.-)%s*$")
+  cmd = string.lower(cmd or "")
+  if cmd == "" then
+    if E.Commandes.menu then E.Commandes.menu() else E.Commandes.aide() end
+    return
+  end
+  local f = E.Commandes[cmd]
+  if f then f(reste) else E.Commandes.aide() end
+end
+
+SLASH_FRTEST1 = "/frtest"
+SlashCmdList["FRTEST"] = function(arg) E.Commandes.test(arg) end

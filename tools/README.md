@@ -7,7 +7,21 @@ Scripts Python 3 qui transforment les traductions (`../data/`) en fichier de don
 pip install slpp   # uniquement pour parser un dump in-game
 ```
 
-## Le script principal
+## Version 4 (EbonholdFR 4.0) — à utiliser désormais
+| Script | Rôle |
+|--------|------|
+| **`generer_donnees_v4.py`** | Produit `EbonholdFR_Data.lua` (descriptions : empreinte du texte anglais -> gabarit FR, noms anglais) et `EbonholdFR_Interface_Data.lua` (interface du serveur). Entrées : capture anglaise (`/echodump`), `Spell.dbc` et `SpellItemEnchantment.dbc` du serveur, traductions du launcher (`patch_fr.json`), `ui-fr.json` (sinon un petit échantillon intégré), anciennes données `data/` en repli. Bibliothèque standard seulement. `--help` pour les chemins ; `--rapport x.json` pour le détail. |
+| **`tests/test_ebonholdfr_v4.py`** | Tests hors jeu (LuaJIT via `lupa`, faux environnement WoW `tests/faux_wow.lua`) : chargement à vide, empreintes Lua = Python, descriptions, infobulles, moteur d'interface, collecte, réglages, coûts. |
+
+```bash
+python -I generer_donnees_v4.py            # régénère les deux fichiers de données
+python -I tests/test_ebonholdfr_v4.py      # (Python avec lupa installé)
+```
+
+Les scripts ci-dessous (v3) restent pour l'historique. ⚠️ Ne plus lancer `gen_fr_data.py` : il réécrirait
+`EbonholdFR_Data.lua` dans l'ancien format, que l'addon 4.0 ne lit plus.
+
+## Le script principal (v3)
 | Script | Rôle |
 |--------|------|
 | **`gen_fr_data.py`** | **Le plus important.** Lit toutes les sources FR (`fr_translations.json`, `affixes_fr.json`, `affix_effect_fr.json`, `tomes_fr.json`) + les dumps EN, et écrit `../EbonholdFR/EbonholdFR_Data.lua`. À lancer après **toute** modif de traduction. |

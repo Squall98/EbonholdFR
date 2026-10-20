@@ -2,6 +2,36 @@
 
 Toutes les versions notables d'EbonholdFR. Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/).
 
+## [4.0] — 2026-10 (Ebonhold FR V2)
+
+### Ajouté
+- **Interface du serveur traduite en direct** (`EbonholdFR_Interface.lua`) : fenêtres Echoes / Character Progression, Soul Tree, Prestige, Objectifs, Enclume enchantée, Hardcore / Torment, Collections, boîtes de confirmation du serveur et leurs infobulles. Texte inconnu = laissé en anglais.
+- **Empreinte du texte anglais** : une description n'est traduite que si l'anglais affiché est exactement celui attendu (nombres mis à part). Fini les vieilles traductions sur un texte modifié par le serveur, et le texte du patch FR n'est plus jamais écrasé.
+- Données refaites depuis la capture du 20/10/2026 : **546 echoes, 940 sorts du Soul Tree, 189 affixes (+ 190/194 lignes gravées), 149 tomes** ; les nombres viennent du texte anglais affiché (y compris les valeurs qui dépendent des stats).
+- Option **« Afficher aussi le nom anglais »** : ligne grise « EN : … » quand le nom affiché est traduit (patch FR).
+- **Réglages du launcher** (`EbonholdFR_Reglages.lua`, chargé en premier ; défauts si absent) ; les choix faits en jeu restent possibles. Mode **patch FR** : descriptions laissées au patch, interface et ligne EN gardées.
+- Recherche du journal des echoes en **français et en anglais**.
+- **Collecte** des textes d'interface non traduits : `/efr collecte` (désactivée par défaut, SavedVariable `EbonholdFR_Collecte`), `/efr collecte vider`.
+- Commande unique **`/efr`** (options, `bouton`, `test <id>`, `stats`, `collecte`, `fix`) ; anciens `/frmenu`, `/frbouton`, `/frtest`, `/frfix` conservés.
+- **EbonholdFRFix intégré** : la forge « Enchanted Anvil » s'ouvre aussi sous son nom français, et les globales manquantes du client frFR sont recréées (`EbonholdFR_Compat.lua`). L'ancien addon séparé n'est plus nécessaire.
+- Générateur `tools/generer_donnees_v4.py` et tests hors jeu `tools/tests/`.
+
+### Corrigé
+- **Nombres vides en fin de carte d'echo** : le texte complet est demandé au serveur, puis le français est coupé proprement (jamais au milieu d'un nombre ou d'une couleur).
+- Infobulles d'objets : on ne travaille que sur les lignes d'affixe (violettes) et les tomes, avec un cache (avant : une dizaine de chaînes créées par ligne à chaque rafraîchissement).
+- Version affichée dans le panneau lue dans le `.toc` (affichait « v3.0 »).
+
+### Changé
+- Les variantes d'echoes par classe (« contenu dynamique » de la 3.1) ne sont plus devinées : le serveur donne désormais à chaque classe sa propre variante, l'addon traduit exactement le texte affiché.
+
+### English summary
+- **Live translation of the server's interface** (windows, buttons, tooltips, confirmation dialogs); unknown text stays in English.
+- **English-text fingerprint**: descriptions are translated only when the English text on screen is the expected one, so server changes never show outdated translations and the French patch is never overwritten.
+- Data rebuilt from the 2026-10-20 capture (546 echoes, 940 Soul Tree spells, 189 affixes + 190/194 engraved lines, 149 tomes); numbers are taken from the English text on screen.
+- "Also show the English name" option, launcher settings file (`EbonholdFR_Reglages.lua`), French-patch mode, bilingual echo search, untranslated-text **collection** (`/efr collecte`, SavedVariable `EbonholdFR_Collecte`), single `/efr` command.
+- EbonholdFRFix merged in (French anvil name, missing frFR globals).
+- Fixed: empty numbers at the end of truncated echo cards, item-tooltip cost (filter + cache), version shown in the panel.
+
 ## [3.1] — 2026-06-19
 
 ### Corrigé / Ajouté

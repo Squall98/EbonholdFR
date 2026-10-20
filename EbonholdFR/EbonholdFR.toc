@@ -1,11 +1,16 @@
 ## Interface: 30300
 ## Title: Ebonhold |cff66ccffFR|r
-## Notes: Traduction française des Echoes, du Skill Tree, des Affixes et des Tomes de Project Ebonhold. Bouton minimap : bascule FR / EN.
+## Notes: Traduction française de Project Ebonhold : interface du serveur, Echoes, Soul Tree, Affixes et Tomes. Bouton minimap : bascule FR / EN.
 ## Author: Guide Ebonhold
-## Version: 3.1
+## Version: 4.0
 ## Dependencies: ProjectEbonhold
-## SavedVariables: EbonholdFRDB
+## SavedVariables: EbonholdFRDB, EbonholdFR_Collecte
 
+EbonholdFR_Reglages.lua
+EbonholdFR_Compat.lua
 EbonholdFR_Data.lua
+EbonholdFR_Interface_Data.lua
 EbonholdFR.lua
+EbonholdFR_Interface.lua
+EbonholdFR_Fix.lua
 EbonholdFR_UI.lua

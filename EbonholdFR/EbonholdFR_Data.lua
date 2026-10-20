@@ -1,1943 +1,3888 @@
--- EbonholdFR_Data.lua — GÉNÉRÉ (source: data/fr_translations.json)
-EbonholdFR_Data = { byId = {} }
-local b = EbonholdFR_Data.byId
-
-b[200505] = { desc="Augmente l'armure de @flat240+lvl12@" }
-b[200761] = { desc="Augmente l'endurance de vos familiers de @a@, selon votre Endurance." }
-b[201017] = { desc="Vos coups critiques d'Auto Shot ont une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201145] = { desc="Quand vous utilisez une capacité de mêlée, vous avez 20% de chances de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200506] = { desc="Réduit tous les dégâts subis de @flat20+lvl1@" }
-b[200890] = { desc="Lorsque vous blessez une cible sous 30% de vie avec une attaque de mêlée ou à distance, vous l'Exécutez, infligeant @a@ dégâts physiques. Les dégâts sont augmentés de 2% par point d'expertise.\nNe peut pas se produire plus d'une fois toutes les 6 sec par cible." }
-b[201018] = { desc="Vos coups critiques d'Auto Shot ont une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201146] = { desc="Quand vous utilisez une capacité de mêlée, vous avez 20% de chances de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201274] = { desc="Vous permet de manier des armes à deux mains à une main. Vos dégâts sont réduits de 20%." }
-b[200507] = { desc="Augmente votre vitesse de déplacement de @flat24@% supplémentaires." }
-b[200635] = { desc="Infliger des dégâts de Feu octroie un cumul de Braises. À 12 cumuls, vous invoquez un Cyclone de feu pendant 12 sec, infligeant 12 dégâts de Feu aux ennemis dans un rayon de 10 m toutes les 2 sec.\nAprès déclenchement, vous ne pouvez pas gagner de cumuls de Braises pendant 4 sec." }
-b[200763] = { desc="Augmente la puissance d'attaque de vos familiers de @ap0.02@, selon votre puissance d'attaque." }
-b[200508] = { desc="Augmente la résistance au Feu de @flat10+lvl0.5@." }
-b[200764] = { desc="Augmente la puissance d'attaque de vos familiers de @ap0.03@, selon votre puissance d'attaque." }
-b[201020] = { desc="Quand vous lancez Lightning Bolt, Chain Lightning, Healing Wave ou Chain Heal, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201148] = { desc="Quand vous lancez Crusader Strike, Hammer of the Righteous, Judgement ou Holy Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201276] = { desc="Réduit vos soins prodigués de 25%. Absorbe jusqu'à 50% des dégâts subis, jusqu'à un maximum de 11 par coup." }
-b[200509] = { desc="Augmente la résistance au Givre de @flat10+lvl0.5@." }
-b[200765] = { desc="Augmente la puissance d'attaque de vos familiers de @ap0.3@, selon votre puissance d'attaque." }
-b[201021] = { desc="Quand vous lancez Lightning Bolt, Chain Lightning, Healing Wave ou Chain Heal, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201149] = { desc="Quand vous lancez Crusader Strike, Hammer of the Righteous, Judgement ou Holy Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200510] = { desc="Augmente la résistance à la Nature de @flat10+lvl0.5@." }
-b[200894] = { desc="Infliger des dégâts de Feu, de Givre et d'Arcanes en 6 sec augmente vos dégâts infligés de 10% pendant 12 sec." }
-b[201022] = { desc="Quand vous lancez Lightning Bolt, Chain Lightning, Healing Wave ou Chain Heal, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201150] = { desc="Quand vous lancez Crusader Strike, Hammer of the Righteous, Judgement ou Holy Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201278] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Shield Slam, Revenge, Thunder Clap, Mortal Strike, Bloodthirst, Whirlwind, Shockwave, Concussion Blow.", dyn="Temporal Pressure" }
-b[200511] = { desc="Augmente la résistance aux Arcanes de @flat10+lvl0.5@." }
-b[200639] = { desc="Infliger des dégâts d'Arcanes octroie un cumul de Surcharge. À 10 cumuls, vous tirez une salve de Projectiles magiques en l'air, frappant jusqu'à 3 ennemis proches pour 28 dégâts d'Arcanes chacun.\nAprès déclenchement, vous ne pouvez pas gagner de cumuls de Surcharge pendant 2 sec." }
-b[200767] = { desc="Augmente la puissance des sorts de vos familiers de @sp0.02@, selon votre puissance des sorts." }
-b[200000] = { desc="Augmente la force de @flat10+lvl0.2@." }
-b[200512] = { desc="Augmente la résistance à l'Ombre de @flat10+lvl0.5@." }
-b[200768] = { desc="Augmente la puissance des sorts de vos familiers de @sp0.03@, selon votre puissance des sorts." }
-b[200896] = { desc="Infliger des dégâts de Feu et d'Ombre en 3 sec augmente vos dégâts infligés de 10% pendant 6 sec." }
-b[200001] = { desc="Augmente l'agilité de @flat10+lvl0.2@." }
-b[201152] = { desc="Chaque fois que vous dépensez une Rune, vous lancez un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201280] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Avenger's Shield, Judgement, Consecration, Crusader Strike, Divine Storm, Exorcism, Hammer of Wrath, Shield of Righteousness, Hammer of the Righteous, Holy Shock, Holy Wrath.", dyn="Temporal Pressure" }
-b[200769] = { desc="Augmente la puissance des sorts de vos familiers de @sp0.3@, selon votre puissance des sorts." }
-b[200002] = { desc="Augmente l'intelligence de @flat10+lvl0.2@." }
-b[201153] = { desc="Chaque fois que vous dépensez une Rune, vous lancez un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200898] = { desc="Augmente vos dégâts critiques de 1%, plus 1% supplémentaire par tranche de 150 de score de coup critique.\nBonus actuel : @a@%" }
-b[201026] = { desc="Quand vous lancez Starfire, Nourish ou Mangle, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201154] = { desc="Chaque fois que vous dépensez une Rune, vous lancez un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201282] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Howling Blast, Blood Boil, Pestilence.", dyn="Temporal Pressure" }
-b[200004] = { desc="Augmente l'endurance de @flat10+lvl0.2@." }
-b[200772] = { desc="Toutes les 5 sec en combat, attire les ennemis proches vers vous et inflige @a@ dégâts de Foudre.\nCet effet inflige au moins 12 dégâts." }
-b[200900] = { desc="Lancer un sort ou une capacité offensive augmente vos dégâts infligés de 3% pendant 6 sec.\nTant que cet effet est actif, chaque sort ou capacité offensive différent utilisé augmente ce bonus de 3% supplémentaires et rafraîchit la durée." }
-b[201028] = { desc="Quand vous lancez Mutilate, Sinister Strike ou Hemorrhage, vous avez une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201156] = { desc="Quand vous lancez Arcane Shot, Aimed Shot, Explosive Shot ou Chimera Shot, vous lancez 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201284] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Arcane Shot, Aimed Shot, Chimera Shot, Explosive Shot, Multi-Shot, Kill Shot, Raptor Strike, Mongoose Bite, Black Arrow.", dyn="Temporal Pressure" }
-b[200773] = { desc="Toutes les 5 sec en combat, attire les ennemis proches vers vous et inflige @a@ dégâts de Foudre.\nCet effet inflige au moins 12 dégâts." }
-b[201029] = { desc="Quand vous lancez Mutilate, Sinister Strike ou Hemorrhage, vous avez une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201157] = { desc="Quand vous lancez Arcane Shot, Aimed Shot, Explosive Shot ou Chimera Shot, vous lancez 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200774] = { desc="Toutes les 5 sec en combat, attire les ennemis proches vers vous et inflige @a@ dégâts de Foudre.\nCet effet inflige au moins 12 dégâts." }
-b[200902] = { desc="Lancer un sort ou une capacité de soin augmente vos soins prodigués de 3% pendant 6 sec.\nTant que cet effet est actif, chaque sort ou capacité de soin différent utilisé augmente ce bonus de 3% supplémentaires et rafraîchit la durée." }
-b[201030] = { desc="Quand vous lancez Mutilate, Sinister Strike ou Hemorrhage, vous avez une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201158] = { desc="Quand vous lancez Arcane Shot, Aimed Shot, Explosive Shot ou Chimera Shot, vous lancez 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201286] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Earth Shock, Flame Shock, Frost Shock, Stormstrike, Lava Lash, Riptide.", dyn="Temporal Pressure" }
-b[200008] = { desc="Augmente la puissance des sorts de @flat20+lvl0.4@." }
-b[200520] = { desc="Vos attaques de mêlée augmentent votre armure de @a@ pendant 8 sec. Se cumule jusqu'à 10 fois." }
-b[200776] = { desc="Esquiver ou parer accumule de la Pression, max 1 cumul toutes les 0,3 sec. À 12 cumuls, vous expulsez des flammes pendant 8 sec, infligeant @a@ dégâts de Feu par seconde aux ennemis proches, selon votre Endurance.\nTant que Évents de flammes est actif, vous subissez 15% de dégâts en moins et votre vitesse de déplacement est augmentée de 20% supplémentaires." }
-b[200904] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Thunder Clap, Shockwave, Whirlwind, and Bladestorm sont augmentés de 20%." }
-b[200009] = { desc="Augmente la puissance d'attaque de @flat30+lvl0.6@." }
-b[201160] = { desc="Quand vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez 2 missiles à un endroit aléatoire, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201288] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Mangle (Bear), Mangle (Cat), Rake, Typhoon, Swiftmend, Wild Growth.", dyn="Temporal Pressure" }
-b[200521] = { desc="Augmente le score de toucher de @flat15+lvl1.0625@" }
-b[200010] = { desc="Après être resté immobile 2 sec, votre armure est augmentée de @flat200+lvl4@ pendant 5 sec après vous être déplacé." }
-b[201161] = { desc="Quand vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200522] = { desc="Augmente le score de coup critique de @flat15+lvl1.0625@" }
-b[201034] = { desc="Quand vous lancez Arcane Blast, Fireball, Frostbolt ou Frostfire Bolt, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201162] = { desc="Quand vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201290] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Ghostly Strike", dyn="Temporal Pressure" }
-b[200523] = { desc="Augmente le score de hâte de @flat15+lvl1.0625@" }
-b[200524] = { desc="Augmente le score de pénétration d'armure de @flat15+lvl1.0625@" }
-b[200780] = { desc="Vos dégâts de Feu accumulent de la Chaleur sur la cible. À 10 cumuls, la cible devient Fragile pendant 6 sec, augmentant votre chance de coup critique contre elle de 20%.\nTant que Fragile est actif, votre prochain coup critique de Feu sur la cible la Brise, infligeant @a@ dégâts de Feu aux ennemis dans un rayon de 8 m.\nUne fois Fragile expiré, la cible ne peut pas gagner de Chaleur pendant 6 sec." }
-b[200908] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Consecration, Divine Storm, and Hammer of the Righteous sont augmentés de 20%." }
-b[201036] = { desc="Quand vous lancez Smite, Flash Heal, Greater Heal ou Mind Blast, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201164] = { desc="Quand vous lancez Wrath, Starfire, Regrowth, Shred ou Maul, vous avez une chance de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201292] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Arcane Barrage, Fire Blast, Dragon’s Breath, Cone of Cold, Living Bomb, Blast Wave, Deep Freeze.", dyn="Temporal Pressure" }
-b[200525] = { desc="Augmente le score d'expertise de @flat15+lvl1.0625@" }
-b[201037] = { desc="Quand vous lancez Smite, Flash Heal, Greater Heal ou Mind Blast, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201165] = { desc="Quand vous lancez Wrath, Starfire, Regrowth, Shred ou Maul, vous avez une chance de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200270] = { desc="Vos effets de dégâts et de soins sur la durée affectent aussi une cible proche supplémentaire, et vos effets périodiques se produisent 25% plus souvent." }
-b[200526] = { desc="Augmente le mana maximal de @flat360+lvl18@" }
-b[201038] = { desc="Quand vous lancez Smite, Flash Heal, Greater Heal ou Mind Blast, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201166] = { desc="Quand vous lancez Wrath, Starfire, Regrowth, Shred ou Maul, vous avez une chance de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201294] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Power Word: Shield, Shadow Word: Death, Prayer of Mending, Circle of Healing, Penance.", dyn="Temporal Pressure" }
-b[200527] = { desc="Augmente tous les dégâts infligés de @a@" }
-b[200016] = { desc="Restaure @flat12+lvl0.24@ de vie toutes les 3 sec." }
-b[200400] = { desc="Vos sorts et capacités de dégâts directs physiques appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts physiques que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200528] = { desc="Augmente la contribution d'armure de vos pièces en tissu et en cuir de @a@%." }
-b[200912] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Death and Decay, Blood Boil, Howling Blast, and Corpse Explosion sont augmentés de 20%." }
-b[200017] = { desc="Augmente l'armure de @flat80+lvl1.6@." }
-b[201168] = { desc="Quand vous utilisez une attaque de finition, vous avez 20% de chances par point de combo de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201296] = { desc="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Conflagrate, Shadowburn, Shadowflame, Shadowfury.", dyn="Temporal Pressure" }
-b[200529] = { desc="Permet à @a@% de votre régénération de mana de continuer pendant l'incantation." }
-b[200018] = { desc="Réduit tous les dégâts subis de @flat6@." }
-b[201169] = { desc="Quand vous utilisez une attaque de finition, vous avez 20% de chances par point de combo de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200402] = { desc="Vos sorts et capacités de dégâts directs sacrés appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts sacrés que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200530] = { desc="En combat, vous infligez @a@ dégâts de Feu aux ennemis dans un rayon de 8 m toutes les 2 sec.\nCet effet inflige au moins 8 dégâts." }
-b[200786] = { desc="Toutes les 8 sec en combat, vous lancez des Harpons sur jusqu'à 5 ennemis situés entre 8 et 35 m, les attirant à vous et les Clouant pendant 5 sec.\nLes ennemis cloués sont ralentis de 50% et subissent 15% de dégâts supplémentaires de votre part." }
-b[200019] = { desc="Augmente votre vitesse de déplacement de @flat5@% supplémentaires." }
-b[201170] = { desc="Quand vous utilisez une attaque de finition, vous avez 20% de chances par point de combo de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201298] = { desc="Votre temps de recharge global est désormais réduit par votre hâte." }
-b[200531] = { desc="Subir des dégâts directs renvoie @a@ dégâts de Nature aux ennemis.\nLes dégâts dépendent de votre Armure et valent au moins 5." }
-b[200020] = { desc="Toutes les 5 attaques ou capacités de mêlée octroient 1% de vitesse d'attaque pendant 10 sec. Se cumule jusqu'à 5 fois." }
-b[200404] = { desc="Vos sorts et capacités de dégâts directs de Feu appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts de Feu que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200532] = { desc="Vos coups critiques ont 20% de chances d'infliger @a@ dégâts physiques à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[200916] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Volley and Multi-Shot sont augmentés de 20%." }
-b[201172] = { desc="Vos coups critiques ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201300] = { desc="Vos capacités de dégâts accumulent Empalement sur la cible. À 8 cumuls, vous Embrochez la cible pendant 8 sec, infligeant 7 dégâts physiques par seconde.\nTant que Embroché est actif, vos attaques contre la cible ont 20% de chances de se fragmenter, infligeant 27 dégâts physiques à jusqu'à 5 ennemis proches." }
-b[200533] = { desc="Vos attaques de mêlée et à distance blessent la cible, infligeant @a@ dégâts sur 6 sec. Cet effet inflige au moins 30 dégâts." }
-b[200661] = { desc="Subir des dégâts directs a une chance de faire jaillir une Pointe glaciaire sous l'attaquant, infligeant @a@ dégâts de Givre et le projetant en l'air.\nCet effet inflige au moins 15 dégâts." }
-b[200022] = { desc="Votre première frappe après être entré en combat enracine la cible pendant 1,50 sec." }
-b[201173] = { desc="Vos coups critiques ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200406] = { desc="Vos sorts et capacités de dégâts directs de Nature appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts de Nature que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200534] = { desc="Après avoir esquivé ou paré une attaque, vous infligez @a@ dégâts physiques aux ennemis proches. Les dégâts dépendent de votre Endurance et valent au moins 10." }
-b[200662] = { desc="Subir des dégâts directs a une chance de faire jaillir une Pointe glaciaire sous l'attaquant, infligeant @a@ dégâts de Givre et le projetant en l'air.\nCet effet inflige au moins 15 dégâts." }
-b[201174] = { desc="Vos coups critiques ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200663] = { desc="Subir des dégâts directs a une chance de faire jaillir une Pointe glaciaire sous l'attaquant, infligeant @a@ dégâts de Givre et le projetant en l'air.\nCet effet inflige au moins 15 dégâts." }
-b[200408] = { desc="Vos sorts et capacités de dégâts directs de Givre appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts de Givre que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200536] = { desc="En combat, vous infligez @a@ dégâts de Feu aux ennemis dans un rayon de 8 m toutes les 2 sec.\nCet effet inflige au moins 8 dégâts." }
-b[200792] = { desc="Vos attaques de base accumulent de la Tension. À 12 cumuls, vous exposez le cœur de votre cible pendant 6 sec, augmentant vos dégâts contre elle de 20%.\nTant que Cœur exposé est actif, 40% des dégâts que vous infligez à la cible sont aussi infligés à tous les ennemis dans un rayon de 8 m. Tant que Cœur exposé est actif et jusqu'à 6 sec après son expiration, vous ne pouvez générer de Tension sur aucune cible." }
-b[200920] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Chain Lightning and Thunderstorm sont augmentés de 20%." }
-b[200025] = { desc="Quand vous êtes frappé, vous avez 10% de chances de geler l'attaquant pendant 3 sec." }
-b[201176] = { desc="Vos dégâts périodiques de Shadow Word: Pain et vos soins périodiques de Renew ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201304] = { desc="Subir des dégâts directs octroie un cumul de Sang en fusion, jusqu'à 8.\nÀ 8 cumuls, vous muez, laissant derrière vous une Vase empoisonnée pendant 10 sec qui inflige 13 dégâts de Nature par seconde aux ennemis proches, tandis que vous gagnez 15% de vitesse de déplacement et 10% de réduction des dégâts subis pendant 6 sec." }
-b[200537] = { desc="Subir des dégâts directs renvoie @a@ dégâts de Nature aux ennemis.\nLes dégâts dépendent de votre Armure et valent au moins 5." }
-b[200665] = { desc="En combat, vous déplacer laisse une traînée de braises derrière vous pendant 3 sec, brûlant les ennemis qui la traversent pour @a@ dégâts de Feu et les ralentissant de 30%.\nCet effet inflige au moins 8 dégâts." }
-b[201177] = { desc="Vos dégâts périodiques de Shadow Word: Pain et vos soins périodiques de Renew ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200410] = { desc="Vos sorts et capacités de dégâts directs d'Ombre appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts d'Ombre que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200538] = { desc="Vos coups critiques ont 20% de chances d'infliger @a@ dégâts physiques à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[200666] = { desc="En combat, vous déplacer laisse une traînée de braises derrière vous pendant 3 sec, brûlant les ennemis qui la traversent pour @a@ dégâts de Feu et les ralentissant de 30%.\nCet effet inflige au moins 8 dégâts." }
-b[200027] = { desc="Quand vous êtes frappé, votre vitesse de déplacement est augmentée de 20% supplémentaires pendant 5 sec." }
-b[201178] = { desc="Vos dégâts périodiques de Shadow Word: Pain et vos soins périodiques de Renew ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200539] = { desc="Vos attaques de mêlée et à distance blessent la cible, infligeant @a@ dégâts sur 6 sec. Cet effet inflige au moins 30 dégâts." }
-b[200667] = { desc="En combat, vous déplacer laisse une traînée de braises derrière vous pendant 3 sec, brûlant les ennemis qui la traversent pour @a@ dégâts de Feu et les ralentissant de 30%.\nCet effet inflige au moins 8 dégâts." }
-b[200412] = { desc="Vos sorts et capacités de dégâts directs d'Arcanes appliquent une marque cumulable à la cible pendant 8 sec, augmentant les dégâts d'Arcanes que vous lui infligez de @flat5+lvl0.1875@ par cumul. Se cumule jusqu'à 5 fois." }
-b[200540] = { desc="Après avoir esquivé ou paré une attaque, vous infligez @a@ dégâts physiques aux ennemis proches. Les dégâts dépendent de votre Endurance et valent au moins 10." }
-b[200924] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Hurricane, Starfall, and Swipe sont augmentés de 20%." }
-b[200029] = { desc="En combat, vous infligez @a@ dégâts de Feu aux ennemis dans un rayon de 8 m toutes les 2 sec.\nCet effet inflige au moins 8 dégâts." }
-b[201180] = { desc="Les dégâts périodiques d'Immolate, Corruption et Curse of Agony ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201308] = { desc="Vos coups critiques octroient Élan pendant 8 sec, cumulable jusqu'à 10 fois.\nÉlan ne peut pas être gagné plus d'une fois par seconde.\nChaque cumul augmente votre vitesse de déplacement de 2% et vos dégâts de 1%.\nÀ 10 cumuls, vous déchaînez un Écrasement massif, infligeant 64 dégâts physiques aux ennemis dans un rayon de 10 m autour de votre cible." }
-b[200541] = { desc="Augmente votre puissance des sorts de @flat40@ face les bêtes." }
-b[200669] = { desc="Toutes les 30 sec, vous gagnez un bouclier absorbant jusqu'à @a@ dégâts. Cet effet absorbe au moins 25 dégâts." }
-b[201181] = { desc="Les dégâts périodiques d'Immolate, Corruption et Curse of Agony ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200414] = { desc="Vos attaques de mêlée augmentent votre armure de @a@ pendant 8 sec. Se cumule jusqu'à 10 fois." }
-b[200542] = { desc="Augmente votre puissance des sorts de @flat40@ face les draconiens." }
-b[200670] = { desc="Toutes les 30 sec, vous gagnez un bouclier absorbant jusqu'à @a@ dégâts. Cet effet absorbe au moins 25 dégâts." }
-b[200798] = { desc="Vos sorts et capacités de dégâts accumulent de l'Édit. À 10 cumuls, vous invoquez un Édit, alternant les effets suivants dans l'ordre : Rune de mort, Surcharge, Coup de fusion.\n|cff1eff00Rune de mort : |cffffffffInvoque une Rune de mort sous votre cible pendant 8 sec, infligeant @a@ dégâts d'Ombre toutes les demi-secondes aux ennemis dans un rayon de 13 m.\n|cff1eff00Surcharge : |cffffffffVous explosez de foudre, infligeant @b@ dégâts de Nature aux ennemis dans un rayon de 10 m.\n|cff1eff00Coup de fusion : |cffffffffVotre prochaine attaque de mêlée inflige @c@ dégâts de Nature supplémentaires et @d@ dégâts de Nature supplémentaires par seconde pendant 6 sec." }
-b[200031] = { desc="Subir des dégâts directs renvoie @a@ dégâts de Nature aux ennemis.\nLes dégâts dépendent de votre Armure et valent au moins 5." }
-b[201182] = { desc="Les dégâts périodiques d'Immolate, Corruption et Curse of Agony ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[200543] = { desc="Augmente votre puissance des sorts de @flat40@ face les démons." }
-b[200671] = { desc="Toutes les 30 sec, vous gagnez un bouclier absorbant jusqu'à @a@ dégâts. Cet effet absorbe au moins 25 dégâts." }
-b[200416] = { desc="Votre Tir automatique a @flat10@% de chances de tirer un projectile supplémentaire." }
-b[200544] = { desc="Augmente votre puissance des sorts de @flat40@ face les élémentaires." }
-b[200672] = { desc="Vos attaques de mêlée ont @flat10@% de chances de frapper une fois de plus." }
-b[200928] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Fan of Knives sont augmentés de 20%." }
-b[200033] = { desc="Vos sorts de soin direct dissipent aussi un effet magique néfaste de la cible." }
-b[201184] = { desc="Toutes les 5 sec, votre prochain Thunder Clap, Whirlwind, Revenge ou Shockwave déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[201312] = { desc="Vos sorts et capacités de dégâts ont une chance d'ouvrir un Portail du Néant pendant 10 sec.\nTant qu'il est actif, le portail lance un Éclair gangrené sur votre cible toutes les 2 sec, infligeant 32 dégâts gangrenés. Chaque frappe a 25% de chances d'invoquer une Colonne de flammes gangrenées sous la cible, infligeant 51 dégâts gangrenés et brûlant le sol pendant 4 sec pour 12 dégâts gangrenés par seconde.\nVous ne pouvez pas invoquer de Portail du Néant plus d'une fois toutes les 6 sec." }
-b[200545] = { desc="Augmente votre puissance des sorts de @flat40@ face les géants." }
-b[201185] = { desc="Toutes les 5 sec, votre prochain Thunder Clap, Whirlwind, Revenge ou Shockwave déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200418] = { desc="Lorsque vous passez sous 25% de vie, votre vitesse de déplacement est fortement augmentée pendant un court instant.\nCet effet ne peut pas se produire plus d'une fois toutes les 2 min." }
-b[200546] = { desc="Augmente votre puissance des sorts de @flat40@ face les morts-vivants." }
-b[200674] = { desc="Augmente vos dégâts infligés de 15% mais réduit votre vie maximale de 30%." }
-b[200035] = { desc="Augmente votre vie maximale de @flat175@." }
-b[201186] = { desc="Toutes les 5 sec, votre prochain Thunder Clap, Whirlwind, Revenge ou Shockwave déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200547] = { desc="Augmente votre puissance des sorts de @a@ face aux machines." }
-b[200675] = { desc="Vos effets des arcanes sur la durée peuvent désormais infliger des coups critiques." }
-b[200036] = { desc="Augmente la résistance au Feu de @flat5@." }
-b[200548] = { desc="Augmente votre puissance d'attaque de @flat60@ face les bêtes." }
-b[200676] = { desc="Vos effets d'ombre sur la durée peuvent désormais infliger des coups critiques." }
-b[200804] = { desc="La première fois que vous blessez un ennemi, vous le marquez de Fracture pendant 10 sec.\nS'il meurt en étant fracturé, il se brise, infligeant @a@ dégâts physiques aux ennemis dans un rayon de 8 m." }
-b[200932] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Arcane Explosion, Blizzard, Flamestrike, and Blast Wave sont augmentés de 20%." }
-b[200037] = { desc="Augmente la résistance au Givre de @flat5@." }
-b[201188] = { desc="Toutes les 5 sec, votre prochain Consecration, Divine Storm, Shield of Righteousness ou Avenger's Shield déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200421] = { desc="Vos attaques de mêlée et à distance blessent la cible, infligeant @a@ dégâts sur 6 sec. Cet effet inflige au moins 30 dégâts." }
-b[200549] = { desc="Augmente votre puissance d'attaque de @flat60@ face les draconiens." }
-b[200677] = { desc="Vos effets sacrés sur la durée peuvent désormais infliger des coups critiques." }
-b[200038] = { desc="Augmente la résistance à la Nature de @flat5@." }
-b[201189] = { desc="Toutes les 5 sec, votre prochain Consecration, Divine Storm, Shield of Righteousness ou Avenger's Shield déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200550] = { desc="Augmente votre puissance d'attaque de @flat60@ face les démons." }
-b[200678] = { desc="Vos effets de feu sur la durée peuvent désormais infliger des coups critiques." }
-b[200039] = { desc="Augmente la résistance aux Arcanes de @flat5@." }
-b[201190] = { desc="Toutes les 5 sec, votre prochain Consecration, Divine Storm, Shield of Righteousness ou Avenger's Shield déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[201318] = { desc="Vos sorts de soin direct octroient Ralliement pendant 8 sec.\nÀ 10 cumuls, vous déchaînez Ralliement du champion, soignant instantanément votre cible de 40 et lui octroyant Cri de ralliement pendant 6 sec, réduisant les dégâts subis de 15% et augmentant les soins reçus de 20%.\nTant que Cri de ralliement est actif, 30% de vos soins directs sur cette cible sont aussi octroyés à l'allié proche le plus blessé." }
-b[200423] = { desc="Votre Tir automatique ralentit la cible de 30% pendant 3 sec." }
-b[200551] = { desc="Augmente votre puissance d'attaque de @flat60@ face les élémentaires." }
-b[200679] = { desc="Vos effets de givre sur la durée peuvent désormais infliger des coups critiques." }
-b[200040] = { desc="Augmente la résistance à l'Ombre de @flat5@." }
-b[200552] = { desc="Augmente votre puissance d'attaque de @flat60@ face les géants." }
-b[200680] = { desc="Vos effets de nature sur la durée peuvent désormais infliger des coups critiques." }
-b[200808] = { desc="En combat, vous êtes accompagné de deux Sentinelles du sanctuaire.\nLes ennemis frappés par l'un des gardiens subissent 10% de dégâts supplémentaires de votre part pendant 4 sec." }
-b[200936] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Holy Nova sont augmentés de 20%." }
-b[200041] = { desc="Augmente les soins reçus de @flat1@%." }
-b[201192] = { desc="Toutes les 5 sec, votre prochain Blood Boil, Howling Blast, Icy Touch ou Death and Decay déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200425] = { desc="Vos attaques automatiques de mêlée frappent les ennemis proches pour 20% des dégâts infligés." }
-b[200553] = { desc="Augmente votre puissance d'attaque de @flat60@ face les morts-vivants." }
-b[200681] = { desc="Vos effets de saignement peuvent désormais infliger des coups critiques." }
-b[200042] = { desc="Vos coups critiques ont 20% de chances d'infliger @a@ dégâts physiques à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[201193] = { desc="Toutes les 5 sec, votre prochain Blood Boil, Howling Blast, Icy Touch ou Death and Decay déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200554] = { desc="Augmente votre puissance d'attaque de @a@ face aux machines." }
-b[200682] = { desc="Augmente vos dégâts en fonction de votre vie manquante, jusqu'à 20% de dégâts en plus à 20% de vie restante." }
-b[201194] = { desc="Toutes les 5 sec, votre prochain Blood Boil, Howling Blast, Icy Touch ou Death and Decay déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200427] = { desc="Après avoir esquivé ou paré une attaque, vous infligez @a@ dégâts physiques aux ennemis proches. Les dégâts dépendent de votre Endurance et valent au moins 10." }
-b[200555] = { desc="Augmente votre puissance des sorts de @flat60@ face les bêtes." }
-b[200044] = { desc="Toutes les 10 sec, votre chance de coup critique est augmentée de 100% pendant 3 sec." }
-b[200300] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Death Wish, Shield Wall, Retaliation, Last Stand, Enraged Regeneration, Shattering Throw, Recklessness, Bladestorm, Bloodrage, Intimidating Shout, and Challenging Shout." }
-b[200556] = { desc="Augmente votre puissance des sorts de @flat60@ face les draconiens." }
-b[200684] = { desc="Si vous n'avez pas subi de dégâts depuis 5 sec, vos dégâts infligés sont augmentés de 10%." }
-b[200940] = { desc="Tant qu'au moins 4 ennemis sont à portée, les dégâts de vos Rain of Fire, Hellfire, Shadowflame, and Shadowfury sont augmentés de 20%." }
-b[201196] = { desc="Toutes les 5 sec, votre prochain Raptor Strike ou Multi-Shot déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200301] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Demonic Empowerment, Metamorphosis, Inferno, Ritual of Doom, Shadowfury, Death Coil, and Fel Domination." }
-b[200429] = { desc="Augmente le score de toucher de @flat5+lvl0.15@." }
-b[200557] = { desc="Augmente votre puissance des sorts de @flat60@ face les démons." }
-b[200046] = { desc="Vos sorts de soin direct ont 5% de chances de laisser un effet de soin sur la durée sur la cible, la soignant de @a@% du montant soigné sur 3 sec.\nCet effet peut se cumuler jusqu'à 30% de la vie maximale de la cible." }
-b[201197] = { desc="Toutes les 5 sec, votre prochain Raptor Strike ou Multi-Shot déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200302] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Earthbind Totem, Earth Elemental Totem, Shamanistic Rage, Astral Recall, Feral Spirit, Fire Elemental Totem, Elemental Mastery, Thunderstorm, Stoneclaw Totem, and Hex." }
-b[200430] = { desc="Augmente le score de coup critique de @flat5+lvl0.15@." }
-b[200558] = { desc="Augmente votre puissance des sorts de @flat60@ face les élémentaires." }
-b[200686] = { desc="Vos tirs automatiques réduisent le temps de recharge restant d'une capacité aléatoire de 2 sec." }
-b[201198] = { desc="Toutes les 5 sec, votre prochain Raptor Strike ou Multi-Shot déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200303] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Sprint, Adrenaline Rush, Blade Flurry, Preparation, Premeditation, Cold Blood, Killing Spree, Shadow Dance, Cloak of Shadows, and Evasion." }
-b[200431] = { desc="Augmente le score de hâte de @flat5+lvl0.15@." }
-b[200559] = { desc="Augmente votre puissance des sorts de @flat60@ face les géants." }
-b[200687] = { desc="Vos attaques de mêlée réduisent le temps de recharge restant d'une capacité aléatoire de 1,5 sec.\nCet effet ne peut pas se produire plus d'une fois par seconde." }
-b[200048] = { desc="Vos sorts de dégâts directs ont 10% de chances de brûler la cible pour des dégâts égaux à @flat10@% des dégâts infligés sur 3 sec.\nCet effet peut se cumuler jusqu'à 30% de votre vie maximale." }
-b[200304] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Fade, Guardian Spirit, Power Infusion, Pain Suppression, Dispersion, Lightwell, Fear Ward, Hymn of Hope, Shadowfiend, Silence, Desperate Prayer, Divine Hymn, and Psychic Horror." }
-b[200432] = { desc="Augmente le score de pénétration d'armure de @flat5+lvl0.15@." }
-b[200560] = { desc="Augmente votre puissance des sorts de @flat60@ face les morts-vivants." }
-b[200688] = { desc="Se déplacer augmente vos dégâts infligés de 2%, cumulable jusqu'à 5 fois." }
-b[200944] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Exorcism, Flash of Light, Holy Light." }
-b[201200] = { desc="Toutes les 5 sec, votre prochain Thunderstorm, Stormstrike, Earth Shock, Flame Shock ou Frost Shock déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200305] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Repentance, Lay on Hands, Hand of Protection, Avenging Wrath, Divine Shield, Divine Illumination, Divine Plea, Divine Protection, Aura Mastery, Divine Favor, Hand of Salvation, and Hand of Sacrifice." }
-b[200433] = { desc="Augmente le score d'expertise de @flat5+lvl0.15@." }
-b[200561] = { desc="Augmente votre puissance des sorts de @a@ face aux machines." }
-b[200050] = { desc="Après avoir touché une cible avec 4 sorts ou capacités en 5 sec, les dégâts que vous lui infligez sont augmentés de 15% pendant 8 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 30 sec par cible." }
-b[201201] = { desc="Toutes les 5 sec, votre prochain Thunderstorm, Stormstrike, Earth Shock, Flame Shock ou Frost Shock déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200306] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Cold Snap, Combustion, Presence of Mind, Arcane Power, Mirror Image, Icy Veins, Evocation, Ice Block, and Invisibility." }
-b[200434] = { desc="Augmente le mana maximal de @flat120+lvl2.4@." }
-b[200562] = { desc="Augmente votre puissance d'attaque de @flat90@ face les bêtes." }
-b[200690] = { desc="Les dégâts fatals vous réduisent plutôt à 1 point de vie, préviennent tous les dégâts pendant 3 sec et vous soignent de 35% de votre vie maximale.\nCet effet ne peut pas se produire plus d'une fois toutes les 60 min et peut se déclencher sans consommer de charge de Tromper la mort." }
-b[200818] = { desc="Jusqu'à 20% de votre surplus de soins sur les alliés est stocké en tant que Graine d'Eonar pendant 10 sec.\nQuand la vie de la cible passe sous 50%, elle éclôt, soignant la cible ainsi que l'allié proche le plus blessé du montant stocké. Le montant stocké ne peut pas dépasser 40% de la vie maximale de la cible." }
-b[200946] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Smite, Holy Fire, Mind Blast, Flash Heal, Greater Heal, Heal, Binding Heal, and Prayer of Healing." }
-b[201202] = { desc="Toutes les 5 sec, votre prochain Thunderstorm, Stormstrike, Earth Shock, Flame Shock ou Frost Shock déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200307] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Readiness, Bestial Wrath, Wyvern Sting, Intimidation, Deterrence, Kill Command, Rapid Fire, and Feign Death." }
-b[200435] = { desc="Augmente tous les dégâts infligés de @a@" }
-b[200563] = { desc="Augmente votre puissance d'attaque de @flat90@ face les draconiens." }
-b[200052] = { desc="Quand vous subissez des dégâts qui vous laissent sous 30% de vie, vous êtes affecté par un sort de soin sur la durée aléatoire d'une autre classe.\nCet effet ne peut pas se produire plus d'une fois toutes les 30 sec." }
-b[200308] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Berserk, Starfall, Barkskin, Challenging Roar, Enrage, Force of Nature, Frenzied Regeneration, Innervate, Nature’s Swiftness, Rebirth, Tranquility, Bash, Dash, and Nature’s Grasp." }
-b[200436] = { desc="Réduit les dégâts subis des attaques de zone de @a@%." }
-b[200564] = { desc="Augmente votre puissance d'attaque de @flat90@ face les démons." }
-b[200948] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Lightning Bolt, Chain Lightning, Lava Burst, Healing Wave, Chain Heal." }
-b[201204] = { desc="Toutes les 5 sec, votre prochain Typhoon, Swipe, Swiftmend ou Hurricane déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200309] = { desc="Réduit de @flat1@% le temps de recharge de vos capacités suivantes : Hysteria, Dancing Rune Weapon, Rune Tap, Hungering Cold, Lichborne, Bone Shield, Summon Gargoyle, Unbreakable Armor, Anti-Magic Zone, Blood Tap, Death Pact, Army of the Dead, Empower Rune Weapon, Icebound Fortitude, Mark of Blood, Raise Ally, Raise Dead, Deathchill, Strangulate, Vampiric Blood, and Anti-Magic Shell." }
-b[200437] = { desc="Réduit le recul subi des attaques pendant l'incantation de @a@%." }
-b[200565] = { desc="Augmente votre puissance d'attaque de @flat90@ face les élémentaires." }
-b[200693] = { desc="Vos dégâts contre les ennemis sous 35% de vie sont augmentés de 20%.\nQuand vous blessez un ennemi sous 15% de vie, vous infligez 54 dégâts d'Ombre supplémentaires.\nCet effet ne peut pas se produire plus d'une fois toutes les 2 sec par cible." }
-b[201205] = { desc="Toutes les 5 sec, votre prochain Typhoon, Swipe, Swiftmend ou Hurricane déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200310] = { desc="Génère @flat1@ de rage toutes les 3 sec." }
-b[200438] = { desc="Réduit la menace générée de @flat2@%." }
-b[200566] = { desc="Augmente votre puissance d'attaque de @flat90@ face les géants." }
-b[200822] = { desc="Vos dégâts de Givre appliquent Froid mordant pendant 6 sec, cumulable jusqu'à 10 fois.\nVos dégâts de Feu directs contre une cible à 6 cumuls ou plus la Brisent, consommant tous les cumuls et infligeant @a@ dégâts de Givre par cumul à la cible et aux ennemis dans un rayon de 8 m." }
-b[200950] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Arcane Blast, Fireball, Frostbolt, Frostfire Bolt, Pyroblast, Flamestrike." }
-b[201206] = { desc="Toutes les 5 sec, votre prochain Typhoon, Swipe, Swiftmend ou Hurricane déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200439] = { desc="Augmente la menace générée de @flat3@%." }
-b[200567] = { desc="Augmente votre puissance d'attaque de @flat90@ face les morts-vivants." }
-b[200695] = { desc="Infliger des dégâts afflige la cible de Glas du faucheur pendant 30 sec. À expiration, il explose pour 58 dégâts d'Ombre répartis entre les ennemis dans un rayon de 8 m.\nSi la cible meurt en étant affligée, le Glas du faucheur explose immédiatement." }
-b[200440] = { desc="Réduit le coût en mana de vos sorts de @flat5@%." }
-b[200568] = { desc="Augmente votre puissance d'attaque de @a@ face aux machines." }
-b[200952] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Shadow Bolt, Incinerate, Soul Fire, Chaos Bolt, Seed of Corruption, Haunt, Unstable Affliction." }
-b[201208] = { desc="Toutes les 5 sec, votre prochain Fan of Knives, Blade Flurry ou Ghostly Strike déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200313] = { desc="Vos capacités Chains of Ice, Howling Blast, Icy Touch, Obliterate, Death Strike, Plague Strike et Scourge Strike génèrent 2,5 points de puissance runique supplémentaires." }
-b[200441] = { desc="Augmente la contribution d'armure de vos pièces en tissu et en cuir de @a@%." }
-b[200569] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les bêtes." }
-b[201209] = { desc="Toutes les 5 sec, votre prochain Fan of Knives, Blade Flurry ou Ghostly Strike déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200314] = { desc="Augmente votre régénération d'énergie de @flat1@%" }
-b[200442] = { desc="Permet à @a@% de votre régénération de mana de continuer pendant l'incantation." }
-b[200570] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les draconiens." }
-b[200826] = { desc="Vos attaques de mêlée et à distance ont 5% de chances de lancer une Roquette sur votre cible, infligeant @a@ dégâts de Feu.\nVous tirez 1 Roquette supplémentaire sur des ennemis proches aléatoires pour chacun de vos familiers ou gardiens actifs. Les Roquettes suivantes touchant la même cible infligent des dégâts réduits." }
-b[200954] = { desc="Lancer un sort ou une capacité a une chance de rendre votre prochain sort éligible instantané. Sorts éligibles : Wrath, Starfire. Healing: Healing Touch, Nourish, Regrowth." }
-b[201210] = { desc="Toutes les 5 sec, votre prochain Fan of Knives, Blade Flurry ou Ghostly Strike déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200443] = { desc="Lorsque vous passez sous 50% de vie, les dégâts subis sont réduits de @a@% pendant 6 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 45 sec." }
-b[200571] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les démons." }
-b[200699] = { desc="Vos sorts de dégâts direct font brûler la cible, infligeant @a@ dégâts de Feu sur 6 sec.\nCet effet inflige au moins 30 dégâts." }
-b[200572] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les élémentaires." }
-b[200700] = { desc="Vos sorts de dégâts direct font brûler la cible, infligeant @a@ dégâts de Feu sur 6 sec.\nCet effet inflige au moins 30 dégâts." }
-b[200956] = { desc="Augmente les dégâts des sorts dont le temps d'incantation de base dépasse 2,5 sec de 30%." }
-b[201212] = { desc="Toutes les 5 sec, votre prochain Cone of Cold, Arcane Explosion, Frost Nova ou Dragon's Breath déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200573] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les géants." }
-b[200701] = { desc="Vos sorts de dégâts direct font brûler la cible, infligeant @a@ dégâts de Feu sur 6 sec.\nCet effet inflige au moins 30 dégâts." }
-b[201213] = { desc="Toutes les 5 sec, votre prochain Cone of Cold, Arcane Explosion, Frost Nova ou Dragon's Breath déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200446] = { desc="Réduit la durée des effets de ralentissement sur vous de @flat15@%." }
-b[200574] = { desc="Augmente votre puissance des sorts de @flat120+lvl6@ face les morts-vivants." }
-b[200830] = { desc="En combat, vous gagnez Charge de foudre toutes les 8 sec, cumulable jusqu'à 5 fois pendant 12 sec.\nChaque cumul augmente votre vitesse d'attaque de 2% et fait infliger @a@ dégâts de Nature supplémentaires à vos attaques automatiques de mêlée et à distance.\nÀ 5 cumuls, vos attaques automatiques déchaînent plutôt un Éclair en chaîne sur la cible, infligeant @b@ dégâts de Nature et rebondissant jusqu'à 5 fois. L'effet est perdu en quittant le combat." }
-b[200958] = { desc="Vous pouvez équiper tous les types d'armes." }
-b[200063] = { desc="Lorsque vous infligez des dégâts, vous avez une chance de déchaîner un sort offensif aléatoire d'une autre classe sur votre cible." }
-b[201214] = { desc="Toutes les 5 sec, votre prochain Cone of Cold, Arcane Explosion, Frost Nova ou Dragon's Breath déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200447] = { desc="Réduit la durée des effets de peur sur vous de @flat30@%." }
-b[200575] = { desc="Augmente votre puissance des sorts de @a@ face aux machines." }
-b[200703] = { desc="Vos coups critiques de sort de dégâts direct ont 20% de chances d'infliger @a@ dégâts d'Ombre à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[200448] = { desc="Réduit la durée des effets de désarmement sur vous de @flat30@%." }
-b[200576] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les bêtes." }
-b[200704] = { desc="Vos coups critiques de sort de dégâts direct ont 20% de chances d'infliger @a@ dégâts d'Ombre à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[200960] = { desc="Augmente vos dégâts de 1% pour chaque Écho unique actif.\nLes rangs ou qualités supplémentaires du même Écho n'augmentent pas ce bonus." }
-b[201216] = { desc="Toutes les 5 sec, votre prochain Holy Nova ou Mind Sear déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200449] = { desc="Réduit la durée des effets d'immobilisation sur vous de @flat30@%." }
-b[200577] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les draconiens." }
-b[200705] = { desc="Vos coups critiques de sort de dégâts direct ont 20% de chances d'infliger @a@ dégâts d'Ombre à la cible. Chance de proc triplée contre une cible sous 35% de vie.\nCet effet inflige au moins 20 dégâts." }
-b[201217] = { desc="Toutes les 5 sec, votre prochain Holy Nova ou Mind Sear déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200450] = { desc="Réduit la durée des effets d'étourdissement sur vous de @flat30@%." }
-b[200578] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les démons." }
-b[200706] = { desc="Vos attaques de mêlée ralentissent les ennemis de 30% pendant 3 sec." }
-b[200834] = { desc="Vos dégâts d'Ombre sur la durée ont 3% de chances de projeter un Fracas d'ombre sur la cible.\nÀ l'impact, il inflige @a@ dégâts d'Ombre aux ennemis dans un rayon de 10 m." }
-b[200962] = { desc="Tant qu'au moins 3 types d'Écho de statistique de base différents sont actifs (Force, Agilité, Intelligence, Esprit ou Endurance), vos dégâts sont augmentés de 15%." }
-b[201218] = { desc="Toutes les 5 sec, votre prochain Holy Nova ou Mind Sear déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200451] = { desc="Augmente la force de @flat15+lvl0.3@." }
-b[200579] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les élémentaires." }
-b[200452] = { desc="Augmente l'agilité de @flat15+lvl0.3@." }
-b[200580] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les géants." }
-b[200708] = { desc="Vos sorts de dégâts direct ralentissent les ennemis de 30% pendant 3 sec." }
-b[200964] = { desc="Pour chaque tranche de 60 points de rage dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201220] = { desc="Toutes les 5 sec, votre prochain Shadowflame, Death Coil, Shadowfury ou Drain Life déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200453] = { desc="Augmente l'intelligence de @flat15+lvl0.3@." }
-b[200581] = { desc="Augmente votre puissance d'attaque de @flat180+lvl9@ face les morts-vivants." }
-b[200965] = { desc="Pour chaque tranche de 60 points de rage dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201221] = { desc="Toutes les 5 sec, votre prochain Shadowflame, Death Coil, Shadowfury ou Drain Life déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200454] = { desc="Augmente l'esprit de @flat15+lvl0.3@." }
-b[200582] = { desc="Augmente votre puissance d'attaque de @a@ face aux machines." }
-b[200710] = { desc="Vos effets de dégâts sur la durée réduisent la vitesse d'attaque de mêlée et à distance de la cible de 10%. Cet effet ne se cumule pas." }
-b[200838] = { desc="Chaque fois que vous tuez un ennemi, vous gagnez un cumul d'Idole de Yogg-Saron. À 10 cumuls, vous invoquez une Chose d'outre-monde qui lance Pointe du vide sur les ennemis proches pendant 20 sec.\n|cff1eff00Pointe du vide : |cffffffffLance un trait de magie noire, infligeant @a@ dégâts d'Ombre et @b@ dégâts d'Ombre à tous les ennemis proches de la cible." }
-b[200966] = { desc="Pour chaque tranche de 60 points de rage dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201222] = { desc="Toutes les 5 sec, votre prochain Shadowflame, Death Coil, Shadowfury ou Drain Life déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", dyn="Corrosive Breath" }
-b[200455] = { desc="Augmente l'endurance de @flat15+lvl0.3@." }
-b[200583] = { desc="En combat, vous êtes enveloppé d'un Essaim de criquets, réduisant les dégâts subis de 20% et infligeant 11 dégâts de Nature aux ennemis proches toutes les 2 sec." }
-b[200200] = { desc="Soigner un allié déclenche une explosion d'énergie sacrée à son emplacement, infligeant des dégâts sacrés aux ennemis proches. Cet effet inflige au moins 10 dégâts.\nCet effet ne peut pas se produire plus d'une fois toutes les 6 sec par cible." }
-b[200456] = { desc="Augmente la vitesse de monture de @flat15@% supplémentaires." }
-b[200712] = { desc="Lorsque vous êtes touché par un sort, vous avez 30% de chances d'augmenter votre résistance à ce type de magie de 10 pendant 15 sec. Se cumule jusqu'à 3 fois." }
-b[200968] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201224] = { desc="Augmente votre régénération de mana de @flat1@%." }
-b[200457] = { desc="Restaure @flat15+lvl0.3@ de mana toutes les 5 sec." }
-b[200585] = { desc="Infliger des dégâts de Nature octroie un cumul de Venimeux. À 12 cumuls, vous déchaînez une Salve de traits empoisonnés, aspergeant tous les ennemis dans un rayon de 10 m, infligeant 26 dégâts de Nature et 11 dégâts de Nature supplémentaires par seconde pendant 4 sec.\nAprès déclenchement, vous ne pouvez pas gagner de cumuls de Venimeux pendant 4 sec." }
-b[200969] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201225] = { desc="Augmente votre régénération de mana de @flat2@%." }
-b[200458] = { desc="Augmente la valeur de blocage de @flat45+lvl0.9@." }
-b[200970] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201226] = { desc="Augmente votre régénération de mana de @flat10@%." }
-b[200459] = { desc="Augmente la puissance des sorts de @flat30+lvl0.6@." }
-b[200460] = { desc="Augmente la puissance d'attaque de @flat45+lvl0.9@." }
-b[200844] = { desc="Vos coups critiques ont 10% de chances d'invoquer une Étoile filante qui frappe un ennemi proche pour @a@ dégâts d'Arcanes.\nAprès 5 Étoiles filantes, vous déclenchez Big Bang, infligeant @b@ dégâts d'Arcanes répartis entre tous les ennemis dans un rayon de 12 m autour de votre cible." }
-b[200972] = { desc="Pour chaque tranche de 40 points de puissance runique dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201228] = { desc="Augmente votre génération de rage de @a@%." }
-b[200461] = { desc="Après être resté immobile 2 sec, votre armure est augmentée de @flat300+lvl6@ pendant 5 sec après vous être déplacé." }
-b[200589] = { desc="Lorsque vous subissez des dégâts en dessous de 50% de vie, vous projetez des toiles, infligeant 21 dégâts de Nature aux ennemis proches et les étourdissant pendant 4 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 15 sec." }
-b[200973] = { desc="Pour chaque tranche de 40 points de puissance runique dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201229] = { desc="Augmente votre génération de rage de @a@%." }
-b[200974] = { desc="Pour chaque tranche de 40 points de puissance runique dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201230] = { desc="Augmente votre génération de rage de @a@%." }
-b[200463] = { desc="Restaure @flat18+lvl0.36@ de vie toutes les 3 sec." }
-b[200464] = { desc="Augmente l'armure de @flat120+lvl2.4@." }
-b[200592] = { desc="Infliger des dégâts d'Ombre applique un cumul d'Infection à la cible. À 12 cumuls, vous affligez la cible de la Malédiction du semeur de peste pendant 10 sec, infligeant des dégâts d'Ombre toutes les 2 sec.\nÀ chaque fois qu'elle inflige des dégâts, elle se propage à un ennemi proche non encore affecté." }
-b[200720] = { desc="Au-dessus de 15% de mana, vos attaques de base de mêlée et à distance infligent 20% de dégâts d'Arcanes supplémentaires, mais consomment 5% de votre mana de base." }
-b[200976] = { desc="Pour chaque tranche de (40 + 12 par niveau) dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201232] = { desc="Augmente votre régénération d'énergie de @flat2@%" }
-b[200465] = { desc="Réduit tous les dégâts subis de @flat9@." }
-b[200977] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201233] = { desc="Augmente votre régénération d'énergie de @flat10@%" }
-b[200466] = { desc="Augmente votre vitesse de déplacement de @flat8@% supplémentaires." }
-b[200722] = { desc="Après être resté sur la même cible pendant 6 sec, vous infligez 8% de dégâts supplémentaires à cette cible." }
-b[200850] = { desc="Lorsque vous êtes frappé par une attaque de mêlée, vous avez une chance de lancer une pointe de terre sur l'attaquant, infligeant @a@ dégâts à l'attaquant et aux ennemis proches.\nLes dégâts sont encore augmentés par votre armure et génèrent beaucoup de menace." }
-b[200978] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201234] = { desc="Augmente votre génération de puissance runique de @a@%." }
-b[200467] = { desc="Augmente la résistance au Feu de @flat8@." }
-b[200595] = { desc="Les ennemis qui vous frappent sont affligés de Fièvre décrépite, subissant 2 dégâts d'Ombre par seconde pendant 3 sec et infligeant 10% de dégâts en moins contre vous pendant la durée." }
-b[201235] = { desc="Augmente votre génération de puissance runique de @a@%." }
-b[200468] = { desc="Augmente la résistance au Givre de @flat8@." }
-b[200724] = { desc="Tuer un ennemi réduit le temps de recharge restant de toutes vos capacités de 1 sec." }
-b[200852] = { desc="Infliger des dégâts de Feu octroie un cumul de Combustible.\nÀ 100 cumuls, vous explosez en flammes, infligeant @a@ dégâts de Feu aux ennemis proches et @b@ dégâts de Feu supplémentaires sur la durée pendant 6 sec.\nAprès l'éruption, vous ne pouvez pas gagner de Combustible pendant 6 sec." }
-b[200980] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201236] = { desc="Augmente votre génération de puissance runique de @a@%." }
-b[200469] = { desc="Augmente la résistance à la Nature de @flat8@." }
-b[200597] = { desc="En combat, vous invoquez périodiquement des Spores pendant 20 sec, augmentant les dégâts critiques des alliés proches de 10%." }
-b[200981] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200470] = { desc="Augmente la résistance aux Arcanes de @flat8@." }
-b[200726] = { desc="Au-dessus de 75% de vie, vous infligez 10% de dégâts supplémentaires." }
-b[200982] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200471] = { desc="Augmente la résistance à l'Ombre de @flat8@." }
-b[200599] = { desc="Vos attaques de mêlée ont une chance de déclencher une Frappe déséquilibrante, infligeant 350% des dégâts d'arme et laissant la cible Déséquilibrée, augmentant vos dégâts contre elle de 10% pendant 6 sec." }
-b[200216] = { desc="Après avoir lancé 3 sorts ou capacités de Nature, vous invoquez un Ouragan à l'emplacement de la cible, infligeant 6 dégâts de Nature sur 8 sec et augmentant les intervalles d'attaque des ennemis affectés de 20%.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[200728] = { desc="Réduit votre chance de coup critique de 50%, mais augmente vos dégâts critiques de 30%." }
-b[200856] = { desc="Au-dessus de 80% de mana, restaurer du mana restaure aussi de la vie égale à 50% du mana restauré." }
-b[200984] = { desc="Pour chaque tranche de 60 points de rage, 80 d'énergie ou 40 de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201240] = { desc="Toutes les 3 sec en combat, vous lancez une fiole de poison à un endroit proche aléatoire, créant une flaque de toxines infligeant @a@ dégâts de Poison par seconde.\nCet effet inflige au moins 8 dégâts." }
-b[200601] = { desc="Vous récoltez en continu les âmes des ennemis proches, gagnant un cumul d'Âme récoltée. Chaque cumul augmente vos dégâts infligés de 1%, jusqu'à 10%.\nQuand un ennemi dont l'âme a été récoltée meurt, vous récupérez 13 points de vie." }
-b[200985] = { desc="Pour chaque tranche de 60 points de rage, 80 d'énergie ou 40 de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201241] = { desc="Toutes les 3 sec en combat, vous lancez une fiole de poison à un endroit proche aléatoire, créant une flaque de toxines infligeant @a@ dégâts de Poison par seconde.\nCet effet inflige au moins 8 dégâts." }
-b[200730] = { desc="Vos coups critiques octroient 1% de hâte pendant 2 sec. Se cumule jusqu'à 5 fois." }
-b[200858] = { desc="En combat, vous infligez @a@ dégâts de Givre toutes les 2 sec aux ennemis dans un rayon de 8 m.\nCet effet inflige au moins 5 dégâts.\nLa vitesse d'attaque des ennemis touchés est réduite de 5% pendant 3 sec." }
-b[200986] = { desc="Pour chaque tranche de 60 points de rage, 80 d'énergie ou 40 de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201242] = { desc="Toutes les 3 sec en combat, vous lancez une fiole de poison à un endroit proche aléatoire, créant une flaque de toxines infligeant @a@ dégâts de Poison par seconde.\nCet effet inflige au moins 8 dégâts." }
-b[200220] = { desc="Après avoir lancé 3 sorts ou capacités sacrés, une Consécration se forme sous la cible, infligeant 6 dégâts sacrés aux ennemis et soignant les alliés présents dans la lumière de 10 sur 8 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[200732] = { desc="Augmente vos dégâts infligés de 15%, mais augmente les dégâts subis de 30%." }
-b[200860] = { desc="Toutes les 3 sec en combat, votre prochain sort ou capacité projette aussi de la foudre sur jusqu'à 3 ennemis proches aléatoires, infligeant @a@ dégâts de Nature.\nCet effet inflige au moins 15 dégâts." }
-b[200988] = { desc="Pour chaque tranche de 80 points d'énergie dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201244] = { desc="Les dégâts infligés par vos effets de dégâts sur la durée ont une chance d'octroyer à un allié aléatoire 1% de mana maximal, 8 d'énergie, 4 de rage ou 16 de puissance runique." }
-b[200989] = { desc="Pour chaque tranche de 80 points d'énergie dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200606] = { desc="Vos sorts et capacités de dégâts accumulent de l'Édit. À 10 cumuls, vous invoquez un Édit, alternant les effets suivants dans l'ordre : Météore, Zone du vide, Ombre impie et Courroux sacré. Chaque invocation déclenche son effet à l'emplacement de la cible." }
-b[200734] = { desc="Augmente la hâte de vos sorts de 10%, mais réduit votre vitesse de déplacement de 30%." }
-b[200990] = { desc="Pour chaque tranche de 80 points d'énergie dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201246] = { desc="Les ressources que vous dépensez sont stockées. Toutes les 5 sec, votre prochaine capacité inflige des dégâts supplémentaires selon le montant stocké." }
-b[200479] = { desc="Vos attaques de mêlée augmentent votre armure de @a@ pendant 8 sec. Se cumule jusqu'à 10 fois." }
-b[200224] = { desc="Après avoir lancé 3 sorts ou capacités d'Ombre, vous déchaînez une Shadowfury à l'emplacement de la cible, infligeant 3 dégâts d'Ombre et étourdissant les ennemis dans la zone pendant 3 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[200480] = { desc="Augmente le score de toucher de @flat8+lvl0.24@." }
-b[200736] = { desc="Augmente votre chance de coup critique de 10%, mais réduit votre armure de 30%." }
-b[200864] = { desc="Vos sorts directs ont une chance de lancer un Projectile instable sur la cible, infligeant @a@ dégâts d'Arcanes.\nCet effet inflige au moins 10 dégâts." }
-b[200992] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200481] = { desc="Augmente le score de coup critique de @flat8+lvl0.24@." }
-b[200993] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200482] = { desc="Augmente le score de hâte de @flat8+lvl0.24@." }
-b[200738] = { desc="Augmente vos dégâts des sorts de 15%, mais réduit votre mana maximal de 30%." }
-b[200866] = { desc="Toutes les 2 sec en combat, vous affligez un ennemi proche de Siphon de vie, infligeant @a@ dégâts d'Ombre sur 12 sec.\nSi la cible affectée meurt, vous êtes soigné de @b@.\nCet effet inflige au moins 5 dégâts et soigne au moins 10 points de vie." }
-b[200994] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200227] = { desc="Vous infligez 20% de dégâts supplémentaires aux ennemis sous l'effet d'un contrôle de foule." }
-b[200483] = { desc="Augmente le score de pénétration d'armure de @flat8+lvl0.24@." }
-b[200228] = { desc="Pour chacune de vos capacités en temps de recharge, la hâte est augmentée de 2%. Augmente aussi le score de hâte de 20." }
-b[200484] = { desc="Augmente le score d'expertise de @flat8+lvl0.24@." }
-b[200740] = { desc="Augmente vos dégâts physiques de 15%, mais réduit votre vitesse d'attaque de 30%." }
-b[200996] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200485] = { desc="Augmente le mana maximal de @flat180+lvl3.6@." }
-b[200613] = { desc="Sous 15% de vie, vous entrez en Frénésie, augmentant la vitesse d'attaque de 30% et les dégâts physiques infligés de 25%." }
-b[200997] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200230] = { desc="Vous infligez 1% de dégâts supplémentaires à une cible pour chacun de vos effets de dégâts sur la durée actifs sur elle. Augmente aussi votre puissance des sorts et puissance d'attaque de 40." }
-b[200486] = { desc="Augmente tous les dégâts infligés de @a@" }
-b[200742] = { desc="Chaque troisième sort de dégâts direct lancé d'affilée inflige 20% de dégâts d'Arcanes supplémentaires." }
-b[200870] = { desc="Sous 80% d'énergie, votre régénération d'énergie est augmentée de 10%.\nAu-dessus de 80% d'énergie, vos dégâts infligés sont augmentés de 10%." }
-b[200998] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200231] = { desc="Lorsque vous êtes derrière votre cible, vos attaques et capacités de mêlée et à distance déclenchent aussi une frappe supplémentaire infligeant 5% des dégâts infligés. Augmente aussi le score de coup critique de 40." }
-b[200615] = { desc="Tuer un ennemi invoque un Nuage de poison pendant 20 sec, infligeant 6 dégâts de Nature aux ennemis proches toutes les secondes.\nCet effet ne peut pas se produire plus d'une fois toutes les 8 sec." }
-b[200232] = { desc="Après avoir lancé ou utilisé 10 capacités offensives, vous déchaînez un Éclair en chaîne, infligeant 10 dégâts de Nature et rebondissant sur jusqu'à 99 ennemis supplémentaires. Augmente aussi votre puissance des sorts et puissance d'attaque de 40." }
-b[200744] = { desc="Blesser un ennemi applique Rend. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[201000] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201256] = { desc="Lorsqu'une cible meurt en étant affectée par l'un de vos effets de dégâts sur la durée, cet effet se propage à tous les ennemis dans un rayon de 20 m." }
-b[200745] = { desc="Blesser un ennemi applique Blood Plague ou Frost Fever. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[201001] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[200234] = { desc="Vos attaques de mêlée frappent un ennemi proche supplémentaire. Augmente aussi votre puissance d'attaque de 60." }
-b[200490] = { desc="Augmente la contribution d'armure de vos pièces en tissu et en cuir de @a@%." }
-b[200746] = { desc="Blesser un ennemi applique Serpent Sting. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[200874] = { desc="Sous 80% de rage, votre génération de rage est augmentée de 20%.\nAu-dessus de 80% de rage, vos dégâts infligés sont augmentés de 10%." }
-b[201002] = { desc="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", dyn="Ember Spark" }
-b[201258] = { desc="Lorsque vous passez sous 35% de vie, vous vous transformez en Démon pendant 8 sec. Sous cette forme, vos dégâts sont augmentés de 30%, vous drainez 15% des dégâts infligés en vie, et vos attaques de mêlée frappent un ennemi proche supplémentaire. Ne peut pas se produire plus d'une fois toutes les 45 sec." }
-b[200491] = { desc="Permet à @a@% de votre régénération de mana de continuer pendant l'incantation." }
-b[200619] = { desc="Porter un coup fatal déchaîne un Rugissement terrifiant, infligeant 12 dégâts aux ennemis dans un rayon de 10 m, les ralentissant de 50% et leur faisant subir 15% de dégâts supplémentaires de votre part pendant 5 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 2 sec." }
-b[200747] = { desc="Blesser un ennemi applique Flame Shock. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[200236] = { desc="Augmente la hâte de 10% et le score de hâte de 30." }
-b[200492] = { desc="Augmente la force de @flat30+lvl1.5@" }
-b[200748] = { desc="Blesser un ennemi applique Lacerate, Moonfire ou Rake, selon votre forme actuelle. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[201004] = { desc="Quand vous lancez Mortal Strike, Bloodthirst ou Shield Slam, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[200237] = { desc="Chaque fois que vous utilisez une capacité avec un temps de recharge, le temps de recharge restant de toutes vos autres capacités est réduit de 1,5 sec. Augmente aussi le score de toucher de 30.\nCet effet ne peut pas se produire plus d'une fois par seconde." }
-b[200493] = { desc="Augmente l'agilité de @flat30+lvl1.5@" }
-b[200621] = { desc="Vous alternez entre Charge positive et Charge négative.\nSubir des dégâts de mêlée directs vous fait passer en Charge négative.\nEn Charge négative, passer 1 sec sans subir de dégâts de mêlée directs vous fait passer en Charge positive.\nVous ne pouvez pas changer plus d'une fois toutes les 4 sec.\nCharge positive : augmente votre chance de coup critique de 10% et vos dégâts de 5%.\nCharge négative : réduit les dégâts subis de 10%, augmente les soins reçus de 5% et votre vitesse de déplacement de 5%." }
-b[200749] = { desc="Blesser un ennemi applique Garrote. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[201005] = { desc="Quand vous lancez Mortal Strike, Bloodthirst ou Shield Slam, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[200238] = { desc="Toutes les 10 sec, votre prochaine capacité ne coûte aucune ressource principale et restaure 24 d'énergie, 12 de rage, 3% de votre mana maximal ou 48 de puissance runique, selon votre classe." }
-b[200494] = { desc="Augmente l'intelligence de @flat30+lvl1.5@." }
-b[200750] = { desc="Blesser un ennemi applique Corruption, Curse of Agony ou Immolate. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[200878] = { desc="Sous 80% de puissance runique, votre génération de puissance runique est augmentée de 20%.\nAu-dessus de 80% de puissance runique, vos dégâts infligés sont augmentés de 10%." }
-b[201006] = { desc="Quand vous lancez Mortal Strike, Bloodthirst ou Shield Slam, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201262] = { desc="Vos effets de dégâts sur la durée bénéficient désormais de la Hâte." }
-b[200495] = { desc="Augmente l'esprit de @flat30+lvl1.5@." }
-b[200751] = { desc="Blesser un ennemi applique Vampiric Touch, Holy Fire ou Shadow Word: Pain, selon votre forme actuelle. N'affecte pas les cibles déjà affectées.", dyn="Unstable Infusion" }
-b[200240] = { desc="Après être resté immobile 6 sec, vos coups critiques infligent 25% de dégâts supplémentaires. Cet effet persiste jusqu'à 3 sec après que vous vous déplacez. Augmente aussi votre score de coup critique de 40." }
-b[200496] = { desc="Augmente l'endurance de @flat30+lvl1.5@." }
-b[200752] = { desc="Lancer un sort de soin augmente vos dégâts des sorts de 10% pendant 4 sec. Lancer un sort de dégâts augmente vos soins prodigués de 10% pendant 4 sec." }
-b[201008] = { desc="Quand vous lancez Judgement, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201264] = { desc="Vos sorts de soin direct ont 10% de chances d'octroyer à un allié aléatoire un bonus de 3% à tous les attributs pendant 15 sec. Se cumule jusqu'à 10% au total." }
-b[200497] = { desc="Augmente la vitesse de monture de @flat45@% supplémentaires." }
-b[201009] = { desc="Quand vous lancez Judgement, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[200498] = { desc="Restaure @flat30+lvl1.5@ de mana toutes les 5 sec." }
-b[200882] = { desc="Augmente votre puissance des sorts d'un montant égal à 5% de votre armure, jusqu'à un maximum de 150% de votre intelligence.\nBonus actuel : @a@ de puissance des sorts." }
-b[201010] = { desc="Quand vous lancez Judgement, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201266] = { desc="Vos effets de soin périodiques ont 5% de chances d'octroyer à un allié aléatoire un bonus de 1% à tous les attributs pendant 15 sec. Se cumule jusqu'à 10% au total." }
-b[200499] = { desc="Augmente la valeur de blocage de @flat90+lvl4.5@." }
-b[200627] = { desc="Infliger des dégâts de Givre octroie un cumul de Rime. À 12 cumuls, vous déchaînez un Souffle de givre devant vous, infligeant 40 dégâts de Givre et rendant les ennemis touchés Fragiles pendant 5 sec.\nTant que Fragile est actif, vos dégâts de Givre contre eux sont augmentés de 10%.\nAprès déclenchement, vous ne pouvez pas gagner de cumuls de Rime pendant 4 sec." }
-b[201336] = { desc="Vos sorts et capacités de dégâts ont une chance d'appliquer Braises ardentes pendant 8 sec, infligeant 6 dégâts de Feu par seconde.\nLorsque Braises ardentes atteint 5 cumuls, cela déclenche Souffle profond, brûlant tous les ennemis en ligne devant vous pour 61 dégâts de Feu et consommant tous les cumuls sur la cible principale.\nSouffle profond ne peut pas se produire plus d'une fois toutes les 6 sec." }
-b[201332] = { desc="Sous 50% de vie, vos sorts et capacités de dégâts déchaînent un Essaim sangsue, infligeant 2 dégâts de Nature par seconde à tous les ennemis dans un rayon de 10 m pendant 6 sec. Vous êtes soigné de 30% des dégâts infligés.\nSi l'Essaim sangsue ne touche qu'une cible, ses dégâts et soins sont augmentés de 100%. Ne peut pas se produire plus d'une fois toutes les 6 sec." }
-b[200500] = { desc="Augmente la puissance des sorts de @flat60+lvl3@." }
-b[201324] = { desc="Vous commencez le combat en Essence de lumière.\nEssence de lumière : infliger des dégâts sacrés, de Feu ou de Nature applique Charge de lumière pendant 8 sec, cumulable jusqu'à 20 fois. Infliger des dégâts d'Ombre, de Givre ou d'Arcanes consomme la Charge de lumière pour déchaîner Explosion sombre, infligeant 1 dégât d'Ombre par cumul à la cible et aux ennemis dans un rayon de 8 m, et vous passez en Essence sombre.\nEssence sombre : infliger des dégâts d'Ombre, de Givre ou d'Arcanes applique Charge sombre pendant 8 sec, cumulable jusqu'à 20 fois. Infliger des dégâts sacrés, de Feu ou de Nature consomme la Charge sombre pour déchaîner Explosion de lumière, infligeant 1 dégât sacré par cumul à la cible et aux ennemis dans un rayon de 8 m, et vous passez en Essence de lumière." }
-b[200756] = { desc="Lorsque vous tuez une cible, tous vos effets de dégâts sur la durée restants sur elle explosent instantanément, infligeant 30% de leurs dégâts restants combinés aux ennemis dans un rayon de 8 m." }
-b[200884] = { desc="Réduit les dégâts subis de 35%, mais réduit les dégâts infligés de 70%. Augmente la menace générée de 200%." }
-b[201012] = { desc="Quand vous lancez Death Strike, Heart Strike, Obliterate ou Scourge Strike, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201032] = { desc="Quand vous lancez Arcane Blast, Fireball, Frostbolt ou Frostfire Bolt, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201268] = { desc="Vos soins prodigués sont augmentés de 30%, mais vos sorts coûtent 500% de mana en plus." }
-b[200243] = { desc="Vos effets de soin périodiques font aussi s'embraser la cible, infligeant des dégâts de Feu égaux à 10% des soins prodigués aux ennemis proches toutes les 3 sec. Ces dégâts ne peuvent pas dépasser 20% de votre vie maximale. Augmente aussi votre puissance des sorts de 60." }
-b[200501] = { desc="Augmente la puissance d'attaque de @flat90+lvl4.5@." }
-b[201033] = { desc="Quand vous lancez Arcane Blast, Fireball, Frostbolt ou Frostfire Bolt, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201250] = { desc="Vos effets périodiques ont 30% de chances de s'embraser, les faisant infliger des dégâts ou des soins une fois de plus.\nNe peut pas se produire plus d'une fois par cible." }
-b[200205] = { desc="Après avoir lancé 3 sorts ou capacités de Feu, vous faites s'abattre une Pluie de feu à l'emplacement de la cible, calcinant le sol pour 7 dégâts de Feu sur 8 sec.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[201013] = { desc="Quand vous lancez Death Strike, Heart Strike, Obliterate ou Scourge Strike, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201254] = { desc="Les dégâts infligés par vos effets de dégâts sur la durée ont une chance d'appliquer un effet de dégâts sur la durée aléatoire associé à une autre classe." }
-b[200246] = { desc="Chaque fois que vous recevez un soin direct, vous infligez des dégâts d'Ombre égaux à 15% du montant soigné à un ennemi proche. Augmente aussi votre vie maximale de 400." }
-b[201040] = { desc="Vos dégâts périodiques de Warlock ont une chance de vous faire projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[200502] = { desc="Après être resté immobile 2 sec, votre armure est augmentée de @flat600+lvl30@ pendant 5 sec après vous être déplacé." }
-b[200006] = { desc="Restaure @flat10+lvl0.2@ de mana toutes les 5 sec." }
-b[200202] = { desc="Hors combat, les dégâts et soins infligés sont augmentés de 100%. Cet effet persiste 3 sec après votre entrée en combat." }
-b[200886] = { desc="Augmente votre vie maximale de 50%, mais réduit les soins reçus de 60%." }
-b[201014] = { desc="Quand vous lancez Death Strike, Heart Strike, Obliterate ou Scourge Strike, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201041] = { desc="Vos dégâts périodiques de Warlock ont une chance de vous faire projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201270] = { desc="Vous pouvez équiper tous les types d'armure." }
-b[201024] = { desc="Quand vous lancez Starfire, Nourish ou Mangle, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201042] = { desc="Vos dégâts périodiques de Warlock ont une chance de vous faire projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201025] = { desc="Quand vous lancez Starfire, Nourish ou Mangle, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[200759] = { desc="Augmente l'endurance de vos familiers de @a@, selon votre Endurance." }
-b[200003] = { desc="Augmente l'esprit de @flat10+lvl0.2@." }
-b[200259] = { desc="Vous avez 35% de chances de lancer la même capacité deux fois. Ne fonctionne qu'avec certaines capacités de soin et de dégâts de classe." }
-b[200005] = { desc="Augmente la vitesse de monture de @flat10@% supplémentaires." }
-b[200248] = { desc="En sortant du combat, et toutes les 20 sec en combat, votre prochaine capacité de dégâts touche aussi @a@ ennemi proche supplémentaire." }
-b[200007] = { desc="Augmente la valeur de blocage de @flat30+lvl0.6@." }
-b[200504] = { desc="Restaure @flat36+lvl1.8@ de vie toutes les 3 sec." }
-b[200632] = { desc="Tuer un ennemi octroie un Fragment d'âme. À 6 Fragments d'âme, ils sont consommés pour invoquer un Serviteur du Roi-Liche pendant 30 sec.\nVous pouvez avoir jusqu'à 6 Serviteurs actifs à la fois." }
-b[200760] = { desc="Augmente l'endurance de vos familiers de @a@, selon votre Endurance." }
-b[200888] = { desc="Au-dessus de 20% de mana, vos dégâts des sorts sont augmentés de 15%, mais le coût de vos ressources est augmenté de 50%." }
-b[201016] = { desc="Vos coups critiques d'Auto Shot ont une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", dyn="Stonefist Barrage" }
-b[201144] = { desc="Quand vous utilisez une capacité de mêlée, vous avez 20% de chances de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", dyn="Arcane Bombardment" }
-b[201272] = { desc="Vous permet de manier deux armes. Les dégâts de la main gauche sont réduits de 20%." }
-b[200209] = { desc="Après avoir lancé 3 sorts ou capacités de Givre, vous invoquez un Blizzard à l'emplacement de la cible, infligeant 6 dégâts de Givre sur 8 sec et ralentissant les ennemis dans la zone.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[200213] = { desc="Après avoir lancé 3 sorts ou capacités d'Arcanes, vous déchaînez une Explosion des arcanes, infligeant 3 dégâts d'Arcanes et restaurant 5% de mana.\nCet effet ne peut pas se produire plus d'une fois toutes les 21 sec." }
-b[101000] = { sdesc="Subir des dégâts magiques réduit les dégâts subis de cette école de 3% pendant 8 sec." }
-b[101001] = { sdesc="Subir des dégâts magiques réduit les dégâts subis de cette école de 6% pendant 8 sec." }
-b[101002] = { sdesc="Subir des dégâts magiques réduit les dégâts subis de cette école de 9% pendant 8 sec." }
-b[101003] = { sdesc="Subir des dégâts magiques réduit les dégâts subis de cette école de 12% pendant 8 sec." }
-b[101004] = { sdesc="Subir des dégâts magiques réduit les dégâts subis de cette école de 15% pendant 8 sec." }
-b[111000] = { sdesc="Réduit les dégâts magiques subis de 3%." }
-b[101340] = { sdesc="Au-dessus de 75% de mana, vous gagnez Puissance déferlante, augmentant vos dégâts des sorts de 2%. Cet effet persiste jusqu'à ce que votre mana tombe sous 25%, où il est remplacé par Flux réparateur. Flux réparateur augmente votre régénération de mana de 20% et persiste jusqu'à ce que votre mana repasse au-dessus de 75%, où il est remplacé par Puissance déferlante." }
-b[101341] = { sdesc="Au-dessus de 75% de mana, vous gagnez Puissance déferlante, augmentant vos dégâts des sorts de 4%. Cet effet persiste jusqu'à ce que votre mana tombe sous 25%, où il est remplacé par Flux réparateur. Flux réparateur augmente votre régénération de mana de 40% et persiste jusqu'à ce que votre mana repasse au-dessus de 75%, où il est remplacé par Puissance déferlante." }
-b[101342] = { sdesc="Au-dessus de 75% de mana, vous gagnez Puissance déferlante, augmentant vos dégâts des sorts de 6%. Cet effet persiste jusqu'à ce que votre mana tombe sous 25%, où il est remplacé par Flux réparateur. Flux réparateur augmente votre régénération de mana de 60% et persiste jusqu'à ce que votre mana repasse au-dessus de 75%, où il est remplacé par Puissance déferlante." }
-b[101343] = { sdesc="Au-dessus de 75% de mana, vous gagnez Puissance déferlante, augmentant vos dégâts des sorts de 8%. Cet effet persiste jusqu'à ce que votre mana tombe sous 25%, où il est remplacé par Flux réparateur. Flux réparateur augmente votre régénération de mana de 80% et persiste jusqu'à ce que votre mana repasse au-dessus de 75%, où il est remplacé par Puissance déferlante." }
-b[101344] = { sdesc="Au-dessus de 75% de mana, vous gagnez Puissance déferlante, augmentant vos dégâts des sorts de 10%. Cet effet persiste jusqu'à ce que votre mana tombe sous 25%, où il est remplacé par Flux réparateur. Flux réparateur augmente votre régénération de mana de 100% et persiste jusqu'à ce que votre mana repasse au-dessus de 75%, où il est remplacé par Puissance déferlante." }
-b[111340] = { sdesc="Augmente votre mana maximal de 10%." }
-b[100840] = { sdesc="Augmente la résistance aux Arcanes de 5." }
-b[100841] = { sdesc="Augmente la résistance aux Arcanes de 10." }
-b[100842] = { sdesc="Augmente la résistance aux Arcanes de 15." }
-b[100843] = { sdesc="Augmente la résistance aux Arcanes de 20." }
-b[100844] = { sdesc="Augmente la résistance aux Arcanes de 25." }
-b[100845] = { sdesc="Augmente la résistance aux Arcanes de 25." }
-b[100846] = { sdesc="Augmente la résistance aux Arcanes de 25." }
-b[110840] = { sdesc="Réduit les dégâts d'Arcanes subis de 5%." }
-b[34091] = { sdesc="Vous pouvez désormais chevaucher toutes les montures volantes à 280% de vitesse." }
-b[101150] = { sdesc="40% de chances de gagner un point de compétence supplémentaire à chaque niveau de compétence gagné dans un métier hors récolte." }
-b[101151] = { sdesc="80% de chances de gagner un point de compétence supplémentaire à chaque niveau de compétence gagné dans un métier hors récolte." }
-b[101152] = { sdesc="Vous recevez un deuxième point de compétence à chaque niveau gagné dans un métier hors récolte, avec 20% de chances d'en gagner un troisième." }
-b[101153] = { sdesc="Vous recevez un deuxième point de compétence à chaque niveau gagné dans un métier hors récolte, avec 60% de chances d'en gagner un troisième." }
-b[101154] = { sdesc="Vous recevez deux points de compétence supplémentaires à chaque niveau gagné dans un métier hors récolte." }
-b[101380] = { sdesc="Quand vous soignez un allié, un ennemi proche subit des dégâts sacrés égaux à 5% des soins prodigués." }
-b[101381] = { sdesc="Quand vous soignez un allié, un ennemi proche subit des dégâts sacrés égaux à 10% des soins prodigués." }
-b[101382] = { sdesc="Quand vous soignez un allié, un ennemi proche subit des dégâts sacrés égaux à 15% des soins prodigués." }
-b[101383] = { sdesc="Quand vous soignez un allié, un ennemi proche subit des dégâts sacrés égaux à 20% des soins prodigués." }
-b[101384] = { sdesc="Quand vous soignez un allié, un ennemi proche subit des dégâts sacrés égaux à 25% des soins prodigués." }
-b[111380] = { sdesc="Augmente les soins prodigués de 3%." }
-b[101650] = { sdesc="Vous permet d'équiper 1 objet(s) quel que soit leur niveau requis." }
-b[101651] = { sdesc="Vous permet d'équiper 2 objet(s) quel que soit leur niveau requis." }
-b[101652] = { sdesc="Vous permet d'équiper 3 objet(s) quel que soit leur niveau requis." }
-b[101653] = { sdesc="Vous permet d'équiper 4 objet(s) quel que soit leur niveau requis." }
-b[101654] = { sdesc="Vous permet d'équiper 5 objet(s) quel que soit leur niveau requis." }
-b[101655] = { sdesc="Vous permet d'équiper 1 objet(s) quel que soit leur niveau requis." }
-b[101656] = { sdesc="Vous permet d'équiper 2 objet(s) quel que soit leur niveau requis." }
-b[101657] = { sdesc="Vous permet d'équiper 3 objet(s) quel que soit leur niveau requis." }
-b[101658] = { sdesc="Vous permet d'équiper 4 objet(s) quel que soit leur niveau requis." }
-b[101659] = { sdesc="Vous permet d'équiper 5 objet(s) quel que soit leur niveau requis." }
-b[101660] = { sdesc="Vous permet d'équiper 1 objet(s) quel que soit leur niveau requis." }
-b[101661] = { sdesc="Vous permet d'équiper 2 objet(s) quel que soit leur niveau requis." }
-b[101662] = { sdesc="Vous permet d'équiper 3 objet(s) quel que soit leur niveau requis." }
-b[101663] = { sdesc="Vous permet d'équiper 4 objet(s) quel que soit leur niveau requis." }
-b[101664] = { sdesc="Vous permet d'équiper 5 objet(s) quel que soit leur niveau requis." }
-b[101665] = { sdesc="Vous permet d'équiper 1 objet(s) quel que soit leur niveau requis." }
-b[101666] = { sdesc="Vous permet d'équiper 2 objet(s) quel que soit leur niveau requis." }
-b[101090] = { sdesc="Lorsqu'une attaque ou une capacité devrait vous tuer, vous survivez et êtes restauré à 20% de votre vie maximale. Cet effet peut se produire une fois par vie et les charges se rechargent au reset." }
-b[101091] = { sdesc="Temps emprunté restaure 20% de vie supplémentaires." }
-b[101092] = { sdesc="Temps emprunté restaure 20% de vie supplémentaires." }
-b[101093] = { sdesc="Temps emprunté restaure 20% de vie supplémentaires." }
-b[101094] = { sdesc="Temps emprunté restaure 20% de vie supplémentaires." }
-b[103560] = { sdesc="Vous pouvez bénéficier de n'importe quel nombre d'effets de nourriture et d'élixir différents en même temps." }
-b[100380] = { sdesc="Augmente l'expérience gagnée de 100% supplémentaires." }
-b[100381] = { sdesc="Augmente l'expérience gagnée de 100% supplémentaires." }
-b[100382] = { sdesc="Augmente l'expérience gagnée de 100% supplémentaires." }
-b[101280] = { sdesc="Vos coups critiques de mêlée et à distance octroient Butcher's Tempo, augmentant votre vitesse d'attaque de 1% pendant 6 sec. Se cumule jusqu'à 3 fois." }
-b[101281] = { sdesc="Vos coups critiques de mêlée et à distance octroient Butcher's Tempo, augmentant votre vitesse d'attaque de 1% pendant 6 sec. Se cumule jusqu'à 6 fois." }
-b[101282] = { sdesc="Vos coups critiques de mêlée et à distance octroient Butcher's Tempo, augmentant votre vitesse d'attaque de 1% pendant 6 sec. Se cumule jusqu'à 10 fois." }
-b[101283] = { sdesc="Vos coups critiques de mêlée et à distance octroient Butcher's Tempo, augmentant votre vitesse d'attaque de 1% pendant 6 sec. Se cumule jusqu'à 12 fois." }
-b[101284] = { sdesc="Vos coups critiques de mêlée et à distance octroient Butcher's Tempo, augmentant votre vitesse d'attaque de 1% pendant 6 sec. Se cumule jusqu'à 15 fois." }
-b[111280] = { sdesc="Tant que vous avez 10 cumuls de Butcher's Tempo, vos coups critiques de mêlée et à distance frappent aussi jusqu'à 3 ennemis proches pour 6 dégâts." }
-b[101580] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101581] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101582] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101583] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101584] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101585] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[101586] = { sdesc="Augmente la quantité de matériaux obtenue par le dépeçage de 10%." }
-b[103540] = { sdesc="Augmente de 1 le nombre de gels d'Echo disponibles au début d'une run." }
-b[103541] = { sdesc="Augmente de 1 le nombre de gels d'Echo disponibles au début d'une run." }
-b[103542] = { sdesc="Augmente de 1 le nombre de gels d'Echo disponibles au début d'une run." }
-b[103543] = { sdesc="Augmente de 1 le nombre de gels d'Echo disponibles au début d'une run." }
-b[103544] = { sdesc="Augmente de 1 le nombre de gels d'Echo disponibles au début d'une run." }
-b[101620] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101621] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101622] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101623] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101624] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101625] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[101626] = { sdesc="Augmente la quantité de tissu trouvée sur les humanoïdes de 10%." }
-b[54197] = { sdesc="Vous pouvez désormais utiliser des montures volantes au Norfendre." }
-b[101730] = { sdesc="5% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101731] = { sdesc="10% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101732] = { sdesc="15% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101733] = { sdesc="20% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101734] = { sdesc="25% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101735] = { sdesc="30% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[101736] = { sdesc="35% des dégâts que vous subissez sont différés et infligés sur 5 sec à la place." }
-b[600153] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600154] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600155] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600156] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600157] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600158] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600159] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600160] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600161] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600162] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[600163] = { sdesc="Augmente de 1 le nombre de bannissements d'Echo disponibles au début d'une run." }
-b[103480] = { sdesc="Lors de la fabrication, vous avez 5% de chances de récupérer une partie des composants utilisés." }
-b[103481] = { sdesc="Lors de la fabrication, vous avez 10% de chances de récupérer une partie des composants utilisés." }
-b[103482] = { sdesc="Lors de la fabrication, vous avez 15% de chances de récupérer une partie des composants utilisés." }
-b[103483] = { sdesc="Lors de la fabrication, vous avez 20% de chances de récupérer une partie des composants utilisés." }
-b[103484] = { sdesc="Lors de la fabrication, vous avez 25% de chances de récupérer une partie des composants utilisés." }
-b[103485] = { sdesc="Lors de la fabrication, vous avez 30% de chances de récupérer une partie des composants utilisés." }
-b[103486] = { sdesc="Lors de la fabrication, vous avez 35% de chances de récupérer une partie des composants utilisés." }
-b[101670] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101671] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101672] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101673] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101674] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101675] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[101676] = { sdesc="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de 10%." }
-b[100880] = { sdesc="En combat, vous récupérez 1% de votre vie maximale toutes les 3 sec." }
-b[100881] = { sdesc="En combat, vous récupérez 2% de votre vie maximale toutes les 3 sec." }
-b[100882] = { sdesc="En combat, vous récupérez 3% de votre vie maximale toutes les 3 sec." }
-b[110880] = { sdesc="Augmente votre vie maximale de 5%." }
-b[100200] = { sdesc="Augmente le score de toucher de 5." }
-b[100201] = { sdesc="Augmente le score de toucher de 5." }
-b[100202] = { sdesc="Augmente le score de toucher de 10." }
-b[100203] = { sdesc="Augmente le score de toucher de 10." }
-b[100204] = { sdesc="Augmente le score de toucher de 15." }
-b[100205] = { sdesc="Augmente le score de toucher de 15." }
-b[100206] = { sdesc="Augmente le score de toucher de 20." }
-b[100207] = { sdesc="Augmente le score de toucher de 30." }
-b[100208] = { sdesc="Augmente le score de toucher de 40." }
-b[100209] = { sdesc="Augmente le score de toucher de 50." }
-b[100210] = { sdesc="Augmente le score de toucher de 50." }
-b[100211] = { sdesc="Augmente le score de toucher de 50." }
-b[100212] = { sdesc="Augmente le score de toucher de 50." }
-b[100213] = { sdesc="Augmente le score de toucher de 50." }
-b[110200] = { sdesc="Augmente votre chance de toucher de 2%. Ce bonus n'apparaît pas sur la feuille de personnage." }
-b[100060] = { sdesc="Augmente l'agilité de 5." }
-b[100061] = { sdesc="Augmente l'agilité de 10." }
-b[100062] = { sdesc="Augmente l'agilité de 15." }
-b[100063] = { sdesc="Augmente l'agilité de 20." }
-b[100064] = { sdesc="Augmente l'agilité de 25." }
-b[100065] = { sdesc="Augmente l'agilité de 30." }
-b[100066] = { sdesc="Augmente l'agilité de 40." }
-b[100067] = { sdesc="Augmente l'agilité de 60." }
-b[100068] = { sdesc="Augmente l'agilité de 80." }
-b[100069] = { sdesc="Augmente l'agilité de 120." }
-b[100070] = { sdesc="Augmente l'agilité de 120." }
-b[100071] = { sdesc="Augmente l'agilité de 120." }
-b[100072] = { sdesc="Augmente l'agilité de 120." }
-b[100073] = { sdesc="Augmente l'agilité de 120." }
-b[110060] = { sdesc="Augmente votre agilité de 5%." }
-b[110061] = { sdesc="Augmente votre agilité de 5%." }
-b[110062] = { sdesc="Augmente votre agilité de 5%." }
-b[100240] = { sdesc="Augmente la hâte de 1%." }
-b[100241] = { sdesc="Augmente la hâte de 1%." }
-b[100242] = { sdesc="Augmente la hâte de 1%." }
-b[100243] = { sdesc="Augmente la hâte de 1%." }
-b[100244] = { sdesc="Augmente la hâte de 2%." }
-b[100245] = { sdesc="Augmente la hâte de 2%." }
-b[100246] = { sdesc="Augmente la hâte de 2%." }
-b[101490] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101491] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101492] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101493] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101494] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101495] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101496] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101497] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101498] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101499] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101500] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101501] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101502] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[101503] = { sdesc="Permet à 2% de votre régénération de mana de continuer pendant l'incantation." }
-b[111490] = { sdesc="Augmente votre régénération de mana de 10%." }
-b[111491] = { sdesc="Augmente votre régénération de mana de 10%." }
-b[111492] = { sdesc="Augmente votre régénération de mana de 10%." }
-b[100080] = { sdesc="Augmente l'endurance de 5." }
-b[100081] = { sdesc="Augmente l'endurance de 10." }
-b[100082] = { sdesc="Augmente l'endurance de 15." }
-b[100083] = { sdesc="Augmente l'endurance de 20." }
-b[100084] = { sdesc="Augmente l'endurance de 25." }
-b[100085] = { sdesc="Augmente l'endurance de 30." }
-b[100086] = { sdesc="Augmente l'endurance de 35." }
-b[100087] = { sdesc="Augmente l'endurance de 40." }
-b[100088] = { sdesc="Augmente l'endurance de 50." }
-b[100089] = { sdesc="Augmente l'endurance de 75." }
-b[100090] = { sdesc="Augmente l'endurance de 75." }
-b[100091] = { sdesc="Augmente l'endurance de 75." }
-b[100092] = { sdesc="Augmente l'endurance de 75." }
-b[100093] = { sdesc="Augmente l'endurance de 75." }
-b[110080] = { sdesc="Augmente votre endurance de 5%." }
-b[110081] = { sdesc="Augmente votre endurance de 5%." }
-b[110082] = { sdesc="Augmente votre endurance de 5%." }
-b[100680] = { sdesc="Augmente votre vie maximale de 50." }
-b[100681] = { sdesc="Augmente votre vie maximale de 75." }
-b[100682] = { sdesc="Augmente votre vie maximale de 100." }
-b[100683] = { sdesc="Augmente votre vie maximale de 150." }
-b[100684] = { sdesc="Augmente votre vie maximale de 200." }
-b[100685] = { sdesc="Augmente votre vie maximale de 250." }
-b[100686] = { sdesc="Augmente votre vie maximale de 350." }
-b[100687] = { sdesc="Augmente votre vie maximale de 500." }
-b[100688] = { sdesc="Augmente votre vie maximale de 750." }
-b[100689] = { sdesc="Augmente votre vie maximale de 1000." }
-b[100690] = { sdesc="Augmente votre vie maximale de 1000." }
-b[100691] = { sdesc="Augmente votre vie maximale de 1000." }
-b[100692] = { sdesc="Augmente votre vie maximale de 1000." }
-b[100693] = { sdesc="Augmente votre vie maximale de 1000." }
-b[110680] = { sdesc="Augmente votre vie maximale de 10%." }
-b[110681] = { sdesc="Augmente votre vie maximale de 10%." }
-b[110682] = { sdesc="Augmente votre vie maximale de 10%." }
-b[103570] = { sdesc="Augmente l'endurance de 100." }
-b[103571] = { sdesc="Augmente l'endurance de 100." }
-b[103572] = { sdesc="Augmente l'endurance de 100." }
-b[103573] = { sdesc="Augmente l'endurance de 100." }
-b[103574] = { sdesc="Augmente l'endurance de 100." }
-b[103575] = { sdesc="Augmente l'endurance de 100." }
-b[103576] = { sdesc="Augmente l'endurance de 100." }
-b[103577] = { sdesc="Augmente l'endurance de 100." }
-b[103578] = { sdesc="Augmente l'endurance de 100." }
-b[103579] = { sdesc="Augmente l'endurance de 100." }
-b[113570] = { sdesc="Augmente votre endurance de 5%." }
-b[103590] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103591] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103592] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103593] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103594] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103595] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103596] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103597] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103598] = { sdesc="Augmente votre vie maximale de 1000." }
-b[103599] = { sdesc="Augmente votre vie maximale de 1000." }
-b[113590] = { sdesc="Augmente votre vie maximale de 10%." }
-b[103400] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103401] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103402] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103403] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103404] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103405] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103406] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103407] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103408] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[103409] = { sdesc="Augmente votre puissance d'attaque de 1000." }
-b[113400] = { sdesc="Augmente votre puissance d'attaque de 10%." }
-b[103420] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103421] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103422] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103423] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103424] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103425] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103426] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103427] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103428] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[103429] = { sdesc="Augmente votre puissance des sorts de 750." }
-b[113420] = { sdesc="Augmente votre puissance des sorts de 10%." }
-b[100100] = { sdesc="Augmente l'intelligence de 5." }
-b[100101] = { sdesc="Augmente l'intelligence de 10." }
-b[100102] = { sdesc="Augmente l'intelligence de 15." }
-b[100103] = { sdesc="Augmente l'intelligence de 20." }
-b[100104] = { sdesc="Augmente l'intelligence de 25." }
-b[100105] = { sdesc="Augmente l'intelligence de 30." }
-b[100106] = { sdesc="Augmente l'intelligence de 40." }
-b[100107] = { sdesc="Augmente l'intelligence de 60." }
-b[100108] = { sdesc="Augmente l'intelligence de 80." }
-b[100109] = { sdesc="Augmente l'intelligence de 120." }
-b[100110] = { sdesc="Augmente l'intelligence de 120." }
-b[100111] = { sdesc="Augmente l'intelligence de 120." }
-b[100112] = { sdesc="Augmente l'intelligence de 120." }
-b[100113] = { sdesc="Augmente l'intelligence de 120." }
-b[110100] = { sdesc="Augmente votre intelligence de 5%." }
-b[110101] = { sdesc="Augmente votre intelligence de 5%." }
-b[110102] = { sdesc="Augmente votre intelligence de 5%." }
-b[100700] = { sdesc="Augmente l'armure de 25." }
-b[100701] = { sdesc="Augmente l'armure de 50." }
-b[100702] = { sdesc="Augmente l'armure de 100." }
-b[100703] = { sdesc="Augmente l'armure de 150." }
-b[100704] = { sdesc="Augmente l'armure de 200." }
-b[100705] = { sdesc="Augmente l'armure de 300." }
-b[100706] = { sdesc="Augmente l'armure de 500." }
-b[100707] = { sdesc="Augmente l'armure de 600." }
-b[100708] = { sdesc="Augmente l'armure de 750." }
-b[100709] = { sdesc="Augmente l'armure de 1000." }
-b[100710] = { sdesc="Augmente l'armure de 1000." }
-b[100711] = { sdesc="Augmente l'armure de 1000." }
-b[100712] = { sdesc="Augmente l'armure de 1000." }
-b[100713] = { sdesc="Augmente l'armure de 1000." }
-b[110700] = { sdesc="Réduit les dégâts physiques subis de 5%." }
-b[100160] = { sdesc="Augmente le score de coup critique de 5." }
-b[100161] = { sdesc="Augmente le score de coup critique de 10." }
-b[100162] = { sdesc="Augmente le score de coup critique de 15." }
-b[100163] = { sdesc="Augmente le score de coup critique de 20." }
-b[100164] = { sdesc="Augmente le score de coup critique de 25." }
-b[100165] = { sdesc="Augmente le score de coup critique de 30." }
-b[100166] = { sdesc="Augmente le score de coup critique de 35." }
-b[100167] = { sdesc="Augmente le score de coup critique de 40." }
-b[100168] = { sdesc="Augmente le score de coup critique de 50." }
-b[100169] = { sdesc="Augmente le score de coup critique de 75." }
-b[100170] = { sdesc="Augmente le score de coup critique de 75." }
-b[100171] = { sdesc="Augmente le score de coup critique de 75." }
-b[100172] = { sdesc="Augmente le score de coup critique de 75." }
-b[100173] = { sdesc="Augmente le score de coup critique de 75." }
-b[110160] = { sdesc="Augmente votre chance de coup critique de 5%." }
-b[100000] = { sdesc="Augmente votre puissance d'attaque de 25." }
-b[100001] = { sdesc="Augmente votre puissance d'attaque de 35." }
-b[100002] = { sdesc="Augmente votre puissance d'attaque de 50." }
-b[100003] = { sdesc="Augmente votre puissance d'attaque de 75." }
-b[100004] = { sdesc="Augmente votre puissance d'attaque de 100." }
-b[100005] = { sdesc="Augmente votre puissance d'attaque de 125." }
-b[100006] = { sdesc="Augmente votre puissance d'attaque de 175." }
-b[100007] = { sdesc="Augmente votre puissance d'attaque de 250." }
-b[100008] = { sdesc="Augmente votre puissance d'attaque de 425." }
-b[100009] = { sdesc="Augmente votre puissance d'attaque de 750." }
-b[100010] = { sdesc="Augmente votre puissance d'attaque de 750." }
-b[100011] = { sdesc="Augmente votre puissance d'attaque de 750." }
-b[100012] = { sdesc="Augmente votre puissance d'attaque de 750." }
-b[100013] = { sdesc="Augmente votre puissance d'attaque de 750." }
-b[110000] = { sdesc="Augmente votre puissance d'attaque de 10%." }
-b[110001] = { sdesc="Augmente votre puissance d'attaque de 10%." }
-b[110002] = { sdesc="Augmente votre puissance d'attaque de 10%." }
-b[100180] = { sdesc="Augmente votre expertise de 1." }
-b[100181] = { sdesc="Augmente votre expertise de 1." }
-b[100182] = { sdesc="Augmente votre expertise de 1." }
-b[100183] = { sdesc="Augmente votre expertise de 1." }
-b[100184] = { sdesc="Augmente votre expertise de 1." }
-b[100185] = { sdesc="Augmente votre expertise de 1." }
-b[100186] = { sdesc="Augmente votre expertise de 1." }
-b[100187] = { sdesc="Augmente votre expertise de 1." }
-b[100188] = { sdesc="Augmente votre expertise de 1." }
-b[100189] = { sdesc="Augmente votre expertise de 1." }
-b[100190] = { sdesc="Augmente votre expertise de 2." }
-b[100191] = { sdesc="Augmente votre expertise de 2." }
-b[100192] = { sdesc="Augmente votre expertise de 2." }
-b[100193] = { sdesc="Augmente votre expertise de 2." }
-b[110180] = { sdesc="Augmente les dégâts de mêlée de 2%." }
-b[110181] = { sdesc="Augmente les dégâts de mêlée de 2%." }
-b[110182] = { sdesc="Augmente les dégâts de mêlée de 2%." }
-b[100220] = { sdesc="Augmente les dégâts critiques et les soins critiques de 1%." }
-b[100221] = { sdesc="Augmente les dégâts critiques et les soins critiques de 1%." }
-b[100222] = { sdesc="Augmente les dégâts critiques et les soins critiques de 1%." }
-b[100223] = { sdesc="Augmente les dégâts critiques et les soins critiques de 1%." }
-b[100224] = { sdesc="Augmente les dégâts critiques et les soins critiques de 2%." }
-b[100225] = { sdesc="Augmente les dégâts critiques et les soins critiques de 2%." }
-b[100226] = { sdesc="Augmente les dégâts critiques et les soins critiques de 2%." }
-b[100020] = { sdesc="Augmente votre puissance des sorts de 20." }
-b[100021] = { sdesc="Augmente votre puissance des sorts de 25." }
-b[100022] = { sdesc="Augmente votre puissance des sorts de 35." }
-b[100023] = { sdesc="Augmente votre puissance des sorts de 55." }
-b[100024] = { sdesc="Augmente votre puissance des sorts de 75." }
-b[100025] = { sdesc="Augmente votre puissance des sorts de 100." }
-b[100026] = { sdesc="Augmente votre puissance des sorts de 125." }
-b[100027] = { sdesc="Augmente votre puissance des sorts de 175." }
-b[100028] = { sdesc="Augmente votre puissance des sorts de 300." }
-b[100029] = { sdesc="Augmente votre puissance des sorts de 500." }
-b[100030] = { sdesc="Augmente votre puissance des sorts de 500." }
-b[100031] = { sdesc="Augmente votre puissance des sorts de 500." }
-b[100032] = { sdesc="Augmente votre puissance des sorts de 500." }
-b[100033] = { sdesc="Augmente votre puissance des sorts de 500." }
-b[110020] = { sdesc="Augmente votre puissance des sorts de 10%." }
-b[110021] = { sdesc="Augmente votre puissance des sorts de 10%." }
-b[110022] = { sdesc="Augmente votre puissance des sorts de 10%." }
-b[100120] = { sdesc="Augmente l'esprit de 5." }
-b[100121] = { sdesc="Augmente l'esprit de 10." }
-b[100122] = { sdesc="Augmente l'esprit de 15." }
-b[100123] = { sdesc="Augmente l'esprit de 25." }
-b[100124] = { sdesc="Augmente l'esprit de 35." }
-b[100125] = { sdesc="Augmente l'esprit de 50." }
-b[100126] = { sdesc="Augmente l'esprit de 60." }
-b[100127] = { sdesc="Augmente l'esprit de 75." }
-b[100128] = { sdesc="Augmente l'esprit de 100." }
-b[100129] = { sdesc="Augmente l'esprit de 150." }
-b[100130] = { sdesc="Augmente l'esprit de 150." }
-b[100131] = { sdesc="Augmente l'esprit de 150." }
-b[100132] = { sdesc="Augmente l'esprit de 150." }
-b[100133] = { sdesc="Augmente l'esprit de 150." }
-b[110120] = { sdesc="Augmente votre esprit de 5%." }
-b[110121] = { sdesc="Augmente votre esprit de 5%." }
-b[110122] = { sdesc="Augmente votre esprit de 5%." }
-b[100040] = { sdesc="Augmente la force de 5." }
-b[100041] = { sdesc="Augmente la force de 10." }
-b[100042] = { sdesc="Augmente la force de 15." }
-b[100043] = { sdesc="Augmente la force de 20." }
-b[100044] = { sdesc="Augmente la force de 25." }
-b[100045] = { sdesc="Augmente la force de 30." }
-b[100046] = { sdesc="Augmente la force de 40." }
-b[100047] = { sdesc="Augmente la force de 60." }
-b[100048] = { sdesc="Augmente la force de 80." }
-b[100049] = { sdesc="Augmente la force de 120." }
-b[100050] = { sdesc="Augmente la force de 120." }
-b[100051] = { sdesc="Augmente la force de 120." }
-b[100052] = { sdesc="Augmente la force de 120." }
-b[100053] = { sdesc="Augmente la force de 120." }
-b[110040] = { sdesc="Augmente votre force de 5%." }
-b[110041] = { sdesc="Augmente votre force de 5%." }
-b[110042] = { sdesc="Augmente votre force de 5%." }
-b[100260] = { sdesc="Augmente le score de pénétration d'armure de 4." }
-b[100261] = { sdesc="Augmente le score de pénétration d'armure de 8." }
-b[100262] = { sdesc="Augmente le score de pénétration d'armure de 12." }
-b[100263] = { sdesc="Augmente le score de pénétration d'armure de 15." }
-b[100264] = { sdesc="Augmente le score de pénétration d'armure de 20." }
-b[100265] = { sdesc="Augmente le score de pénétration d'armure de 25." }
-b[100266] = { sdesc="Augmente le score de pénétration d'armure de 30." }
-b[100267] = { sdesc="Augmente le score de pénétration d'armure de 35." }
-b[100268] = { sdesc="Augmente le score de pénétration d'armure de 40." }
-b[100269] = { sdesc="Augmente le score de pénétration d'armure de 50." }
-b[100270] = { sdesc="Augmente le score de pénétration d'armure de 50." }
-b[100271] = { sdesc="Augmente le score de pénétration d'armure de 50." }
-b[100272] = { sdesc="Augmente le score de pénétration d'armure de 50." }
-b[100273] = { sdesc="Augmente le score de pénétration d'armure de 50." }
-b[110260] = { sdesc="Augmente votre pénétration d'armure de 10%." }
-b[110261] = { sdesc="Augmente votre pénétration d'armure de 10%." }
-b[110262] = { sdesc="Augmente votre pénétration d'armure de 10%." }
-b[101460] = { sdesc="Augmente votre mana totale de 100." }
-b[101461] = { sdesc="Augmente votre mana totale de 200." }
-b[101462] = { sdesc="Augmente votre mana totale de 300." }
-b[101463] = { sdesc="Augmente votre mana totale de 400." }
-b[101464] = { sdesc="Augmente votre mana totale de 500." }
-b[101465] = { sdesc="Augmente votre mana totale de 600." }
-b[101466] = { sdesc="Augmente votre mana totale de 800." }
-b[101467] = { sdesc="Augmente votre mana totale de 1200." }
-b[101468] = { sdesc="Augmente votre mana totale de 1600." }
-b[101469] = { sdesc="Augmente votre mana totale de 2400." }
-b[101470] = { sdesc="Augmente votre mana totale de 2400." }
-b[101471] = { sdesc="Augmente votre mana totale de 2400." }
-b[101472] = { sdesc="Augmente votre mana totale de 2400." }
-b[101473] = { sdesc="Augmente votre mana totale de 2400." }
-b[111460] = { sdesc="Augmente votre mana de 5%." }
-b[111461] = { sdesc="Augmente votre mana de 5%." }
-b[111462] = { sdesc="Augmente votre mana de 5%." }
-b[100320] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100321] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100322] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100323] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100324] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100325] = { sdesc="Augmente les gains de réputation de 5%." }
-b[100326] = { sdesc="Augmente les gains de réputation de 5%." }
-b[101320] = { sdesc="Vous infligez 5% de dégâts supplémentaires aux ennemis sous 35% de vie." }
-b[101321] = { sdesc="Vous infligez 10% de dégâts supplémentaires aux ennemis sous 35% de vie." }
-b[101322] = { sdesc="Vous infligez 15% de dégâts supplémentaires aux ennemis sous 35% de vie." }
-b[101323] = { sdesc="Vous infligez 20% de dégâts supplémentaires aux ennemis sous 35% de vie." }
-b[101324] = { sdesc="Vous infligez 25% de dégâts supplémentaires aux ennemis sous 35% de vie." }
-b[111320] = { sdesc="Les ennemis que vous tuez explosent, infligeant 17 dégâts d'Ombre autour d'eux. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec." }
-b[34090] = { sdesc="Vous pouvez désormais chevaucher toutes les montures volantes à 150% de vitesse." }
-b[100960] = { sdesc="Réduit les dégâts de chute subis de 50%." }
-b[100760] = { sdesc="Augmente la résistance au Feu de 5." }
-b[100761] = { sdesc="Augmente la résistance au Feu de 10." }
-b[100762] = { sdesc="Augmente la résistance au Feu de 15." }
-b[100763] = { sdesc="Augmente la résistance au Feu de 20." }
-b[100764] = { sdesc="Augmente la résistance au Feu de 25." }
-b[100765] = { sdesc="Augmente la résistance au Feu de 25." }
-b[100766] = { sdesc="Augmente la résistance au Feu de 25." }
-b[110760] = { sdesc="Réduit les dégâts de Feu subis de 5%." }
-b[101030] = { sdesc="En mouvement, les dégâts subis sont réduits de 5%." }
-b[101031] = { sdesc="En mouvement, les dégâts subis sont réduits de 8%." }
-b[101032] = { sdesc="En mouvement, les dégâts subis sont réduits de 12%." }
-b[101033] = { sdesc="En mouvement, les dégâts subis sont réduits de 16%." }
-b[101034] = { sdesc="En mouvement, les dégâts subis sont réduits de 20%." }
-b[111030] = { sdesc="Augmente votre vitesse de déplacement de 5% supplémentaires." }
-b[101180] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101181] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101182] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101183] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101184] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101185] = { sdesc="Réduit le temps de récolte de 10%." }
-b[101186] = { sdesc="Réduit le temps de récolte de 10%." }
-b[100820] = { sdesc="Augmente la résistance au Givre de 5." }
-b[100821] = { sdesc="Augmente la résistance au Givre de 10." }
-b[100822] = { sdesc="Augmente la résistance au Givre de 15." }
-b[100823] = { sdesc="Augmente la résistance au Givre de 20." }
-b[100824] = { sdesc="Augmente la résistance au Givre de 25." }
-b[100825] = { sdesc="Augmente la résistance au Givre de 25." }
-b[100826] = { sdesc="Augmente la résistance au Givre de 25." }
-b[110820] = { sdesc="Réduit les dégâts de Givre subis de 5%." }
-b[100640] = { sdesc="Augmente votre vitesse de nage de 50% supplémentaires." }
-b[100641] = { sdesc="Augmente votre vitesse de nage de 50% supplémentaires." }
-b[100642] = { sdesc="Augmente votre vitesse de nage de 100% supplémentaires." }
-b[110640] = { sdesc="Vous pouvez respirer sous l'eau indéfiniment." }
-b[101160] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101161] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101162] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101163] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101164] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101165] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101166] = { sdesc="Réduit le temps de fabrication de 10%." }
-b[101600] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 5% pendant 10 sec." }
-b[101601] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 10% pendant 10 sec." }
-b[101602] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 15% pendant 10 sec." }
-b[101603] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 20% pendant 10 sec." }
-b[101604] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 25% pendant 10 sec." }
-b[101605] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 30% pendant 10 sec." }
-b[101606] = { sdesc="Récolter sur un gisement augmente votre vitesse de déplacement de 35% pendant 10 sec." }
-b[101690] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101691] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101692] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101693] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101694] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101695] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101696] = { sdesc="Augmente la durée des buffs de nourriture de 10%." }
-b[101560] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101561] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101562] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101563] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101564] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101565] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[101566] = { sdesc="Augmente la quantité de matériaux obtenue par l'herboristerie de 10%." }
-b[100400] = { sdesc="Augmente l'expérience gagnée par la récolte et le meurtre de monstres de 40% supplémentaires." }
-b[100401] = { sdesc="Augmente l'expérience gagnée par la récolte et le meurtre de monstres de 40% supplémentaires." }
-b[100402] = { sdesc="Augmente l'expérience gagnée par la récolte et le meurtre de monstres de 40% supplémentaires." }
-b[100403] = { sdesc="Augmente l'expérience gagnée par la récolte et le meurtre de monstres de 40% supplémentaires." }
-b[100404] = { sdesc="Augmente l'expérience gagnée par la récolte et le meurtre de monstres de 40% supplémentaires." }
-b[110400] = { sdesc="Augmente l'expérience gagnée de 100% supplémentaires." }
-b[101750] = { sdesc="Canalisé. Canalisez pour augmenter l'Intensité toutes les 1 sec, mais vous subissez 5% de dégâts par seconde." }
-b[101440] = { sdesc="Tant qu'au moins 3 ennemis sont à 8 m de vous, vous générez 10% de menace supplémentaire et infligez 2% de dégâts supplémentaires." }
-b[101441] = { sdesc="Tant qu'au moins 3 ennemis sont à 8 m de vous, vous générez 20% de menace supplémentaire et infligez 4% de dégâts supplémentaires." }
-b[101442] = { sdesc="Tant qu'au moins 3 ennemis sont à 8 m de vous, vous générez 30% de menace supplémentaire et infligez 6% de dégâts supplémentaires." }
-b[101443] = { sdesc="Tant qu'au moins 3 ennemis sont à 8 m de vous, vous générez 40% de menace supplémentaire et infligez 8% de dégâts supplémentaires." }
-b[101444] = { sdesc="Tant qu'au moins 3 ennemis sont à 8 m de vous, vous générez 50% de menace supplémentaire et infligez 10% de dégâts supplémentaires." }
-b[111440] = { sdesc="Augmente la menace générée de 50%." }
-b[101640] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101641] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101642] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101643] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101644] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101645] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101646] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101647] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[101648] = { sdesc="Augmente de 1 le nombre maximum de métiers que vous pouvez apprendre simultanément." }
-b[33391] = { sdesc="Vous pouvez désormais chevaucher les montures terrestres à 100% de vitesse." }
-b[101830] = { sdesc="Incantation 1 sec. Place une protection sur vous pendant 2 h. Si des dégâts devaient vous tuer tant que la protection est active, vous devenez insensible à tous les dégâts et effets néfastes et êtes téléporté à votre point de départ après 5 sec. Ne protège pas des mécaniques de mort instantanée." }
-b[100980] = { sdesc="Le surplus de soins vous octroie un bouclier valant 5% du surplus de soins de vos sorts de soin direct, jusqu'à 20% de votre vie maximale." }
-b[100981] = { sdesc="Le surplus de soins vous octroie un bouclier valant 10% du surplus de soins de vos sorts de soin direct, jusqu'à 20% de votre vie maximale." }
-b[100982] = { sdesc="Le surplus de soins vous octroie un bouclier valant 15% du surplus de soins de vos sorts de soin direct, jusqu'à 20% de votre vie maximale." }
-b[100983] = { sdesc="Le surplus de soins vous octroie un bouclier valant 20% du surplus de soins de vos sorts de soin direct, jusqu'à 20% de votre vie maximale." }
-b[100984] = { sdesc="Le surplus de soins vous octroie un bouclier valant 25% du surplus de soins de vos sorts de soin direct, jusqu'à 20% de votre vie maximale." }
-b[110980] = { sdesc="Augmente les soins reçus de 5%." }
-b[101400] = { sdesc="5% de tous les soins que vous prodiguez à vos alliés vous soignent également." }
-b[101401] = { sdesc="10% de tous les soins que vous prodiguez à vos alliés vous soignent également." }
-b[101402] = { sdesc="15% de tous les soins que vous prodiguez à vos alliés vous soignent également." }
-b[101403] = { sdesc="20% de tous les soins que vous prodiguez à vos alliés vous soignent également." }
-b[101404] = { sdesc="25% de tous les soins que vous prodiguez à vos alliés vous soignent également." }
-b[111400] = { sdesc="Augmente les soins prodigués de 3%." }
-b[101790] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101791] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101792] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101793] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101794] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101795] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[101796] = { sdesc="Réduit le temps de recharge de Quickstep de 1 sec." }
-b[100340] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100341] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100342] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100343] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100344] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100345] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100346] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100347] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100348] = { sdesc="Augmente de 10% vos chances de se voir proposer des Echoes de meilleure qualité quand vous montez de niveau." }
-b[100720] = { sdesc="Réduit les dégâts magiques subis de 1%." }
-b[100721] = { sdesc="Réduit les dégâts magiques subis de 1%." }
-b[100722] = { sdesc="Réduit les dégâts magiques subis de 1%." }
-b[100723] = { sdesc="Réduit les dégâts magiques subis de 1%." }
-b[100724] = { sdesc="Réduit les dégâts magiques subis de 2%." }
-b[100725] = { sdesc="Réduit les dégâts magiques subis de 2%." }
-b[100726] = { sdesc="Réduit les dégâts magiques subis de 2%." }
-b[101540] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101541] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101542] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101543] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101545] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101546] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101544] = { sdesc="Augmente la quantité de matériaux obtenue par le minage de 10%." }
-b[101520] = { sdesc="Augmente la vitesse de monture de 1% pour chaque tranche de 2% de vitesse de déplacement supplémentaire que vous possédez." }
-b[100780] = { sdesc="Augmente la résistance à la Nature de 5." }
-b[100781] = { sdesc="Augmente la résistance à la Nature de 10." }
-b[100782] = { sdesc="Augmente la résistance à la Nature de 15." }
-b[100783] = { sdesc="Augmente la résistance à la Nature de 20." }
-b[100784] = { sdesc="Augmente la résistance à la Nature de 25." }
-b[100785] = { sdesc="Augmente la résistance à la Nature de 25." }
-b[100786] = { sdesc="Augmente la résistance à la Nature de 25." }
-b[110780] = { sdesc="Réduit les dégâts de Nature subis de 5%." }
-b[101810] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101811] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101812] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101813] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101814] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101815] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[101816] = { sdesc="Réduit le temps de recharge d'Emergency Exit de 2 min." }
-b[100140] = { sdesc="Augmente les dégâts et soins infligés de 1%." }
-b[100141] = { sdesc="Augmente les dégâts et soins infligés de 1%." }
-b[100142] = { sdesc="Augmente les dégâts et soins infligés de 1%." }
-b[100143] = { sdesc="Augmente les dégâts et soins infligés de 1%." }
-b[100144] = { sdesc="Augmente les dégâts et soins infligés de 2%." }
-b[100145] = { sdesc="Augmente les dégâts et soins infligés de 2%." }
-b[100146] = { sdesc="Augmente les dégâts et soins infligés de 2%." }
-b[100740] = { sdesc="Réduit les dégâts à distance subis de 1%." }
-b[100741] = { sdesc="Réduit les dégâts à distance subis de 1%." }
-b[100742] = { sdesc="Réduit les dégâts à distance subis de 1%." }
-b[100743] = { sdesc="Réduit les dégâts à distance subis de 1%." }
-b[100744] = { sdesc="Réduit les dégâts à distance subis de 2%." }
-b[100745] = { sdesc="Réduit les dégâts à distance subis de 2%." }
-b[100746] = { sdesc="Réduit les dégâts à distance subis de 2%." }
-b[101230] = { sdesc="Le temps d'incantation du système de voyage sur la carte du monde est désormais bien plus rapide." }
-b[101070] = { sdesc="Augmente de 1 le nombre de fois où vous pouvez accepter la résurrection. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas accepter la résurrection ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101071] = { sdesc="Augmente de 1 le nombre de fois où vous pouvez accepter la résurrection. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas accepter la résurrection ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101072] = { sdesc="Augmente de 1 le nombre de fois où vous pouvez accepter la résurrection. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas accepter la résurrection ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101073] = { sdesc="Augmente de 1 le nombre de fois où vous pouvez accepter la résurrection. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas accepter la résurrection ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[100600] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, votre vitesse de déplacement est augmentée de 10% supplémentaires pendant 5 sec." }
-b[100601] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, votre vitesse de déplacement est augmentée de 20% supplémentaires pendant 5 sec." }
-b[100602] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, votre vitesse de déplacement est augmentée de 30% supplémentaires pendant 5 sec." }
-b[101110] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101111] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101112] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101113] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101114] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101115] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[101116] = { sdesc="Vous permet de déclencher les effets de Tromper la mort 1 fois de plus. Les charges se rechargent au reset." }
-b[100660] = { sdesc="Après être resté immobile 3 sec hors combat, vous récupérez 3% de mana par seconde." }
-b[100661] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[100662] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[100663] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[100664] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[100665] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[100666] = { sdesc="Rest and Recover restaure 3% de mana supplémentaires par seconde." }
-b[110660] = { sdesc="Augmente votre mana maximal de 10%." }
-b[100420] = { sdesc="Toutes les 3 sec hors combat et démonté, votre vitesse de déplacement est augmentée de 5% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[100421] = { sdesc="Toutes les 3 sec hors combat et démonté, votre vitesse de déplacement est augmentée de 10% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[100422] = { sdesc="Toutes les 3 sec hors combat et démonté, votre vitesse de déplacement est augmentée de 20% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[110420] = { sdesc="Vitesse de déplacement augmentée de 10%." }
-b[100280] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, vos dégâts sont augmentés de 1% pendant 10 sec. Se cumule jusqu'à 5 fois." }
-b[101360] = { sdesc="Augmente l'expérience gagnée par les quêtes de 20% supplémentaires." }
-b[101361] = { sdesc="Augmente l'expérience gagnée par les quêtes de 20% supplémentaires." }
-b[101362] = { sdesc="Augmente l'expérience gagnée par les quêtes de 20% supplémentaires." }
-b[101363] = { sdesc="Augmente l'expérience gagnée par les quêtes de 20% supplémentaires." }
-b[101364] = { sdesc="Augmente l'expérience gagnée par les quêtes de 20% supplémentaires." }
-b[100920] = { sdesc="Hors combat, vous récupérez 3% de votre vie maximale toutes les 3 sec." }
-b[100921] = { sdesc="Hors combat, vous récupérez 6% de votre vie maximale toutes les 3 sec." }
-b[100922] = { sdesc="Hors combat, vous récupérez 9% de votre vie maximale toutes les 3 sec." }
-b[110920] = { sdesc="Augmente votre vie maximale de 5%." }
-b[100800] = { sdesc="Augmente la résistance à l'Ombre de 5." }
-b[100801] = { sdesc="Augmente la résistance à l'Ombre de 10." }
-b[100802] = { sdesc="Augmente la résistance à l'Ombre de 15." }
-b[100803] = { sdesc="Augmente la résistance à l'Ombre de 20." }
-b[100804] = { sdesc="Augmente la résistance à l'Ombre de 25." }
-b[100805] = { sdesc="Augmente la résistance à l'Ombre de 25." }
-b[100806] = { sdesc="Augmente la résistance à l'Ombre de 25." }
-b[110800] = { sdesc="Réduit les dégâts d'Ombre subis de 5%." }
-b[101050] = { sdesc="Réduit les dégâts de zone subis de 5%." }
-b[101051] = { sdesc="Réduit les dégâts de zone subis de 5%." }
-b[101052] = { sdesc="Réduit les dégâts de zone subis de 10%." }
-b[101760] = { sdesc="Canalisé. Canalisez pour réduire l'Intensité toutes les 1 sec, mais vous subissez 1% de dégâts par seconde." }
-b[100460] = { sdesc="Toutes les 3 sec hors combat et monté, votre vitesse de monture est augmentée de 5% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[100461] = { sdesc="Toutes les 3 sec hors combat et monté, votre vitesse de monture est augmentée de 10% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[100462] = { sdesc="Toutes les 3 sec hors combat et monté, votre vitesse de monture est augmentée de 20% supplémentaires. Se cumule jusqu'à 3 fois." }
-b[110460] = { sdesc="Augmente votre vitesse de monture de 10% supplémentaires." }
-b[103440] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103441] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103442] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103443] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103444] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103445] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103446] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103447] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103448] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103449] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103450] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103451] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103452] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103453] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103454] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103455] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103456] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103457] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103458] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103459] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103460] = { sdesc="Octroie un point de talent supplémentaire." }
-b[103461] = { sdesc="Octroie un point de talent supplémentaire." }
-b[100520] = { sdesc="Votre Pierre de foyer se recharge 50% plus vite." }
-b[100521] = { sdesc="Votre Pierre de foyer se recharge 100% plus vite." }
-b[100522] = { sdesc="Votre Pierre de foyer se recharge 150% plus vite." }
-b[100523] = { sdesc="Votre Pierre de foyer se recharge 200% plus vite." }
-b[100524] = { sdesc="Votre Pierre de foyer se recharge 250% plus vite." }
-b[110520] = { sdesc="Réduit le temps d'incantation de votre Pierre de foyer de 50%." }
-b[103520] = { sdesc="Augmente vos chances de trouver du butin rare de 10%." }
-b[103521] = { sdesc="Augmente vos chances de trouver du butin rare de 10%." }
-b[103522] = { sdesc="Augmente vos chances de trouver du butin rare de 10%." }
-b[101250] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101251] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101252] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101253] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101254] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101255] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101256] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101257] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101258] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101270] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101271] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101272] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101273] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101274] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101275] = { sdesc="Augmente de 1 le nombre de relances d'Echo disponibles au début d'une run." }
-b[101710] = { sdesc="Réduit tous les dégâts subis pendant un étourdissement ou un contrôle mental de 10%." }
-b[101711] = { sdesc="Réduit tous les dégâts subis pendant un étourdissement ou un contrôle mental de 20%." }
-b[101712] = { sdesc="Réduit tous les dégâts subis pendant un étourdissement ou un contrôle mental de 30%." }
-b[101713] = { sdesc="Réduit tous les dégâts subis pendant un étourdissement ou un contrôle mental de 40%." }
-b[101714] = { sdesc="Réduit tous les dégâts subis pendant un étourdissement ou un contrôle mental de 50%." }
-b[101130] = { sdesc="Chaque run, vous pouvez choisir l'option de résurrection gratuitement 1 fois de plus. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas ressusciter ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101131] = { sdesc="Chaque run, vous pouvez choisir l'option de résurrection gratuitement 1 fois de plus. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas ressusciter ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101132] = { sdesc="Chaque run, vous pouvez choisir l'option de résurrection gratuitement 1 fois de plus. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas ressusciter ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101133] = { sdesc="Chaque run, vous pouvez choisir l'option de résurrection gratuitement 1 fois de plus. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas ressusciter ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[101134] = { sdesc="Chaque run, vous pouvez choisir l'option de résurrection gratuitement 1 fois de plus. Les charges se rechargent au reset.\n|cff8b0000En Hardcore : |cffffffffVous ne pouvez pas ressusciter ; à la place, tous les dégâts subis sont réduits de 5%.|r" }
-b[100500] = { sdesc="Vous êtes insensible aux effets d'Étourdissement (Daze). Ne s'applique pas à Aspect of the Pack ni Aspect of the Cheetah." }
-b[100860] = { sdesc="Sous 10% de vie, les dégâts subis sont réduits de 30%." }
-b[100861] = { sdesc="Sous 20% de vie, les dégâts subis sont réduits de 30%." }
-b[100862] = { sdesc="Sous 30% de vie, les dégâts subis sont réduits de 30%." }
-b[101420] = { sdesc="Subir des coups de mêlée directs octroie un cumul d'Élan. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec. À 12 cumuls, vous infligez 10 dégâts physiques et générez une menace massive. Les dégâts dépendent de votre Endurance." }
-b[101421] = { sdesc="Subir des coups de mêlée directs octroie un cumul d'Élan. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec. À 10 cumuls, vous infligez 10 dégâts physiques et générez une menace massive. Les dégâts dépendent de votre Endurance." }
-b[101422] = { sdesc="Subir des coups de mêlée directs octroie un cumul d'Élan. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec. À 8 cumuls, vous infligez 10 dégâts physiques et générez une menace massive. Les dégâts dépendent de votre Endurance." }
-b[101423] = { sdesc="Subir des coups de mêlée directs octroie un cumul d'Élan. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec. À 7 cumuls, vous infligez 10 dégâts physiques et générez une menace massive. Les dégâts dépendent de votre Endurance." }
-b[101424] = { sdesc="Subir des coups de mêlée directs octroie un cumul d'Élan. Cet effet ne peut pas se produire plus d'une fois toutes les 0,3 sec. À 6 cumuls, vous infligez 10 dégâts physiques et générez une menace massive. Les dégâts dépendent de votre Endurance." }
-b[111420] = { sdesc="Augmente la menace générée de 50%." }
-b[100560] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, vous récupérez 5% de votre vie maximale." }
-b[100561] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, vous récupérez 10% de votre vie maximale." }
-b[100562] = { sdesc="Chaque fois que vous tuez un ennemi octroyant de l'expérience ou de l'honneur, vous récupérez 15% de votre vie maximale." }
-b[101210] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 10% de votre vie maximale en plus." }
-b[101211] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 20% de votre vie maximale en plus." }
-b[101212] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 30% de votre vie maximale en plus." }
-b[101213] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 40% de votre vie maximale en plus." }
-b[101214] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 50% de votre vie maximale en plus." }
-b[101215] = { sdesc="Lorsque vous utilisez une potion, vous récupérez instantanément 60% de votre vie maximale en plus." }
-b[101200] = { sdesc="Vous gagnez désormais de l'expérience en récoltant." }
-b[901001] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 10% plus vite" }
-b[901002] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 20% plus vite" }
-b[901003] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 25% plus vite" }
-b[901004] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 30% plus vite" }
-b[901005] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 500" }
-b[901006] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 1000" }
-b[901007] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 2000" }
-b[901008] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 4000" }
-b[102221] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2500 pendant 10 sec" }
-b[901009] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 500 pendant 10 sec" }
-b[901010] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1000 pendant 10 sec" }
-b[901011] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1500 pendant 10 sec" }
-b[901012] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2000 pendant 10 sec" }
-b[901013] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 3%" }
-b[901014] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 6%" }
-b[901015] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 9%" }
-b[901016] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 12%" }
-b[102222] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 15%" }
-b[901017] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 20% et augmente le délai entre ses attaques de 15%." }
-b[901018] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 25% et augmente le délai entre ses attaques de 20%." }
-b[901019] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 30% et augmente le délai entre ses attaques de 25%." }
-b[901020] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 35% et augmente le délai entre ses attaques de 30%." }
-b[700081] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée et à distance ont une chance de réduire l'armure de la cible. L'effet est augmenté par votre Agilité." }
-b[700082] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de désarmer la cible. La durée du désarmement est augmentée par votre Endurance." }
-b[700083] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités physiques ont une chance de blesser la cible, la faisant saigner et infligeant des dégâts toutes les 3 sec pendant 15 sec. Les dégâts évoluent avec la vitesse de votre arme." }
-b[102207] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 4.0 sec" }
-b[102223] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 35% et augmente le délai entre ses attaques de 30%." }
-b[700085] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Givre ont une chance de lancer un trait de givre sur la cible, infligeant des dégâts de Givre et réduisant sa vitesse de déplacement. Les dégâts augmentent avec le nombre d'effets de ralentissement sur la cible." }
-b[700086] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts d'Ombre ont une chance d'envoyer un trait d'ombre sur la cible, infligeant des dégâts d'Ombre. Les dégâts augmentent avec vos effets de dégâts d'Ombre sur la durée actifs sur la cible." }
-b[700087] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Feu. Les dégâts évoluent avec votre score de critique." }
-b[700088] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Nature. Les dégâts évoluent avec votre mana total." }
-b[700089] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Nature ont une chance de couvrir la cible d'Acide corrosif, infligeant des dégâts de Nature toutes les 3 sec. Tant qu'il est actif, l'Acide corrosif réduit l'armure de la cible, augmenté de 10% pour chacun de vos effets de dégâts sur la durée actifs sur la cible." }
-b[700090] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée et à distance ont une chance de Blesser la cible. Cet effet se produit deux fois plus souvent dans le dos de la cible." }
-b[901031] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 10%" }
-b[102208] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 300 soins supplémentaires par seconde, augmentés par votre Esprit" }
-b[901033] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 30%" }
-b[901034] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 40%" }
-b[700095] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de voler la vie de la cible. Le montant volé augmente à mesure que votre santé est basse et avec les effets qui augmentent les soins prodigués." }
-b[700096] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Givre. Cet effet a deux fois plus de chances de se produire contre des cibles ralenties." }
-b[700097] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Lorsque vous passez sous 40% de santé, vous êtes soigné de 50% de votre santé maximale et votre Force est augmentée pendant 15 secondes. Cet effet ne peut pas se produire plus d'une fois toutes les 15 secondes." }
-b[700098] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques et capacités de mêlée ont une chance de frapper une fois supplémentaire pour des dégâts normaux." }
-b[102209] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 50% de santé supplémentaire, augmentés par votre Intelligence" }
-b[700101] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'augmenter les dégâts critiques de vos prochaines capacités lancées dans les 4 secondes de 25%." }
-b[700102] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper un ennemi de dégâts Sacrés. La chance évolue avec votre chance de toucher." }
-b[700103] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'augmenter les dégâts subis par la cible de 15% pendant 5 secondes." }
-b[700104] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de foudroyer votre ennemi, infligeant des dégâts de Nature puis rebondissant sur d'autres ennemis proches. Chaque rebond réduit la résistance à la Nature de la victime de 25%. Affecte 5 cibles. Votre cible principale est également happée par un cyclone, ralentissant sa vitesse d'attaque de 20% pendant 12 secondes." }
-b[700105] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de projeter une boule de feu infligeant des dégâts de Feu plus des dégâts de feu supplémentaires sur 10 secondes. Les deux effets évoluent avec les dégâts de Feu sur la durée actifs sur votre cible." }
-b[700106] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de vous faire gagner 10 points d'énergie ou 5 de rage." }
-b[700107] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques automatiques à distance déclenchent automatiquement un second tir" }
-b[102210] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 2400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée" }
-b[102226] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 50%" }
-b[700109] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'invoquer l'esprit infernal de Shahram." }
-b[700110] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente vos dégâts contre les Morts-vivants." }
-b[700111] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente votre régénération de Mana de 40%" }
-b[700112] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts de soin ont une chance de provoquer Bénédiction des anciens rois pendant 15 secondes, permettant à vos soins de protéger la cible en absorbant des dégâts égaux à 15% du montant soigné." }
-b[900925] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre Force totale de 3%" }
-b[700113] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente la vitesse de course de 30%" }
-b[900926] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 6%" }
-b[700114] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Soigne périodiquement l'incantateur." }
-b[900927] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 9%" }
-b[700115] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Givre. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Givre." }
-b[900928] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 12%" }
-b[700116] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Nature. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance à la Nature." }
-b[900929] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 3%" }
-b[900930] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 6%" }
-b[900931] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 9%" }
-b[900932] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 12%" }
-b[700120] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée ont 20% de chances de vous faire frapper tous les ennemis proches, infligeant des dégâts d'arme. Avec une arme à deux mains, vous avez 100% de chances de déclencher Tornade d'acier sur votre cible" }
-b[900933] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 3%" }
-b[700121] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Feu. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Feu." }
-b[900934] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 6%" }
-b[900935] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 9%" }
-b[900936] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 12%" }
-b[102212] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 5% de dégâts et de soins supplémentaires" }
-b[900937] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 3%" }
-b[900938] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 6%" }
-b[900939] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 9%" }
-b[900940] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 12%" }
-b[900941] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 6%" }
-b[900942] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 12%" }
-b[700130] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Enveloppe l'incantateur d'un bouclier de feu infligeant des dégâts de Feu chaque seconde aux ennemis proches. Les dégâts augmentent avec la résistance au Feu de l'incantateur." }
-b[900943] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 18%" }
-b[900944] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 24%" }
-b[102213] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 15% de puissance d'attaque et 30% de puissance des sorts pendant 12 secondes" }
-b[900945] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 3%" }
-b[900946] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 6%" }
-b[900947] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 9%" }
-b[900948] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 12%" }
-b[900949] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 100 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique" }
-b[900950] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 150 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique" }
-b[900951] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 220 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique" }
-b[900952] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 300 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique" }
-b[102214] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 300 dégâts de Givre, augmentés par votre Endurance" }
-b[900953] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 2 sec" }
-b[900954] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 2.5 sec" }
-b[900955] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 3 sec" }
-b[900956] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 3.5 sec" }
-b[900957] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 50 soins supplémentaires par seconde, augmentés par votre Esprit" }
-b[900958] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 75 soins supplémentaires par seconde, augmentés par votre Esprit" }
-b[900959] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 100 soins supplémentaires par seconde, augmentés par votre Esprit" }
-b[900960] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 150 soins supplémentaires par seconde, augmentés par votre Esprit" }
-b[102215] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 12%" }
-b[900961] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 10% de santé supplémentaire, augmentés par votre Intelligence" }
-b[900962] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 20% de santé supplémentaire, augmentés par votre Intelligence" }
-b[900963] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 30% de santé supplémentaire, augmentés par votre Intelligence" }
-b[900964] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 40% de santé supplémentaire, augmentés par votre Intelligence" }
-b[900965] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 350 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée" }
-b[900966] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 450 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée" }
-b[900967] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 800 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée" }
-b[102200] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 15%" }
-b[102216] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 15000 dégâts" }
-b[900969] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 5%" }
-b[900970] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 10%" }
-b[900971] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 15%" }
-b[900972] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 20%" }
-b[900973] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 2% de dégâts et de soins supplémentaires" }
-b[900974] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 3% de dégâts et de soins supplémentaires" }
-b[900975] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 4% de dégâts et de soins supplémentaires" }
-b[102201] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 15%" }
-b[102217] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 24% des dégâts subis. Unique" }
-b[900977] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 3% de puissance d'attaque et 6% de puissance des sorts pendant 12 secondes" }
-b[900978] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 6% de puissance d'attaque et 12% de puissance des sorts pendant 12 secondes" }
-b[900979] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 9% de puissance d'attaque et 18% de puissance des sorts pendant 12 secondes" }
-b[900980] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 12% de puissance d'attaque et 24% de puissance des sorts pendant 12 secondes" }
-b[900981] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 50 dégâts de Givre, augmentés par votre Endurance" }
-b[700100] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente votre score de Défense." }
-b[900982] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 100 dégâts de Givre, augmentés par votre Endurance" }
-b[700094] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos coups critiques d'attaque de base en mêlée et à distance augmentent votre puissance d'attaque de 15, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde." }
-b[900983] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 200 dégâts de Givre, augmentés par votre Endurance" }
-b[700093] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Tuer un ennemi augmente votre score de hâte, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde." }
-b[900984] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 300 dégâts de Givre, augmentés par votre Endurance" }
-b[102218] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 200% de dégâts supplémentaires" }
-b[900985] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 2%" }
-b[700092] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de réduire toutes les caractéristiques de la cible. Cet effet est augmenté par votre résistance à la Nature." }
-b[900986] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 4%" }
-b[700091] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos coups critiques ont une chance de corrompre la cible, infligeant des dégâts d'Ombre toutes les 3 sec. Tant que la Corruption est active, vos coups critiques de sort contre la cible la font flamboyer, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut flamboyer qu'une fois toutes les 2 sec au maximum." }
-b[900987] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 6%" }
-b[700078] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités offensifs ont une chance d'étourdir la cible. La durée de l'étourdissement est augmentée par votre Force." }
-b[900988] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 8%" }
-b[700079] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités offensifs ont une chance d'empoisonner la cible, infligeant des dégâts toutes les 2 sec pendant 8 sec. Les cibles empoisonnées subissent 5% de dégâts supplémentaires de vos effets de dégâts sur la durée." }
-b[900989] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 5000 dégâts" }
-b[700080] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités de mêlée et à distance ont une chance d'infliger une Blessure fatale. Les dégâts évoluent avec votre score de pénétration d'armure." }
-b[900990] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 7500 dégâts" }
-b[700084] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Feu ont une chance de projeter une boule de feu sur la cible, infligeant des dégâts de Feu plus des dégâts supplémentaires toutes les 2 sec pendant 8 sec. Les dégâts évoluent avec votre Intelligence." }
-b[900991] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 10000 dégâts" }
-b[700108] = { sdesc="Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'appeler une Étincelle d'Azzinoth pour vous protéger au combat pendant une courte durée." }
-b[900992] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 12500 dégâts" }
-b[102219] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 40% plus vite" }
-b[900993] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 5% des dégâts subis. Unique" }
-b[102202] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 15%" }
-b[900994] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 8% des dégâts subis. Unique" }
-b[900968] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 1400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée" }
-b[900995] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 12% des dégâts subis. Unique" }
-b[901032] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 20%" }
-b[900996] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 18% des dégâts subis. Unique" }
-b[102203] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 15%" }
-b[900997] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 25% de dégâts supplémentaires" }
-b[900976] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 5% de dégâts et de soins supplémentaires" }
-b[900998] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 50% de dégâts supplémentaires" }
-b[102204] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 30%" }
-b[900999] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 75% de dégâts supplémentaires" }
-b[102205] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 15%" }
-b[901000] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 100% de dégâts supplémentaires" }
-b[102220] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 8000" }
-b[102206] = { sdesc="Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 600 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique" }
-
-EbonholdFR_Data.affixEffectFR = {}
-local ae = EbonholdFR_Data.affixEffectFR
-ae["Your pet attacks 10% faster"] = "Votre familier attaque 10% plus vite"
-ae["Your pet attacks 20% faster"] = "Votre familier attaque 20% plus vite"
-ae["Your pet attacks 25% faster"] = "Votre familier attaque 25% plus vite"
-ae["Your pet attacks 30% faster"] = "Votre familier attaque 30% plus vite"
-ae["Increases your Armor by 500"] = "Augmente votre Armure de 500"
-ae["Increases your Armor by 1000"] = "Augmente votre Armure de 1000"
-ae["Increases your Armor by 2000"] = "Augmente votre Armure de 2000"
-ae["Increases your Armor by 4000"] = "Augmente votre Armure de 4000"
-ae["Your periodic heals may increase your Healing Spell Power by 2500 for 10 sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2500 pendant 10 sec"
-ae["Your periodic heals may increase your Healing Spell Power by 500 for 10 sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 500 pendant 10 sec"
-ae["Your periodic heals may increase your Healing Spell Power by 1000 for 10 sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1000 pendant 10 sec"
-ae["Your periodic heals may increase your Healing Spell Power by 1500 for 10 sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1500 pendant 10 sec"
-ae["Your periodic heals may increase your Healing Spell Power by 2000 for 10 sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2000 pendant 10 sec"
-ae["Increases your armor penetration by 3%"] = "Augmente votre pénétration d'armure de 3%"
-ae["Increases your armor penetration by 6%"] = "Augmente votre pénétration d'armure de 6%"
-ae["Increases your armor penetration by 9%"] = "Augmente votre pénétration d'armure de 9%"
-ae["Increases your armor penetration by 12%"] = "Augmente votre pénétration d'armure de 12%"
-ae["Increases your armor penetration by 15%"] = "Augmente votre pénétration d'armure de 15%"
-ae["Dealing damage slows your target’s movement by 20% and increases the time between their attacks by 15%."] = "Infliger des dégâts ralentit le déplacement de votre cible de 20% et augmente le délai entre ses attaques de 15%."
-ae["Dealing damage slows your target’s movement by 25% and increases the time between their attacks by 20%."] = "Infliger des dégâts ralentit le déplacement de votre cible de 25% et augmente le délai entre ses attaques de 20%."
-ae["Dealing damage slows your target’s movement by 30% and increases the time between their attacks by 25%."] = "Infliger des dégâts ralentit le déplacement de votre cible de 30% et augmente le délai entre ses attaques de 25%."
-ae["Dealing damage slows your target’s movement by 35% and increases the time between their attacks by 30%."] = "Infliger des dégâts ralentit le déplacement de votre cible de 35% et augmente le délai entre ses attaques de 30%."
-ae["Your melee and ranged attacks have a chance to reduce the target's armor. The effect is increased by your Agility."] = "Vos attaques de mêlée et à distance ont une chance de réduire l'armure de la cible. L'effet est augmenté par votre Agilité."
-ae["Your spells and abilities have a chance to disarm the target. The duration of the disarm is increased by your Stamina."] = "Vos sorts et capacités ont une chance de désarmer la cible. La durée du désarmement est augmentée par votre Endurance."
-ae["Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every 3 sec for 15 sec. Damage scales with your weapon speed."] = "Vos capacités physiques ont une chance de blesser la cible, la faisant saigner et infligeant des dégâts toutes les 3 sec pendant 15 sec. Les dégâts évoluent avec la vitesse de votre arme."
-ae["Your spells may reduce a random cooldown by 4.0 sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de 4.0 sec"
-ae["Your Frost damage has a chance to launch a bolt of frost at the target, dealing Frost damage and reducing movement speed. Damage is increased by the number of slowing effects on the target."] = "Vos dégâts de Givre ont une chance de lancer un trait de givre sur la cible, infligeant des dégâts de Givre et réduisant sa vitesse de déplacement. Les dégâts augmentent avec le nombre d'effets de ralentissement sur la cible."
-ae["Your Shadow damage has a chance to send a shadowy bolt at the target, dealing Shadow damage. Damage is increased by your Shadow damage-over-time effects active on the target."] = "Vos dégâts d'Ombre ont une chance d'envoyer un trait d'ombre sur la cible, infligeant des dégâts d'Ombre. Les dégâts augmentent avec vos effets de dégâts d'Ombre sur la durée actifs sur la cible."
-ae["Your spells and abilities have a chance to blast the target dealing Fire damage. Damage scales with your critical strike rating."] = "Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Feu. Les dégâts évoluent avec votre score de critique."
-ae["Your spells and abilities have a chance to blast the target dealing Nature damage. Damage scales with your total mana."] = "Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Nature. Les dégâts évoluent avec votre mana total."
-ae["Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every 3 sec. While active, Corrosive Acid reduces the target's armor, increased by 10% for each of your damage-over-time effects active on the target."] = "Vos dégâts de Nature ont une chance de couvrir la cible d'Acide corrosif, infligeant des dégâts de Nature toutes les 3 sec. Tant qu'il est actif, l'Acide corrosif réduit l'armure de la cible, augmenté de 10% pour chacun de vos effets de dégâts sur la durée actifs sur la cible."
-ae["Your melee and ranged attacks have a chance to Wound the target. This effect occurs twice as often when behind the target."] = "Vos attaques de mêlée et à distance ont une chance de Blesser la cible. Cet effet se produit deux fois plus souvent dans le dos de la cible."
-ae["increases your Block value by 10%"] = "augmente votre valeur de Blocage de 10%"
-ae["Your HoTs tick for 300 additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent 300 soins supplémentaires par seconde, augmentés par votre Esprit"
-ae["increases your Block value by 30%"] = "augmente votre valeur de Blocage de 30%"
-ae["increases your Block value by 40%"] = "augmente votre valeur de Blocage de 40%"
-ae["Your spells and abilities have a chance to steal life from the target. The amount stolen is increased the lower your health and by effects that increase healing done."] = "Vos sorts et capacités ont une chance de voler la vie de la cible. Le montant volé augmente à mesure que votre santé est basse et avec les effets qui augmentent les soins prodigués."
-ae["Your spells and abilities have a chance to blast the target dealing Frost damage. This effect has twice the chance to occur against slowed targets."] = "Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Givre. Cet effet a deux fois plus de chances de se produire contre des cibles ralenties."
-ae["When you fall below 40% health, you are healed for 50% of your max health and your Strength is increased for 15 seconds. This effect cannot occur more than once every 15 seconds."] = "Lorsque vous passez sous 40% de santé, vous êtes soigné de 50% de votre santé maximale et votre Force est augmentée pendant 15 secondes. Cet effet ne peut pas se produire plus d'une fois toutes les 15 secondes."
-ae["Your melee attacks and abilities have a chance to strike an additional time for normal damage."] = "Vos attaques et capacités de mêlée ont une chance de frapper une fois supplémentaire pour des dégâts normaux."
-ae["Direct Critical heals restore 50% additional health, increased by Intellect"] = "Les soins critiques directs restaurent 50% de santé supplémentaire, augmentés par votre Intelligence"
-ae["Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within 4 seconds by 25%."] = "Vos sorts et capacités ont une chance d'augmenter les dégâts critiques de vos prochaines capacités lancées dans les 4 secondes de 25%."
-ae["Your spells and abilities have a chance to Smites an enemy with Holy damage. Chance scale with your Hit Chance."] = "Vos sorts et capacités ont une chance de frapper un ennemi de dégâts Sacrés. La chance évolue avec votre chance de toucher."
-ae["Your spells and abilities have a chance to increase the target's damage taken by 15% for 5 seconds."] = "Vos sorts et capacités ont une chance d'augmenter les dégâts subis par la cible de 15% pendant 5 secondes."
-ae["Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by 25%. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 seconds."] = "Vos sorts et capacités ont une chance de foudroyer votre ennemi, infligeant des dégâts de Nature puis rebondissant sur d'autres ennemis proches. Chaque rebond réduit la résistance à la Nature de la victime de 25%. Affecte 5 cibles. Votre cible principale est également happée par un cyclone, ralentissant sa vitesse d'attaque de 20% pendant 12 secondes."
-ae["Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over 10 seconds. Both effects scale with the Fire damage-over-time active on your target."] = "Vos sorts et capacités ont une chance de projeter une boule de feu infligeant des dégâts de Feu plus des dégâts de feu supplémentaires sur 10 secondes. Les deux effets évoluent avec les dégâts de Feu sur la durée actifs sur votre cible."
-ae["Your spells and abilities have a chance to make you gain 10 Energy or 5 Rage."] = "Vos sorts et capacités ont une chance de vous faire gagner 10 points d'énergie ou 5 de rage."
-ae["Your ranged auto-attacks automatically trigger a second shot"] = "Vos attaques automatiques à distance déclenchent automatiquement un second tir"
-ae["Your damaging abilities may fire an Infinite Star dealing 2400 Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant 2400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ae["increases your Block value by 50%"] = "augmente votre valeur de Blocage de 50%"
-ae["Your spells and abilities have a chance to Summons the infernal spirit of Shahram."] = "Vos sorts et capacités ont une chance d'invoquer l'esprit infernal de Shahram."
-ae["Increases your damage against Undead."] = "Augmente vos dégâts contre les Morts-vivants."
-ae["Increases your Mana Regeneration by 40%"] = "Augmente votre régénération de Mana de 40%"
-ae["Your healing spells have a chance to cause Blessing of Ancient Kings for 15 seconds allowing your heals to shield the target absorbing damage equal to 15% of the amount healed."] = "Vos sorts de soin ont une chance de provoquer Bénédiction des anciens rois pendant 15 secondes, permettant à vos soins de protéger la cible en absorbant des dégâts égaux à 15% du montant soigné."
-ae["increases your total Strength by 3%"] = "augmente votre Force totale de 3%"
-ae["Increases run speed by 30%"] = "Augmente la vitesse de course de 30%"
-ae["Increases your total Strength by 6%"] = "Augmente votre Force totale de 6%"
-ae["Periodically healing the caster."] = "Soigne périodiquement l'incantateur."
-ae["Increases your total Strength by 9%"] = "Augmente votre Force totale de 9%"
-ae["Your ranged abilities have a chance to strike your target with Frost Damage. Damage is futher incrased with your ranged weapon speed and your Frost Resistance."] = "Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Givre. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Givre."
-ae["Increases your total Strength by 12%"] = "Augmente votre Force totale de 12%"
-ae["Your ranged abilities have a chance to strike your target with Nature Damage. Damage is futher incrased with your ranged weapon speed and your Nature Resistance."] = "Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Nature. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance à la Nature."
-ae["Increases your total Agility by 3%"] = "Augmente votre Agilité totale de 3%"
-ae["Increases your total Agility by 6%"] = "Augmente votre Agilité totale de 6%"
-ae["Increases your total Agility by 9%"] = "Augmente votre Agilité totale de 9%"
-ae["Increases your total Agility by 12%"] = "Augmente votre Agilité totale de 12%"
-ae["Your melee attacks have 20% chance to make you strike all nearby, dealing weapon damage. While using a two-handed weapon, you have a 100% chance to trigger Bladestorm on your target"] = "Vos attaques de mêlée ont 20% de chances de vous faire frapper tous les ennemis proches, infligeant des dégâts d'arme. Avec une arme à deux mains, vous avez 100% de chances de déclencher Tornade d'acier sur votre cible"
-ae["Increases your total Intellect by 3%"] = "Augmente votre Intelligence totale de 3%"
-ae["Your ranged abilities have a chance to strike your target with Fire Damage. Damage is futher incrased with your ranged weapon speed and your Fire Resistance."] = "Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Feu. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Feu."
-ae["Increases your total Intellect by 6%"] = "Augmente votre Intelligence totale de 6%"
-ae["Increases your total Intellect by 9%"] = "Augmente votre Intelligence totale de 9%"
-ae["Increases your total Intellect by 12%"] = "Augmente votre Intelligence totale de 12%"
-ae["Critical strikes deal 5% more damage and healing"] = "Les coups critiques infligent 5% de dégâts et de soins supplémentaires"
-ae["Increases your total Spirit by 3%"] = "Augmente votre Esprit total de 3%"
-ae["Increases your total Spirit by 6%"] = "Augmente votre Esprit total de 6%"
-ae["Increases your total Spirit by 9%"] = "Augmente votre Esprit total de 9%"
-ae["Increases your total Spirit by 12%"] = "Augmente votre Esprit total de 12%"
-ae["Increases your total Stamina by 6%"] = "Augmente votre Endurance totale de 6%"
-ae["Increases your total Stamina by 12%"] = "Augmente votre Endurance totale de 12%"
-ae["Wraps the caster in a fire shield that deals fire damage every second to nearby enemies. Damage increases with the caster’s fire resistance."] = "Enveloppe l'incantateur d'un bouclier de feu infligeant des dégâts de Feu chaque seconde aux ennemis proches. Les dégâts augmentent avec la résistance au Feu de l'incantateur."
-ae["Increases your total Stamina by 18%"] = "Augmente votre Endurance totale de 18%"
-ae["Increases your total Stamina by 24%"] = "Augmente votre Endurance totale de 24%"
-ae["Taking damage may grant 15% Attack Power and 30% Spell Power for 12 seconds"] = "Subir des dégâts peut accorder 15% de puissance d'attaque et 30% de puissance des sorts pendant 12 secondes"
-ae["Increases your critical strike chance by 3%"] = "Augmente vos chances de coup critique de 3%"
-ae["Increases your critical strike chance by 6%"] = "Augmente vos chances de coup critique de 6%"
-ae["Increases your critical strike chance by 9%"] = "Augmente vos chances de coup critique de 9%"
-ae["Increases your critical strike chance by 12%"] = "Augmente vos chances de coup critique de 12%"
-ae["Damaging abilities may release a Frozen Pulse dealing 100 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant 100 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ae["Damaging abilities may release a Frozen Pulse dealing 150 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant 150 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ae["Damaging abilities may release a Frozen Pulse dealing 220 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant 220 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ae["Damaging abilities may release a Frozen Pulse dealing 300 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant 300 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ae["Your abilities may unleash a Frost Breath dealing 300 Frost damage, increased by your Stamina"] = "Vos capacités peuvent déchaîner un Souffle de givre infligeant 300 dégâts de Givre, augmentés par votre Endurance"
-ae["Your spells may reduce a random cooldown by 2 sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de 2 sec"
-ae["Your spells may reduce a random cooldown by 2.5 sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de 2.5 sec"
-ae["Your spells may reduce a random cooldown by 3 sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de 3 sec"
-ae["Your spells may reduce a random cooldown by 3.5 sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de 3.5 sec"
-ae["Your HoTs tick for 50 additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent 50 soins supplémentaires par seconde, augmentés par votre Esprit"
-ae["Your HoTs tick for 75 additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent 75 soins supplémentaires par seconde, augmentés par votre Esprit"
-ae["Your HoTs tick for 100 additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent 100 soins supplémentaires par seconde, augmentés par votre Esprit"
-ae["Your HoTs tick for 150 additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent 150 soins supplémentaires par seconde, augmentés par votre Esprit"
-ae["Increases damage and healing done by 12%"] = "Augmente les dégâts et soins infligés de 12%"
-ae["Direct Critical heals restore 10% additional health, increased by Intellect"] = "Les soins critiques directs restaurent 10% de santé supplémentaire, augmentés par votre Intelligence"
-ae["Direct Critical heals restore 20% additional health, increased by Intellect"] = "Les soins critiques directs restaurent 20% de santé supplémentaire, augmentés par votre Intelligence"
-ae["Direct Critical heals restore 30% additional health, increased by Intellect"] = "Les soins critiques directs restaurent 30% de santé supplémentaire, augmentés par votre Intelligence"
-ae["Direct Critical heals restore 40% additional health, increased by Intellect"] = "Les soins critiques directs restaurent 40% de santé supplémentaire, augmentés par votre Intelligence"
-ae["Your damaging abilities may fire an Infinite Star dealing 350 Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant 350 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ae["Your damaging abilities may fire an Infinite Star dealing 450 Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant 450 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ae["Your damaging abilities may fire an Infinite Star dealing 800 Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant 800 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ae["Increases your total Strength by 15%"] = "Augmente votre Force totale de 15%"
-ae["Every 12 sec, applies a 15000 damage shield"] = "Toutes les 12 sec, applique un bouclier absorbant 15000 dégâts"
-ae["Increases spell effectiveness by 5%"] = "Augmente l'efficacité des sorts de 5%"
-ae["Increases spell effectiveness by 10%"] = "Augmente l'efficacité des sorts de 10%"
-ae["Increases spell effectiveness by 15%"] = "Augmente l'efficacité des sorts de 15%"
-ae["Increases spell effectiveness by 20%"] = "Augmente l'efficacité des sorts de 20%"
-ae["Critical strikes deal 2% more damage and healing"] = "Les coups critiques infligent 2% de dégâts et de soins supplémentaires"
-ae["Critical strikes deal 3% more damage and healing"] = "Les coups critiques infligent 3% de dégâts et de soins supplémentaires"
-ae["Critical strikes deal 4% more damage and healing"] = "Les coups critiques infligent 4% de dégâts et de soins supplémentaires"
-ae["Increases your total Agility by 15%"] = "Augmente votre Agilité totale de 15%"
-ae["While below 35% health, absorbs 24% of damage taken. Unique"] = "Tant que vous êtes sous 35% de santé, absorbe 24% des dégâts subis. Unique"
-ae["Taking damage may grant 3% Attack Power and 6% Spell Power for 12 seconds"] = "Subir des dégâts peut accorder 3% de puissance d'attaque et 6% de puissance des sorts pendant 12 secondes"
-ae["Taking damage may grant 6% Attack Power and 12% Spell Power for 12 seconds"] = "Subir des dégâts peut accorder 6% de puissance d'attaque et 12% de puissance des sorts pendant 12 secondes"
-ae["Taking damage may grant 9% Attack Power and 18% Spell Power for 12 seconds"] = "Subir des dégâts peut accorder 9% de puissance d'attaque et 18% de puissance des sorts pendant 12 secondes"
-ae["Taking damage may grant 12% Attack Power and 24% Spell Power for 12 seconds"] = "Subir des dégâts peut accorder 12% de puissance d'attaque et 24% de puissance des sorts pendant 12 secondes"
-ae["Your abilities may unleash a Frost Breath dealing 50 Frost damage, increased by your Stamina"] = "Vos capacités peuvent déchaîner un Souffle de givre infligeant 50 dégâts de Givre, augmentés par votre Endurance"
-ae["Increases your Defense rating."] = "Augmente votre score de Défense."
-ae["Your abilities may unleash a Frost Breath dealing 100 Frost damage, increased by your Stamina"] = "Vos capacités peuvent déchaîner un Souffle de givre infligeant 100 dégâts de Givre, augmentés par votre Endurance"
-ae["Your melee and ranged basic attack critical strikes increase your attack power by 15, stacking up to 20 times. One stack is lost every second."] = "Vos coups critiques d'attaque de base en mêlée et à distance augmentent votre puissance d'attaque de 15, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde."
-ae["Your abilities may unleash a Frost Breath dealing 200 Frost damage, increased by your Stamina"] = "Vos capacités peuvent déchaîner un Souffle de givre infligeant 200 dégâts de Givre, augmentés par votre Endurance"
-ae["Killing an enemy increases your haste rating, stacking up to 20 times. One stack is lost every second."] = "Tuer un ennemi augmente votre score de hâte, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde."
-ae["Your pet deals 200% more damage"] = "Votre familier inflige 200% de dégâts supplémentaires"
-ae["Increases damage and healing done by 2%"] = "Augmente les dégâts et soins infligés de 2%"
-ae["Your spells and abilities have a chance to reduce all attributes of the target. This effect is increased by your Nature Resistance."] = "Vos sorts et capacités ont une chance de réduire toutes les caractéristiques de la cible. Cet effet est augmenté par votre résistance à la Nature."
-ae["Increases damage and healing done by 4%"] = "Augmente les dégâts et soins infligés de 4%"
-ae["Your critical strikes have a chance to corrupt the target, dealing Shadow damage every 3 sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every 2 sec."] = "Vos coups critiques ont une chance de corrompre la cible, infligeant des dégâts d'Ombre toutes les 3 sec. Tant que la Corruption est active, vos coups critiques de sort contre la cible la font flamboyer, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut flamboyer qu'une fois toutes les 2 sec au maximum."
-ae["Increases damage and healing done by 6%"] = "Augmente les dégâts et soins infligés de 6%"
-ae["Your damaging spells and abilities have a chance to stun the target. The duration of the stun is increased by your Strength."] = "Vos sorts et capacités offensifs ont une chance d'étourdir la cible. La durée de l'étourdissement est augmentée par votre Force."
-ae["Increases damage and healing done by 8%"] = "Augmente les dégâts et soins infligés de 8%"
-ae["Your damaging spells and abilities have a chance to poison the target, dealing damage every 2 sec for 8 sec. Poisoned targets take 5% increased damage from your damage-over-time effects."] = "Vos sorts et capacités offensifs ont une chance d'empoisonner la cible, infligeant des dégâts toutes les 2 sec pendant 8 sec. Les cibles empoisonnées subissent 5% de dégâts supplémentaires de vos effets de dégâts sur la durée."
-ae["Every 12 sec, applies a 5000 damage shield"] = "Toutes les 12 sec, applique un bouclier absorbant 5000 dégâts"
-ae["Your melee and ranged abilities have a chance to inflict a Fatal Wound. Damage scales with your armor penetration rating."] = "Vos capacités de mêlée et à distance ont une chance d'infliger une Blessure fatale. Les dégâts évoluent avec votre score de pénétration d'armure."
-ae["Every 12 sec, applies a 7500 damage shield"] = "Toutes les 12 sec, applique un bouclier absorbant 7500 dégâts"
-ae["Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every 2 sec for 8 sec. Damage scales with your Intellect."] = "Vos dégâts de Feu ont une chance de projeter une boule de feu sur la cible, infligeant des dégâts de Feu plus des dégâts supplémentaires toutes les 2 sec pendant 8 sec. Les dégâts évoluent avec votre Intelligence."
-ae["Every 12 sec, applies a 10000 damage shield"] = "Toutes les 12 sec, applique un bouclier absorbant 10000 dégâts"
-ae["Your spells and abilities have a chance to Calls forth an Ember of Azzinoth to protect you in battle for a short period of time."] = "Vos sorts et capacités ont une chance d'appeler une Étincelle d'Azzinoth pour vous protéger au combat pendant une courte durée."
-ae["Every 12 sec, applies a 12500 damage shield"] = "Toutes les 12 sec, applique un bouclier absorbant 12500 dégâts"
-ae["Your pet attacks 40% faster"] = "Votre familier attaque 40% plus vite"
-ae["While below 35% health, absorbs 5% of damage taken. Unique"] = "Tant que vous êtes sous 35% de santé, absorbe 5% des dégâts subis. Unique"
-ae["Increases your total Intellect by 15%"] = "Augmente votre Intelligence totale de 15%"
-ae["While below 35% health, absorbs 8% of damage taken. Unique"] = "Tant que vous êtes sous 35% de santé, absorbe 8% des dégâts subis. Unique"
-ae["Your damaging abilities may fire an Infinite Star dealing 1400 Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant 1400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ae["While below 35% health, absorbs 12% of damage taken. Unique"] = "Tant que vous êtes sous 35% de santé, absorbe 12% des dégâts subis. Unique"
-ae["increases your Block value by 20%"] = "augmente votre valeur de Blocage de 20%"
-ae["While below 35% health, absorbs 18% of damage taken. Unique"] = "Tant que vous êtes sous 35% de santé, absorbe 18% des dégâts subis. Unique"
-ae["Increases your total Spirit by 15%"] = "Augmente votre Esprit total de 15%"
-ae["Your pet deals 25% more damage"] = "Votre familier inflige 25% de dégâts supplémentaires"
-ae["Your pet deals 50% more damage"] = "Votre familier inflige 50% de dégâts supplémentaires"
-ae["Increases your total Stamina by 30%"] = "Augmente votre Endurance totale de 30%"
-ae["Your pet deals 75% more damage"] = "Votre familier inflige 75% de dégâts supplémentaires"
-ae["Increases your critical strike chance by 15%"] = "Augmente vos chances de coup critique de 15%"
-ae["Your pet deals 100% more damage"] = "Votre familier inflige 100% de dégâts supplémentaires"
-ae["Increases your Armor by 8000"] = "Augmente votre Armure de 8000"
-ae["Damaging abilities may release a Frozen Pulse dealing 600 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant 600 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-
-EbonholdFR_Data.affixEffectSkel = {}
-local sk = EbonholdFR_Data.affixEffectSkel
-sk["Your pet attacks #% faster"] = "Votre familier attaque {1}% plus vite"
-sk["Increases your Armor by #"] = "Augmente votre Armure de {1}"
-sk["Your periodic heals may increase your Healing Spell Power by # for # sec"] = "Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de {1} pendant {2} sec"
-sk["Increases your armor penetration by #%"] = "Augmente votre pénétration d'armure de {1}%"
-sk["Dealing damage slows your target’s movement by #% and increases the time between their attacks by #%."] = "Infliger des dégâts ralentit le déplacement de votre cible de {1}% et augmente le délai entre ses attaques de {2}%."
-sk["Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every # sec for # sec. Damage scales with your weapon speed."] = "Vos capacités physiques ont une chance de blesser la cible, la faisant saigner et infligeant des dégâts toutes les {1} sec pendant {2} sec. Les dégâts évoluent avec la vitesse de votre arme."
-sk["Your spells may reduce a random cooldown by #.# sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de {1}.{2} sec"
-sk["Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every # sec. While active, Corrosive Acid reduces the target's armor, increased by #% for each of your damage-over-time effects active on the target."] = "Vos dégâts de Nature ont une chance de couvrir la cible d'Acide corrosif, infligeant des dégâts de Nature toutes les {1} sec. Tant qu'il est actif, l'Acide corrosif réduit l'armure de la cible, augmenté de {2}% pour chacun de vos effets de dégâts sur la durée actifs sur la cible."
-sk["increases your Block value by #%"] = "augmente votre valeur de Blocage de {1}%"
-sk["Your HoTs tick for # additional healing per second, increased by Spirit"] = "Vos soins sur la durée (HoT) infligent {1} soins supplémentaires par seconde, augmentés par votre Esprit"
-sk["When you fall below #% health, you are healed for #% of your max health and your Strength is increased for # seconds. This effect cannot occur more than once every # seconds."] = "Lorsque vous passez sous {1}% de santé, vous êtes soigné de {2}% de votre santé maximale et votre Force est augmentée pendant {3} secondes. Cet effet ne peut pas se produire plus d'une fois toutes les {4} secondes."
-sk["Direct Critical heals restore #% additional health, increased by Intellect"] = "Les soins critiques directs restaurent {1}% de santé supplémentaire, augmentés par votre Intelligence"
-sk["Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within # seconds by #%."] = "Vos sorts et capacités ont une chance d'augmenter les dégâts critiques de vos prochaines capacités lancées dans les {1} secondes de {2}%."
-sk["Your spells and abilities have a chance to increase the target's damage taken by #% for # seconds."] = "Vos sorts et capacités ont une chance d'augmenter les dégâts subis par la cible de {1}% pendant {2} secondes."
-sk["Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by #%. Affects # targets. Your primary target is also consumed by a cyclone, slowing its attack speed by #% for # seconds."] = "Vos sorts et capacités ont une chance de foudroyer votre ennemi, infligeant des dégâts de Nature puis rebondissant sur d'autres ennemis proches. Chaque rebond réduit la résistance à la Nature de la victime de {1}%. Affecte {2} cibles. Votre cible principale est également happée par un cyclone, ralentissant sa vitesse d'attaque de {3}% pendant {4} secondes."
-sk["Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over # seconds. Both effects scale with the Fire damage-over-time active on your target."] = "Vos sorts et capacités ont une chance de projeter une boule de feu infligeant des dégâts de Feu plus des dégâts de feu supplémentaires sur {1} secondes. Les deux effets évoluent avec les dégâts de Feu sur la durée actifs sur votre cible."
-sk["Your spells and abilities have a chance to make you gain # Energy or # Rage."] = "Vos sorts et capacités ont une chance de vous faire gagner {1} points d'énergie ou {2} de rage."
-sk["Your damaging abilities may fire an Infinite Star dealing # Arcane damage, increased by your highest stat"] = "Vos capacités offensives peuvent tirer une Étoile infinie infligeant {1} dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-sk["Increases your Mana Regeneration by #%"] = "Augmente votre régénération de Mana de {1}%"
-sk["Your healing spells have a chance to cause Blessing of Ancient Kings for # seconds allowing your heals to shield the target absorbing damage equal to #% of the amount healed."] = "Vos sorts de soin ont une chance de provoquer Bénédiction des anciens rois pendant {1} secondes, permettant à vos soins de protéger la cible en absorbant des dégâts égaux à {2}% du montant soigné."
-sk["increases your total Strength by #%"] = "augmente votre Force totale de {1}%"
-sk["Increases run speed by #%"] = "Augmente la vitesse de course de {1}%"
-sk["Increases your total Strength by #%"] = "Augmente votre Force totale de {1}%"
-sk["Increases your total Agility by #%"] = "Augmente votre Agilité totale de {1}%"
-sk["Your melee attacks have #% chance to make you strike all nearby, dealing weapon damage. While using a two-handed weapon, you have a #% chance to trigger Bladestorm on your target"] = "Vos attaques de mêlée ont {1}% de chances de vous faire frapper tous les ennemis proches, infligeant des dégâts d'arme. Avec une arme à deux mains, vous avez {2}% de chances de déclencher Tornade d'acier sur votre cible"
-sk["Increases your total Intellect by #%"] = "Augmente votre Intelligence totale de {1}%"
-sk["Critical strikes deal #% more damage and healing"] = "Les coups critiques infligent {1}% de dégâts et de soins supplémentaires"
-sk["Increases your total Spirit by #%"] = "Augmente votre Esprit total de {1}%"
-sk["Increases your total Stamina by #%"] = "Augmente votre Endurance totale de {1}%"
-sk["Taking damage may grant #% Attack Power and #% Spell Power for # seconds"] = "Subir des dégâts peut accorder {1}% de puissance d'attaque et {2}% de puissance des sorts pendant {3} secondes"
-sk["Increases your critical strike chance by #%"] = "Augmente vos chances de coup critique de {1}%"
-sk["Damaging abilities may release a Frozen Pulse dealing # Shadow damage per second for # sec, increased by Critical Strike rating"] = "Les capacités offensives peuvent libérer une Impulsion gelée infligeant {1} dégâts d'Ombre par seconde pendant {2} sec, augmentés par votre score de critique"
-sk["Your abilities may unleash a Frost Breath dealing # Frost damage, increased by your Stamina"] = "Vos capacités peuvent déchaîner un Souffle de givre infligeant {1} dégâts de Givre, augmentés par votre Endurance"
-sk["Your spells may reduce a random cooldown by # sec"] = "Vos sorts peuvent réduire un temps de recharge aléatoire de {1} sec"
-sk["Increases damage and healing done by #%"] = "Augmente les dégâts et soins infligés de {1}%"
-sk["Every # sec, applies a # damage shield"] = "Toutes les {1} sec, applique un bouclier absorbant {2} dégâts"
-sk["Increases spell effectiveness by #%"] = "Augmente l'efficacité des sorts de {1}%"
-sk["While below #% health, absorbs #% of damage taken. Unique"] = "Tant que vous êtes sous {1}% de santé, absorbe {2}% des dégâts subis. Unique"
-sk["Your melee and ranged basic attack critical strikes increase your attack power by #, stacking up to # times. One stack is lost every second."] = "Vos coups critiques d'attaque de base en mêlée et à distance augmentent votre puissance d'attaque de {1}, cumulable jusqu'à {2} fois. Un cumul est perdu chaque seconde."
-sk["Killing an enemy increases your haste rating, stacking up to # times. One stack is lost every second."] = "Tuer un ennemi augmente votre score de hâte, cumulable jusqu'à {1} fois. Un cumul est perdu chaque seconde."
-sk["Your pet deals #% more damage"] = "Votre familier inflige {1}% de dégâts supplémentaires"
-sk["Your critical strikes have a chance to corrupt the target, dealing Shadow damage every # sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every # sec."] = "Vos coups critiques ont une chance de corrompre la cible, infligeant des dégâts d'Ombre toutes les {1} sec. Tant que la Corruption est active, vos coups critiques de sort contre la cible la font flamboyer, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut flamboyer qu'une fois toutes les {2} sec au maximum."
-sk["Your damaging spells and abilities have a chance to poison the target, dealing damage every # sec for # sec. Poisoned targets take #% increased damage from your damage-over-time effects."] = "Vos sorts et capacités offensifs ont une chance d'empoisonner la cible, infligeant des dégâts toutes les {1} sec pendant {2} sec. Les cibles empoisonnées subissent {3}% de dégâts supplémentaires de vos effets de dégâts sur la durée."
-sk["Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every # sec for # sec. Damage scales with your Intellect."] = "Vos dégâts de Feu ont une chance de projeter une boule de feu sur la cible, infligeant des dégâts de Feu plus des dégâts supplémentaires toutes les {1} sec pendant {2} sec. Les dégâts évoluent avec votre Intelligence."
-
-EbonholdFR_Data.affixDescFR = {}
-local ad = EbonholdFR_Data.affixDescFR
-ad["Allows you to engrave this affix on any equippable item: Your pet attacks 10% faster"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 10% plus vite"
-ad["Allows you to engrave this affix on any equippable item: Your pet attacks 20% faster"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 20% plus vite"
-ad["Allows you to engrave this affix on any equippable item: Your pet attacks 25% faster"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 25% plus vite"
-ad["Allows you to engrave this affix on any equippable item: Your pet attacks 30% faster"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 30% plus vite"
-ad["Allows you to engrave this affix on any equippable item: Increases your Armor by 500"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 500"
-ad["Allows you to engrave this affix on any equippable item: Increases your Armor by 1000"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 1000"
-ad["Allows you to engrave this affix on any equippable item: Increases your Armor by 2000"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 2000"
-ad["Allows you to engrave this affix on any equippable item: Increases your Armor by 4000"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 4000"
-ad["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 2500 for 10 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2500 pendant 10 sec"
-ad["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 500 for 10 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 500 pendant 10 sec"
-ad["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 1000 for 10 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1000 pendant 10 sec"
-ad["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 1500 for 10 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 1500 pendant 10 sec"
-ad["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by 2000 for 10 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins périodiques peuvent augmenter votre puissance des sorts de soin de 2000 pendant 10 sec"
-ad["Allows you to engrave this affix on any equippable item: Increases your armor penetration by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 3%"
-ad["Allows you to engrave this affix on any equippable item: Increases your armor penetration by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your armor penetration by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 9%"
-ad["Allows you to engrave this affix on any equippable item: Increases your armor penetration by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 12%"
-ad["Allows you to engrave this affix on any equippable item: Increases your armor penetration by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre pénétration d'armure de 15%"
-ad["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 20% and increases the time between their attacks by 15%."] = "Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 20% et augmente le délai entre ses attaques de 15%."
-ad["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 25% and increases the time between their attacks by 20%."] = "Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 25% et augmente le délai entre ses attaques de 20%."
-ad["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 30% and increases the time between their attacks by 25%."] = "Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 30% et augmente le délai entre ses attaques de 25%."
-ad["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 35% and increases the time between their attacks by 30%."] = "Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 35% et augmente le délai entre ses attaques de 30%."
-ad["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to reduce the target's armor. The effect is increased by your Agility."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée et à distance ont une chance de réduire l'armure de la cible. L'effet est augmenté par votre Agilité."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to disarm the target. The duration of the disarm is increased by your Stamina."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de désarmer la cible. La durée du désarmement est augmentée par votre Endurance."
-ad["Allows you to engrave this affix on any equippable Weapons: Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every 3 sec for 15 sec. Damage scales with your weapon speed."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités physiques ont une chance de blesser la cible, la faisant saigner et infligeant des dégâts toutes les 3 sec pendant 15 sec. Les dégâts évoluent avec la vitesse de votre arme."
-ad["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 4.0 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 4.0 sec"
-ad["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by 35% and increases the time between their attacks by 30%."] = "Permet de graver cet affixe sur n'importe quel objet équipable : Infliger des dégâts ralentit le déplacement de votre cible de 35% et augmente le délai entre ses attaques de 30%."
-ad["Allows you to engrave this affix on any equippable Weapons: Your Frost damage has a chance to launch a bolt of frost at the target, dealing Frost damage and reducing movement speed. Damage is increased by the number of slowing effects on the target."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Givre ont une chance de lancer un trait de givre sur la cible, infligeant des dégâts de Givre et réduisant sa vitesse de déplacement. Les dégâts augmentent avec le nombre d'effets de ralentissement sur la cible."
-ad["Allows you to engrave this affix on any equippable Weapons: Your Shadow damage has a chance to send a shadowy bolt at the target, dealing Shadow damage. Damage is increased by your Shadow damage-over-time effects active on the target."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts d'Ombre ont une chance d'envoyer un trait d'ombre sur la cible, infligeant des dégâts d'Ombre. Les dégâts augmentent avec vos effets de dégâts d'Ombre sur la durée actifs sur la cible."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Fire damage. Damage scales with your critical strike rating."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Feu. Les dégâts évoluent avec votre score de critique."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Nature damage. Damage scales with your total mana."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Nature. Les dégâts évoluent avec votre mana total."
-ad["Allows you to engrave this affix on any equippable Weapons: Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every 3 sec. While active, Corrosive Acid reduces the target's armor, increased by 10% for each of your damage-over-time effects active on the target."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Nature ont une chance de couvrir la cible d'Acide corrosif, infligeant des dégâts de Nature toutes les 3 sec. Tant qu'il est actif, l'Acide corrosif réduit l'armure de la cible, augmenté de 10% pour chacun de vos effets de dégâts sur la durée actifs sur la cible."
-ad["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to Wound the target. This effect occurs twice as often when behind the target."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée et à distance ont une chance de Blesser la cible. Cet effet se produit deux fois plus souvent dans le dos de la cible."
-ad["Allows you to engrave this affix on any equippable item: increases your Block value by 10%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 10%"
-ad["Allows you to engrave this affix on any equippable item: Your HoTs tick for 300 additional healing per second, increased by Spirit"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 300 soins supplémentaires par seconde, augmentés par votre Esprit"
-ad["Allows you to engrave this affix on any equippable item: increases your Block value by 30%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 30%"
-ad["Allows you to engrave this affix on any equippable item: increases your Block value by 40%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 40%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to steal life from the target. The amount stolen is increased the lower your health and by effects that increase healing done."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de voler la vie de la cible. Le montant volé augmente à mesure que votre santé est basse et avec les effets qui augmentent les soins prodigués."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Frost damage. This effect has twice the chance to occur against slowed targets."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper la cible en infligeant des dégâts de Givre. Cet effet a deux fois plus de chances de se produire contre des cibles ralenties."
-ad["Allows you to engrave this affix on any equippable Weapons: When you fall below 40% health, you are healed for 50% of your max health and your Strength is increased for 15 seconds. This effect cannot occur more than once every 15 seconds."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Lorsque vous passez sous 40% de santé, vous êtes soigné de 50% de votre santé maximale et votre Force est augmentée pendant 15 secondes. Cet effet ne peut pas se produire plus d'une fois toutes les 15 secondes."
-ad["Allows you to engrave this affix on any equippable Weapons: Your melee attacks and abilities have a chance to strike an additional time for normal damage."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques et capacités de mêlée ont une chance de frapper une fois supplémentaire pour des dégâts normaux."
-ad["Allows you to engrave this affix on any equippable item: Direct Critical heals restore 50% additional health, increased by Intellect"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 50% de santé supplémentaire, augmentés par votre Intelligence"
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within 4 seconds by 25%."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'augmenter les dégâts critiques de vos prochaines capacités lancées dans les 4 secondes de 25%."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Smites an enemy with Holy damage. Chance scale with your Hit Chance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de frapper un ennemi de dégâts Sacrés. La chance évolue avec votre chance de toucher."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to increase the target's damage taken by 15% for 5 seconds."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'augmenter les dégâts subis par la cible de 15% pendant 5 secondes."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by 25%. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 seconds."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de foudroyer votre ennemi, infligeant des dégâts de Nature puis rebondissant sur d'autres ennemis proches. Chaque rebond réduit la résistance à la Nature de la victime de 25%. Affecte 5 cibles. Votre cible principale est également happée par un cyclone, ralentissant sa vitesse d'attaque de 20% pendant 12 secondes."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over 10 seconds. Both effects scale with the Fire damage-over-time active on your target."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de projeter une boule de feu infligeant des dégâts de Feu plus des dégâts de feu supplémentaires sur 10 secondes. Les deux effets évoluent avec les dégâts de Feu sur la durée actifs sur votre cible."
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to make you gain 10 Energy or 5 Rage."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de vous faire gagner 10 points d'énergie ou 5 de rage."
-ad["Allows you to engrave this affix on any equippable Weapons: Your ranged auto-attacks automatically trigger a second shot"] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques automatiques à distance déclenchent automatiquement un second tir"
-ad["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 2400 Arcane damage, increased by your highest stat"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 2400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ad["Allows you to engrave this affix on any equippable item: increases your Block value by 50%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 50%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Summons the infernal spirit of Shahram."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'invoquer l'esprit infernal de Shahram."
-ad["Allows you to engrave this affix on any equippable Weapons: Increases your damage against Undead."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente vos dégâts contre les Morts-vivants."
-ad["Allows you to engrave this affix on any equippable Weapons: Increases your Mana Regeneration by 40%"] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente votre régénération de Mana de 40%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your healing spells have a chance to cause Blessing of Ancient Kings for 15 seconds allowing your heals to shield the target absorbing damage equal to 15% of the amount healed."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts de soin ont une chance de provoquer Bénédiction des anciens rois pendant 15 secondes, permettant à vos soins de protéger la cible en absorbant des dégâts égaux à 15% du montant soigné."
-ad["Allows you to engrave this affix on any equippable item: increases your total Strength by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre Force totale de 3%"
-ad["Allows you to engrave this affix on any equippable Weapons: Increases run speed by 30%"] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente la vitesse de course de 30%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Strength by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 6%"
-ad["Allows you to engrave this affix on any equippable Weapons: Periodically healing the caster."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Soigne périodiquement l'incantateur."
-ad["Allows you to engrave this affix on any equippable item: Increases your total Strength by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 9%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Frost Damage. Damage is futher incrased with your ranged weapon speed and your Frost Resistance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Givre. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Givre."
-ad["Allows you to engrave this affix on any equippable item: Increases your total Strength by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 12%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Nature Damage. Damage is futher incrased with your ranged weapon speed and your Nature Resistance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Nature. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance à la Nature."
-ad["Allows you to engrave this affix on any equippable item: Increases your total Agility by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 3%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Agility by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Agility by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 9%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Agility by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 12%"
-ad["Allows you to engrave this affix onto any equippable weapon: Your melee attacks have 20% chance to make you strike all nearby, dealing weapon damage. While using a two-handed weapon, you have a 100% chance to trigger Bladestorm on your target"] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos attaques de mêlée ont 20% de chances de vous faire frapper tous les ennemis proches, infligeant des dégâts d'arme. Avec une arme à deux mains, vous avez 100% de chances de déclencher Tornade d'acier sur votre cible"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Intellect by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 3%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Fire Damage. Damage is futher incrased with your ranged weapon speed and your Fire Resistance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Feu. Les dégâts augmentent avec la vitesse de votre arme à distance et votre résistance au Feu."
-ad["Allows you to engrave this affix on any equippable item: Increases your total Intellect by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Intellect by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 9%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Intellect by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 12%"
-ad["Allows you to engrave this affix on any equippable item: Critical strikes deal 5% more damage and healing"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 5% de dégâts et de soins supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Spirit by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 3%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Spirit by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Spirit by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 9%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Spirit by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 12%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Stamina by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Stamina by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 12%"
-ad["Allows you to engrave this affix on any equippable Weapons: Wraps the caster in a fire shield that deals fire damage every second to nearby enemies. Damage increases with the caster’s fire resistance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Enveloppe l'incantateur d'un bouclier de feu infligeant des dégâts de Feu chaque seconde aux ennemis proches. Les dégâts augmentent avec la résistance au Feu de l'incantateur."
-ad["Allows you to engrave this affix on any equippable item: Increases your total Stamina by 18%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 18%"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Stamina by 24%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 24%"
-ad["Allows you to engrave this affix on any equippable item: Taking damage may grant 15% Attack Power and 30% Spell Power for 12 seconds"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 15% de puissance d'attaque et 30% de puissance des sorts pendant 12 secondes"
-ad["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 3%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 3%"
-ad["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 6%"
-ad["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 9%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 9%"
-ad["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 12%"
-ad["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 100 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 100 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ad["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 150 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 150 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ad["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 220 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 220 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ad["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 300 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 300 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-ad["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 300 Frost damage, increased by your Stamina"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 300 dégâts de Givre, augmentés par votre Endurance"
-ad["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 2 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 2 sec"
-ad["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 2.5 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 2.5 sec"
-ad["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 3 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 3 sec"
-ad["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by 3.5 sec"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos sorts peuvent réduire un temps de recharge aléatoire de 3.5 sec"
-ad["Allows you to engrave this affix on any equippable item: Your HoTs tick for 50 additional healing per second, increased by Spirit"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 50 soins supplémentaires par seconde, augmentés par votre Esprit"
-ad["Allows you to engrave this affix on any equippable item: Your HoTs tick for 75 additional healing per second, increased by Spirit"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 75 soins supplémentaires par seconde, augmentés par votre Esprit"
-ad["Allows you to engrave this affix on any equippable item: Your HoTs tick for 100 additional healing per second, increased by Spirit"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 100 soins supplémentaires par seconde, augmentés par votre Esprit"
-ad["Allows you to engrave this affix on any equippable item: Your HoTs tick for 150 additional healing per second, increased by Spirit"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos soins sur la durée (HoT) infligent 150 soins supplémentaires par seconde, augmentés par votre Esprit"
-ad["Allows you to engrave this affix on any equippable item: Increases damage and healing done by 12%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 12%"
-ad["Allows you to engrave this affix on any equippable item: Direct Critical heals restore 10% additional health, increased by Intellect"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 10% de santé supplémentaire, augmentés par votre Intelligence"
-ad["Allows you to engrave this affix on any equippable item: Direct Critical heals restore 20% additional health, increased by Intellect"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 20% de santé supplémentaire, augmentés par votre Intelligence"
-ad["Allows you to engrave this affix on any equippable item: Direct Critical heals restore 30% additional health, increased by Intellect"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 30% de santé supplémentaire, augmentés par votre Intelligence"
-ad["Allows you to engrave this affix on any equippable item: Direct Critical heals restore 40% additional health, increased by Intellect"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les soins critiques directs restaurent 40% de santé supplémentaire, augmentés par votre Intelligence"
-ad["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 350 Arcane damage, increased by your highest stat"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 350 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ad["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 450 Arcane damage, increased by your highest stat"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 450 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ad["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 800 Arcane damage, increased by your highest stat"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 800 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Strength by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Force totale de 15%"
-ad["Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 15000 damage shield"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 15000 dégâts"
-ad["Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 5%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 5%"
-ad["Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 10%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 10%"
-ad["Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 15%"
-ad["Allows you to engrave this affix on any equippable item: Increases spell effectiveness by 20%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente l'efficacité des sorts de 20%"
-ad["Allows you to engrave this affix on any equippable item: Critical strikes deal 2% more damage and healing"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 2% de dégâts et de soins supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Critical strikes deal 3% more damage and healing"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 3% de dégâts et de soins supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Critical strikes deal 4% more damage and healing"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 4% de dégâts et de soins supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Agility by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Agilité totale de 15%"
-ad["Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 24% of damage taken. Unique"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 24% des dégâts subis. Unique"
-ad["Allows you to engrave this affix on any equippable item: Taking damage may grant 3% Attack Power and 6% Spell Power for 12 seconds"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 3% de puissance d'attaque et 6% de puissance des sorts pendant 12 secondes"
-ad["Allows you to engrave this affix on any equippable item: Taking damage may grant 6% Attack Power and 12% Spell Power for 12 seconds"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 6% de puissance d'attaque et 12% de puissance des sorts pendant 12 secondes"
-ad["Allows you to engrave this affix on any equippable item: Taking damage may grant 9% Attack Power and 18% Spell Power for 12 seconds"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 9% de puissance d'attaque et 18% de puissance des sorts pendant 12 secondes"
-ad["Allows you to engrave this affix on any equippable item: Taking damage may grant 12% Attack Power and 24% Spell Power for 12 seconds"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Subir des dégâts peut accorder 12% de puissance d'attaque et 24% de puissance des sorts pendant 12 secondes"
-ad["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 50 Frost damage, increased by your Stamina"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 50 dégâts de Givre, augmentés par votre Endurance"
-ad["Allows you to engrave this affix on any equippable Weapons: Increases your Defense rating."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Augmente votre score de Défense."
-ad["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 100 Frost damage, increased by your Stamina"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 100 dégâts de Givre, augmentés par votre Endurance"
-ad["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged basic attack critical strikes increase your attack power by 15, stacking up to 20 times. One stack is lost every second."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos coups critiques d'attaque de base en mêlée et à distance augmentent votre puissance d'attaque de 15, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde."
-ad["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 200 Frost damage, increased by your Stamina"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 200 dégâts de Givre, augmentés par votre Endurance"
-ad["Allows you to engrave this affix on any equippable Weapons: Killing an enemy increases your haste rating, stacking up to 20 times. One stack is lost every second."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Tuer un ennemi augmente votre score de hâte, cumulable jusqu'à 20 fois. Un cumul est perdu chaque seconde."
-ad["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing 300 Frost damage, increased by your Stamina"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités peuvent déchaîner un Souffle de givre infligeant 300 dégâts de Givre, augmentés par votre Endurance"
-ad["Allows you to engrave this affix on any equippable item: Your pet deals 200% more damage"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 200% de dégâts supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases damage and healing done by 2%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 2%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to reduce all attributes of the target. This effect is increased by your Nature Resistance."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance de réduire toutes les caractéristiques de la cible. Cet effet est augmenté par votre résistance à la Nature."
-ad["Allows you to engrave this affix on any equippable item: Increases damage and healing done by 4%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 4%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your critical strikes have a chance to corrupt the target, dealing Shadow damage every 3 sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every 2 sec."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos coups critiques ont une chance de corrompre la cible, infligeant des dégâts d'Ombre toutes les 3 sec. Tant que la Corruption est active, vos coups critiques de sort contre la cible la font flamboyer, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut flamboyer qu'une fois toutes les 2 sec au maximum."
-ad["Allows you to engrave this affix on any equippable item: Increases damage and healing done by 6%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 6%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to stun the target. The duration of the stun is increased by your Strength."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités offensifs ont une chance d'étourdir la cible. La durée de l'étourdissement est augmentée par votre Force."
-ad["Allows you to engrave this affix on any equippable item: Increases damage and healing done by 8%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente les dégâts et soins infligés de 8%"
-ad["Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to poison the target, dealing damage every 2 sec for 8 sec. Poisoned targets take 5% increased damage from your damage-over-time effects."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités offensifs ont une chance d'empoisonner la cible, infligeant des dégâts toutes les 2 sec pendant 8 sec. Les cibles empoisonnées subissent 5% de dégâts supplémentaires de vos effets de dégâts sur la durée."
-ad["Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 5000 damage shield"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 5000 dégâts"
-ad["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged abilities have a chance to inflict a Fatal Wound. Damage scales with your armor penetration rating."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos capacités de mêlée et à distance ont une chance d'infliger une Blessure fatale. Les dégâts évoluent avec votre score de pénétration d'armure."
-ad["Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 7500 damage shield"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 7500 dégâts"
-ad["Allows you to engrave this affix on any equippable Weapons: Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every 2 sec for 8 sec. Damage scales with your Intellect."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos dégâts de Feu ont une chance de projeter une boule de feu sur la cible, infligeant des dégâts de Feu plus des dégâts supplémentaires toutes les 2 sec pendant 8 sec. Les dégâts évoluent avec votre Intelligence."
-ad["Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 10000 damage shield"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 10000 dégâts"
-ad["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Calls forth an Ember of Azzinoth to protect you in battle for a short period of time."] = "Permet de graver cet affixe sur n'importe quelle arme équipable : Vos sorts et capacités ont une chance d'appeler une Étincelle d'Azzinoth pour vous protéger au combat pendant une courte durée."
-ad["Allows you to engrave this affix on any equippable item: Every 12 sec, applies a 12500 damage shield"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Toutes les 12 sec, applique un bouclier absorbant 12500 dégâts"
-ad["Allows you to engrave this affix on any equippable item: Your pet attacks 40% faster"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier attaque 40% plus vite"
-ad["Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 5% of damage taken. Unique"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 5% des dégâts subis. Unique"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Intellect by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Intelligence totale de 15%"
-ad["Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 8% of damage taken. Unique"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 8% des dégâts subis. Unique"
-ad["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing 1400 Arcane damage, increased by your highest stat"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Vos capacités offensives peuvent tirer une Étoile infinie infligeant 1400 dégâts des Arcanes, augmentés par votre caractéristique la plus élevée"
-ad["Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 12% of damage taken. Unique"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 12% des dégâts subis. Unique"
-ad["Allows you to engrave this affix on any equippable item: increases your Block value by 20%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : augmente votre valeur de Blocage de 20%"
-ad["Allows you to engrave this affix on any equippable item: While below 35% health, absorbs 18% of damage taken. Unique"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Tant que vous êtes sous 35% de santé, absorbe 18% des dégâts subis. Unique"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Spirit by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Esprit total de 15%"
-ad["Allows you to engrave this affix on any equippable item: Your pet deals 25% more damage"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 25% de dégâts supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Critical strikes deal 5% more damage and healing"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les coups critiques infligent 5% de dégâts et de soins supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Your pet deals 50% more damage"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 50% de dégâts supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases your total Stamina by 30%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Endurance totale de 30%"
-ad["Allows you to engrave this affix on any equippable item: Your pet deals 75% more damage"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 75% de dégâts supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by 15%"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente vos chances de coup critique de 15%"
-ad["Allows you to engrave this affix on any equippable item: Your pet deals 100% more damage"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Votre familier inflige 100% de dégâts supplémentaires"
-ad["Allows you to engrave this affix on any equippable item: Increases your Armor by 8000"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Augmente votre Armure de 8000"
-ad["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing 600 Shadow damage per second for 6 sec, increased by Critical Strike rating"] = "Permet de graver cet affixe sur n'importe quel objet équipable : Les capacités offensives peuvent libérer une Impulsion gelée infligeant 600 dégâts d'Ombre par seconde pendant 6 sec, augmentés par votre score de critique"
-
-EbonholdFR_Data.tomeFR = {}
-local tm = EbonholdFR_Data.tomeFR
-tm["Crushing Finish"] = "Utiliser : Permet à ce personnage de découvrir Crushing Finish parmi les Echoes proposés. Crushing Finish : Blesser des ennemis à faible santé déclenche de puissantes frappes d'Exécution."
-tm["Hunting Hazard"] = "Utiliser : Permet à ce personnage de découvrir Hunting Hazard parmi les Echoes proposés. Hunting Hazard : Augmente les dégâts de zone du chasseur contre les grands groupes."
-tm["Demonic Awakening"] = "Utiliser : Permet à ce personnage de découvrir Demonic Awakening parmi les Echoes proposés. Demonic Awakening : Passer sous 35% de santé vous transforme brièvement en Démon."
-tm["Ravenous Bellow"] = "Utiliser : Permet à ce personnage de découvrir Ravenous Bellow parmi les Echoes proposés. Ravenous Bellow : Porter un coup fatal déchaîne un Rugissement terrifiant, infligeant des dégâts aux ennemis proches et les ralentissant. Les ennemis touchés subissent plus de dégâts de votre part."
-tm["Shadow Ward"] = "Utiliser : Permet à ce personnage de découvrir Shadow Ward parmi les Echoes proposés. Shadow Ward : Augmente la résistance à l'Ombre."
-tm["Edict of the Four"] = "Utiliser : Permet à ce personnage de découvrir Edict of the Four parmi les Echoes proposés. Edict of the Four : Vos sorts et capacités offensifs accumulent Édit ; invoquer les Édits vous fait lancer Météore, Zone du Vide, Ombre impie ou Courroux sacré."
-tm["Insulated Soul"] = "Utiliser : Permet à ce personnage de découvrir Insulated Soul parmi les Echoes proposés. Insulated Soul : Réduit la durée des effets d'étourdissement qui vous affectent."
-tm["The Sporelord’s Gift"] = "Utiliser : Permet à ce personnage de découvrir The Sporelord’s Gift parmi les Echoes proposés. The Sporelord’s Gift : En combat, vous invoquez périodiquement des Spores qui augmentent les dégâts critiques des alliés proches."
-tm["Weapon Mastery"] = "Utiliser : Permet à ce personnage de découvrir Weapon Mastery parmi les Echoes proposés. Weapon Mastery : Permet d'équiper tous les types d'armes."
-tm["Broodmother’s Fury"] = "Utiliser : Permet à ce personnage de découvrir Broodmother’s Fury parmi les Echoes proposés. Broodmother’s Fury : Vos attaques accumulent des Braises ardentes qui déclenchent Profonde inspiration."
-tm["Widow’s Venom"] = "Utiliser : Permet à ce personnage de découvrir Widow’s Venom parmi les Echoes proposés. Widow’s Venom : Infliger des dégâts de Nature répétés vous fait déchaîner une Volée de traits empoisonnés, aspergeant tous les ennemis de poison."
-tm["Sanguine Bulwark"] = "Utiliser : Permet à ce personnage de découvrir Sanguine Bulwark parmi les Echoes proposés. Sanguine Bulwark : Vos soins sont réduits, mais les dégâts subis sont fortement réduits."
-tm["Wild Hazard"] = "Utiliser : Permet à ce personnage de découvrir Wild Hazard parmi les Echoes proposés. Wild Hazard : Augmente les dégâts de zone du druide contre les grands groupes."
-tm["Impaler’s Tribute"] = "Utiliser : Permet à ce personnage de découvrir Impaler’s Tribute parmi les Echoes proposés. Impaler’s Tribute : Les attaques répétées empalent votre cible et se fragmentent vers les ennemis proches."
-tm["Arcane Density"] = "Utiliser : Permet à ce personnage de découvrir Arcane Density parmi les Echoes proposés. Arcane Density : Convertit une partie de votre Armure en puissance des sorts."
-tm["Giant Bane"] = "Utiliser : Permet à ce personnage de découvrir Giant Bane parmi les Echoes proposés. Giant Bane : Augmente votre puissance des sorts contre les Géants."
-tm["Shielded Steps"] = "Utiliser : Permet à ce personnage de découvrir Shielded Steps parmi les Echoes proposés. Shielded Steps : Réduit les dégâts subis par les attaques de zone."
-tm["Sanctum Sentries"] = "Utiliser : Permet à ce personnage de découvrir Sanctum Sentries parmi les Echoes proposés. Sanctum Sentries : Invoque deux gardiens permanents qui combattent et amplifient vos dégâts."
-tm["Ember Ward"] = "Utiliser : Permet à ce personnage de découvrir Ember Ward parmi les Echoes proposés. Ember Ward : Augmente la résistance au Feu."
-tm["Rocket Strike"] = "Utiliser : Permet à ce personnage de découvrir Rocket Strike parmi les Echoes proposés. Rocket Strike : Les attaques peuvent lancer des roquettes, avec davantage de roquettes via vos familiers et gardiens."
-tm["Twilight Equilibrium"] = "Utiliser : Permet à ce personnage de découvrir Twilight Equilibrium parmi les Echoes proposés. Twilight Equilibrium : Les écoles de sorts opposées accumulent des charges qui déchaînent des explosions de Lumière ou d'Ombre."
-tm["Champion’s Rally"] = "Utiliser : Permet à ce personnage de découvrir Champion’s Rally parmi les Echoes proposés. Champion’s Rally : Vos soins accumulent Ralliement, aboutissant à une puissante vague de soins."
-tm["Nether Lord’s Command"] = "Utiliser : Permet à ce personnage de découvrir Nether Lord’s Command parmi les Echoes proposés. Nether Lord’s Command : Vos attaques peuvent ouvrir un Portail du Néant qui bombarde votre cible."
-tm["Frost Ward"] = "Utiliser : Permet à ce personnage de découvrir Frost Ward parmi les Echoes proposés. Frost Ward : Augmente la résistance au Givre."
-tm["Earthen Snap"] = "Utiliser : Permet à ce personnage de découvrir Earthen Snap parmi les Echoes proposés. Earthen Snap : Votre première attaque en entrant en combat immobilise la cible."
-tm["Shadow Crash"] = "Utiliser : Permet à ce personnage de découvrir Shadow Crash parmi les Echoes proposés. Shadow Crash : Les dégâts d'Ombre sur la durée peuvent faire s'abattre des déflagrations d'ombre."
-tm["Mana Infusion"] = "Utiliser : Permet à ce personnage de découvrir Mana Infusion parmi les Echoes proposés. Mana Infusion : Restaurer du mana restaure aussi de la santé."
-tm["Rage of the Colossus"] = "Utiliser : Permet à ce personnage de découvrir Rage of the Colossus parmi les Echoes proposés. Rage of the Colossus : Les coups critiques accumulent Élan et déchaînent un Écrasement massif."
-tm["Flame Vents"] = "Utiliser : Permet à ce personnage de découvrir Flame Vents parmi les Echoes proposés. Flame Vents : Esquiver et parer déchaîne des flammes, réduit les dégâts subis et accorde de la vitesse."
-tm["Slimebound Husk"] = "Utiliser : Permet à ce personnage de découvrir Slimebound Husk parmi les Echoes proposés. Slimebound Husk : Subir des dégâts directs mène à une mue empoisonnée."
-tm["The Unclean’s Fever"] = "Utiliser : Permet à ce personnage de découvrir The Unclean’s Fever parmi les Echoes proposés. The Unclean’s Fever : Les ennemis qui vous frappent sont affligés de Fièvre décrépite, infligeant des dégâts d'Ombre et réduisant les dégâts qu'ils vous infligent."
-tm["Constellations"] = "Utiliser : Permet à ce personnage de découvrir Constellations parmi les Echoes proposés. Constellations : Les coups critiques appellent des étoiles filantes jusqu'à ce qu'un Big Bang dévastateur éclate."
-tm["Beast Slayer"] = "Utiliser : Permet à ce personnage de découvrir Beast Slayer parmi les Echoes proposés. Beast Slayer : Augmente votre puissance d'attaque contre les Bêtes."
-tm["Quickened Tempo"] = "Utiliser : Permet à ce personnage de découvrir Quickened Tempo parmi les Echoes proposés. Quickened Tempo : La Hâte réduit désormais votre temps de recharge global."
-tm["Temporal Pressure"] = "Utiliser : Permet à ce personnage de découvrir Temporal Pressure parmi les Echoes proposés. Temporal Pressure : La Hâte réduit désormais le temps de recharge de certaines capacités de classe."
-tm["Demon Bane"] = "Utiliser : Permet à ce personnage de découvrir Demon Bane parmi les Echoes proposés. Demon Bane : Augmente votre puissance des sorts contre les Démons."
-tm["Eonar Seed"] = "Utiliser : Permet à ce personnage de découvrir Eonar Seed parmi les Echoes proposés. Eonar Seed : Le surplus de soins est stocké et éclôt quand la cible est à faible santé."
-tm["Harpoon Barrage"] = "Utiliser : Permet à ce personnage de découvrir Harpoon Barrage parmi les Echoes proposés. Harpoon Barrage : Attire périodiquement les ennemis distants vers vous et augmente vos dégâts contre eux."
-tm["Divine Surge"] = "Utiliser : Permet à ce personnage de découvrir Divine Surge parmi les Echoes proposés. Divine Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Leeching Swarm"] = "Utiliser : Permet à ce personnage de découvrir Leeching Swarm parmi les Echoes proposés. Leeching Swarm : À faible santé, vos attaques déchaînent un essaim qui draine la vie."
-tm["Inspiring Mending"] = "Utiliser : Permet à ce personnage de découvrir Inspiring Mending parmi les Echoes proposés. Inspiring Mending : Vos soins directs peuvent augmenter les caractéristiques de vos alliés."
-tm["Giant Slayer"] = "Utiliser : Permet à ce personnage de découvrir Giant Slayer parmi les Echoes proposés. Giant Slayer : Augmente votre puissance d'attaque contre les Géants."
-tm["Arcane Cadence"] = "Utiliser : Permet à ce personnage de découvrir Arcane Cadence parmi les Echoes proposés. Arcane Cadence : Des sorts offensifs différents accumulent un bonus de dégâts."
-tm["Stone Shatter"] = "Utiliser : Permet à ce personnage de découvrir Stone Shatter parmi les Echoes proposés. Stone Shatter : Les premières attaques marquent les ennemis, les faisant éclater à leur mort."
-tm["Hungering Curse"] = "Utiliser : Permet à ce personnage de découvrir Hungering Curse parmi les Echoes proposés. Hungering Curse : Maudit périodiquement les ennemis proches et vous soigne quand ils meurent."
-tm["DragonKin Bane"] = "Utiliser : Permet à ce personnage de découvrir DragonKin Bane parmi les Echoes proposés. DragonKin Bane : Augmente votre puissance des sorts contre les Draconiens."
-tm["Ambidexterity"] = "Utiliser : Permet à ce personnage de découvrir Ambidexterity parmi les Echoes proposés. Ambidexterity : Vous pouvez manier deux armes."
-tm["Mutagenic Fumes"] = "Utiliser : Permet à ce personnage de découvrir Mutagenic Fumes parmi les Echoes proposés. Mutagenic Fumes : Tuer un ennemi invoque un Nuage de poison, infligeant des dégâts de Nature aux ennemis proches."
-tm["Armor Mastery"] = "Utiliser : Permet à ce personnage de découvrir Armor Mastery parmi les Echoes proposés. Armor Mastery : Vous pouvez équiper tous les types d'armure."
-tm["Overwhelming Restoration"] = "Utiliser : Permet à ce personnage de découvrir Overwhelming Restoration parmi les Echoes proposés. Overwhelming Restoration : Vos soins sont fortement augmentés, mais les sorts coûtent beaucoup plus de mana."
-tm["Elemental Slayer"] = "Utiliser : Permet à ce personnage de découvrir Elemental Slayer parmi les Echoes proposés. Elemental Slayer : Augmente votre puissance d'attaque contre les Élémentaires."
-tm["Lingering Inspiration"] = "Utiliser : Permet à ce personnage de découvrir Lingering Inspiration parmi les Echoes proposés. Lingering Inspiration : Vos soins périodiques peuvent augmenter les caractéristiques de vos alliés."
-tm["Static Overflow"] = "Utiliser : Permet à ce personnage de découvrir Static Overflow parmi les Echoes proposés. Static Overflow : Votre prochain sort ou capacité frappe aussi les ennemis proches avec de la foudre."
-tm["Curse of the Plaguebringer"] = "Utiliser : Permet à ce personnage de découvrir Curse of the Plaguebringer parmi les Echoes proposés. Curse of the Plaguebringer : Infliger des dégâts d'Ombre répétés afflige la cible d'une malédiction, infligeant des dégâts d'Ombre périodiquement et se propageant à un ennemi proche."
-tm["Archmage Mark"] = "Utiliser : Permet à ce personnage de découvrir Archmage Mark parmi les Echoes proposés. Archmage Mark : Infliger des dégâts de Feu, de Givre et des Arcanes accorde un bonus de dégâts."
-tm["Contagion"] = "Utiliser : Permet à ce personnage de découvrir Contagion parmi les Echoes proposés. Contagion : Vos effets de dégâts sur la durée peuvent appliquer des effets de dégâts sur la durée aléatoires d'autres classes."
-tm["Battle Rhythm"] = "Utiliser : Permet à ce personnage de découvrir Battle Rhythm parmi les Echoes proposés. Battle Rhythm : Le score de critique augmente vos dégâts critiques."
-tm["Reaper’s Reprieve"] = "Utiliser : Permet à ce personnage de découvrir Reaper’s Reprieve parmi les Echoes proposés. Reaper’s Reprieve : Les dégâts fatals vous réduisent à 1 point de vie, empêchent tous les dégâts pendant 3 sec et vous soignent."
-tm["Steady Grip"] = "Utiliser : Permet à ce personnage de découvrir Steady Grip parmi les Echoes proposés. Steady Grip : Réduit la durée des effets de désarmement qui vous affectent."
-tm["Crusader's Surge"] = "Utiliser : Permet à ce personnage de découvrir Crusader's Surge parmi les Echoes proposés. Crusader's Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Stored Momentum"] = "Utiliser : Permet à ce personnage de découvrir Stored Momentum parmi les Echoes proposés. Stored Momentum : Les ressources que vous dépensez sont stockées pour renforcer votre prochaine capacité."
-tm["Essence Tap"] = "Utiliser : Permet à ce personnage de découvrir Essence Tap parmi les Echoes proposés. Essence Tap : Vos effets de dégâts sur la durée peuvent rendre des ressources aux alliés."
-tm["Blighted Hazard"] = "Utiliser : Permet à ce personnage de découvrir Blighted Hazard parmi les Echoes proposés. Blighted Hazard : Augmente les dégâts de zone du chevalier de la mort contre les grands groupes."
-tm["Verdant Ward"] = "Utiliser : Permet à ce personnage de découvrir Verdant Ward parmi les Echoes proposés. Verdant Ward : Augmente la résistance à la Nature."
-tm["Dragon Slayer"] = "Utiliser : Permet à ce personnage de découvrir Dragon Slayer parmi les Echoes proposés. Dragon Slayer : Augmente votre puissance d'attaque contre les Draconiens."
-tm["Undead Bane"] = "Utiliser : Permet à ce personnage de découvrir Undead Bane parmi les Echoes proposés. Undead Bane : Augmente votre puissance des sorts contre les Morts-vivants."
-tm["Battlefield Hazard"] = "Utiliser : Permet à ce personnage de découvrir Battlefield Hazard parmi les Echoes proposés. Battlefield Hazard : Augmente les dégâts de zone du guerrier contre les grands groupes."
-tm["Idol of Yogg-Saron"] = "Utiliser : Permet à ce personnage de découvrir Idol of Yogg-Saron parmi les Echoes proposés. Idol of Yogg-Saron : Les éliminations accumulent des cumuls qui invoquent une Chose d'outre-monde."
-tm["Resonant Build"] = "Utiliser : Permet à ce personnage de découvrir Resonant Build parmi les Echoes proposés. Resonant Build : Plusieurs Echoes de caractéristiques de base différentes augmentent vos dégâts."
-tm["Mechanical Bane"] = "Utiliser : Permet à ce personnage de découvrir Mechanical Bane parmi les Echoes proposés. Mechanical Bane : Augmente votre puissance des sorts contre les ennemis Mécaniques."
-tm["Adaptive Power"] = "Utiliser : Permet à ce personnage de découvrir Adaptive Power parmi les Echoes proposés. Adaptive Power : Chaque Echo unique augmente vos dégâts."
-tm["Provoking Presence"] = "Utiliser : Permet à ce personnage de découvrir Provoking Presence parmi les Echoes proposés. Provoking Presence : Augmente la menace générée."
-tm["Emberlord Gift"] = "Utiliser : Permet à ce personnage de découvrir Emberlord Gift parmi les Echoes proposés. Emberlord Gift : Les dégâts de Feu mènent à une puissante éruption et brûlure."
-tm["Fel Surge"] = "Utiliser : Permet à ce personnage de découvrir Fel Surge parmi les Echoes proposés. Fel Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Nature Surge"] = "Utiliser : Permet à ce personnage de découvrir Nature Surge parmi les Echoes proposés. Nature Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Heavy Incantations"] = "Utiliser : Permet à ce personnage de découvrir Heavy Incantations parmi les Echoes proposés. Heavy Incantations : Augmente fortement les dégâts des sorts à long temps d'incantation."
-tm["Steady Casting"] = "Utiliser : Permet à ce personnage de découvrir Steady Casting parmi les Echoes proposés. Steady Casting : Réduit le recul subi par les attaques pendant l'incantation."
-tm["Frost Bite"] = "Utiliser : Permet à ce personnage de découvrir Frost Bite parmi les Echoes proposés. Frost Bite : Quand vous êtes frappé, vous avez une chance de geler l'attaquant."
-tm["Frostfire Paradox"] = "Utiliser : Permet à ce personnage de découvrir Frostfire Paradox parmi les Echoes proposés. Frostfire Paradox : Les dégâts de Givre accumulent des cumuls que les dégâts de Feu consument en une explosion glacée."
-tm["Call of the Lich King"] = "Utiliser : Permet à ce personnage de découvrir Call of the Lich King parmi les Echoes proposés. Call of the Lich King : Tuer un ennemi invoque un Serviteur du Roi-liche qui combat pour vous."
-tm["Storm Surge"] = "Utiliser : Permet à ce personnage de découvrir Storm Surge parmi les Echoes proposés. Storm Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Runic Momentum"] = "Utiliser : Permet à ce personnage de découvrir Runic Momentum parmi les Echoes proposés. Runic Momentum : Une puissance runique basse améliore la génération, une puissance runique élevée améliore les dégâts."
-tm["Fel Hazard"] = "Utiliser : Permet à ce personnage de découvrir Fel Hazard parmi les Echoes proposés. Fel Hazard : Augmente les dégâts de zone du démoniste contre les grands groupes."
-tm["Holy Hazard"] = "Utiliser : Permet à ce personnage de découvrir Holy Hazard parmi les Echoes proposés. Holy Hazard : Augmente les dégâts de zone du prêtre contre les grands groupes."
-tm["Arcane Hazard"] = "Utiliser : Permet à ce personnage de découvrir Arcane Hazard parmi les Echoes proposés. Arcane Hazard : Augmente les dégâts de zone du mage contre les grands groupes."
-tm["Stitched Fury"] = "Utiliser : Permet à ce personnage de découvrir Stitched Fury parmi les Echoes proposés. Stitched Fury : À faible santé, vous entrez en Frénésie, augmentant la vitesse d'attaque et les dégâts physiques infligés."
-tm["Shadow Hazard"] = "Utiliser : Permet à ce personnage de découvrir Shadow Hazard parmi les Echoes proposés. Shadow Hazard : Augmente les dégâts de zone de Pluie de couteaux contre les grands groupes."
-tm["Rootbreaker"] = "Utiliser : Permet à ce personnage de découvrir Rootbreaker parmi les Echoes proposés. Rootbreaker : Réduit la durée des effets d'immobilisation qui vous affectent."
-tm["Beast Bane"] = "Utiliser : Permet à ce personnage de découvrir Beast Bane parmi les Echoes proposés. Beast Bane : Augmente votre puissance des sorts contre les Bêtes."
-tm["Sanctified Hazard"] = "Utiliser : Permet à ce personnage de découvrir Sanctified Hazard parmi les Echoes proposés. Sanctified Hazard : Augmente les dégâts de zone du paladin contre les grands groupes."
-tm["Arcane Ward"] = "Utiliser : Permet à ce personnage de découvrir Arcane Ward parmi les Echoes proposés. Arcane Ward : Augmente la résistance aux Arcanes."
-tm["Fortress Soul"] = "Utiliser : Permet à ce personnage de découvrir Fortress Soul parmi les Echoes proposés. Fortress Soul : Réduit fortement les dégâts subis, mais réduit fortement les dégâts infligés."
-tm["Lightning Charged"] = "Utiliser : Permet à ce personnage de découvrir Lightning Charged parmi les Echoes proposés. Lightning Charged : Accumule de la vitesse d'attaque et transforme les attaques en éclair en chaîne."
-tm["Titan's Grip"] = "Utiliser : Permet à ce personnage de découvrir Titan's Grip parmi les Echoes proposés. Titan's Grip : Vous pouvez manier des armes à deux mains d'une seule main."
-tm["Elemental Bane"] = "Utiliser : Permet à ce personnage de découvrir Elemental Bane parmi les Echoes proposés. Elemental Bane : Augmente votre puissance des sorts contre les Élémentaires."
-tm["Entropic Fusion"] = "Utiliser : Permet à ce personnage de découvrir Entropic Fusion parmi les Echoes proposés. Entropic Fusion : Infliger des dégâts de Feu et d'Ombre accorde un bonus de dégâts."
-tm["Stoneskin Threads"] = "Utiliser : Permet à ce personnage de découvrir Stoneskin Threads parmi les Echoes proposés. Stoneskin Threads : Réduit la durée des effets de ralentissement qui vous affectent."
-tm["Cinders of the Sanctum"] = "Utiliser : Permet à ce personnage de découvrir Cinders of the Sanctum parmi les Echoes proposés. Cinders of the Sanctum : Infliger des dégâts de Feu répétés vous fait invoquer un Cyclone de feu, infligeant des dégâts de Feu aux ennemis proches."
-tm["Exposed Heart"] = "Utiliser : Permet à ce personnage de découvrir Exposed Heart parmi les Echoes proposés. Exposed Heart : Les attaques exposent la cible, augmentant les dégâts infligés et infligeant des dégâts de zone."
-tm["Pandemic"] = "Utiliser : Permet à ce personnage de découvrir Pandemic parmi les Echoes proposés. Pandemic : Vos effets de dégâts sur la durée se propagent quand les ennemis affectés meurent."
-tm["Arcane Burn"] = "Utiliser : Permet à ce personnage de découvrir Arcane Burn parmi les Echoes proposés. Arcane Burn : Augmente les dégâts des sorts, mais ils coûtent beaucoup plus de mana."
-tm["Subtle Presence"] = "Utiliser : Permet à ce personnage de découvrir Subtle Presence parmi les Echoes proposés. Subtle Presence : Réduit la menace générée."
-tm["The Last Wall"] = "Utiliser : Permet à ce personnage de découvrir The Last Wall parmi les Echoes proposés. The Last Wall : Augmente fortement la santé maximale, mais réduit les soins reçus."
-tm["Healing Cadence"] = "Utiliser : Permet à ce personnage de découvrir Healing Cadence parmi les Echoes proposés. Healing Cadence : Des sorts de soin différents accumulent un bonus de soins."
-tm["Raging Momentum"] = "Utiliser : Permet à ce personnage de découvrir Raging Momentum parmi les Echoes proposés. Raging Momentum : Une rage basse améliore la génération, une rage élevée améliore les dégâts."
-tm["Machine Slayer"] = "Utiliser : Permet à ce personnage de découvrir Machine Slayer parmi les Echoes proposés. Machine Slayer : Augmente votre puissance d'attaque contre les ennemis Mécaniques."
-tm["Relentless Energy"] = "Utiliser : Permet à ce personnage de découvrir Relentless Energy parmi les Echoes proposés. Relentless Energy : Une énergie basse améliore la régénération, une énergie élevée améliore les dégâts."
-tm["Demon Slayer"] = "Utiliser : Permet à ce personnage de découvrir Demon Slayer parmi les Echoes proposés. Demon Slayer : Augmente votre puissance d'attaque contre les Démons."
-tm["Arcane Surge"] = "Utiliser : Permet à ce personnage de découvrir Arcane Surge parmi les Echoes proposés. Arcane Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
-tm["Accelerated Decay"] = "Utiliser : Permet à ce personnage de découvrir Accelerated Decay parmi les Echoes proposés. Accelerated Decay : Vos effets de dégâts sur la durée bénéficient maintenant de la Hâte."
-tm["Chill of the Bone Wyrm"] = "Utiliser : Permet à ce personnage de découvrir Chill of the Bone Wyrm parmi les Echoes proposés. Chill of the Bone Wyrm : Infliger des dégâts de Givre répétés vous fait déchaîner un Souffle de givre, infligeant des dégâts de Givre et rendant les ennemis plus vulnérables à vos dégâts de Givre."
-tm["Permafrost Aura"] = "Utiliser : Permet à ce personnage de découvrir Permafrost Aura parmi les Echoes proposés. Permafrost Aura : Inflige constamment des dégâts aux ennemis proches et ralentit leur vitesse d'attaque."
-tm["Edict of the Iron Council"] = "Utiliser : Permet à ce personnage de découvrir Edict of the Iron Council parmi les Echoes proposés. Edict of the Iron Council : Les attaques alternent entre les effets Rune de mort, Surcharge et Coup de fusion."
-tm["Brittle Forging"] = "Utiliser : Permet à ce personnage de découvrir Brittle Forging parmi les Echoes proposés. Brittle Forging : Les dégâts de Feu accumulent Fragilité, augmentant les chances de critique et provoquant un éclatement enflammé."
-tm["Earthen Spike"] = "Utiliser : Permet à ce personnage de découvrir Earthen Spike parmi les Echoes proposés. Earthen Spike : Subir des dégâts peut renvoyer des pointes aux attaquants, générant beaucoup de menace."
-tm["Undead Slayer"] = "Utiliser : Permet à ce personnage de découvrir Undead Slayer parmi les Echoes proposés. Undead Slayer : Augmente votre puissance d'attaque contre les Morts-vivants."
-tm["Reaper’s Verdict"] = "Utiliser : Permet à ce personnage de découvrir Reaper’s Verdict parmi les Echoes proposés. Reaper’s Verdict : Vos dégâts contre les ennemis à faible santé sont augmentés. Quand vous blessez un ennemi à faible santé, vous infligez des dégâts d'Ombre supplémentaires."
-tm["The Harvester’s Tithe"] = "Utiliser : Permet à ce personnage de découvrir The Harvester’s Tithe parmi les Echoes proposés. The Harvester’s Tithe : Vous récoltez les âmes des ennemis proches, augmentant vos dégâts et regagnant de la santé quand un ennemi meurt près de vous."
-tm["Reaper’s Doom"] = "Utiliser : Permet à ce personnage de découvrir Reaper’s Doom parmi les Echoes proposés. Reaper’s Doom : Infliger des dégâts afflige la cible de Sentence du Faucheur. À son expiration, elle détone en infligeant des dégâts d'Ombre répartis entre tous les ennemis touchés."
-tm["Echoing Tides"] = "Utiliser : Permet à ce personnage de découvrir Echoing Tides parmi les Echoes proposés. Echoing Tides : Vos effets périodiques peuvent déclencher un palier supplémentaire."
-tm["Broodmother’s Webbing"] = "Utiliser : Permet à ce personnage de découvrir Broodmother’s Webbing parmi les Echoes proposés. Broodmother’s Webbing : Quand vous subissez des dégâts sous 50% de santé, vous projetez des toiles, infligeant des dégâts de Nature aux ennemis proches et les étourdissant."
-tm["Crypt Lord’s Swarm"] = "Utiliser : Permet à ce personnage de découvrir Crypt Lord’s Swarm parmi les Echoes proposés. Crypt Lord’s Swarm : En combat, vous êtes enveloppé d'un Essaim de criquets, réduisant les dégâts subis et infligeant des dégâts de Nature aux ennemis proches."
-tm["Storm of the Spellweaver"] = "Utiliser : Permet à ce personnage de découvrir Storm of the Spellweaver parmi les Echoes proposés. Storm of the Spellweaver : Infliger des dégâts des Arcanes répétés vous fait tirer une salve de Missiles magiques en l'air, frappant jusqu'à 3 ennemis proches."
-tm["Unstable Missiles"] = "Utiliser : Permet à ce personnage de découvrir Unstable Missiles parmi les Echoes proposés. Unstable Missiles : Les sorts directs peuvent lancer des missiles des arcanes sur la cible."
-tm["Polarity Shift"] = "Utiliser : Permet à ce personnage de découvrir Polarity Shift parmi les Echoes proposés. Polarity Shift : Vous alternez entre Charge positive et Charge négative. Augmente les chances de critique et les dégâts infligés, ou réduit les dégâts subis et augmente les soins et la vitesse de déplacement."
-tm["Sundered Will"] = "Utiliser : Permet à ce personnage de découvrir Sundered Will parmi les Echoes proposés. Sundered Will : Réduit la durée des effets de peur qui vous affectent."
-tm["Storm Hazard"] = "Utiliser : Permet à ce personnage de découvrir Storm Hazard parmi les Echoes proposés. Storm Hazard : Augmente les dégâts de zone du chaman contre les grands groupes."
-tm["Drillmaster’s Rebuke"] = "Utiliser : Permet à ce personnage de découvrir Drillmaster’s Rebuke parmi les Echoes proposés. Drillmaster’s Rebuke : Vos attaques de mêlée ont une chance de déchaîner une Frappe déséquilibrante, laissant la cible Déséquilibrée et augmentant les dégâts que vous lui infligez."
-
-EbonholdFR_Data.dynFR = {}
-local dn = EbonholdFR_Data.dynFR
-dn["Ember Spark"] = { DEATHKNIGHT="Pour chaque tranche de 40 points de puissance runique dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", DRUID="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", HUNTER="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", MAGE="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", PALADIN="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", PRIEST="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", ROGUE="Pour chaque tranche de 80 points d'énergie dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", SHAMAN="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", WARLOCK="Pour chaque tranche de (40 + 12 par niveau) de mana dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec.", WARRIOR="Pour chaque tranche de 60 points de rage dépensée, une petite braise jaillit de vous, infligeant @x@ dégâts de Feu à un ennemi aléatoire dans un rayon de 20 mètres. Cet effet inflige au moins 15 dégâts et ne peut pas se produire plus d'une fois toutes les 1.50 sec." }
-dn["Unstable Infusion"] = { DEATHKNIGHT="Blesser un ennemi applique Blood Plague ou Frost Fever. N'affecte pas les cibles déjà affectées.", DRUID="Blesser un ennemi applique Lacerate, Moonfire ou Rake, selon votre forme actuelle. N'affecte pas les cibles déjà affectées.", HUNTER="Blesser un ennemi applique Serpent Sting. N'affecte pas les cibles déjà affectées.", PRIEST="Blesser un ennemi applique Vampiric Touch, Holy Fire ou Shadow Word: Pain, selon votre forme actuelle. N'affecte pas les cibles déjà affectées.", ROGUE="Blesser un ennemi applique Garrote. N'affecte pas les cibles déjà affectées.", SHAMAN="Blesser un ennemi applique Flame Shock. N'affecte pas les cibles déjà affectées.", WARLOCK="Blesser un ennemi applique Corruption, Curse of Agony ou Immolate. N'affecte pas les cibles déjà affectées.", WARRIOR="Blesser un ennemi applique Rend. N'affecte pas les cibles déjà affectées." }
-dn["Corrosive Breath"] = { DEATHKNIGHT="Toutes les 5 sec, votre prochain Blood Boil, Howling Blast, Icy Touch ou Death and Decay déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", DRUID="Toutes les 5 sec, votre prochain Typhoon, Swipe, Swiftmend ou Hurricane déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", HUNTER="Toutes les 5 sec, votre prochain Raptor Strike ou Multi-Shot déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", MAGE="Toutes les 5 sec, votre prochain Cone of Cold, Arcane Explosion, Frost Nova ou Dragon's Breath déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", PALADIN="Toutes les 5 sec, votre prochain Consecration, Divine Storm, Shield of Righteousness ou Avenger's Shield déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", PRIEST="Toutes les 5 sec, votre prochain Holy Nova ou Mind Sear déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", ROGUE="Toutes les 5 sec, votre prochain Fan of Knives, Blade Flurry ou Ghostly Strike déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", SHAMAN="Toutes les 5 sec, votre prochain Thunderstorm, Stormstrike, Earth Shock, Flame Shock ou Frost Shock déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", WARLOCK="Toutes les 5 sec, votre prochain Shadowflame, Death Coil, Shadowfury ou Drain Life déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde.", WARRIOR="Toutes les 5 sec, votre prochain Thunder Clap, Whirlwind, Revenge ou Shockwave déchaîne un Souffle acide, infligeant @x@ dégâts de Nature aux ennemis devant vous et @y@ dégâts de Nature supplémentaires par seconde pendant 5 sec. Cet effet inflige au moins 15 dégâts et 3 supplémentaires par seconde." }
-dn["Stonefist Barrage"] = { DEATHKNIGHT="Quand vous lancez Death Strike, Heart Strike, Obliterate ou Scourge Strike, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", DRUID="Quand vous lancez Starfire, Nourish ou Mangle, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", HUNTER="Vos coups critiques d'Auto Shot ont une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", MAGE="Quand vous lancez Arcane Blast, Fireball, Frostbolt ou Frostfire Bolt, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", PALADIN="Quand vous lancez Judgement, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", PRIEST="Quand vous lancez Smite, Flash Heal, Greater Heal ou Mind Blast, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", ROGUE="Quand vous lancez Mutilate, Sinister Strike ou Hemorrhage, vous avez une chance de projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", SHAMAN="Quand vous lancez Lightning Bolt, Chain Lightning, Healing Wave ou Chain Heal, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", WARLOCK="Vos dégâts périodiques de Warlock ont une chance de vous faire projeter un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts.", WARRIOR="Quand vous lancez Mortal Strike, Bloodthirst ou Shield Slam, vous projetez un rocher sur la cible, infligeant @x@ dégâts Physiques à tous les ennemis dans un rayon de 8 mètres de l'impact. Cet effet inflige au moins 15 dégâts." }
-dn["Temporal Pressure"] = { DEATHKNIGHT="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Howling Blast, Blood Boil, Pestilence.", DRUID="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Mangle (Bear), Mangle (Cat), Rake, Typhoon, Swiftmend, Wild Growth.", HUNTER="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Arcane Shot, Aimed Shot, Chimera Shot, Explosive Shot, Multi-Shot, Kill Shot, Raptor Strike, Mongoose Bite, Black Arrow.", MAGE="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Arcane Barrage, Fire Blast, Dragon’s Breath, Cone of Cold, Living Bomb, Blast Wave, Deep Freeze.", PALADIN="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Avenger's Shield, Judgement, Consecration, Crusader Strike, Divine Storm, Exorcism, Hammer of Wrath, Shield of Righteousness, Hammer of the Righteous, Holy Shock, Holy Wrath.", PRIEST="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Power Word: Shield, Shadow Word: Death, Prayer of Mending, Circle of Healing, Penance.", ROGUE="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Ghostly Strike", SHAMAN="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Earth Shock, Flame Shock, Frost Shock, Stormstrike, Lava Lash, Riptide.", WARLOCK="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Conflagrate, Shadowburn, Shadowflame, Shadowfury.", WARRIOR="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts affectés : Shield Slam, Revenge, Thunder Clap, Mortal Strike, Bloodthirst, Whirlwind, Shockwave, Concussion Blow." }
-dn["Arcane Bombardment"] = { DEATHKNIGHT="Chaque fois que vous dépensez une Rune, vous lancez un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", DRUID="Quand vous lancez Wrath, Starfire, Regrowth, Shred ou Maul, vous avez une chance de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", HUNTER="Quand vous lancez Arcane Shot, Aimed Shot, Explosive Shot ou Chimera Shot, vous lancez 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", MAGE="Vos coups critiques ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", PALADIN="Quand vous lancez Crusader Strike, Hammer of the Righteous, Judgement ou Holy Shock, vous lancez 2 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", PRIEST="Vos dégâts périodiques de Shadow Word: Pain et vos soins périodiques de Renew ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", ROGUE="Quand vous utilisez une attaque de finition, vous avez 20% de chances par point de combo de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", SHAMAN="Quand vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez 2 missiles à un endroit aléatoire, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", WARLOCK="Les dégâts périodiques d'Immolate, Corruption et Curse of Agony ont une chance de lancer un missile à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts.", WARRIOR="Quand vous utilisez une capacité de mêlée, vous avez 20% de chances de lancer 3 missiles à un endroit aléatoire proche, infligeant @x@ dégâts des Arcanes aux ennemis touchés. Cet effet inflige au moins 30 dégâts." }
+-- EbonholdFR_Data.lua — GÉNÉRÉ par tools/generer_donnees_v4.py (ne pas modifier à la main)
+-- Capture anglaise : EbonholdEchoDump-enUS-2026-10-20.lua — traductions : patch_fr.json
+-- t  = gabarits FR ({k} = k-ième jeton du texte anglais affiché, {@k} = formule en vert)
+-- fp = empreinte du texte anglais attendu -> index du gabarit * 10 + catégorie
+--      (1 echoes, 2 Soul Tree, 3 affixes, 4 tomes)
+-- id = id du sort -> { empreinte, index du gabarit }, quand le gabarit commun à l'empreinte ne lui convient pas
+-- nom = id du sort -> nom anglais ; tomeItem = id de l'objet -> nom anglais
+EbonholdFR_Data = { version = "2026-10-20", t = {}, fp = {}, id = {}, nom = {}, tomeItem = {} }
+local t = EbonholdFR_Data.t
+t[1]="Augmente l'armure de {@1}"
+t[2]="Augmente la Résilience de vos animaux de compagnie de {@1}, basé sur votre Résilience."
+t[3]="Vos coups d'arbalète critiques ont une chance de lancer une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[4]="Lorsque vous lancez une capacité d'attaque de mêlée, vous avez une chance de {1}% de lancer {2} missiles vers un emplacement aléatoire proche, infligeant {@3} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {4} dégâts."
+t[5]="Réduit tous les dégâts subis par {@1}"
+t[6]="Lorsque vous infligez des dégâts à une cible dont la santé est inférieure à {1}% avec une attaque de mêlée ou à distance, vous l'Exécutez, infligeant {@2} dégâts physiques. Les dégâts sont augmentés de {3}% par point d'Expertise.\n\nNe peut survenir plus d'une fois toutes les {4} sec par cible."
+t[7]="Permet d'utiliser des armes à deux mains avec une seule main. Vos dégâts sont réduits de {1}%."
+t[8]="Tuer un ennemi crée une Souillure à son emplacement pendant {1} sec, infligeant {2} points de dégâts de l'Ombre toutes les {3} sec aux ennemis qui s'y trouvent.\n\nChaque ennemi tué dans la Souillure augmente son rayon de {4} mètre, ses dégâts de {5}% et sa durée de {6} sec, jusqu'à {7} fois.\n\nUne seule Souillure peut être active à la fois."
+t[9]="Augmente votre vitesse de déplacement de {@1}% supplémentaire."
+t[10]="Infliger des dégâts de Feu confère une pile de Cendres. À {1} piles, vous invoquez un Cyclone de Feu pendant {2} sec., infligeant {3} dégâts de Feu aux ennemis à l'intérieur de {4} yd toutes les {5} sec.\n\nAprès déclenchement, vous ne pouvez pas obtenir de nouvelles piles de Cendres pendant {6} sec."
+t[11]="Augmente le pouvoir d'attaque de vos animaux de compagnie de {@1}, basé sur votre pouvoir d'attaque."
+t[12]="Augmente la Résistance au Feu de {1}."
+t[13]="Lorsque vous lancez Éclair, Éclair en chaîne, Vague de soins ou Soins en chaîne, vous lancez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[14]="Lorsque vous lancez Frappe du Croisé, Marteau de la Droiture, Jugement ou Choc Saint, vous lancez {1} missiles vers un emplacement aléatoire proche, infligeant {@2} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {3} dégâts."
+t[15]="Réduit vos soins de {1}%. Absorbe jusqu'à {2}% des dégâts subis, jusqu'à un maximum de {3} par frappe."
+t[16]="Augmente la résistance au Gel de {1}."
+t[17]="Augmente la Résistance à la Nature de {1}."
+t[18]="Infliger des dégâts de Feu, de Glace et d'Arcane dans les {1} sec augmente les dégâts que vous infligez de {2}% pendant {3} sec."
+t[19]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Shield Slam, Revenge, Thunder Clap, Mortal Strike, Bloodthirst, Whirlwind, Shockwave, Concussion Blow."
+t[20]="Vos effets de dégâts sur la durée ont une chance d'affliger la cible de Peste nécrotique pendant {1} sec, infligeant {2} points de dégâts de Peste toutes les {3} sec.\n\nSi une cible affligée de Peste nécrotique meurt, elle saute sur un ennemi proche, rafraîchissant sa durée et augmentant ses dégâts de {4}%, jusqu'à {5}%.\n\nUne seule Peste nécrotique peut être active à la fois."
+t[21]="Augmente la Résistance Arcane de {1}."
+t[22]="Infliger des dégâts Arcanes confère une pile d'Overcharge. À {1} piles, vous tirez un salvo de Missiles Magiques vers le ciel, frappant jusqu'à {2} ennemis près de la cible pour {3} dégâts Arcanes chacun.\n\nAprès déclenchement, vous ne pouvez pas obtenir de nouvelles piles d'Overcharge pendant {4} sec."
+t[23]="Augmente le pouvoir des sorts de vos familiers de {@1}, basé sur votre pouvoir des sorts."
+t[24]="Augmente la Force de {1}."
+t[25]="Augmente la Résistance à l'Ombre de {1}."
+t[26]="Infliger des dégâts de Feu et d'Ombre dans les {1} sec augmente les dégâts que vous infligez de {2}% pendant {3} sec."
+t[27]="Augmente l'Agilité de {1}."
+t[28]="Chaque fois que vous dépensez une Rune, vous lancez une missile vers un emplacement aléatoire proche, infligeant {@1} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {2} dégâts."
+t[29]="Vos temps de recharge sont désormais réduits par votre Hâte. Sorts concernés : Avenger's Shield, Judgement, Consecration, Crusader Strike, Divine Storm, Exorcism, Hammer of Wrath, Shield of Righteousness, Hammer of the Righteous, Holy Shock, Holy Wrath."
+t[30]="Augmente l'Intelligence de {1}."
+t[31]="Augmente vos dégâts critiques de 1 %, plus 1 % supplémentaire pour chaque {3} points de valeur critique que vous avez.\n\nBonus actuel : {@4}%"
+t[32]="Lorsque vous lancez Starfire, Nourish ou Mangle, vous jetez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[33]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Howling Blast, Blood Boil, Pestilence."
+t[34]="Tant que vous êtes en combat, vous marquez périodiquement un ennemi proche avec Harvest Soul pendant {1} sec, en priorisant les ennemis ayant la vie maximale la plus basse.\n\nSi l'ennemi marqué meurt tout en étant affecté, vous dévorez son âme, vous conférant Harvested Soul pendant {2} sec. Harvested Soul augmente les dégâts infligés de {3}%, cumulant jusqu'à {4} fois.\n\nÀ {5} cumuls, vos sorts et capacités de dégâts libèrent également une décharge de dégâts Shadowfrost autour de la cible, infligeant {6} dégâts Shadowfrost."
+t[35]="Augmente la Résilience de {1}."
+t[36]="Tous les {1} sec pendant le combat, attire les ennemis proches vers vous et inflige {@2} dégâts Éclair.\n\nCet effet inflige au moins {3} dégâts."
+t[37]="Lorsque vous lancez un sort ou une capacité offensif, vos dégâts sont augmentés de {1}% pendant {2} sec.\n\nTant que cet effet est actif, chaque sort ou capacité offensif différent que vous utilisez augmente ce bonus de дополнительные {1}% et renouvelle la durée."
+t[38]="Lorsque vous lancez Mutilate, Sinister Strike ou Hemorrhage, vous avez une chance de jeter une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[39]="Lorsque vous lancez Tir Arcanique, Tir Ciblé, Tir Explosif ou Tir Chimère, vous lancez {1} missiles vers un emplacement aléatoire proche, infligeant {@2} dégâts Arcaniques aux ennemis touchés.\n\nCet effet inflige au moins {3} dégâts."
+t[40]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Arcane Shot, Aimed Shot, Chimera Shot, Explosive Shot, Multi-Shot, Kill Shot, Raptor Strike, Mongoose Bite, Black Arrow."
+t[41]="Lorsque vous lancez un sort ou une capacité de soin, cela augmente vos soins infligés de {1}% pendant {2} sec.\n\nTant que cet effet est actif, chaque sort ou capacité de soin différent que vous utilisez augmente ce bonus de дополнительные {1}% et renouvelle la durée."
+t[42]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Earth Shock, Flame Shock, Frost Shock, Stormstrike, Lava Lash, Riptide."
+t[43]="Augmente le pouvoir des sorts de {@1}."
+t[44]="Vos attaques mêlées augmentent votre armure de {@1} pour {2} sec. Peut s'empiler jusqu'à {3} fois."
+t[45]="Esquiver ou Parer génère de la Pression, maximum {1} pile toutes les 0,3 secondes. Lorsque vous atteignez {4} piles, vous libérez des flammes pour {5} sec, infligeant {@6} dégâts de Feu toutes les {7} secondes aux ennemis à portée de {8} yards, en fonction de votre Stamina.\n\nTant que Flame Vents est activé, vous subissez {9}% de dégâts réduits et votre vitesse de déplacement est augmentée de supplémentaire {10}%."
+t[46]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de vos Thunder Clap, Shockwave, Whirlwind et Bladestorm sont augmentés de {2}%."
+t[47]="Augmente le pouvoir d'attaque de {@1}."
+t[48]="Lorsque vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez {1} missiles vers un emplacement aléatoire, infligeant {@2} dégâts Arcane aux ennemis touchés.\n\nCet effet inflige au moins {3} dégâts."
+t[49]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Mangle (Bear), Mangle (Cat), Rake, Typhoon, Swiftmend, Wild Growth."
+t[50]="Infliger des dégâts physiques à un ennemi affecté par un de vos effets de dégâts sur la durée a une chance d'invoquer un Reflet né de la guerre à son emplacement.\n\nLe reflet déchaîne Blade Tempests pendant {1} sec, infligeant {2} points de dégâts physiques toutes les {3} sec aux ennemis proches."
+t[51]="Augmente le taux de touché de {@1}"
+t[52]="Après avoir resté immobile pendant {1} sec, votre armure est augmentée de {@2} pour {3} sec après que vous vous déplaciez."
+t[53]="Lorsque vous lancez Flame Shock, Earth Shock ou Frost Shock, vous lancez {1} missiles vers un emplacement aléatoire proche, infligeant {@2} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {3} dégâts."
+t[54]="Augmente le taux de critique de {@1}"
+t[55]="Lorsque vous lancez Explosion Arcane, Boule de Feu, Boule de Glace ou Boule de Glace et Feu, vous jetez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[56]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Ghostly Strike"
+t[57]="Augmente le taux de vitesse par {@1}"
+t[58]="Augmente le taux de pénétration d'armure de {@1}"
+t[59]="Votre dégât de Feu génère de la Chaleur sur la cible. Lorsqu'il atteint {1} piles, la cible devient Fragile pendant {2} sec, augmentant votre chance de coup critique contre elle de {3}%.\n\nTant que Fragile est active, votre prochain coup critique de Feu contre la cible la fait Éclater, infligeant {@4} dégâts de Feu aux ennemis à {5} yards autour d'elle.\n\nUne fois que Fragile expire, la cible ne peut plus accumuler de piles de Chaleur pendant {6} sec."
+t[60]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Consecration, Divine Storm et Hammer of the Righteous sont augmentés de {2}%."
+t[61]="Lorsque vous lancez Smite, Flash Heal, Greater Heal ou Mind Blast, vous jetez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[62]="Lorsque vous lancez Wrath, Starfire, Regrowth, Shred ou Maul, vous avez une chance de lancer {1} missiles vers un emplacement aléatoire proche, infligeant {@2} dégâts Arcane aux ennemis touchés.\n\nCet effet inflige au moins {3} dégâts."
+t[63]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Arcane Barrage, Fire Blast, Dragon's Breath, Cone of Cold, Living Bomb, Blast Wave, Deep Freeze."
+t[64]="Vos dégâts physiques ont une chance d'exposer l'armure de la cible pendant {1} sec, augmentant les dégâts physiques qu'elle subit de votre part de {2}%.\n\nSi la cible exposée se trouve dans un rayon de {3} mètres d'au moins {4} autres ennemis, vos dégâts physiques contre la cible frappent aussi les ennemis proches pour {5}% des dégâts infligés.\n\nUne seule cible peut être exposée à la fois."
+t[65]="Augmente le taux d'expertise de {@1}"
+t[66]="Chaque fois que vous infligez des dégâts sur la durée, vous avez 30 % de chances de répercuter 20 % de ces dégâts sur un autre ennemi dans un rayon de {3} mètres. Chaque fois que vous rendez de la santé sur la durée, vous avez 30 % de chances de répercuter 20 % de ces soins sur un autre allié dans un rayon de 30 mètres."
+t[67]="Augmente la mana maximale de {@1}"
+t[68]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Power Word: Shield, Shadow Word: Death, Prayer of Mending, Circle of Healing, Penance."
+t[69]="Augmente tous les dégâts infligés de {@1}"
+t[70]="Restaure {@1} points de vie toutes les {2} sec."
+t[71]="Vos sorts et capacités de dommages physiques directs appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts physiques que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[72]="Augmente votre contribution d'Armure provenant des équipements en tissu et en cuir de {@1}%."
+t[73]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de vos sorts Death and Decay, Blood Boil, Howling Blast et Corpse Explosion sont augmentés de {2}%."
+t[74]="Augmente l'armure de {1}."
+t[75]="Lorsque vous utilisez un coup de finition, vous avez une chance de {1} % par point de combo de lancer {2} missiles vers un emplacement aléatoire à proximité, infligeant {@3} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {4} dégâts."
+t[76]="Vos temps de recharge sont maintenant reduits par votre Haste. Sorts affectes : Conflagrate, Shadowburn, Shadowflame, Shadowfury."
+t[77]="Vos dégâts de Feu ont une chance de marquer la cible d'une Balise de flammes pendant {1} sec. Tant qu'elle est marquée, la cible libère une Conflagration toutes les {2} sec, infligeant {3} points de dégâts de Feu aux ennemis proches.\n\nSi la cible marquée meurt, elle explose en une Nova de feu, infligeant {4} points de dégâts de Feu à tous les ennemis dans un rayon de {5} mètres."
+t[78]="Permet à {1}% de votre régénération de mana de continuer pendant le lancement de sorts."
+t[79]="Réduit tous les dégâts subis par {@1}."
+t[80]="Vos sorts et capacités de type Saint direct appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts Saints que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[81]="Tant que vous êtes en combat, vous infligez {@1} dégâts de Feu aux ennemis à portée de {2} yards toutes les {3} secondes.\n\nCet effet inflige au moins {4} dégâts."
+t[82]="Tous les {1} sec pendant le combat, vous lancez des harpons contre jusqu'à {2} ennemis situés entre {3} et {4} yards de distance, les attirant vers vous et les clouant pendant {5} sec.\n\nLes ennemis cloués sont ralentis de {6}% et subissent {7}% de dégâts supplémentaires venant de vous."
+t[83]="Votre temps de recharge global est maintenant réduit par votre Hâte."
+t[84]="Prendre des dégâts directs inflige {@1} dégâts Nature aux ennemis.\n\nLes dégâts augmentent en fonction de votre Armure et infligent au moins {2} dégâts."
+t[85]="Chaque attaque de mêlée et chaque capacité de {1} confère {2}% de vitesse d'attaque pendant {3} sec. Peut s'accumuler jusqu'à {4} fois."
+t[86]="Vos sorts et capacités de dommages Feu directs appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts Feu que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[87]="Vos frappes critiques ont une chance de 20 % de faire {@2} dégâts physiques au cible. La chance de déclenchement est triplée contre la cible dont la santé est inférieure à {3} %.\n\nCet effet inflige au moins 20 dégâts."
+t[88]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Volée et de votre Tir Multiple sont augmentés de {2}%."
+t[89]="Vos coups critiques ont une chance de lancer une missile vers un emplacement aléatoire proche, infligeant {@1} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {2} dégâts."
+t[90]="Vos capacités de dégâts accumulent l'effet Percer sur la cible. Lorsque vous atteignez {1} piles, vous piquez la cible pour {2} sec, infligeant {3} dégâts physiques toutes les {4} sec.\n\nTant que l'effet Percé est actif, vos attaques contre la cible ont une chance de {5}% de se fragmenter, infligeant {6} dégâts physiques à jusqu'à {7} ennemis proches."
+t[91]="Vos dégâts de Feu ont une chance d'affliger la cible de Combustion ardente pendant {1} sec, infligeant {2} points de dégâts de Feu toutes les 1 sec. Vos dégâts de l'Ombre ont une chance d'affliger la cible de Consomption d'âme pendant {4} sec, infligeant {5} points de dégâts de l'Ombre toutes les 1 sec.\n\nSi les deux effets sont actifs sur la même cible, ils sont consommés pour créer une Faille du crépuscule sous elle pendant {7} sec, infligeant {8} points de dégâts d'Ombrefeu toutes les {9} sec aux ennemis proches."
+t[92]="Vos attaques de mêlée et à distance infligent des dégâts au cible, infligeant {@1} de dégâts sur {2} sec.\n\nCet effet inflige au moins {3} points de dégâts."
+t[93]="Subir directement des dégâts a une chance de provoquer une Éruption Glaciaire sous l'attaquant, infligeant {@1} dégâts de Gel et le projetant en l'air.\n\nCet effet inflige au moins {2} dégâts."
+t[94]="Votre première attaque après l'entrée en combat enracine la cible pendant {1} sec."
+t[95]="Vos sorts et capacités de dommages Nature directs appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts Nature que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[96]="Après avoir évité ou dévié une attaque, vous infligez {@1} dégâts physiques aux ennemis proches.\n\nLes dégâts augmentent en fonction de votre Endurance et infligent au moins {2} dégâts."
+t[97]="Vos sorts et capacités de gel direct appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts de gel que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[98]="Vos attaques de base génèrent du Stress. Lorsque vous atteignez {1} piles, vous révéléz le cœur de votre cible pendant {2} sec, augmentant les dégâts que vous lui infligez de {3}%.\n\nTant que Cœur Exposé est actif, {4}% des dégâts que vous infligez à la cible sont également infligés à tous les ennemis à portée de {5} yards autour d'elle. Tant que Cœur Exposé est actif et jusqu'à {6} secondes après son expiration, vous ne pouvez générer de Stress sur aucune cible."
+t[99]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Foudre en chaîne et Tempête électrique sont augmentés de {2}%."
+t[100]="Lorsque vous êtes frappé, vous avez une chance de {1}% de figer l'attaquant pendant {2} sec secondes."
+t[101]="Votre dégât périodique provenant de Mot d'Ombre : Douleur et votre soin périodique provenant de Régénération ont une chance de lancer une missile vers un emplacement aléatoire proche, infligeant {@1} dégâts Arcanes aux ennemis touchés.\n\nCet effet inflige au moins {2} dégâts."
+t[102]="Prendre des dégâts directs confère une pile de Sang Maudit, jusqu'à {1}.\n\nÀ {1} piles, vous vous débarrassez de votre peau, laissant derrière vous une Goutte de Slime Poisonné pour {3} sec qui inflige {4} dégâts Nature à chaque {5} sec aux ennemis proches, tout en vous donnant {6}% de vitesse de déplacement accrue et {7}% de réduction des dégâts subis pendant {8} sec."
+t[103]="Tant que vous êtes en combat, le déplacement laisse derrière vous une traînée d'embers pendant {1} sec, infligeant {@2} dégâts de Feu et ralentissant les ennemis qui passent à travers pour {3}%.\n\nCet effet inflige au moins {4} dégâts."
+t[104]="Vos sorts et capacités de dommages ombre directs appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts ombre que vous infligez à cette cible de {@2} par niveau de marque. La marque peut atteindre {3} niveaux maximum."
+t[105]="Lorsque vous êtes frappé, votre vitesse de déplacement est augmentée de supplémentaire {1}% pendant {2} sec."
+t[106]="Vos sorts et capacités d'Arcane directes appliquent une marque cumulable sur la cible pendant {1} sec, augmentant les dégâts Arcane que vous infligez à cette cible de {@2} par cumul. La marque peut atteindre {3} cumuls."
+t[107]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de vos Hurricane, Starfall et Swipe sont augmentés de {2}%."
+t[108]="Les dégâts périodiques infligés par Immolate, Corruption et Curse of Agony ont une chance de lancer une missile vers un emplacement aléatoire proche, infligeant {@1} dégâts Arcane aux ennemis touchés.\n\nCet effet inflige au moins {2} dégâts."
+t[109]="Vos coups critiques confèrent du Momentum pendant {1} sec, pouvant s'accumuler jusqu'à {2} fois.\nLe Momentum ne peut être acquis qu'une seule fois par seconde.\n\nChaque pile augmente votre vitesse de déplacement de {3}% et les dégâts infligés de {4}%.\n\nÀ {5} piles, vous libérez un Écrasement Massif, infligeant {6} dégâts physiques aux ennemis à portée de {7} yards de votre cible."
+t[110]="Augmente votre puissance de sorts de {@1} lors des combats contre les Bêtes."
+t[111]="Tous les {1} secondes, vous gagnez un bouclier absorbant jusqu'à {@2} de dégâts. Cet effet absorbe au moins {3} points de dégâts."
+t[112]="Augmente votre puissance de sorts de {@1} lors des combats contre les Dragonkin."
+t[113]="Vos sorts et capacités de dégâts génèrent un Édit. Lorsque vous atteignez {1} piles, vous invoquez un Édit, passant successivement aux effets suivants dans l'ordre : Rune de la Mort, Surcharge, Coup de Fusion.\n\n|cff1eff00Rune de la Mort : |cffffffffInvoque une Rune de la Mort sous votre cible pendant {2} sec, infligeant {@3} dégâts ombres toutes les demi-secondes aux ennemis à portée de {4} yards.\n\n|cff1eff00Surcharge : |cffffffffVous éclatez en éclairs, infligeant {@5} dégâts nature à tous les ennemis à portée de {6} yards.\n\n|cff1eff00Coup de Fusion : |cffffffffVotre prochain attaque au corps à corps inflige un supplément de {@7} dégâts nature et un supplément de {@8} dégâts nature toutes les {9} sec pendant {10} sec."
+t[114]="Augmente votre puissance de sorts de {@1} lors de la lutte contre les Démons."
+t[115]="Votre Tir automatique a une {@1}% chance de tirer un coup supplémentaire."
+t[116]="Augmente votre puissance de sorts de {@1} lors des combats contre les élémentaux."
+t[117]="Vos attaques de mêlée ont une chance de {@1}% de frapper une fois supplémentaire."
+t[118]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Vent de couteaux sont augmentés de {2}%."
+t[119]="Vos sorts de soin directs dissipent également un effet magique nuisible sur la cible."
+t[120]="Tous les {1} sec, votre prochain Thunder Clap, Whirlwind, Revenge ou Shockwave libère un Acid Breath, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[121]="Vos sorts et capacités de dégâts ont une chance d'ouvrir un Portail de l'Outremonde pendant {1} sec.\n\nTant qu'il est actif, le portail lance des Éclairs de Félité sur votre cible toutes les {2} sec, infligeant {3} dégâts de Félité. Chaque coup a une probabilité de {4}% de faire apparaître une Flammèche de Félité sous la cible, infligeant {5} dégâts de Félité et brûlant le sol pendant {6} sec, infligeant {7} dégâts de Félité toutes les {8} sec.\n\nVous ne pouvez pas invoquer un Portail de l'Outremonde plus d'une fois toutes les {9} sec."
+t[122]="Augmente votre puissance de sorts de {@1} lors des combats contre les Géants."
+t[123]="Lorsque vous tombez en dessous de {1}% de vie, votre vitesse de déplacement est considérablement augmentée pendant un court instant.\n\nCet effet ne peut survenir plus d'une fois toutes les {2} min."
+t[124]="Augmente votre puissance de sorts de {@1} lors des combats contre les morts-vivants."
+t[125]="Augmente les dégâts que vous infligez de {1}% mais réduit votre santé maximale de {2}%."
+t[126]="Augmente votre vie maximale de {1}."
+t[127]="Augmente votre puissance de sorts de {@1} lors des combats contre des ennemis mécaniques."
+t[128]="Les effets Arcane au fil du temps peuvent maintenant porter des critiques."
+t[129]="Augmente votre puissance d'attaque de {@1} lors des combats contre les Bêtes."
+t[130]="Les effets de votre Ombre au fil du temps peuvent maintenant porter des coups critiques."
+t[131]="La première fois que vous infligez des dégâts à un ennemi, vous le marquez avec une Fissure pendant {1} sec.\n\nS'il meurt alors qu'il est fissuré, il se brise, infligeant {@2} dégâts physiques à tous les ennemis à portée de {3} yards."
+t[132]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Explosion Arcane, Blizzard, Flamestrike et Onde de Déflagration sont augmentés de {2}%."
+t[133]="Tous les {1} sec, votre prochaine Consecration, Divine Storm, Shield of Righteousness ou Avenger's Shield libère un souffle acide, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[134]="Augmente votre puissance d'attaque de {@1} lors des combats contre les Dragonkin."
+t[135]="Les effets de votre Sainteté sur une durée peuvent maintenant porter un coup critique."
+t[136]="Augmente votre puissance d'attaque de {@1} lors des combats contre les Démons."
+t[137]="Les effets de Feu au fil du temps peuvent maintenant porter des coups critiques."
+t[138]="Vos sorts de soin directs confèrent un Rally pour {1} sec.\n\nÀ {2} empilements, vous déclenchez le Rally des Champions, soignant instantanément votre cible pour {3} et leur conférant un Cri de Rallye pour {4} sec, réduisant les dégâts subis de {5}% et augmentant les soins reçus de {6}%.\n\nTant que le Cri de Rallye est actif, {7}% de vos soins directs sur cette cible sont également conférés à l’allié le plus blessé à proximité."
+t[139]="Votre Tir automatique ralentit la cible de {1}% pendant {2} sec."
+t[140]="Augmente votre puissance d'attaque de {@1} lors des combats contre les élémentaux."
+t[141]="Les effets de Gel au fil du temps peuvent maintenant porter des coups critiques."
+t[142]="Augmente votre puissance d'attaque de {@1} lors des combats contre les Géants."
+t[143]="Les effets de votre Nature au fil du temps peuvent maintenant porter des coups critiques."
+t[144]="Tant que vous êtes en combat, vous êtes accompagné par deux Sanctum Sentries.\n\nLes ennemis frappés par l'un des gardiens subissent {1}% de dégâts supplémentaires de votre part pendant {2} sec."
+t[145]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de votre Nova sainte sont augmentés de {2}%."
+t[146]="Augmente les soins reçus de {@1}%."
+t[147]="Tous les {1} sec, votre prochain Blood Boil, Howling Blast, Icy Touch ou Death and Decay libère un Acid Breath, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[148]="Vos attaques auto-mêlée infligent des dégâts de {1}% aux ennemis proches."
+t[149]="Augmente votre puissance d'attaque de {@1} lors des combats contre les morts-vivants."
+t[150]="Les effets de saignement peuvent maintenant porter un coup critique."
+t[151]="Augmente votre puissance d'attaque de {@1} lors des combats contre des ennemis mécaniques."
+t[152]="Augmente vos dégâts en fonction de votre santé manquante, jusqu'à {1}% de dégâts supplémentaires lorsque {2}% de santé restante."
+t[153]="Tous les {1} sec, votre chance de critique est augmentée de {2}% pendant {3} sec."
+t[154]="Réduit le temps de recharge de vos capacités Death Wish, Shield Wall, Retaliation, Last Stand, Enraged Regeneration, Shattering Throw, Recklessness, Bladestorm, Bloodrage, Intimidating Shout et Challenging Shout de {@1}%."
+t[155]="Si vous n'avez pas subi de dégâts au cours des {1} sec. précédentes, les dégâts que vous infligez sont augmentés de {2}%."
+t[156]="Tant que {1} ou plus d'ennemis sont dans la portée, les dégâts de vos Rain of Fire, Hellfire, Shadowflame et Shadowfury sont augmentés de {2}%."
+t[157]="Tous les {1} sec, votre prochain Raptor Strike ou Multi-Shot libère un souffle acide, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[158]="Réduit le temps de recharge de vos capacités Demonic Empowerment, Metamorphosis, Inferno, Ritual of Doom, Shadowfury, Death Coil et Fel Domination de {@1}%."
+t[159]="Augmente le taux de touché de {1}."
+t[160]="Vos sorts de soin directs ont une chance de {1}% de laisser un effet de soin au fil du temps sur la cible, soignant pour {@2}% du montant soigné sur {3} sec secondes.\n\nCet effet peut s’accumuler jusqu’à {4}% de la vie maximale de la cible."
+t[161]="Réduit le temps de recharge de vos sorts Totem de liens terrestres, Totem d'élémentaire de terre, Fureur shamanique, Rappel astral, Esprit sauvage, Totem d'élémentaire de feu, Maîtrise élémentaire, Tempête tonnerreuse, Totem des griffes de pierre et Hex de {@1}%."
+t[162]="Augmente le taux de frappes critiques de {1}."
+t[163]="Vos tirs automatiques réduisent le temps de recharge restant d'une capacité aléatoire de {1} sec."
+t[164]="Réduit le temps de recharge de vos capacités Sprint, Adrenaline Rush, Blade Flurry, Preparation, Premeditation, Cold Blood, Killing Spree, Shadow Dance, Cloak of Shadows et Evasion de {@1}%."
+t[165]="Augmente le taux de vitesse par {@1}."
+t[166]="Vos attaques mêlées réduisent le temps de recharge restant d'une capacité aléatoire de {1} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les 1,5 secondes."
+t[167]="Vos sorts de dommages directs ont une chance de {1}% de brûler la cible pour un montant de dégâts égal à {@2}% des dégâts infligés sur {3} sec.\n\nCet effet peut s'accumuler jusqu'à {4}% de votre santé maximale."
+t[168]="Réduit le temps de recharge de vos capacités Fade, Guardian Spirit, Power Infusion, Pain Suppression, Dispersion, Lightwell, Fear Ward, Hymn of Hope, Shadowfiend, Silence, Desperate Prayer, Divine Hymn et Psychic Horror de {@1}%."
+t[169]="Augmente le taux de pénétration d'armure de {1}."
+t[170]="Se déplacer augmente les dégâts infligés de {1}%, cumulant jusqu'à {2} fois."
+t[171]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible devienne instantané.\n\nSorts éligibles : Exorcisme, Éclair de lumière, Lumière sainte."
+t[172]="Tous les {1} sec, votre prochain Thunderstorm, Stormstrike, Earth Shock, Flame Shock ou Frost Shock libère un souffle acide, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[173]="Réduit le temps de recharge de vos capacités Repentance, Lay on Hands, Hand of Protection, Avenging Wrath, Divine Shield, Divine Illumination, Divine Plea, Divine Protection, Aura Mastery, Divine Favor, Hand of Salvation et Hand of Sacrifice de {@1}%."
+t[174]="Augmente le niveau d'expertise de {@1}."
+t[175]="Après avoir frappé une cible avec des sorts ou des capacités {1} dans les {2} secondes, les dégâts que vous infligez à cette cible sont augmentés de {3}% pendant {4} sec.\nCet effet ne peut survenir plus d'une fois toutes les {5} secondes par cible."
+t[176]="Réduit le temps de recharge de vos capacités Cold Snap, Combustion, Presence of Mind, Arcane Power, Mirror Image, Icy Veins, Evocation, Ice Block et Invisibility de {@1}%."
+t[177]="Augmente la mana maximale de {@1}."
+t[178]="Dommages fataux réduisent votre santé à {1}, empêchent tous les dégâts pendant {2} sec, et vous soignent pour {3}% de votre santé maximale.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} min et peut être déclenché sans consommer de charges de Tromperie de la Mort."
+t[179]="Jusqu'à {1}% de vos soins excédentaires sur les alliés sont stockés sous forme de Eonar’s Seed pendant {2} sec.\n\nLorsque la santé de la cible descend en dessous de {3} %, elle fleurit, soignant la cible ainsi que l'allié le plus gravement blessé à proximité avec le montant stocké. Le montant stocké ne peut pas dépasser {4}% de la santé maximale de la cible."
+t[180]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible devienne instantané.\n\nSorts éligibles : Smite, Holy Fire, Mind Blast, Flash Heal, Greater Heal, Heal, Binding Heal et Prayer of Healing."
+t[181]="Réduit le temps de recharge de vos capacités Readiness, Bestial Wrath, Wyvern Sting, Intimidation, Deterrence, Kill Command, Rapid Fire et Feign Death de {@1}%."
+t[182]="Augmente tous les dégâts infligés de {@1}."
+t[183]="Lorsque vous subissez des dégâts qui vous laissent en dessous de {1}% de vie, vous êtes affecté par un sort de soin au fil du temps aléatoire d'une autre classe.\n\nCet effet ne peut survenir plus d'une fois toutes les {2} sec."
+t[184]="Réduit le temps de recharge de vos capacités Berserk, Starfall, Barkskin, Challenging Roar, Enrage, Force of Nature, Frenzied Regeneration, Innervate, Nature’s Swiftness, Rebirth, Tranquility, Bash, Dash et Nature’s Grasp de {@1}%."
+t[185]="Réduit les dégâts subis provenant d'attaques à effet de zone de {@1}%."
+t[186]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible devienne instantané.\n\nSorts éligibles : Éclair, Foudre en chaîne, Éruption de lave, Vague de soin, Soins en chaîne."
+t[187]="Tous les {1} sec, votre prochain Typhoon, Swipe, Swiftmend ou Hurricane libère un souffle acide, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[188]="Réduit le temps de recharge de vos capacités Hysteria, Dancing Rune Weapon, Rune Tap, Hungering Cold, Lichborne, Bone Shield, Summon Gargoyle, Unbreakable Armor, Anti-Magic Zone, Blood Tap, Death Pact, Army of the Dead, Empower Rune Weapon, Icebound Fortitude, Mark of Blood, Raise Ally, Raise Dead, Deathchill, Strangulate, Vampiric Blood et Anti-Magic Shell de {@1}%."
+t[189]="Réduit le recul subi en raison des attaques nuisibles pendant la mise en chantier par {@1}%."
+t[190]="Votre dégât contre les ennemis dont la vie est inférieure à {1} % est augmenté de {2}%.\nLorsque vous infligez des dégâts à un ennemi dont la vie est inférieure à {3} %, vous infligez un dégât supplémentaire de {4} ombre.\n\nCet effet ne peut survenir plus d'une fois toutes les {5} sec par cible."
+t[191]="Génère {@1} Rage toutes les {2} sec."
+t[192]="Réduit la menace générée de {@1}%."
+t[193]="Votre dégât de Givre applique un Refroidissement Mordant pour {1} sec, s'accumulant jusqu'à {2} fois.\n\nVotre dégât de Feu direct contre une cible possédant {3} ou plus de piles la fait Éclater, consommant toutes les piles et infligeant {@4} dégâts de Givre par pile à la cible et aux ennemis à l'intérieur de {5} yards."
+t[194]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible soit instantané.\n\nSorts éligibles : Arcane Blast, Fireball, Frostbolt, Frostfire Bolt, Pyroblast, Flamestrike."
+t[195]="Augmente la menace générée par {1}%."
+t[196]="Inflige des dégâts et affecte la cible avec la Malédiction du Récolteur pour {1} sec. Lorsqu'elle expire, elle explose pour {2} dégâts d'Ombre répartis entre tous les ennemis à {3} yards.\n\nSi la cible meurt tout en étant affectée, la Malédiction du Récolteur explose immédiatement."
+t[197]="Réduit le coût en mana de vos sorts de {@1}%."
+t[198]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible soit instantané.\n\nSorts éligibles : Shadow Bolt, Incinerate, Soul Fire, Chaos Bolt, Seed of Corruption, Haunt, Unstable Affliction."
+t[199]="Tous les {1} sec, votre prochain Fan de Couteaux, Flurry de Lames ou Frappe Fantôme déclenche une Respiration Acide, infligeant {@2} dégâts Nature aux ennemis devant vous et un supplément de {@3} dégâts Nature par seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et un supplément de {6} dégâts par seconde."
+t[200]="Vos Chaînes de Glace, Explosion Huracanée, Toucher de Glace, Détruire, Frappe de Mort, Frappe de Peste et Frappe de L'Épouvante génèrent {1} puissance runique supplémentaire."
+t[201]="Augmente votre régénération d'énergie de {@1}%"
+t[202]="Vos attaques de mêlée et à distance ont une chance de {1}% de lancer une Roquette sur votre cible, infligeant {@2} dégâts de Feu.\n\nVous tirez {3} roquettes supplémentaires sur des ennemis aléatoires proches pour chaque familier ou gardien actif. Les roquettes suivantes frappant la même cible infligent moins de dégâts."
+t[203]="Lorsque vous lancez un sort ou une capacité, il y a une chance que votre prochain sort éligible devienne instantané.\n\nSorts éligibles : Colère, Feu d'étoile. Soins : Toucher de guérison, Nourriture, Regénération."
+t[204]="Lorsque vous tombez en dessous de {1} % de vie, les dégâts subis sont réduits de {@2} % pour {3} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[205]="Vos sorts de dégâts directs provoquent des brûlures chez la cible, infligeant {@1} dégâts de Feu sur {2} sec.\n\nCet effet inflige au moins {3} dégâts."
+t[206]="Augmente les dégâts des sorts dont le temps de lancement de base est supérieur à 2,5 secondes de {2}%."
+t[207]="Toutes les {1} s, votre prochain Cone of Cold, Arcane Explosion, Frost Nova ou Dragon's Breath libère Acid Breath, infligeant {@2} points de dégâts de Nature aux ennemis devant vous, plus {@3} points de dégâts de Nature par seconde pendant {4} sec.\n\nCet effet inflige au moins {5} points de dégâts, plus {6} par seconde."
+t[208]="Lorsque vous lancez un sort ou une capacité, vous avez une chance de déclencher un Cyclone d'Os Gelés pour {1} sec, infligeant {2} dégâts de Givre toutes les {3} sec aux ennemis à portée de {4} yards et laissant des traces de Flamme Gelée dans votre sillage. La Flamme Gelée inflige {5} dégâts de Givre toutes les {6} sec."
+t[209]="Réduit la durée des effets ralentissant la mobilité appliqués à vous de {@1}%."
+t[210]="Tant que vous êtes en combat, vous gagnez une charge Électrique toutes les {1} sec, pouvant s'accumuler jusqu'à {2} fois, durant {3} sec.\n\nChaque charge augmente votre vitesse d'attaque de {4}% et fait en sorte que vos attaques automatiques de mêlée et à distance infligent un dégât supplémentaire de type Nature égal à {@5}.\n\nÀ {2} charges, vos attaques automatiques déclenchent au lieu de cela une Foudre en Chaîne sur la cible, infligeant {@7} dégâts de type Nature et se propageant jusqu'à {8} fois. L'effet est perdu en sortant du combat."
+t[211]="Vous pouvez équiper tous les types d'armes."
+t[212]="Lorsque vous infligez des dégâts, vous avez une chance de lancer un sort offensif aléatoire d'une autre classe sur votre cible."
+t[213]="Réduit la durée des effets de peur sur vous de {@1}%."
+t[214]="Vos sorts de dommages directs critiques ont une chance de 20 % de faire {@2} dégâts d'ombre au cible. La chance de déclenchement est triplée contre les cibles dont la santé est inférieure à {3} %.\n\nCet effet inflige au moins 20 dégâts."
+t[215]="Réduit la durée des effets de désarmement sur vous de {@1}%."
+t[216]="Augmente vos dégâts de {1}% pour chaque écho unique que vous avez actif.\n\nLes rangs ou qualités supplémentaires du même écho ne augmentent pas ce bonus."
+t[217]="Toutes les {1} s, votre prochain Holy Nova ou Mind Sear libère Acid Breath, infligeant {@2} points de dégâts de Nature aux ennemis devant vous, plus {@3} points de dégâts de Nature par seconde pendant {4} sec.\n\nCet effet inflige au moins {5} points de dégâts, plus {6} par seconde."
+t[218]="Quand des dégâts vous feraient passer sous {1}% de vie, vous gagnez une Barrière de mana pendant {2} sec, absorbant des dégâts égaux à {3}% de votre mana maximum.\nSi vous n'avez pas de mana, la Barrière de mana absorbe à la place des dégâts égaux à {4}% de vos points de vie maximum.\n\nTant qu'elle est active, la Barrière de mana inflige {5} points de dégâts de l'Ombre toutes les {6} sec aux ennemis proches.\n\nCet effet ne peut pas se produire plus d'une fois toutes les {7} sec."
+t[219]="Réduit la durée des effets de racines sur vous de {@1}%."
+t[220]="Réduit la durée des effets de stun sur vous de {@1}%."
+t[221]="Vos attaques de mêlée ralentissent les ennemis de {1}% pendant {2} sec."
+t[222]="Vos dégâts d'Ombre sur la durée ont {1}% de chances de projeter Shadow Crash sur la cible.\n\nÀ l'impact, il inflige {@2} points de dégâts d'Ombre aux ennemis à moins de {3} mètres."
+t[223]="Tant que vous avez au moins {1} types différents d'écho de statistique de base actifs (Force, Agilité, Intellect, Esprit ou Endurance), vos dégâts sont augmentés de {2}%."
+t[224]="Vos sorts de dégâts directs ralentissent les ennemis de {1}% pendant {2} sec."
+t[225]="Pour chaque {1} Rage que vous dépensez, une petite étincelle jaillit de vous, infligeant {@2} dégâts de feu à une cible ennemie aléatoire à moins de {3} yards.\n\nCet effet inflige au moins {4} dégâts et ne peut se produire plus d'une fois toutes les {5} sec."
+t[226]="Tous les {1} sec, votre prochain Shadowflame, Death Coil, Shadowfury ou Drain Life libère un souffle acide, infligeant {@2} dégâts Nature aux ennemis devant vous et {@3} dégâts Nature supplémentaires chaque seconde pendant {4} sec.\n\nCet effet inflige au moins {5} dégâts et {6} dégâts supplémentaires chaque seconde."
+t[227]="Tant que vous êtes en combat, vous préparez périodiquement une Explosion de canon. Votre prochaine incantation ou capacité de dégâts l'appelle à la localisation ciblée, infligeant {1} dégâts de feu à tous les ennemis à {2} yards autour de vous.\n\nFrapper {3} ou plus d'ennemis prépare la prochaine explosion {4} sec plus tôt."
+t[228]="Augmente l'Esprit de {1}."
+t[229]="Les effets de dégâts au fil du temps ralentissent la vitesse d'attaque en mêlée et à distance de la cible de {1}%. Cet effet ne s'accumule pas."
+t[230]="Chaque fois que vous tuez un ennemi, vous gagnez une pile d'Idol of Yogg-Saron. Lorsque vous atteignez {1} piles, vous invoquez une Chose venue d'au-delà qui lance une Pointe du Vide sur les ennemis proches pour {2} sec.\n\n|cff1eff00Pointe du Vide : |cffffffffEnvoie un bolt de magie sombre, infligeant {@3} dégâts Shadow et {@4} dégâts Shadow à tous les ennemis à {5} yards du cible."
+t[231]="Tant que vous êtes en combat, vous êtes entourés par une nuée de sauterelles, réduisant les dégâts subis de {1}% et infligeant {2} dégâts Nature aux ennemis proches toutes les {3} sec."
+t[232]="Soigner un allié déclenche une explosion d'énergie Sainte à leur emplacement, infligeant {1} dégâts Saints aux ennemis proches. Cet effet inflige au moins {2} dégâts.\n\nCet effet ne peut survenir plus d'une fois toutes les {3} secondes par cible."
+t[233]="Augmente la vitesse de monture de {@1}% supplémentaires."
+t[234]="Quand vous êtes touché par un sort, vous avez une chance de {1}% d'augmenter votre résistance à ce type de magie de {2} pendant {3} sec. Peut s'accumuler jusqu'à {4} fois."
+t[235]="Pour chaque ({1} + {2} par niveau) Mana que vous dépensez, une petite étincelle jaillit de vous, infligeant {@3} dégâts de feu à un ennemi aléatoire à moins de {4} yards.\n\nCet effet inflige au moins {5} dégâts et ne peut se produire plus d'une fois toutes les {6} sec."
+t[236]="Augmente votre régénération de mana de {1}%."
+t[237]="Restaure {@1} mana toutes les {2} sec."
+t[238]="Infliger des dégâts Nature confère une pile de Venimeux. À {1} piles, vous libérez une Salve de flèches empoisonnées, projetant du poison sur tous les ennemis à {2} yd, infligeant {3} dégâts Nature et {4} dégâts Nature supplémentaires par seconde pendant {5} sec.\n\nAprès déclenchement, vous ne pouvez pas obtenir de nouvelles piles de Venimeux pendant {6} sec."
+t[239]="Augmente la valeur de blocage de {@1}."
+t[240]="Blesser un ennemi sous {1}% de vie octroie Scent of Blood pendant {2} sec, augmentant votre vitesse d'attaque et d'incantation de {3}%."
+t[241]="Vos frappes critiques ont une {1}% chance d'invoquer une Étoile Tombante qui frappe un ennemi proche pour {@2} dégâts Arcanes.\n\nAprès {3} Étoiles Tombantes qui frappent, vous déclenchez Explosion Cosmique, infligeant {@4} dégâts Arcanes répartis entre tous les ennemis dans un rayon de {5} yards autour de votre cible."
+t[242]="Pour chaque {1} Puissance Runique que vous dépensez, une petite étincelle jaillit de vous, infligeant {@2} dégâts de feu à une cible ennemie aléatoire à moins de {3} yards.\n\nCet effet inflige au moins {4} dégâts et ne peut se produire plus d'une fois toutes les {5} sec."
+t[243]="Augmente votre génération de Rage de {@1}%."
+t[244]="Toutes les {1} sec en combat, vous inhalez la putréfaction environnante et déchaînez Pestilence âcre, infligeant {2} points de dégâts de l'Ombre à tous les ennemis dans un rayon de {3} mètres et appliquant {4} cumuls de Putréfaction mutée. Pestilence âcre inflige {5}% de dégâts supplémentaires par cumul de Putréfaction mutée déjà sur la cible.\n\n|cff00ff00Putréfaction mutée|r : |cffffffffInflige {6} points de dégâts de Peste toutes les {7} sec pendant {8} sec. Cumulable jusqu'à {9} fois.|r"
+t[245]="Lorsque vous subissez des dégâts alors que votre santé est inférieure à {1}%, vous projetez des toiles, infligeant {2} dégâts de Nature aux ennemis proches et les immobilisant pendant {3} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[246]="Infliger des dégâts d'Ombre applique une couche d'Infection à la cible. À {1} couches, vous infligez à la cible la Malédiction du Porteur de Peste pendant {2} sec, infligeant $ dégâts d'Ombre toutes les {3} sec.\n\nChaque fois qu'elle inflige des dégâts, elle se propage à un ennemi proche non encore affecté."
+t[247]="Tant que vous avez plus de {1}% de mana, vos attaques de base en mêlée et à distance infligent un dégât supplémentaire de {2}% de type Arcane, mais consomment {3}% de votre mana de base."
+t[248]="Pour chaque ({1} + {2} par niveau) que vous dépensez, une petite étincelle jaillit de vous, infligeant {@3} dégâts de feu à un ennemi aléatoire à moins de {4} yards.\n\nCet effet inflige au moins {5} dégâts et ne peut se produire plus d'une fois toutes les {6} sec."
+t[249]="Vos sorts et capacités de dégâts directs ont une chance d'infecter la cible avec une infection mutée pendant {1} sec, infligeant {2} dégâts Nature toutes les {3} sec et appliquant un tas de pourriture mutée toutes les {4} sec.\n\nLorsque l'infection mutée expire ou que la cible meurt, elle laisse derrière elle une boue collante pendant {5} sec, infligeant {6} dégâts Nature toutes les {7} sec à tous les ennemis à l'intérieur de {8} yards et appliquant un tas de pourriture mutée toutes les {7} sec. L'infection mutée ne peut survenir qu'une fois toutes les {10} sec.\n\n|cff00ff00Pourriture mutée|r: |cffffffffInflige {11} dégâts de peste toutes les {12} sec pendant {13} sec. Peut s'accumuler jusqu'à {14} fois.|r"
+t[250]="Après avoir resté sur la même cible pendant {1} sec, vous infligez {2}% de dégâts supplémentaires à cette cible."
+t[251]="Lorsque vous êtes frappé par une attaque de mêlée, vous avez une chance de lancer une pointe terreuse vers l'agresseur, infligeant {@1} points de dégâts à l'agresseur et aux ennemis proches.\n\nLes dégâts sont davantage augmentés par votre Armure et génèrent une quantité élevée de menace."
+t[252]="Augmente votre génération de Puissance runique de {@1}%."
+t[253]="Les ennemis qui vous frappent sont affectés par la Fièvre Décrépite, infligeant {1} dégâts ombre par seconde pendant {2} sec et réduisant les dégâts qu'ils vous infligent de {3}% pendant la durée."
+t[254]="Tuer un ennemi réduit le temps de recharge restant de toutes vos capacités de {1} sec."
+t[255]="Infliger des dégâts de feu confère une pile de Mèche.\n\nÀ {1} piles, vous éclatez en flammes, infligeant {@2} dégâts de feu aux ennemis proches et {@2} dégâts de feu supplémentaires au fil du temps pendant {4} sec.\n\nAprès l'éruption, vous ne pouvez pas obtenir de nouvelles piles de Mèche pendant {5} sec."
+t[256]="Tant que vous êtes en combat, vous invoquez périodiquement des Spores pour {1} sec, augmentant les dégâts critiques de {2} % des alliés proches."
+t[257]="Quand vous avez plus de {1}% de vie, vous infligez {2}% de dégâts supplémentaires."
+t[258]="Vos sorts et capacités infligeant des dégâts ont une chance de projeter de la Glu malléable à l'emplacement de la cible, infligeant {1} points de dégâts de Nature à tous les ennemis dans un rayon de {2} mètres et les affligeant de Malléable pendant {3} sec. Les ennemis Malléables sont ralentis de {4}% et subissent {5}% de dégâts supplémentaires de Putréfaction mutée."
+t[259]="Vos attaques mêlées ont une chance de lancer un Coup déséquilibrant, infligeant {1}% de dégâts d'arme et laissant la cible Déséquilibrée, augmentant les dégâts que vous lui infligez de {2}% pendant {3} sec."
+t[260]="Après avoir lancé {1} sorts ou capacités de Nature, vous invoquez un ouragan à l'emplacement de la cible, infligeant {2} dégâts de Nature sur {3} sec et augmentant les intervalles d'attaque des ennemis touchés de {4}%.\n\nCet effet ne peut survenir plus d'une fois toutes les {5} sec."
+t[261]="Réduit votre chance de critique de {1}%, mais augmente les dégâts de critique de {2}%."
+t[262]="Tant que vous avez plus de {1}% de mana, la restauration de mana restaure également de la santé égale à {2}% du mana restauré."
+t[263]="Pour chaque {1} Rage, {2} Energy ou {3} Mana que vous dépensez, une petite étincelle jaillit de vous, infligeant {@4} dégâts de feu à un ennemi aléatoire à moins de {5} yards.\n\nCet effet inflige au moins {6} dégâts et ne peut se produire plus d'une fois toutes les {7} sec."
+t[264]="Tous les {1} sec pendant un combat, vous jetez une fiole de poison vers un emplacement aléatoire proche, créant une mare de toxines qui inflige {@2} dégâts de poison par seconde.\n\nCet effet inflige au moins {3} dégâts."
+t[265]="Vous harvestez constamment les âmes des ennemis proches, gagnant un tas de Âme Harvestée. Chaque tas augmente vos dégâts infligés de {1}%. Jusqu'à {2}% d'augmentation.\n\nQuand un ennemi dont l'âme a été harvestée meurt, vous regagnez {3} de vie."
+t[266]="Vos coups critiques confèrent {1}% Hâte pendant {2} sec. Empilables jusqu'à {3} fois."
+t[267]="Tant que vous êtes en combat, vous infligez {@1} dégâts de Givre aux ennemis à portée de {3} yards toutes les {2} sec.\n\nCet effet inflige au moins {4} dégâts.\n\nLes ennemis touchés voient leur vitesse d'attaque réduite de {5}% pendant {6} sec."
+t[268]="Quand {1} ennemis ou plus se trouvent dans un rayon de {2} mètres de vous, vous créez un Vortex de choc à votre emplacement pendant {3} sec. Le vortex attire les ennemis proches vers son centre, infligeant {4} points de dégâts de Nature toutes les {5} sec et les ralentissant de {6}%.\n\nÀ son expiration, le Vortex de choc explose, infligeant {7} points de dégâts de Nature à tous les ennemis à l'intérieur.\n\nLe Vortex de choc ne peut pas se produire plus d'une fois toutes les {8} sec."
+t[269]="Après avoir lancé {1} des sorts ou capacités Saints, une Consecration se forme sous la cible, infligeant {2} dégâts Saints aux ennemis et soignant les alliés se tenant dans la lumière pour {3} sur {4} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {5} sec."
+t[270]="Augmente les dégâts que vous infligez de {1}%, mais augmente les dégâts subis de {2}%."
+t[271]="Tous les {1} sec pendant le combat, votre prochain sort ou capacité lance également des éclairs vers jusqu'à {2} ennemis alentours choisis au hasard, infligeant {@3} dégâts Nature.\n\nCet effet inflige au moins {4} dégâts."
+t[272]="Pour chaque {1} Énergie que vous dépensez, une petite étincelle jaillit de vous, infligeant {@2} dégâts de feu à une cible ennemie aléatoire à moins de {3} yards.\n\nCet effet inflige au moins {4} dégâts et ne peut se produire plus d'une fois toutes les {5} sec."
+t[273]="Les dégâts infligés par vos effets de dégâts au fil du temps ont une chance de conférer à un allié aléatoire {1}% de mana maximum, {2} points d'énergie, {3} points de fureur ou {4} points de puissance runique."
+t[274]="Vos sorts et capacités de dommages génèrent un Édit. Lorsque vous atteignez {1} piles, vous invoquez un Édit, passant successivement aux effets suivants dans cet ordre : Météore, Zone du Vide, Ombre Maléfique et Colère Sainte. Chaque invocation déclenche son effet à l'emplacement de votre cible.\n\n|cff1eff00Météore : |cffffffffInflige {2} dégâts de Feu, répartis entre tous les ennemis à {3} yd de l'impact.\n\n|cff1eff00Zone du Vide : |cffffffffAppelle une Zone du Vide pendant until cancelled sec qui inflige {4} dégâts d'Ombre à chaque ennemi à l'intérieur toutes les 1 sec.\n\n|cff1eff00Ombre Maléfique : |cffffffffInflige {6} dégâts d'Ombre, plus {7} dégâts d'Ombre toutes les {8} sec pendant {9} sec.\n\n|cff1eff00Colère Sainte : |cffffffffJette des flèches sacrées qui infligent {10} dégâts sacrés à la cible, sautant vers d'autres ennemis proches. Les dégâts augmentent de {11} % avec chaque saut."
+t[275]="Augmente votre Hâte magique de {1}%, mais réduit votre vitesse de déplacement de {2}%."
+t[276]="Les ressources que vous dépensez sont stockées. Tous les {1} sec, votre prochaine capacité inflige des dégâts supplémentaires en fonction de la quantité stockée."
+t[277]="Après avoir lancé {1} sorts ou capacités d'Ombre, vous libérez une Fureur d'Ombre à l'emplacement de la cible, infligeant {2} dégâts d'Ombre et assommant les ennemis dans la zone pendant {3} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[278]="Augmente votre chance de critique de {1}%, mais réduit votre Armure de {2}%."
+t[279]="Vos sorts directs ont une chance de lancer une Missile Instable sur la cible, infligeant {@1} dégâts Arcanes.\n\nCet effet inflige au moins {2} dégâts."
+t[280]="Augmente les dégâts de vos sorts de {1}%, mais réduit votre mana maximum de {2}%."
+t[281]="Tous les {1} sec pendant un combat, vous affectez un ennemi proche avec Siphon Life, infligeant {@2} dégâts ombre sur {3} sec.\n\nSi la cible affectée meurt, vous êtes soigné de {@4}.\n\nCet effet inflige au moins {5} dégâts et soigne au moins {6} points de vie."
+t[282]="Vous infligez {1} % de dégâts supplémentaires aux ennemis affectés par un contrôle de foule."
+t[283]="Quand vous subissez des dégâts, vous avez une chance d'invoquer un Noyau sombre pendant {1} sec. Le Noyau sombre absorbe {2}% des dégâts que vous subissez, jusqu'à un maximum de {3}% de vos points de vie maximum. Quand il expire ou est entièrement consommé, le Noyau sombre projette une Lance d'ombre améliorée sur votre cible, infligeant des dégâts de l'Ombre égaux au double du montant absorbé."
+t[284]="Pour chaque capacité que vous avez sur cooldown, la Vitesse est augmentée de {1}%. Augmente également le taux de vitesse de {2}."
+t[285]="Augmente vos dégâts physiques de {1}%, mais réduit votre Vitesse d'attaque de {2}%."
+t[286]="Tant que votre santé est inférieure à {1}%, vous entrez en Fureur, augmentant votre Vitesse d'attaque de {2}% et les dégâts physiques infligés de {3}%."
+t[287]="Vous infligez {1}% de dégâts supplémentaires à une cible pour chaque effet de dégâts au fil du temps actif sur elle. Augmente également votre puissance de sorts et votre puissance d'attaque de {2}."
+t[288]="Chaque troisième sort de dégâts directs que vous lancez consécutivement inflige {1}% de dégâts Arcanes supplémentaires."
+t[289]="Tant que votre Énergie est inférieure à {1}%, la régénération d'Énergie est augmentée de {2}%.\nTant que votre Énergie est supérieure à {1}%, les dégâts infligés sont augmentés de {4}%."
+t[290]="Tant que vous êtes derrière votre cible, vos attaques et capacités de mêlée et à distance déclenchent également un coup supplémentaire pour {1}% des dégâts infligés. Augmente également le taux de critique de {2}."
+t[291]="Tuer un ennemi en feu conjure une Boule de flammes qui cherche un ennemi proche, laissant des Flammes ardentes dans son sillage. Les Flammes ardentes infligent {1} points de dégâts de Feu toutes les {2} sec aux ennemis proches pendant {3} sec.\n\nQuand la Boule de flammes atteint sa cible, elle explose, infligeant {4} points de dégâts de Feu à tous les ennemis dans un rayon de {5} mètres.\n\nCet effet ne peut pas se produire plus d'une fois toutes les {6} sec."
+t[292]="Tuer un ennemi invoque un Nuage de poison pour {1}, infligeant {2} dégâts Nature aux ennemis proches chaque {3}.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} secondes."
+t[293]="Après avoir lancé ou utilisé {1} capacités offensives, vous libérez un Éclair en chaîne, infligeant {2} dégâts Nature et sautant jusqu'à {3} ennemis supplémentaires. Augmente également votre puissance de sorts et votre puissance d'attaque de {4}."
+t[294]="Vos techniques de dégâts directs appliquent Unstable Infusion à la cible pendant {1} s. Tant qu'Unstable Infusion est actif, vos coups critiques ont {2} % de chances de déclencher une explosion instable, infligeant {@3} points de dégâts aux ennemis à moins de {4} mètres de votre cible principale."
+t[295]="Quand une cible meurt sous l'effet d'un de vos effets de dégâts au fil du temps, cet effet se propage à tous les ennemis à moins de {1} yards."
+t[296]="Vos attaques de mêlée frappent un ennemi supplémentaire proche. Augmente également votre puissance d'attaque de {1}."
+t[297]="Tant que votre Rage est inférieure à {1}%, la génération de Rage est augmentée de {2}%.\nTant que votre Rage est supérieure à {1}%, les dégâts infligés sont augmentés de {4}%."
+t[298]="Lorsque vous tombez en dessous de {1}% de vie, vous vous transformez en Démon pendant {2} sec. Tant que vous êtes transformé, vos dégâts sont augmentés de {3}%, vous récupérez {4}% des dégâts infligés en tant que vie, et vos attaques de mêlée frappent un ennemi supplémentaire proche. Cela ne peut se produire plus d'une fois toutes les {5} sec."
+t[299]="Porter le coup fatal libère un Hurlement terrifiant, infligeant {1} points de dégâts aux ennemis à portée de {2} yd, les ralentissant de {3}% et les rendant ainsi sujets à subir {4}% de dégâts supplémentaires venant de vous pendant {5} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {6} secondes."
+t[300]="Augmente la Hâte de {1}% et le taux de Hâte de {2}."
+t[301]="Augmente la Force de {@1}"
+t[302]="Lorsque vous lancez Mortal Strike, Bloodthirst ou Shield Slam, vous jetez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[303]="Chaque fois que vous utilisez une capacité ayant un temps de recharge, le temps de recharge restant de toutes les autres capacités est réduit de {1} sec. En outre, augmente également le taux de touché de {2}.\n\n\nCet effet ne peut survenir qu'une seule fois toutes les {3} seconde."
+t[304]="Vos sorts et capacités infligeant des dégâts ont une chance de lier votre cible à l'ennemi le plus proche pendant {1} sec. Tant qu'ils sont liés, {2}% des dégâts directs que vous infligez à l'une des cibles sont aussi infligés à l'autre sous forme de dégâts de l'Ombre.\n\nSi l'une des cibles meurt pendant la liaison, la cible survivante est affligée de Morsure vampirique, augmentant les dégâts qu'elle subit de votre part de {3}% pendant {4} sec."
+t[305]="Augmente l'Agilité de {@1}"
+t[306]="Vous alternez entre Charge Positive et Charge Négative.\nSubir des dégâts directs en mêlée vous fait passer en Charge Négative.\nTant que vous êtes sous Charge Négative, passer {1} to {2} sec sans subir de dégâts directs en mêlée vous fait passer en Charge Positive.\n\nVous ne pouvez pas changer plus d'une fois toutes les {3} sec.\n\n|cff1eff00Charge Positive : |cffffffffAugmente votre chance de critique de {4}% et les dégâts infligés de {5}%.\n\n|cff1eff00Charge Négative : |cffffffffRéduit les dégâts subis de {6}%, augmente les soins reçus de {7}%, et augmente votre vitesse de déplacement de {8}%."
+t[307]="Tous les {1} sec, votre prochaine capacité ne coûte aucun ressource primaire et restaure {2} Énergie, {3} Colère, {4} % de votre mana maximum ou {5} Puissance Runique, selon votre classe."
+t[308]="Tant que votre Puissance runique est inférieure à {1}%, la génération de Puissance runique est augmentée de {2}%.\nTant que votre Puissance runique est supérieure à {1}%, les dégâts infligés sont augmentés de {4}%."
+t[309]="Les effets de dégâts au fil du temps bénéficient désormais de la Vitesse d'attaque."
+t[310]="Après avoir resté immobile pendant {1} sec, vos coups critiques infligent {2}% de dégâts supplémentaires. Cet effet persiste jusqu'à {3} sec après votre déplacement. Augmente également votre taux de coup critique de {4}."
+t[311]="Lancer un sort de soin augmente vos dégâts de sorts de {1}% pendant {2} sec. Lancer un sort de dégâts augmente vos soins infligés de {3}% pendant {4} sec."
+t[312]="Lorsque vous lancez le Jugement, vous jetez une pierre sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[313]="Vos sorts de soin directs ont une chance de {1}% de conférer à un allié aléatoire l'effet Inspiré, un bonus de {2}% à toutes les attributs pendant {3} sec. L'effet peut s'accumuler jusqu'à un total de {4}%."
+t[314]="Augmente votre Puissance de Sorts d'une quantité égale à {1}% de votre Armure, jusqu'à un maximum de {2}% de votre intelligence.\n\nBonus actuel : {@3} Puissance de Sorts."
+t[315]="Vos effets de soin périodiques ont une chance de {1}% de conférer à un allié aléatoire l'effet Inspiré, un bonus de {2}% à toutes les attributs pendant {3} sec. L'effet peut s'accumuler jusqu'à un total de {4}%."
+t[316]="Soigner un allié sous {1}% de vie lui octroie Vigueur émeraude pendant {2} sec, augmentant les soins qu'il reçoit de vous de {3}%.\n\nSi un allié sous l'effet de Vigueur émeraude est soigné au-dessus de {4}% de vie, la Vigueur émeraude éclôt, soignant jusqu'à {5} alliés blessés proches de {6}."
+t[317]="Infliger des dégâts de Givre confère une pile de Rime. À {1} piles, vous libérez un souffle de Givre devant vous, infligeant {2} dégâts de Givre et laissant les ennemis touchés dans un état de Fragilité pendant {3} sec.\n\nTant que Fragilité est active, vos dégâts de Givre contre eux sont augmentés de {4}%.\n\nAprès déclenchement, vous ne pouvez pas obtenir de nouvelles piles de Rime pendant {5} sec."
+t[318]="Vos sorts et capacités de dégâts directs ont une chance d'appliquer des Cendres Brûlantes pendant {1} sec, infligeant {2} dégâts de Feu toutes les {3} sec.\n\nLorsque les Cendres Brûlantes atteignent {4} piles, cela déclenche une Respiration Profonde, brûlant tous les ennemis sur une ligne devant vous pour {5} dégâts de Feu et consommant toutes les piles sur la cible principale.\n\nRespiration Profonde ne peut survenir plus d'une fois toutes les {6} sec."
+t[319]="Tant que votre santé est inférieure à {1}% , vos sorts et capacités de dégâts déclenchent une Nid de Suceurs, infligeant {2} dégâts Nature à tous les ennemis à portée de {4} yd toutes les {3} sec pendant {5} sec. Vous êtes soignés pour {6}% des dégâts infligés.\n\nSi Nid de Suceurs touche uniquement {7} cible, ses dégâts et soins sont augmentés de {8}%. Nid de Suceurs ne peut survenir plus d'une fois toutes les {9} sec."
+t[320]="Vous commencez le combat en Essence de Lumière.\n\nEssence de Lumière : Infliger des dégâts Saints, Feu ou Nature applique une Charge de Lumière pour {1} sec, s'accumulant jusqu'à {2} fois. Infliger des dégâts Ombre, Gel ou Arcane consomme la Charge de Lumière pour déclencher une Explosion Sombre, infligeant {3} dégâts Ombre par niveau à la cible et à tous les ennemis à {4} yards autour d'elle et vous fait basculer en Essence Sombre.\n\nEssence Sombre : Infliger des dégâts Ombre, Gel ou Arcane applique une Charge Sombre pour {5} sec, s'accumulant jusqu'à {6} fois. Infliger des dégâts Saints, Feu ou Nature consomme la Charge Sombre pour déclencher une Explosion de Lumière, infligeant {7} dégâts Saints par niveau à la cible et à tous les ennemis à {8} yards autour d'elle et vous fait basculer en Essence de Lumière."
+t[321]="Lorsque vous tuez une cible, tous vos dégâts par effet de durée restants sur elle explosent instantanément, infligeant {1}% des dégâts restants combinés à tous les ennemis à portée de {2} yards."
+t[322]="Réduit les dégâts subis de {1}%, mais réduit les dégâts infligés de {2}%. Augmente la menace générée de {3}%."
+t[323]="Lorsque vous lancez Death Strike, Heart Strike, Obliterate ou Scourge Strike, vous jetez une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[324]="Votre soin est augmenté de {1}%, mais vos sorts coûtent {2}% plus de mana."
+t[325]="Vos effets de soin périodiques provoquent également l'explosion de flammes brûlantes sur la cible, infligeant des dégâts de Feu équivalents à {1}% du soin effectué à des ennemis proches toutes les {2} sec. Ces dégâts ne peuvent dépasser {3}% de votre santé maximale. Augmente également votre puissance de sorts de {4}."
+t[326]="Vos effets périodiques ont une chance de {1}% de flamber, les faisant infliger des dégâts ou soigner une fois supplémentaire.\n\nNe peut survenir plus d'une fois toutes les {2} sec sur la même cible."
+t[327]="Après avoir lancé {1} ou une capacité de feu, vous faites tomber une pluie de feu sur l'emplacement de la cible, brûlant le sol pour {2} dégâts de feu sur {3} sec.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[328]="Les dégâts infligés par vos effets de dégâts au fil du temps ont une chance d'appliquer un effet de dégâts au fil du temps aléatoire associé à une autre classe."
+t[329]="Chaque fois que vous recevez une guérison directe, vous infligez des dégâts d'ombre égaux à {1}% du montant guéri à un ennemi proche. Augmente également votre santé maximale de {2}."
+t[330]="Votre dégât périodique de Warlock a une chance de vous faire jeter une roche sur la cible, infligeant {@1} dégâts physiques à tous les ennemis à {2} yards de l'impact.\n\nCet effet inflige au moins {3} dégâts."
+t[331]="Hors combat, les dégâts et les soins infligés sont augmentés de {1}%. Cet effet persiste pendant {2} sec après votre entrée en combat."
+t[332]="Augmente votre santé maximale de {1}%, mais réduit les soins reçus de {2}%."
+t[333]="Vous pouvez équiper tous les types d'armure."
+t[334]="Vos dégâts de Givre ont une chance d'affliger la cible de Froid pénétrant pendant {1} sec, augmentant les dégâts de Givre qu'elle subit de votre part de {2}%.\n\nSi un ennemi meurt en étant affligé, il vole violemment en éclats, infligeant {3} points de dégâts de Givre à tous les ennemis dans un rayon de {4} mètres."
+t[335]="Vous avez un {1}% de chances de lancer la même capacité deux fois. Fonctionne uniquement avec certaines capacités de classes de soin et de dommages."
+t[336]="Après avoir quitté le combat, et toutes les {1} sec pendant qu'on est en combat, votre prochaine capacité de dégâts touche également {@2} ennemi supplémentaire proche."
+t[337]="Tuer un ennemi confère un Fragment d'Âme. Lorsque vous avez {1} Fragments d'Âme, ils sont consommés pour invoquer un Serviteur du Roi des Neiges pendant {2} sec.\n\nVous pouvez avoir jusqu'à {3} Servants actifs en même temps."
+t[338]="Tant que vous avez plus de {1}% de mana, les dégâts de vos sorts sont augmentés de {2}%, mais les coûts de ressources sont augmentés de {3}%."
+t[339]="Permet d'utiliser deux armes simultanément. Les dégâts de l'arme secondaire sont réduits de {1}%."
+t[340]="Après avoir lancé {1} sorts ou capacités de Gel, vous invoquez une Tempête de neige à l'emplacement de la cible, infligeant {2} dégâts de Gel sur {3} sec et ralentissant les ennemis dans la zone.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[341]="Après avoir lancé {1} sorts ou capacités Arcanes, vous déclenchez une Explosion Arcane, infligeant {2} dégâts Arcanes et restaurant {3}% de mana.\n\nCet effet ne peut survenir plus d'une fois toutes les {4} sec."
+t[342]="{1}% de toute guérison que vous infligez à vos alliés vous guérit également.\n\nRemplace Lifebond (Rank {2})."
+t[343]="Augmente votre mana total de {1}."
+t[344]="Permet de porter {1} objet(s) indépendamment de ses exigences de niveau."
+t[345]="Tant que vous avez plus de {1}% de vie, les dégâts subis par des coups directs sont réduits de {2}%."
+t[346]="Quand vous utilisez une potion, vous restaurez instantanément un supplément de {1}% de votre santé maximale."
+t[347]="Augmente le nombre de rerolls d'Écho disponibles au début d'une course de {1}."
+t[348]="Tant que votre mana est supérieur à 75 %, vous gagnez Puissance Montante, augmentant vos dégâts de sorts de {2} %. Cet effet persiste jusqu'à ce que votre mana tombe en dessous de {3} %, auquel moment il est remplacé par Flot Réparateur.\n\nFlot Réparateur augmente votre régénération de mana de {4} % et persiste jusqu'à ce que votre mana dépasse 75 %, auquel moment il est remplacé par Puissance Montante."
+t[349]="Augmente l'expérience gagnée de дополнительные {1}%."
+t[350]="Augmente votre Intellect de {1}%."
+t[351]="Tant que votre mana est supérieur à 75 %, vous gagnez Puissance Montante, augmentant vos dégâts de sorts de {2} %. Cet effet persiste jusqu'à ce que votre mana tombe en dessous de {3} %, auquel moment il est remplacé par Flot Réparateur.\n\nFlot Réparateur augmente votre régénération de mana de {4} % et persiste jusqu'à ce que votre mana dépasse 75 %, auquel moment il est remplacé par Puissance Montante.\n\nRemplace Arcane Equilibrium (Rank {6})."
+t[352]="{1}% de chances de gagner un point de compétence supplémentaire chaque fois que vous gagnez un niveau de compétence dans un métier autre qu'un métier de récolte."
+t[353]="Accorde un point de talent supplémentaire."
+t[354]="Réduit le temps de recharge de Quickstep de {1} sec."
+t[355]="Augmente votre puissance d'attaque de {1}."
+t[356]="Augmente votre Force, Agilité, Intelligence ou Esprit pour chaque rang, selon la statistique la plus élevée, jusqu'à {1} par rang."
+t[357]="Augmente votre vitesse de nage de {1}% supplémentaires."
+t[358]="Réduit les dégâts subis par chute de {1}%"
+t[359]="Augmente votre Expertise de {1}."
+t[360]="Vos coups critiques en mêlée et à distance confèrent Butcher’s Tempo, augmentant votre Vitesse d'attaque de {1}% pendant {2} sec. Cet effet peut s'accumuler jusqu'à {3} fois."
+t[361]="Augmente les gains de réputation de {1}%."
+t[362]="Recueillir des ressources à partir d'un nœud augmente votre vitesse de déplacement de {1}% pendant {2} sec."
+t[363]="Augmente votre Force de {1}%."
+t[364]="Vous recevez un second point de compétence chaque fois que vous gagnez un niveau de compétence dans toute profession non-récolte, avec une chance de {1} % de gagner un troisième point."
+t[365]="Vos coups critiques en mêlée et à distance confèrent Butcher’s Tempo, augmentant votre Vitesse d'attaque de {1}% pendant {2} sec. Cet effet peut s'accumuler jusqu'à {3} fois.\n\nRemplace Butcher’s Tempo (Rang {4})."
+t[366]="Augmente votre santé maximale de {1}%."
+t[367]="Génération depuis un point d'accumulation augmente votre vitesse de déplacement de {1}% pendant {2} sec.\n\nRemplace Harvest Rush (Rank {3})."
+t[368]="Réduit les dégâts magiques subis de {1}%."
+t[369]="Les ennemis que vous tuez explosent, infligeant {1} dégâts d'Ombre autour d'eux. Cet effet ne peut survenir plus d'une fois toutes les {2} sec."
+t[370]="Borrowed Time restaure une quantité supplémentaire de {1}% de vie."
+t[371]="Augmente vos chances de trouver des objets rares de {1}%."
+t[372]="Augmente la quantité de matières obtenues par la Minéralogie de {1}%."
+t[373]="Tant que vous vous déplacez, les dégâts subis sont réduits de {1}%."
+t[374]="Augmente la durée des effets bénéfiques que vous lancez sur vous-même de {1}%."
+t[375]="Alors que vous vous déplacez, les dégâts subis sont réduits de {1}%.\n\nRemplace Flowing Defense (Rank {2})."
+t[376]="Votre Pierre de Retour refroidit {1}% plus rapidement."
+t[377]="{1}% des dégâts que vous subissez sont reportés, infligeant leurs dégâts sur {2} secondes au lieu de tout de suite.\n\nRemplace Deferred Pain (Rank {3})."
+t[378]="Réduit le temps de fabrication de {1}%."
+t[379]="Votre Pierre de Retour se refroidit {1}% plus rapidement.\n\nRemplace Traveler’s Recall (Rank {2})."
+t[380]="Lorsque vous lancez un sort de dommage direct, vous obtenez Overflow pour {1} sec. Lancer d'autres sorts de dommage direct pendant que Overflow est actif ajoute {2} pile, mais ne renouvelle pas sa durée.\n\nQuand Overflow expire, il explose, infligeant {3} dégâts Arcanes par pile aux ennemis proches. Overflow peut atteindre {4} piles."
+t[381]="Tous les {1} sec pendant que vous n'êtes pas en combat et que vous êtes monté, la vitesse de votre monture est augmentée de {2}%. Cette augmentation peut s'accumuler jusqu'à {3} fois."
+t[382]="{1}% de votre soin en excès sur les alliés est stocké. Tous les {2} sec, le soin stocké est redistribué auprès de jusqu'à {3} alliés blessés à proximité."
+t[383]="Augmente les dégâts et les soins infligés de {1}%."
+t[384]="Prendre des coups directs en mêlée confère un cumul de Momentum. Cet effet ne peut survenir plus d'une fois toutes les 0,3 sec.\n\nÀ {2} cumuls, vous infligez {3} dégâts physiques et générez une quantité importante de menace. Les dégâts augmentent en fonction de votre Résilience."
+t[385]="Augmente les dégâts de mêlée de {1}%."
+t[386]="Encaisser des coups directs en mêlée confère un cumul de Momentum. Cet effet ne peut survenir plus d'une fois toutes les 0,3 sec.\n\nÀ {2} cumuls, vous infligez {3} dégâts physiques et générez une quantité importante de menace. Les dégâts dépendent de votre Endurance.\n\nRemplace Vengeful Momentum (Rank {4})."
+t[387]="Réduit les dégâts de Givre subis de {1}%."
+t[388]="Le temps de lancement du système de déplacement sur la carte du monde est désormais nettement plus rapide."
+t[389]="Augmente le montant de matériaux obtenus par le Désenchantement de {1}%."
+t[390]="Augmente votre puissance d'attaque de {1} ou votre puissance de sorts de {2} pour chaque rang, selon la classe et la spécialisation que vous utilisez."
+t[391]="Contre les ennemis Boss, les coups critiques de vos attaques automatiques stockent une Force Surprenante égale à {1}% des dégâts infligés."
+t[392]="Augmente l'expérience gagnée grâce à la collecte et au massacre de monstres de manière supplémentaire de {1}%."
+t[393]="Augmente votre endurance de {1}%."
+t[394]="Augmente votre mana de {1}%."
+t[395]="Augmente l'expérience gagnée via les quêtes de {1}% supplémentaires."
+t[396]="Les coups critiques contre vous infligent {1}% de dégâts en moins."
+t[397]="Augmente votre puissance de sorts de {1}."
+t[398]="Augmente votre Esprit de {1}%."
+t[399]="Augmente la quantité de matériaux obtenus par le broyage de {1}%."
+t[400]="Augmente le nombre d'Écho d'Exil disponibles au début d'une course de {1}."
+t[401]="Augmente les soins reçus lorsque la santé est inférieure à {1}% de {2}%."
+t[402]="Réduit les dégâts de feu subis de {1}%."
+t[403]="Vous pouvez désormais utiliser les montures volantes en Norfendre."
+t[404]="Augmente vos chances de vous voir proposer des Echoes de meilleure qualité quand vous montez de niveau de {1}%."
+t[405]="Réduit le temps de recharge d'Emergency Exit de {1} min."
+t[406]="Après avoir resté immobile pendant {1} sec en dehors du combat, vous restaurez {2}% de mana chaque seconde."
+t[407]="Vous vous protégez avec des boucliers équivalents à {1}% des soins excédentaires infligés par des sorts de soin directs, jusqu'à {2}% de votre santé maximale."
+t[408]="Augmente la quantité de tissu que vous trouvez sur les humanoïdes de {1}%."
+t[409]="Rest and Recover restaure en outre {1}% de mana chaque seconde."
+t[410]="Vous pouvez désormais utiliser toutes les montures volantes à {1} % de vitesse."
+t[411]="Boucliers qui vous soignent de {1}% des dégâts d'excès causés par des sorts de soin directs, jusqu'à {2}% de votre santé maximale.\n\nRemplace Life Surplus (Rank {3})."
+t[412]="Vitesse de déplacement augmentée de {1}%."
+t[413]="Augmente votre Agilité de {1}%."
+t[414]="Augmente votre puissance de sorts de {1}%."
+t[415]="Canaliser pour augmenter l'intensité toutes les {1} secondes mais infliger {2}% de dégâts toutes les secondes"
+t[416]="Chaque fois que vous tuez un ennemi, vos dégâts sont augmentés de {1} % pendant {2} sec. Cumulable jusqu'à {3} fois."
+t[417]="Chaque fois que vous tuez un ennemi, votre vitesse de déplacement est augmentée de {1} % supplémentaires pendant {2} sec."
+t[418]="Hors combat, vous restaurez {1}% de votre vie maximale toutes les {2} secondes."
+t[419]="Augmente la durée des effets de nourriture de {1}%."
+t[420]="Augmente la quantité de matériau obtenue par l'Herbologie de {1}%."
+t[421]="Augmente votre puissance d'attaque de {1}%."
+t[422]="Vous pouvez respirer sous l'eau indéfiniment."
+t[423]="Tant que vous avez {1} piles de Butcher’s Tempo, vos frappes critiques en mêlée et à distance frappent également jusqu'à {2} ennemis proches pour {3} de dégâts."
+t[424]="Vous pouvez désormais utiliser les montures terrestres à {1} % de vitesse."
+t[425]="Quand une attaque ou une capacité aurait pour effet de vous tuer, vous survivez au lieu de cela et êtes restauré à {1}% de votre santé maximale.\n\nCet effet ne peut survenir qu'une seule fois par vie et les charges se rafraîchissent à chaque reset."
+t[426]="Lors de la fabrication d'objets, vous avez une chance de {1}% de récupérer une partie des réactifs utilisés."
+t[427]="Les effets de vos nourritures, flacons et élixirs persistent après la mort."
+t[428]="Réduit les dégâts subis par effet de zone de {1}%."
+t[429]="Permet de déclencher les effets de Tricherie de la Mort {1} fois supplémentaires. Les charges se rafraîchissent à chaque réinitialisation."
+t[430]="Les ennemis frappés par Conduit d'excès subissent {1}% de dégâts supplémentaires venant de vous pendant {2} sec."
+t[431]="Augmente les dégâts critiques et les soins critiques de {1}%."
+t[432]="Lors de la fabrication d'objets, vous avez une chance de {1}% de récupérer une partie des réactifs utilisés.\n\nRemplace Efficient Assembly (Rank {2})."
+t[433]="Vous apprenez le Liens du Voyageur. Après avoir utilisé votre Pierre de Retour, Liens du Voyageur peut être lancé dans les {1} min pour vous ramener à votre emplacement précédent."
+t[434]="Tant que votre santé est inférieure à {1}%, les dégâts subis sont réduits de {2}%."
+t[435]="Réduit le temps de collecte de {1}%."
+t[436]="Tant que vous combattez un ennemi Boss, vos dégâts et soins infligés augmentent de {1}% toutes les {2} sec, jusqu'à {3} fois."
+t[437]="Augmente votre pénétration d'armure de {1}%."
+t[438]="Réduit le temps nécessaire pour que les poissons mordent de {1}%."
+t[439]="Vous recevez deux points de compétence supplémentaires chaque fois que vous gagnez un niveau de compétence dans toute profession non-récolte."
+t[440]="Augmente la Hâte de {1}%."
+t[441]="Augmente la quantité de poissons obtenus par Pêche de {1}%."
+t[442]="Augmente le nombre d'Échos de Gel disponibles au début d'une course de {1}."
+t[443]="Les dégâts d'une seule attaque qui dépassent {1}% de votre santé maximale sont réduits de {2}%."
+t[444]="Réduit les dégâts à distance subis de {1}%."
+t[445]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires."
+t[446]="Canaliser pour réduire l'intensité toutes les {1} secondes mais infliger {2}% de dégâts toutes les secondes"
+t[447]="Augmente votre chance de toucher de {1}%. Ce bonus ne s'affiche pas sur la fiche du personnage."
+t[448]="Augmente les soins infligés de {1}%."
+t[449]="Réduit le temps de lancement de votre Pierre de maison de {1}%."
+t[450]="Réduit les dégâts Arcanes subis de {1}%."
+t[451]="Tous les {1} sec pendant que vous n'êtes pas en combat et que vous n'êtes pas monté, votre vitesse de déplacement est augmentée de {2}%. S'accumule jusqu'à {3} fois."
+t[452]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires.\n\nRemplacez par Into the Fray (Rang 2).\n\nRemplace Into the Fray (Rank 2)."
+t[453]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires.\n\nRemplacez par Into the Fray (Rang 5).\n\nRemplace Into the Fray (Rank 5)."
+t[454]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires.\n\nRemplacez par Into the Fray (Rang 3).\n\nRemplace Into the Fray (Rank 3)."
+t[455]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires.\n\nRemplacez par Into the Fray (Niveau 4).\n\nRemplace Into the Fray (Rank 4)."
+t[456]="Tant que vous avez {1} ou plus d'ennemis à {2} yd de vous, vous générez {3}% de menace accrue et infligez {4}% de dégâts supplémentaires.\n\nRemplacez par Dans la mêlée (Niveau 1).\n\nRemplace Into the Fray (Rank 1)."
+t[457]="Augmente le montant de matériau obtenu par la Prospection de {1}%."
+t[458]="Place un sortilège protecteur sur vous pendant {1} h. Si des dégâts vous tueraient pendant que le sortilège est actif, vous devenez immunitaire à tous les dégâts et effets nuisibles, et vous êtes téléporté après {2} sec à votre emplacement d'origine, ou à l'entrée de l'instance si vous êtes à l'intérieur d'un donjon ou d'une raid.\n\nNe protège pas contre les mécaniques de mort instantanée."
+t[459]="Quand vous soignez un allié, un ennemi proche subit des dégâts Divins égaux à {1}% des soins infligés."
+t[460]="Réduit les dégâts subis provenant d'effets de dégâts au fil du temps de {1}%."
+t[461]="Augmente votre mana maximum de {1}%."
+t[462]="Jusqu'à {1}% des dégâts de surkill de vos coups mortels en mêlée sont stockés sous forme de Force surpuissante, jusqu'à {2}% de votre vie maximale.\n\nVotre prochaine capacité de dégât en mêlée directe utilise toute la Force stockée pour infliger des dégâts physiques supplémentaires équivalents à la quantité stockée au principal cible.\n\nLa Force surpuissante dure until cancelled."
+t[463]="Augmente la vitesse de votre monture de дополнительные {1}%."
+t[464]="Lorsque vous soignez un allié, un ennemi proche subit des dégâts Divins égaux à {1}% des soins effectués.\n\nRemplace Atoning Radiance (Rank {2})."
+t[465]="Réduit les dégâts de Nature subis de {1}%."
+t[466]="Augmente le nombre maximum de métiers que vous pouvez apprendre simultanément de {1}."
+t[467]="Prendre des dégâts magiques réduit les dégâts subis de ce type de {1}% pendant {2} sec."
+t[468]="Vous infligez {1}% de dégâts supplémentaires aux ennemis dont la santé est inférieure à {2}%."
+t[469]="Augmente le nombre de fois où vous pouvez accepter une résurrection de {1}.\n\nLes charges se rafraîchissent à chaque reset.\n\n|cff8b0000En mode Hardcore : |cffffffffVous ne pouvez pas accepter de résurrection, au lieu de cela, tous les dégâts subis sont réduits de {2}%.|r"
+t[470]="Prendre des dégâts magiques réduit les dégâts subis de ce type de {1}% pendant {2} sec.\n\nRemplace Adaptive Resilience (Rank {3})."
+t[471]="Vous infligez {1}% de dégâts supplémentaires aux ennemis dont la santé est inférieure à {2} %.\n\nRemplace Executioner’s Oath (Rank {3})."
+t[472]="Chaque run, vous pouvez choisir l'option de résurrection une fois supplémentaire gratuitement.\n\nLes charges se rafraîchissent à chaque reset.\n\n|cff8b0000Tant que vous êtes en mode Hardcore : |cffffffffVous ne pouvez pas vous ressusciter, au lieu de cela, tous les dégâts subis sont réduits de {1}%.|r"
+t[473]="Vous pouvez bénéficier simultanément d'un nombre quelconque d'effets différents de nourriture et d'elixirs."
+t[474]="Chaque fois que vous tuez un ennemi, vous récupérez {1} % de votre santé maximale."
+t[475]="Réduit tous les dégâts subis pendant qu'on est étourdi ou contrôlé mentalement de {1}%."
+t[476]="Augmente le montant de matériaux obtenus par la Désossage de {1}%."
+t[477]="Tant que vous êtes en combat, vous restaurez {1}% de votre santé maximale toutes les {2} secondes."
+t[478]="Vous gagnez maintenant de l'Experience lors de la Récolte"
+t[479]="Augmente la vitesse de monture de {1}% pour chaque {2}% de vitesse de déplacement accrue que vous avez."
+t[480]="Vous êtes immunisé contre les effets de Daze.\n\nNe s'applique pas à Aspect du Pack et Aspect du Guépard."
+t[481]="{1}% des dégâts que vous subissez sont reportés, infligeant leurs dégâts sur {2} secondes au lieu de tout de suite."
+t[482]="Réduit les dégâts physiques subis de {1}%."
+t[483]="Les alliés soignés par la Miséricorde débordante gagnent un bouclier d'absorption égal à {1}% des soins reçus pendant {2} sec."
+t[484]="Tant que vous avez {1} piles ou plus de Focus de Mort, vos dégâts infligés aux cibles dont la santé est inférieure à {2} % sont augmentés de {3} %."
+t[485]="{1}% de toute guérison que vous infligez à vos alliés vous guérit également."
+t[486]="Augmente votre chance de critique de {1} %."
+t[487]="Réduit les dégâts d'ombre subis de {1}%."
+t[488]="Tant que votre santé est inférieure à {1}% , Nervures Gelées réduit davantage de dégâts de {2}%."
+t[489]="Augmente votre Résilience de {1} pour chaque rang."
+t[490]="Permet d'inscrire cet affixe sur tout objet équipable : Votre familier attaque {1}% plus vite"
+t[491]="Permet d'inscrire cet affixe sur tout objet équipable : les coups critiques infligent {1} % de dégâts supplémentaires et guérissent davantage."
+t[492]="Permet d'inscrire cet affixe sur tout objet équipable : les coups critiques infligent 8 % de dégâts supplémentaires et guérissent 8 % de points de vie supplémentaires."
+t[493]="Permet d'inscrire cet affixe sur tout objet équipable : les coups critiques infligent 6 % de dégâts supplémentaires et guérissent 6 % de points de vie supplémentaires."
+t[494]="Permet d'inscrire cet affixe sur tout objet équipable : les coups critiques infligent 2 % de dégâts supplémentaires et guérissent 2 % de points de vie supplémentaires."
+t[495]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente votre Armure de {1}"
+t[496]="Permet d'inscrire cet affixe sur tout objet équipable : vos soins périodiques peuvent augmenter votre Puissance de Sorts de Soins de {1} pendant {2} sec"
+t[497]="Permet d'inscrire cet affixe sur tout objet équipable : subir des dégâts peut conférer {1}% de Puissance d'attaque et {2} to {3}% de Puissance magique pendant {4} secondes"
+t[498]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente votre pénétration d'armure de {1} %"
+t[499]="Permet d'inscrire cet affixe sur tout objet équipable : Infliger des dégâts ralentit le mouvement de votre cible de {1}% et augmente le temps entre ses attaques de {2}%."
+t[500]="Permet d'inscrire cet affixe sur tout objet équipable : Vos capacités peuvent déclencher une Respiration de Glace infligeant {1} dégâts de Gel, augmentés par votre Résilience"
+t[501]="Permet d'inscrire cet affixe sur toute arme équipable : vos attaques de mêlée et à distance ont une chance de réduire l'armure de la cible. L'effet est augmenté par votre Agilité."
+t[502]="Permet d'inscrire cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de désarmer la cible. La durée du désarmement est augmentée par votre Résilience."
+t[503]="Permet d'appliquer cet affixe sur toute arme équipable : vos capacités physiques ont une chance de blesser la cible, lui infligeant des dégâts toutes les {1} sec pendant {2} sec. Les dégâts évoluent en fonction de la vitesse de votre arme."
+t[504]="Permet de graver cet affixe sur n'importe quel objet équipable : vos sorts peuvent réduire un temps de recharge aléatoire de {1} sec. Unique."
+t[505]="Permet de graver cet affixe sur n'importe quel objet équipable : vos sorts peuvent réduire un temps de recharge aléatoire de 4,0 sec. Unique."
+t[506]="Permet de graver cet affixe sur n'importe quel objet équipable : vos sorts peuvent réduire un temps de recharge aléatoire de 3,5 sec. Unique."
+t[507]="Permet de graver cet affixe sur n'importe quel objet équipable : vos sorts peuvent réduire un temps de recharge aléatoire de 8,0 sec. Unique."
+t[508]="Permet de graver cet affixe sur n'importe quel objet équipable : vos sorts peuvent réduire un temps de recharge aléatoire de 2,5 sec. Unique."
+t[509]="Permet d'appliquer cet affixe sur toute arme équipable : vos dégâts de givre ont une chance de lancer une flèche de givre sur la cible, infligeant des dégâts de givre et réduisant sa vitesse de déplacement. Les dégâts sont augmentés en fonction du nombre d'effets ralentissants sur la cible."
+t[510]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente les dégâts et les soins infligés de {1} %"
+t[511]="Permet d'inscrire cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de feu. Les dégâts augmentent en fonction de votre taux de critique."
+t[512]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de type Nature. Les dégâts augmentent en fonction de votre mana total."
+t[513]="Permet d'inscrire cet affixe sur toute arme équipable : vos dégâts de Nature ont une chance de recouvrir la cible d'Acide Corrosif, lui infligeant des dégâts de Nature toutes les {1} sec. Tant qu'il est actif, l'Acide Corrosif réduit l'armure de la cible, ce réduction étant augmentée de {2} % pour chaque effet de dégâts au fil du temps que vous avez actif sur la cible."
+t[514]="Permet d'appliquer cet affixe sur toute arme équipable : vos attaques de mêlée et à distance ont une chance de blesser la cible. Cet effet se produit deux fois plus souvent lorsque vous êtes derrière la cible."
+t[515]="Permet d'inscrire cet affixe sur tout objet équipable : augmente votre valeur de blocage de {1} %"
+t[516]="Permet d'inscrire cet affixe sur tout objet équipable : Vos HoTs tickent pour {1} points de soin supplémentaires par seconde, augmentés par l'Esprit"
+t[517]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de voler la vie à la cible. La quantité volée augmente lorsque votre santé est basse et par les effets qui augmentent les soins infligés."
+t[518]="Permet d'inscrire cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de gel. Cet effet a deux fois plus de chances de se produire contre les cibles ralenties."
+t[519]="Permet de graver cet affixe sur n'importe quelle arme équipable : quand vous passez sous {1} % de santé, vous êtes soigné de {2} % de votre santé maximale et votre Force est augmentée de {3} pendant 15 secondes. Cet effet ne peut pas se produire plus d'une fois toutes les 15 secondes."
+t[520]="Permet d'appliquer cet affixe sur toute arme équipable : vos attaques de mêlée et vos capacités ont une chance de frapper une fois supplémentaire pour un dégât normal."
+t[521]="Permet de graver cet affixe sur n'importe quel objet équipable : les soins critiques rendent {1} % de santé supplémentaire, augmentés par l'Intelligence."
+t[522]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance d'augmenter le dégât critique de vos prochaines capacités effectuées dans les {1} secondes suivantes de {2}%."
+t[523]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente votre force totale de {1} %"
+t[524]="Permet d'inscrire cet affixe sur tout objet équipable : Tant que votre santé est inférieure à {1} %, absorbe {2} % des dégâts subis. Unique"
+t[525]="Permet de graver cet affixe sur n'importe quelle arme équipable : vos sorts et capacités ont une chance d'augmenter les dégâts de sorts subis par la cible de {1} % pendant {2} secondes."
+t[526]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de frapper votre ennemi avec de la foudre, infligeant des dégâts de type Nature puis sautant vers d'autres ennemis proches. Chaque saut réduit la résistance de type Nature de la cible de {1} %. Affecte {2} cibles. Votre cible principale est également enveloppée dans un cyclone, ralentissant sa vitesse d'attaque de {3} % pendant {4} secondes."
+t[527]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de lancer une balle de feu qui inflige des dégâts de feu et un supplément de dégâts de feu sur {1} secondes. Les deux effets s'adaptent aux dégâts de feu par seconde actifs sur votre cible."
+t[528]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de vous faire gagner {1} Énergie ou {2} Colère."
+t[529]="Permet d'inscrire cet affixe sur toute arme équipable : vos attaques automatiques à distance déclenchent automatiquement un second tir"
+t[530]="Permet d'inscrire cet affixe sur tout objet équipable : vos capacités de dégâts peuvent déclencher une Étoile Infinitive infligeant {1} dégâts Arcanes, augmentés par votre statistique la plus élevée"
+t[531]="Permet de graver cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de faire apparaître l'esprit infernal de Shahram."
+t[532]="Permet d'inscrire cet affixe sur tout objet équipable : augmente votre Agilité totale de {1} %"
+t[533]="Permet d'inscrire cet affixe sur tout objet équipable : Votre familier inflige {1} % de dégâts supplémentaires"
+t[534]="Permet d'inscrire cet affixe sur toute arme équipable : augmente votre régénération de mana de {1} %"
+t[535]="Permet d'appliquer cet affixe sur toute arme équipable : vos sorts de soin ont une chance de provoquer la Bénédiction des Rois Anciens pendant 15 secondes, permettant à vos soins de créer un bouclier sur la cible absorbant des dégâts équivalents à 15 % du montant soigné."
+t[536]="Permet d'inscrire cet affixe sur tout objet équipable : augmente votre Force totale de {1} %"
+t[537]="Permet d'inscrire cet affixe sur toute arme équipable : augmente la vitesse de course de {1} %"
+t[538]="Permet d'inscrire cet affixe sur toute arme équipable : guérit périodiquement le lanceur."
+t[539]="Permet d'appliquer cet affixe sur toute arme équipable : vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Givre. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance au Givre."
+t[540]="Permet d'appliquer cet affixe sur toute arme équipable : vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Nature. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance à la Nature."
+t[541]="Permet de graver cet affixe sur n'importe quelle arme équipable : vos attaques de mêlée ont {1} % de chances de vous faire frapper tous les ennemis proches, infligeant les dégâts de l'arme. Avec une arme à deux mains, vous avez {2} % de chances de déclencher Tempête de lames sur votre cible."
+t[542]="Permet d'inscrire cet affixe sur tout objet équipable : augmente votre Intellect total de {1} %"
+t[543]="Permet d'appliquer cet affixe sur toute arme équipable : vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Feu. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance au Feu."
+t[544]="Permet d'inscrire cet affixe sur tout objet équipable : augmente votre total de Sagesse de {1} %"
+t[545]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente votre endurance totale de {1} %"
+t[546]="Permet d'appliquer cet affixe sur toute arme équipable : Enveloppe le lanceur dans un bouclier de feu qui inflige des dégâts de feu toutes les secondes aux ennemis proches. Les dégâts augmentent en fonction de la résistance au feu du lanceur."
+t[547]="Permet d'inscrire cet affixe sur tout objet équipable : subir des dégâts peut conférer {1}% de puissance d'attaque et {2}% de puissance magique pendant {3} secondes"
+t[548]="Permet d'inscrire cet affixe sur tout objet équipable : Augmente votre chance de critique de {1} %"
+t[549]="Permet d'appliquer cet affixe sur tout objet équipable : Les capacités de dommages peuvent libérer un Pulsation Gelée infligeant {1} dégâts Ombre par seconde pendant {2} sec, augmenté par le taux de Critique"
+t[550]="Permet d'inscrire cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de frapper un ennemi avec des dégâts Saints. La chance augmente en fonction de votre chance de toucher."
+t[551]="Permet d'inscrire cet affixe sur toute arme équipable : Augmente votre taux de défense."
+t[552]="Permet d'inscrire cet affixe sur toute arme équipable : Tuer un ennemi augmente votre taux de hâte, jusqu'à {1} fois. Une pile est perdue toutes les secondes."
+t[553]="Permet d'appliquer cet affix sur toute arme équipable : Vos sorts et capacités ont une chance de réduire tous les attributs de la cible. Cet effet est renforcé par votre Résistance à la Nature."
+t[554]="Permet d'inscrire cet affixe sur toute arme équipable : Vos frappes critiques ont une chance de corrompre la cible, infligeant des dégâts Ombre toutes les {1} sec. Tant que la Corruption est active, vos frappes critiques magiques contre la cible provoquent un éclat, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut éclater qu'une seule fois toutes les {2} sec."
+t[555]="Permet d'inscrire cet affixe sur tout objet équipable : Tous les {1} sec, applique un bouclier de dégâts {2}"
+t[556]="Permet de graver cet affixe sur n'importe quel objet équipable : augmente l'efficacité des sorts de {1} %. Unique."
+t[557]="Permet d'appliquer cet affixe sur toute arme équipable : vos sorts et capacités de dégâts ont une chance de figer la cible. La durée du figement est augmentée par votre Force."
+t[558]="Permet d'inscrire cet affixe sur toute arme équipable : Vos sorts et capacités de dommages ont une chance de poisonner la cible, infligeant des dégâts toutes les {1} sec pendant {2} sec. Les cibles empoisonnées subissent {3} % de dégâts supplémentaires provenant de vos effets de dommages au fil du temps."
+t[559]="Permet d'inscrire cet affixe sur toute arme équipable : vos capacités de mêlée et à distance ont une chance d'infliger une blessure fatale. Les dégâts dépendent de votre taux de pénétration d'armure."
+t[560]="Permet d'inscrire cet affixe sur toute arme équipable : vos dégâts de Feu ont une chance de lancer une balle de feu sur la cible, infligeant des dégâts de Feu et des dégâts supplémentaires toutes les {1} sec pendant {2} sec. Les dégâts évoluent en fonction de votre Intelligence."
+t[561]="Permet d'appliquer cet affixe sur toute arme équipable : Vos sorts et capacités ont une chance de faire apparaître un Éclat d'Azzinoth pour vous protéger pendant un court instant en combat."
+t[562]="Permet d'inscrire cet affixe sur toute arme équipable : vos coups critiques des attaques de base en mêlée et à distance augmentent votre puissance d'attaque de {1}, cumulant jusqu'à {2} fois. Un cumul est perdu chaque seconde."
+t[563]="Permet d'inscrire cet affixe sur toute arme équipable : augmente vos dégâts contre les morts-vivants."
+t[564]="Permet d'appliquer cet affixe sur toute arme équipable : Vos dégâts ombre ont une chance d'envoyer une flèche sombre vers la cible, infligeant des dégâts ombre. Les dégâts sont augmentés par les effets de dégâts ombre sur la cible."
+t[565]="Vous octroie la capacité de découvrir Steady Casting quand de nouveaux Echoes vous sont proposés."
+t[566]="Vous accorde la capacité de découvrir une Inspiration persistante lorsqu'on vous propose de nouveaux Échos."
+t[567]="Vous octroie la capacité de découvrir Fortress Soul quand de nouveaux Echoes vous sont proposés."
+t[568]="Vous octroie la capacité de découvrir Storm Surge quand de nouveaux Echoes vous sont proposés."
+t[569]="Vous octroie la capacité de découvrir Provoking Presence quand de nouveaux Echoes vous sont proposés."
+t[570]="Vous accorde la capacité de découvrir la Restauration Désespérée lorsqu'on vous propose de nouveaux Échos."
+t[571]="Vous octroie la capacité de découvrir Frostfire Paradox quand de nouveaux Echoes vous sont proposés."
+t[572]="Vous octroie la capacité de découvrir The Last Wall quand de nouveaux Echoes vous sont proposés."
+t[573]="Vous octroie la capacite de decouvrir Reaper’s Doom quand de nouveaux Echoes vous sont proposes."
+t[574]="Vous octroie la capacité de découvrir Call of the Lich King quand de nouveaux Echoes vous sont proposés."
+t[575]="Vous accorde la capacité de découvrir la Maîtrise d'Armure lorsqu'on vous propose de nouveaux Échos."
+t[576]="Vous octroie la capacité de découvrir Beast Bane quand de nouveaux Echoes vous sont proposés."
+t[577]="Vous octroie la capacité de découvrir Arcane Burn quand de nouveaux Echoes vous sont proposés."
+t[578]="Vous octroie la capacité de découvrir Fel Surge quand de nouveaux Echoes vous sont proposés."
+t[579]="Vous octroie la capacité de découvrir Dragonkin Bane quand de nouveaux Echoes vous sont proposés."
+t[580]="Vous accorde la capacité de découvrir l'ambidextrie lorsqu'on vous propose de nouveaux Échos."
+t[581]="Vous octroie la capacité de découvrir Demon Bane quand de nouveaux Echoes vous sont proposés."
+t[582]="Vous octroie la capacité de découvrir Crushing Finish quand de nouveaux Echoes vous sont proposés."
+t[583]="Vous octroie la capacite de decouvrir Nature’s Surge quand de nouveaux Echoes vous sont proposes."
+t[584]="Vous octroie la capacité de découvrir Ember Ward quand de nouveaux Echoes vous sont proposés."
+t[585]="Vous octroie la capacité de découvrir Elemental Bane quand de nouveaux Echoes vous sont proposés."
+t[586]="Vous octroie la capacité de découvrir Frost Ward quand de nouveaux Echoes vous sont proposés."
+t[587]="Vous octroie la capacité de découvrir Giant Bane quand de nouveaux Echoes vous sont proposés."
+t[588]="Vous accorde la capacité de découvrir Defile lorsqu'on vous propose de nouveaux Échos."
+t[589]="Vous octroie la capacité de découvrir Stoneskin Threads quand de nouveaux Echoes vous sont proposés."
+t[590]="Vous octroie la capacité de découvrir Verdant Ward quand de nouveaux Echoes vous sont proposés."
+t[591]="Vous octroie la capacité de découvrir Undead Bane quand de nouveaux Echoes vous sont proposés."
+t[592]="Vous octroie la capacité de découvrir Sundered Will quand de nouveaux Echoes vous sont proposés."
+t[593]="Vous accorde la capacité de découvrir Sanguine Bulwark lorsqu'on vous propose de nouveaux Échos."
+t[594]="Vous octroie la capacité de découvrir Lightning Charged quand de nouveaux Echoes vous sont proposés."
+t[595]="Vous octroie la capacite de decouvrir Archmage’s Mark quand de nouveaux Echoes vous sont proposes."
+t[596]="Vous octroie la capacité de découvrir Weapon Mastery quand de nouveaux Echoes vous sont proposés."
+t[597]="Vous octroie la capacité de découvrir Shadow Ward quand de nouveaux Echoes vous sont proposés."
+t[598]="Vous octroie la capacité de découvrir Beast Slayer quand de nouveaux Echoes vous sont proposés."
+t[599]="Vous octroie la capacité de découvrir Rootbreaker quand de nouveaux Echoes vous sont proposés."
+t[600]="Vous accorde la capacité de découvrir la Pression Temporelle lorsqu'on vous propose de nouveaux Échos."
+t[601]="Vous octroie la capacité de découvrir Dragon Slayer quand de nouveaux Echoes vous sont proposés."
+t[602]="Vous octroie la capacité de découvrir Entropic Fusion quand de nouveaux Echoes vous sont proposés."
+t[603]="Vous octroie la capacité de découvrir Adaptive Power quand de nouveaux Echoes vous sont proposés."
+t[604]="Vous octroie la capacité de découvrir Demon Slayer quand de nouveaux Echoes vous sont proposés."
+t[605]="Vous octroie la capacité de découvrir Shadow Crash quand de nouveaux Echoes vous sont proposés."
+t[606]="Vous octroie la capacité de découvrir Battle Rhythm quand de nouveaux Echoes vous sont proposés."
+t[607]="Vous octroie la capacité de découvrir Resonant Build quand de nouveaux Echoes vous sont proposés."
+t[608]="Vous octroie la capacité de découvrir Giant Slayer quand de nouveaux Echoes vous sont proposés."
+t[609]="Vous octroie la capacité de découvrir Undead Slayer quand de nouveaux Echoes vous sont proposés."
+t[610]="Vous octroie la capacité de découvrir Arcane Cadence quand de nouveaux Echoes vous sont proposés."
+t[611]="Vous octroie la capacité de découvrir Machine Slayer quand de nouveaux Echoes vous sont proposés."
+t[612]="Vous octroie la capacité de découvrir Idol of Yogg-Saron quand de nouveaux Echoes vous sont proposés."
+t[613]="Vous octroie la capacité de découvrir Healing Cadence quand de nouveaux Echoes vous sont proposés."
+t[614]="Vous octroie la capacité de découvrir Flame Vents quand de nouveaux Echoes vous sont proposés."
+t[615]="Vous octroie la capacite de decouvrir Widow’s Venom quand de nouveaux Echoes vous sont proposes."
+t[616]="Vous octroie la capacité de découvrir Battlefield Hazard quand de nouveaux Echoes vous sont proposés."
+t[617]="Vous accorde la capacité de découvrir Blade Tempest lorsqu'on vous propose de nouveaux Échos."
+t[618]="Vous octroie la capacité de découvrir Brittle Forging quand de nouveaux Echoes vous sont proposés."
+t[619]="Vous octroie la capacité de découvrir Constellations quand de nouveaux Echoes vous sont proposés."
+t[620]="Vous octroie la capacité de découvrir Sanctified Hazard quand de nouveaux Echoes vous sont proposés."
+t[621]="Vous accorde la capacité de découvrir l'Inhalation de Malédiction lorsqu'on vous propose de nouveaux Échos."
+t[622]="Vous accorde la capacité de découvrir Sundered Formation lorsqu'on vous propose de nouveaux Échos."
+t[623]="Vous octroie la capacité de découvrir Curse of the Plaguebringer quand de nouveaux Echoes vous sont proposés."
+t[624]="Vous octroie la capacité de découvrir Blighted Hazard quand de nouveaux Echoes vous sont proposés."
+t[625]="Vous octroie la capacité de découvrir Harpoon Barrage quand de nouveaux Echoes vous sont proposés."
+t[626]="Vous octroie la capacité de découvrir Earthen Spike quand de nouveaux Echoes vous sont proposés."
+t[627]="Vous accorde la capacité de découvrir le Phare de Flamme lorsqu'on vous propose de nouveaux Échos."
+t[628]="Vous octroie la capacité de découvrir Earthen Snap quand de nouveaux Echoes vous sont proposés."
+t[629]="Vous accorde la capacité de découvrir Quickened Tempo lorsqu'on vous propose de nouveaux Échos."
+t[630]="Vous octroie la capacite de decouvrir Emberlord’s Gift quand de nouveaux Echoes vous sont proposes."
+t[631]="Vous octroie la capacité de découvrir Hunting Hazard quand de nouveaux Echoes vous sont proposés."
+t[632]="Vous octroie la capacité de découvrir Frost Bite quand de nouveaux Echoes vous sont proposés."
+t[633]="Vous octroie la capacite de decouvrir Drillmaster’s Rebuke quand de nouveaux Echoes vous sont proposes."
+t[634]="Vous accorde la capacité de découvrir Twilight Combustion lorsqu'on vous propose de nouveaux Échos."
+t[635]="Vous octroie la capacité de découvrir Exposed Heart quand de nouveaux Echoes vous sont proposés."
+t[636]="Vous octroie la capacité de découvrir Mana Infusion quand de nouveaux Echoes vous sont proposés."
+t[637]="Vous octroie la capacité de découvrir Storm Hazard quand de nouveaux Echoes vous sont proposés."
+t[638]="Vous accorde la capacité de découvrir Slimebound Husk lorsqu'on vous propose de nouveaux Échos."
+t[639]="Vous octroie la capacité de découvrir Permafrost Aura quand de nouveaux Echoes vous sont proposés."
+t[640]="Vous octroie la capacité de découvrir Static Overflow quand de nouveaux Echoes vous sont proposés."
+t[641]="Vous octroie la capacité de découvrir Wild Hazard quand de nouveaux Echoes vous sont proposés."
+t[642]="Vous octroie la capacité de découvrir Edict of the Four quand de nouveaux Echoes vous sont proposés."
+t[643]="Vous accorde la capacité de découvrir Essence Tap lorsqu'on vous propose de nouveaux Échos."
+t[644]="Vous accorde la capacité de découvrir Rage of the Colossus lorsqu'on vous propose de nouveaux Échos."
+t[645]="Vous accorde la capacité de découvrir Stored Momentum lorsqu'on vous propose de nouveaux Échos."
+t[646]="Vous octroie la capacité de découvrir Unstable Missiles quand de nouveaux Echoes vous sont proposés."
+t[647]="Vous octroie la capacité de découvrir Shadow Hazard quand de nouveaux Echoes vous sont proposés."
+t[648]="Vous accorde la capacité de découvrir la Commande du Seigneur de l'Abîme lorsqu'on vous propose de nouveaux Échos."
+t[649]="Vous octroie la capacité de découvrir Hungering Curse quand de nouveaux Echoes vous sont proposés."
+t[650]="Vous accorde la capacité de découvrir les Fringelames de Frostmourne lorsqu'on vous propose de nouveaux Échos."
+t[651]="Vous accorde la capacité de découvrir Necrotic Plague lorsqu'on vous propose de nouveaux Échos."
+t[652]="Vous confère la capacité de découvrir Echoing Tides lorsqu'on vous propose de nouveaux Échos."
+t[653]="Vous octroie la capacité de découvrir Stone Shatter quand de nouveaux Echoes vous sont proposés."
+t[654]="Vous octroie la capacité de découvrir Stitched Fury quand de nouveaux Echoes vous sont proposés."
+t[655]="Vous octroie la capacité de découvrir Arcane Hazard quand de nouveaux Echoes vous sont proposés."
+t[656]="Vous octroie la capacité de découvrir Divine Surge quand de nouveaux Echoes vous sont proposés."
+t[657]="Vous octroie la capacité de découvrir Chill of the Bone Wyrm quand de nouveaux Echoes vous sont proposés."
+t[658]="Vous accorde la capacité de découvrir le Cyclone d'Os Gelés lorsqu'on vous propose de nouveaux Échos."
+t[659]="Vous accorde la capacité de découvrir Dark Nucleus lorsqu'on vous propose de nouveaux Échos."
+t[660]="Vous accorde la capacité de découvrir le Vortex de Foudre lorsqu'on vous propose de nouveaux Échos."
+t[661]="Vous accorde la capacité de découvrir de la Gomme malléable lorsqu'on vous propose de nouveaux Échos."
+t[662]="Vous octroie la capacité de découvrir Relentless Energy quand de nouveaux Echoes vous sont proposés."
+t[663]="Vous accorde la capacité de découvrir le Spray de slime lorsqu'on vous propose de nouveaux Échos."
+t[664]="Vous accorde la capacité de découvrir l'odeur du sang lorsqu'on vous propose de nouveaux Échos."
+t[665]="Vous accorde la capacité de découvrir la Barrage de vaisseau quand de nouveaux Échos vous sont proposés."
+t[666]="Vous accorde la capacité de découvrir la Barrière de Murmure de la Mort lorsque de nouveaux Échos vous sont proposés."
+t[667]="Vous accorde la capacité de découvrir Broodmother’s Fury lorsqu'on vous propose de nouveaux Échos."
+t[668]="Vous accorde la capacité de découvrir la Contamination lorsqu'on vous propose de nouveaux Échos."
+t[669]="Vous accorde la capacité de découvrir le Champion’s Rally lorsqu'on vous propose de nouveaux Échos."
+t[670]="Vous accorde la capacité de découvrir Conjured Flame lorsqu'on vous propose de nouveaux Échos."
+t[671]="Vous octroie la capacité de découvrir Holy Hazard quand de nouveaux Echoes vous sont proposés."
+t[672]="Vous accorde la capacité de découvrir Leeching Swarm lorsqu'on vous propose de nouveaux Échos."
+t[673]="Vous octroie la capacité de découvrir Arcane Ward quand de nouveaux Echoes vous sont proposés."
+t[674]="Vous octroie la capacité de découvrir Steady Grip quand de nouveaux Echoes vous sont proposés."
+t[675]="Vous octroie la capacité de découvrir Storm of the Spellweaver quand de nouveaux Echoes vous sont proposés."
+t[676]="Vous accorde la capacité de découvrir la Pandémie lorsqu'on vous propose de nouveaux Échos."
+t[677]="Vous octroie la capacité de découvrir Edict of the Iron Council quand de nouveaux Echoes vous sont proposés."
+t[678]="Vous octroie la capacité de découvrir Ravenous Bellow quand de nouveaux Echoes vous sont proposés."
+t[679]="Vous octroie la capacité de découvrir Insulated Soul quand de nouveaux Echoes vous sont proposés."
+t[680]="Vous accorde la capacité de découvrir Blood Mirror lorsqu'on vous propose de nouveaux Échos."
+t[681]="Vous octroie la capacité de découvrir Elemental Slayer quand de nouveaux Echoes vous sont proposés."
+t[682]="Vous accorde la capacité de découvrir l'Hommage de l'Empaleur lorsqu'on vous propose de nouveaux Échos."
+t[683]="Vous accorde la capacité de découvrir l'Éveil Démoniaque lorsqu'on vous propose de nouveaux Échos."
+t[684]="Vous accorde la capacité de découvrir le Titan's Grip lorsqu'on vous propose de nouveaux Échos."
+t[685]="Vous octroie la capacité de découvrir Polarity Shift quand de nouveaux Echoes vous sont proposés."
+t[686]="Vous octroie la capacité de découvrir Fel Hazard quand de nouveaux Echoes vous sont proposés."
+t[687]="Vous octroie la capacite de decouvrir Crypt Lord’s Swarm quand de nouveaux Echoes vous sont proposes."
+t[688]="Vous octroie la capacité de découvrir Mutagenic Fumes quand de nouveaux Echoes vous sont proposés."
+t[689]="Vous octroie la capacité de découvrir Cinders of the Sanctum quand de nouveaux Echoes vous sont proposés."
+t[690]="Vous octroie la capacité de découvrir Sanctum Sentries quand de nouveaux Echoes vous sont proposés."
+t[691]="Vous accorde la capacité de découvrir le Frisson Perçant lorsqu'on vous propose de nouveaux Échos."
+t[692]="Vous accorde la capacité de découvrir l'Équilibre du Crépuscule lorsqu'on vous propose de nouveaux Échos."
+t[693]="Vous octroie la capacité de découvrir Runic Momentum quand de nouveaux Echoes vous sont proposés."
+t[694]="Vous octroie la capacité de découvrir Arcane Surge quand de nouveaux Echoes vous sont proposés."
+t[695]="Vous octroie la capacité de découvrir Raging Momentum quand de nouveaux Echoes vous sont proposés."
+t[696]="Vous octroie la capacite de decouvrir Broodmother’s Webbing quand de nouveaux Echoes vous sont proposes."
+t[697]="Vous octroie la capacité de découvrir Heavy Incantations quand de nouveaux Echoes vous sont proposés."
+t[698]="Vous octroie la capacité de découvrir Rocket Strike quand de nouveaux Echoes vous sont proposés."
+t[699]="Vous octroie la capacité de découvrir Accelerated Decay quand de nouveaux Echoes vous sont proposés."
+t[700]="Vous octroie la capacite de decouvrir The Sporelord’s Gift quand de nouveaux Echoes vous sont proposes."
+t[701]="Vous octroie la capacité de découvrir Mechanical Bane quand de nouveaux Echoes vous sont proposés."
+t[702]="Vous octroie la capacité de découvrir Crusader's Surge quand de nouveaux Echoes vous sont proposés."
+t[703]="Vous octroie la capacite de decouvrir The Unclean’s Fever quand de nouveaux Echoes vous sont proposes."
+t[704]="Vous accorde la capacité de découvrir l'Emeraude de Vigueur lorsqu'on vous propose de nouveaux Échos."
+t[705]="Vous octroie la capacité de découvrir Subtle Presence quand de nouveaux Echoes vous sont proposés."
+t[706]="Vous octroie la capacite de decouvrir Reaper’s Reprieve quand de nouveaux Echoes vous sont proposes."
+t[707]="Vous accorde la capacité de découvrir le Réparateur Inspirant lorsqu'on vous propose de nouveaux Échos."
+t[708]="Vous octroie la capacite de decouvrir Eonar’s Seed quand de nouveaux Echoes vous sont proposes."
+t[709]="Vous octroie la capacité de découvrir Arcane Density quand de nouveaux Echoes vous sont proposés."
+t[710]="Vous octroie la capacité de découvrir Shielded Steps quand de nouveaux Echoes vous sont proposés."
+t[711]="Vous octroie la capacite de decouvrir Reaper’s Verdict quand de nouveaux Echoes vous sont proposes."
+t[712]="Vous octroie la capacite de decouvrir The Harvester’s Tithe quand de nouveaux Echoes vous sont proposes."
+t[713]="Augmente votre Endurance de |cff00ff00{1}|r."
+t[714]="Augmente votre puissance d'attaque de |cff00ff00{1}|r ou votre puissance des sorts de |cff00ff00{2}|r, selon la plus élevée."
+t[715]="Augmente votre Force, Agilité, Intelligence ou Esprit de |cff00ff00{1}|r, selon la plus élevée."
+t[716]="Réduit les dégâts subis de la part des morts-vivants de {1}%. Se cumule selon le nombre de cet affixe présent sur votre équipement."
+t[717]="Augmente votre force totale de {1} %. Se cumule avec les autres rangs."
+t[718]="Augmente votre agilité totale de {1} %. Se cumule avec les autres rangs."
+t[719]="Augmente votre Intellect total de {1} %. Se cumule avec les autres rangs."
+t[720]="Augmente votre total de Sagesse de {1} %. Se cumule avec les autres rangs."
+t[721]="Augmente votre endurance totale de {1} %. Se cumule avec les autres rangs."
+t[722]="Augmente votre chance de critique de {1} %. Se cumule avec les autres rangs."
+t[723]="Les capacités de dommages peuvent libérer un Pulsation Gelée infligeant {1} dégâts Ombre par seconde pendant {2} sec, augmenté par le taux de Critique. Se cumule avec les autres rangs."
+t[724]="Vos sorts peuvent réduire un temps de recharge aléatoire de 4,0 sec. Unique."
+t[725]="Vos HoTs tickent pour {1} points de soin supplémentaires par seconde, augmentés par l'Esprit. Se cumule avec les autres rangs."
+t[726]="Les soins critiques rendent {1} % de santé supplémentaire, augmentés par l'Intelligence. Se cumule avec les autres rangs."
+t[727]="Vos capacités de dégâts peuvent déclencher une Étoile Infinitive infligeant {1} dégâts Arcanes, augmentés par votre statistique la plus élevée. Se cumule avec les autres rangs."
+t[728]="Augmente l'efficacité des sorts de {1} %. Unique."
+t[729]="Les coups critiques infligent 8 % de dégâts supplémentaires et guérissent 8 % de points de vie supplémentaires. Se cumule avec les autres rangs."
+t[730]="Subir des dégâts peut conférer {1}% de puissance d'attaque et {2}% de puissance magique pendant {3} secondes."
+t[731]="Vos capacités peuvent déclencher une Respiration de Glace infligeant {1} dégâts de Gel, augmentés par votre Résilience. Se cumule avec les autres rangs."
+t[732]="Augmente vos dégâts et vos soins de {1}%. Se cumule avec les autres rangs."
+t[733]="Tous les {1} sec, applique un bouclier de dégâts {2}. Se cumule avec les autres rangs."
+t[734]="Tant que votre santé est inférieure à {1} %, absorbe {2} % des dégâts subis. Unique."
+t[735]="Votre familier inflige {1} % de dégâts supplémentaires. Se cumule avec les autres rangs."
+t[736]="Votre familier attaque {1}% plus vite. Se cumule avec les autres rangs."
+t[737]="Augmente votre Armure de {1}. Se cumule avec les autres rangs."
+t[738]="Vos soins périodiques peuvent augmenter votre Puissance de Sorts de Soins de {1} pendant {2} sec. Se cumule avec les autres rangs."
+t[739]="Augmente votre pénétration d'armure de {1} %. Se cumule avec les autres rangs."
+t[740]="Infliger des dégâts ralentit le mouvement de votre cible de {1}% et augmente le temps entre ses attaques de {2}%."
+t[741]="Augmente votre valeur de blocage de {1} %"
+t[742]="Vos sorts et capacités de dégâts ont une chance de figer la cible. La durée du figement est augmentée par votre Force."
+t[743]="Vos sorts et capacités de dommages ont une chance de poisonner la cible, infligeant des dégâts toutes les {1} sec pendant {2} sec. Les cibles empoisonnées subissent {3} % de dégâts supplémentaires provenant de vos effets de dommages au fil du temps."
+t[744]="Vos capacités de mêlée et à distance ont une chance d'infliger une blessure fatale. Les dégâts dépendent de votre taux de pénétration d'armure."
+t[745]="Vos attaques de mêlée et à distance ont une chance de réduire l'armure de la cible. L'effet est augmenté par votre Agilité."
+t[746]="Vos sorts et capacités ont une chance de désarmer la cible. La durée du désarmement est augmentée par votre Résilience."
+t[747]="Vos capacités physiques ont une chance de blesser la cible, lui infligeant des dégâts toutes les {1} sec pendant {2} sec. Les dégâts évoluent en fonction de la vitesse de votre arme."
+t[748]="Vos dégâts de Feu ont une chance de lancer une balle de feu sur la cible, infligeant des dégâts de Feu et des dégâts supplémentaires toutes les {1} sec pendant {2} sec. Les dégâts évoluent en fonction de votre Intelligence."
+t[749]="Vos dégâts de givre ont une chance de lancer une flèche de givre sur la cible, infligeant des dégâts de givre et réduisant sa vitesse de déplacement. Les dégâts sont augmentés en fonction du nombre d'effets ralentissants sur la cible."
+t[750]="Vos dégâts ombre ont une chance d'envoyer une flèche sombre vers la cible, infligeant des dégâts ombre. Les dégâts sont augmentés par les effets de dégâts ombre sur la cible."
+t[751]="Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de feu. Les dégâts augmentent en fonction de votre taux de critique."
+t[752]="Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de type Nature. Les dégâts augmentent en fonction de votre mana total."
+t[753]="Vos dégâts de Nature ont une chance de recouvrir la cible d'Acide Corrosif, lui infligeant des dégâts de Nature toutes les {1} sec. Tant qu'il est actif, l'Acide Corrosif réduit l'armure de la cible, ce réduction étant augmentée de {2} % pour chaque effet de dégâts au fil du temps que vous avez actif sur la cible."
+t[754]="Vos attaques de mêlée et à distance ont une chance de blesser la cible. Cet effet se produit deux fois plus souvent lorsque vous êtes derrière la cible."
+t[755]="Vos frappes critiques ont une chance de corrompre la cible, infligeant des dégâts Ombre toutes les {1} sec. Tant que la Corruption est active, vos frappes critiques magiques contre la cible provoquent un éclat, infligeant des dégâts supplémentaires basés sur votre Intelligence. Chaque Corruption ne peut éclater qu'une seule fois toutes les {2} sec."
+t[756]="Vos sorts et capacités ont une chance de réduire tous les attributs de la cible. Cet effet est renforcé par votre Résistance à la Nature."
+t[757]="Tuer un ennemi augmente votre taux de hâte, jusqu'à {1} fois. Une pile est perdue toutes les secondes."
+t[758]="Vos coups critiques des attaques de base en mêlée et à distance augmentent votre puissance d'attaque de {1}, cumulant jusqu'à {2} fois. Un cumul est perdu chaque seconde."
+t[759]="Vos sorts et capacités ont une chance de voler la vie à la cible. La quantité volée augmente lorsque votre santé est basse et par les effets qui augmentent les soins infligés."
+t[760]="Vos sorts et capacités ont une chance de projeter l'ennemi, infligeant des dégâts de gel. Cet effet a deux fois plus de chances de se produire contre les cibles ralenties."
+t[761]="Quand vous passez sous {1} % de santé, vous êtes soigné de {2} % de votre santé maximale et votre Force est augmentée de {3} pendant 15 secondes. Cet effet ne peut pas se produire plus d'une fois toutes les 15 secondes."
+t[762]="Vos attaques de mêlée et vos capacités ont une chance de frapper une fois supplémentaire pour un dégât normal."
+t[763]="Augmente la vitesse de course de {1} %"
+t[764]="Augmente votre taux de défense."
+t[765]="Vos sorts et capacités ont une chance d'augmenter le dégât critique de vos prochaines capacités effectuées dans les {1} secondes suivantes de {2}%."
+t[766]="Vos sorts et capacités ont une chance de frapper un ennemi avec des dégâts Saints. La chance augmente en fonction de votre chance de toucher."
+t[767]="Vos sorts et capacités ont une chance d'augmenter les dégâts de sorts subis par la cible de {1} % pendant {2} secondes."
+t[768]="Vos sorts et capacités ont une chance de frapper votre ennemi avec de la foudre, infligeant des dégâts de type Nature puis sautant vers d'autres ennemis proches. Chaque saut réduit la résistance de type Nature de la cible de {1} %. Affecte {2} cibles. Votre cible principale est également enveloppée dans un cyclone, ralentissant sa vitesse d'attaque de {3} % pendant {4} secondes."
+t[769]="Vos sorts et capacités ont une chance de lancer une balle de feu qui inflige des dégâts de feu et un supplément de dégâts de feu sur {1} secondes. Les deux effets s'adaptent aux dégâts de feu par seconde actifs sur votre cible."
+t[770]="Vos sorts et capacités ont une chance de vous faire gagner {1} Énergie ou {2} Colère."
+t[771]="Vos attaques automatiques à distance déclenchent automatiquement un second tir"
+t[772]="Vos sorts et capacités ont une chance de faire apparaître un Éclat d'Azzinoth pour vous protéger pendant un court instant en combat."
+t[773]="Vos sorts et capacités ont une chance de faire apparaître l'esprit infernal de Shahram."
+t[774]="Augmente vos dégâts contre les morts-vivants."
+t[775]="Augmente votre régénération de mana de {1} %"
+t[776]="Vos sorts de soin ont une chance de provoquer la Bénédiction des Rois Anciens pendant 15 secondes, permettant à vos soins de créer un bouclier sur la cible absorbant des dégâts équivalents à 15 % du montant soigné."
+t[777]="Guérit périodiquement le lanceur."
+t[778]="Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Givre. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance au Givre."
+t[779]="Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Nature. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance à la Nature."
+t[780]="Vos attaques de mêlée ont {1}% de chances de vous faire frapper tous les ennemis proches, infligeant les dégâts de votre arme. Avec une arme à deux mains, vous avez {2}% de chances de déclencher Bladestorm sur votre cible"
+t[781]="Enveloppe le lanceur dans un bouclier de feu qui inflige des dégâts de feu toutes les secondes aux ennemis proches. Les dégâts augmentent en fonction de la résistance au feu du lanceur."
+t[782]="Vos capacités à distance ont une chance de frapper votre cible avec des dégâts de Feu. Les dégâts sont davantage augmentés par la vitesse de votre arme à distance et votre Résistance au Feu."
+t[783]="Augmente votre force totale de {1} %."
+t[784]="Augmente votre agilité totale de {1} %."
+t[785]="Augmente votre Intellect total de {1} %."
+t[786]="Augmente votre total de Sagesse de {1} %."
+t[787]="Augmente votre endurance totale de {1} %."
+t[788]="Les capacités de dommages peuvent libérer un Pulsation Gelée infligeant {1} dégâts Ombre par seconde pendant {2} sec, augmenté par le taux de Critique."
+t[789]="Vos HoTs tickent pour {1} points de soin supplémentaires par seconde, augmentés par l'Esprit."
+t[790]="Les soins critiques rendent {1} % de santé supplémentaire, augmentés par l'Intelligence."
+t[791]="Vos capacités de dégâts peuvent déclencher une Étoile Infinitive infligeant {1} dégâts Arcanes, augmentés par votre statistique la plus élevée."
+t[792]="Les coups critiques infligent 8 % de dégâts supplémentaires et guérissent 8 % de points de vie supplémentaires."
+t[793]="Vos capacités peuvent déclencher une Respiration de Glace infligeant {1} dégâts de Gel, augmentés par votre Résilience."
+t[794]="Augmente vos dégâts et vos soins de {1}%."
+t[795]="Tous les {1} sec, applique un bouclier de dégâts {2}."
+t[796]="Votre familier inflige {1} % de dégâts supplémentaires."
+t[797]="Votre familier attaque {1}% plus vite."
+t[798]="Augmente votre Armure de {1}."
+t[799]="Vos soins périodiques peuvent augmenter votre Puissance de Sorts de Soins de {1} pendant {2} sec."
+t[800]="Infliger des dégâts ralentit le déplacement de votre cible de {1}% et augmente le délai entre ses attaques de {2}%."
+t[801]="Augmente votre valeur de blocage de {1} %."
+t[802]="Utiliser : Permet à ce personnage de découvrir Arcane Cadence parmi les Echoes proposés. Arcane Cadence : Des sorts offensifs différents accumulent un bonus de dégâts."
+t[803]="Utiliser : Permet à ce personnage de découvrir Ravenous Bellow parmi les Echoes proposés. Ravenous Bellow : Porter un coup fatal déchaîne un Rugissement terrifiant, infligeant des dégâts aux ennemis proches et les ralentissant. Les ennemis touchés subissent plus de dégâts de votre part."
+t[804]="Utiliser : Permet à ce personnage de découvrir Holy Hazard parmi les Echoes proposés. Holy Hazard : Augmente les dégâts de zone du prêtre contre les grands groupes."
+t[805]="Utiliser : Permet à ce personnage de découvrir Insulated Soul parmi les Echoes proposés. Insulated Soul : Réduit la durée des effets d'étourdissement qui vous affectent."
+t[806]="Utiliser : Permet à ce personnage de découvrir Weapon Mastery parmi les Echoes proposés. Weapon Mastery : Permet d'équiper tous les types d'armes."
+t[807]="Utiliser : Permet à ce personnage de découvrir Arcane Burn parmi les Echoes proposés. Arcane Burn : Augmente les dégâts des sorts, mais ils coûtent beaucoup plus de mana."
+t[808]="Utiliser : Permet à ce personnage de découvrir Giant Bane parmi les Echoes proposés. Giant Bane : Augmente votre puissance des sorts contre les Géants."
+t[809]="Utiliser : Permet à ce personnage de découvrir The Last Wall parmi les Echoes proposés. The Last Wall : Augmente fortement la santé maximale, mais réduit les soins reçus."
+t[810]="Utiliser : Permet à ce personnage de découvrir Rage of the Colossus parmi les Echoes proposés. Rage of the Colossus : Les coups critiques accumulent Élan et déchaînent un Écrasement massif."
+t[811]="Utiliser : Permet à ce personnage de découvrir Rocket Strike parmi les Echoes proposés. Rocket Strike : Les attaques peuvent lancer des roquettes, avec davantage de roquettes via vos familiers et gardiens."
+t[812]="Utiliser : Permet à ce personnage de découvrir Blood Mirror parmi les Echoes proposés. Blood Mirror: Your attacks can bind two enemies, sharing your damage between them; if one dies the other takes more damage from you."
+t[813]="Utiliser : Permet à ce personnage de découvrir Mana Infusion parmi les Echoes proposés. Mana Infusion : Restaurer du mana restaure aussi de la santé."
+t[814]="Utiliser : Permet à ce personnage de découvrir Reaper’s Reprieve parmi les Echoes proposés. Reaper’s Reprieve : Les dégâts fatals vous réduisent à {1} point de vie, empêchent tous les dégâts pendant {2} sec et vous soignent."
+t[815]="Utiliser : Permet à ce personnage de découvrir Constellations parmi les Echoes proposés. Constellations : Les coups critiques appellent des étoiles filantes jusqu'à ce qu'un Big Bang dévastateur éclate."
+t[816]="Utiliser : Permet à ce personnage de découvrir Beast Slayer parmi les Echoes proposés. Beast Slayer : Augmente votre puissance d'attaque contre les Bêtes."
+t[817]="Utiliser : Permet à ce personnage de découvrir Inhaled Blight parmi les Echoes proposés. Inhaled Blight: You periodically exhale Pungent Blight, poisoning nearby enemies and stacking Mutated Blight to amplify the damage."
+t[818]="Utiliser : Permet à ce personnage de découvrir Nether Lord’s Command parmi les Echoes proposés. Nether Lord’s Command : Vos attaques peuvent ouvrir un Portail du Néant qui bombarde votre cible."
+t[819]="Utiliser : Permet à ce personnage de découvrir Inspiring Mending parmi les Echoes proposés. Inspiring Mending : Vos soins directs peuvent augmenter les caractéristiques de vos alliés."
+t[820]="Utiliser : Permet à ce personnage de découvrir Static Overflow parmi les Echoes proposés. Static Overflow : Votre prochain sort ou capacité frappe aussi les ennemis proches avec de la foudre."
+t[821]="Utiliser : Permet à ce personnage de découvrir Lingering Inspiration parmi les Echoes proposés. Lingering Inspiration : Vos soins périodiques peuvent augmenter les caractéristiques de vos alliés."
+t[822]="Utiliser : Permet à ce personnage de découvrir Ambidexterity parmi les Echoes proposés. Ambidexterity : Vous pouvez manier deux armes."
+t[823]="Utiliser : Permet à ce personnage de découvrir Edict of the Iron Council parmi les Echoes proposés. Edict of the Iron Council : Les attaques alternent entre les effets Rune de mort, Surcharge et Coup de fusion."
+t[824]="Utiliser : Permet à ce personnage de découvrir Shock Vortex parmi les Echoes proposés. Shock Vortex: When surrounded, you conjure a Shock Vortex that drags enemies inward, then erupts in Nature damage."
+t[825]="Utiliser : Permet à ce personnage de découvrir Elemental Slayer parmi les Echoes proposés. Elemental Slayer : Augmente votre puissance d'attaque contre les Élémentaires."
+t[826]="Utiliser : Permet à ce personnage de découvrir Rootbreaker parmi les Echoes proposés. Rootbreaker : Réduit la durée des effets d'immobilisation qui vous affectent."
+t[827]="Utiliser : Permet à ce personnage de découvrir Steady Grip parmi les Echoes proposés. Steady Grip : Réduit la durée des effets de désarmement qui vous affectent."
+t[828]="Utiliser : Permet à ce personnage de découvrir Crusader's Surge parmi les Echoes proposés. Crusader's Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
+t[829]="Utiliser : Permet à ce personnage de découvrir Raging Momentum parmi les Echoes proposés. Raging Momentum : Une rage basse améliore la génération, une rage élevée améliore les dégâts."
+t[830]="Utiliser : Permet à ce personnage de découvrir Battlefield Hazard parmi les Echoes proposés. Battlefield Hazard : Augmente les dégâts de zone du guerrier contre les grands groupes."
+t[831]="Utiliser : Permet à ce personnage de découvrir Entropic Fusion parmi les Echoes proposés. Entropic Fusion : Infliger des dégâts de Feu et d'Ombre accorde un bonus de dégâts."
+t[832]="Utiliser : Permet à ce personnage de découvrir Mechanical Bane parmi les Echoes proposés. Mechanical Bane : Augmente votre puissance des sorts contre les ennemis Mécaniques."
+t[833]="Utiliser : Permet à ce personnage de découvrir Provoking Presence parmi les Echoes proposés. Provoking Presence : Augmente la menace générée."
+t[834]="Utiliser : Permet à ce personnage de découvrir Frostmourne Hungers parmi les Echoes proposés. Frostmourne Hungers: You mark frail enemies with Harvest Soul; devouring their souls stacks damage and unleashes bursts of Shadowfrost."
+t[835]="Utiliser : Permet à ce personnage de découvrir Frost Bite parmi les Echoes proposés. Frost Bite : Quand vous êtes frappé, vous avez une chance de geler l'attaquant."
+t[836]="Utiliser : Permet à ce personnage de découvrir Frostfire Paradox parmi les Echoes proposés. Frostfire Paradox : Les dégâts de Givre accumulent des cumuls que les dégâts de Feu consument en une explosion glacée."
+t[837]="Utiliser : Permet à ce personnage de découvrir Sundered Formation parmi les Echoes proposés. Sundered Formation: Your Physical damage can sunder an enemy’s armor, letting your strikes cleave through nearby foes."
+t[838]="Utiliser : Permet à ce personnage de découvrir Beast Bane parmi les Echoes proposés. Beast Bane : Augmente votre puissance des sorts contre les Bêtes."
+t[839]="Utiliser : Permet à ce personnage de découvrir Necrotic Plague parmi les Echoes proposés. Necrotic Plague: Your damage-over-time effects can inflict Necrotic Plague that leaps from the dying to the living, growing stronger each time."
+t[840]="Utiliser : Permet à ce personnage de découvrir Arcane Ward parmi les Echoes proposés. Arcane Ward : Augmente la résistance aux Arcanes."
+t[841]="Utiliser : Permet à ce personnage de découvrir Relentless Energy parmi les Echoes proposés. Relentless Energy : Une énergie basse améliore la régénération, une énergie élevée améliore les dégâts."
+t[842]="Utiliser : Permet à ce personnage de découvrir Reaper’s Doom parmi les Echoes proposés. Reaper’s Doom : Infliger des dégâts afflige la cible de Sentence du Faucheur. À son expiration, elle détone en infligeant des dégâts d'Ombre répartis entre tous les ennemis touchés."
+t[843]="Utiliser : Permet à ce personnage de découvrir Permafrost Aura parmi les Echoes proposés. Permafrost Aura : Inflige constamment des dégâts aux ennemis proches et ralentit leur vitesse d'attaque."
+t[844]="Utiliser : Permet à ce personnage de découvrir Cinders of the Sanctum parmi les Echoes proposés. Cinders of the Sanctum : Infliger des dégâts de Feu répétés vous fait invoquer un Cyclone de feu, infligeant des dégâts de Feu aux ennemis proches."
+t[845]="Utiliser : Permet à ce personnage de découvrir Archmageâ€™s Mark parmi les Echoes proposés. Archmageâ€™s Mark: Dealing Fire, Frost, and Arcane grants bonus damage."
+t[846]="Utiliser : Permet à ce personnage de découvrir Arcane Hazard parmi les Echoes proposés. Arcane Hazard : Augmente les dégâts de zone du mage contre les grands groupes."
+t[847]="Utiliser : Permet à ce personnage de découvrir Arcane Surge parmi les Echoes proposés. Arcane Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
+t[848]="Utiliser : Permet à ce personnage de découvrir Accelerated Decay parmi les Echoes proposés. Accelerated Decay : Vos effets de dégâts sur la durée bénéficient maintenant de la Hâte."
+t[849]="Utiliser : Permet à ce personnage de découvrir Earthen Spike parmi les Echoes proposés. Earthen Spike : Subir des dégâts peut renvoyer des pointes aux attaquants, générant beaucoup de menace."
+t[850]="Utiliser : Permet à ce personnage de découvrir Cyclone of Cold Bones parmi les Echoes proposés. Cyclone of Cold Bones: Your attacks can unleash a frozen cyclone that scours nearby enemies and leaves a trail of Coldflame in your wake."
+t[851]="Utiliser : Permet à ce personnage de découvrir Dark Nucleus parmi les Echoes proposés. Dark Nucleus: Taking damage can summon a Dark Nucleus that shields you, then hurls the absorbed power back as a Shadow Lance."
+t[852]="Utiliser : Permet à ce personnage de découvrir Broodmother’s Webbing parmi les Echoes proposés. Broodmother’s Webbing : Quand vous subissez des dégâts sous {1}% de santé, vous projetez des toiles, infligeant des dégâts de Nature aux ennemis proches et les étourdissant."
+t[853]="Utiliser : Permet à ce personnage de découvrir Crypt Lord’s Swarm parmi les Echoes proposés. Crypt Lord’s Swarm : En combat, vous êtes enveloppé d'un Essaim de criquets, réduisant les dégâts subis et infligeant des dégâts de Nature aux ennemis proches."
+t[854]="Utiliser : Permet à ce personnage de découvrir Twilight Combustion parmi les Echoes proposés. Twilight Combustion: Your Fire and Shadow damage brand enemies; when both brands meet on a foe, they collapse into a Twilight Rift."
+t[855]="Utiliser : Permet à ce personnage de découvrir Sundered Will parmi les Echoes proposés. Sundered Will : Réduit la durée des effets de peur qui vous affectent."
+t[856]="Utiliser : Permet à ce personnage de découvrir Storm Hazard parmi les Echoes proposés. Storm Hazard : Augmente les dégâts de zone du chaman contre les grands groupes."
+t[857]="Utiliser : Permet à ce personnage de découvrir Twilight Equilibrium parmi les Echoes proposés. Twilight Equilibrium : Les écoles de sorts opposées accumulent des charges qui déchaînent des explosions de Lumière ou d'Ombre."
+t[858]="Utiliser : Permet à ce personnage de découvrir Demonic Awakening parmi les Echoes proposés. Demonic Awakening : Passer sous {1}% de santé vous transforme brièvement en Démon."
+t[859]="Utiliser : Permet à ce personnage de découvrir Shadow Ward parmi les Echoes proposés. Shadow Ward : Augmente la résistance à l'Ombre."
+t[860]="Utiliser : Permet à ce personnage de découvrir Edict of the Four parmi les Echoes proposés. Edict of the Four : Vos sorts et capacités offensifs accumulent Édit ; invoquer les Édits vous fait lancer Météore, Zone du Vide, Ombre impie ou Courroux sacré."
+t[861]="Utiliser : Permet à ce personnage de découvrir The Sporelord’s Gift parmi les Echoes proposés. The Sporelord’s Gift : En combat, vous invoquez périodiquement des Spores qui augmentent les dégâts critiques des alliés proches."
+t[862]="Utiliser : Permet à ce personnage de découvrir Undead Slayer parmi les Echoes proposés. Undead Slayer : Augmente votre puissance d'attaque contre les Morts-vivants."
+t[863]="Utiliser : Permet à ce personnage de découvrir Wild Hazard parmi les Echoes proposés. Wild Hazard : Augmente les dégâts de zone du druide contre les grands groupes."
+t[864]="Utiliser : Permet à ce personnage de découvrir Impaler’s Tribute parmi les Echoes proposés. Impaler’s Tribute : Les attaques répétées empalent votre cible et se fragmentent vers les ennemis proches."
+t[865]="Utiliser : Permet à ce personnage de découvrir Arcane Density parmi les Echoes proposés. Arcane Density : Convertit une partie de votre Armure en puissance des sorts."
+t[866]="Utiliser : Permet à ce personnage de découvrir Fortress Soul parmi les Echoes proposés. Fortress Soul : Réduit fortement les dégâts subis, mais réduit fortement les dégâts infligés."
+t[867]="Utiliser : Permet à ce personnage de découvrir Quickened Tempo parmi les Echoes proposés. Quickened Tempo : La Hâte réduit désormais votre temps de recharge global."
+t[868]="Utiliser : Permet à ce personnage de découvrir Ember Ward parmi les Echoes proposés. Ember Ward : Augmente la résistance au Feu."
+t[869]="Utiliser : Permet à ce personnage de découvrir Frost Ward parmi les Echoes proposés. Frost Ward : Augmente la résistance au Givre."
+t[870]="Utiliser : Permet à ce personnage de découvrir Earthen Snap parmi les Echoes proposés. Earthen Snap : Votre première attaque en entrant en combat immobilise la cible."
+t[871]="Utiliser : Permet à ce personnage de découvrir Fel Hazard parmi les Echoes proposés. Fel Hazard : Augmente les dégâts de zone du démoniste contre les grands groupes."
+t[872]="Utiliser : Permet à ce personnage de découvrir Natureâ€™s Surge parmi les Echoes proposés. Natureâ€™s Surge: Spells and abilities can make your next key spell instant."
+t[873]="Utiliser : Permet à ce personnage de découvrir Flame Vents parmi les Echoes proposés. Flame Vents : Esquiver et parer déchaîne des flammes, réduit les dégâts subis et accorde de la vitesse."
+t[874]="Utiliser : Permet à ce personnage de découvrir The Unclean’s Fever parmi les Echoes proposés. The Unclean’s Fever : Les ennemis qui vous frappent sont affligés de Fièvre décrépite, infligeant des dégâts d'Ombre et réduisant les dégâts qu'ils vous infligent."
+t[875]="Utiliser : Permet à ce personnage de découvrir Demon Bane parmi les Echoes proposés. Demon Bane : Augmente votre puissance des sorts contre les Démons."
+t[876]="Utiliser : Permet à ce personnage de découvrir Eonarâ€™s Seed parmi les Echoes proposés. Eonarâ€™s Seed: Overhealing is stored and blooms when the target is low."
+t[877]="Utiliser : Permet à ce personnage de découvrir Harpoon Barrage parmi les Echoes proposés. Harpoon Barrage : Attire périodiquement les ennemis distants vers vous et augmente vos dégâts contre eux."
+t[878]="Utiliser : Permet à ce personnage de découvrir Divine Surge parmi les Echoes proposés. Divine Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
+t[879]="Utiliser : Permet à ce personnage de découvrir Leeching Swarm parmi les Echoes proposés. Leeching Swarm : À faible santé, vos attaques déchaînent un essaim qui draine la vie."
+t[880]="Utiliser : Permet à ce personnage de découvrir Brittle Forging parmi les Echoes proposés. Brittle Forging : Les dégâts de Feu accumulent Fragilité, augmentant les chances de critique et provoquant un éclatement enflammé."
+t[881]="Utiliser : Permet à ce personnage de découvrir Hungering Curse parmi les Echoes proposés. Hungering Curse : Maudit périodiquement les ennemis proches et vous soigne quand ils meurent."
+t[882]="Utiliser : Permet à ce personnage de découvrir Dragonkin Bane parmi les Echoes proposés. Dragonkin Bane: Increases your spell power when fighting Dragonkin."
+t[883]="Utiliser : Permet à ce personnage de découvrir Mutagenic Fumes parmi les Echoes proposés. Mutagenic Fumes : Tuer un ennemi invoque un Nuage de poison, infligeant des dégâts de Nature aux ennemis proches."
+t[884]="Utiliser : Permet à ce personnage de découvrir Battle Rhythm parmi les Echoes proposés. Battle Rhythm : Le score de critique augmente vos dégâts critiques."
+t[885]="Utiliser : Permet à ce personnage de découvrir Sanguine Bulwark parmi les Echoes proposés. Sanguine Bulwark : Vos soins sont réduits, mais les dégâts subis sont fortement réduits."
+t[886]="Utiliser : Permet à ce personnage de découvrir Blighted Hazard parmi les Echoes proposés. Blighted Hazard : Augmente les dégâts de zone du chevalier de la mort contre les grands groupes."
+t[887]="Utiliser : Permet à ce personnage de découvrir Storm of the Spellweaver parmi les Echoes proposés. Storm of the Spellweaver : Infliger des dégâts des Arcanes répétés vous fait tirer une salve de Missiles magiques en l'air, frappant jusqu'à {1} ennemis proches."
+t[888]="Utiliser : Permet à ce personnage de découvrir Dragon Slayer parmi les Echoes proposés. Dragon Slayer : Augmente votre puissance d'attaque contre les Draconiens."
+t[889]="Utiliser : Permet à ce personnage de découvrir Undead Bane parmi les Echoes proposés. Undead Bane : Augmente votre puissance des sorts contre les Morts-vivants."
+t[890]="Utiliser : Permet à ce personnage de découvrir Idol of Yogg-Saron parmi les Echoes proposés. Idol of Yogg-Saron : Les éliminations accumulent des cumuls qui invoquent une Chose d'outre-monde."
+t[891]="Utiliser : Permet à ce personnage de découvrir Blade Tempest parmi les Echoes proposés. Blade Tempest: Striking your afflicted enemies can summon a Warborn Reflection that whirls a Blade Tempest of Physical damage."
+t[892]="Utiliser : Permet à ce personnage de découvrir Polarity Shift parmi les Echoes proposés. Polarity Shift : Vous alternez entre Charge positive et Charge négative. Augmente les chances de critique et les dégâts infligés, ou réduit les dégâts subis et augmente les soins et la vitesse de déplacement."
+t[893]="Utiliser : Permet à ce personnage de découvrir Armor Mastery parmi les Echoes proposés. Armor Mastery : Vous pouvez équiper tous les types d'armure."
+t[894]="Utiliser : Permet à ce personnage de découvrir Emberlordâ€™s Gift parmi les Echoes proposés. Emberlordâ€™s Gift: Fire damage builds toward a powerful eruption and burn."
+t[895]="Utiliser : Permet à ce personnage de découvrir Conjured Flame parmi les Echoes proposés. Conjured Flame: Slaying burning enemies conjures a Ball of Flame that hunts the next foe, trailing fire and exploding on impact."
+t[896]="Utiliser : Permet à ce personnage de découvrir Permeating Chill parmi les Echoes proposés. Permeating Chill: Your Frost damage can chill enemies to take more Frost damage, shattering them in an icy burst when they die."
+t[897]="Utiliser : Permet à ce personnage de découvrir Heavy Incantations parmi les Echoes proposés. Heavy Incantations : Augmente fortement les dégâts des sorts à long temps d'incantation."
+t[898]="Utiliser : Permet à ce personnage de découvrir Steady Casting parmi les Echoes proposés. Steady Casting : Réduit le recul subi par les attaques pendant l'incantation."
+t[899]="Utiliser : Permet à ce personnage de découvrir Emerald Vigor parmi les Echoes proposés. Emerald Vigor: Healing wounded allies grants Emerald Vigor, boosting your healing to them; healed to full, it blooms to mend nearby allies."
+t[900]="Utiliser : Permet à ce personnage de découvrir Malleable Goo parmi les Echoes proposés. Malleable Goo: Your attacks can hurl Malleable Goo, damaging and slowing enemies and making them suffer more from Mutated Blight."
+t[901]="Utiliser : Permet à ce personnage de découvrir Slime Spray parmi les Echoes proposés. Slime Spray: Your attacks can inflict Mutated Infection that festers into Sticky Ooze, spreading Nature damage and Mutated Blight."
+t[902]="Utiliser : Permet à ce personnage de découvrir Flame Beacon parmi les Echoes proposés. Flame Beacon: Your Fire damage can mark enemies that erupt in Conflagrations, bursting into a Fire Nova when they die."
+t[903]="Utiliser : Permet à ce personnage de découvrir Runic Momentum parmi les Echoes proposés. Runic Momentum : Une puissance runique basse améliore la génération, une puissance runique élevée améliore les dégâts."
+t[904]="Utiliser : Permet à ce personnage de découvrir Gunship Barrage parmi les Echoes proposés. Gunship Barrage: In combat you ready cannon blasts that your next attack calls down on enemies, raining Fire from above."
+t[905]="Utiliser : Permet à ce personnage de découvrir Deathwhisper’s Barrier parmi les Echoes proposés. Deathwhisper’s Barrier: Taking heavy damage raises a Mana Barrier that absorbs harm and sears nearby enemies with Shadow damage."
+t[906]="Utiliser : Permet à ce personnage de découvrir Crushing Finish parmi les Echoes proposés. Crushing Finish : Blesser des ennemis à faible santé déclenche de puissantes frappes d'Exécution."
+t[907]="Utiliser : Permet à ce personnage de découvrir Stitched Fury parmi les Echoes proposés. Stitched Fury : À faible santé, vous entrez en Frénésie, augmentant la vitesse d'attaque et les dégâts physiques infligés."
+t[908]="Utiliser : Permet à ce personnage de découvrir Hunting Hazard parmi les Echoes proposés. Hunting Hazard : Augmente les dégâts de zone du chasseur contre les grands groupes."
+t[909]="Utiliser : Permet à ce personnage de découvrir Reaper’s Verdict parmi les Echoes proposés. Reaper’s Verdict : Vos dégâts contre les ennemis à faible santé sont augmentés. Quand vous blessez un ennemi à faible santé, vous infligez des dégâts d'Ombre supplémentaires."
+t[910]="Utiliser : Permet à ce personnage de découvrir Widow’s Venom parmi les Echoes proposés. Widow’s Venom : Infliger des dégâts de Nature répétés vous fait déchaîner une Volée de traits empoisonnés, aspergeant tous les ennemis de poison."
+t[911]="Utiliser : Permet à ce personnage de découvrir Shielded Steps parmi les Echoes proposés. Shielded Steps : Réduit les dégâts subis par les attaques de zone."
+t[912]="Utiliser : Permet à ce personnage de découvrir Sanctum Sentries parmi les Echoes proposés. Sanctum Sentries : Invoque deux gardiens permanents qui combattent et amplifient vos dégâts."
+t[913]="Utiliser : Permet à ce personnage de découvrir Champion’s Rally parmi les Echoes proposés. Champion’s Rally : Vos soins accumulent Ralliement, aboutissant à une puissante vague de soins."
+t[914]="Utiliser : Permet à ce personnage de découvrir Lightning Charged parmi les Echoes proposés. Lightning Charged : Accumule de la vitesse d'attaque et transforme les attaques en éclair en chaîne."
+t[915]="Utiliser : Permet à ce personnage de découvrir Titan's Grip parmi les Echoes proposés. Titan's Grip : Vous pouvez manier des armes à deux mains d'une seule main."
+t[916]="Utiliser : Permet à ce personnage de découvrir Elemental Bane parmi les Echoes proposés. Elemental Bane : Augmente votre puissance des sorts contre les Élémentaires."
+t[917]="Utiliser : Permet à ce personnage de découvrir Shadow Crash parmi les Echoes proposés. Shadow Crash : Les dégâts d'Ombre sur la durée peuvent faire s'abattre des déflagrations d'ombre."
+t[918]="Utiliser : Permet à ce personnage de découvrir Temporal Pressure parmi les Echoes proposés. Temporal Pressure : La Hâte réduit désormais le temps de recharge de certaines capacités de classe."
+t[919]="Utiliser : Permet à ce personnage de découvrir Giant Slayer parmi les Echoes proposés. Giant Slayer : Augmente votre puissance d'attaque contre les Géants."
+t[920]="Utiliser : Permet à ce personnage de découvrir Exposed Heart parmi les Echoes proposés. Exposed Heart : Les attaques exposent la cible, augmentant les dégâts infligés et infligeant des dégâts de zone."
+t[921]="Utiliser : Permet à ce personnage de découvrir Pandemic parmi les Echoes proposés. Pandemic : Vos effets de dégâts sur la durée se propagent quand les ennemis affectés meurent."
+t[922]="Utiliser : Permet à ce personnage de découvrir Stone Shatter parmi les Echoes proposés. Stone Shatter : Les premières attaques marquent les ennemis, les faisant éclater à leur mort."
+t[923]="Utiliser : Permet à ce personnage de découvrir Subtle Presence parmi les Echoes proposés. Subtle Presence : Réduit la menace générée."
+t[924]="Utiliser : Permet à ce personnage de découvrir Overwhelming Restoration parmi les Echoes proposés. Overwhelming Restoration : Vos soins sont fortement augmentés, mais les sorts coûtent beaucoup plus de mana."
+t[925]="Utiliser : Permet à ce personnage de découvrir Healing Cadence parmi les Echoes proposés. Healing Cadence : Des sorts de soin différents accumulent un bonus de soins."
+t[926]="Utiliser : Permet à ce personnage de découvrir Defile parmi les Echoes proposés. Defile: Slaying an enemy spawns Defile, a pool of Shadow that grows larger and deadlier with every kill within it."
+t[927]="Utiliser : Permet à ce personnage de découvrir Machine Slayer parmi les Echoes proposés. Machine Slayer : Augmente votre puissance d'attaque contre les ennemis Mécaniques."
+t[928]="Utiliser : Permet à ce personnage de découvrir Slimebound Husk parmi les Echoes proposés. Slimebound Husk : Subir des dégâts directs mène à une mue empoisonnée."
+t[929]="Utiliser : Permet à ce personnage de découvrir Demon Slayer parmi les Echoes proposés. Demon Slayer : Augmente votre puissance d'attaque contre les Démons."
+t[930]="Utiliser : Permet à ce personnage de découvrir Curse of the Plaguebringer parmi les Echoes proposés. Curse of the Plaguebringer : Infliger des dégâts d'Ombre répétés afflige la cible d'une malédiction, infligeant des dégâts d'Ombre périodiquement et se propageant à un ennemi proche."
+t[931]="Utiliser : Permet à ce personnage de découvrir Contagion parmi les Echoes proposés. Contagion : Vos effets de dégâts sur la durée peuvent appliquer des effets de dégâts sur la durée aléatoires d'autres classes."
+t[932]="Utiliser : Permet à ce personnage de découvrir Chill of the Bone Wyrm parmi les Echoes proposés. Chill of the Bone Wyrm : Infliger des dégâts de Givre répétés vous fait déchaîner un Souffle de givre, infligeant des dégâts de Givre et rendant les ennemis plus vulnérables à vos dégâts de Givre."
+t[933]="Utiliser : Permet à ce personnage de découvrir Stored Momentum parmi les Echoes proposés. Stored Momentum : Les ressources que vous dépensez sont stockées pour renforcer votre prochaine capacité."
+t[934]="Utiliser : Permet à ce personnage de découvrir Broodmother’s Fury parmi les Echoes proposés. Broodmother’s Fury : Vos attaques accumulent des Braises ardentes qui déclenchent Profonde inspiration."
+t[935]="Utiliser : Permet à ce personnage de découvrir Verdant Ward parmi les Echoes proposés. Verdant Ward : Augmente la résistance à la Nature."
+t[936]="Utiliser : Permet à ce personnage de découvrir Resonant Build parmi les Echoes proposés. Resonant Build : Plusieurs Echoes de caractéristiques de base différentes augmentent vos dégâts."
+t[937]="Utiliser : Permet à ce personnage de découvrir Adaptive Power parmi les Echoes proposés. Adaptive Power : Chaque Echo unique augmente vos dégâts."
+t[938]="Utiliser : Permet à ce personnage de découvrir Fel Surge parmi les Echoes proposés. Fel Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
+t[939]="Utiliser : Permet à ce personnage de découvrir The Harvester’s Tithe parmi les Echoes proposés. The Harvester’s Tithe : Vous récoltez les âmes des ennemis proches, augmentant vos dégâts et regagnant de la santé quand un ennemi meurt près de vous."
+t[940]="Utiliser : Permet à ce personnage de découvrir Call of the Lich King parmi les Echoes proposés. Call of the Lich King : Tuer un ennemi invoque un Serviteur du Roi-liche qui combat pour vous."
+t[941]="Utiliser : Permet à ce personnage de découvrir Echoing Tides parmi les Echoes proposés. Echoing Tides : Vos effets périodiques peuvent déclencher un palier supplémentaire."
+t[942]="Utiliser : Permet à ce personnage de découvrir Storm Surge parmi les Echoes proposés. Storm Surge : Vos sorts et capacités peuvent rendre votre prochain sort clé instantané."
+t[943]="Utiliser : Permet à ce personnage de découvrir Shadow Hazard parmi les Echoes proposés. Shadow Hazard : Augmente les dégâts de zone de Pluie de couteaux contre les grands groupes."
+t[944]="Utiliser : Permet à ce personnage de découvrir Sanctified Hazard parmi les Echoes proposés. Sanctified Hazard : Augmente les dégâts de zone du paladin contre les grands groupes."
+t[945]="Utiliser : Permet à ce personnage de découvrir Unstable Missiles parmi les Echoes proposés. Unstable Missiles : Les sorts directs peuvent lancer des missiles des arcanes sur la cible."
+t[946]="Utiliser : Permet à ce personnage de découvrir Stoneskin Threads parmi les Echoes proposés. Stoneskin Threads : Réduit la durée des effets de ralentissement qui vous affectent."
+t[947]="Utiliser : Permet à ce personnage de découvrir Essence Tap parmi les Echoes proposés. Essence Tap : Vos effets de dégâts sur la durée peuvent rendre des ressources aux alliés."
+t[948]="Utiliser : Permet à ce personnage de découvrir Scent of Blood parmi les Echoes proposés. Scent of Blood: Striking wounded enemies grants Scent of Blood, quickening your attack and casting speed."
+t[949]="Utiliser : Permet à ce personnage de découvrir Drillmaster’s Rebuke parmi les Echoes proposés. Drillmaster’s Rebuke : Vos attaques de mêlée ont une chance de déchaîner une Frappe déséquilibrante, laissant la cible Déséquilibrée et augmentant les dégâts que vous lui infligez."
+local fp = EbonholdFR_Data.fp
+fp["#% chance to gain an additional skill point whenever you gain a skill level in any non-gathering profession."]=3522
+fp["#% of all healing you deal to allies also heals you."]=4852
+fp["#% of all healing you deal to allies also heals you. Replace Lifebond (Rank #)."]=3422
+fp["#% of the damage you take is delayed, dealing its damage over # seconds instead."]=4812
+fp["#% of the damage you take is delayed, dealing its damage over # seconds instead. Replace Deferred Pain (Rank #)."]=3772
+fp["#% of your overhealing on allies is stored. Every # sec, the stored healing is redistributed to up to # nearby injured allies."]=3822
+fp["After leaving combat, and every # sec while in combat, your next damaging ability also hits # additional nearby enemy."]=3361
+fp["After remaining on the same target for # sec, you deal #% increased damage to that target."]=2501
+fp["After standing still for # sec while out of combat, you restore #% mana every second."]=4062
+fp["After standing still for # sec, your armor is increased by # for # sec after you move."]=521
+fp["After standing still for # sec, your critical strikes deal #% increased damage. This effect persists for up to # sec after you move. Also increases your critical strike rating by #."]=3101
+fp["After you cast # Arcane spells or abilities, you unleash an Arcane Explosion, dealing # Arcane damage and restoring #% mana. This effect cannot occur more than once every # sec."]=3411
+fp["After you cast # Fire spells or abilities, you call down a Rain of Fire at the target’s location, scorching the ground for # Fire damage over # sec. This effect cannot occur more than once every # sec."]=3271
+fp["After you cast # Frost spells or abilities, you summon a Blizzard at the target’s location, dealing # Frost damage over # sec and slowing enemies within the area. This effect cannot occur more than once every # sec."]=3401
+fp["After you cast # Holy spells or abilities, a Consecration forms beneath the target, dealing # Holy damage to enemies and healing allies standing in the light for # over # sec. This effect cannot occur more than once every # sec."]=2691
+fp["After you cast # Nature spells or abilities, you summon a Hurricane at the target’s location, dealing # Nature damage over # sec and increasing affected enemies’ attack intervals by #%. This effect cannot occur more than once every # sec."]=2601
+fp["After you cast # Shadow spells or abilities, you unleash a Shadowfury at the target’s location, dealing # Shadow damage and stunning enemies within the area for # sec. This effect cannot occur more than once every # sec."]=2771
+fp["After you cast or use # offensive abilities, you unleashe a Chain Lightning, dealing # Nature damage and jumping to up to # additional enemies. Also increases your spell power and attack power by #."]=2931
+fp["After you dodge or parry an attack, you deal # Physical damage to nearby enemies. Damage scales with your Stamina and deals at least # damage."]=961
+fp["After you hit a target with # spells or abilities within # seconds, damage you deal to that target is increased by #% for # sec. This effect cannot occur more than once every # seconds per target."]=1751
+fp["Against Boss enemies, critical strikes from your auto attacks store Overpowering Force equal to #% of the damage dealt."]=3912
+fp["Allies healed by Overflowing Mercy gain an absorb shield equal to #% of the healing received for # sec."]=4832
+fp["Allows #% of your mana regeneration to continue while casting."]=782
+fp["Allows you to dual wield. Off-hand damage is reduced by #%."]=3391
+fp["Allows you to engrave this affix on any equippable Weapons: Increases run speed by #%"]=5373
+fp["Allows you to engrave this affix on any equippable Weapons: Increases your Defense rating."]=5513
+fp["Allows you to engrave this affix on any equippable Weapons: Increases your Mana Regeneration by #%"]=5343
+fp["Allows you to engrave this affix on any equippable Weapons: Increases your damage against Undead."]=5633
+fp["Allows you to engrave this affix on any equippable Weapons: Killing an enemy increases your haste rating, stacking up to # times. One stack is lost every second."]=5523
+fp["Allows you to engrave this affix on any equippable Weapons: Periodically healing the caster."]=5383
+fp["Allows you to engrave this affix on any equippable Weapons: When you fall below #% health, you are healed for #% of your max health and your Strength is increased by # for # seconds. This effect cannot occur more than once every # seconds."]=5193
+fp["Allows you to engrave this affix on any equippable Weapons: Wraps the caster in a fire shield that deals fire damage every second to nearby enemies. Damage increases with the caster’s fire resistance."]=5463
+fp["Allows you to engrave this affix on any equippable Weapons: Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every # sec for # sec. Damage scales with your Intellect."]=5603
+fp["Allows you to engrave this affix on any equippable Weapons: Your Frost damage has a chance to launch a bolt of frost at the target, dealing Frost damage and reducing movement speed. Damage is increased by the number of slowing effects on the target."]=5093
+fp["Allows you to engrave this affix on any equippable Weapons: Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every # sec. While active, Corrosive Acid reduces the target's armor, increased by #% for each of your damage-over-time effects active on the target."]=5133
+fp["Allows you to engrave this affix on any equippable Weapons: Your Shadow damage has a chance to send a shadowy bolt at the target, dealing Shadow damage. Damage is increased by your Shadow damage-over-time effects active on the target."]=5643
+fp["Allows you to engrave this affix on any equippable Weapons: Your critical strikes have a chance to corrupt the target, dealing Shadow damage every # sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every # sec."]=5543
+fp["Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to poison the target, dealing damage every # sec for # sec. Poisoned targets take #% increased damage from your damage-over-time effects."]=5583
+fp["Allows you to engrave this affix on any equippable Weapons: Your damaging spells and abilities have a chance to stun the target. The duration of the stun is increased by your Strength."]=5573
+fp["Allows you to engrave this affix on any equippable Weapons: Your healing spells have a chance to cause Blessing of Ancient Kings for # seconds allowing your heals to shield the target absorbing damage equal to #% of the amount healed."]=5353
+fp["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged abilities have a chance to inflict a Fatal Wound. Damage scales with your armor penetration rating."]=5593
+fp["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to Wound the target. This effect occurs twice as often when behind the target."]=5143
+fp["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged attacks have a chance to reduce the target's armor. The effect is increased by your Agility."]=5013
+fp["Allows you to engrave this affix on any equippable Weapons: Your melee and ranged basic attack critical strikes increase your attack power by #, stacking up to # times. One stack is lost every second."]=5623
+fp["Allows you to engrave this affix on any equippable Weapons: Your melee attacks and abilities have a chance to strike an additional time for normal damage."]=5203
+fp["Allows you to engrave this affix on any equippable Weapons: Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every # sec for # sec. Damage scales with your weapon speed."]=5033
+fp["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Fire Damage. Damage is futher incrased with your ranged weapon speed and your Fire Resistance."]=5433
+fp["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Frost Damage. Damage is futher incrased with your ranged weapon speed and your Frost Resistance."]=5393
+fp["Allows you to engrave this affix on any equippable Weapons: Your ranged abilities have a chance to strike your target with Nature Damage. Damage is futher incrased with your ranged weapon speed and your Nature Resistance."]=5403
+fp["Allows you to engrave this affix on any equippable Weapons: Your ranged auto-attacks automatically trigger a second shot"]=5293
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by #%. Affects # targets. Your primary target is also consumed by a cyclone, slowing its attack speed by #% for # seconds."]=5263
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Calls forth an Ember of Azzinoth to protect you in battle for a short period of time."]=5613
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Smites an enemy with Holy damage. Chance scale with your Hit Chance."]=5503
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to Summons the infernal spirit of Shahram."]=5313
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Fire damage. Damage scales with your critical strike rating."]=5113
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Frost damage. This effect has twice the chance to occur against slowed targets."]=5183
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to blast the target dealing Nature damage. Damage scales with your total mana."]=5123
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within # seconds by #%."]=5223
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to disarm the target. The duration of the disarm is increased by your Stamina."]=5023
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over # seconds. Both effects scale with the Fire damage-over-time active on your target."]=5273
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to increase the target's spell damage taken by #% for # seconds."]=5253
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to make you gain # Energy or # Rage."]=5283
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to reduce all attributes of the target. This effect is increased by your Nature Resistance."]=5533
+fp["Allows you to engrave this affix on any equippable Weapons: Your spells and abilities have a chance to steal life from the target. The amount stolen is increased the lower your health and by effects that increase healing done."]=5173
+fp["Allows you to engrave this affix on any equippable item: Critical heals restore #% additional health, increased by Intellect"]=5213
+fp["Allows you to engrave this affix on any equippable item: Critical strikes deal #% more damage and healing"]=4913
+fp["Allows you to engrave this affix on any equippable item: Damaging abilities may release a Frozen Pulse dealing # Shadow damage per second for # sec, increased by Critical Strike rating"]=5493
+fp["Allows you to engrave this affix on any equippable item: Dealing damage slows your target’s movement by #% and increases the time between their attacks by #%."]=4993
+fp["Allows you to engrave this affix on any equippable item: Every # sec, applies a # damage shield"]=5553
+fp["Allows you to engrave this affix on any equippable item: Increases damage and healing done by #%"]=5103
+fp["Allows you to engrave this affix on any equippable item: Increases spell effectiveness by #%. Unique."]=5563
+fp["Allows you to engrave this affix on any equippable item: Increases your Armor by #"]=4953
+fp["Allows you to engrave this affix on any equippable item: Increases your armor penetration by #%"]=4983
+fp["Allows you to engrave this affix on any equippable item: Increases your critical strike chance by #%"]=5483
+fp["Allows you to engrave this affix on any equippable item: Increases your total Agility by #%"]=5323
+fp["Allows you to engrave this affix on any equippable item: Increases your total Intellect by #%"]=5423
+fp["Allows you to engrave this affix on any equippable item: Increases your total Spirit by #%"]=5443
+fp["Allows you to engrave this affix on any equippable item: Increases your total Stamina by #%"]=5453
+fp["Allows you to engrave this affix on any equippable item: Increases your total Strength by #%"]=5233
+fp["Allows you to engrave this affix on any equippable item: Taking damage may grant #% Attack Power and # to #% Spell Power for # seconds"]=4973
+fp["Allows you to engrave this affix on any equippable item: Taking damage may grant #% Attack Power and #% Spell Power for # seconds"]=5473
+fp["Allows you to engrave this affix on any equippable item: While below #% health, absorbs #% of damage taken. Unique"]=5243
+fp["Allows you to engrave this affix on any equippable item: Your HoTs tick for # additional healing per second, increased by Spirit"]=5163
+fp["Allows you to engrave this affix on any equippable item: Your abilities may unleash a Frost Breath dealing # Frost damage, increased by your Stamina"]=5003
+fp["Allows you to engrave this affix on any equippable item: Your damaging abilities may fire an Infinite Star dealing # Arcane damage, increased by your highest stat"]=5303
+fp["Allows you to engrave this affix on any equippable item: Your periodic heals may increase your Healing Spell Power by # for # sec"]=4963
+fp["Allows you to engrave this affix on any equippable item: Your pet attacks #% faster"]=4903
+fp["Allows you to engrave this affix on any equippable item: Your pet deals #% more damage"]=5333
+fp["Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by # sec. Unique."]=5043
+fp["Allows you to engrave this affix on any equippable item: increases your Block value by #%"]=5153
+fp["Allows you to engrave this affix on any equippable item: increases your total Strength by #%"]=5363
+fp["Allows you to engrave this affix onto any equippable weapon: Your melee attacks have #% chance to make you strike all nearby enemies, dealing weapon damage. While using a two-handed weapon, you have a #% chance to trigger Bladestorm on your target"]=5413
+fp["Allows you to equip # item(s) regardless of its level requirement."]=3442
+fp["Allows you to trigger Cheat Death effects # additional times. Charges refresh on reset."]=4292
+fp["Allows you to wield two-handed weapons in one hand. Your damage is reduced by #%."]=71
+fp["Borrowed Time restores an additional #% health."]=3702
+fp["Casting a direct damaging spell grants Overflow for # sec. Casting additional direct damaging spells while Overflow is active grants # stack, but does not refresh its duration. When Overflow expires, it erupts, dealing # Arcane damage per stack to nearby enemies. Overflow stacks up to # times."]=3802
+fp["Casting a healing spell increases your spell damage by #% for # sec. Casting a damaging spell increases your healing done by #% for # sec."]=3111
+fp["Casting a healing spell or ability increases your healing done by #% for # sec. While this effect is active, each different healing spell or ability you use increases this bonus by an additional #% and refreshes the duration."]=411
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells : Exorcism, Flash of Light, Holy Light."]=1711
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Arcane Blast, Fireball, Frostbolt, Frostfire Bolt, Pyroblast, Flamestrike."]=1941
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Lightning Bolt, Chain Lightning, Lava Burst, Healing Wave, Chain Heal."]=1861
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Shadow Bolt, Incinerate, Soul Fire, Chaos Bolt, Seed of Corruption, Haunt, Unstable Affliction."]=1981
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Smite, Holy Fire, Mind Blast, Flash Heal, Greater Heal, Heal, Binding Heal, and Prayer of Healing."]=1801
+fp["Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Wrath, Starfire. Healing: Healing Touch, Nourish, Regrowth."]=2031
+fp["Casting an offensive spell or ability increases your damage done by #% for # sec. While this effect is active, each different offensive spell or ability you use increases this bonus by an additional #% and refreshes the duration."]=371
+fp["Channel to increase Intensity every # second but dealing #% damage every second"]=4152
+fp["Channel to reduce Intensity every # second but dealing #% damage every second"]=4462
+fp["Critical heals restore #% additional health, increased by Intellect."]=7903
+fp["Critical heals restore #% additional health, increased by Intellect. Stacks with other ranks."]=7263
+fp["Critical strikes against you deal #% less damage."]=3962
+fp["Critical strikes deal #% more damage and healing."]=7923
+fp["Critical strikes deal #% more damage and healing. Stacks with other ranks."]=7293
+fp["Damage dealt by your damage-over-time effects has a chance to apply a random damage-over-time effect associated with another class."]=3281
+fp["Damage dealt by your damage-over-time effects has a chance to grant a random ally #% maximum Mana, # Energy, # Rage, or # Runic Power."]=2731
+fp["Damage from a single hit that exceeds #% of your maximum health is reduced by #%."]=4432
+fp["Damaging abilities may release a Frozen Pulse dealing # Shadow damage per second for # sec, increased by Critical Strike rating."]=7883
+fp["Damaging abilities may release a Frozen Pulse dealing # Shadow damage per second for # sec, increased by Critical Strike rating. Stacks with other ranks."]=7233
+fp["Damaging an enemy below #% health grants Scent of Blood for # sec, increasing your attack speed and casting speed by #%."]=2401
+fp["Dealing Arcane damage grants a stack of Overcharge. At # stacks, you fire a salvo of Magic Missiles into the air, striking up to # enemies near the target for # Arcane damage each. After triggering, you cannot gain Overcharge stacks for # sec."]=221
+fp["Dealing Fire and Shadow damage within # sec increases the damage you deal by #% for # sec."]=261
+fp["Dealing Fire damage grants a stack of Cinders. At # stacks, you summon a Fire Cyclone for # sec., dealing # Fire damage to enemies within # yds every # sec. After triggering, you cannot gain Cinders stacks for # sec."]=101
+fp["Dealing Fire damage grants a stack of Kindling. At # stacks, you erupt in flame, dealing # Fire damage to nearby enemies and # additional Fire damage over time for # sec. After erupting, you cannot gain Kindling for # sec."]=2551
+fp["Dealing Fire, Frost, and Arcane damage within # sec increases the damage you deal by #% for # sec."]=181
+fp["Dealing Frost damage grants a stack of Rime. At # stacks, you unleash Frost Breath in front of you, dealing # Frost damage and leaving enemies hit Brittle for # sec. While Brittle is active, your Frost damage against them is increased by #%. After triggering, you cannot gain Rime stacks for # sec."]=3171
+fp["Dealing Nature damage grants a stack of Venomous. At # stacks, you unleash Poison Bolt Volley, spraying poison at all enemies within # yds, dealing # Nature damage and an additional # Nature damage every second for # sec. After triggering, you cannot gain Venomous stacks for # sec."]=2381
+fp["Dealing Physical damage to an enemy afflicted by one of your damage-over-time effects has a chance to summon a Warborn Reflection at its location. The reflection unleashes Blade Tempest for # sec, dealing # Physical damage every # sec to nearby enemies."]=501
+fp["Dealing Shadow damage applies a stack of Infection to the target. At # stacks, you afflict the target with Curse of the Plaguebringer for # sec, dealing $ Shadow damage every # sec. Each time it deals damage, it spreads to a nearby enemy not already affected."]=2461
+fp["Dealing damage afflict the target with Reaper’s Doom for # sec. When it expires, it detonates for # Shadow damage split between all enemies within # yards. If the target dies while afflicted, Reaper’s Doom detonates immediately."]=1961
+fp["Dealing damage slows your target's movement by #% and increases the time between their attacks by #%."]=8003
+fp["Dealing damage slows your target’s movement by #% and increases the time between their attacks by #%."]=7403
+fp["Delivering a killing blow unleashes Terrifying Roar, dealing # damage to enemies within # yds, slowing them by #% and causing them to take #% increased damage from you for # sec. This effect cannot occur more than once every # sec."]=2991
+fp["Dodging or Parrying builds Pressure, maximum # stack every #,# seconds. At # stacks, you vent flames for # sec, dealing # Fire damage every # sec to enemies within # yards, scaling with your Stamina. While Flame Vents is active, you take #% reduced damage and your movement speed is increased by an additional #%."]=451
+fp["Each run, you can choose the resurrect option for free one additional time. Charges refresh on reset. While in Hardcore: You cannot resurrect, instead all damage taken is reduced by #%."]=4722
+fp["Each time you spend a Rune, you launch a missile at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=281
+fp["Enemies struck by Overflow Conduit take #% increased damage from you for # sec."]=4302
+fp["Enemies that strike you are afflicted with Decrepit Fever, dealing # Shadow damage each second for # sec and reduces the damage they deal to you by #% for the duration."]=2531
+fp["Enemies you kill explode, dealing # Shadow damage around them. This effect cannot occur more than once every # sec."]=3692
+fp["Every # melee attacks and abilities grants #% attack speed for # sec. Stacks up to # times."]=851
+fp["Every # sec while in combat, pulls nearby enemies toward you and deal # Lightning damage. This effect deals at least # damage."]=361
+fp["Every # sec while in combat, you afflict a nearby enemy with Siphon Life, dealing # Shadow damage over # sec. If the affected target dies, you are healed for #. This effect deals at least # damage and heals at least # health."]=2811
+fp["Every # sec while in combat, you hurl a flask of poison at a nearby random location, creating a pool of toxins that deals # Poison damage per second. This effect deals at least # damage."]=2641
+fp["Every # sec while in combat, you inhale the surrounding blight and unleash Pungent Blight, dealing # Shadow damage to all enemies within # yards and applying # stacks of Mutated Blight. Pungent Blight deals #% increased damage per stack of Mutated Blight already on the target. Mutated Blight: Deals # Plague damage every # sec for # sec. Stacks up to # times."]=2441
+fp["Every # sec while in combat, you throw Harpoons at up to # enemies between # and # yards away, pulling them to you and Pinning them for # sec. Pinned enemies are slowed by #% and take #% increased damage from you."]=821
+fp["Every # sec while in combat, your next spell or ability also hurls lightning at up to # random nearby enemies, dealing # Nature damage. This effect deals at least # damage."]=2711
+fp["Every # sec while out of combat and mounted, your mount speed is increased by an additional #%. Stacks up to # times."]=3812
+fp["Every # sec while out of combat and not mounted, your movement speed is increased by an additional #%. Stacks up to # times."]=4512
+fp["Every # sec, applies a # damage shield."]=7953
+fp["Every # sec, applies a # damage shield. Stacks with other ranks."]=7333
+fp["Every # sec, your critical strike chance is increased by #% for # sec."]=1531
+fp["Every # sec, your next Blood Boil, Howling Blast, Icy Touch, or Death and Decay unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1471
+fp["Every # sec, your next Cone of Cold, Arcane Explosion, Frost Nova, or Dragon's Breath unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=2071
+fp["Every # sec, your next Consecration, Divine Storm, Shield of Righteousness, or Avenger's Shield unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1331
+fp["Every # sec, your next Fan of Knives, Blade Flurry, or Ghostly Strike unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1991
+fp["Every # sec, your next Raptor Strike or Multi-Shot unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1571
+fp["Every # sec, your next Shadowflame, Death Coil, Shadowfury, or Drain Life unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=2261
+fp["Every # sec, your next Thunder Clap, Whirlwind, Revenge, or Shockwave unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1201
+fp["Every # sec, your next Thunderstorm, Stormstrike, Earth Shock, Flame Shock, or Frost Shock unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1721
+fp["Every # sec, your next Typhoon, Swipe, Swiftmend, or Hurricane unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=1871
+fp["Every # sec, your next ability costs no primary resource and restores # Energy, # Rage, #% of your maximum mana, or # Runic Power, depending on your class."]=3071
+fp["Every # sec, your next your next Holy Nova or Mind Sear unleashes Acid Breath, dealing # Nature damage to enemies in front of you and an additional # Nature damage every second for # sec. This effect deals at least # damage and an additional # every second."]=2171
+fp["Every # seconds, you gain a shield absorbing up to # damage. This effect absorbs at least # damage."]=1111
+fp["Every third direct damage spell you cast in a row deals #% additional Arcane damage."]=2881
+fp["Fatal damage instead reduces you to # health, prevents all damage for # sec, and heals you for #% of your maximum health. This effect cannot occur more than once every # min and can trigger without consuming Cheat Death charges."]=1781
+fp["For each of your abilities on cooldown, Haste is increased by #%. Also increases haste rating by #."]=2841
+fp["For every # Energy you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2721
+fp["For every # Rage you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2251
+fp["For every # Rage, # Energy, or # Mana you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2631
+fp["For every # Runic Power you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2421
+fp["For every (# + # per level) Mana you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2351
+fp["For every (# + # per level) you spend, a tiny ember leaps from you, dealing # Fire damage to a random enemy within # yards. This effect deals at least # damage and cannot occur more than once every # sec."]=2481
+fp["Gathering from a node increases your movement speed by #% for # sec."]=3622
+fp["Gathering from a node increases your movement speed by #% for # sec. Replace Harvest Rush (Rank #)."]=3672
+fp["Generates # Rage every # sec."]=1911
+fp["Grants an additional talent point."]=3532
+fp["Grants you the ability to discover Accelerated Decay when offered new Echoes."]=6994
+fp["Grants you the ability to discover Adaptive Power when offered new Echoes."]=6034
+fp["Grants you the ability to discover Ambidexterity when offered new Echoes."]=5804
+fp["Grants you the ability to discover Arcane Burn when offered new Echoes."]=5774
+fp["Grants you the ability to discover Arcane Cadence when offered new Echoes."]=6104
+fp["Grants you the ability to discover Arcane Density when offered new Echoes."]=7094
+fp["Grants you the ability to discover Arcane Hazard when offered new Echoes."]=6554
+fp["Grants you the ability to discover Arcane Surge when offered new Echoes."]=6944
+fp["Grants you the ability to discover Arcane Ward when offered new Echoes."]=6734
+fp["Grants you the ability to discover Archmage’s Mark when offered new Echoes."]=5954
+fp["Grants you the ability to discover Armor Mastery when offered new Echoes."]=5754
+fp["Grants you the ability to discover Battle Rhythm when offered new Echoes."]=6064
+fp["Grants you the ability to discover Battlefield Hazard when offered new Echoes."]=6164
+fp["Grants you the ability to discover Beast Bane when offered new Echoes."]=5764
+fp["Grants you the ability to discover Beast Slayer when offered new Echoes."]=5984
+fp["Grants you the ability to discover Blade Tempest when offered new Echoes."]=6174
+fp["Grants you the ability to discover Blighted Hazard when offered new Echoes."]=6244
+fp["Grants you the ability to discover Blood Mirror when offered new Echoes."]=6804
+fp["Grants you the ability to discover Brittle Forging when offered new Echoes."]=6184
+fp["Grants you the ability to discover Broodmother’s Fury when offered new Echoes."]=6674
+fp["Grants you the ability to discover Broodmother’s Webbing when offered new Echoes."]=6964
+fp["Grants you the ability to discover Call of the Lich King when offered new Echoes."]=5744
+fp["Grants you the ability to discover Champion’s Rally when offered new Echoes."]=6694
+fp["Grants you the ability to discover Chill of the Bone Wyrm when offered new Echoes."]=6574
+fp["Grants you the ability to discover Cinders of the Sanctum when offered new Echoes."]=6894
+fp["Grants you the ability to discover Conjured Flame when offered new Echoes."]=6704
+fp["Grants you the ability to discover Constellations when offered new Echoes."]=6194
+fp["Grants you the ability to discover Contagion when offered new Echoes."]=6684
+fp["Grants you the ability to discover Crusader's Surge when offered new Echoes."]=7024
+fp["Grants you the ability to discover Crushing Finish when offered new Echoes."]=5824
+fp["Grants you the ability to discover Crypt Lord’s Swarm when offered new Echoes."]=6874
+fp["Grants you the ability to discover Curse of the Plaguebringer when offered new Echoes."]=6234
+fp["Grants you the ability to discover Cyclone of Cold Bones when offered new Echoes."]=6584
+fp["Grants you the ability to discover Dark Nucleus when offered new Echoes."]=6594
+fp["Grants you the ability to discover Deathwhisper’s Barrier when offered new Echoes."]=6664
+fp["Grants you the ability to discover Defile when offered new Echoes."]=5884
+fp["Grants you the ability to discover Demon Bane when offered new Echoes."]=5814
+fp["Grants you the ability to discover Demon Slayer when offered new Echoes."]=6044
+fp["Grants you the ability to discover Demonic Awakening when offered new Echoes."]=6834
+fp["Grants you the ability to discover Divine Surge when offered new Echoes."]=6564
+fp["Grants you the ability to discover Dragon Slayer when offered new Echoes."]=6014
+fp["Grants you the ability to discover Dragonkin Bane when offered new Echoes."]=5794
+fp["Grants you the ability to discover Drillmaster’s Rebuke when offered new Echoes."]=6334
+fp["Grants you the ability to discover Earthen Snap when offered new Echoes."]=6284
+fp["Grants you the ability to discover Earthen Spike when offered new Echoes."]=6264
+fp["Grants you the ability to discover Echoing Tides when offered new Echoes."]=6524
+fp["Grants you the ability to discover Edict of the Four when offered new Echoes."]=6424
+fp["Grants you the ability to discover Edict of the Iron Council when offered new Echoes."]=6774
+fp["Grants you the ability to discover Elemental Bane when offered new Echoes."]=5854
+fp["Grants you the ability to discover Elemental Slayer when offered new Echoes."]=6814
+fp["Grants you the ability to discover Ember Ward when offered new Echoes."]=5844
+fp["Grants you the ability to discover Emberlord’s Gift when offered new Echoes."]=6304
+fp["Grants you the ability to discover Emerald Vigor when offered new Echoes."]=7044
+fp["Grants you the ability to discover Entropic Fusion when offered new Echoes."]=6024
+fp["Grants you the ability to discover Eonar’s Seed when offered new Echoes."]=7084
+fp["Grants you the ability to discover Essence Tap when offered new Echoes."]=6434
+fp["Grants you the ability to discover Exposed Heart when offered new Echoes."]=6354
+fp["Grants you the ability to discover Fel Hazard when offered new Echoes."]=6864
+fp["Grants you the ability to discover Fel Surge when offered new Echoes."]=5784
+fp["Grants you the ability to discover Flame Beacon when offered new Echoes."]=6274
+fp["Grants you the ability to discover Flame Vents when offered new Echoes."]=6144
+fp["Grants you the ability to discover Fortress Soul when offered new Echoes."]=5674
+fp["Grants you the ability to discover Frost Bite when offered new Echoes."]=6324
+fp["Grants you the ability to discover Frost Ward when offered new Echoes."]=5864
+fp["Grants you the ability to discover Frostfire Paradox when offered new Echoes."]=5714
+fp["Grants you the ability to discover Frostmourne Hungers when offered new Echoes."]=6504
+fp["Grants you the ability to discover Giant Bane when offered new Echoes."]=5874
+fp["Grants you the ability to discover Giant Slayer when offered new Echoes."]=6084
+fp["Grants you the ability to discover Gunship Barrage when offered new Echoes."]=6654
+fp["Grants you the ability to discover Harpoon Barrage when offered new Echoes."]=6254
+fp["Grants you the ability to discover Healing Cadence when offered new Echoes."]=6134
+fp["Grants you the ability to discover Heavy Incantations when offered new Echoes."]=6974
+fp["Grants you the ability to discover Holy Hazard when offered new Echoes."]=6714
+fp["Grants you the ability to discover Hungering Curse when offered new Echoes."]=6494
+fp["Grants you the ability to discover Hunting Hazard when offered new Echoes."]=6314
+fp["Grants you the ability to discover Idol of Yogg-Saron when offered new Echoes."]=6124
+fp["Grants you the ability to discover Impaler’s Tribute when offered new Echoes."]=6824
+fp["Grants you the ability to discover Inhaled Blight when offered new Echoes."]=6214
+fp["Grants you the ability to discover Inspiring Mending when offered new Echoes."]=7074
+fp["Grants you the ability to discover Insulated Soul when offered new Echoes."]=6794
+fp["Grants you the ability to discover Leeching Swarm when offered new Echoes."]=6724
+fp["Grants you the ability to discover Lightning Charged when offered new Echoes."]=5944
+fp["Grants you the ability to discover Lingering Inspiration when offered new Echoes."]=5664
+fp["Grants you the ability to discover Machine Slayer when offered new Echoes."]=6114
+fp["Grants you the ability to discover Malleable Goo when offered new Echoes."]=6614
+fp["Grants you the ability to discover Mana Infusion when offered new Echoes."]=6364
+fp["Grants you the ability to discover Mechanical Bane when offered new Echoes."]=7014
+fp["Grants you the ability to discover Mutagenic Fumes when offered new Echoes."]=6884
+fp["Grants you the ability to discover Nature’s Surge when offered new Echoes."]=5834
+fp["Grants you the ability to discover Necrotic Plague when offered new Echoes."]=6514
+fp["Grants you the ability to discover Nether Lord’s Command when offered new Echoes."]=6484
+fp["Grants you the ability to discover Overwhelming Restoration when offered new Echoes."]=5704
+fp["Grants you the ability to discover Pandemic when offered new Echoes."]=6764
+fp["Grants you the ability to discover Permafrost Aura when offered new Echoes."]=6394
+fp["Grants you the ability to discover Permeating Chill when offered new Echoes."]=6914
+fp["Grants you the ability to discover Polarity Shift when offered new Echoes."]=6854
+fp["Grants you the ability to discover Provoking Presence when offered new Echoes."]=5694
+fp["Grants you the ability to discover Quickened Tempo when offered new Echoes."]=6294
+fp["Grants you the ability to discover Rage of the Colossus when offered new Echoes."]=6444
+fp["Grants you the ability to discover Raging Momentum when offered new Echoes."]=6954
+fp["Grants you the ability to discover Ravenous Bellow when offered new Echoes."]=6784
+fp["Grants you the ability to discover Reaper’s Doom when offered new Echoes."]=5734
+fp["Grants you the ability to discover Reaper’s Reprieve when offered new Echoes."]=7064
+fp["Grants you the ability to discover Reaper’s Verdict when offered new Echoes."]=7114
+fp["Grants you the ability to discover Relentless Energy when offered new Echoes."]=6624
+fp["Grants you the ability to discover Resonant Build when offered new Echoes."]=6074
+fp["Grants you the ability to discover Rocket Strike when offered new Echoes."]=6984
+fp["Grants you the ability to discover Rootbreaker when offered new Echoes."]=5994
+fp["Grants you the ability to discover Runic Momentum when offered new Echoes."]=6934
+fp["Grants you the ability to discover Sanctified Hazard when offered new Echoes."]=6204
+fp["Grants you the ability to discover Sanctum Sentries when offered new Echoes."]=6904
+fp["Grants you the ability to discover Sanguine Bulwark when offered new Echoes."]=5934
+fp["Grants you the ability to discover Scent of Blood when offered new Echoes."]=6644
+fp["Grants you the ability to discover Shadow Crash when offered new Echoes."]=6054
+fp["Grants you the ability to discover Shadow Hazard when offered new Echoes."]=6474
+fp["Grants you the ability to discover Shadow Ward when offered new Echoes."]=5974
+fp["Grants you the ability to discover Shielded Steps when offered new Echoes."]=7104
+fp["Grants you the ability to discover Shock Vortex when offered new Echoes."]=6604
+fp["Grants you the ability to discover Slime Spray when offered new Echoes."]=6634
+fp["Grants you the ability to discover Slimebound Husk when offered new Echoes."]=6384
+fp["Grants you the ability to discover Static Overflow when offered new Echoes."]=6404
+fp["Grants you the ability to discover Steady Casting when offered new Echoes."]=5654
+fp["Grants you the ability to discover Steady Grip when offered new Echoes."]=6744
+fp["Grants you the ability to discover Stitched Fury when offered new Echoes."]=6544
+fp["Grants you the ability to discover Stone Shatter when offered new Echoes."]=6534
+fp["Grants you the ability to discover Stoneskin Threads when offered new Echoes."]=5894
+fp["Grants you the ability to discover Stored Momentum when offered new Echoes."]=6454
+fp["Grants you the ability to discover Storm Hazard when offered new Echoes."]=6374
+fp["Grants you the ability to discover Storm Surge when offered new Echoes."]=5684
+fp["Grants you the ability to discover Storm of the Spellweaver when offered new Echoes."]=6754
+fp["Grants you the ability to discover Subtle Presence when offered new Echoes."]=7054
+fp["Grants you the ability to discover Sundered Formation when offered new Echoes."]=6224
+fp["Grants you the ability to discover Sundered Will when offered new Echoes."]=5924
+fp["Grants you the ability to discover Temporal Pressure when offered new Echoes."]=6004
+fp["Grants you the ability to discover The Harvester’s Tithe when offered new Echoes."]=7124
+fp["Grants you the ability to discover The Last Wall when offered new Echoes."]=5724
+fp["Grants you the ability to discover The Sporelord’s Gift when offered new Echoes."]=7004
+fp["Grants you the ability to discover The Unclean’s Fever when offered new Echoes."]=7034
+fp["Grants you the ability to discover Titan's Grip when offered new Echoes."]=6844
+fp["Grants you the ability to discover Twilight Combustion when offered new Echoes."]=6344
+fp["Grants you the ability to discover Twilight Equilibrium when offered new Echoes."]=6924
+fp["Grants you the ability to discover Undead Bane when offered new Echoes."]=5914
+fp["Grants you the ability to discover Undead Slayer when offered new Echoes."]=6094
+fp["Grants you the ability to discover Unstable Missiles when offered new Echoes."]=6464
+fp["Grants you the ability to discover Verdant Ward when offered new Echoes."]=5904
+fp["Grants you the ability to discover Weapon Mastery when offered new Echoes."]=5964
+fp["Grants you the ability to discover Widow’s Venom when offered new Echoes."]=6154
+fp["Grants you the ability to discover Wild Hazard when offered new Echoes."]=6414
+fp["Healing an ally below #% health grants them Emerald Vigor for # sec, increasing healing received from you by #%. If an ally with Emerald Vigor is healed above #% health, Emerald Vigor blooms, healing up to # nearby injured allies for #."]=3161
+fp["Healing an ally triggers a burst of Holy energy at their location, dealing # Holy damage to nearby enemies. This effect deals at least # damage. This effect cannot occur more than once every # seconds per target."]=2321
+fp["If you have not taken damage in the last # sec., your damage dealt is increased by #%."]=1551
+fp["Increases Agility by #"]=3051
+fp["Increases Agility by #."]=272
+fp["Increases Arcane Resistance by #."]=212
+fp["Increases Fire Resistance by #."]=122
+fp["Increases Frost Resistance by #."]=162
+fp["Increases Haste by #% and haste rating by #."]=3001
+fp["Increases Haste by #%."]=4402
+fp["Increases Healing done by #%."]=4482
+fp["Increases Intellect by #."]=302
+fp["Increases Nature Resistance by #."]=172
+fp["Increases Shadow Resistance by #."]=252
+fp["Increases Spirit by #."]=2282
+fp["Increases Stamina by #."]=352
+fp["Increases Strength by #"]=3011
+fp["Increases Strength by #."]=242
+fp["Increases all damage dealt by #"]=691
+fp["Increases all damage dealt by #."]=1821
+fp["Increases armor by #"]=11
+fp["Increases armor by #."]=742
+fp["Increases armor penetration rating by #"]=581
+fp["Increases armor penetration rating by #."]=1692
+fp["Increases attack power by #."]=471
+fp["Increases block value by #."]=2391
+fp["Increases critical strike damage and critical healing by #%."]=4312
+fp["Increases critical strike rating by #"]=541
+fp["Increases critical strike rating by #."]=1622
+fp["Increases damage and healing done by #%."]=3832
+fp["Increases experience gained by an additional #%."]=3492
+fp["Increases experience gained from gathering and killing monsters by an additional #%."]=3922
+fp["Increases experience gained from quests by an additional #%."]=3952
+fp["Increases expertise rating by #"]=651
+fp["Increases expertise rating by #."]=1741
+fp["Increases haste rating by #"]=571
+fp["Increases haste rating by #."]=1651
+fp["Increases healing received by #%."]=1461
+fp["Increases healing received while below #% health by #%."]=4012
+fp["Increases hit rating by #"]=511
+fp["Increases hit rating by #."]=1592
+fp["Increases maximum mana by #"]=671
+fp["Increases maximum mana by #."]=1771
+fp["Increases melee damage by #%."]=3852
+fp["Increases mount speed by #% for every #% increased movement speed you have."]=4792
+fp["Increases mount speed by an additional #%."]=2331
+fp["Increases reputation gains by #%."]=3612
+fp["Increases run speed by #%"]=7633
+fp["Increases spell effectiveness by #%. Unique."]=7283
+fp["Increases spell power by #."]=431
+fp["Increases the amount of cloth you find on humanoids by #%."]=4082
+fp["Increases the amount of fish gained from Fishing by #%."]=4412
+fp["Increases the amount of materials gained from Disenchanting by #%."]=3892
+fp["Increases the amount of materials gained from Herbalism by #%."]=4202
+fp["Increases the amount of materials gained from Milling by #%."]=3992
+fp["Increases the amount of materials gained from Mining by #%."]=3722
+fp["Increases the amount of materials gained from Prospecting by #%."]=4572
+fp["Increases the amount of materials gained from Skinning by #%."]=4762
+fp["Increases the damage of spells with a base cast time longer than # seconds by #%."]=2061
+fp["Increases the duration of beneficial effects you cast on yourself by #%."]=3742
+fp["Increases the duration of food buffs by #%."]=4192
+fp["Increases the maximum amount of profession you can learn simultaneously by #."]=4662
+fp["Increases the number of Echo Banish available at the start of a run by #."]=4002
+fp["Increases the number of Echo Freezes available at the start of a run by #."]=4422
+fp["Increases the number of Echo rerolls available at the start of a run by #."]=3472
+fp["Increases the number of times you can accept resurrection by #. Charges refresh on reset. While in Hardcore: You cannot accept resurrection, instead all damage taken is reduced by #%."]=4692
+fp["Increases threat generated by #%."]=1952
+fp["Increases your Agility by #%."]=4132
+fp["Increases your Armor by #."]=7983
+fp["Increases your Armor by #. Stacks with other ranks."]=7373
+fp["Increases your Armor contribution from cloth and leather items by #%."]=721
+fp["Increases your Attack Power by #%."]=4212
+fp["Increases your Block value by #%"]=7413
+fp["Increases your Block value by #%."]=8013
+fp["Increases your Defense rating."]=7643
+fp["Increases your Energy regeneration by #%"]=2011
+fp["Increases your Expertise by #."]=3592
+fp["Increases your Intellect by #%."]=3502
+fp["Increases your Mana Regeneration by #%"]=7753
+fp["Increases your Rage generation by #%."]=2431
+fp["Increases your Runic Power generation by #%."]=2521
+fp["Increases your Spell Power by an amount equal to #% of your Armor, up to a maximum of #% of your intellect. Current bonus: # Spell Power."]=3141
+fp["Increases your Spirit by #%."]=3982
+fp["Increases your Stamina by # for each rank."]=4892
+fp["Increases your Stamina by #%."]=3932
+fp["Increases your Stamina by #."]=7132
+fp["Increases your Strength by #%."]=3632
+fp["Increases your Strength, Agility, Intellect or Spirit by #, whichever is highest."]=7152
+fp["Increases your Strength, Agility, Intellect or Spirit for each rank, whichever is highest, ramping up to # per rank."]=3562
+fp["Increases your armor penetration by #%."]=4372
+fp["Increases your armor penetration by #%. Stacks with other ranks."]=7393
+fp["Increases your attack power by # or your spell power by # for each rank, whichever your class and specialization use."]=3902
+fp["Increases your attack power by # or your spell power by #, whichever is higher."]=7142
+fp["Increases your attack power by # when fighting Beasts."]=1291
+fp["Increases your attack power by # when fighting Demons."]=1361
+fp["Increases your attack power by # when fighting Dragonkin."]=1341
+fp["Increases your attack power by # when fighting Elementals."]=1401
+fp["Increases your attack power by # when fighting Giants."]=1421
+fp["Increases your attack power by # when fighting Mechanical enemies."]=1511
+fp["Increases your attack power by # when fighting Undead."]=1491
+fp["Increases your attack power by #."]=3552
+fp["Increases your chance to be offered higher-quality Echoes when you level up by #%."]=4042
+fp["Increases your chance to find rare loot by #%."]=3712
+fp["Increases your chance to hit by #%. This bonus is not shown on the character sheet."]=4472
+fp["Increases your critical strike chance by #%, but reduces your Armor by #%."]=2781
+fp["Increases your critical strike chance by #%."]=4863
+fp["Increases your critical strike chance by #%. Stacks with other ranks."]=7223
+fp["Increases your critical strike damage by #%, plus an additional #% for every # Critical Strike Rating you have. Current bonus: #%"]=311
+fp["Increases your damage against Undead."]=7743
+fp["Increases your damage and healing done by #%."]=7943
+fp["Increases your damage and healing done by #%. Stacks with other ranks."]=7323
+fp["Increases your damage based on your missing health, up to #% damage increased at #% remaing health."]=1521
+fp["Increases your damage by #% for each unique Echo you have active. Additional ranks or qualities of the same Echo do not increase this bonus."]=2161
+fp["Increases your damage dealt by #% but reduces your maximum health by #%."]=1251
+fp["Increases your damage dealt by #%, but increases damage taken by #%."]=2701
+fp["Increases your mana by #%."]=3942
+fp["Increases your mana regeneration by #%."]=2362
+fp["Increases your maximum health by #%, but reduces healing received by #%."]=3321
+fp["Increases your maximum health by #%."]=3662
+fp["Increases your maximum health by #."]=1262
+fp["Increases your maximum mana by #%."]=4612
+fp["Increases your mount speed by an additional #%."]=4632
+fp["Increases your movement speed by an additional #%."]=91
+fp["Increases your pets' Attack power by #, based on your Attack power."]=111
+fp["Increases your pets' Spell power by #, based on your Spell power."]=231
+fp["Increases your pets' Stamina by #, based on your Stamina."]=21
+fp["Increases your physical damage by #%, but reduces your Attack Speed by #%."]=2851
+fp["Increases your spell Haste by #%, but reduces your movement speed by #%."]=2751
+fp["Increases your spell damage by #%, but reduces your maximum mana by #%."]=2801
+fp["Increases your spell power by # when fighting Beasts."]=1101
+fp["Increases your spell power by # when fighting Demons."]=1141
+fp["Increases your spell power by # when fighting Dragonkin."]=1121
+fp["Increases your spell power by # when fighting Elementals."]=1161
+fp["Increases your spell power by # when fighting Giants."]=1221
+fp["Increases your spell power by # when fighting Mechanical enemies."]=1271
+fp["Increases your spell power by # when fighting Undead."]=1241
+fp["Increases your spell power by #%."]=4142
+fp["Increases your spell power by #."]=3972
+fp["Increases your swimming speed by an additional #%."]=3572
+fp["Increases your total Agility by #%."]=7843
+fp["Increases your total Agility by #%. Stacks with other ranks."]=7183
+fp["Increases your total Intellect by #%."]=7853
+fp["Increases your total Intellect by #%. Stacks with other ranks."]=7193
+fp["Increases your total Spirit by #%."]=7863
+fp["Increases your total Spirit by #%. Stacks with other ranks."]=7203
+fp["Increases your total Stamina by #%."]=7873
+fp["Increases your total Stamina by #%. Stacks with other ranks."]=7213
+fp["Increases your total Strength by #%."]=7833
+fp["Increases your total Strength by #%. Stacks with other ranks."]=7173
+fp["Increases your total mana by #."]=3432
+fp["Killing a burning enemy conjures a Ball of Flame that seeks out a nearby enemy, leaving Burning Flames in its wake. Burning Flames deal # Fire damage every # sec to nearby enemies for # sec. When the Ball of Flame reaches its target, it explodes, dealing # Fire damage to all enemies within # yards. This effect cannot occur more than once every # sec."]=2911
+fp["Killing an enemy creates Defile at its location for # sec, dealing # Shadow damage every # sec to enemies within it. Each enemy slain within Defile increases its radius by # yard, damage by #%, and duration by # sec, up to # times. Only one Defile can be active at a time."]=81
+fp["Killing an enemy grants a Soul Fragment. At # Soul Fragments, they are consumed to summon a Servant of the Lich King for # sec. You can have up to # Servants active at once."]=3371
+fp["Killing an enemy increases your haste rating, stacking up to # times. One stack is lost every second."]=7573
+fp["Killing an enemy reduces the remaining cooldown of all your abilities by # sec."]=2541
+fp["Killing an enemy summons a Poison Cloud for #, dealing # Nature damage to nearby enemies every #. This effect cannot occur more than once every # sec."]=2921
+fp["Movement Speed increased by #%."]=4122
+fp["Moving increases your damage dealt by #%, stacking up to # times."]=1701
+fp["Overhealing shields you for #% of the overhealing done by direct healing spells, up to #% of your maximum health."]=4072
+fp["Overhealing shields you for #% of the overhealing done by direct healing spells, up to #% of your maximum health. Replace Life Surplus (Rank #)."]=4112
+fp["Periodic damage from Immolate, Corruption, and Curse of Agony has a chance to launch a missile at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=1081
+fp["Periodically healing the caster."]=7773
+fp["Places a protective ward on you for # hrs. If damage would kill you while the ward is active, you become immune to all damage and harmful effects, and are teleported after # sec to your home location, or to the instance entrance if you are inside a dungeon or raid. Does not protect from instant death mechanics."]=4582
+fp["Reduces Arcane damage taken by #%."]=4502
+fp["Reduces Area-of-Effect damage taken by #%."]=4282
+fp["Reduces Fire damage taken by #%."]=4022
+fp["Reduces Frost damage taken by #%."]=3872
+fp["Reduces Magical damage taken by #%."]=3682
+fp["Reduces Nature damage taken by #%."]=4652
+fp["Reduces Ranged damage taken by #%."]=4442
+fp["Reduces Shadow damage taken by #%."]=4872
+fp["Reduces all damage taken by #"]=51
+fp["Reduces all damage taken by #."]=791
+fp["Reduces all damage taken while stunned or mind controlled by #%."]=4752
+fp["Reduces crafting time by #%."]=3782
+fp["Reduces damage taken by #%, but reduces damage dealt by #%. Increases threat generated by #%."]=3221
+fp["Reduces damage taken from Undead enemies by #%. Stacks up to the number of this affix present on your equipment."]=7163
+fp["Reduces damage taken from area-of-effect attacks by #%."]=1851
+fp["Reduces damage taken from damage over time effects by #%."]=4602
+fp["Reduces fall damage taken by #%"]=3582
+fp["Reduces gathering time by #%."]=4352
+fp["Reduces magical damage taken by #%."]=3682
+fp["Reduces physical damage taken by #%."]=4822
+fp["Reduces pushback suffered from damaging attacks while casting by #%."]=1891
+fp["Reduces the cast time of your Hearthstone by #%."]=4492
+fp["Reduces the cooldown of Emergency Exit by # min."]=4052
+fp["Reduces the cooldown of Quickstep by # sec."]=3542
+fp["Reduces the cooldown of your Berserk, Starfall, Barkskin, Challenging Roar, Enrage, Force of Nature, Frenzied Regeneration, Innervate, Nature’s Swiftness, Rebirth, Tranquility, Bash, Dash, and Nature’s Grasp abilities by #%."]=1841
+fp["Reduces the cooldown of your Cold Snap, Combustion, Presence of Mind, Arcane Power, Mirror Image, Icy Veins, Evocation, Ice Block, and Invisibility abilities by #%."]=1761
+fp["Reduces the cooldown of your Death Wish, Shield Wall, Retaliation, Last Stand, Enraged Regeneration, Shattering Throw, Recklessness, Bladestorm, Bloodrage, Intimidating Shout, and Challenging Shout abilities by #%."]=1541
+fp["Reduces the cooldown of your Demonic Empowerment, Metamorphosis, Inferno, Ritual of Doom, Shadowfury, Death Coil, and Fel Domination abilities by #%."]=1581
+fp["Reduces the cooldown of your Earthbind Totem, Earth Elemental Totem, Shamanistic Rage, Astral Recall, Feral Spirit, Fire Elemental Totem, Elemental Mastery, Thunderstorm, Stoneclaw Totem, and Hex abilities by #%."]=1611
+fp["Reduces the cooldown of your Fade, Guardian Spirit, Power Infusion, Pain Suppression, Dispersion, Lightwell, Fear Ward, Hymn of Hope, Shadowfiend, Silence, Desperate Prayer, Divine Hymn, and Psychic Horror abilities by #%."]=1681
+fp["Reduces the cooldown of your Hysteria, Dancing Rune Weapon, Rune Tap, Hungering Cold, Lichborne, Bone Shield, Summon Gargoyle, Unbreakable Armor, Anti-Magic Zone, Blood Tap, Death Pact, Army of the Dead, Empower Rune Weapon, Icebound Fortitude, Mark of Blood, Raise Ally, Raise Dead, Deathchill, Strangulate, Vampiric Blood, and Anti-Magic Shell abilities by #%."]=1881
+fp["Reduces the cooldown of your Readiness, Bestial Wrath, Wyvern Sting, Intimidation, Deterrence, Kill Command, Rapid Fire, and Feign Death abilities by #%."]=1811
+fp["Reduces the cooldown of your Repentance, Lay on Hands, Hand of Protection, Avenging Wrath, Divine Shield, Divine Illumination, Divine Plea, Divine Protection, Aura Mastery, Divine Favor, Hand of Salvation, and Hand of Sacrifice abilities by #%."]=1731
+fp["Reduces the cooldown of your Sprint, Adrenaline Rush, Blade Flurry, Preparation, Premeditation, Cold Blood, Killing Spree, Shadow Dance, Cloak of Shadows, and Evasion abilities by #%."]=1641
+fp["Reduces the duration of disarm effects on you by #%."]=2151
+fp["Reduces the duration of fear effects on you by #%."]=2131
+fp["Reduces the duration of movement slowing effects on you by #%."]=2091
+fp["Reduces the duration of root effects on you by #%."]=2191
+fp["Reduces the duration of stun effects on you by #%."]=2201
+fp["Reduces the mana cost of your spells by #%."]=1971
+fp["Reduces the time it takes for fish to bite by #%."]=4382
+fp["Reduces threat generated by #%."]=1921
+fp["Reduces your critical strike chance by #%, but increases your critical strike damage by #%."]=2611
+fp["Reduces your healing done by #%. Absorbs up to #% of damage taken, to a maximum of # per hit."]=151
+fp["Rest and Recover restores an additional #% mana each second."]=4092
+fp["Restores # health every # sec."]=701
+fp["Restores # mana every # sec."]=2371
+fp["Taking damage may grant #% Attack Power and #% Spell Power for # seconds."]=7303
+fp["Taking direct damage grants a stack of Molten Blood, up to #. At # stacks, you shed your skin, leaving behind a Poisonous Slime for # sec that deals # Nature damage every # sec to nearby enemies, while you gain #% increased movement speed and #% reduced damage taken for # sec."]=1021
+fp["Taking direct damage has a chance to cause a Glacial Spike to erupt beneath the attacker, dealing # Frost damage and knocking them into the air. This effect deals at least # damage."]=931
+fp["Taking direct damage inflict # Nature damage back to enemies. Damage scales with your Armor and deals at least # damage."]=841
+fp["Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every # sec. At # stacks, you deal # Physical damage and generate a massive amount of threat. Damage scales with your Stamina."]=3842
+fp["Taking direct melee hits grants a stack of Momentum. This effect cannot occur more than once every # sec. At # stacks, you deal # Physical damage and generate a massive amount of threat. Damage scales with your Stamina. Replace Vengeful Momentum (Rank #)."]=3862
+fp["Taking magical damage reduces damage taken from that school by #% for # sec."]=4672
+fp["Taking magical damage reduces damage taken from that school by #% for # sec. Replace Adaptive Resilience (Rank #)."]=4702
+fp["The cast time for the Travel System on the World Map is now significantly faster."]=3882
+fp["The first time you damage an enemy, you mark it with Fracture for # sec. If it dies while fractured, it shatters, dealing # Physical damage to enemies within # yards."]=1311
+fp["The resources you spend are stored. Every # sec, your next ability deals additional damage based on the amount stored."]=2761
+fp["Up to #% of overkill damage from your melee killing blows is stored as Overpowering Force, up to #% of your max health. Your next direct melee damaging ability expends all stored Force to deal bonus Physical damage equal to the amount stored to the main target. Overpowering Force lasts until cancelled."]=4622
+fp["Up to #% of your overhealing on allies is stored as Eonar’s Seed for # sec. When the target health lowers under #%, it blooms, healing the target aswell as the most injured nearby ally for the stored amount. Stored amount cannot exceed #% of the target's maximum health."]=1791
+fp["Use: Grants this character the ability to discover Accelerated Decay when offered new Echoes. Accelerated Decay: Your damage-over-time effects now benefit from Haste."]=8484
+fp["Use: Grants this character the ability to discover Adaptive Power when offered new Echoes. Adaptive Power: Each unique Echo increases your damage."]=9374
+fp["Use: Grants this character the ability to discover Ambidexterity when offered new Echoes. Ambidexterity: You can dual wield weapons."]=8224
+fp["Use: Grants this character the ability to discover Arcane Burn when offered new Echoes. Arcane Burn: Increases spell damage while making spells cost much more mana."]=8074
+fp["Use: Grants this character the ability to discover Arcane Cadence when offered new Echoes. Arcane Cadence: Different offensive casts build stacking bonus damage."]=8024
+fp["Use: Grants this character the ability to discover Arcane Density when offered new Echoes. Arcane Density: Converts part of your Armor into Spell Power."]=8654
+fp["Use: Grants this character the ability to discover Arcane Hazard when offered new Echoes. Arcane Hazard: Increases mage area damage against large groups."]=8464
+fp["Use: Grants this character the ability to discover Arcane Surge when offered new Echoes. Arcane Surge: Spells and abilities can make your next key spell instant."]=8474
+fp["Use: Grants this character the ability to discover Arcane Ward when offered new Echoes. Arcane Ward: Increases Arcane Resistance."]=8404
+fp["Use: Grants this character the ability to discover Archmageâ€™s Mark when offered new Echoes. Archmageâ€™s Mark: Dealing Fire, Frost, and Arcane grants bonus damage."]=8454
+fp["Use: Grants this character the ability to discover Armor Mastery when offered new Echoes. Armor Mastery: You can equip all armor types."]=8934
+fp["Use: Grants this character the ability to discover Battle Rhythm when offered new Echoes. Battle Rhythm: Critical Strike Rating increases your critical strike damage."]=8844
+fp["Use: Grants this character the ability to discover Battlefield Hazard when offered new Echoes. Battlefield Hazard: Increases warrior area damage against large groups."]=8304
+fp["Use: Grants this character the ability to discover Beast Bane when offered new Echoes. Beast Bane: Increases your spell power when fighting Beasts."]=8384
+fp["Use: Grants this character the ability to discover Beast Slayer when offered new Echoes. Beast Slayer: Increases your attack power when fighting Beasts."]=8164
+fp["Use: Grants this character the ability to discover Blade Tempest when offered new Echoes. Blade Tempest: Striking your afflicted enemies can summon a Warborn Reflection that whirls a Blade Tempest of Physical damage."]=8914
+fp["Use: Grants this character the ability to discover Blighted Hazard when offered new Echoes. Blighted Hazard: Increases death knight area damage against large groups."]=8864
+fp["Use: Grants this character the ability to discover Blood Mirror when offered new Echoes. Blood Mirror: Your attacks can bind two enemies, sharing your damage between them; if one dies the other takes more damage from you."]=8124
+fp["Use: Grants this character the ability to discover Brittle Forging when offered new Echoes. Brittle Forging: Fire damage builds Brittle, increasing crit chance and causing a fiery shatter."]=8804
+fp["Use: Grants this character the ability to discover Broodmother’s Fury when offered new Echoes. Broodmother’s Fury: Your attacks build Searing Cinders that trigger Deep Breath."]=9344
+fp["Use: Grants this character the ability to discover Broodmother’s Webbing when offered new Echoes. Broodmother’s Webbing: When you take damage while below #% health, you spray webs, dealing Nature damage to nearby enemies and stunning them."]=8524
+fp["Use: Grants this character the ability to discover Call of the Lich King when offered new Echoes. Call of the Lich King: Killing an enemies summon a Servant of the Lich King fighting for you."]=9404
+fp["Use: Grants this character the ability to discover Champion’s Rally when offered new Echoes. Champion’s Rally: Your healing builds Rally, culminating in a powerful restorative burst."]=9134
+fp["Use: Grants this character the ability to discover Chill of the Bone Wyrm when offered new Echoes. Chill of the Bone Wyrm: Dealing repeated Frost damage makes you unleash Frost Breath, dealing Frost damage and making enemies weaker to your Frost damage."]=9324
+fp["Use: Grants this character the ability to discover Cinders of the Sanctum when offered new Echoes. Cinders of the Sanctum: Dealing repeated Fire damage makes you summon a Fire Cyclone, dealing Fire damage to nearby enemies."]=8444
+fp["Use: Grants this character the ability to discover Conjured Flame when offered new Echoes. Conjured Flame: Slaying burning enemies conjures a Ball of Flame that hunts the next foe, trailing fire and exploding on impact."]=8954
+fp["Use: Grants this character the ability to discover Constellations when offered new Echoes. Constellations: Critical strikes call falling stars until a devastating Big Bang erupts."]=8154
+fp["Use: Grants this character the ability to discover Contagion when offered new Echoes. Contagion: Your damage-over-time effects can apply random class damage-over-time effects."]=9314
+fp["Use: Grants this character the ability to discover Crusader's Surge when offered new Echoes. Crusader's Surge: Spells and abilities can make your next key spell instant."]=8284
+fp["Use: Grants this character the ability to discover Crushing Finish when offered new Echoes. Crushing Finish: Damaging low-health enemies triggers powerful Execute strikes."]=9064
+fp["Use: Grants this character the ability to discover Crypt Lord’s Swarm when offered new Echoes. Crypt Lord’s Swarm: While in combat, you are enveloped by a Locust Swarm, reducing damage taken and dealing Nature damage to nearby enemies."]=8534
+fp["Use: Grants this character the ability to discover Curse of the Plaguebringer when offered new Echoes. Curse of the Plaguebringer: Dealing repeated Shadow damage afflicts the target with a curse, dealing Shadow damage periodically spreading to a nearby enemy."]=9304
+fp["Use: Grants this character the ability to discover Cyclone of Cold Bones when offered new Echoes. Cyclone of Cold Bones: Your attacks can unleash a frozen cyclone that scours nearby enemies and leaves a trail of Coldflame in your wake."]=8504
+fp["Use: Grants this character the ability to discover Dark Nucleus when offered new Echoes. Dark Nucleus: Taking damage can summon a Dark Nucleus that shields you, then hurls the absorbed power back as a Shadow Lance."]=8514
+fp["Use: Grants this character the ability to discover Deathwhisper’s Barrier when offered new Echoes. Deathwhisper’s Barrier: Taking heavy damage raises a Mana Barrier that absorbs harm and sears nearby enemies with Shadow damage."]=9054
+fp["Use: Grants this character the ability to discover Defile when offered new Echoes. Defile: Slaying an enemy spawns Defile, a pool of Shadow that grows larger and deadlier with every kill within it."]=9264
+fp["Use: Grants this character the ability to discover Demon Bane when offered new Echoes. Demon Bane: Increases your spell power when fighting Demons."]=8754
+fp["Use: Grants this character the ability to discover Demon Slayer when offered new Echoes. Demon Slayer: Increases your attack power when fighting Demons."]=9294
+fp["Use: Grants this character the ability to discover Demonic Awakening when offered new Echoes. Demonic Awakening: Falling below #% health briefly transforms you into a Demon."]=8584
+fp["Use: Grants this character the ability to discover Divine Surge when offered new Echoes. Divine Surge: Spells and abilities can make your next key spell instant."]=8784
+fp["Use: Grants this character the ability to discover Dragon Slayer when offered new Echoes. Dragon Slayer: Increases your attack power when fighting Dragonkin."]=8884
+fp["Use: Grants this character the ability to discover Dragonkin Bane when offered new Echoes. Dragonkin Bane: Increases your spell power when fighting Dragonkin."]=8824
+fp["Use: Grants this character the ability to discover Drillmaster’s Rebuke when offered new Echoes. Drillmaster’s Rebuke: Your melee attacks have a chance to unleash an Unbalancing Strike, leaving the target Unbalanced, increasing your damage dealt to it."]=9494
+fp["Use: Grants this character the ability to discover Earthen Snap when offered new Echoes. Earthen Snap: Your first hit after entering combat roots the target"]=8704
+fp["Use: Grants this character the ability to discover Earthen Spike when offered new Echoes. Earthen Spike: Taking damage can hurl spikes back at attackers causing high threat."]=8494
+fp["Use: Grants this character the ability to discover Echoing Tides when offered new Echoes. Echoing Tides: Your periodic effects can trigger an additional tick."]=9414
+fp["Use: Grants this character the ability to discover Edict of the Four when offered new Echoes. Edict of the Four: Your damaging spells and abilities build Edict, invoking Edicts makes you cast Meteor, Void Zone, Unholy Shadow or Holy Wrath."]=8604
+fp["Use: Grants this character the ability to discover Edict of the Iron Council when offered new Echoes. Edict of the Iron Council: Attacks cycle through Rune of Death, Overload, and Fusion Punch effects."]=8234
+fp["Use: Grants this character the ability to discover Elemental Bane when offered new Echoes. Elemental Bane: Increases your spell power when fighting Elementals."]=9164
+fp["Use: Grants this character the ability to discover Elemental Slayer when offered new Echoes. Elemental Slayer: Increases your attack power when fighting Elementals."]=8254
+fp["Use: Grants this character the ability to discover Ember Ward when offered new Echoes. Ember Ward: Increases Fire Resistance."]=8684
+fp["Use: Grants this character the ability to discover Emberlordâ€™s Gift when offered new Echoes. Emberlordâ€™s Gift: Fire damage builds toward a powerful eruption and burn."]=8944
+fp["Use: Grants this character the ability to discover Emerald Vigor when offered new Echoes. Emerald Vigor: Healing wounded allies grants Emerald Vigor, boosting your healing to them; healed to full, it blooms to mend nearby allies."]=8994
+fp["Use: Grants this character the ability to discover Entropic Fusion when offered new Echoes. Entropic Fusion: Dealing Fire and Shadow grants bonus damage."]=8314
+fp["Use: Grants this character the ability to discover Eonarâ€™s Seed when offered new Echoes. Eonarâ€™s Seed: Overhealing is stored and blooms when the target is low."]=8764
+fp["Use: Grants this character the ability to discover Essence Tap when offered new Echoes. Essence Tap: Your damage-over-time effects can restore resources to allies."]=9474
+fp["Use: Grants this character the ability to discover Exposed Heart when offered new Echoes. Exposed Heart: Attacks expose the target, increasing damage dealt and dealing area damage."]=9204
+fp["Use: Grants this character the ability to discover Fel Hazard when offered new Echoes. Fel Hazard: Increases warlock area damage against large groups."]=8714
+fp["Use: Grants this character the ability to discover Fel Surge when offered new Echoes. Fel Surge: Spells and abilities can make your next key spell instant."]=9384
+fp["Use: Grants this character the ability to discover Flame Beacon when offered new Echoes. Flame Beacon: Your Fire damage can mark enemies that erupt in Conflagrations, bursting into a Fire Nova when they die."]=9024
+fp["Use: Grants this character the ability to discover Flame Vents when offered new Echoes. Flame Vents: Dodging and parrying unleashes flames, reduces damage taken and grants speed."]=8734
+fp["Use: Grants this character the ability to discover Fortress Soul when offered new Echoes. Fortress Soul: Greatly reduces damage taken, but heavily lowers damage dealt."]=8664
+fp["Use: Grants this character the ability to discover Frost Bite when offered new Echoes. Frost Bite: When struck, you have a chance to freeze the attacker"]=8354
+fp["Use: Grants this character the ability to discover Frost Ward when offered new Echoes. Frost Ward: Increases Frost Resistance."]=8694
+fp["Use: Grants this character the ability to discover Frostfire Paradox when offered new Echoes. Frostfire Paradox: Frost damage builds stacks that Fire damage consumes in an icy explosion."]=8364
+fp["Use: Grants this character the ability to discover Frostmourne Hungers when offered new Echoes. Frostmourne Hungers: You mark frail enemies with Harvest Soul; devouring their souls stacks damage and unleashes bursts of Shadowfrost."]=8344
+fp["Use: Grants this character the ability to discover Giant Bane when offered new Echoes. Giant Bane: Increases your spell power when fighting Giants."]=8084
+fp["Use: Grants this character the ability to discover Giant Slayer when offered new Echoes. Giant Slayer: Increases your attack power when fighting Giants."]=9194
+fp["Use: Grants this character the ability to discover Gunship Barrage when offered new Echoes. Gunship Barrage: In combat you ready cannon blasts that your next attack calls down on enemies, raining Fire from above."]=9044
+fp["Use: Grants this character the ability to discover Harpoon Barrage when offered new Echoes. Harpoon Barrage: Periodically pulls distant enemies to you and increases your damage to them."]=8774
+fp["Use: Grants this character the ability to discover Healing Cadence when offered new Echoes. Healing Cadence: Different healing casts build stacking bonus healing."]=9254
+fp["Use: Grants this character the ability to discover Heavy Incantations when offered new Echoes. Heavy Incantations: Greatly increases the damage of long cast-time spells."]=8974
+fp["Use: Grants this character the ability to discover Holy Hazard when offered new Echoes. Holy Hazard: Increases priest area damage against large groups."]=8044
+fp["Use: Grants this character the ability to discover Hungering Curse when offered new Echoes. Hungering Curse: Periodically curses nearby enemies and heals you when they die."]=8814
+fp["Use: Grants this character the ability to discover Hunting Hazard when offered new Echoes. Hunting Hazard: Increases hunter area damage against large groups."]=9084
+fp["Use: Grants this character the ability to discover Idol of Yogg-Saron when offered new Echoes. Idol of Yogg-Saron: Kills build stacks that summon a Thing from Beyond."]=8904
+fp["Use: Grants this character the ability to discover Impaler’s Tribute when offered new Echoes. Impaler’s Tribute: Repeated attacks skewer your target and splinter to nearby enemies."]=8644
+fp["Use: Grants this character the ability to discover Inhaled Blight when offered new Echoes. Inhaled Blight: You periodically exhale Pungent Blight, poisoning nearby enemies and stacking Mutated Blight to amplify the damage."]=8174
+fp["Use: Grants this character the ability to discover Inspiring Mending when offered new Echoes. Inspiring Mending: Your direct healing can grant allies increased attributes."]=8194
+fp["Use: Grants this character the ability to discover Insulated Soul when offered new Echoes. Insulated Soul: Reduces the duration of stun effects on you."]=8054
+fp["Use: Grants this character the ability to discover Leeching Swarm when offered new Echoes. Leeching Swarm: While at low health, your attacks unleash a life-draining swarm."]=8794
+fp["Use: Grants this character the ability to discover Lightning Charged when offered new Echoes. Lightning Charged: Builds attack speed and empowers attacks into chain lightning."]=9144
+fp["Use: Grants this character the ability to discover Lingering Inspiration when offered new Echoes. Lingering Inspiration: Your periodic healing can grant allies increased attributes."]=8214
+fp["Use: Grants this character the ability to discover Machine Slayer when offered new Echoes. Machine Slayer: Increases your attack power when fighting Mechanical enemies."]=9274
+fp["Use: Grants this character the ability to discover Malleable Goo when offered new Echoes. Malleable Goo: Your attacks can hurl Malleable Goo, damaging and slowing enemies and making them suffer more from Mutated Blight."]=9004
+fp["Use: Grants this character the ability to discover Mana Infusion when offered new Echoes. Mana Infusion: Restoring mana also restores health."]=8134
+fp["Use: Grants this character the ability to discover Mechanical Bane when offered new Echoes. Mechanical Bane: Increases your spell power when fighting Mechanical enemies."]=8324
+fp["Use: Grants this character the ability to discover Mutagenic Fumes when offered new Echoes. Mutagenic Fumes: Killing an enemy summons a Poison Cloud, dealing Nature damage to nearby enemies."]=8834
+fp["Use: Grants this character the ability to discover Natureâ€™s Surge when offered new Echoes. Natureâ€™s Surge: Spells and abilities can make your next key spell instant."]=8724
+fp["Use: Grants this character the ability to discover Necrotic Plague when offered new Echoes. Necrotic Plague: Your damage-over-time effects can inflict Necrotic Plague that leaps from the dying to the living, growing stronger each time."]=8394
+fp["Use: Grants this character the ability to discover Nether Lord’s Command when offered new Echoes. Nether Lord’s Command: Your attacks can open a Nether Portal that bombards your target."]=8184
+fp["Use: Grants this character the ability to discover Overwhelming Restoration when offered new Echoes. Overwhelming Restoration: Your healing is greatly increased, but spells cost much more mana."]=9244
+fp["Use: Grants this character the ability to discover Pandemic when offered new Echoes. Pandemic: Your damage-over-time effects spread when affected enemies die."]=9214
+fp["Use: Grants this character the ability to discover Permafrost Aura when offered new Echoes. Permafrost Aura: Constantly damages nearby enemies and slows their attack speed."]=8434
+fp["Use: Grants this character the ability to discover Permeating Chill when offered new Echoes. Permeating Chill: Your Frost damage can chill enemies to take more Frost damage, shattering them in an icy burst when they die."]=8964
+fp["Use: Grants this character the ability to discover Polarity Shift when offered new Echoes. Polarity Shift: You alternate between Positive and Negative Charge. Increases crit chance and damage done or reduces damage taken and increases healing and move speed."]=8924
+fp["Use: Grants this character the ability to discover Provoking Presence when offered new Echoes. Provoking Presence: Increases threat generated."]=8334
+fp["Use: Grants this character the ability to discover Quickened Tempo when offered new Echoes. Quickened Tempo: Haste now reduces your global cooldown."]=8674
+fp["Use: Grants this character the ability to discover Rage of the Colossus when offered new Echoes. Rage of the Colossus: Critical strikes build Momentum and unleash a Massive Crash."]=8104
+fp["Use: Grants this character the ability to discover Raging Momentum when offered new Echoes. Raging Momentum: Low Rage boosts generation, high Rage boosts damage."]=8294
+fp["Use: Grants this character the ability to discover Ravenous Bellow when offered new Echoes. Ravenous Bellow: Delivering a killing blow unleashes Terrifying Roar, dealing damage to nearby enemies and slowing them. Enemies hit take increased damage from you."]=8034
+fp["Use: Grants this character the ability to discover Reaper’s Doom when offered new Echoes. Reaper’s Doom: Dealing damage afflict the target with Reaper’s Doom. When it expires, it detonates dealing Shadow damage split between all enemies hit."]=8424
+fp["Use: Grants this character the ability to discover Reaper’s Reprieve when offered new Echoes. Reaper’s Reprieve: Fatal damage instead reduces you to # health, prevents all damage for # sec, and heals you."]=8144
+fp["Use: Grants this character the ability to discover Reaper’s Verdict when offered new Echoes. Reaper’s Verdict: Your damage against low health enemies is increased. When you damage a low health enemy, you deal a additional Shadow damage."]=9094
+fp["Use: Grants this character the ability to discover Relentless Energy when offered new Echoes. Relentless Energy: Low Energy boosts regeneration, high Energy boosts damage."]=8414
+fp["Use: Grants this character the ability to discover Resonant Build when offered new Echoes. Resonant Build: Multiple different base stat Echoes increase your damage."]=9364
+fp["Use: Grants this character the ability to discover Rocket Strike when offered new Echoes. Rocket Strike: Attacks can launch rockets, with more rockets from pets and guardians."]=8114
+fp["Use: Grants this character the ability to discover Rootbreaker when offered new Echoes. Rootbreaker: Reduces the duration of root effects on you."]=8264
+fp["Use: Grants this character the ability to discover Runic Momentum when offered new Echoes. Runic Momentum: Low Runic Power boosts generation, high Runic Power boosts damage."]=9034
+fp["Use: Grants this character the ability to discover Sanctified Hazard when offered new Echoes. Sanctified Hazard: Increases paladin area damage against large groups."]=9444
+fp["Use: Grants this character the ability to discover Sanctum Sentries when offered new Echoes. Sanctum Sentries: Summons two permanent guardians that fight and amplify your damage."]=9124
+fp["Use: Grants this character the ability to discover Sanguine Bulwark when offered new Echoes. Sanguine Bulwark: Your healing is reduced, but incoming damage is heavily reduced."]=8854
+fp["Use: Grants this character the ability to discover Scent of Blood when offered new Echoes. Scent of Blood: Striking wounded enemies grants Scent of Blood, quickening your attack and casting speed."]=9484
+fp["Use: Grants this character the ability to discover Shadow Crash when offered new Echoes. Shadow Crash: Shadow damage-over-time can call down shadow impact blasts."]=9174
+fp["Use: Grants this character the ability to discover Shadow Hazard when offered new Echoes. Shadow Hazard: Increases the area of effect damages of fan of knives against large groups."]=9434
+fp["Use: Grants this character the ability to discover Shadow Ward when offered new Echoes. Shadow Ward: Increases Shadow Resistance."]=8594
+fp["Use: Grants this character the ability to discover Shielded Steps when offered new Echoes. Shielded Steps: Reduces damage taken from area-of-effect attacks."]=9114
+fp["Use: Grants this character the ability to discover Shock Vortex when offered new Echoes. Shock Vortex: When surrounded, you conjure a Shock Vortex that drags enemies inward, then erupts in Nature damage."]=8244
+fp["Use: Grants this character the ability to discover Slime Spray when offered new Echoes. Slime Spray: Your attacks can inflict Mutated Infection that festers into Sticky Ooze, spreading Nature damage and Mutated Blight."]=9014
+fp["Use: Grants this character the ability to discover Slimebound Husk when offered new Echoes. Slimebound Husk: Taking direct damage builds toward a poisonous molt."]=9284
+fp["Use: Grants this character the ability to discover Static Overflow when offered new Echoes. Static Overflow: Your next spell or ability also strikes nearby enemies with lightning."]=8204
+fp["Use: Grants this character the ability to discover Steady Casting when offered new Echoes. Steady Casting: Reduces pushback suffered from damaging attacks while casting."]=8984
+fp["Use: Grants this character the ability to discover Steady Grip when offered new Echoes. Steady Grip: Reduces the duration of disarm effects on you."]=8274
+fp["Use: Grants this character the ability to discover Stitched Fury when offered new Echoes. Stitched Fury: While at low health, you go into a Frenzy, increasing Attack Speed and Physical damage dealt."]=9074
+fp["Use: Grants this character the ability to discover Stone Shatter when offered new Echoes. Stone Shatter: First hits mark enemies, causing them to shatter on death."]=9224
+fp["Use: Grants this character the ability to discover Stoneskin Threads when offered new Echoes. Stoneskin Threads: Reduces the duration of movement slowing effects on you."]=9464
+fp["Use: Grants this character the ability to discover Stored Momentum when offered new Echoes. Stored Momentum: Resources you spend are stored to empower your next ability."]=9334
+fp["Use: Grants this character the ability to discover Storm Hazard when offered new Echoes. Storm Hazard: Increases shaman area damage against large groups."]=8564
+fp["Use: Grants this character the ability to discover Storm Surge when offered new Echoes. Storm Surge: Spells and abilities can make your next key spell instant."]=9424
+fp["Use: Grants this character the ability to discover Storm of the Spellweaver when offered new Echoes. Storm of the Spellweaver: Dealing repeated Arcane damage makes you fire a salvo of Magic Missiles into the air, striking up to # nearby enemies."]=8874
+fp["Use: Grants this character the ability to discover Subtle Presence when offered new Echoes. Subtle Presence: Reduces threat generated."]=9234
+fp["Use: Grants this character the ability to discover Sundered Formation when offered new Echoes. Sundered Formation: Your Physical damage can sunder an enemy’s armor, letting your strikes cleave through nearby foes."]=8374
+fp["Use: Grants this character the ability to discover Sundered Will when offered new Echoes. Sundered Will: Reduces the duration of fear effects on you."]=8554
+fp["Use: Grants this character the ability to discover Temporal Pressure when offered new Echoes. Temporal Pressure: Haste now reduces the cooldown of select class abilities."]=9184
+fp["Use: Grants this character the ability to discover The Harvester’s Tithe when offered new Echoes. The Harvester’s Tithe: You harvest the souls of nearby enemies, increasing your damage done and regaining health when an enemy dies near you."]=9394
+fp["Use: Grants this character the ability to discover The Last Wall when offered new Echoes. The Last Wall: Greatly increases maximum health, but reduces healing received."]=8094
+fp["Use: Grants this character the ability to discover The Sporelord’s Gift when offered new Echoes. The Sporelord’s Gift: While in combat, you periodically summon Spores increasing the critical strike damage of nearby allies."]=8614
+fp["Use: Grants this character the ability to discover The Unclean’s Fever when offered new Echoes. The Unclean’s Fever: Enemies that strike you are afflicted with Decrepit Fever, dealing Shadow damage and reducing the damage they deal to you."]=8744
+fp["Use: Grants this character the ability to discover Titan's Grip when offered new Echoes. Titan's Grip: You can wield two-handed weapons in one hand."]=9154
+fp["Use: Grants this character the ability to discover Twilight Combustion when offered new Echoes. Twilight Combustion: Your Fire and Shadow damage brand enemies; when both brands meet on a foe, they collapse into a Twilight Rift."]=8544
+fp["Use: Grants this character the ability to discover Twilight Equilibrium when offered new Echoes. Twilight Equilibrium: Opposing spell schools build charges that unleash Light or Dark bursts."]=8574
+fp["Use: Grants this character the ability to discover Undead Bane when offered new Echoes. Undead Bane: Increases your spell power when fighting Undead."]=8894
+fp["Use: Grants this character the ability to discover Undead Slayer when offered new Echoes. Undead Slayer: Increases your attack power when fighting Undead."]=8624
+fp["Use: Grants this character the ability to discover Unstable Missiles when offered new Echoes. Unstable Missiles: Direct spells can launch arcane missiles at the target."]=9454
+fp["Use: Grants this character the ability to discover Verdant Ward when offered new Echoes. Verdant Ward: Increases Nature Resistance."]=9354
+fp["Use: Grants this character the ability to discover Weapon Mastery when offered new Echoes. Weapon Mastery: Allows all weapon types to be equipped."]=8064
+fp["Use: Grants this character the ability to discover Widow’s Venom when offered new Echoes. Widow’s Venom: Dealing repeated Nature damage makes you unleash Poison Bolt Volley, spraying poison at all enemies."]=9104
+fp["Use: Grants this character the ability to discover Wild Hazard when offered new Echoes. Wild Hazard: Increases druid area damage against large groups."]=8634
+fp["When # or more enemies are within # yards of you, you create a Shock Vortex at your location for # sec. The vortex pulls nearby enemies toward its center, dealing # Nature damage every # sec and slowing them by #%. When it expires, Shock Vortex erupts, dealing # Nature damage to all enemies within it. Shock Vortex cannot occur more than once every # sec."]=2681
+fp["When a target dies while affected by one of your damage-over-time effects, that effect spreads to all enemies within # yards."]=2951
+fp["When an attack or ability would kill you, you instead survive and are restored to #% of your maximum health. This effect can occur once per life and charges refresh on reset."]=4252
+fp["When crafting items, you have a #% chance to recover some of the reagents used."]=4262
+fp["When crafting items, you have a #% chance to recover some of the reagents used. Replace Efficient Assembly (Rank #)."]=4322
+fp["When damage would bring you below #% health, you gain a Mana Barrier for # sec, absorbing damage equal to #% of your maximum mana. If you have no mana, Mana Barrier instead absorbs damage equal to #% of your maximum health. While active, Mana Barrier deals # Shadow damage every # sec to nearby enemies. This effect cannot occur more than once every # sec."]=2181
+fp["When struck by a melee attack, you have a chance to launch an earthen spike at the attacker, dealing # damage to the attacker and nearby enemies. Damage is further increased by your Armor and generates a high amount of threat."]=2511
+fp["When struck, you have a #% chance to freeze the attacker for # sec seconds."]=1001
+fp["When struck, your movement speed is increased by an additional #% for # sec."]=1051
+fp["When you are above #% health, you deal #% more damage."]=2571
+fp["When you are hit by a spell, you have a #% chance to boost your resistance to that type of magic by # for # sec. Stacks up to # times."]=2341
+fp["When you cast Arcane Blast, Fireball, Frostbolt, or Frostfire Bolt, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=551
+fp["When you cast Arcane Shot, Aimed Shot, Explosive Shot, or Chimera Shot, you launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=391
+fp["When you cast Crusader Strike, Hammer of the Righteous, Judgement or Holy Shock, you launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=141
+fp["When you cast Death Strike, Heart Strike, Obliterate, or Scourge Strike, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=3231
+fp["When you cast Flame Shock, Earth Shock, or Frost Shock, you launch # missiles at a random location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=481
+fp["When you cast Flame Shock, Earth Shock, or Frost Shock, you launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=531
+fp["When you cast Judgement, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=3121
+fp["When you cast Lightning Bolt, Chain Lightning, Healing Wave, or Chain Heal, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=131
+fp["When you cast Mortal Strike, Bloodthirst, or Shield Slam, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=3021
+fp["When you cast Mutilate, Sinister Strike, or Hemorrhage, you have a chance to hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=381
+fp["When you cast Smite, Flash Heal, Greater Heal, or Mind Blast, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=611
+fp["When you cast Starfire, Nourish, or Mangle, you hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=321
+fp["When you cast Wrath, Starfire, Regrowth, Shred, or Maul, you have a chance to launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=621
+fp["When you cast a melee ability, you have a #% chance to launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=41
+fp["When you cast a spell or ability, you have a chance to unleash a Cyclone of Cold Bones for # sec, dealing # Frost damage every # sec to enemies within # yards and leaving Coldflame in your wake. Coldflame deals # Frost damage every # sec."]=2081
+fp["When you damage a target below #% health with a melee or ranged attack, you Execute it, dealing # Physical damage. Damage is increased by #% per point of Expertise. Cannot occur more than once every # sec per target."]=61
+fp["When you deal damage, you have a chance to unleash a random offensive spell from another class on your target."]=2121
+fp["When you fall below #% health, damage taken is reduced by #% for # sec. This effect cannot occur more than once every # sec."]=2041
+fp["When you fall below #% health, you are healed for #% of your max health and your Strength is increased by # for # seconds. This effect cannot occur more than once every # seconds."]=7613
+fp["When you fall below #% health, you transform into a Demon for # sec. While transformed, your damage is increased by #%, you leech #% of damage dealt as health, and your melee attacks strike an additional nearby enemy. Cannot occur more than once every # sec."]=2981
+fp["When you fall below #% health, your movement speed is greatly increased for a short time. This effect cannot occur more than once every # min."]=1231
+fp["When you heal an ally, a nearby enemy takes Holy damage equal to #% of the healing done."]=4592
+fp["When you heal an ally, a nearby enemy takes Holy damage equal to #% of the healing done. Replace Atoning Radiance (Rank #)."]=4642
+fp["When you kill a target, all your remaining damage-over-time on it instantly detonate, dealing #% of their combined remaining damage to enemies within # yards."]=3211
+fp["When you take damage that leaves you below #% health, you are affected by a random heal-over-time spell from another class. This effect cannot occur more than once every # sec."]=1831
+fp["When you take damage while below #% health, you spray webs, dealing # Nature damage to nearby enemies and stunning them for # sec. This effect cannot occur more than once every # sec."]=2451
+fp["When you take damage, you have a chance to summon a Dark Nucleus for # sec. The Dark Nucleus absorbs #% of the damage you take, up to a maximum of #% of your maximum health. When it expires or is fully consumed, Dark Nucleus hurls an Empowered Shadow Lance at your target, dealing Shadow damage equal to twice the amount absorbed."]=2831
+fp["When you use a finishing move, you have a #% chance per combo point to launch # missiles at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=751
+fp["When you use a potion, you instantly restore an additional #% of your maximum Health."]=3462
+fp["Whenever you deal damage over time, you have a #% chance to echo #% of that damage onto another enemy within # yards. Whenever you restore health over time, you have a #% chance to echo #% of that healing onto another ally within # yards."]=661
+fp["Whenever you kill an enemy, gain a stack of Idol of Yogg-Saron. At # stacks, you summon a Thing from Beyond that casts Void Spike at nearby enemies for # sec. Void Spike : Hurls a bolt of dark magic, dealing # Shadow damage and # Shadow damage to all enemies within # yards of the target."]=2301
+fp["Whenever you kill an enemy, you restore #% of your maximum Health."]=4742
+fp["Whenever you kill an enemy, your damage is increased by #% for # sec. Stacks up to # times."]=4162
+fp["Whenever you kill an enemy, your movement speed is increased by an additional #% for # sec."]=4172
+fp["Whenever you receive a direct heal, you deal Shadow damage equal to #% of the amount healed to a nearby enemy. Also increases your maximum health by #."]=3291
+fp["Whenever you use an ability with a cooldown, the remaining cooldown on all other abilities is reduced by # sec. Also increases hit rating by #. This effect cannot occur more than once # second."]=3031
+fp["While # or more enemies are within range, the damage of your Arcane Explosion, Blizzard, Flamestrike, and Blast Wave is increased by #%."]=1321
+fp["While # or more enemies are within range, the damage of your Chain Lightning and Thunderstorm is increased by #%."]=991
+fp["While # or more enemies are within range, the damage of your Consecration, Divine Storm, and Hammer of the Righteous is increased by #%."]=601
+fp["While # or more enemies are within range, the damage of your Death and Decay, Blood Boil, Howling Blast, and Corpse Explosion is increased by #%."]=731
+fp["While # or more enemies are within range, the damage of your Fan of Knives is increased by #%."]=1181
+fp["While # or more enemies are within range, the damage of your Holy Nova is increased by #%."]=1451
+fp["While # or more enemies are within range, the damage of your Hurricane, Starfall, and Swipe is increased by #%."]=1071
+fp["While # or more enemies are within range, the damage of your Rain of Fire, Hellfire, Shadowflame, and Shadowfury is increased by #%."]=1561
+fp["While # or more enemies are within range, the damage of your Thunder Clap, Shockwave, Whirlwind, and Bladestorm is increased by #%."]=461
+fp["While # or more enemies are within range, the damage of your Volley and Multi-Shot is increased by #%."]=881
+fp["While above #% health, damage taken from direct hits is reduced by #%."]=3452
+fp["While above #% mana, restoring mana also restores health equal to #% of the mana restored."]=2621
+fp["While above #% mana, you gain Surging Power, increasing your spell damage by #%. This effect persists until your mana falls below #%, at which point it is replaced by Restorative Flow. Restorative Flow increases your mana regeneration by #% and persists until your mana rises above #%, at which point it is replaced by Surging Power."]=3482
+fp["While above #% mana, you gain Surging Power, increasing your spell damage by #%. This effect persists until your mana falls below #%, at which point it is replaced by Restorative Flow. Restorative Flow increases your mana regeneration by #% and persists until your mana rises above #%, at which point it is replaced by Surging Power. Replace Arcane Equilibrium (Rank #)."]=3512
+fp["While above #% mana, your melee and ranged basic attacks deal an additional #% Arcane damage, but consume #% of your base mana."]=2471
+fp["While above #% mana, your spell damage done is increased by #%, but your ressource costs are increased by #%."]=3381
+fp["While at # stacks or more of Deathbound Focus, your damage done to targets below #% health is increased by #%."]=4842
+fp["While below #% Energy, your Energy regeneration is increased by #%. While above #% Energy, your damage done is increased by #%."]=2891
+fp["While below #% Rage, your Rage generation is increased by #%. While above #% Rage, your damage done is increased by #%."]=2971
+fp["While below #% Runic Power, your Runic Power generation is increased by #%. While above #% Runic Power, your damage done is increased by #%."]=3081
+fp["While below #% health, Frozen Nerves prevents #% more damage."]=4882
+fp["While below #% health, absorbs #% of damage taken. Unique."]=7343
+fp["While below #% health, damage taken is reduced by #%."]=4342
+fp["While below #% health, you go into a Frenzy, increasing Attack Speed by #% and Physical damage dealt by #%."]=2861
+fp["While below #% health, your damaging spells and abilities unleash Leeching Swarm, dealing # Nature damage every # sec to all enemies within # yds for # sec. You are healed for #% of the damage dealt. If Leeching Swarm hits only # target, its damage and healing are increased by #%. Leeching Swarm cannot occur more than once every # sec."]=3191
+fp["While in combat with a Boss enemy, your damage and healing done increase by #% every # sec, up to # times."]=4362
+fp["While in combat you are accompanied by two Sanctum Sentries. Enemies struck by either guardian take #% increased damage from you for # sec."]=1441
+fp["While in combat, moving leaves a trail of embers behind you for # sec, burning enemies who pass through it for # Fire damage and slowing them by #%. This effect deals at least # damage."]=1031
+fp["While in combat, you are enveloped by a Locust Swarm, reducing damage taken by #% and dealing # Nature damage to nearby enemies every # sec."]=2311
+fp["While in combat, you deal # Fire damage to enemies within # yards every # seconds. This effect deals at least # damage."]=811
+fp["While in combat, you deal # Frost damage every # sec to enemies within # yards. This effect deals at least # damage. Enemies hit have their attack speed reduced by #% for # sec."]=2671
+fp["While in combat, you gain Lightning Charged every # sec, stacking up to # times lasting # sec. Each stack increases your attack speed by #% and causes your melee and ranged auto-attacks to deal an additional # Nature damage. At # stacks, your auto-attacks instead unleash Chain Lightning at the target, dealing # Nature damage and chaining up to # times. Effect is lost on exiting combat."]=2101
+fp["While in combat, you periodically mark a nearby enemy with Harvest Soul for # sec, prioritizing enemies with the lowest maximum health. If the marked enemy dies while afflicted, you devour its soul, granting Harvested Soul for # sec. Harvested Soul increases damage done by #%, stacking up to # times. At # stacks, your damaging spells and abilities also release a burst of Shadowfrost damage around the target, dealing # Shadowfrost damage."]=341
+fp["While in combat, you periodically ready a Cannon Blast. Your next damaging spell or ability calls it down at the target location, dealing # Fire damage to all enemies within # yards. Striking # or more enemies readies the next blast # sec sooner."]=2271
+fp["While in combat, you periodically summon Spores for # sec, increasing the critical strike damage of nearby allies by #%."]=2561
+fp["While in combat, you restore #% of your maximum health every # seconds."]=4772
+fp["While moving, damage taken is reduced by #%."]=3732
+fp["While moving, damage taken is reduced by #%. Replace Flowing Defense (Rank #)."]=3752
+fp["While out of combat, damage and healing done is increased by #%. This effect persists for # sec after you enter combat."]=3311
+fp["While out of combat, you restore #% of your maximum health every # seconds."]=4182
+fp["While you are behind your target, your melee and ranged attacks and abilities also trigger an additional strike for #% of the damage dealt. Also increases critical strike rating by #."]=2901
+fp["While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage."]=4452
+fp["While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage. Replace Into the Fray (Rank #)."]=4522
+fp["While you have # stacks of Butcher’s Tempo, your melee and ranged critical strikes also strike up to # nearby enemies for # damage."]=4232
+fp["While you have at least # different Base Stat Echo types active (Strength, Agility, Intellect, Spirit, or Stamina), your damage is increased by #%."]=2231
+fp["Wraps the caster in a Fire shield that deals fire damage every second to nearby enemies. Damage increases with the caster’s fire resistance."]=7813
+fp["You alternate between Positive Charge and Negative Charge. Taking direct melee damage shifts you to Negative Charge. While under Negative Charge, going # to # sec without taking direct melee damage shifts you to Positive Charge. You cannot shift more than once every # sec. Positive Charge: Increases your critical strike chance by #% and damage dealt by #%. Negative Charge: Reduces damage taken by #%, increases healing received by #%, and increases your movement speed by #%."]=3061
+fp["You are immune to Daze effects. Does not apply for Aspect of the Pack and Aspect of the Cheetah."]=4802
+fp["You begin combat in Light Essence. Light Essence: Dealing Holy, Fire, or Nature damage applies Light Charge for # sec, stacking up to # times. Dealing Shadow, Frost, or Arcane damage consumes Light Charge to unleash Darkburst, dealing # Shadow damage per stack to the target and all enemies within # yards and shifts you into Dark Essence. Dark Essence: Dealing Shadow, Frost, or Arcane damage applies Dark Charge for # sec, stacking up to # times. Dealing Holy, Fire, or Nature damage consumes Dark Charge to unleash Lightburst, dealing # Holy damage per stack to the target and all enemies within # yards and shifts you into Light Essence."]=3201
+fp["You can benefit from any number of different food and elixir effects at the same time"]=4732
+fp["You can breathe underwater indefinitely."]=4222
+fp["You can equip all armor types."]=3331
+fp["You can equip all weapon types."]=2111
+fp["You can now ride all flying mounts at #% speed."]=4102
+fp["You can now ride flying mounts in Northrend."]=4032
+fp["You can now ride ground mounts at #% speed."]=4242
+fp["You constantly harvest the souls of nearby enemies, gaining a stack of Harvested Soul. Each stack increases your damage done by #%. Up to #% increase. When an enemy with its soul harvested dies, you regain # health."]=2651
+fp["You deal #% additional damage to enemies affected by crowd control."]=2821
+fp["You deal #% increased damage to a target for each of your damage over time effects active on it. Also increases your spell power and attack power by #."]=2871
+fp["You deal #% increased damage to enemies below #% health."]=4682
+fp["You deal #% increased damage to enemies below #% health. Replace Executioner’s Oath (Rank #)."]=4712
+fp["You have a #% to cast the same ability twice. Only work with some healing and damaging class abilities."]=3351
+fp["You learn Wayfarer's Bond. After using your Hearthstone, Wayfarer's Bond can be cast within # min to return to your previous location."]=4332
+fp["You now gain Experience while Gathering"]=4782
+fp["You receive a second skill point whenever you gain a skill level in any non-gathering profession, with a #% chance to gain a third one."]=3642
+fp["You receive two additional skill points whenever you gain a skill level in any non-gathering profession."]=4392
+fp["Your Arcane over time effects can now critically strike."]=1281
+fp["Your Auto Shot critical strikes have a chance to hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=31
+fp["Your Auto Shot has a #% chance to fire an additional shot."]=1151
+fp["Your Auto Shot slows the target by #% for # sec."]=1391
+fp["Your Bleed effects can now critically strike."]=1501
+fp["Your Chains of Ice, Howling Blast, Icy Touch, Obliterate, Death Strike, Plague Strike, and Scourge Strike generate # additional runic power."]=2001
+fp["Your Fire damage builds Heat on the target. At # stacks, the target becomes Brittle for # sec, increasing your critical strike chance against it by #%. While Brittle is active, your next Fire critical strike against the target causes it to Shatter, dealing # Fire damage to enemies within # yards. Once Brittle expires, the target cannot gain Heat stacks for # sec."]=591
+fp["Your Fire damage has a chance to afflict the target with Fiery Combustion for # sec, dealing # Fire damage every # sec. Your Shadow damage has a chance to afflict the target with Soul Consumption for # sec, dealing # Shadow damage every # sec. If both effects are active on the same target, they are consumed to create a Twilight Rift beneath it for # sec, dealing # Shadowflame damage every # sec to nearby enemies."]=911
+fp["Your Fire damage has a chance to hurl a fiery ball at the target, dealing Fire damage and an additional damage every # sec for # sec. Damage scales with your Intellect."]=7483
+fp["Your Fire damage has a chance to mark the target with Flame Beacon for # sec. While marked, the target releases a Conflagration every # sec, dealing # Fire damage to nearby enemies. If the marked target dies, it erupts in a Fire Nova, dealing # Fire damage to all enemies within # yards."]=771
+fp["Your Fire over time effects can now critically strike."]=1371
+fp["Your Frost damage applies Biting Cold for # sec, stacking up to # times. Your direct Fire damage against a target with # or more stacks Shatters it, consuming all stacks and dealing # Frost damage per stack to the target and to enemies within # yards."]=1931
+fp["Your Frost damage has a chance to afflict the target with Permeating Chill for # sec, increasing Frost damage taken from you by #%. If an enemy dies while afflicted, it shatters violently, dealing # Frost damage to all enemies within # yards."]=3341
+fp["Your Frost damage has a chance to launch a bolt of frost at the target, dealing Frost damage and reducing movement speed. Damage is increased by the number of slowing effects on the target."]=7493
+fp["Your Frost over time effects can now critically strike."]=1411
+fp["Your Hearthstone cools down #% faster."]=3762
+fp["Your Hearthstone cools down #% faster. Replace Traveler’s Recall (Rank #)."]=3792
+fp["Your HoTs tick for # additional healing per second, increased by Spirit."]=7893
+fp["Your HoTs tick for # additional healing per second, increased by Spirit. Stacks with other ranks."]=7253
+fp["Your Holy over time effects can now critically strike."]=1351
+fp["Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every # sec. While active, Corrosive Acid reduces the target's armor, increased by #% for each of your damage-over-time effects active on the target."]=7533
+fp["Your Nature damage has a chance to coat the target in Corrosive Acid, dealing Nature damage every # sec. While active, Corrosive Acid reduces the target\\'s armor, increased by #% for each of your damage-over-time effects active on the target."]=7533
+fp["Your Nature over time effects can now critically strike."]=1431
+fp["Your Physical damage has a chance to expose the target's armor for # sec, increasing Physical damage taken from you by #%. If the exposed target is within # yards of at least # other enemies, your Physical damage against the target cleaves nearby enemies for #% of the damage dealt. Only one target can be exposed at a time."]=641
+fp["Your Shadow damage has a chance to send a shadowy bolt at the target, dealing Shadow damage. Damage is increased by your Shadow damage-over-time effects active on the target."]=7503
+fp["Your Shadow damage-over-time damage have a #% chance to hurl a Shadow Crash at the target. On impact, it deals # Shadow damage to enemies within # yards"]=2221
+fp["Your Shadow over time effects can now critically strike."]=1301
+fp["Your Warlock periodic damage has a chance to cause you to hurl a boulder at the target, dealing # Physical damage to all enemies within # yards of the impact. This effect deals at least # damage."]=3301
+fp["Your abilities may unleash a Frost Breath dealing # Frost damage, increased by your Stamina."]=7933
+fp["Your abilities may unleash a Frost Breath dealing # Frost damage, increased by your Stamina. Stacks with other ranks."]=7313
+fp["Your auto-shots reduce the remaining cooldown of some random ability by # sec."]=1631
+fp["Your basic attacks builds Stress. At # stacks, you expose your target’s heart for # sec, increasing your damage dealt to it by #%. While Exposed Heart is active, #% of the damage you deal to the target is also dealt to all enemies within # yards of it. While Exposed Heart is active and up to # seconds after it expires you cannot generate Stress on any target."]=981
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Arcane Barrage, Fire Blast, Dragon’s Breath, Cone of Cold, Living Bomb, Blast Wave, Deep Freeze."]=631
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Arcane Shot, Aimed Shot, Chimera Shot, Explosive Shot, Multi-Shot, Kill Shot, Raptor Strike, Mongoose Bite, Black Arrow."]=401
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Avenger's Shield, Judgement, Consecration, Crusader Strike, Divine Storm, Exorcism, Hammer of Wrath, Shield of Righteousness, Hammer of the Righteous, Holy Shock, Holy Wrath."]=291
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Conflagrate, Shadowburn, Shadowflame, Shadowfury."]=761
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Earth Shock, Flame Shock, Frost Shock, Stormstrike, Lava Lash, Riptide."]=421
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Ghostly Strike"]=561
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Howling Blast, Blood Boil, Pestilence."]=331
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Mangle (Bear), Mangle (Cat), Rake, Typhoon, Swiftmend, Wild Growth."]=491
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Power Word: Shield, Shadow Word: Death, Prayer of Mending, Circle of Healing, Penance."]=681
+fp["Your cooldowns are now reduced by your Haste. Affected spells : Shield Slam, Revenge, Thunder Clap, Mortal Strike, Bloodthirst, Whirlwind, Shockwave, Concussion Blow."]=191
+fp["Your critical strikes grant #% Haste for # sec. Stacking up to # times."]=2661
+fp["Your critical strikes grant Momentum for # sec, stacking up to # times. Momentum cannot be gained more than once per second. Each stack increases your movement speed by #% and damage dealt by #%. At # stacks, you unleash a Massive Crash, dealing # Physical damage to enemies within # yards of your target."]=1091
+fp["Your critical strikes have a #% chance to deal # Physical damage to the target. Proc chance tripled against target under #% health. This effect deals at least # damage."]=871
+fp["Your critical strikes have a #% chance to summon a Falling Star that strikes a nearby enemy for # Arcane damage. After # Falling Stars strike, you trigger Big Bang, dealing # Arcane damage split between all enemies within # yards of your target."]=2411
+fp["Your critical strikes have a chance to corrupt the target, dealing Shadow damage every # sec. While Corruption is active, your spell critical strikes against the target cause it to flare, dealing additional damage based on your Intellect. Each Corruption can flare no more than once every # sec."]=7553
+fp["Your critical strikes have a chance to launch a missile at a random nearby location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=891
+fp["Your damage against enemies below #% health is increased by #%. When you damage an enemy below #% health, you deal an additional # Shadow damage. This effect cannot occur more than once every # sec per target."]=1901
+fp["Your damage over time effects slow the target’s melee and ranged attack speed by #%. This effect does not stack."]=2291
+fp["Your damage-over-time effects have a chance to afflict the target with Necrotic Plague for # sec, dealing # Plague damage every # sec. If a target afflicted by Necrotic Plague dies, it jumps to a nearby enemy, refreshing its duration and increasing its damage by #%, up to #%. Only one Necrotic Plague can be active at a time."]=201
+fp["Your damage-over-time effects now benefit from Haste."]=3091
+fp["Your damaging abilities build Impale on the target. At # stacks, you Skewer the target for # sec, dealing # Physical damage every # sec. While Skewered is active, your attacks against the target have a #% chance to splinter, dealing # Physical damage to up to # nearby enemies."]=901
+fp["Your damaging abilities may fire an Infinite Star dealing # Arcane damage, increased by your highest stat."]=7913
+fp["Your damaging abilities may fire an Infinite Star dealing # Arcane damage, increased by your highest stat. Stacks with other ranks."]=7273
+fp["Your damaging spells and abilities build Edict. At # stacks, you invoke an Edict, cycling through the following effects in order: Meteor, Void Zone, Unholy Shadow and Holy Wrath. Each invocation triggers its effect at your target’s location. Meteor : Deals # Fire damage, split between all enemies within # yds of the impact. Void Zone : Summons a Void Zone for until cancelled sec that deals # Shadow damage every # sec to enemies within it. Unholy Shadow : Deals # Shadow damage, plus # Shadow damage every # sec for # sec. Holy Wrath : Hurls Holy bolts that deal # Holy damage to the target, jumping to additional nearby enemies. Damage increases by #% with each jump."]=2741
+fp["Your damaging spells and abilities build Edict. At # stacks, you invoke an Edict, cycling through the following effects in order: Rune of Death, Overload, Fusion Punch. Rune of Death : Summons a Rune of Death under your target for # sec, dealing # Shadow damage every half-second to enemies within # yards. Overload : You erupt with lightning, dealing # Nature damage to enemies within # yards. Fusion Punch : Your next melee attack deals an additional # Nature damage and an additional # Nature damage every # sec for # sec."]=1131
+fp["Your damaging spells and abilities have a chance to bind your target to the nearest enemy for # sec. While bound, #% of direct damage dealt to either target by you is also dealt to the other as Shadow damage. If either target dies while bound, the surviving target is afflicted with Vampiric Bite, increasing damage taken from you by #% for # sec."]=3041
+fp["Your damaging spells and abilities have a chance to hurl Malleable Goo at the target location, dealing # Nature damage to all enemies within # yards and afflicting them with Malleable for # sec. Malleable enemies are slowed by #% and take #% increased damage from Mutated Blight."]=2581
+fp["Your damaging spells and abilities have a chance to open a Nether Portal for # sec. While active, the portal hurls Fel Lightning at your target every # sec, dealing # Fel damage. Each strike has a #% chance to summon a Fel Flamestrike under the target, dealing # Fel damage and burning the ground for # sec, dealing # Fel damage every # sec. You cannot summon a Nether Portal more than once every # sec."]=1211
+fp["Your damaging spells and abilities have a chance to poison the target, dealing damage every # sec for # sec. Poisoned targets take #% increased damage from your damage-over-time effects."]=7433
+fp["Your damaging spells and abilities have a chance to stun the target. The duration of the stun is increased by your Strength."]=7423
+fp["Your direct Arcane damage spells and abilities apply a stacking mark to the target for # sec, increasing the Arcane damage you deal to that target by # per stack. Stacks up to # times."]=1061
+fp["Your direct Fire damage spells and abilities apply a stacking mark to the target for # sec, increasing the Fire damage you deal to that target by # per stack. Stacks up to # times."]=861
+fp["Your direct Frost damage spells and abilities apply a stacking mark to the target for # sec, increasing the Frost damage you deal to that target by # per stack. Stacks up to # times."]=971
+fp["Your direct Holy damage spells and abilities apply a stacking mark to the target for # sec, increasing the Holy damage you deal to that target by # per stack. Stacks up to # times."]=801
+fp["Your direct Nature damage spells and abilities apply a stacking mark to the target for # sec, increasing the Nature damage you deal to that target by # per stack. Stacks up to # times."]=951
+fp["Your direct Physical damage spells and abilities apply a stacking mark to the target for # sec, increasing the Physical damage you deal to that target by # per stack. Stacks up to # times."]=711
+fp["Your direct Shadow damage spells and abilities apply a stacking mark to the target for # sec, increasing the Shadow damage you deal to that target by # per stack. Stacks up to # times."]=1041
+fp["Your direct damage spell critical strikes have a #% chance to deal # Shadow damage to the target. Proc chance tripled against target under #% health. This effect deals at least # damage."]=2141
+fp["Your direct damage spells and abilities have a chance to afflict the target with Mutated Infection for # sec, dealing # Nature damage every # sec and applying a stack of Mutated Blight every # sec. When Mutated Infection expires or the target dies, it leaves behind Sticky Ooze for # sec, dealing # Nature damage every # sec to all enemies within # yards and applying a stack of Mutated Blight every # sec. Mutated Infection cannot occur more than once every # sec. Mutated Blight: Deals # Plague damage every # sec for # sec. Stacks up to # times."]=2491
+fp["Your direct damage spells and abilities have a chance to apply Searing Cinders for # sec, dealing # Fire damage every # sec. When Searing Cinders reaches # stacks, it triggers Deep Breath, burning all enemies in a line in front of you for # Fire damage and consuming all stacks on the primary target. Deep Breath cannot occur more than once every # sec."]=3181
+fp["Your direct damage spells cause the target to burn, dealing # Fire damage over # sec. This effect deals at least # damage."]=2051
+fp["Your direct damage spells slow enemies by #% for # sec."]=2241
+fp["Your direct damaging spells have a #% chance to burn the target for damage equal to #% of the damage done over # sec. This effect can stack up to #% of your maximum health."]=1671
+fp["Your direct healing spells also dispel one harmful Magic effect from the target."]=1191
+fp["Your direct healing spells grant Rally for # sec. At # stacks, you unleash Champion’s Rally, instantly healing your target for # and granting them Rallying Cry for # sec, reducing damage taken by #% and increasing healing received by #%. While Rallying Cry is active, #% of your direct healing on that target is also granted to the most injured nearby ally."]=1381
+fp["Your direct healing spells have a #% chance to grant a random ally Inspired, a #% bonus to all attributes for # sec. Stacks up to a total of #%."]=3131
+fp["Your direct healing spells have a #% chance to leave a heal over time effect on the target, healing for #% of the amount healed over # sec seconds. This effect can stack up to #% of the target’s maximum health."]=1601
+fp["Your direct spells have a chance to launch an Unstable Missile at the target, dealing # Arcane damage. This effect deals at least # damage."]=2791
+fp["Your direct-damage abilities apply an Unstable Infusion to the target for # sec. While Unstable Infusion is active, your critical strikes have a #% chance to trigger an unstable explosion, dealing # enemies within # yards of your primary target."]=2941
+fp["Your first hit after entering combat roots the target for # sec."]=941
+fp["Your food, flask, and elixir effects persist through death."]=4272
+fp["Your global cooldown is now reduced by your Haste."]=831
+fp["Your healing done is increased by #%, but your spells cost #% more mana."]=3241
+fp["Your healing spells have a chance to cause Blessing of Ancient Kings for # seconds allowing your heals to shield the target absorbing damage equal to #% of the amount healed."]=7763
+fp["Your melee and ranged abilities have a chance to inflict a Fatal Wound. Damage scales with your armor penetration rating."]=7443
+fp["Your melee and ranged attacks have a #% chance to launch a Rocket at your target, dealing # Fire damage. You fire # additional Rocket on random nearby enemies for each of your active pets or guardians. Subsequent Rockets hitting the same target deal reduced damage."]=2021
+fp["Your melee and ranged attacks have a chance to Wound the target. This effect occurs twice as often when behind the target."]=7543
+fp["Your melee and ranged attacks have a chance to reduce the target's armor. The effect is increased by your Agility."]=7453
+fp["Your melee and ranged attacks have a chance to reduce the target\\'s armor. The effect is increased by your Agility."]=7453
+fp["Your melee and ranged attacks wound the target, dealing # damage over # sec. This effect deals at least # damage."]=921
+fp["Your melee and ranged basic attack critical strikes increase your attack power by #, stacking up to # times. One stack is lost every second."]=7583
+fp["Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by #% for # sec. This effect stacks up to # times."]=3602
+fp["Your melee and ranged critical strikes grant Butcher’s Tempo, increasing your Attack Speed by #% for # sec. This effect stacks up to # times. Replace Butcher's Tempo (Rank #)."]=3652
+fp["Your melee attacks and abilities have a chance to strike an additional time for normal damage."]=7623
+fp["Your melee attacks have #% chance to make you strike all nearby enemies dealing weapon damage. While using a two-handed weapon, you have a #% chance to trigger Bladestorm on your target"]=7803
+fp["Your melee attacks have a #% chance to strike an additional time."]=1171
+fp["Your melee attacks have a chance to unleash an Unbalancing Strike, dealing #% weapon damage and leaving the target Unbalanced, increasing your damage dealt to it by #% for # sec."]=2591
+fp["Your melee attacks increase your armor by # for # sec. Stacks up to # times."]=441
+fp["Your melee attacks reduce the remaining cooldown of a random ability by # sec. This effect cannot occur more than once #,# seconds."]=1661
+fp["Your melee attacks slow enemies by #% for # sec."]=2211
+fp["Your melee attacks strike an additional nearby enemy. Also increases your attack power by #."]=2961
+fp["Your melee auto-attacks cleave for #% of the damage dealt to nearby enemies."]=1481
+fp["Your periodic damage from Shadow Word: Pain and periodic healing from Renew have a chance to launch a missile at a nearby random location, dealing # Arcane damage to enemies hit. This effect deals at least # damage."]=1011
+fp["Your periodic effects have a #% chance to flare, causing them to deal damage or healing an additional time. Cannot occur more than once every # sec on the same target."]=3261
+fp["Your periodic healing effects also cause the target to erupt in burning flames, dealing Fire damage equal to #% of the healing done to nearby enemies every # sec. This damage cannot exceed #% of your maximum health. Also increases your spell power by #."]=3251
+fp["Your periodic healing effects have a #% chance to grant a random ally Inspired, a #% bonus to all attributes for # sec. Stacks up to a total of #%."]=3151
+fp["Your periodic heals may increase your Healing Spell Power by # for # sec."]=7993
+fp["Your periodic heals may increase your Healing Spell Power by # for # sec. Stacks with other ranks."]=7383
+fp["Your pet attacks #% faster."]=7973
+fp["Your pet attacks #% faster. Stacks with other ranks."]=7363
+fp["Your pet deals #% more damage."]=7963
+fp["Your pet deals #% more damage. Stacks with other ranks."]=7353
+fp["Your physical abilities have a chance to wound the target, causing it to bleed dealing damage every # sec for # sec. Damage scales with your weapon speed."]=7473
+fp["Your ranged abilities have a chance to strike your target with Fire Damage. Damage is futher incrased with your ranged weapon speed and your Fire Resistance."]=7823
+fp["Your ranged abilities have a chance to strike your target with Frost Damage. Damage is futher incrased with your ranged weapon speed and your Frost Resistance."]=7783
+fp["Your ranged abilities have a chance to strike your target with Nature Damage. Damage is futher incrased with your ranged weapon speed and your Nature Resistance."]=7793
+fp["Your ranged auto-attacks automatically trigger a second shot"]=7713
+fp["Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim's Nature resistance by #%. Affects # targets. Your primary target is also consumed by a cyclone, slowing its attack speed by #% for # seconds."]=7683
+fp["Your spells and abilities have a chance to Blasts your enemy with lightning, dealing Nature damage and then jumping to additional nearby enemies. Each jump reduces that victim\\'s Nature resistance by #%. Affects # targets. Your primary target is also consumed by a cyclone, slowing its attack speed by #% for # seconds."]=7683
+fp["Your spells and abilities have a chance to Calls forth an Ember of Azzinoth to protect you in battle for a short period of time."]=7723
+fp["Your spells and abilities have a chance to Smites an enemy with Holy damage. Chance scale with your Hit Chance."]=7663
+fp["Your spells and abilities have a chance to Summons the infernal spirit of Shahram."]=7733
+fp["Your spells and abilities have a chance to blast the target dealing Fire damage. Damage scales with your critical strike rating."]=7513
+fp["Your spells and abilities have a chance to blast the target dealing Frost damage. This effect has twice the chance to occur against slowed targets."]=7603
+fp["Your spells and abilities have a chance to blast the target dealing Nature damage. Damage scales with your total mana."]=7523
+fp["Your spells and abilities have a chance to chance to increases the critical strike damage of your next abilities made within # seconds by #%."]=7653
+fp["Your spells and abilities have a chance to disarm the target. The duration of the disarm is increased by your Stamina."]=7463
+fp["Your spells and abilities have a chance to hurl a fiery ball that deals Fire damage and an additional fire damage over # seconds. Both effects scale with the Fire damage-over-time active on your target."]=7693
+fp["Your spells and abilities have a chance to increase the target's spell damage taken by #% for # seconds."]=7673
+fp["Your spells and abilities have a chance to increase the target\\'s spell damage taken by #% for # seconds."]=7673
+fp["Your spells and abilities have a chance to make you gain # Energy or # Rage."]=7703
+fp["Your spells and abilities have a chance to reduce all attributes of the target. This effect is increased by your Nature Resistance."]=7563
+fp["Your spells and abilities have a chance to steal life from the target. The amount stolen is increased the lower your health and by effects that increase healing done."]=7593
+fp["Your spells may reduce a random cooldown by # sec. Unique."]=7243
+local id = EbonholdFR_Data.id
+id[101441]={"While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage. Replace Into the Fray (Rank #).",456}
+id[101443]={"While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage. Replace Into the Fray (Rank #).",454}
+id[101444]={"While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage. Replace Into the Fray (Rank #).",455}
+id[101445]={"While you have # or more enemies within # yds of you, you generate #% increased threat and deal #% increased damage. Replace Into the Fray (Rank #).",453}
+id[102207]={"Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by # sec. Unique.",505}
+id[102212]={"Allows you to engrave this affix on any equippable item: Critical strikes deal #% more damage and healing",493}
+id[102264]={"Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by # sec. Unique.",507}
+id[102268]={"Allows you to engrave this affix on any equippable item: Critical strikes deal #% more damage and healing",492}
+id[900954]={"Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by # sec. Unique.",508}
+id[900956]={"Allows you to engrave this affix on any equippable item: Your spells may reduce a random cooldown by # sec. Unique.",506}
+id[900973]={"Allows you to engrave this affix on any equippable item: Critical strikes deal #% more damage and healing",494}
+local n = EbonholdFR_Data.nom
+n[9]="Tome of Ravenous Bellow"
+n[33391]="Journeyman Riding"
+n[34090]="Expert Riding"
+n[34091]="Artisan Riding"
+n[54197]="Cold Weather Flying"
+n[100000]="Essence of Might"
+n[100001]="Essence of Might"
+n[100002]="Essence of Might"
+n[100003]="Essence of Might"
+n[100004]="Essence of Might"
+n[100005]="Essence of Might"
+n[100006]="Essence of Might"
+n[100007]="Essence of Might"
+n[100008]="Essence of Might"
+n[100009]="Essence of Might"
+n[100010]="Essence of Might"
+n[100011]="Essence of Might"
+n[100012]="Essence of Might"
+n[100013]="Essence of Might"
+n[100014]="Essence of Might"
+n[100015]="Essence of Might"
+n[100020]="Essence of Sorcery"
+n[100021]="Essence of Sorcery"
+n[100022]="Essence of Sorcery"
+n[100023]="Essence of Sorcery"
+n[100024]="Essence of Sorcery"
+n[100025]="Essence of Sorcery"
+n[100026]="Essence of Sorcery"
+n[100027]="Essence of Sorcery"
+n[100028]="Essence of Sorcery"
+n[100029]="Essence of Sorcery"
+n[100030]="Essence of Sorcery"
+n[100031]="Essence of Sorcery"
+n[100032]="Essence of Sorcery"
+n[100033]="Essence of Sorcery"
+n[100034]="Essence of Sorcery"
+n[100035]="Essence of Sorcery"
+n[100040]="Essence of Strength"
+n[100041]="Essence of Strength"
+n[100042]="Essence of Strength"
+n[100043]="Essence of Strength"
+n[100044]="Essence of Strength"
+n[100045]="Essence of Strength"
+n[100046]="Essence of Strength"
+n[100047]="Essence of Strength"
+n[100048]="Essence of Strength"
+n[100049]="Essence of Strength"
+n[100050]="Essence of Strength"
+n[100051]="Essence of Strength"
+n[100052]="Essence of Strength"
+n[100053]="Essence of Strength"
+n[100054]="Essence of Strength"
+n[100055]="Essence of Strength"
+n[100060]="Essence of Agility"
+n[100061]="Essence of Agility"
+n[100062]="Essence of Agility"
+n[100063]="Essence of Agility"
+n[100064]="Essence of Agility"
+n[100065]="Essence of Agility"
+n[100066]="Essence of Agility"
+n[100067]="Essence of Agility"
+n[100068]="Essence of Agility"
+n[100069]="Essence of Agility"
+n[100070]="Essence of Agility"
+n[100071]="Essence of Agility"
+n[100072]="Essence of Agility"
+n[100073]="Essence of Agility"
+n[100074]="Essence of Agility"
+n[100075]="Essence of Agility"
+n[100080]="Essence of Endurance"
+n[100081]="Essence of Endurance"
+n[100082]="Essence of Endurance"
+n[100083]="Essence of Endurance"
+n[100084]="Essence of Endurance"
+n[100085]="Essence of Endurance"
+n[100086]="Essence of Endurance"
+n[100087]="Essence of Endurance"
+n[100088]="Essence of Endurance"
+n[100089]="Essence of Endurance"
+n[100090]="Essence of Endurance"
+n[100091]="Essence of Endurance"
+n[100092]="Essence of Endurance"
+n[100093]="Essence of Endurance"
+n[100094]="Essence of Endurance"
+n[100095]="Essence of Endurance"
+n[100100]="Essence of Intellect"
+n[100101]="Essence of Intellect"
+n[100102]="Essence of Intellect"
+n[100103]="Essence of Intellect"
+n[100104]="Essence of Intellect"
+n[100105]="Essence of Intellect"
+n[100106]="Essence of Intellect"
+n[100107]="Essence of Intellect"
+n[100108]="Essence of Intellect"
+n[100109]="Essence of Intellect"
+n[100110]="Essence of Intellect"
+n[100111]="Essence of Intellect"
+n[100112]="Essence of Intellect"
+n[100113]="Essence of Intellect"
+n[100114]="Essence of Intellect"
+n[100115]="Essence of Intellect"
+n[100120]="Essence of Spirit"
+n[100121]="Essence of Spirit"
+n[100122]="Essence of Spirit"
+n[100123]="Essence of Spirit"
+n[100124]="Essence of Spirit"
+n[100125]="Essence of Spirit"
+n[100126]="Essence of Spirit"
+n[100127]="Essence of Spirit"
+n[100128]="Essence of Spirit"
+n[100129]="Essence of Spirit"
+n[100130]="Essence of Spirit"
+n[100131]="Essence of Spirit"
+n[100132]="Essence of Spirit"
+n[100133]="Essence of Spirit"
+n[100134]="Essence of Spirit"
+n[100135]="Essence of Spirit"
+n[100140]="Prime Valor"
+n[100141]="Prime Valor"
+n[100142]="Prime Valor"
+n[100143]="Prime Valor"
+n[100144]="Prime Valor"
+n[100145]="Prime Valor"
+n[100146]="Prime Valor"
+n[100147]="Prime Valor"
+n[100160]="Essence of Lethality"
+n[100161]="Essence of Lethality"
+n[100162]="Essence of Lethality"
+n[100163]="Essence of Lethality"
+n[100164]="Essence of Lethality"
+n[100165]="Essence of Lethality"
+n[100166]="Essence of Lethality"
+n[100167]="Essence of Lethality"
+n[100168]="Essence of Lethality"
+n[100169]="Essence of Lethality"
+n[100170]="Essence of Lethality"
+n[100171]="Essence of Lethality"
+n[100172]="Essence of Lethality"
+n[100173]="Essence of Lethality"
+n[100174]="Essence of Lethality"
+n[100175]="Essence of Lethality"
+n[100180]="Essence of Precision"
+n[100181]="Essence of Precision"
+n[100182]="Essence of Precision"
+n[100183]="Essence of Precision"
+n[100184]="Essence of Precision"
+n[100185]="Essence of Precision"
+n[100186]="Essence of Precision"
+n[100187]="Essence of Precision"
+n[100188]="Essence of Precision"
+n[100189]="Essence of Precision"
+n[100190]="Essence of Precision"
+n[100191]="Essence of Precision"
+n[100192]="Essence of Precision"
+n[100193]="Essence of Precision"
+n[100194]="Essence of Precision"
+n[100195]="Essence of Precision"
+n[100200]="Essence of Accuracy"
+n[100201]="Essence of Accuracy"
+n[100202]="Essence of Accuracy"
+n[100203]="Essence of Accuracy"
+n[100204]="Essence of Accuracy"
+n[100205]="Essence of Accuracy"
+n[100206]="Essence of Accuracy"
+n[100207]="Essence of Accuracy"
+n[100208]="Essence of Accuracy"
+n[100209]="Essence of Accuracy"
+n[100210]="Essence of Accuracy"
+n[100211]="Essence of Accuracy"
+n[100212]="Essence of Accuracy"
+n[100213]="Essence of Accuracy"
+n[100214]="Essence of Accuracy"
+n[100215]="Essence of Accuracy"
+n[100220]="Essence of Ruin"
+n[100221]="Essence of Ruin"
+n[100222]="Essence of Ruin"
+n[100223]="Essence of Ruin"
+n[100224]="Essence of Ruin"
+n[100225]="Essence of Ruin"
+n[100226]="Essence of Ruin"
+n[100227]="Essence of Ruin"
+n[100240]="Essence of Alacrity"
+n[100241]="Essence of Alacrity"
+n[100242]="Essence of Alacrity"
+n[100243]="Essence of Alacrity"
+n[100244]="Essence of Alacrity"
+n[100245]="Essence of Alacrity"
+n[100246]="Essence of Alacrity"
+n[100247]="Essence of Alacrity"
+n[100260]="Essence of Sundering"
+n[100261]="Essence of Sundering"
+n[100262]="Essence of Sundering"
+n[100263]="Essence of Sundering"
+n[100264]="Essence of Sundering"
+n[100265]="Essence of Sundering"
+n[100266]="Essence of Sundering"
+n[100267]="Essence of Sundering"
+n[100268]="Essence of Sundering"
+n[100269]="Essence of Sundering"
+n[100270]="Essence of Sundering"
+n[100271]="Essence of Sundering"
+n[100272]="Essence of Sundering"
+n[100273]="Essence of Sundering"
+n[100274]="Essence of Sundering"
+n[100275]="Essence of Sundering"
+n[100280]="Rising Carnage"
+n[100320]="Esteemed Presence"
+n[100321]="Esteemed Presence"
+n[100322]="Esteemed Presence"
+n[100323]="Esteemed Presence"
+n[100324]="Esteemed Presence"
+n[100325]="Esteemed Presence"
+n[100326]="Esteemed Presence"
+n[100327]="Esteemed Presence"
+n[100340]="Lucky Draw"
+n[100341]="Lucky Draw"
+n[100342]="Lucky Draw"
+n[100343]="Lucky Draw"
+n[100344]="Lucky Draw"
+n[100345]="Lucky Draw"
+n[100346]="Lucky Draw"
+n[100347]="Lucky Draw"
+n[100348]="Lucky Draw"
+n[100380]="Boundless Growth"
+n[100381]="Boundless Growth"
+n[100382]="Boundless Growth"
+n[100400]="Hunter’s Insight"
+n[100401]="Hunter’s Insight"
+n[100402]="Hunter’s Insight"
+n[100403]="Hunter’s Insight"
+n[100404]="Hunter’s Insight"
+n[100420]="Restless Stride"
+n[100421]="Restless Stride"
+n[100422]="Restless Stride"
+n[100460]="Tailwind Reins"
+n[100461]="Tailwind Reins"
+n[100462]="Tailwind Reins"
+n[100500]="Unshaken"
+n[100520]="Traveler’s Recall (Rank 1)"
+n[100521]="Traveler’s Recall (Rank 2)"
+n[100522]="Traveler’s Recall (Rank 3)"
+n[100523]="Traveler’s Recall (Rank 4)"
+n[100524]="Traveler’s Recall (Rank 5)"
+n[100525]="Traveler’s Recall (Rank 6)"
+n[100560]="Victory Feast"
+n[100561]="Victory Feast"
+n[100562]="Victory Feast"
+n[100600]="Relentless Pursuit"
+n[100601]="Relentless Pursuit"
+n[100602]="Relentless Pursuit"
+n[100640]="Gift of the Depths"
+n[100641]="Gift of the Depths"
+n[100642]="Gift of the Depths"
+n[100660]="Rest and Recover"
+n[100661]="Rest and Recover"
+n[100662]="Rest and Recover"
+n[100663]="Rest and Recover"
+n[100664]="Rest and Recover"
+n[100665]="Rest and Recover"
+n[100666]="Rest and Recover"
+n[100667]="Rest and Recover"
+n[100680]="Essence of Fortitude"
+n[100681]="Essence of Fortitude"
+n[100682]="Essence of Fortitude"
+n[100683]="Essence of Fortitude"
+n[100684]="Essence of Fortitude"
+n[100685]="Essence of Fortitude"
+n[100686]="Essence of Fortitude"
+n[100687]="Essence of Fortitude"
+n[100688]="Essence of Fortitude"
+n[100689]="Essence of Fortitude"
+n[100690]="Essence of Fortitude"
+n[100691]="Essence of Fortitude"
+n[100692]="Essence of Fortitude"
+n[100693]="Essence of Fortitude"
+n[100694]="Essence of Fortitude"
+n[100695]="Essence of Fortitude"
+n[100700]="Essence of Iron"
+n[100701]="Essence of Iron"
+n[100702]="Essence of Iron"
+n[100703]="Essence of Iron"
+n[100704]="Essence of Iron"
+n[100705]="Essence of Iron"
+n[100706]="Essence of Iron"
+n[100707]="Essence of Iron"
+n[100708]="Essence of Iron"
+n[100709]="Essence of Iron"
+n[100710]="Essence of Iron"
+n[100711]="Essence of Iron"
+n[100712]="Essence of Iron"
+n[100713]="Essence of Iron"
+n[100714]="Essence of Iron"
+n[100715]="Essence of Iron"
+n[100720]="Magic Resilience"
+n[100721]="Magic Resilience"
+n[100722]="Magic Resilience"
+n[100723]="Magic Resilience"
+n[100724]="Magic Resilience"
+n[100725]="Magic Resilience"
+n[100726]="Magic Resilience"
+n[100727]="Magic Resilience"
+n[100740]="Projectile Resilience"
+n[100741]="Projectile Resilience"
+n[100742]="Projectile Resilience"
+n[100743]="Projectile Resilience"
+n[100744]="Projectile Resilience"
+n[100745]="Projectile Resilience"
+n[100746]="Projectile Resilience"
+n[100747]="Projectile Resilience"
+n[100760]="Flame Resilience"
+n[100761]="Flame Resilience"
+n[100762]="Flame Resilience"
+n[100763]="Flame Resilience"
+n[100764]="Flame Resilience"
+n[100765]="Flame Resilience"
+n[100766]="Flame Resilience"
+n[100767]="Flame Resilience"
+n[100780]="Nature Resilience"
+n[100781]="Nature Resilience"
+n[100782]="Nature Resilience"
+n[100783]="Nature Resilience"
+n[100784]="Nature Resilience"
+n[100785]="Nature Resilience"
+n[100786]="Nature Resilience"
+n[100787]="Nature Resilience"
+n[100800]="Shadow Resilience"
+n[100801]="Shadow Resilience"
+n[100802]="Shadow Resilience"
+n[100803]="Shadow Resilience"
+n[100804]="Shadow Resilience"
+n[100805]="Shadow Resilience"
+n[100806]="Shadow Resilience"
+n[100807]="Shadow Resilience"
+n[100820]="Frost Resilience"
+n[100821]="Frost Resilience"
+n[100822]="Frost Resilience"
+n[100823]="Frost Resilience"
+n[100824]="Frost Resilience"
+n[100825]="Frost Resilience"
+n[100826]="Frost Resilience"
+n[100827]="Frost Resilience"
+n[100840]="Arcane Resilience"
+n[100841]="Arcane Resilience"
+n[100842]="Arcane Resilience"
+n[100843]="Arcane Resilience"
+n[100844]="Arcane Resilience"
+n[100845]="Arcane Resilience"
+n[100846]="Arcane Resilience"
+n[100847]="Arcane Resilience"
+n[100860]="Unyielding Survival"
+n[100861]="Unyielding Survival"
+n[100862]="Unyielding Survival"
+n[100880]="Enduring Vitality"
+n[100881]="Enduring Vitality"
+n[100882]="Enduring Vitality"
+n[100920]="Second Wind"
+n[100921]="Second Wind"
+n[100922]="Second Wind"
+n[100960]="Featherfoot"
+n[100980]="Life Surplus (Rank 1)"
+n[100981]="Life Surplus (Rank 2)"
+n[100982]="Life Surplus (Rank 3)"
+n[100983]="Life Surplus (Rank 4)"
+n[100984]="Life Surplus (Rank 5)"
+n[100985]="Life Surplus (Rank 6)"
+n[101000]="Adaptive Resilience (Rank 1)"
+n[101001]="Adaptive Resilience (Rank 2)"
+n[101002]="Adaptive Resilience (Rank 3)"
+n[101003]="Adaptive Resilience (Rank 4)"
+n[101004]="Adaptive Resilience (Rank 5)"
+n[101005]="Adaptive Resilience (Rank 6)"
+n[101030]="Flowing Defense (Rank 1)"
+n[101031]="Flowing Defense (Rank 2)"
+n[101032]="Flowing Defense (Rank 3)"
+n[101033]="Flowing Defense (Rank 4)"
+n[101034]="Flowing Defense (Rank 5)"
+n[101035]="Flowing Defense (Rank 6)"
+n[101050]="Splashguard"
+n[101051]="Splashguard"
+n[101052]="Splashguard"
+n[101070]="Refused Requiem"
+n[101071]="Refused Requiem"
+n[101072]="Refused Requiem"
+n[101073]="Refused Requiem"
+n[101074]="Refused Requiem"
+n[101090]="Borrowed Time"
+n[101091]="Borrowed Time"
+n[101092]="Borrowed Time"
+n[101093]="Borrowed Time"
+n[101094]="Borrowed Time"
+n[101110]="Reserve of Life"
+n[101111]="Reserve of Life"
+n[101112]="Reserve of Life"
+n[101113]="Reserve of Life"
+n[101114]="Reserve of Life"
+n[101115]="Reserve of Life"
+n[101116]="Reserve of Life"
+n[101117]="Reserve of Life"
+n[101130]="Undying Spark"
+n[101131]="Undying Spark"
+n[101132]="Undying Spark"
+n[101133]="Undying Spark"
+n[101134]="Undying Spark"
+n[101135]="Undying Spark"
+n[101150]="Artisan's Insight"
+n[101151]="Artisan's Insight"
+n[101152]="Artisan's Insight"
+n[101153]="Artisan's Insight"
+n[101154]="Artisan's Insight"
+n[101160]="Hard Worker"
+n[101161]="Hard Worker"
+n[101162]="Hard Worker"
+n[101163]="Hard Worker"
+n[101164]="Hard Worker"
+n[101165]="Hard Worker"
+n[101166]="Hard Worker"
+n[101167]="Hard Worker"
+n[101180]="Forager's Efficiency"
+n[101181]="Forager's Efficiency"
+n[101182]="Forager's Efficiency"
+n[101183]="Forager's Efficiency"
+n[101184]="Forager's Efficiency"
+n[101185]="Forager's Efficiency"
+n[101186]="Forager's Efficiency"
+n[101187]="Forager's Efficiency"
+n[101200]="Wisdom of the Wilds"
+n[101210]="Vital Infusion"
+n[101211]="Vital Infusion"
+n[101212]="Vital Infusion"
+n[101213]="Vital Infusion"
+n[101214]="Vital Infusion"
+n[101215]="Vital Infusion"
+n[101230]="Rapid Transit"
+n[101250]="Twist of Fate"
+n[101251]="Twist of Fate"
+n[101252]="Twist of Fate"
+n[101253]="Twist of Fate"
+n[101254]="Twist of Fate"
+n[101255]="Twist of Fate"
+n[101256]="Twist of Fate"
+n[101257]="Twist of Fate"
+n[101258]="Twist of Fate"
+n[101270]="Twist of Fate"
+n[101271]="Twist of Fate"
+n[101272]="Twist of Fate"
+n[101273]="Twist of Fate"
+n[101274]="Twist of Fate"
+n[101275]="Twist of Fate"
+n[101276]="Twist of Fate"
+n[101277]="Twist of Fate"
+n[101278]="Twist of Fate"
+n[101280]="Butcher’s Tempo (Rank 1)"
+n[101281]="Butcher’s Tempo (Rank 2)"
+n[101282]="Butcher’s Tempo (Rank 3)"
+n[101283]="Butcher’s Tempo (Rank 4)"
+n[101284]="Butcher’s Tempo (Rank 5)"
+n[101285]="Butcher’s Tempo (Rank 6)"
+n[101320]="Executioner’s Oath (Rank 1)"
+n[101321]="Executioner’s Oath (Rank 2)"
+n[101322]="Executioner’s Oath (Rank 3)"
+n[101323]="Executioner’s Oath (Rank 4)"
+n[101324]="Executioner’s Oath (Rank 5)"
+n[101325]="Executioner’s Oath (Rank 6)"
+n[101340]="Arcane Equilibrium (Rank 1)"
+n[101341]="Arcane Equilibrium (Rank 2)"
+n[101342]="Arcane Equilibrium (Rank 3)"
+n[101343]="Arcane Equilibrium (Rank 4)"
+n[101344]="Arcane Equilibrium (Rank 5)"
+n[101345]="Arcane Equilibrium (Rank 6)"
+n[101360]="Seasoned Adventurer"
+n[101361]="Seasoned Adventurer"
+n[101362]="Seasoned Adventurer"
+n[101363]="Seasoned Adventurer"
+n[101364]="Seasoned Adventurer"
+n[101380]="Atoning Radiance (Rank 1)"
+n[101381]="Atoning Radiance (Rank 2)"
+n[101382]="Atoning Radiance (Rank 3)"
+n[101383]="Atoning Radiance (Rank 4)"
+n[101384]="Atoning Radiance (Rank 5)"
+n[101385]="Atoning Radiance (Rank 6)"
+n[101400]="Lifebond (Rank 1)"
+n[101401]="Lifebond (Rank 2)"
+n[101402]="Lifebond (Rank 3)"
+n[101403]="Lifebond (Rank 4)"
+n[101404]="Lifebond (Rank 5)"
+n[101405]="Lifebond (Rank 6)"
+n[101420]="Vengeful Momentum (Rank 1)"
+n[101421]="Vengeful Momentum (Rank 2)"
+n[101422]="Vengeful Momentum (Rank 3)"
+n[101423]="Vengeful Momentum (Rank 4)"
+n[101424]="Vengeful Momentum (Rank 5)"
+n[101425]="Vengeful Momentum (Rank 6)"
+n[101440]="Into the Fray (Rank 1)"
+n[101441]="Into the Fray (Rank 2)"
+n[101442]="Into the Fray (Rank 3)"
+n[101443]="Into the Fray (Rank 4)"
+n[101444]="Into the Fray (Rank 5)"
+n[101445]="Into the Fray (Rank 6)"
+n[101460]="Essence of the Deep"
+n[101461]="Essence of the Deep"
+n[101462]="Essence of the Deep"
+n[101463]="Essence of the Deep"
+n[101464]="Essence of the Deep"
+n[101465]="Essence of the Deep"
+n[101466]="Essence of the Deep"
+n[101467]="Essence of the Deep"
+n[101468]="Essence of the Deep"
+n[101469]="Essence of the Deep"
+n[101470]="Essence of the Deep"
+n[101471]="Essence of the Deep"
+n[101472]="Essence of the Deep"
+n[101473]="Essence of the Deep"
+n[101474]="Essence of the Deep"
+n[101475]="Essence of the Deep"
+n[101490]="Essence of Clarity"
+n[101491]="Essence of Clarity"
+n[101492]="Essence of Clarity"
+n[101493]="Essence of Clarity"
+n[101494]="Essence of Clarity"
+n[101495]="Essence of Clarity"
+n[101496]="Essence of Clarity"
+n[101497]="Essence of Clarity"
+n[101498]="Essence of Clarity"
+n[101499]="Essence of Clarity"
+n[101500]="Essence of Clarity"
+n[101501]="Essence of Clarity"
+n[101502]="Essence of Clarity"
+n[101503]="Essence of Clarity"
+n[101504]="Essence of Clarity"
+n[101505]="Essence of Clarity"
+n[101520]="Mounted Momentum"
+n[101540]="Miner’s Fortune"
+n[101541]="Miner’s Fortune"
+n[101542]="Miner’s Fortune"
+n[101543]="Miner’s Fortune"
+n[101544]="Miner’s Fortune"
+n[101545]="Miner’s Fortune"
+n[101546]="Miner’s Fortune"
+n[101547]="Miner’s Fortune"
+n[101560]="Herbalist’s Bounty"
+n[101561]="Herbalist’s Bounty"
+n[101562]="Herbalist’s Bounty"
+n[101563]="Herbalist’s Bounty"
+n[101564]="Herbalist’s Bounty"
+n[101565]="Herbalist’s Bounty"
+n[101566]="Herbalist’s Bounty"
+n[101567]="Herbalist’s Bounty"
+n[101580]="Butcher’s Yield"
+n[101581]="Butcher’s Yield"
+n[101582]="Butcher’s Yield"
+n[101583]="Butcher’s Yield"
+n[101584]="Butcher’s Yield"
+n[101585]="Butcher’s Yield"
+n[101586]="Butcher’s Yield"
+n[101587]="Butcher’s Yield"
+n[101600]="Harvest Rush (Rank 1)"
+n[101601]="Harvest Rush (Rank 2)"
+n[101602]="Harvest Rush (Rank 3)"
+n[101603]="Harvest Rush (Rank 4)"
+n[101604]="Harvest Rush (Rank 5)"
+n[101605]="Harvest Rush (Rank 6)"
+n[101606]="Harvest Rush (Rank 7)"
+n[101607]="Harvest Rush (Rank 8)"
+n[101620]="Cloth Scavenger"
+n[101621]="Cloth Scavenger"
+n[101622]="Cloth Scavenger"
+n[101623]="Cloth Scavenger"
+n[101624]="Cloth Scavenger"
+n[101625]="Cloth Scavenger"
+n[101626]="Cloth Scavenger"
+n[101627]="Cloth Scavenger"
+n[101640]="Jack of All Trades"
+n[101641]="Jack of All Trades"
+n[101642]="Jack of All Trades"
+n[101643]="Jack of All Trades"
+n[101644]="Jack of All Trades"
+n[101645]="Jack of All Trades"
+n[101646]="Jack of All Trades"
+n[101647]="Jack of All Trades"
+n[101648]="Jack of All Trades"
+n[101650]="Borrowed Power"
+n[101651]="Borrowed Power"
+n[101652]="Borrowed Power"
+n[101653]="Borrowed Power"
+n[101654]="Borrowed Power"
+n[101655]="Borrowed Power"
+n[101656]="Borrowed Power"
+n[101657]="Borrowed Power"
+n[101658]="Borrowed Power"
+n[101659]="Borrowed Power"
+n[101660]="Borrowed Power"
+n[101661]="Borrowed Power"
+n[101662]="Borrowed Power"
+n[101663]="Borrowed Power"
+n[101664]="Borrowed Power"
+n[101665]="Borrowed Power"
+n[101666]="Borrowed Power"
+n[101670]="Enduring Magic"
+n[101671]="Enduring Magic"
+n[101672]="Enduring Magic"
+n[101673]="Enduring Magic"
+n[101674]="Enduring Magic"
+n[101675]="Enduring Magic"
+n[101676]="Enduring Magic"
+n[101677]="Enduring Magic"
+n[101690]="Hearty Provisions"
+n[101691]="Hearty Provisions"
+n[101692]="Hearty Provisions"
+n[101693]="Hearty Provisions"
+n[101694]="Hearty Provisions"
+n[101695]="Hearty Provisions"
+n[101696]="Hearty Provisions"
+n[101697]="Hearty Provisions"
+n[101710]="Unbreakable Will"
+n[101711]="Unbreakable Will"
+n[101712]="Unbreakable Will"
+n[101713]="Unbreakable Will"
+n[101714]="Unbreakable Will"
+n[101730]="Deferred Pain (Rank 1)"
+n[101731]="Deferred Pain (Rank 2)"
+n[101732]="Deferred Pain (Rank 3)"
+n[101733]="Deferred Pain (Rank 4)"
+n[101734]="Deferred Pain (Rank 5)"
+n[101735]="Deferred Pain (Rank 6)"
+n[101736]="Deferred Pain (Rank 7)"
+n[101737]="Deferred Pain (Rank 8)"
+n[101750]="Intensify"
+n[101760]="Stabilize"
+n[101790]="Light on Your Feet"
+n[101791]="Light on Your Feet"
+n[101792]="Light on Your Feet"
+n[101793]="Light on Your Feet"
+n[101794]="Light on Your Feet"
+n[101795]="Light on Your Feet"
+n[101796]="Light on Your Feet"
+n[101797]="Light on Your Feet"
+n[101810]="Prepared Escape"
+n[101811]="Prepared Escape"
+n[101812]="Prepared Escape"
+n[101813]="Prepared Escape"
+n[101814]="Prepared Escape"
+n[101815]="Prepared Escape"
+n[101816]="Prepared Escape"
+n[101817]="Prepared Escape"
+n[101830]="Last Resort"
+n[102200]="Iron Will V"
+n[102201]="Feral Grace V"
+n[102202]="Arcane Mind V"
+n[102203]="Spirit Surge V"
+n[102204]="Ironhide V"
+n[102205]="Keen Strikes V"
+n[102206]="Frozen Pulse V"
+n[102207]="Temporal Flux V"
+n[102208]="Living Tide V"
+n[102209]="Mender's Surge V"
+n[102210]="Infinite Star V"
+n[102212]="Relentless Crits V"
+n[102213]="Fortified by Pain V"
+n[102214]="Frost Breath V"
+n[102215]="Overwhelming Force V"
+n[102216]="Stalwart V"
+n[102217]="Bulwark V"
+n[102218]="Pet Power V"
+n[102219]="Quick Instincts V"
+n[102220]="Thick Hide V"
+n[102221]="Wellspring V"
+n[102222]="Armor Rend V"
+n[102223]="Cold V"
+n[102226]="Shield Block V"
+n[102257]="Iron Will VI"
+n[102258]="Feral Grace VI"
+n[102259]="Arcane Mind VI"
+n[102260]="Spirit Surge VI"
+n[102261]="Ironhide VI"
+n[102262]="Keen Strikes VI"
+n[102263]="Frozen Pulse VI"
+n[102264]="Temporal Flux VI"
+n[102265]="Living Tide VI"
+n[102266]="Mender's Surge VI"
+n[102267]="Infinite Star VI"
+n[102268]="Relentless Crits VI"
+n[102269]="Fortified by Pain VI"
+n[102270]="Frost Breath VI"
+n[102271]="Overwhelming Force VI"
+n[102272]="Stalwart VI"
+n[102273]="Bulwark VI"
+n[102274]="Pet Power VI"
+n[102275]="Quick Instincts VI"
+n[102276]="Thick Hide VI"
+n[102277]="Wellspring VI"
+n[102278]="Armor Rend VI"
+n[102279]="Cold VI"
+n[102282]="Shield Block VI"
+n[102300]="Endless Vitality"
+n[102301]="Endless Might"
+n[102302]="Endless Growth"
+n[103400]="Essence of Greater Might"
+n[103401]="Essence of Greater Might"
+n[103402]="Essence of Greater Might"
+n[103403]="Essence of Greater Might"
+n[103404]="Essence of Greater Might"
+n[103405]="Essence of Greater Might"
+n[103406]="Essence of Greater Might"
+n[103407]="Essence of Greater Might"
+n[103408]="Essence of Greater Might"
+n[103409]="Essence of Greater Might"
+n[103410]="Essence of Greater Might"
+n[103411]="Essence of Greater Might"
+n[103420]="Essence of Greater Sorcery"
+n[103421]="Essence of Greater Sorcery"
+n[103422]="Essence of Greater Sorcery"
+n[103423]="Essence of Greater Sorcery"
+n[103424]="Essence of Greater Sorcery"
+n[103425]="Essence of Greater Sorcery"
+n[103426]="Essence of Greater Sorcery"
+n[103427]="Essence of Greater Sorcery"
+n[103428]="Essence of Greater Sorcery"
+n[103429]="Essence of Greater Sorcery"
+n[103430]="Essence of Greater Sorcery"
+n[103431]="Essence of Greater Sorcery"
+n[103440]="Talent Overflow"
+n[103441]="Talent Overflow"
+n[103442]="Talent Overflow"
+n[103443]="Talent Overflow"
+n[103444]="Talent Overflow"
+n[103445]="Talent Overflow"
+n[103446]="Talent Overflow"
+n[103447]="Talent Overflow"
+n[103448]="Talent Overflow"
+n[103449]="Talent Overflow"
+n[103450]="Talent Overflow"
+n[103451]="Talent Overflow"
+n[103452]="Talent Overflow"
+n[103453]="Talent Overflow"
+n[103454]="Talent Overflow"
+n[103455]="Talent Overflow"
+n[103456]="Talent Overflow"
+n[103457]="Talent Overflow"
+n[103458]="Talent Overflow"
+n[103459]="Talent Overflow"
+n[103460]="Talent Overflow"
+n[103461]="Talent Overflow"
+n[103462]="Talent Overflow"
+n[103463]="Talent Overflow"
+n[103464]="Talent Overflow"
+n[103480]="Efficient Assembly (Rank 1)"
+n[103481]="Efficient Assembly (Rank 2)"
+n[103482]="Efficient Assembly (Rank 3)"
+n[103483]="Efficient Assembly (Rank 4)"
+n[103484]="Efficient Assembly (Rank 5)"
+n[103485]="Efficient Assembly (Rank 6)"
+n[103486]="Efficient Assembly (Rank 7)"
+n[103487]="Efficient Assembly (Rank 8)"
+n[103520]="Treasure Hunter"
+n[103521]="Treasure Hunter"
+n[103522]="Treasure Hunter"
+n[103523]="Treasure Hunter"
+n[103540]="Careful Selection"
+n[103541]="Careful Selection"
+n[103542]="Careful Selection"
+n[103543]="Careful Selection"
+n[103544]="Careful Selection"
+n[103545]="Careful Selection"
+n[103560]="Bottomless Appetite"
+n[103570]="Essence of Greater Endurance"
+n[103571]="Essence of Greater Endurance"
+n[103572]="Essence of Greater Endurance"
+n[103573]="Essence of Greater Endurance"
+n[103574]="Essence of Greater Endurance"
+n[103575]="Essence of Greater Endurance"
+n[103576]="Essence of Greater Endurance"
+n[103577]="Essence of Greater Endurance"
+n[103578]="Essence of Greater Endurance"
+n[103579]="Essence of Greater Endurance"
+n[103580]="Essence of Greater Endurance"
+n[103581]="Essence of Greater Endurance"
+n[103590]="Essence of Greater Fortitude"
+n[103591]="Essence of Greater Fortitude"
+n[103592]="Essence of Greater Fortitude"
+n[103593]="Essence of Greater Fortitude"
+n[103594]="Essence of Greater Fortitude"
+n[103595]="Essence of Greater Fortitude"
+n[103596]="Essence of Greater Fortitude"
+n[103597]="Essence of Greater Fortitude"
+n[103598]="Essence of Greater Fortitude"
+n[103599]="Essence of Greater Fortitude"
+n[103600]="Essence of Greater Fortitude"
+n[103601]="Essence of Greater Fortitude"
+n[103610]="Deathbound Focus"
+n[103611]="Deathbound Focus"
+n[103612]="Deathbound Focus"
+n[103613]="Deathbound Focus"
+n[103614]="Deathbound Focus"
+n[103615]="Deathbound Focus"
+n[103630]="Overpowering Force"
+n[103631]="Overpowering Force"
+n[103632]="Overpowering Force"
+n[103633]="Overpowering Force"
+n[103634]="Overpowering Force"
+n[103635]="Overpowering Force"
+n[103650]="Overflow Conduit"
+n[103651]="Overflow Conduit"
+n[103652]="Overflow Conduit"
+n[103653]="Overflow Conduit"
+n[103654]="Overflow Conduit"
+n[103655]="Overflow Conduit"
+n[103670]="Wayfarer’s Bond"
+n[103680]="Gemfinder’s Luck"
+n[103681]="Gemfinder’s Luck"
+n[103682]="Gemfinder’s Luck"
+n[103683]="Gemfinder’s Luck"
+n[103684]="Gemfinder’s Luck"
+n[103685]="Gemfinder’s Luck"
+n[103686]="Gemfinder’s Luck"
+n[103687]="Gemfinder’s Luck"
+n[103700]="Miller’s Insight"
+n[103701]="Miller’s Insight"
+n[103702]="Miller’s Insight"
+n[103703]="Miller’s Insight"
+n[103704]="Miller’s Insight"
+n[103705]="Miller’s Insight"
+n[103706]="Miller’s Insight"
+n[103707]="Miller’s Insight"
+n[103720]="Disenchanter’s Touch"
+n[103721]="Disenchanter’s Touch"
+n[103722]="Disenchanter’s Touch"
+n[103723]="Disenchanter’s Touch"
+n[103724]="Disenchanter’s Touch"
+n[103725]="Disenchanter’s Touch"
+n[103726]="Disenchanter’s Touch"
+n[103727]="Disenchanter’s Touch"
+n[103740]="Angler’s Haul"
+n[103741]="Angler’s Haul"
+n[103742]="Angler’s Haul"
+n[103743]="Angler’s Haul"
+n[103744]="Angler’s Haul"
+n[103745]="Angler’s Haul"
+n[103746]="Angler’s Haul"
+n[103747]="Angler’s Haul"
+n[103760]="Swift Casting"
+n[103761]="Swift Casting"
+n[103762]="Swift Casting"
+n[103763]="Swift Casting"
+n[103764]="Swift Casting"
+n[103765]="Swift Casting"
+n[103766]="Swift Casting"
+n[103767]="Swift Casting"
+n[103780]="Overflowing Mercy"
+n[103781]="Overflowing Mercy"
+n[103782]="Overflowing Mercy"
+n[103783]="Overflowing Mercy"
+n[103784]="Overflowing Mercy"
+n[103785]="Overflowing Mercy"
+n[103800]="Raider’s Provisions"
+n[103810]="Tempered Spirit"
+n[103811]="Tempered Spirit"
+n[103812]="Tempered Spirit"
+n[103813]="Tempered Spirit"
+n[103814]="Tempered Spirit"
+n[103815]="Tempered Spirit"
+n[103816]="Tempered Spirit"
+n[103817]="Tempered Spirit"
+n[103830]="Battle Hardened"
+n[103831]="Battle Hardened"
+n[103832]="Battle Hardened"
+n[103833]="Battle Hardened"
+n[103834]="Battle Hardened"
+n[103835]="Battle Hardened"
+n[103836]="Battle Hardened"
+n[103837]="Battle Hardened"
+n[103850]="Steadfast Recovery"
+n[103851]="Steadfast Recovery"
+n[103852]="Steadfast Recovery"
+n[103853]="Steadfast Recovery"
+n[103854]="Steadfast Recovery"
+n[103855]="Steadfast Recovery"
+n[103870]="Frozen Nerves"
+n[103871]="Frozen Nerves"
+n[103872]="Frozen Nerves"
+n[103873]="Frozen Nerves"
+n[103874]="Frozen Nerves"
+n[103875]="Frozen Nerves"
+n[103890]="Brace for Impact"
+n[103891]="Brace for Impact"
+n[103892]="Brace for Impact"
+n[103893]="Brace for Impact"
+n[103894]="Brace for Impact"
+n[103895]="Brace for Impact"
+n[103896]="Brace for Impact"
+n[103897]="Brace for Impact"
+n[110000]="Essence of Might Milestone"
+n[110001]="Essence of Might Milestone"
+n[110002]="Essence of Might Milestone"
+n[110003]="Essence of Might Milestone"
+n[110020]="Essence of Sorcery Milestone"
+n[110021]="Essence of Sorcery Milestone"
+n[110022]="Essence of Sorcery Milestone"
+n[110023]="Essence of Sorcery Milestone"
+n[110040]="Essence of Strength Milestone"
+n[110041]="Essence of Strength Milestone"
+n[110042]="Essence of Strength Milestone"
+n[110043]="Essence of Strength Milestone"
+n[110060]="Essence of Agility Milestone"
+n[110061]="Essence of Agility Milestone"
+n[110062]="Essence of Agility Milestone"
+n[110063]="Essence of Agility Milestone"
+n[110080]="Essence of Endurance Milestone"
+n[110081]="Essence of Endurance Milestone"
+n[110082]="Essence of Endurance Milestone"
+n[110083]="Essence of Endurance Milestone"
+n[110100]="Essence of Intellect Milestone"
+n[110101]="Essence of Intellect Milestone"
+n[110102]="Essence of Intellect Milestone"
+n[110103]="Essence of Intellect Milestone"
+n[110120]="Essence of Spirit Milestone"
+n[110121]="Essence of Spirit Milestone"
+n[110122]="Essence of Spirit Milestone"
+n[110123]="Essence of Spirit Milestone"
+n[110160]="Essence of Lethality Milestone"
+n[110180]="Essence of Precision Milestone"
+n[110181]="Essence of Precision Milestone"
+n[110182]="Essence of Precision Milestone"
+n[110183]="Essence of Precision Milestone"
+n[110200]="Essence of Accuracy Milestone"
+n[110260]="Essence of Sundering Milestone"
+n[110261]="Essence of Sundering Milestone"
+n[110262]="Essence of Sundering Milestone"
+n[110263]="Essence of Sundering Milestone"
+n[110400]="Hunter’s Insight Milestone"
+n[110420]="Restless Stride Milestone"
+n[110460]="Tailwind Reins Milestone"
+n[110520]="Traveler’s Recall Milestone"
+n[110640]="Gift of the Depths Milestone"
+n[110660]="Rest and Recover Milestone"
+n[110680]="Essence of Fortitude Milestone"
+n[110681]="Essence of Fortitude Milestone"
+n[110682]="Essence of Fortitude Milestone"
+n[110683]="Essence of Fortitude Milestone"
+n[110700]="Essence of Iron Milestone"
+n[110760]="Flame Resilience Milestone"
+n[110780]="Nature Resilience Milestone"
+n[110800]="Shadow Resilience Milestone"
+n[110820]="Frost Resilience Milestone"
+n[110840]="Arcane Resilience Milestone"
+n[110880]="Enduring Vitality Milestone"
+n[110920]="Second Wind Milestone"
+n[110980]="Life Surplus Milestone"
+n[111000]="Adaptive Resilience Milestone"
+n[111030]="Flowing Defense Milestone"
+n[111280]="Butcher’s Tempo Milestone"
+n[111320]="Executioner’s Oath Milestone"
+n[111340]="Arcane Equilibrium Milestone"
+n[111380]="Atoning Radiance Milestone"
+n[111400]="Lifebond Milestone"
+n[111420]="Vengeful Momentum Milestone"
+n[111440]="Into the Fray Milestone"
+n[111460]="Essence of the Deep Milestone"
+n[111461]="Essence of the Deep Milestone"
+n[111462]="Essence of the Deep Milestone"
+n[111463]="Essence of the Deep Milestone"
+n[111490]="Essence of Clarity Milestone"
+n[111491]="Essence of Clarity Milestone"
+n[111492]="Essence of Clarity Milestone"
+n[111493]="Essence of Clarity Milestone"
+n[113400]="Essence of Greater Might Milestone"
+n[113401]="Essence of Greater Might Milestone"
+n[113420]="Essence of Greater Sorcery Milestone"
+n[113421]="Essence of Greater Sorcery Milestone"
+n[113570]="Essence of Greater Endurance Milestone"
+n[113571]="Essence of Greater Endurance Milestone"
+n[113590]="Essence of Greater Fortitude Milestone"
+n[113591]="Essence of Greater Fortitude Milestone"
+n[113610]="Deathbound Focus Milestone"
+n[113630]="Overpowering Force Milestone"
+n[113650]="Overflow Conduit Milestone"
+n[113780]="Overflowing Mercy Milestone"
+n[113870]="Frozen Nerves Milestone"
+n[200000]="Strength Training"
+n[200001]="Agility Boost"
+n[200002]="Mind Expansion"
+n[200003]="Spiritual Fortitude"
+n[200004]="Iron Constitution"
+n[200005]="Cavalry Instincts"
+n[200006]="Mana Regeneration"
+n[200007]="Reinforced Shielding"
+n[200008]="Mystic Potency"
+n[200009]="Brutal Might"
+n[200010]="Earthen Stability"
+n[200016]="Warm-Blooded"
+n[200017]="Hardened Skin"
+n[200018]="Hardened Resolve"
+n[200019]="Swift Step"
+n[200020]="Battle Momentum"
+n[200022]="Earthen Snap"
+n[200025]="Frost Bite"
+n[200027]="Pain Drive"
+n[200029]="Immolation Aura"
+n[200031]="Spiteful Thorns"
+n[200033]="Purifying Touch"
+n[200035]="Bolstered Vitality"
+n[200036]="Ember Ward"
+n[200037]="Frost Ward"
+n[200038]="Verdant Ward"
+n[200039]="Arcane Ward"
+n[200040]="Shadow Ward"
+n[200041]="Enhanced Recovery"
+n[200042]="Rend the Weak"
+n[200044]="Precision Strike"
+n[200046]="Healing Echo"
+n[200048]="Burning Touch"
+n[200050]="Focused Assault"
+n[200052]="Spell Harmony"
+n[200063]="Chaotic Convergence"
+n[200200]="Divine Resonance"
+n[200202]="First Strike"
+n[200205]="Scorched Sky"
+n[200209]="Shattered Sky"
+n[200213]="Riven Sky"
+n[200216]="Stormtorn Sky"
+n[200220]="Sanctified Sky"
+n[200224]="Blighted Sky"
+n[200227]="Ruthless Exploiter"
+n[200228]="Chronoboost"
+n[200230]="Harbringer of Doom"
+n[200231]="Backstabber’s Edge"
+n[200232]="Storm Conductor"
+n[200234]="Second Edge"
+n[200236]="Quickening Aura"
+n[200237]="Temporal Flow"
+n[200238]="Energy Overflow"
+n[200240]="Perfect Timing"
+n[200243]="Burning Flames"
+n[200246]="Crimson Reprisal"
+n[200248]="Opening Split"
+n[200259]="Twin Casting"
+n[200270]="Echoing Afflictions"
+n[200300]="Rite of Quickening"
+n[200301]="Echoes of Celerity"
+n[200302]="Flow of Battle"
+n[200303]="Pulse of Renewal"
+n[200304]="Momentum Chant"
+n[200305]="Accelerated Spirit"
+n[200306]="Tempo Weave"
+n[200307]="Rhythm of Power"
+n[200308]="Nature Quickness"
+n[200309]="Cyclebreaker’s Sigil "
+n[200310]="Anger Management"
+n[200313]="Dirge"
+n[200314]="Vitality"
+n[200400]="Steel Brand"
+n[200402]="Holy Brand"
+n[200404]="Fire Brand"
+n[200406]="Nature Brand"
+n[200408]="Frost Brand"
+n[200410]="Shadow Brand"
+n[200412]="Arcane Brand"
+n[200414]="Forged in Combat"
+n[200416]="Double Tap"
+n[200418]="Desperate Escape"
+n[200421]="Open Wounds"
+n[200423]="Bola Shot"
+n[200425]="Sweeping Blows"
+n[200427]="Reactive Retaliation"
+n[200429]="Keen Aim"
+n[200430]="Crushing Force"
+n[200431]="Quick Hands"
+n[200432]="Armor Penetration"
+n[200433]="Expertise Drills"
+n[200434]="Mana Reservoir"
+n[200435]="Sharpened Edge"
+n[200436]="Shielded Steps"
+n[200437]="Steady Casting"
+n[200438]="Subtle Presence"
+n[200439]="Provoking Presence"
+n[200440]="Efficient Casting"
+n[200441]="Safeguarded Gear"
+n[200442]="Steady Channeling"
+n[200443]="Frostguard Carapace"
+n[200446]="Stoneskin Threads"
+n[200447]="Sundered Will"
+n[200448]="Steady Grip"
+n[200449]="Rootbreaker"
+n[200450]="Insulated Soul"
+n[200451]="Strength Training"
+n[200452]="Agility Boost"
+n[200453]="Mind Expansion"
+n[200454]="Spiritual Fortitude"
+n[200455]="Iron Constitution"
+n[200456]="Cavalry Instincts"
+n[200457]="Mana Regeneration"
+n[200458]="Reinforced Shielding"
+n[200459]="Mystic Potency"
+n[200460]="Brutal Might"
+n[200461]="Earthen Stability"
+n[200463]="Warm-Blooded"
+n[200464]="Hardened Skin"
+n[200465]="Hardened Resolve"
+n[200466]="Swift Step"
+n[200467]="Ember Ward"
+n[200468]="Frost Ward"
+n[200469]="Verdant Ward"
+n[200470]="Arcane Ward"
+n[200471]="Shadow Ward"
+n[200479]="Forged in Combat"
+n[200480]="Keen Aim"
+n[200481]="Crushing Force"
+n[200482]="Quick Hands"
+n[200483]="Armor Penetration"
+n[200484]="Expertise Drills"
+n[200485]="Mana Reservoir"
+n[200486]="Sharpened Edge"
+n[200490]="Safeguarded Gear"
+n[200491]="Steady Channeling"
+n[200492]="Strength Training"
+n[200493]="Agility Boost"
+n[200494]="Mind Expansion"
+n[200495]="Spiritual Fortitude"
+n[200496]="Iron Constitution"
+n[200497]="Cavalry Instincts"
+n[200498]="Mana Regeneration"
+n[200499]="Reinforced Shielding"
+n[200500]="Mystic Potency"
+n[200501]="Brutal Might"
+n[200502]="Earthen Stability"
+n[200504]="Warm-Blooded"
+n[200505]="Hardened Skin"
+n[200506]="Hardened Resolve"
+n[200507]="Swift Step"
+n[200508]="Ember Ward"
+n[200509]="Frost Ward"
+n[200510]="Verdant Ward"
+n[200511]="Arcane Ward"
+n[200512]="Shadow Ward"
+n[200520]="Forged in Combat"
+n[200521]="Keen Aim"
+n[200522]="Crushing Force"
+n[200523]="Quick Hands"
+n[200524]="Armor Penetration"
+n[200525]="Expertise Drills"
+n[200526]="Mana Reservoir"
+n[200527]="Sharpened Edge"
+n[200528]="Safeguarded Gear"
+n[200529]="Steady Channeling"
+n[200530]="Immolation Aura"
+n[200531]="Spiteful Thorns"
+n[200532]="Rend the Weak"
+n[200533]="Open Wounds"
+n[200534]="Reactive Retaliation"
+n[200536]="Immolation Aura"
+n[200537]="Spiteful Thorns"
+n[200538]="Rend the Weak"
+n[200539]="Open Wounds"
+n[200540]="Reactive Retaliation"
+n[200541]="Beast Bane"
+n[200542]="Dragonkin Bane"
+n[200543]="Demon Bane"
+n[200544]="Elemental Bane"
+n[200545]="Giant Bane"
+n[200546]="Undead Bane"
+n[200547]="Mechanical Bane"
+n[200548]="Beast Slayer"
+n[200549]="Dragon Slayer"
+n[200550]="Demon Slayer"
+n[200551]="Elemental Slayer"
+n[200552]="Giant Slayer"
+n[200553]="Undead Slayer"
+n[200554]="Machine Slayer"
+n[200555]="Beast Bane"
+n[200556]="Dragonkin Bane"
+n[200557]="Demon Bane"
+n[200558]="Elemental Bane"
+n[200559]="Giant Bane"
+n[200560]="Undead Bane"
+n[200561]="Mechanical Bane"
+n[200562]="Beast Slayer"
+n[200563]="Dragon Slayer"
+n[200564]="Demon Slayer"
+n[200565]="Elemental Slayer"
+n[200566]="Giant Slayer"
+n[200567]="Undead Slayer"
+n[200568]="Machine Slayer"
+n[200569]="Beast Bane"
+n[200570]="Dragonkin Bane"
+n[200571]="Demon Bane"
+n[200572]="Elemental Bane"
+n[200573]="Giant Bane"
+n[200574]="Undead Bane"
+n[200575]="Mechanical Bane"
+n[200576]="Beast Slayer"
+n[200577]="Dragon Slayer"
+n[200578]="Demon Slayer"
+n[200579]="Elemental Slayer"
+n[200580]="Giant Slayer"
+n[200581]="Undead Slayer"
+n[200582]="Machine Slayer"
+n[200583]="Crypt Lord’s Swarm"
+n[200585]="Widow’s Venom"
+n[200589]="Broodmother’s Webbing"
+n[200592]="Curse of the Plaguebringer"
+n[200595]="The Unclean’s Fever"
+n[200597]="The Sporelord's Gift"
+n[200599]="Drillmaster’s Rebuke"
+n[200601]="The Harvester’s Tithe"
+n[200606]="Edict of the Four"
+n[200613]="Stitched Fury"
+n[200615]="Mutagenic Fumes"
+n[200619]="Ravenous Bellow"
+n[200621]="Polarity Shift"
+n[200627]="Chill of the Bone Wyrm"
+n[200632]="Call of the Lich King"
+n[200635]="Cinders of the Sanctum"
+n[200639]="Storm of the Spellweaver"
+n[200661]="Spiteful Shard"
+n[200662]="Spiteful Shard"
+n[200663]="Spiteful Shard"
+n[200665]="Scorched Path"
+n[200666]="Scorched Path"
+n[200667]="Scorched Path"
+n[200669]="Warded Aegis"
+n[200670]="Warded Aegis"
+n[200671]="Warded Aegis"
+n[200672]="Double Strike"
+n[200674]="Glass Canon"
+n[200675]="Arcane Rupture"
+n[200676]="Shadow Malice"
+n[200677]="Holy Revelation"
+n[200678]="Burning Cataclysm"
+n[200679]="Killing Chill"
+n[200680]="Nature’s Reprisal"
+n[200681]="Blood Frenzy"
+n[200682]="Grim Resolve"
+n[200684]="Unbroken Focus"
+n[200686]="Rapid Recalibration"
+n[200687]="Relentless Rhythm"
+n[200688]="Rolling Momentum"
+n[200690]="Reaper’s Reprieve"
+n[200693]="Reaper’s Verdict"
+n[200695]="Reaper’s Doom"
+n[200699]="Scorching Wounds"
+n[200700]="Scorching Wounds"
+n[200701]="Scorching Wounds"
+n[200703]="Reap the Weak"
+n[200704]="Reap the Weak"
+n[200705]="Reap the Weak"
+n[200706]="Crippling Strikes"
+n[200708]="Arcane Snare"
+n[200710]="Creeping Decay"
+n[200712]="Prismatic Guard"
+n[200720]="Arcane Weapon"
+n[200722]="Tunnel Vision"
+n[200724]="Battle Tempo"
+n[200726]="Peak Condition"
+n[200728]="Lethal Precision"
+n[200730]="Sudden Insight"
+n[200732]="Overcharged"
+n[200734]="Leadfoot"
+n[200736]="Brittle Armor"
+n[200738]="Drained Reserves"
+n[200740]="Heavy Blows"
+n[200742]="Third Time’s the Charm"
+n[200744]="Unstable Infusion"
+n[200745]="Unstable Infusion"
+n[200746]="Unstable Infusion"
+n[200747]="Unstable Infusion"
+n[200748]="Unstable Infusion"
+n[200749]="Unstable Infusion"
+n[200750]="Unstable Infusion"
+n[200751]="Unstable Infusion"
+n[200752]="Spellweave"
+n[200756]="Overtime Conversion"
+n[200759]="Vital Bond"
+n[200760]="Vital Bond"
+n[200761]="Vital Bond"
+n[200763]="Ferocious Bond"
+n[200764]="Ferocious Bond"
+n[200765]="Ferocious Bond"
+n[200767]="Arcane Bond"
+n[200768]="Arcane Bond"
+n[200769]="Arcane Bond"
+n[200772]="Tempest Vortex"
+n[200773]="Tempest Vortex"
+n[200774]="Tempest Vortex"
+n[200776]="Flame Vents"
+n[200780]="Brittle Forging"
+n[200786]="Harpoon Barrage"
+n[200792]="Exposed Heart"
+n[200798]="Edict of the Iron Council"
+n[200804]="Stone Shatter"
+n[200808]="Sanctum Sentries"
+n[200818]="Eonar’s Seed"
+n[200822]="Frostfire Paradox"
+n[200826]="Rocket Strike"
+n[200830]="Lightning Charged"
+n[200834]="Shadow Crash"
+n[200838]="Idol of Yogg-Saron"
+n[200844]="Constellations"
+n[200850]="Earthen Spike"
+n[200852]="Emberlord’s Gift"
+n[200856]="Mana Infusion"
+n[200858]="Permafrost Aura "
+n[200860]="Static Overflow"
+n[200864]="Unstable Missiles"
+n[200866]="Hungering Curse"
+n[200870]="Relentless Energy"
+n[200874]="Raging Momentum"
+n[200878]="Runic Momentum"
+n[200882]="Arcane Density"
+n[200884]="Fortress Soul"
+n[200886]="The Last Wall"
+n[200888]="Arcane Burn"
+n[200890]="Crushing Finish"
+n[200894]="Archmage’s Mark"
+n[200896]="Entropic Fusion"
+n[200898]="Battle Rhythm"
+n[200900]="Arcane Cadence"
+n[200902]="Healing Cadence"
+n[200904]="Battlefield Hazard"
+n[200908]="Sanctified Hazard"
+n[200912]="Blighted Hazard"
+n[200916]="Hunting Hazard"
+n[200920]="Storm Hazard"
+n[200924]="Wild Hazard"
+n[200928]="Shadow Hazard"
+n[200932]="Arcane Hazard"
+n[200936]="Holy Hazard"
+n[200940]="Fel Hazard"
+n[200944]="Crusader's Surge"
+n[200946]="Divine Surge"
+n[200948]="Storm Surge"
+n[200950]="Arcane Surge"
+n[200952]="Fel Surge"
+n[200954]="Nature’s Surge"
+n[200956]="Heavy Incantations"
+n[200958]="Weapon Mastery"
+n[200960]="Adaptive Power"
+n[200962]="Resonant Build"
+n[200964]="Ember Spark"
+n[200965]="Ember Spark"
+n[200966]="Ember Spark"
+n[200968]="Ember Spark"
+n[200969]="Ember Spark"
+n[200970]="Ember Spark"
+n[200972]="Ember Spark"
+n[200973]="Ember Spark"
+n[200974]="Ember Spark"
+n[200976]="Ember Spark"
+n[200977]="Ember Spark"
+n[200978]="Ember Spark"
+n[200980]="Ember Spark"
+n[200981]="Ember Spark"
+n[200982]="Ember Spark"
+n[200984]="Ember Spark"
+n[200985]="Ember Spark"
+n[200986]="Ember Spark"
+n[200988]="Ember Spark"
+n[200989]="Ember Spark"
+n[200990]="Ember Spark"
+n[200992]="Ember Spark"
+n[200993]="Ember Spark"
+n[200994]="Ember Spark"
+n[200996]="Ember Spark"
+n[200997]="Ember Spark"
+n[200998]="Ember Spark"
+n[201000]="Ember Spark"
+n[201001]="Ember Spark"
+n[201002]="Ember Spark"
+n[201004]="Stonefist Barrage"
+n[201005]="Stonefist Barrage"
+n[201006]="Stonefist Barrage"
+n[201008]="Stonefist Barrage"
+n[201009]="Stonefist Barrage"
+n[201010]="Stonefist Barrage"
+n[201012]="Stonefist Barrage"
+n[201013]="Stonefist Barrage"
+n[201014]="Stonefist Barrage"
+n[201016]="Stonefist Barrage"
+n[201017]="Stonefist Barrage"
+n[201018]="Stonefist Barrage"
+n[201020]="Stonefist Barrage"
+n[201021]="Stonefist Barrage"
+n[201022]="Stonefist Barrage"
+n[201024]="Stonefist Barrage"
+n[201025]="Stonefist Barrage"
+n[201026]="Stonefist Barrage"
+n[201028]="Stonefist Barrage"
+n[201029]="Stonefist Barrage"
+n[201030]="Stonefist Barrage"
+n[201032]="Stonefist Barrage"
+n[201033]="Stonefist Barrage"
+n[201034]="Stonefist Barrage"
+n[201036]="Stonefist Barrage"
+n[201037]="Stonefist Barrage"
+n[201038]="Stonefist Barrage"
+n[201040]="Stonefist Barrage"
+n[201041]="Stonefist Barrage"
+n[201042]="Stonefist Barrage"
+n[201144]="Arcane Bombardment"
+n[201145]="Arcane Bombardment"
+n[201146]="Arcane Bombardment"
+n[201148]="Arcane Bombardment"
+n[201149]="Arcane Bombardment"
+n[201150]="Arcane Bombardment"
+n[201152]="Arcane Bombardment"
+n[201153]="Arcane Bombardment"
+n[201154]="Arcane Bombardment"
+n[201156]="Arcane Bombardment"
+n[201157]="Arcane Bombardment"
+n[201158]="Arcane Bombardment"
+n[201160]="Arcane Bombardment"
+n[201161]="Arcane Bombardment"
+n[201162]="Arcane Bombardment"
+n[201164]="Arcane Bombardment"
+n[201165]="Arcane Bombardment"
+n[201166]="Arcane Bombardment"
+n[201168]="Arcane Bombardment"
+n[201169]="Arcane Bombardment"
+n[201170]="Arcane Bombardment"
+n[201172]="Arcane Bombardment"
+n[201173]="Arcane Bombardment"
+n[201174]="Arcane Bombardment"
+n[201176]="Arcane Bombardment"
+n[201177]="Arcane Bombardment"
+n[201178]="Arcane Bombardment"
+n[201180]="Arcane Bombardment"
+n[201181]="Arcane Bombardment"
+n[201182]="Arcane Bombardment"
+n[201184]="Corrosive Breath"
+n[201185]="Corrosive Breath"
+n[201186]="Corrosive Breath"
+n[201188]="Corrosive Breath"
+n[201189]="Corrosive Breath"
+n[201190]="Corrosive Breath"
+n[201192]="Corrosive Breath"
+n[201193]="Corrosive Breath"
+n[201194]="Corrosive Breath"
+n[201196]="Corrosive Breath"
+n[201197]="Corrosive Breath"
+n[201198]="Corrosive Breath"
+n[201200]="Corrosive Breath"
+n[201201]="Corrosive Breath"
+n[201202]="Corrosive Breath"
+n[201204]="Corrosive Breath"
+n[201205]="Corrosive Breath"
+n[201206]="Corrosive Breath"
+n[201208]="Corrosive Breath"
+n[201209]="Corrosive Breath"
+n[201210]="Corrosive Breath"
+n[201212]="Corrosive Breath"
+n[201213]="Corrosive Breath"
+n[201214]="Corrosive Breath"
+n[201216]="Corrosive Breath"
+n[201217]="Corrosive Breath"
+n[201218]="Corrosive Breath"
+n[201220]="Corrosive Breath"
+n[201221]="Corrosive Breath"
+n[201222]="Corrosive Breath"
+n[201224]="Meditative Flow"
+n[201225]="Meditative Flow"
+n[201226]="Meditative Flow"
+n[201228]="Unbridled Fury"
+n[201229]="Unbridled Fury"
+n[201230]="Unbridled Fury"
+n[201232]="Vitality"
+n[201233]="Vitality"
+n[201234]="Runic Empowerment"
+n[201235]="Runic Empowerment"
+n[201236]="Runic Empowerment"
+n[201240]="Toxic Phials"
+n[201241]="Toxic Phials"
+n[201242]="Toxic Phials"
+n[201244]="Essence Tap"
+n[201246]="Stored Momentum"
+n[201250]="Echoing Tides"
+n[201254]="Contagion"
+n[201256]="Pandemic"
+n[201258]="Demonic Awakening"
+n[201262]="Accelerated Decay"
+n[201264]="Inspiring Mending"
+n[201266]="Lingering Inspiration"
+n[201268]="Overwhelming Restoration"
+n[201270]="Armor Mastery"
+n[201272]="Ambidexterity"
+n[201274]="Titan's Grip"
+n[201276]="Sanguine Bulwark"
+n[201278]="Temporal Pressure"
+n[201280]="Temporal Pressure"
+n[201282]="Temporal Pressure"
+n[201284]="Temporal Pressure"
+n[201286]="Temporal Pressure"
+n[201288]="Temporal Pressure"
+n[201290]="Temporal Pressure"
+n[201292]="Temporal Pressure"
+n[201294]="Temporal Pressure"
+n[201296]="Temporal Pressure"
+n[201298]="Quickened Tempo"
+n[201300]="Impaler’s Tribute"
+n[201304]="Slimebound Husk"
+n[201308]="Rage of the Colossus"
+n[201312]="Nether Lord’s Command"
+n[201318]="Champion’s Rally"
+n[201324]="Twilight Equilibrium"
+n[201332]="Leeching Swarm"
+n[201336]="Broodmother’s Fury"
+n[201340]="Cyclone of Cold Bones"
+n[201344]="Deathwhisper’s Barrier"
+n[201348]="Gunship Barrage"
+n[201354]="Scent of Blood"
+n[201356]="Inhaled Blight"
+n[201360]="Slime Spray"
+n[201366]="Malleable Goo"
+n[201370]="Shock Vortex"
+n[201378]="Dark Nucleus"
+n[201382]="Conjured Flame"
+n[201388]="Blood Mirror"
+n[201394]="Emerald Vigor"
+n[201398]="Permeating Chill"
+n[201402]="Defile"
+n[201406]="Necrotic Plague"
+n[201410]="Frostmourne Hungers"
+n[201416]="Blade Tempest"
+n[201420]="Sundered Formation"
+n[201424]="Flame Beacon"
+n[201428]="Twilight Combustion"
+n[300022]="Tome of Earthen Snap"
+n[300025]="Tome of Frost Bite"
+n[300436]="Tome of Shielded Steps"
+n[300437]="Tome of Steady Casting"
+n[300438]="Tome of Subtle Presence"
+n[300439]="Tome of Provoking Presence"
+n[300446]="Tome of Stoneskin Threads"
+n[300447]="Tome of Sundered Will"
+n[300448]="Tome of Steady Grip"
+n[300449]="Tome of Rootbreaker"
+n[300450]="Tome of Insulated Soul"
+n[300508]="Tome of Ember Ward"
+n[300509]="Tome of Frost Ward"
+n[300510]="Tome of Verdant Ward"
+n[300511]="Tome of Arcane Ward"
+n[300512]="Tome of Shadow Ward"
+n[300569]="Tome of Beast Bane"
+n[300570]="Tome of Dragonkin Bane"
+n[300571]="Tome of Demon Bane"
+n[300572]="Tome of Elemental Bane"
+n[300573]="Tome of Giant Bane"
+n[300574]="Tome of Undead Bane"
+n[300575]="Tome of Mechanical Bane"
+n[300576]="Tome of Beast Slayer"
+n[300577]="Tome of Dragon Slayer"
+n[300578]="Tome of Demon Slayer"
+n[300579]="Tome of Elemental Slayer"
+n[300580]="Tome of Giant Slayer"
+n[300581]="Tome of Undead Slayer"
+n[300582]="Tome of Machine Slayer"
+n[300583]="Tome of Crypt Lord’s Swarm"
+n[300585]="Tome of Widow’s Venom"
+n[300589]="Tome of Broodmother’s Webbing"
+n[300592]="Tome of Curse of the Plaguebringer"
+n[300595]="Tome of The Unclean’s Fever"
+n[300597]="Tome of The Sporelord’s Gift"
+n[300599]="Tome of Drillmaster’s Rebuke"
+n[300601]="Tome of The Harvester’s Tithe"
+n[300606]="Tome of Edict of the Four"
+n[300613]="Tome of Stitched Fury"
+n[300615]="Tome of Mutagenic Fumes"
+n[300619]="Tome of Ravenous Bellow"
+n[300621]="Tome of Polarity Shift"
+n[300627]="Tome of Chill of the Bone Wyrm"
+n[300632]="Tome of Call of the Lich King"
+n[300635]="Tome of Cinders of the Sanctum"
+n[300639]="Tome of Storm of the Spellweaver"
+n[300690]="Tome of Reaper’s Reprieve"
+n[300693]="Tome of Reaper’s Verdict"
+n[300695]="Tome of Reaper’s Doom"
+n[300776]="Tome of Flame Vents"
+n[300780]="Tome of Brittle Forging"
+n[300786]="Tome of Harpoon Barrage"
+n[300792]="Tome of Exposed Heart"
+n[300798]="Tome of Edict of the Iron Council"
+n[300804]="Tome of Stone Shatter"
+n[300808]="Tome of Sanctum Sentries"
+n[300818]="Tome of Eonar’s Seed"
+n[300822]="Tome of Frostfire Paradox"
+n[300826]="Tome of Rocket Strike"
+n[300830]="Tome of Lightning Charged"
+n[300834]="Tome of Shadow Crash"
+n[300838]="Tome of Idol of Yogg-Saron"
+n[300844]="Tome of Constellations"
+n[300850]="Tome of Earthen Spike"
+n[300852]="Tome of Emberlord’s Gift"
+n[300856]="Tome of Mana Infusion"
+n[300858]="Tome of Permafrost Aura"
+n[300860]="Tome of Static Overflow"
+n[300864]="Tome of Unstable Missiles"
+n[300866]="Tome of Hungering Curse"
+n[300870]="Tome of Relentless Energy"
+n[300874]="Tome of Raging Momentum"
+n[300878]="Tome of Runic Momentum"
+n[300882]="Tome of Arcane Density"
+n[300884]="Tome of Fortress Soul"
+n[300886]="Tome of The Last Wall"
+n[300888]="Tome of Arcane Burn"
+n[300890]="Tome of Crushing Finish"
+n[300894]="Tome of Archmage’s Mark"
+n[300896]="Tome of Entropic Fusion"
+n[300898]="Tome of Battle Rhythm"
+n[300900]="Tome of Arcane Cadence"
+n[300902]="Tome of Healing Cadence"
+n[300904]="Tome of Battlefield Hazard"
+n[300908]="Tome of Sanctified Hazard"
+n[300912]="Tome of Blighted Hazard"
+n[300916]="Tome of Hunting Hazard"
+n[300920]="Tome of Storm Hazard"
+n[300924]="Tome of Wild Hazard"
+n[300928]="Tome of Shadow Hazard"
+n[300932]="Tome of Arcane Hazard"
+n[300936]="Tome of Holy Hazard"
+n[300940]="Tome of Fel Hazard"
+n[300944]="Tome of Crusader's Surge"
+n[300946]="Tome of Divine Surge"
+n[300948]="Tome of Storm Surge"
+n[300950]="Tome of Arcane Surge"
+n[300952]="Tome of Fel Surge"
+n[300954]="Tome of Nature’s Surge"
+n[300956]="Tome of Heavy Incantations"
+n[300958]="Tome of Weapon Mastery"
+n[300960]="Tome of Adaptive Power"
+n[300962]="Tome of Resonant Build"
+n[301244]="Tome of Essence Tap"
+n[301246]="Tome of Stored Momentum"
+n[301250]="Tome of Echoing Tides"
+n[301254]="Tome of Contagion"
+n[301256]="Tome of Pandemic"
+n[301258]="Tome of Demonic Awakening"
+n[301262]="Tome of Accelerated Decay"
+n[301264]="Tome of Inspiring Mending"
+n[301266]="Tome of Lingering Inspiration"
+n[301268]="Tome of Overwhelming Restoration"
+n[301270]="Tome of Armor Mastery"
+n[301272]="Tome of Ambidexterity"
+n[301274]="Tome of Titan's Grip"
+n[301276]="Tome of Sanguine Bulwark"
+n[301278]="Tome of Temporal Pressure"
+n[301298]="Tome of Quickened Tempo"
+n[301300]="Tome of Impaler’s Tribute"
+n[301304]="Tome of Slimebound Husk"
+n[301308]="Tome of Rage of the Colossus"
+n[301312]="Tome of Nether Lord’s Command"
+n[301318]="Tome of Champion’s Rally"
+n[301324]="Tome of Twilight Equilibrium"
+n[301332]="Tome of Leeching Swarm"
+n[301336]="Tome of Broodmother’s Fury"
+n[301340]="Tome of Cyclone of Cold Bones"
+n[301344]="Tome of Deathwhisper’s Barrier"
+n[301348]="Tome of Gunship Barrage"
+n[301354]="Tome of Scent of Blood"
+n[301356]="Tome of Inhaled Blight"
+n[301360]="Tome of Slime Spray"
+n[301366]="Tome of Malleable Goo"
+n[301370]="Tome of Shock Vortex"
+n[301378]="Tome of Dark Nucleus"
+n[301382]="Tome of Conjured Flame"
+n[301388]="Tome of Blood Mirror"
+n[301394]="Tome of Emerald Vigor"
+n[301398]="Tome of Permeating Chill"
+n[301402]="Tome of Defile"
+n[301406]="Tome of Necrotic Plague"
+n[301410]="Tome of Frostmourne Hungers"
+n[301416]="Tome of Blade Tempest"
+n[301420]="Tome of Sundered Formation"
+n[301424]="Tome of Flame Beacon"
+n[301428]="Tome of Twilight Combustion"
+n[600153]="Echo Severance"
+n[600154]="Echo Severance"
+n[600155]="Echo Severance"
+n[600156]="Echo Severance"
+n[600157]="Echo Severance"
+n[600158]="Echo Severance"
+n[600159]="Echo Severance"
+n[600160]="Echo Severance"
+n[600161]="Echo Severance"
+n[600162]="Echo Severance"
+n[600163]="Echo Severance"
+n[600169]="Echo Severance"
+n[700078]="Concussion"
+n[700079]="Venom"
+n[700080]="Maiming"
+n[700081]="Rending"
+n[700082]="Shackling"
+n[700083]="Hemorrhage"
+n[700084]="Pyromancy"
+n[700085]="Glaciation"
+n[700086]="Affliction"
+n[700087]="Incineration"
+n[700088]="Wilds"
+n[700089]="Dissolution"
+n[700090]="Execution"
+n[700091]="Decay"
+n[700092]="Frailty"
+n[700093]="Bloodlust"
+n[700094]="Ferocity"
+n[700095]="Vampirism"
+n[700096]="Permafrost"
+n[700097]="Resurgence"
+n[700098]="Flurry"
+n[700100]="Fortification"
+n[700101]="Devastation"
+n[700102]="Judgement"
+n[700103]="Vulnerability"
+n[700104]="Thunderfury"
+n[700105]="Sulfuras"
+n[700106]="Fury"
+n[700107]="Twin Shot"
+n[700108]="Azzinoth"
+n[700109]="Shahram"
+n[700110]="Undead"
+n[700111]="Clarity"
+n[700112]="Val'anyr"
+n[700113]="Speed"
+n[700114]="Julie's Blessing"
+n[700115]="Frost Arrow"
+n[700116]="Keeper's Sting"
+n[700120]="Bladestorm"
+n[700121]="Fire Blast"
+n[700130]="Flame Wrath"
+n[900925]="Iron Will I"
+n[900926]="Iron Will II"
+n[900927]="Iron Will III"
+n[900928]="Iron Will IV"
+n[900929]="Feral Grace I"
+n[900930]="Feral Grace II"
+n[900931]="Feral Grace III"
+n[900932]="Feral Grace IV"
+n[900933]="Arcane Mind I"
+n[900934]="Arcane Mind II"
+n[900935]="Arcane Mind III"
+n[900936]="Arcane Mind IV"
+n[900937]="Spirit Surge I"
+n[900938]="Spirit Surge II"
+n[900939]="Spirit Surge III"
+n[900940]="Spirit Surge IV"
+n[900941]="Ironhide I"
+n[900942]="Ironhide II"
+n[900943]="Ironhide III"
+n[900944]="Ironhide IV"
+n[900945]="Keen Strikes I"
+n[900946]="Keen Strikes II"
+n[900947]="Keen Strikes III"
+n[900948]="Keen Strikes IV"
+n[900949]="Frozen Pulse I"
+n[900950]="Frozen Pulse II"
+n[900951]="Frozen Pulse III"
+n[900952]="Frozen Pulse IV"
+n[900953]="Temporal Flux I"
+n[900954]="Temporal Flux II"
+n[900955]="Temporal Flux III"
+n[900956]="Temporal Flux IV"
+n[900957]="Living Tide I"
+n[900958]="Living Tide II"
+n[900959]="Living Tide III"
+n[900960]="Living Tide IV"
+n[900961]="Mender's Surge I"
+n[900962]="Mender's Surge II"
+n[900963]="Mender's Surge III"
+n[900964]="Mender's Surge IV"
+n[900965]="Infinite Star I"
+n[900966]="Infinite Star II"
+n[900967]="Infinite Star III"
+n[900968]="Infinite Star IV"
+n[900969]="Spell Mastery I"
+n[900970]="Spell Mastery II"
+n[900971]="Spell Mastery III"
+n[900972]="Spell Mastery IV"
+n[900973]="Relentless Crits I"
+n[900974]="Relentless Crits II"
+n[900975]="Relentless Crits III"
+n[900976]="Relentless Crits IV"
+n[900977]="Fortified by Pain I"
+n[900978]="Fortified by Pain II"
+n[900979]="Fortified by Pain III"
+n[900980]="Fortified by Pain IV"
+n[900981]="Frost Breath I"
+n[900982]="Frost Breath II"
+n[900983]="Frost Breath III"
+n[900984]="Frost Breath IV"
+n[900985]="Overwhelming Force I"
+n[900986]="Overwhelming Force II"
+n[900987]="Overwhelming Force III"
+n[900988]="Overwhelming Force IV"
+n[900989]="Stalwart I"
+n[900990]="Stalwart II"
+n[900991]="Stalwart III"
+n[900992]="Stalwart IV"
+n[900993]="Bulwark I"
+n[900994]="Bulwark II"
+n[900995]="Bulwark III"
+n[900996]="Bulwark IV"
+n[900997]="Pet Power I"
+n[900998]="Pet Power II"
+n[900999]="Pet Power III"
+n[901000]="Pet Power IV"
+n[901001]="Quick Instincts I"
+n[901002]="Quick Instincts II"
+n[901003]="Quick Instincts III"
+n[901004]="Quick Instincts IV"
+n[901005]="Thick Hide I"
+n[901006]="Thick Hide II"
+n[901007]="Thick Hide III"
+n[901008]="Thick Hide IV"
+n[901009]="Wellspring I"
+n[901010]="Wellspring II"
+n[901011]="Wellspring III"
+n[901012]="Wellspring IV"
+n[901013]="Armor Rend I"
+n[901014]="Armor Rend II"
+n[901015]="Armor Rend III"
+n[901016]="Armor Rend IV"
+n[901017]="Cold I"
+n[901018]="Cold II"
+n[901019]="Cold III"
+n[901020]="Cold IV"
+n[901031]="Shield Block I"
+n[901032]="Shield Block II"
+n[901033]="Shield Block III"
+n[901034]="Shield Block IV"
+local ti = EbonholdFR_Data.tomeItem
+ti[300022]="Tome of Echo: Earthen Snap"
+ti[300025]="Tome of Echo: Frost Bite"
+ti[300436]="Tome of Echo: Shielded Steps"
+ti[300437]="Tome of Echo: Steady Casting"
+ti[300438]="Tome of Echo: Subtle Presence"
+ti[300439]="Tome of Echo: Provoking Presence"
+ti[300446]="Tome of Echo: Stoneskin Threads"
+ti[300447]="Tome of Echo: Sundered Will"
+ti[300448]="Tome of Echo: Steady Grip"
+ti[300449]="Tome of Echo: Rootbreaker"
+ti[300450]="Tome of Echo: Insulated Soul"
+ti[300508]="Tome of Echo: Ember Ward"
+ti[300509]="Tome of Echo: Frost Ward"
+ti[300510]="Tome of Echo: Verdant Ward"
+ti[300511]="Tome of Echo: Arcane Ward"
+ti[300512]="Tome of Echo: Shadow Ward"
+ti[300569]="Tome of Echo: Beast Bane"
+ti[300570]="Tome of Echo: DragonKin Bane"
+ti[300571]="Tome of Echo: Demon Bane"
+ti[300572]="Tome of Echo: Elemental Bane"
+ti[300573]="Tome of Echo: Giant Bane"
+ti[300574]="Tome of Echo: Undead Bane"
+ti[300575]="Tome of Echo: Mechanical Bane"
+ti[300576]="Tome of Echo: Beast Slayer"
+ti[300577]="Tome of Echo: Dragon Slayer"
+ti[300578]="Tome of Echo: Demon Slayer"
+ti[300579]="Tome of Echo: Elemental Slayer"
+ti[300580]="Tome of Echo: Giant Slayer"
+ti[300581]="Tome of Echo: Undead Slayer"
+ti[300582]="Tome of Echo: Machine Slayer"
+ti[300583]="Tome of Echo: Crypt Lord’s Swarm"
+ti[300585]="Tome of Echo: Widow’s Venom"
+ti[300589]="Tome of Echo: Broodmother’s Webbing"
+ti[300592]="Tome of Echo: Curse of the Plaguebringer"
+ti[300595]="Tome of Echo: The Unclean’s Fever"
+ti[300597]="Tome of Echo: The Sporelord’s Gift"
+ti[300599]="Tome of Echo: Drillmaster’s Rebuke"
+ti[300601]="Tome of Echo: The Harvester’s Tithe"
+ti[300606]="Tome of Echo: Edict of the Four"
+ti[300613]="Tome of Echo: Stitched Fury"
+ti[300615]="Tome of Echo: Mutagenic Fumes"
+ti[300619]="Tome of Echo: Ravenous Bellow"
+ti[300621]="Tome of Echo: Polarity Shift"
+ti[300627]="Tome of Echo: Chill of the Bone Wyrm"
+ti[300632]="Tome of Echo: Call of the Lich King"
+ti[300635]="Tome of Echo: Cinders of the Sanctum"
+ti[300639]="Tome of Echo: Storm of the Spellweaver"
+ti[300690]="Tome of Echo: Reaper’s Reprieve"
+ti[300693]="Tome of Echo: Reaper’s Verdict"
+ti[300695]="Tome of Echo: Reaper’s Doom"
+ti[300776]="Tome of Echo: Flame Vents"
+ti[300780]="Tome of Echo: Brittle Forging"
+ti[300786]="Tome of Echo: Harpoon Barrage"
+ti[300792]="Tome of Echo: Exposed Heart"
+ti[300798]="Tome of Echo: Edict of the Iron Council"
+ti[300804]="Tome of Echo: Stone Shatter"
+ti[300808]="Tome of Echo: Sanctum Sentries"
+ti[300818]="Tome of Echo: Eonar Seed"
+ti[300822]="Tome of Echo: Frostfire Paradox"
+ti[300826]="Tome of Echo: Rocket Strike"
+ti[300830]="Tome of Echo: Lightning Charged"
+ti[300834]="Tome of Echo: Shadow Crash"
+ti[300838]="Tome of Echo: Idol of Yogg-Saron"
+ti[300844]="Tome of Echo: Constellations"
+ti[300850]="Tome of Echo: Earthen Spike"
+ti[300852]="Tome of Echo: Emberlord Gift"
+ti[300856]="Tome of Echo: Mana Infusion"
+ti[300858]="Tome of Echo: Permafrost Aura"
+ti[300860]="Tome of Echo: Static Overflow"
+ti[300864]="Tome of Echo: Unstable Missiles"
+ti[300866]="Tome of Echo: Hungering Curse"
+ti[300870]="Tome of Echo: Relentless Energy"
+ti[300874]="Tome of Echo: Raging Momentum"
+ti[300878]="Tome of Echo: Runic Momentum"
+ti[300882]="Tome of Echo: Arcane Density"
+ti[300884]="Tome of Echo: Fortress Soul"
+ti[300886]="Tome of Echo: The Last Wall"
+ti[300888]="Tome of Echo: Arcane Burn"
+ti[300890]="Tome of Echo: Crushing Finish"
+ti[300894]="Tome of Echo: Archmage Mark"
+ti[300896]="Tome of Echo: Entropic Fusion"
+ti[300898]="Tome of Echo: Battle Rhythm"
+ti[300900]="Tome of Echo: Arcane Cadence"
+ti[300902]="Tome of Echo: Healing Cadence"
+ti[300904]="Tome of Echo: Battlefield Hazard"
+ti[300908]="Tome of Echo: Sanctified Hazard"
+ti[300912]="Tome of Echo: Blighted Hazard"
+ti[300916]="Tome of Echo: Hunting Hazard"
+ti[300920]="Tome of Echo: Storm Hazard"
+ti[300924]="Tome of Echo: Wild Hazard"
+ti[300928]="Tome of Echo: Shadow Hazard"
+ti[300932]="Tome of Echo: Arcane Hazard"
+ti[300936]="Tome of Echo: Holy Hazard"
+ti[300940]="Tome of Echo: Fel Hazard"
+ti[300944]="Tome of Echo: Crusader's Surge"
+ti[300946]="Tome of Echo: Divine Surge"
+ti[300948]="Tome of Echo: Storm Surge"
+ti[300950]="Tome of Echo: Arcane Surge"
+ti[300952]="Tome of Echo: Fel Surge"
+ti[300954]="Tome of Echo: Nature Surge"
+ti[300956]="Tome of Echo: Heavy Incantations"
+ti[300958]="Tome of Echo: Weapon Mastery"
+ti[300960]="Tome of Echo: Adaptive Power"
+ti[300962]="Tome of Echo: Resonant Build"
+ti[301244]="Tome of Echo: Essence Tap"
+ti[301246]="Tome of Echo: Stored Momentum"
+ti[301250]="Tome of Echo: Echoing Tides"
+ti[301254]="Tome of Echo: Contagion"
+ti[301256]="Tome of Echo: Pandemic"
+ti[301258]="Tome of Echo: Demonic Awakening"
+ti[301262]="Tome of Echo: Accelerated Decay"
+ti[301264]="Tome of Echo: Inspiring Mending"
+ti[301266]="Tome of Echo: Lingering Inspiration"
+ti[301268]="Tome of Echo: Overwhelming Restoration"
+ti[301270]="Tome of Echo: Armor Mastery"
+ti[301272]="Tome of Echo: Ambidexterity"
+ti[301274]="Tome of Echo: Titan's Grip"
+ti[301276]="Tome of Echo: Sanguine Bulwark"
+ti[301278]="Tome of Echo: Temporal Pressure"
+ti[301298]="Tome of Echo: Quickened Tempo"
+ti[301300]="Tome of Echo: Impaler’s Tribute"
+ti[301304]="Tome of Echo: Slimebound Husk"
+ti[301308]="Tome of Echo: Rage of the Colossus"
+ti[301312]="Tome of Echo: Nether Lord’s Command"
+ti[301318]="Tome of Echo: Champion’s Rally"
+ti[301324]="Tome of Echo: Twilight Equilibrium"
+ti[301332]="Tome of Echo: Leeching Swarm"
+ti[301336]="Tome of Echo: Broodmother’s Fury"
+ti[301340]="Tome of Echo: Cyclone of Cold Bones"
+ti[301344]="Tome of Echo: Deathwhisper’s Barrier"
+ti[301348]="Tome of Echo: Gunship Barrage"
+ti[301354]="Tome of Echo: Scent of Blood"
+ti[301356]="Tome of Echo: Inhaled Blight"
+ti[301360]="Tome of Echo: Slime Spray"
+ti[301366]="Tome of Echo: Malleable Goo"
+ti[301370]="Tome of Echo: Shock Vortex"
+ti[301378]="Tome of Echo: Dark Nucleus"
+ti[301382]="Tome of Echo: Conjured Flame"
+ti[301388]="Tome of Echo: Blood Mirror"
+ti[301394]="Tome of Echo: Emerald Vigor"
+ti[301398]="Tome of Echo: Permeating Chill"
+ti[301402]="Tome of Echo: Defile"
+ti[301406]="Tome of Echo: Necrotic Plague"
+ti[301410]="Tome of Echo: Frostmourne Hungers"
+ti[301416]="Tome of Echo: Blade Tempest"
+ti[301420]="Tome of Echo: Sundered Formation"
+ti[301424]="Tome of Echo: Flame Beacon"
+ti[301428]="Tome of Echo: Twilight Combustion"

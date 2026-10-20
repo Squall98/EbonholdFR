@@ -1,12 +1,12 @@
---[[ EbonholdFR_UI — bouton minimap + panneau d'options (V3).
-  Fonction phare : basculer la traduction FR <-> EN (texte original) à la volée,
-  globalement ou par catégorie (Echoes / Skill Tree / Affixes / Tomes).
-  Les réglages sont lus en direct par les hooks de EbonholdFR.lua (trOn).
+--[[ EbonholdFR_UI — bouton minimap + panneau d'options (v4).
+  Les réglages viennent du launcher (EbonholdFR_Reglages.lua) ; ce panneau permet de les changer
+  en jeu (mémorisé dans EbonholdFRDB). Clic droit sur le bouton : tout en anglais / tout en français.
 ]]
 
-local function msg(s) DEFAULT_CHAT_FRAME:AddMessage("|cff9966ff[EbonholdFR]|r " .. s) end
+local E = EbonholdFR
+local function msg(s) E.msg(s) end
 
-local DB           -- réglages sauvegardés (EbonholdFRDB)
+local DB           -- EbonholdFRDB
 local button       -- bouton minimap
 local panel        -- panneau d'options
 local RADIUS = 80  -- rayon de placement autour de la minimap
@@ -35,11 +35,14 @@ end
 
 local function buttonTooltip(self)
   GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-  GameTooltip:AddLine("Ebonhold |cff66ccffFR|r")
+  GameTooltip:AddLine("Ebonhold |cff66ccffFR|r " .. E.version)
   if DB.enabled then
     GameTooltip:AddLine("\195\137tat : |cff2cfe32Fran\195\167ais actif|r", 1, 1, 1)
   else
     GameTooltip:AddLine("\195\137tat : |cffff6666Anglais (original)|r", 1, 1, 1)
+  end
+  if E.Patch() then
+    GameTooltip:AddLine("Patch FR install\195\169 : descriptions d\195\169j\195\160 en fran\195\167ais", 0.6, 0.8, 1)
   end
   GameTooltip:AddLine("Clic gauche : ouvrir les options", 0.7, 0.7, 0.7)
   GameTooltip:AddLine("Clic droit : basculer FR / EN", 0.7, 0.7, 0.7)
@@ -68,6 +71,7 @@ local function createButton()
   button:SetScript("OnClick", function(self, btn)
     if btn == "RightButton" then
       DB.enabled = not DB.enabled
+      E.Rafraichir()
       updateButtonState()
       if EbonholdFR_RefreshPanel then EbonholdFR_RefreshPanel() end
       buttonTooltip(self)
@@ -90,24 +94,29 @@ end
 ------------------------------------------------------------------------
 -- Panneau d'options
 ------------------------------------------------------------------------
-local CATS = {
-  { key = "echoes",    label = "Echoes (descriptions)" },
-  { key = "skilltree", label = "Skill Tree (arbre de talents)" },
-  { key = "affixes",   label = "Affixes (objets, grimoire)" },
-  { key = "tomes",     label = "Tomes of Echo" },
+local OPTIONS = {
+  { key = "interface",     label = "Interface du serveur (fen\195\170tres, boutons)" },
+  { key = "echoes_desc",   label = "Echoes (descriptions)",                    desc = true },
+  { key = "soultree_desc", label = "Soul Tree (descriptions)",                 desc = true },
+  { key = "affixes_desc",  label = "Affixes (objets, grimoire)",               desc = true },
+  { key = "tomes",         label = "Tomes of Echo",                            desc = true },
+  { key = "nom_anglais",   label = "Afficher aussi le nom anglais (EN : ...)" },
 }
 
-local masterCheck, catChecks = nil, {}
+local masterCheck, optChecks, patchNote = nil, {}, nil
 
--- met à jour l'état visuel des cases selon DB
+-- met à jour l'état visuel des cases selon les réglages
 function EbonholdFR_RefreshPanel()
   if not panel then return end
   masterCheck:SetChecked(DB.enabled)
-  for _, c in ipairs(catChecks) do
-    c:SetChecked(DB.cat[c.key])
-    if DB.enabled then c:Enable(); c.text:SetTextColor(1, 1, 1)
-    else c:Disable(); c.text:SetTextColor(0.5, 0.5, 0.5) end
+  local patch = E.Patch()
+  for _, c in ipairs(optChecks) do
+    c:SetChecked(E.ValeurReglage(c.key) and true or false)
+    local grise = (not DB.enabled) or (patch and c.desc)
+    if grise then c:Disable(); c.text:SetTextColor(0.5, 0.5, 0.5)
+    else c:Enable(); c.text:SetTextColor(1, 1, 1) end
   end
+  if patch then patchNote:Show() else patchNote:Hide() end
 end
 
 local function makeCheck(parent, label, x, y)
@@ -122,7 +131,7 @@ end
 
 local function createPanel()
   panel = CreateFrame("Frame", "EbonholdFROptionsPanel", UIParent)
-  panel:SetWidth(330); panel:SetHeight(310)
+  panel:SetWidth(360); panel:SetHeight(390)
   panel:SetPoint("CENTER")
   panel:SetFrameStrata("DIALOG")
   panel:SetBackdrop({
@@ -137,55 +146,77 @@ local function createPanel()
   panel:SetScript("OnDragStart", panel.StartMoving)
   panel:SetScript("OnDragStop", panel.StopMovingOrSizing)
   panel:Hide()
+  tinsert(UISpecialFrames, "EbonholdFROptionsPanel")   -- Échap ferme le panneau
 
   local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
   title:SetPoint("TOP", 0, -18)
-  title:SetText("Ebonhold |cff66ccffFR|r  —  Options")
+  title:SetText("Ebonhold |cff66ccffFR|r  \226\128\148  Options")
 
   local close = CreateFrame("Button", nil, panel, "UIPanelCloseButton")
   close:SetPoint("TOPRIGHT", -6, -6)
 
-  -- interrupteur maître
-  masterCheck = makeCheck(panel, "|cffffd100Traduction fran\195\167aise|r", 20, -52)
+  -- interrupteur général
+  masterCheck = makeCheck(panel, "|cffffd100Traduction fran\195\167aise|r", 20, -48)
   masterCheck.text:SetFontObject("GameFontHighlight")
   masterCheck:SetScript("OnClick", function(self)
     DB.enabled = self:GetChecked() and true or false
+    E.Rafraichir()
     EbonholdFR_RefreshPanel()
-    if button then button.icon:SetDesaturated(not DB.enabled) end
+    updateButtonState()
   end)
   local sub = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
-  sub:SetPoint("TOPLEFT", 44, -76)
+  sub:SetPoint("TOPLEFT", 44, -72)
   sub:SetText("D\195\169coch\195\169 = textes d'origine en anglais.")
 
-  -- cases par catégorie
-  local y = -104
-  for _, info in ipairs(CATS) do
+  -- une case par réglage
+  local y = -96
+  for _, info in ipairs(OPTIONS) do
     local cb = makeCheck(panel, info.label, 40, y)
-    cb.key = info.key
+    cb.key, cb.desc = info.key, info.desc
     cb:SetScript("OnClick", function(self)
-      DB.cat[self.key] = self:GetChecked() and true or false
+      E.SetChoix(self.key, self:GetChecked())
+      EbonholdFR_RefreshPanel()
     end)
-    catChecks[#catChecks + 1] = cb
-    y = y - 28
+    optChecks[#optChecks + 1] = cb
+    y = y - 26
   end
 
-  -- bouton recharger l'interface
+  patchNote = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+  patchNote:SetPoint("TOPLEFT", 44, y - 2)
+  patchNote:SetWidth(290)
+  patchNote:SetJustifyH("LEFT")
+  patchNote:SetText("|cff99ccffPatch FR install\195\169 : les descriptions sont d\195\169j\195\160 en fran\195\167ais dans le jeu.|r")
+  y = y - 30
+
+  -- revenir aux réglages du launcher
+  local reset = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+  reset:SetWidth(240); reset:SetHeight(22)
+  reset:SetPoint("TOP", 0, y)
+  reset:SetText("Reprendre les r\195\169glages du launcher")
+  reset:SetScript("OnClick", function()
+    E.RevenirLauncher()
+    EbonholdFR_RefreshPanel()
+    updateButtonState()
+    msg("R\195\169glages du launcher repris.")
+  end)
+
+  -- recharger l'interface
   local reload = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
-  reload:SetWidth(200); reload:SetHeight(24)
-  reload:SetPoint("TOP", 0, y - 8)
+  reload:SetWidth(240); reload:SetHeight(22)
+  reload:SetPoint("TOP", reset, "BOTTOM", 0, -6)
   reload:SetText("Recharger l'interface (/reload)")
   reload:SetScript("OnClick", function() ReloadUI() end)
   local rhint = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
   rhint:SetPoint("TOP", reload, "BOTTOM", 0, -3)
   rhint:SetText("Pour appliquer aux fen\195\170tres d\195\169j\195\160 ouvertes.")
 
-  -- pied : version + teaser + crédit
+  -- pied : version (lue dans le .toc) + crédit
   local foot = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
   foot:SetPoint("BOTTOM", 0, 16)
-  foot:SetText("v3.0  •  une autre Echo sommeille encore...  •  par Squall98")
+  foot:SetText("v" .. E.version .. "  \226\128\162  une autre Echo sommeille encore...  \226\128\162  par Squall98")
 
   EbonholdFR_RefreshPanel()
-  if button then button.icon:SetDesaturated(not DB.enabled) end
+  updateButtonState()
 end
 
 function EbonholdFR_OpenPanel()
@@ -200,19 +231,29 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LOGIN")
 f:SetScript("OnEvent", function()
-  DB = EbonholdFR.EnsureDB()
+  DB = E.EnsureDB()
   createButton()
 end)
 
--- /frmenu : ouvre/ferme le panneau ; /frbouton : affiche/masque le bouton minimap
-SLASH_FRMENU1 = "/frmenu"
-SlashCmdList["FRMENU"] = function()
+local function basculerPanneau()
+  if not DB then DB = E.EnsureDB() end
   if panel and panel:IsShown() then panel:Hide() else EbonholdFR_OpenPanel() end
 end
 
-SLASH_FRBOUTON1 = "/frbouton"
-SlashCmdList["FRBOUTON"] = function()
+local function basculerBouton()
+  if not DB or not button then return end
   DB.minimap.hide = not DB.minimap.hide
-  if DB.minimap.hide then button:Hide(); msg("Bouton minimap masqu\195\169 (/frbouton pour le r\195\169afficher).")
+  if DB.minimap.hide then button:Hide(); msg("Bouton minimap masqu\195\169 (/efr bouton pour le r\195\169afficher).")
   else button:Show(); msg("Bouton minimap affich\195\169.") end
 end
+
+E.Commandes = E.Commandes or {}
+E.Commandes.menu = basculerPanneau
+E.Commandes.options = basculerPanneau
+E.Commandes.bouton = basculerBouton
+
+-- anciens alias : /frmenu ouvre/ferme le panneau ; /frbouton affiche/masque le bouton minimap
+SLASH_FRMENU1 = "/frmenu"
+SlashCmdList["FRMENU"] = basculerPanneau
+SLASH_FRBOUTON1 = "/frbouton"
+SlashCmdList["FRBOUTON"] = basculerBouton
